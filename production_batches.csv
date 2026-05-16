@@ -1,0 +1,4 @@
+batch_id,niche,created_at,status,product_count,average_quality,uploaded_count,sold_count,total_revenue,notes
+3a582789-783b-4d31-8b84-4cd8adee9a0c,dry-run batch niche,2026-05-16T01:44:13,archived,0,0.0,0,0,0.0,
+b7276685-c43c-4a60-a1c9-2c8370a89fb6,meme sticker design,2026-05-16T01:49:20,active,0,0.0,0,0,0.0,
+8f9b01c1-1af8-48e8-a3c8-e07c471d372d,Sticker designs that will sell good on esty,2026-05-16T03:46:14,active,0,0.0,0,0,0.0,Created by workflow_engine

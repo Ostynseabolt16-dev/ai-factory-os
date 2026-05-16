@@ -1,0 +1,6 @@
+workflow_id,workflow_type,created_at,status,task_count,completed_tasks,failed_tasks,notes
+14ddd390-c98f-421b-a119-c62ef73e4285,design_pipeline,2026-05-16T01:53:52,pending,3,0,0,niche=dry workflow niche amount=1 dry_run=True
+eda84428-494b-41a1-8d5f-c4e2c06538ed,batch_pipeline,2026-05-16T01:53:52,pending,3,0,0,batch_id=dry-run-batch niche=dry batch workflow dry_run=True
+05d7f40d-4027-4490-b6da-cb26a72cc18d,design_pipeline,2026-05-16T01:58:58,pending,3,0,0,niche=verification workflow amount=1 dry_run=True
+1c7be776-63de-445d-b4e2-9372ef56e8b6,design_pipeline,2026-05-16T02:03:36,pending,3,0,0,niche=signal verification amount=1 dry_run=True
+dde5cef7-9453-4dc5-aad2-52ce9ab6700f,batch_pipeline,2026-05-16T03:46:14,running,3,0,0,batch_id=8f9b01c1-1af8-48e8-a3c8-e07c471d372d niche=Sticker designs that will sell good on esty dry_run=False

@@ -1,0 +1,12 @@
+created_at,metric,value,notes
+2026-05-16T01:58:58,workflow_throughput,0.0,
+2026-05-16T01:58:58,products_reviewed,0,
+2026-05-16T01:58:58,mockups_ready,0,
+2026-05-16T01:58:58,listings_prepared,2,
+2026-05-16T01:58:58,average_quality,0.0,
+2026-05-16T01:58:58,estimated_revenue,0.0,
+2026-05-16T01:58:58,duplicate_count,1,
+2026-05-16T01:58:58,archive_rate,0.0,
+2026-05-16T01:58:58,batch_success_rate,0.0,
+2026-05-16T01:58:58,workflow_completion_rate,0.0,
+2026-05-16T01:58:58,stage_distribution,{'generation': 2},

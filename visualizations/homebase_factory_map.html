@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HomeBase Factory Command Center</title>
+  <style>
+    :root {
+      --bg: #050812;
+      --panel: rgba(13, 22, 35, 0.78);
+      --text: #f1f7ff;
+      --muted: #92a7bd;
+      --line: rgba(95, 139, 171, 0.34);
+      --accent: #34e7ff;
+      --green: #48f2a0;
+      --purple: #b28cff;
+      --warn: #ffcf70;
+      --hot: #ff7a90;
+      --shadow: rgba(0, 0, 0, 0.35);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at 14% 5%, rgba(52, 231, 255, 0.17), transparent 30%),
+        radial-gradient(circle at 86% 8%, rgba(178, 140, 255, 0.15), transparent 28%),
+        linear-gradient(145deg, #050812 0%, #09111d 52%, #04070d 100%);
+      color: var(--text);
+    }
+    .shell { max-width: 1680px; margin: 0 auto; padding: 28px; }
+    .topbar { display: flex; justify-content: space-between; gap: 18px; align-items: flex-start; margin-bottom: 18px; }
+    h1 { margin: 0; font-size: 34px; letter-spacing: 0.04em; text-transform: uppercase; }
+    .subtitle { margin: 8px 0 0; color: var(--muted); max-width: 900px; line-height: 1.55; }
+    .stamp { color: var(--muted); font-size: 13px; text-align: right; }
+    .kpis { display: grid; grid-template-columns: repeat(8, minmax(120px, 1fr)); gap: 12px; margin: 22px 0; }
+    .kpi {
+      background: linear-gradient(180deg, rgba(18, 32, 50, 0.86), rgba(9, 16, 29, 0.86));
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 14px;
+      box-shadow: 0 16px 36px var(--shadow);
+      backdrop-filter: blur(10px);
+    }
+    .kpi b { display: block; font-size: 23px; margin-bottom: 4px; overflow-wrap: anywhere; }
+    .kpi span { color: var(--muted); font-size: 11px; text-transform: uppercase; letter-spacing: 0.09em; }
+    .pipeline { margin: 20px 0; border: 1px solid var(--line); border-radius: 22px; padding: 16px; background: rgba(6, 12, 22, 0.72); box-shadow: 0 18px 46px var(--shadow); }
+    .pipeline h2, .panel h2 { margin: 0 0 14px; font-size: 18px; text-transform: uppercase; letter-spacing: 0.05em; }
+    .stages { display: grid; grid-template-columns: repeat(8, minmax(80px, 1fr)); gap: 8px; }
+    .stage { position: relative; padding: 12px 10px; border: 1px solid rgba(95,139,171,0.32); border-radius: 14px; background: rgba(13,22,35,0.74); min-height: 78px; }
+    .stage:not(:last-child)::after { content: "→"; position: absolute; right: -10px; top: 30px; color: var(--accent); z-index: 3; }
+    .stage.bottleneck { border-color: var(--warn); box-shadow: 0 0 22px rgba(255,207,112,0.14); }
+    .stage.active { background: rgba(19, 36, 55, 0.88); }
+    .stage span { display: block; color: var(--muted); font-size: 10px; letter-spacing: 0.08em; }
+    .stage b { display: block; font-size: 21px; margin-top: 6px; }
+    .bar { height: 6px; background: rgba(143,166,184,0.18); border-radius: 999px; overflow: hidden; margin-top: 8px; }
+    .bar div { height: 100%; background: linear-gradient(90deg, var(--accent), var(--green)); border-radius: 999px; }
+    .layout { display: grid; grid-template-columns: minmax(780px, 1.45fr) minmax(360px, 0.7fr); gap: 20px; align-items: start; }
+    .factory-floor {
+      position: relative;
+      min-height: 900px;
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      padding: 24px;
+      background: rgba(6, 12, 22, 0.72);
+      box-shadow: inset 0 0 60px rgba(52, 231, 255, 0.04), 0 18px 60px var(--shadow);
+      overflow: hidden;
+    }
+    .factory-floor::before {
+      content: "";
+      position: absolute;
+      inset: 70px 12% 120px;
+      background:
+        linear-gradient(90deg, transparent 0 31%, rgba(52, 231, 255, 0.26) 31.3% 31.7%, transparent 32%),
+        linear-gradient(90deg, transparent 0 68%, rgba(52, 231, 255, 0.26) 68.3% 68.7%, transparent 69%),
+        linear-gradient(180deg, transparent 0 21%, rgba(52, 231, 255, 0.22) 21.3% 21.7%, transparent 22%),
+        linear-gradient(180deg, transparent 0 49%, rgba(52, 231, 255, 0.22) 49.3% 49.7%, transparent 50%),
+        linear-gradient(180deg, transparent 0 72%, rgba(52, 231, 255, 0.22) 72.3% 72.7%, transparent 73%);
+      pointer-events: none;
+    }
+    .factory-floor::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 92px;
+      bottom: 92px;
+      width: 2px;
+      background: linear-gradient(180deg, transparent, rgba(52,231,255,0.72), transparent);
+      animation: flowPulse 4s ease-in-out infinite;
+    }
+    @keyframes flowPulse { 0%, 100% { opacity: 0.35; } 50% { opacity: 1; } }
+    .room {
+      position: absolute;
+      width: 28%;
+      min-height: 132px;
+      padding: 16px;
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      background: linear-gradient(180deg, rgba(18, 31, 49, 0.82), rgba(8, 14, 26, 0.88));
+      box-shadow: 0 18px 46px var(--shadow);
+      backdrop-filter: blur(14px);
+      cursor: pointer;
+      transition: transform 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
+      z-index: 2;
+    }
+    .room:hover, .room.active { transform: translateY(-3px); border-color: var(--accent); box-shadow: 0 0 28px rgba(52, 231, 255, 0.18), 0 18px 46px var(--shadow); }
+    .room.founder { left: 36%; top: 24px; }
+    .room.generation { left: 4%; top: 238px; }
+    .room.studio { left: 36%; top: 238px; }
+    .room.signals { right: 4%; top: 238px; }
+    .room.workflow { left: 36%; top: 455px; }
+    .room.storage { left: 36%; top: 640px; }
+    .room.market { left: 36%; top: 785px; }
+    .status-dot { position: absolute; right: 14px; top: 14px; width: 12px; height: 12px; border-radius: 50%; animation: statusPulse 2.4s ease-in-out infinite; }
+    .healthy .status-dot { background: var(--green); box-shadow: 0 0 18px var(--green); }
+    .warning .status-dot { background: var(--warn); box-shadow: 0 0 18px var(--warn); }
+    .danger .status-dot { background: var(--hot); box-shadow: 0 0 18px var(--hot); }
+    @keyframes statusPulse { 0%, 100% { transform: scale(0.86); opacity: 0.65; } 50% { transform: scale(1.08); opacity: 1; } }
+    .room h2 { font-size: 15px; margin: 0 24px 10px 0; text-transform: uppercase; letter-spacing: 0.05em; }
+    .modules { color: var(--muted); font-size: 11px; line-height: 1.45; margin-bottom: 12px; }
+    .room-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+    .mini { border-top: 1px solid rgba(143, 166, 184, 0.2); padding-top: 7px; }
+    .mini span { color: var(--muted); display: block; font-size: 10px; text-transform: uppercase; letter-spacing: 0.06em; }
+    .mini b { font-size: 13px; overflow-wrap: anywhere; }
+    .side { display: grid; gap: 16px; }
+    .panel {
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      background: linear-gradient(180deg, rgba(17, 29, 47, 0.82), rgba(7, 13, 24, 0.88));
+      padding: 18px;
+      box-shadow: 0 18px 46px var(--shadow);
+      backdrop-filter: blur(14px);
+    }
+    .recommendation { color: var(--accent); line-height: 1.5; margin: 14px 0; }
+    .detail-list { display: grid; gap: 10px; }
+    .detail-row { display: flex; justify-content: space-between; gap: 12px; border-bottom: 1px solid rgba(143,166,184,0.16); padding-bottom: 8px; }
+    .detail-row span { color: var(--muted); }
+    .detail-row b { text-align: right; overflow-wrap: anywhere; }
+    .status-row { display: grid; grid-template-columns: repeat(4, minmax(140px, 1fr)); gap: 12px; margin: 20px 0; }
+    .status-chip { border: 1px solid rgba(95,139,171,0.24); border-radius: 18px; padding: 14px 16px; background: rgba(12,20,32,0.88); box-shadow: inset 0 0 20px rgba(0,0,0,0.15); }
+    .status-chip span { display: block; color: var(--muted); font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 6px; }
+    .status-chip b { font-size: 20px; line-height: 1.2; }
+    .status-chip em { font-size: 12px; color: var(--accent); }
+    .market-grid, .listing-grid, .product-grid { display: grid; gap: 12px; }
+    .market-card, .listing-card, .product-card { position: relative; border: 1px solid rgba(95,139,171,0.25); border-radius: 18px; padding: 16px; background: rgba(6,12,22,0.78); cursor: pointer; transition: transform 160ms ease, border-color 160ms ease, box-shadow 160ms ease; }
+    .market-card:hover, .listing-card:hover, .product-card:hover { transform: translateY(-2px); border-color: var(--accent); box-shadow: 0 0 30px rgba(62,231,196,0.18); }
+    .market-card span, .listing-card span, .product-card span { color: var(--muted); font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; }
+    .market-card b, .listing-card b, .product-card b { display: block; margin: 8px 0; font-size: 17px; }
+    .product-card .badge { display: inline-block; margin-top: 10px; padding: 4px 10px; border-radius: 999px; font-size: 11px; letter-spacing: 0.08em; }
+    .product-card .badge.low { background: rgba(62,231,196,0.14); color: var(--green); }
+    .product-card .badge.medium { background: rgba(255,207,112,0.14); color: var(--warn); }
+    .product-card .badge.high { background: rgba(255,122,144,0.14); color: var(--hot); }
+    .product-card .progress { height: 8px; border-radius: 999px; background: rgba(143,166,184,0.18); overflow: hidden; margin-top: 10px; }
+    .product-card .progress > div { height: 100%; border-radius: 999px; background: linear-gradient(90deg, var(--accent), var(--green)); }
+    .product-card.expanded { transform: scale(1.02); border-color: var(--accent); box-shadow: 0 0 26px rgba(62,231,196,0.24); }
+    .money-path { display: flex; flex-wrap: wrap; gap: 10px; margin: 16px 0 0; }
+    .path-node { flex: 1 1 110px; min-width: 110px; padding: 12px; border-radius: 16px; border: 1px solid rgba(95,139,171,0.18); background: rgba(7,13,24,0.68); text-align: center; }
+    .path-node span { color: var(--muted); display: block; font-size: 10px; margin-bottom: 6px; }
+    .path-node b { font-size: 14px; }
+    .pulse { animation: pulseGlow 2.6s ease-in-out infinite; }
+    .pulse-soft { animation-duration: 3.4s; }
+    @keyframes pulseGlow { 0%, 100% { box-shadow: 0 0 8px rgba(62,231,196,0.08); } 50% { box-shadow: 0 0 22px rgba(62,231,196,0.22); } }
+    .tooltip { position: absolute; z-index: 10; left: 50%; transform: translateX(-50%); bottom: calc(100% + 10px); min-width: 180px; padding: 10px 12px; border-radius: 14px; background: rgba(9,16,24,0.95); color: var(--text); font-size: 12px; box-shadow: 0 16px 34px rgba(0,0,0,0.35); display: none; }
+    .room.expanded { transform: scale(1.02); }
+    .room-icon { margin-right: 8px; }
+    .stage-pill { display: inline-flex; align-items: center; gap: 6px; background: rgba(62,231,196,0.12); color: var(--accent); border-radius: 999px; padding: 4px 10px; font-size: 11px; }
+    .stage-filters { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 12px; }
+    .stage-filter { border: 1px solid rgba(95,139,171,0.22); border-radius: 999px; padding: 8px 12px; background: rgba(7,13,24,0.72); color: var(--muted); cursor: pointer; transition: background 140ms ease, color 140ms ease; }
+    .stage-filter.active { background: rgba(62,231,196,0.14); color: var(--accent); }
+    @media (max-width: 1180px) {
+      .layout { grid-template-columns: 1fr; }
+      .factory-floor { min-height: auto; display: grid; gap: 12px; }
+      .factory-floor::before, .factory-floor::after { display: none; }
+      .room { position: relative; inset: auto !important; width: 100%; }
+      .kpis { grid-template-columns: repeat(2, minmax(120px, 1fr)); }
+      .stages { grid-template-columns: repeat(2, minmax(120px, 1fr)); }
+      .stage::after { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <header class="topbar">
+      <div>
+        <h1>HomeBase Factory Command Center</h1>
+        <p class="subtitle">A local visual shell over the real AI Factory OS. It reads CSV memory and module outputs only. No uploads, no API calls, no servers, no background workers.</p>
+      </div>
+      <div class="stamp">Generated<br><span id="generatedAt"></span></div>
+    </header>
+    <section class="kpis" id="summary"></section>
+    <section class="status-row" id="topStatus"></section>
+    <section class="status-row" id="etsySync"></section>
+    <section class="status-row" id="recommendationPanels"></section>
+    <section class="pipeline">
+      <h2>Product Lifecycle Pipeline</h2>
+      <div class="stages" id="pipeline"></div>
+      <div class="money-path" id="moneyFlow"></div>
+    </section>
+    <main class="layout">
+      <section class="factory-floor" id="factory"></section>
+      <aside class="side">
+        <section class="panel" id="detail"></section>
+        <section class="panel"><h2>Founder Execution Mode</h2><div id="execution"></div></section>
+        <section class="panel"><h2>Signal Heatmap</h2><div class="heat-grid" id="heatmap"></div></section>
+        <section class="panel"><h2>Market Terminals</h2><div class="market-grid" id="marketPanels"></div></section>
+        <section class="panel"><h2>Market Output Terminals</h2><div class="dock-grid" id="docks"></div></section>
+        <section class="panel"><h2>Live Listing Preview</h2><div class="listing-grid" id="listingPreviews"></div></section>
+        <section class="panel"><h2>Ready-to-Work Queue</h2><div class="detail-list" id="readinessQueue"></div></section>
+        <section class="panel"><h2>Recent Experiment Timeline</h2><div class="detail-list" id="experimentTimeline"></div></section>
+        <section class="panel"><h2>Product Cards</h2><div class="stage-filters" id="stageFilters"></div><div class="product-grid" id="productCards"></div></section>
+        <section class="panel"><h2>Memory Vault</h2><div class="memory-grid" id="csvStats"></div></section>
+        <section class="ticker"><span>Explicit execution only · Use the CLI for readiness checks, metric imports, listing exports, and weekly reviews · The map is visual awareness, not automation · </span></section>
+      </aside>
+    </main>
+  </div>
+  <script id="factory-data" type="application/json">{"generated_at": "2026-05-16T05:23:06", "rooms": [{"id": "founder", "name": "Founder Command Center", "modules": ["Founder Agent", "Founder Briefing", "Weekly Review", "Daily Execution Brief"], "stats": {"Operational focus": "first validated listing", "Revenue": "$868.07", "Top product": "Social Anxiety Cute Characters Sticker Sheet | Pastel Kawaii Planner Stickers", "Top niche": "jewelry_case"}, "details": {"Founder briefing": "Focus on real listing signal, not more architecture.", "Weekly review": "Check winners, weak listings, profit, and next three manual actions.", "Daily priority": "Import fresh Etsy metrics, then change only one listing variable.", "Ready to scale": "collect market signal"}, "recommendation": "Improve the strongest live listing before generating more inventory.", "tone": "healthy"}, {"id": "generation", "name": "Product Generation Bay", "modules": ["Bulk Generator", "Variant Generator", "Product Selector", "Repair Workflow"], "stats": {"Drafts": 2, "Reviewed": 0, "Upload-ready": 0, "Total products": 21}, "details": {"Product selector": "Ranks products for manual upload.", "Repair workflow": "Schedules repair tasks only; no autonomous execution.", "Variant rule": "Only generate nearby emotional variants after engagement.", "Draft pressure": 2}, "recommendation": "Generate only close variants around proven emotional hooks.", "tone": "healthy"}, {"id": "studio", "name": "Mockup &amp; Listing Studio", "modules": ["Mockup Generator", "Listing Generator", "SEO Optimizer", "Thumbnail Analyzer"], "stats": {"Top thumbnail style": "unspecified", "Products with mockups": 0, "Listings tracked": 58, "Active listings": 58}, "details": {"SEO optimizer": "Scores title readability, tags, and keyword repetition.", "Thumbnail analyzer": "Uses tracked style notes and real Etsy metrics.", "Readiness count": 0, "Best style": "unspecified"}, "recommendation": "Test close-up, sticker-focused thumbnails first.", "tone": "healthy"}, {"id": "signals", "name": "Market Signal Lab", "modules": ["Signal Engine", "Validation Scores", "Early Winner Detector", "Revenue Tracker", "Winning Pattern Detector"], "stats": {"Views": 0, "Favorites": 0, "Orders": 0, "Conversion": 0.0}, "details": {"Strongest listings": [{"listing_id": "etsy-imp", "product_id": "3", "views": 0, "favorites": 0, "orders": 0, "conversion": 0.0}, {"listing_id": "etsy-imp", "product_id": "3", "views": 0, "favorites": 0, "orders": 0, "conversion": 0.0}, {"listing_id": "etsy-imp", "product_id": "4", "views": 0, "favorites": 0, "orders": 0, "conversion": 0.0}, {"listing_id": "etsy-imp", "product_id": "5", "views": 0, "favorites": 0, "orders": 0, "conversion": 0.0}, {"listing_id": "etsy-imp", "product_id": "6", "views": 0, "favorites": 0, "orders": 0, "conversion": 0.0}], "Signal rows": 69, "Validated products": 0, "Winning pattern": "fruit_shirt"}, "recommendation": "Treat favorites and views as early signal before scaling.", "tone": "warning"}, {"id": "workflow", "name": "Workflow Pipeline", "modules": ["Workflow Engine", "Task Queue", "Task Runner", "Task History"], "stats": {"Pending tasks": 5, "Running tasks": 0, "Completed tasks": 7, "Active workflows": 5}, "details": {"Queued work": 5, "Failures": 0, "Bottleneck": "draft/review backlog", "Latest workflows": 5}, "recommendation": "Run one explicit task at a time; no background loops.", "tone": "healthy"}, {"id": "storage", "name": "Storage / Memory Vault", "modules": ["products.csv", "listings.csv", "task_queue.csv", "workflow_history.csv", "signal_history.csv", "experiments.csv"], "stats": {"CSV files tracked": 9, "CSV rows total": 195, "Signal rows": 69, "Experiments": 1}, "details": {"Memory model": "CSV-backed local source of truth.", "Missing files": 1, "Healthy files": 8, "Last updated": "2026-05-16T05:22:03"}, "recommendation": "CSV memory is the local source of truth.", "tone": "healthy"}, {"id": "market", "name": "Market Output Terminals", "modules": ["Etsy", "Printify", "Gumroad", "Digital Downloads"], "stats": {"Live/manual listings": 58, "Estimated revenue": "$868.07", "Validated products": 0, "Products needing updates": 2}, "details": {"Etsy": "58 manual listings", "Printify": "manual fulfillment path", "Gumroad": "candidate digital-download lane", "Digital Downloads": "best adjacent low-friction test"}, "recommendation": "Use Etsy manually now; add Gumroad/digital downloads as adjacent tests.", "tone": "healthy"}], "csv_stats": [{"file": "products.csv", "rows": 21, "last_updated": "2026-05-16T05:21:09", "health": "healthy"}, {"file": "listings.csv", "rows": 58, "last_updated": "2026-05-16T05:22:03", "health": "healthy"}, {"file": "task_queue.csv", "rows": 24, "last_updated": "2026-05-16T03:46:14", "health": "healthy"}, {"file": "workflow_history.csv", "rows": 5, "last_updated": "2026-05-16T03:49:31", "health": "healthy"}, {"file": "task_history.csv", "rows": 14, "last_updated": "2026-05-16T02:10:41", "health": "healthy"}, {"file": "signal_history.csv", "rows": 69, "last_updated": "2026-05-16T03:50:09", "health": "healthy"}, {"file": "experiments.csv", "rows": 1, "last_updated": "2026-05-16T02:03:35", "health": "healthy"}, {"file": "listing_change_history.csv", "rows": 0, "last_updated": "missing", "health": "missing"}, {"file": "production_batches.csv", "rows": 3, "last_updated": "2026-05-16T03:49:31", "health": "healthy"}], "pipeline": [{"id": "ideation", "label": "IDEATION", "count": 0, "percent": 0.0, "bottleneck": false, "active": false}, {"id": "generation", "label": "GENERATION", "count": 2, "percent": 9.5, "bottleneck": false, "active": true}, {"id": "review", "label": "REVIEW", "count": 0, "percent": 0.0, "bottleneck": false, "active": false}, {"id": "mockups", "label": "MOCKUPS", "count": 0, "percent": 0.0, "bottleneck": false, "active": false}, {"id": "listing", "label": "LISTING", "count": 0, "percent": 0.0, "bottleneck": false, "active": false}, {"id": "published", "label": "PUBLISHED", "count": 19, "percent": 90.5, "bottleneck": true, "active": true}, {"id": "sales", "label": "SALES", "count": 0, "percent": 0.0, "bottleneck": false, "active": false}, {"id": "archived", "label": "ARCHIVED", "count": 0, "percent": 0.0, "bottleneck": false, "active": false}], "signal_heatmap": [{"label": "Strongest niche", "value": "jewelry_case", "score": 82, "tone": "purple"}, {"label": "Emotional hook", "value": "fruit_shirt", "score": 100, "tone": "purple"}, {"label": "Thumbnail style", "value": "unspecified", "score": 75, "tone": "cyan"}, {"label": "Best CTR candidate", "value": "etsy-imp", "score": 15, "tone": "green"}, {"label": "Favorite signal", "value": "0 favorites", "score": 0, "tone": "orange"}], "execution_mode": {"next_actions": ["Import fresh Etsy metrics, then change only one listing variable.", "Record every title/tag/thumbnail change before the next metric check.", "Pause or archive weak clutter before generating large batches."], "highest_leverage_fix": "Import fresh Etsy metrics, then change only one listing variable.", "products_to_upload": [], "products_to_archive": ["Inspirational Laptop Sticker for Motivational Vibes | Perfect Gift for Students and Creatives", "Funny Nurse Meme Sticker - Isolated PNG for Nurses and Healthcare Workers", "Social Anxiety Cute Characters Sticker Sheet | Pastel Kawaii Planner Stickers"], "current_experiment": "cute emotional sticker sheet validation", "biggest_bottleneck": "draft/review backlog"}, "market_outputs": [{"name": "Etsy", "status": "manual live", "count": 58, "metric": "tracked listings"}, {"name": "Printify", "status": "manual", "count": 0, "metric": "orders"}, {"name": "Gumroad", "status": "candidate", "count": 0, "metric": "digital tests"}, {"name": "Digital Downloads", "status": "candidate", "count": 0, "metric": "packs"}], "market_panels": [{"name": "Etsy", "status": "manual live", "count": 58, "signal": 0, "revenue": 868.07, "emoji": "\ud83d\uded2"}, {"name": "Printify", "status": "manual candidate", "count": 0, "signal": 20, "revenue": 0, "emoji": "\ud83d\udce6"}, {"name": "Digital Downloads", "status": "adjacent test", "count": 0, "signal": 5, "revenue": 0, "emoji": "\ud83d\udcbe"}, {"name": "Experiments", "status": "tracked", "count": 1, "signal": 12, "revenue": 0, "emoji": "\ud83e\uddea"}], "money_flow": [{"step": "Idea", "status": "seed"}, {"step": "Product", "status": "ready"}, {"step": "Mockup", "status": "ready"}, {"step": "Listing", "status": "live"}, {"step": "Views", "status": "cold"}, {"step": "Favorites", "status": "weak"}, {"step": "Orders", "status": "dry"}, {"step": "Revenue", "status": "flowing"}], "factory_status": "Awaiting first validation", "scale_readiness": "collect market signal", "current_focus": "Import fresh Etsy metrics, then change only one listing variable.", "top_action": "Import fresh Etsy metrics, then change only one listing variable.", "validation_progress": 0, "listing_readiness_progress": 0, "signal_strength_progress": 0, "operational_score": 96, "product_cards": [{"product_id": "1", "title": "Inspirational Laptop Sticker for Motivational Vibes | Perfect Gift for Students and Creatives", "niche": "general", "stage": "GENERATION", "validation_level": 0, "revenue": 0.0, "thumbnail_style": "not tracked yet", "readiness_status": "repair needed", "duplicate_risk": "low", "signal_strength": 0, "top_weakness": "Low quality", "package_folder": "file:///Users/ostynseabolt/ai/exports/product_1", "emotional_hook": "fruit_shirt"}, {"product_id": "2", "title": "Funny Nurse Meme Sticker - Isolated PNG for Nurses and Healthcare Workers", "niche": "general", "stage": "GENERATION", "validation_level": 0, "revenue": 0.0, "thumbnail_style": "not tracked yet", "readiness_status": "repair needed", "duplicate_risk": "low", "signal_strength": 0, "top_weakness": "Low quality", "package_folder": "file:///Users/ostynseabolt/ai/exports/product_2", "emotional_hook": "fruit_shirt"}, {"product_id": "3", "title": "Social Anxiety Cute Characters Sticker Sheet | Pastel Kawaii Planner Stickers", "niche": "social_anxiety", "stage": "PUBLISHED", "validation_level": 0, "revenue": 0.0, "thumbnail_style": "Imported from Etsy export", "readiness_status": "repair needed", "duplicate_risk": "low", "signal_strength": 0, "top_weakness": "Low quality", "package_folder": "file:///Users/ostynseabolt/ai/exports/product_3", "emotional_hook": "social_anxiety"}, {"product_id": "4", "title": "Social Anxiety Illustration Square Stickers | Cute Cartoon Emotional Sticker", "niche": "square_stickers", "stage": "PUBLISHED", "validation_level": 0, "revenue": 0.0, "thumbnail_style": "Imported from Etsy export", "readiness_status": "repair needed", "duplicate_risk": "low", "signal_strength": 0, "top_weakness": "Low quality", "package_folder": "file:///Users/ostynseabolt/ai/exports/product_4", "emotional_hook": "square_stickers"}, {"product_id": "5", "title": "Cat Blanket Illustration Tee | Introvert Humor, Cozy Cat Lover Gift", "niche": "social_cat_tee", "stage": "PUBLISHED", "validation_level": 0, "revenue": 0.0, "thumbnail_style": "Imported from Etsy export", "readiness_status": "repair needed", "duplicate_risk": "low", "signal_strength": 0, "top_weakness": "Low quality", "package_folder": "file:///Users/ostynseabolt/ai/exports/product_5", "emotional_hook": "social_cat_tee"}, {"product_id": "6", "title": "Thanksgiving Harvest Turkey Kids Tee | pumpkin, corn, fall vegetables", "niche": "kids_tee", "stage": "PUBLISHED", "validation_level": 0, "revenue": 0.0, "thumbnail_style": "Imported from Etsy export", "readiness_status": "repair needed", "duplicate_risk": "low", "signal_strength": 0, "top_weakness": "Low quality", "package_folder": "file:///Users/ostynseabolt/ai/exports/product_6", "emotional_hook": "kids_tee"}, {"product_id": "7", "title": "Mom Superhero Logo T-Shirt | Mother's Day Supermom Tee", "niche": "mom_superhero", "stage": "PUBLISHED", "validation_level": 0, "revenue": 0.0, "thumbnail_style": "Imported from Etsy export", "readiness_status": "repair needed", "duplicate_risk": "low", "signal_strength": 0, "top_weakness": "Low quality", "package_folder": "file:///Users/ostynseabolt/ai/exports/product_7", "emotional_hook": "mom_superhero"}, {"product_id": "8", "title": "Ramen Sushi Shirt | Playful Japanese Foodie Graphic Tee", "niche": "cute_tee", "stage": "PUBLISHED", "validation_level": 0, "revenue": 0.0, "thumbnail_style": "Imported from Etsy export", "readiness_status": "repair needed", "duplicate_risk": "low", "signal_strength": 0, "top_weakness": "Low quality", "package_folder": "file:///Users/ostynseabolt/ai/exports/product_8", "emotional_hook": "cute_tee"}, {"product_id": "9", "title": "Handbag Obsessed Tote Bag | Canvas Shopper, Purse Illustration", "niche": "canvas_tote", "stage": "PUBLISHED", "validation_level": 0, "revenue": 0.0, "thumbnail_style": "Imported from Etsy export", "readiness_status": "repair needed", "duplicate_risk": "low", "signal_strength": 0, "top_weakness": "Low quality", "package_folder": "file:///Users/ostynseabolt/ai/exports/product_9", "emotional_hook": "canvas_tote"}, {"product_id": "10", "title": "Maker &amp; Dreamer Illustration T-Shirt | Girl with Coffee, Creative Badge", "niche": "maker_shirt", "stage": "PUBLISHED", "validation_level": 0, "revenue": 0.0, "thumbnail_style": "Imported from Etsy export", "readiness_status": "repair needed", "duplicate_risk": "low", "signal_strength": 0, "top_weakness": "Low quality", "package_folder": "file:///Users/ostynseabolt/ai/exports/product_10", "emotional_hook": "maker_shirt"}], "listing_previews": [{"listing_id": "etsy-import-1", "product_title": "Social Anxiety Cute Characters Sticker Sheet | Pastel Kawaii Planner Stickers", "thumbnail_style": "Imported from Etsy export", "views": 0, "favorites": 0, "orders": 0, "conversion_rate": 0.0, "validation_score": 0, "emotional_hook": "social_anxiety"}, {"listing_id": "etsy-import-1", "product_title": "Social Anxiety Cute Characters Sticker Sheet | Pastel Kawaii Planner Stickers", "thumbnail_style": "Imported from Etsy export", "views": 0, "favorites": 0, "orders": 0, "conversion_rate": 0.0, "validation_score": 0, "emotional_hook": "social_anxiety"}, {"listing_id": "etsy-import-2", "product_title": "Social Anxiety Illustration Square Stickers | Cute Cartoon Emotional Sticker", "thumbnail_style": "Imported from Etsy export", "views": 0, "favorites": 0, "orders": 0, "conversion_rate": 0.0, "validation_score": 0, "emotional_hook": "square_stickers"}, {"listing_id": "etsy-import-3", "product_title": "Cat Blanket Illustration Tee | Introvert Humor, Cozy Cat Lover Gift", "thumbnail_style": "Imported from Etsy export", "views": 0, "favorites": 0, "orders": 0, "conversion_rate": 0.0, "validation_score": 0, "emotional_hook": "social_cat_tee"}, {"listing_id": "etsy-import-4", "product_title": "Thanksgiving Harvest Turkey Kids Tee | pumpkin, corn, fall vegetables", "thumbnail_style": "Imported from Etsy export", "views": 0, "favorites": 0, "orders": 0, "conversion_rate": 0.0, "validation_score": 0, "emotional_hook": "kids_tee"}, {"listing_id": "etsy-import-5", "product_title": "Mom Superhero Logo T-Shirt | Mother's Day Supermom Tee", "thumbnail_style": "Imported from Etsy export", "views": 0, "favorites": 0, "orders": 0, "conversion_rate": 0.0, "validation_score": 0, "emotional_hook": "mom_superhero"}], "experiment_timeline": [], "readiness_queue": {"upload_ready": [], "repair_needed": ["Inspirational Laptop Sticker for Motivational Vibes | Perfect Gift for Students and Creatives", "Funny Nurse Meme Sticker - Isolated PNG for Nurses and Healthcare Workers", "Social Anxiety Cute Characters Sticker Sheet | Pastel Kawaii Planner Stickers"], "archive_suggested": ["Inspirational Laptop Sticker for Motivational Vibes | Perfect Gift for Students and Creatives", "Funny Nurse Meme Sticker - Isolated PNG for Nurses and Healthcare Workers", "Social Anxiety Cute Characters Sticker Sheet | Pastel Kawaii Planner Stickers"], "validation_candidate": [], "scaling_candidate": []}, "etsy_sync": {"imported_etsy_listings": 58, "imported_active_etsy": 58, "imported_favorites": 0, "imported_orders": 0, "imported_revenue": 868.07, "top_viewed_listing": "Social Anxiety Cute Characters Sticker Sheet | Pastel Kawaii Planner Stickers (0)", "top_favorited_listing": "Social Anxiety Cute Characters Sticker Sheet | Pastel Kawaii Planner Stickers (0)", "top_converting_listing": "Social Anxiety Cute Characters Sticker Sheet | Pastel Kawaii Planner Stickers (0.0)", "most_likely_next_sale": "Social Anxiety Cute Characters Sticker Sheet | Pastel Kawaii Planner Stickers"}, "listing_health": {"total_listings": 58, "average_score": 20.0, "counts": {"strong traction": 0, "weak conversion": 0, "thumbnail issue": 0, "keyword issue": 58, "dead listing": 0, "stable": 0}, "top_strongest": [{"listing_id": "etsy-import-1", "marketplace_listing_id": "", "platform": "etsy", "listing_status": "uploaded", "views": 0, "favorites": 0, "orders": 0, "conversion_rate": 0.0, "revenue": 11.18, "age_days": 0, "score": 20, "classification": "keyword issue"}, {"listing_id": "etsy-import-1", "marketplace_listing_id": "", "platform": "etsy", "listing_status": "uploaded", "views": 0, "favorites": 0, "orders": 0, "conversion_rate": 0.0, "revenue": 11.18, "age_days": 0, "score": 20, "classification": "keyword issue"}, {"listing_id": "etsy-import-2", "marketplace_listing_id": "", "platform": "etsy", "listing_status": "uploaded", "views": 0, "favorites": 0, "orders": 0, "conversion_rate": 0.0, "revenue": 3.84, "age_days": 0, "score": 20, "classification": "keyword issue"}], "top_weakest": [{"listing_id": "etsy-import-1", "marketplace_listing_id": "", "platform": "etsy", "listing_status": "uploaded", "views": 0, "favorites": 0, "orders": 0, "conversion_rate": 0.0, "revenue": 11.18, "age_days": 0, "score": 20, "classification": "keyword issue"}, {"listing_id": "etsy-import-1", "marketplace_listing_id": "", "platform": "etsy", "listing_status": "uploaded", "views": 0, "favorites": 0, "orders": 0, "conversion_rate": 0.0, "revenue": 11.18, "age_days": 0, "score": 20, "classification": "keyword issue"}, {"listing_id": "etsy-import-2", "marketplace_listing_id": "", "platform": "etsy", "listing_status": "uploaded", "views": 0, "favorites": 0, "orders": 0, "conversion_rate": 0.0, "revenue": 3.84, "age_days": 0, "score": 20, "classification": "keyword issue"}], "health_rows": [{"listing_id": "etsy-import-1", "marketplace_listing_id": "", "platform": "etsy", "listing_status": "uploaded", "views": 0, "favorites": 0, "orders": 0, "conversion_rate": 0.0, "revenue": 11.18, "age_days": 0, "score": 20, "classification": "keyword issue"}, {"listing_id": "etsy-import-1", "marketplace_listing_id": "", "platform": "etsy", "listing_status": "uploaded", "views": 0, "favorites": 0, "orders": 0, "conversion_rate": 0.0, "revenue": 11.18, "age_days": 0, "score": 20, "classification": "keyword issue"}, {"listing_id": "etsy-import-2", "marketplace_listing_id": "", "platform": "etsy", "listing_status": "uploaded", "views": 0, "favorites": 0, "orders": 0, "conversion_rate": 0.0, "revenue": 3.84, "age_days": 0, "score": 20, "classification": "keyword issue"}, {"listing_id": "etsy-import-3", "marketplace_listing_id": "", "platform": "etsy", "listing_status": "uploaded", "views": 0, "favorites": 0, "orders": 0, "conversion_rate": 0.0, "revenue": 15.65, "age_days": 0, "score": 20, "classification": "keyword issue"}, {"listing_id": "etsy-import-4", "marketplace_listing_id": "", "platform": "etsy", "listing_status": "uploaded", "views": 0, "favorites": 0, "orders": 0, "conversion_rate": 0.0, "revenue": 15.47, "age_days": 0, "score": 20, "classification": "keyword issue"}, {"listing_id": "etsy-import-5", "marketplace_listing_id": "", "platform": "etsy", "listing_status": "uploaded", "views": 0, "favorites": 0, "orders": 0, "conversion_rate": 0.0, "revenue": 24.29, "age_days": 0, "score": 20, "classification": "keyword issue"}, {"listing_id": "etsy-import-6", "marketplace_listing_id": "", "platform": "etsy", "listing_status": "uploaded", "views": 0, "favorites": 0, "orders": 0, "conversion_rate": 0.0, "revenue": 16.0, "age_days": 0, "score": 20, "classification": "keyword issue"}, {"listing_id": "etsy-import-7", "marketplace_listing_id": "", "platform": "etsy", "listing_status": "uploaded", "views": 0, "favorites": 0, "orders": 0, "conversion_rate": 0.0, "revenue": 17.06, "age_days": 0, "score": 20, "classification": "keyword issue"}, {"listing_id": "etsy-import-8", "marketplace_listing_id": "", "platform": "etsy", "listing_status": "uploaded", "views": 0, "favorites": 0, "orders": 0, "conversion_rate": 0.0, "revenue": 15.65, "age_days": 0, "score": 20, "classification": "keyword issue"}, {"listing_id": "etsy-import-9", "marketplace_listing_id": "", "platform": "etsy", "listing_status": "uploaded", "views": 0, "favorites": 0, "orders": 0, "conversion_rate": 0.0, "revenue": 9.67, "age_days": 0, "score": 20, "classification": "keyword issue"}, {"listing_id": "etsy-import-10", "marketplace_listing_id": "", "platform": "etsy", "listing_status": "uploaded", "views": 0, "favorites": 0, "orders": 0, "conversion_rate": 0.0, "revenue": 18.9, "age_days": 0, "score": 20, "classification": "keyword issue"}, {"listing_id": "etsy-import-11", "marketplace_listing_id": "", "platform": "etsy", "listing_status": "uploaded", "views": 0, "favorites": 0, "orders": 0, "conversion_rate": 0.0, "revenue": 21.53, "age_days": 0, "score": 20, "classification": "keyword issue"}, {"listing_id": "etsy-import-12", "marketplace_listing_id": "", "platform": "etsy", "listing_status": "uploaded", "views": 0, "favorites": 0, "orders": 0, "conversion_rate": 0.0, "revenue": 18.33, "age_days": 0, "score": 20, "classification": "keyword issue"}, {"listing_id": "etsy-import-13", "marketplace_listing_id": "", "platform": "etsy", "listing_status": "uploaded", "views": 0, "favorites": 0, "orders": 0, "conversion_rate": 0.0, "revenue": 3.55, "age_days": 0, "score": 20, "classification": "keyword issue"}, {"listing_id": "etsy-import-14", "marketplace_listing_id": "", "platform": "etsy", "listing_status": "uploaded", "views": 0, "favorites": 0, "orders": 0, "conversion_rate": 0.0, "revenue": 4.99, "age_days": 0, "score": 20, "classification": "keyword issue"}, {"listing_id": "etsy-import-15", "marketplace_listing_id": "", "platform": "etsy", "listing_status": "uploaded", "views": 0, "favorites": 0, "orders": 0, "conversion_rate": 0.0, "revenue": 2.72, "age_days": 0, "score": 20, "classification": "keyword issue"}, {"listing_id": "etsy-import-16", "marketplace_listing_id": "", "platform": "etsy", "listing_status": "uploaded", "views": 0, "favorites": 0, "orders": 0, "conversion_rate": 0.0, "revenue": 19.99, "age_days": 0, "score": 20, "classification": "keyword issue"}, {"listing_id": "etsy-import-17", "marketplace_listing_id": "", "platform": "etsy", "listing_status": "uploaded", "views": 0, "favorites": 0, "orders": 0, "conversion_rate": 0.0, "revenue": 17.34, "age_days": 0, "score": 20, "classification": "keyword issue"}, {"listing_id": "etsy-import-18", "marketplace_listing_id": "", "platform": "etsy", "listing_status": "uploaded", "views": 0, "favorites": 0, "orders": 0, "conversion_rate": 0.0, "revenue": 25.47, "age_days": 0, "score": 20, "classification": "keyword issue"}, {"listing_id": "etsy-import-19", "marketplace_listing_id": "", "platform": "etsy", "listing_status": "uploaded", "views": 0, "favorites": 0, "orders": 0, "conversion_rate": 0.0, "revenue": 24.0, "age_days": 0, "score": 20, "classification": "keyword issue"}, {"listing_id": "etsy-import-1", "marketplace_listing_id": "", "platform": "etsy", "listing_status": "uploaded", "views": 0, "favorites": 0, "orders": 0, "conversion_rate": 0.0, "revenue": 11.18, "age_days": 0, "score": 20, "classification": "keyword issue"}, {"listing_id": "etsy-import-2", "marketplace_listing_id": "", "platform": "etsy", "listing_status": "uploaded", "views": 0, "favorites": 0, "orders": 0, "conversion_rate": 0.0, "revenue": 3.84, "age_days": 0, "score": 20, "classification": "keyword issue"}, {"listing_id": "etsy-import-3", "marketplace_listing_id": "", "platform": "etsy", "listing_status": "uploaded", "views": 0, "favorites": 0, "orders": 0, "conversion_rate": 0.0, "revenue": 15.65, "age_days": 0, "score": 20, "classification": "keyword issue"}, {"listing_id": "etsy-import-4", "marketplace_listing_id": "", "platform": "etsy", "listing_status": "uploaded", "views": 0, "favorites": 0, "orders": 0, "conversion_rate": 0.0, "revenue": 15.47, "age_days": 0, "score": 20, "classification": "keyword issue"}, {"listing_id": "etsy-import-5", "marketplace_listing_id": "", "platform": "etsy", "listing_status": "uploaded", "views": 0, "favorites": 0, "orders": 0, "conversion_rate": 0.0, "revenue": 24.29, "age_days": 0, "score": 20, "classification": "keyword issue"}, {"listing_id": "etsy-import-6", "marketplace_listing_id": "", "platform": "etsy", "listing_status": "uploaded", "views": 0, "favorites": 0, "orders": 0, "conversion_rate": 0.0, "revenue": 16.0, "age_days": 0, "score": 20, "classification": "keyword issue"}, {"listing_id": "etsy-import-7", "marketplace_listing_id": "", "platform": "etsy", "listing_status": "uploaded", "views": 0, "favorites": 0, "orders": 0, "conversion_rate": 0.0, "revenue": 17.06, "age_days": 0, "score": 20, "classification": "keyword issue"}, {"listing_id": "etsy-import-8", "marketplace_listing_id": "", "platform": "etsy", "listing_status": "uploaded", "views": 0, "favorites": 0, "orders": 0, "conversion_rate": 0.0, "revenue": 15.65, "age_days": 0, "score": 20, "classification": "keyword issue"}, {"listing_id": "etsy-import-9", "marketplace_listing_id": "", "platform": "etsy", "listing_status": "uploaded", "views": 0, "favorites": 0, "orders": 0, "conversion_rate": 0.0, "revenue": 9.67, "age_days": 0, "score": 20, "classification": "keyword issue"}, {"listing_id": "etsy-import-10", "marketplace_listing_id": "", "platform": "etsy", "listing_status": "uploaded", "views": 0, "favorites": 0, "orders": 0, "conversion_rate": 0.0, "revenue": 18.9, "age_days": 0, "score": 20, "classification": "keyword issue"}, {"listing_id": "etsy-import-11", "marketplace_listing_id": "", "platform": "etsy", "listing_status": "uploaded", "views": 0, "favorites": 0, "orders": 0, "conversion_rate": 0.0, "revenue": 21.53, "age_days": 0, "score": 20, "classification": "keyword issue"}, {"listing_id": "etsy-import-12", "marketplace_listing_id": "", "platform": "etsy", "listing_status": "uploaded", "views": 0, "favorites": 0, "orders": 0, "conversion_rate": 0.0, "revenue": 18.33, "age_days": 0, "score": 20, "classification": "keyword issue"}, {"listing_id": "etsy-import-13", "marketplace_listing_id": "", "platform": "etsy", "listing_status": "uploaded", "views": 0, "favorites": 0, "orders": 0, "conversion_rate": 0.0, "revenue": 3.55, "age_days": 0, "score": 20, "classification": "keyword issue"}, {"listing_id": "etsy-import-14", "marketplace_listing_id": "", "platform": "etsy", "listing_status": "uploaded", "views": 0, "favorites": 0, "orders": 0, "conversion_rate": 0.0, "revenue": 4.99, "age_days": 0, "score": 20, "classification": "keyword issue"}, {"listing_id": "etsy-import-15", "marketplace_listing_id": "", "platform": "etsy", "listing_status": "uploaded", "views": 0, "favorites": 0, "orders": 0, "conversion_rate": 0.0, "revenue": 2.72, "age_days": 0, "score": 20, "classification": "keyword issue"}, {"listing_id": "etsy-import-16", "marketplace_listing_id": "", "platform": "etsy", "listing_status": "uploaded", "views": 0, "favorites": 0, "orders": 0, "conversion_rate": 0.0, "revenue": 19.99, "age_days": 0, "score": 20, "classification": "keyword issue"}, {"listing_id": "etsy-import-17", "marketplace_listing_id": "", "platform": "etsy", "listing_status": "uploaded", "views": 0, "favorites": 0, "orders": 0, "conversion_rate": 0.0, "revenue": 17.34, "age_days": 0, "score": 20, "classification": "keyword issue"}, {"listing_id": "etsy-import-18", "marketplace_listing_id": "", "platform": "etsy", "listing_status": "uploaded", "views": 0, "favorites": 0, "orders": 0, "conversion_rate": 0.0, "revenue": 25.47, "age_days": 0, "score": 20, "classification": "keyword issue"}, {"listing_id": "etsy-import-19", "marketplace_listing_id": "", "platform": "etsy", "listing_status": "uploaded", "views": 0, "favorites": 0, "orders": 0, "conversion_rate": 0.0, "revenue": 24.0, "age_days": 0, "score": 20, "classification": "keyword issue"}, {"listing_id": "etsy-import-1", "marketplace_listing_id": "", "platform": "etsy", "listing_status": "uploaded", "views": 0, "favorites": 0, "orders": 0, "conversion_rate": 0.0, "revenue": 11.18, "age_days": 0, "score": 20, "classification": "keyword issue"}, {"listing_id": "etsy-import-2", "marketplace_listing_id": "", "platform": "etsy", "listing_status": "uploaded", "views": 0, "favorites": 0, "orders": 0, "conversion_rate": 0.0, "revenue": 3.84, "age_days": 0, "score": 20, "classification": "keyword issue"}, {"listing_id": "etsy-import-3", "marketplace_listing_id": "", "platform": "etsy", "listing_status": "uploaded", "views": 0, "favorites": 0, "orders": 0, "conversion_rate": 0.0, "revenue": 15.65, "age_days": 0, "score": 20, "classification": "keyword issue"}, {"listing_id": "etsy-import-4", "marketplace_listing_id": "", "platform": "etsy", "listing_status": "uploaded", "views": 0, "favorites": 0, "orders": 0, "conversion_rate": 0.0, "revenue": 15.47, "age_days": 0, "score": 20, "classification": "keyword issue"}, {"listing_id": "etsy-import-5", "marketplace_listing_id": "", "platform": "etsy", "listing_status": "uploaded", "views": 0, "favorites": 0, "orders": 0, "conversion_rate": 0.0, "revenue": 24.29, "age_days": 0, "score": 20, "classification": "keyword issue"}, {"listing_id": "etsy-import-6", "marketplace_listing_id": "", "platform": "etsy", "listing_status": "uploaded", "views": 0, "favorites": 0, "orders": 0, "conversion_rate": 0.0, "revenue": 16.0, "age_days": 0, "score": 20, "classification": "keyword issue"}, {"listing_id": "etsy-import-7", "marketplace_listing_id": "", "platform": "etsy", "listing_status": "uploaded", "views": 0, "favorites": 0, "orders": 0, "conversion_rate": 0.0, "revenue": 17.06, "age_days": 0, "score": 20, "classification": "keyword issue"}, {"listing_id": "etsy-import-8", "marketplace_listing_id": "", "platform": "etsy", "listing_status": "uploaded", "views": 0, "favorites": 0, "orders": 0, "conversion_rate": 0.0, "revenue": 15.65, "age_days": 0, "score": 20, "classification": "keyword issue"}, {"listing_id": "etsy-import-9", "marketplace_listing_id": "", "platform": "etsy", "listing_status": "uploaded", "views": 0, "favorites": 0, "orders": 0, "conversion_rate": 0.0, "revenue": 9.67, "age_days": 0, "score": 20, "classification": "keyword issue"}, {"listing_id": "etsy-import-10", "marketplace_listing_id": "", "platform": "etsy", "listing_status": "uploaded", "views": 0, "favorites": 0, "orders": 0, "conversion_rate": 0.0, "revenue": 18.9, "age_days": 0, "score": 20, "classification": "keyword issue"}, {"listing_id": "etsy-import-11", "marketplace_listing_id": "", "platform": "etsy", "listing_status": "uploaded", "views": 0, "favorites": 0, "orders": 0, "conversion_rate": 0.0, "revenue": 21.53, "age_days": 0, "score": 20, "classification": "keyword issue"}, {"listing_id": "etsy-import-12", "marketplace_listing_id": "", "platform": "etsy", "listing_status": "uploaded", "views": 0, "favorites": 0, "orders": 0, "conversion_rate": 0.0, "revenue": 18.33, "age_days": 0, "score": 20, "classification": "keyword issue"}, {"listing_id": "etsy-import-13", "marketplace_listing_id": "", "platform": "etsy", "listing_status": "uploaded", "views": 0, "favorites": 0, "orders": 0, "conversion_rate": 0.0, "revenue": 3.55, "age_days": 0, "score": 20, "classification": "keyword issue"}, {"listing_id": "etsy-import-14", "marketplace_listing_id": "", "platform": "etsy", "listing_status": "uploaded", "views": 0, "favorites": 0, "orders": 0, "conversion_rate": 0.0, "revenue": 4.99, "age_days": 0, "score": 20, "classification": "keyword issue"}, {"listing_id": "etsy-import-15", "marketplace_listing_id": "", "platform": "etsy", "listing_status": "uploaded", "views": 0, "favorites": 0, "orders": 0, "conversion_rate": 0.0, "revenue": 2.72, "age_days": 0, "score": 20, "classification": "keyword issue"}, {"listing_id": "etsy-import-16", "marketplace_listing_id": "", "platform": "etsy", "listing_status": "uploaded", "views": 0, "favorites": 0, "orders": 0, "conversion_rate": 0.0, "revenue": 19.99, "age_days": 0, "score": 20, "classification": "keyword issue"}, {"listing_id": "etsy-import-17", "marketplace_listing_id": "", "platform": "etsy", "listing_status": "uploaded", "views": 0, "favorites": 0, "orders": 0, "conversion_rate": 0.0, "revenue": 17.34, "age_days": 0, "score": 20, "classification": "keyword issue"}, {"listing_id": "etsy-import-18", "marketplace_listing_id": "", "platform": "etsy", "listing_status": "uploaded", "views": 0, "favorites": 0, "orders": 0, "conversion_rate": 0.0, "revenue": 25.47, "age_days": 0, "score": 20, "classification": "keyword issue"}, {"listing_id": "etsy-import-19", "marketplace_listing_id": "", "platform": "etsy", "listing_status": "uploaded", "views": 0, "favorites": 0, "orders": 0, "conversion_rate": 0.0, "revenue": 24.0, "age_days": 0, "score": 20, "classification": "keyword issue"}]}, "recommendations": {"top_listing_to_improve": "Social Anxiety Cute Characters Sticker Sheet | Pastel Kawaii Planner Stickers", "listing_to_duplicate": "Social Anxiety Cute Characters Sticker Sheet | Pastel Kawaii Planner Stickers", "listing_to_pause": "Social Anxiety Cute Characters Sticker Sheet | Pastel Kawaii Planner Stickers", "best_emotional_hook": "Real Etsy emotions", "strongest_thumbnail_style": "imported from etsy export", "next_recommended_variant": "Social Anxiety Cute Characters Sticker Sheet | Pastel Kawaii Planner Stickers"}, "summary": {"products": 21, "listings": 58, "tasks": 24, "workflows": 5, "revenue": 868.07, "real_revenue": 868.07, "active_listings": 58, "validation_count": 0, "top_niche": "jewelry_case", "top_emotional_hook": "fruit_shirt", "operational_score": 96, "ready_to_scale": "collect market signal"}}</script>
+  <script>
+    const data = JSON.parse(document.getElementById('factory-data').textContent);
+    const factory = document.getElementById('factory');
+    const detail = document.getElementById('detail');
+    const summary = document.getElementById('summary');
+    const topStatus = document.getElementById('topStatus');
+    const etsySync = document.getElementById('etsySync');
+    const recommendationPanels = document.getElementById('recommendationPanels');
+    const pipeline = document.getElementById('pipeline');
+    const heatmap = document.getElementById('heatmap');
+    const execution = document.getElementById('execution');
+    const docks = document.getElementById('docks');
+    const csvStats = document.getElementById('csvStats');
+    document.getElementById('generatedAt').textContent = data.generated_at;
+
+    const summaryItems = [
+      ['Total Products', data.summary.products],
+      ['Active Listings', data.summary.active_listings],
+      ['Estimated Revenue', '$' + data.summary.revenue],
+      ['Validated', data.summary.validation_count],
+      ['Top Niche', data.summary.top_niche],
+      ['Op Score', data.operational_score + '/100'],
+      ['Signal Strength', data.signal_strength_progress + '%'],
+      ['Listing Readiness', data.listing_readiness_progress + '%'],
+    ];
+    summary.innerHTML = summaryItems.map(([label, value]) => '<div class="kpi"><b>' + value + '</b><span>' + label + '</span></div>').join('');
+    topStatus.innerHTML = [
+      ['Factory Status', data.factory_status],
+      ['Scale Readiness', data.scale_readiness],
+      ['Current Focus', data.current_focus],
+      ['Top Action', data.top_action],
+    ].map(([label, value]) => '<div class="status-chip"><span>' + label + '</span><b>' + value + '</b></div>').join('');
+
+    etsySync.innerHTML = [
+      ['Imported Etsy Listings', data.etsy_sync.imported_etsy_listings],
+      ['Active Etsy Listings', data.etsy_sync.imported_active_etsy],
+      ['Imported Favorites', data.etsy_sync.imported_favorites],
+      ['Imported Orders', data.etsy_sync.imported_orders],
+      ['Imported Revenue', '$' + data.etsy_sync.imported_revenue],
+      ['Top Viewed', data.etsy_sync.top_viewed_listing],
+      ['Top Favorited', data.etsy_sync.top_favorited_listing],
+      ['Top Converting', data.etsy_sync.top_converting_listing],
+    ].map(([label, value]) => '<div class="status-chip"><span>' + label + '</span><b>' + value + '</b></div>').join('');
+
+    recommendationPanels.innerHTML = [
+      ['Most Likely Next Sale', data.etsy_sync.most_likely_next_sale],
+      ['Weakest Listing', data.listing_health.top_weakest.length ? data.listing_health.top_weakest[0].listing_id : 'none yet'],
+      ['Highest Potential Listing', data.recommendations.listing_to_duplicate],
+      ['Recommended Action Today', data.recommendations.best_emotional_hook],
+    ].map(([label, value]) => '<div class="status-chip"><span>' + label + '</span><b>' + value + '</b></div>').join('');
+
+    const roomIcons = {
+      founder: '🧭',
+      generation: '⚙️',
+      studio: '🎨',
+      signals: '📡',
+      workflow: '🔧',
+      storage: '🗄️',
+      market: '💰',
+    };
+
+    function renderRoom(room, index) {
+      const stats = Object.entries(room.stats).slice(0, 4).map(([key, value]) => '<div class="mini"><span>' + key + '</span><b>' + value + '</b></div>').join('');
+      const icon = roomIcons[room.id] || '🔹';
+      return '<article class="room ' + room.id + ' ' + room.tone + '" data-index="' + index + '"><div class="status-dot"></div><h2><span class="room-icon">' + icon + '</span>' + room.name + '</h2><div class="modules">' + room.modules.join(' · ') + '</div><div class="room-stats">' + stats + '</div></article>';
+    }
+
+    function renderDetail(room) {
+      const merged = Object.assign({}, room.stats, room.details || {});
+      const rows = Object.entries(merged).map(([key, value]) => {
+        const rendered = Array.isArray(value) ? value.map(item => typeof item === 'object' ? JSON.stringify(item) : item).join('<br>') : value;
+        return '<div class="detail-row"><span>' + key + '</span><b>' + rendered + '</b></div>';
+      }).join('');
+      detail.innerHTML = '<h2>' + room.name + '</h2><div class="modules">' + room.modules.join(' · ') + '</div><div class="detail-list">' + rows + '</div><div class="recommendation">' + room.recommendation + '</div>';
+    }
+
+    function renderMarketPanels(panels) {
+      return panels.map(panel => '<div class="market-card pulse-soft"><span>' + panel.emoji + ' ' + panel.name + '</span><b>' + panel.status + '</b><div>' + panel.count + ' items</div><div class="progress"><div style="width:' + Math.max(8, panel.signal) + '%"></div></div><span>' + (panel.revenue ? '$' + panel.revenue : 'no estimate') + '</span></div>').join('');
+    }
+
+    function renderMoneyFlow(flow) {
+      return flow.map(node => '<div class="path-node"><span>' + node.status + '</span><b>' + node.step + '</b></div>').join('');
+    }
+
+    function renderListingPreviews(previews) {
+      if (!previews.length) {
+        return '<div class="listing-card"><span>No Listings Imported Yet</span><b>Awaiting first listing metrics</b><div class="progress"><div style="width:6%"></div></div></div>';
+      }
+      return previews.map(item => '<div class="listing-card pulse"><span>' + item.product_title + '</span><b>' + item.listing_id + '</b><div>Views: ' + item.views + ' · Fav: ' + item.favorites + ' · Orders: ' + item.orders + '</div><div class="progress"><div style="width:' + Math.max(8, Math.min(100, item.conversion_rate * 100)) + '%"></div></div></div>').join('');
+    }
+
+    function renderProductCards(cards) {
+      if (!cards.length) {
+        return '<div class="product-card"><span>Waiting for First Validation</span><b>No product cards yet</b><div class="badge low">Awaiting signal</div></div>';
+      }
+      return cards.map(card => '<div class="product-card" title="' + card.top_weakness + '"><span>' + card.niche + '</span><b>' + card.title + '</b><div>Stage: <span class="stage-pill">' + card.stage + '</span></div><div>Thumbnail: ' + card.thumbnail_style + '</div><div class="badge ' + card.duplicate_risk + '">dup risk: ' + card.duplicate_risk + '</div><div class="progress"><div style="width:' + Math.max(8, card.signal_strength) + '%"></div></div></div>').join('');
+    }
+
+    function renderExperimentTimeline(events) {
+      if (!events.length) {
+        return '<div class="detail-row"><span>Awaiting Market Signal</span><b>No experiments logged</b></div>';
+      }
+      return events.map(event => '<div class="detail-row"><span>' + event.changed_at + ' · ' + event.product_title + '</span><b>' + event.change_type + '</b><div>' + event.metrics + '</div></div>').join('');
+    }
+
+    function renderReadinessQueue(queue) {
+      return Object.entries(queue).map(([key, items]) => '<div class="detail-row"><span>' + key.replace(/_/g, ' ') + '</span><b>' + (items.length ? items.join(', ') : 'none') + '</b></div>').join('');
+    }
+
+    factory.innerHTML = data.rooms.map(renderRoom).join('');
+    factory.querySelectorAll('.room').forEach((el) => {
+      el.addEventListener('click', () => {
+        const already = el.classList.contains('active');
+        factory.querySelectorAll('.room').forEach((room) => room.classList.remove('active', 'expanded'));
+        el.classList.toggle('active', !already);
+        el.classList.toggle('expanded', already);
+        renderDetail(data.rooms[Number(el.dataset.index)]);
+      });
+    });
+    renderDetail(data.rooms[0]);
+    factory.querySelector('.room')?.classList.add('active');
+
+    pipeline.innerHTML = data.pipeline.map(stage => '<div class="stage ' + (stage.active ? 'active ' : '') + (stage.bottleneck ? 'bottleneck' : '') + '"><span>' + stage.label + '</span><b>' + stage.count + '</b><div class="bar"><div style="width:' + Math.max(8, stage.percent) + '%"></div></div></div>').join('');
+    heatmap.innerHTML = data.signal_heatmap.map(item => '<div class="heat"><span>' + item.label + '</span><b>' + item.value + '</b><div class="bar"><div style="width:' + Math.max(5, item.score) + '%"></div></div></div>').join('');
+    execution.innerHTML = '<div class="recommendation">' + data.execution_mode.highest_leverage_fix + '</div>' + data.execution_mode.next_actions.map(action => '<div class="detail-row"><span>Action</span><b>' + action + '</b></div>').join('') + '<div class="detail-row"><span>Bottleneck</span><b>' + data.execution_mode.biggest_bottleneck + '</b></div>';
+    docks.innerHTML = data.market_outputs.map(item => '<div class="dock"><span>' + item.status + '</span><b>' + item.name + '</b><div>' + item.count + ' ' + item.metric + '</div></div>').join('');
+    document.getElementById('marketPanels').innerHTML = renderMarketPanels(data.market_panels);
+    document.getElementById('moneyFlow').innerHTML = renderMoneyFlow(data.money_flow);
+    document.getElementById('listingPreviews').innerHTML = renderListingPreviews(data.listing_previews);
+    document.getElementById('productCards').innerHTML = renderProductCards(data.product_cards);
+    document.querySelectorAll('.product-card').forEach(card => {
+      card.addEventListener('click', () => card.classList.toggle('expanded'));
+    });
+    const stageFilters = document.getElementById('stageFilters');
+    const stages = data.pipeline.map(stage => stage.label);
+    stageFilters.innerHTML = stages.map(stageName => '<div class="stage-filter" data-stage="' + stageName + '">' + stageName + '</div>').join('');
+    stageFilters.querySelectorAll('.stage-filter').forEach(button => {
+      button.addEventListener('click', () => {
+        stageFilters.querySelectorAll('.stage-filter').forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+        const selected = button.dataset.stage;
+        document.getElementById('productCards').innerHTML = renderProductCards(data.product_cards.filter(card => card.stage === selected || selected === 'IDEATION' && !card.stage));
+      });
+    });
+    document.getElementById('experimentTimeline').innerHTML = renderExperimentTimeline(data.experiment_timeline);
+    document.getElementById('readinessQueue').innerHTML = renderReadinessQueue(data.readiness_queue);
+    csvStats.innerHTML = data.csv_stats.map(row => '<div class="node"><span>' + row.health + '</span><b>' + row.file + '</b><div>' + row.rows + ' rows</div></div>').join('');
+  </script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+# AI Factory OS — pin versions when you deploy; loose pins for local dev
+openai>=1.0.0
+python-dotenv>=1.0.0
+requests>=2.28.0
+beautifulsoup4>=4.12.0
+Pillow

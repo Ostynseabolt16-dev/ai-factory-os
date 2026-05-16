@@ -1,0 +1,3 @@
+keyword,score,demand_score,competition_level,competition_score,trend_keywords,recommendation
+retro anxiety,0,0,unknown,0,,"research failed: HTTPSConnectionPool(host='www.etsy.com', port=443): Max retries exceeded with url: /search?q=retro+anxiety+shirt (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))"
+nurse humor,0,0,unknown,0,,"research failed: HTTPSConnectionPool(host='www.etsy.com', port=443): Max retries exceeded with url: /search?q=nurse+humor+shirt (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))"

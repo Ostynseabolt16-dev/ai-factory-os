@@ -1,0 +1,23 @@
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Virtual environment
+venv/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+
+# Optional: uncomment if generated assets should not be committed
+# designs/

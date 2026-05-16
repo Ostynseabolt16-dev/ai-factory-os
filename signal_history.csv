@@ -1,0 +1,70 @@
+created_at,entity_type,entity_id,signal_score,signal_level,reasoning
+2026-05-16T02:03:35,product,1,1.0,weak,quality=0.0; profitability=0.0; metadata=16.0; stage_bonus=0; duplicate_penalty=15
+2026-05-16T02:03:35,product,1,1.0,weak,quality=0.0; profitability=0.0; metadata=16.0; stage_bonus=0; duplicate_penalty=15
+2026-05-16T02:03:35,product,2,1.0,weak,quality=0.0; profitability=0.0; metadata=16.0; stage_bonus=0; duplicate_penalty=15
+2026-05-16T02:03:35,product,1,1.0,weak,quality=0.0; profitability=0.0; metadata=16.0; stage_bonus=0; duplicate_penalty=15
+2026-05-16T02:03:35,product,2,1.0,weak,quality=0.0; profitability=0.0; metadata=16.0; stage_bonus=0; duplicate_penalty=15
+2026-05-16T02:03:35,niche,unknown,1.0,weak,Average product signal for niche.
+2026-05-16T02:03:35,product,1,1.0,weak,quality=0.0; profitability=0.0; metadata=16.0; stage_bonus=0; duplicate_penalty=15
+2026-05-16T02:03:35,product,2,1.0,weak,quality=0.0; profitability=0.0; metadata=16.0; stage_bonus=0; duplicate_penalty=15
+2026-05-16T02:03:35,batch,3a582789-783b-4d31-8b84-4cd8adee9a0c,0.0,weak,Average product signal plus revenue signal.
+2026-05-16T02:03:35,batch,b7276685-c43c-4a60-a1c9-2c8370a89fb6,0.0,weak,Average product signal plus revenue signal.
+2026-05-16T02:03:35,product,1,1.0,weak,quality=0.0; profitability=0.0; metadata=16.0; stage_bonus=0; duplicate_penalty=15
+2026-05-16T02:03:35,product,2,1.0,weak,quality=0.0; profitability=0.0; metadata=16.0; stage_bonus=0; duplicate_penalty=15
+2026-05-16T02:03:35,product,1,1.0,weak,quality=0.0; profitability=0.0; metadata=16.0; stage_bonus=0; duplicate_penalty=15
+2026-05-16T02:03:35,product,2,1.0,weak,quality=0.0; profitability=0.0; metadata=16.0; stage_bonus=0; duplicate_penalty=15
+2026-05-16T02:03:35,batch,3a582789-783b-4d31-8b84-4cd8adee9a0c,0.0,weak,Average product signal plus revenue signal.
+2026-05-16T02:03:35,batch,b7276685-c43c-4a60-a1c9-2c8370a89fb6,0.0,weak,Average product signal plus revenue signal.
+2026-05-16T02:03:36,product,1,1.0,weak,quality=0.0; profitability=0.0; metadata=16.0; stage_bonus=0; duplicate_penalty=15
+2026-05-16T02:03:36,product,2,1.0,weak,quality=0.0; profitability=0.0; metadata=16.0; stage_bonus=0; duplicate_penalty=15
+2026-05-16T02:03:36,batch,3a582789-783b-4d31-8b84-4cd8adee9a0c,0.0,weak,Average product signal plus revenue signal.
+2026-05-16T02:03:36,batch,b7276685-c43c-4a60-a1c9-2c8370a89fb6,0.0,weak,Average product signal plus revenue signal.
+2026-05-16T02:03:36,product,1,1.0,weak,quality=0.0; profitability=0.0; metadata=16.0; stage_bonus=0; duplicate_penalty=15
+2026-05-16T02:03:36,product,2,1.0,weak,quality=0.0; profitability=0.0; metadata=16.0; stage_bonus=0; duplicate_penalty=15
+2026-05-16T02:03:36,product,1,1.0,weak,quality=0.0; profitability=0.0; metadata=16.0; stage_bonus=0; duplicate_penalty=15
+2026-05-16T02:03:36,product,2,1.0,weak,quality=0.0; profitability=0.0; metadata=16.0; stage_bonus=0; duplicate_penalty=15
+2026-05-16T02:10:41,product,1,1.0,weak,quality=0.0; profitability=0.0; metadata=16.0; stage_bonus=0; duplicate_penalty=15
+2026-05-16T02:10:41,product,2,1.0,weak,quality=0.0; profitability=0.0; metadata=16.0; stage_bonus=0; duplicate_penalty=15
+2026-05-16T02:10:41,batch,3a582789-783b-4d31-8b84-4cd8adee9a0c,0.0,weak,Average product signal plus revenue signal.
+2026-05-16T02:10:41,batch,b7276685-c43c-4a60-a1c9-2c8370a89fb6,0.0,weak,Average product signal plus revenue signal.
+2026-05-16T02:10:41,product,1,1.0,weak,quality=0.0; profitability=0.0; metadata=16.0; stage_bonus=0; duplicate_penalty=15
+2026-05-16T02:10:41,product,2,1.0,weak,quality=0.0; profitability=0.0; metadata=16.0; stage_bonus=0; duplicate_penalty=15
+2026-05-16T02:10:41,batch,3a582789-783b-4d31-8b84-4cd8adee9a0c,0.0,weak,Average product signal plus revenue signal.
+2026-05-16T02:10:41,batch,b7276685-c43c-4a60-a1c9-2c8370a89fb6,0.0,weak,Average product signal plus revenue signal.
+2026-05-16T02:10:41,product,1,1.0,weak,quality=0.0; profitability=0.0; metadata=16.0; stage_bonus=0; duplicate_penalty=15
+2026-05-16T02:10:41,product,2,1.0,weak,quality=0.0; profitability=0.0; metadata=16.0; stage_bonus=0; duplicate_penalty=15
+2026-05-16T02:11:15,product,1,1.0,weak,quality=0.0; profitability=0.0; metadata=16.0; stage_bonus=0; duplicate_penalty=15
+2026-05-16T02:11:15,product,2,1.0,weak,quality=0.0; profitability=0.0; metadata=16.0; stage_bonus=0; duplicate_penalty=15
+2026-05-16T02:11:15,batch,3a582789-783b-4d31-8b84-4cd8adee9a0c,0.0,weak,Average product signal plus revenue signal.
+2026-05-16T02:11:15,batch,b7276685-c43c-4a60-a1c9-2c8370a89fb6,0.0,weak,Average product signal plus revenue signal.
+2026-05-16T02:11:15,product,1,1.0,weak,quality=0.0; profitability=0.0; metadata=16.0; stage_bonus=0; duplicate_penalty=15
+2026-05-16T02:11:15,product,2,1.0,weak,quality=0.0; profitability=0.0; metadata=16.0; stage_bonus=0; duplicate_penalty=15
+2026-05-16T02:11:15,batch,3a582789-783b-4d31-8b84-4cd8adee9a0c,0.0,weak,Average product signal plus revenue signal.
+2026-05-16T02:11:15,batch,b7276685-c43c-4a60-a1c9-2c8370a89fb6,0.0,weak,Average product signal plus revenue signal.
+2026-05-16T02:11:15,product,1,1.0,weak,quality=0.0; profitability=0.0; metadata=16.0; stage_bonus=0; duplicate_penalty=15
+2026-05-16T02:11:15,product,2,1.0,weak,quality=0.0; profitability=0.0; metadata=16.0; stage_bonus=0; duplicate_penalty=15
+2026-05-16T02:15:04,product,1,84.97,strong,quality=20.0; profitability=19.970000000000002; metadata=20.0; stage_bonus=15; duplicate_penalty=0
+2026-05-16T02:15:13,product,1,1.0,weak,quality=0.0; profitability=0.0; metadata=16.0; stage_bonus=0; duplicate_penalty=15
+2026-05-16T02:15:13,product,2,1.0,weak,quality=0.0; profitability=0.0; metadata=16.0; stage_bonus=0; duplicate_penalty=15
+2026-05-16T02:15:13,product,1,1.0,weak,quality=0.0; profitability=0.0; metadata=16.0; stage_bonus=0; duplicate_penalty=15
+2026-05-16T02:15:13,product,2,1.0,weak,quality=0.0; profitability=0.0; metadata=16.0; stage_bonus=0; duplicate_penalty=15
+2026-05-16T03:47:40,product,1,1.0,weak,quality=0.0; profitability=0.0; metadata=16.0; stage_bonus=0; duplicate_penalty=15
+2026-05-16T03:47:40,product,2,1.0,weak,quality=0.0; profitability=0.0; metadata=16.0; stage_bonus=0; duplicate_penalty=15
+2026-05-16T03:47:40,product,1,1.0,weak,quality=0.0; profitability=0.0; metadata=16.0; stage_bonus=0; duplicate_penalty=15
+2026-05-16T03:47:40,product,2,1.0,weak,quality=0.0; profitability=0.0; metadata=16.0; stage_bonus=0; duplicate_penalty=15
+2026-05-16T03:49:31,product,1,1.0,weak,quality=0.0; profitability=0.0; metadata=16.0; stage_bonus=0; duplicate_penalty=15
+2026-05-16T03:49:31,product,2,1.0,weak,quality=0.0; profitability=0.0; metadata=16.0; stage_bonus=0; duplicate_penalty=15
+2026-05-16T03:49:31,batch,3a582789-783b-4d31-8b84-4cd8adee9a0c,0.0,weak,Average product signal plus revenue signal.
+2026-05-16T03:49:31,batch,b7276685-c43c-4a60-a1c9-2c8370a89fb6,0.0,weak,Average product signal plus revenue signal.
+2026-05-16T03:49:31,batch,8f9b01c1-1af8-48e8-a3c8-e07c471d372d,0.0,weak,Average product signal plus revenue signal.
+2026-05-16T03:49:31,product,1,1.0,weak,quality=0.0; profitability=0.0; metadata=16.0; stage_bonus=0; duplicate_penalty=15
+2026-05-16T03:49:31,product,2,1.0,weak,quality=0.0; profitability=0.0; metadata=16.0; stage_bonus=0; duplicate_penalty=15
+2026-05-16T03:49:31,batch,3a582789-783b-4d31-8b84-4cd8adee9a0c,0.0,weak,Average product signal plus revenue signal.
+2026-05-16T03:49:31,batch,b7276685-c43c-4a60-a1c9-2c8370a89fb6,0.0,weak,Average product signal plus revenue signal.
+2026-05-16T03:49:31,batch,8f9b01c1-1af8-48e8-a3c8-e07c471d372d,0.0,weak,Average product signal plus revenue signal.
+2026-05-16T03:49:31,product,1,1.0,weak,quality=0.0; profitability=0.0; metadata=16.0; stage_bonus=0; duplicate_penalty=15
+2026-05-16T03:49:31,product,2,1.0,weak,quality=0.0; profitability=0.0; metadata=16.0; stage_bonus=0; duplicate_penalty=15
+2026-05-16T03:49:31,product,1,1.0,weak,quality=0.0; profitability=0.0; metadata=16.0; stage_bonus=0; duplicate_penalty=15
+2026-05-16T03:49:31,product,2,1.0,weak,quality=0.0; profitability=0.0; metadata=16.0; stage_bonus=0; duplicate_penalty=15
+2026-05-16T03:50:09,product,1,1.0,weak,quality=0.0; profitability=0.0; metadata=16.0; stage_bonus=0; duplicate_penalty=15
+2026-05-16T03:50:09,product,2,1.0,weak,quality=0.0; profitability=0.0; metadata=16.0; stage_bonus=0; duplicate_penalty=15

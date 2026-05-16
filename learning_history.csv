@@ -1,0 +1,17 @@
+created_at,learning_type,entity,score,notes
+2026-05-16T01:58:58,best_quality_niche,unknown,0.0,Highest average quality niche.
+2026-05-16T01:58:58,best_profitability_niche,unknown,0.0,Highest average profitability niche.
+2026-05-16T01:58:58,low_quality_pattern,unknown,2,Repeated low-quality product pattern.
+2026-05-16T01:58:58,best_batch,3a582789-783b-4d31-8b84-4cd8adee9a0c,0.0,Highest current batch score.
+2026-05-16T01:58:58,workflow_status_pattern,pending,3,Most common workflow status.
+2026-05-16T01:58:58,common_failure,Task payload must be a JSON object.,3,Repeated task failure.
+2026-05-16T01:58:58,common_failure,generate_designs requires payload.niche,1,Repeated task failure.
+2026-05-16T01:58:58,duplicate_trend,duplicate_products,1,Duplicate signals detected.
+2026-05-16T01:58:58,best_quality_niche,unknown,0.0,Highest average quality niche.
+2026-05-16T01:58:58,best_profitability_niche,unknown,0.0,Highest average profitability niche.
+2026-05-16T01:58:58,low_quality_pattern,unknown,2,Repeated low-quality product pattern.
+2026-05-16T01:58:58,best_batch,3a582789-783b-4d31-8b84-4cd8adee9a0c,0.0,Highest current batch score.
+2026-05-16T01:58:58,workflow_status_pattern,pending,3,Most common workflow status.
+2026-05-16T01:58:58,common_failure,Task payload must be a JSON object.,3,Repeated task failure.
+2026-05-16T01:58:58,common_failure,generate_designs requires payload.niche,1,Repeated task failure.
+2026-05-16T01:58:58,duplicate_trend,duplicate_products,1,Duplicate signals detected.

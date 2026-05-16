@@ -1,0 +1,105 @@
+
+2026-05-16T01:28:49 [queue] Added task 3c1a0838-15c4-4953-87f3-2f1b81da28bf type=niche_research priority=normal
+2026-05-16T01:28:49 [queue] Added task 39d5a8d1-1fa7-44a9-9a09-fa1926287e22 type=generate_designs priority=normal
+2026-05-16T01:28:49 [queue] Added task 11eec9a7-6e92-46dc-8f85-2ba0774e19ec type=create_mockups priority=high
+2026-05-16T01:28:49 [queue] Added task e86c62ca-3f36-444c-9a0a-c64757f488c9 type=generate_listing priority=normal
+2026-05-16T01:28:49 [queue] Added task b4a0795d-bc98-405a-9140-e3d7097516dd type=analytics_refresh priority=low
+2026-05-16T01:28:49 [queue] Task 11eec9a7-6e92-46dc-8f85-2ba0774e19ec status -> running
+2026-05-16T01:28:49 [runner] Starting task 11eec9a7-6e92-46dc-8f85-2ba0774e19ec type=create_mockups dry_run=True
+2026-05-16T01:28:49 [queue] Task 11eec9a7-6e92-46dc-8f85-2ba0774e19ec status -> completed
+2026-05-16T01:28:49 [history] Logged history task=11eec9a7-6e92-46dc-8f85-2ba0774e19ec success=True error=none
+2026-05-16T01:28:49 [runner] Task 11eec9a7-6e92-46dc-8f85-2ba0774e19ec completed
+2026-05-16T01:28:49 [queue] Added task df708cec-9b03-4af5-9bf4-1ba6f25b6a1d type=generate_listing priority=critical
+2026-05-16T01:28:49 [queue] Task df708cec-9b03-4af5-9bf4-1ba6f25b6a1d status -> running
+2026-05-16T01:28:49 [runner] Starting task df708cec-9b03-4af5-9bf4-1ba6f25b6a1d type=generate_listing dry_run=False
+2026-05-16T01:28:49 [queue] Task df708cec-9b03-4af5-9bf4-1ba6f25b6a1d status -> failed
+2026-05-16T01:28:49 [history] Logged history task=df708cec-9b03-4af5-9bf4-1ba6f25b6a1d success=False error=Task payload must be a JSON object.
+2026-05-16T01:28:49 [runner] Task df708cec-9b03-4af5-9bf4-1ba6f25b6a1d failed: Task payload must be a JSON object.
+2026-05-16T01:28:49 [queue] Retried task df708cec-9b03-4af5-9bf4-1ba6f25b6a1d retry_count=1
+2026-05-16T01:28:49 [queue] Cancelled task df708cec-9b03-4af5-9bf4-1ba6f25b6a1d
+2026-05-16T01:28:49 [queue] Task df708cec-9b03-4af5-9bf4-1ba6f25b6a1d status -> cancelled
+2026-05-16T01:29:00 [queue] Cancelled task 3c1a0838-15c4-4953-87f3-2f1b81da28bf
+2026-05-16T01:29:00 [queue] Task 3c1a0838-15c4-4953-87f3-2f1b81da28bf status -> cancelled
+2026-05-16T01:29:00 [queue] Cancelled task 39d5a8d1-1fa7-44a9-9a09-fa1926287e22
+2026-05-16T01:29:00 [queue] Task 39d5a8d1-1fa7-44a9-9a09-fa1926287e22 status -> cancelled
+2026-05-16T01:29:00 [queue] Cancelled task e86c62ca-3f36-444c-9a0a-c64757f488c9
+2026-05-16T01:29:00 [queue] Task e86c62ca-3f36-444c-9a0a-c64757f488c9 status -> cancelled
+2026-05-16T01:29:00 [queue] Cancelled task b4a0795d-bc98-405a-9140-e3d7097516dd
+2026-05-16T01:29:00 [queue] Task b4a0795d-bc98-405a-9140-e3d7097516dd status -> cancelled
+2026-05-16T01:34:01 [pipeline] Created variant product 2 from parent 1
+2026-05-16T01:34:01 [queue] Added task a897e8d4-c46b-46c0-a285-f259ec23934f type=review_product priority=critical
+2026-05-16T01:34:01 [queue] Task a897e8d4-c46b-46c0-a285-f259ec23934f status -> running
+2026-05-16T01:34:01 [runner] Starting task a897e8d4-c46b-46c0-a285-f259ec23934f type=review_product dry_run=True
+2026-05-16T01:34:01 [queue] Task a897e8d4-c46b-46c0-a285-f259ec23934f status -> completed
+2026-05-16T01:34:01 [history] Logged history task=a897e8d4-c46b-46c0-a285-f259ec23934f success=True error=none
+2026-05-16T01:34:01 [runner] Task a897e8d4-c46b-46c0-a285-f259ec23934f completed
+2026-05-16T01:34:01 [queue] Added task 7b0a383e-029c-4803-9802-c2f384315e5a type=create_variant priority=critical
+2026-05-16T01:34:01 [queue] Task 7b0a383e-029c-4803-9802-c2f384315e5a status -> running
+2026-05-16T01:34:01 [runner] Starting task 7b0a383e-029c-4803-9802-c2f384315e5a type=create_variant dry_run=False
+2026-05-16T01:34:01 [queue] Task 7b0a383e-029c-4803-9802-c2f384315e5a status -> failed
+2026-05-16T01:34:01 [history] Logged history task=7b0a383e-029c-4803-9802-c2f384315e5a success=False error=Task payload must be a JSON object.
+2026-05-16T01:34:01 [runner] Task 7b0a383e-029c-4803-9802-c2f384315e5a failed: Task payload must be a JSON object.
+2026-05-16T01:34:01 [queue] Cancelled task 7b0a383e-029c-4803-9802-c2f384315e5a
+2026-05-16T01:34:01 [queue] Task 7b0a383e-029c-4803-9802-c2f384315e5a status -> cancelled
+2026-05-16T01:38:32 [queue] Task 4930bdb5-f0fd-4bae-8852-52a1b88bcf5d status -> running
+2026-05-16T01:38:32 [runner] Starting task 4930bdb5-f0fd-4bae-8852-52a1b88bcf5d type=generate_designs dry_run=True
+2026-05-16T01:38:32 [queue] Task 4930bdb5-f0fd-4bae-8852-52a1b88bcf5d status -> completed
+2026-05-16T01:38:32 [history] Logged history task=4930bdb5-f0fd-4bae-8852-52a1b88bcf5d success=True error=none
+2026-05-16T01:38:32 [runner] Task 4930bdb5-f0fd-4bae-8852-52a1b88bcf5d completed
+2026-05-16T01:39:36 [queue] Added task 790660f6-e253-496b-95ec-4d7c692a5fb1 type=niche_research priority=normal
+2026-05-16T01:44:13 [batch] Created production batch 09088a4d-5693-4640-89b5-62b691466646 niche=retro nurse amount=2
+2026-05-16T01:44:13 [batch] Added product 1 to batch 09088a4d-5693-4640-89b5-62b691466646
+2026-05-16T01:44:13 [batch] Created production batch 3a582789-783b-4d31-8b84-4cd8adee9a0c niche=dry-run batch niche amount=1
+2026-05-16T01:44:13 [queue] Added task 00d1173e-6340-4ce1-897c-54087d5c17f8 type=batch_generation priority=normal
+2026-05-16T01:44:13 [queue] Task 790660f6-e253-496b-95ec-4d7c692a5fb1 status -> running
+2026-05-16T01:44:13 [runner] Starting task 790660f6-e253-496b-95ec-4d7c692a5fb1 type=niche_research dry_run=True
+2026-05-16T01:44:13 [queue] Task 790660f6-e253-496b-95ec-4d7c692a5fb1 status -> completed
+2026-05-16T01:44:13 [history] Logged history task=790660f6-e253-496b-95ec-4d7c692a5fb1 success=True error=none
+2026-05-16T01:44:13 [runner] Task 790660f6-e253-496b-95ec-4d7c692a5fb1 completed
+2026-05-16T01:44:13 [queue] Cancelled task 00d1173e-6340-4ce1-897c-54087d5c17f8
+2026-05-16T01:44:13 [queue] Task 00d1173e-6340-4ce1-897c-54087d5c17f8 status -> cancelled
+2026-05-16T01:44:30 [batch] Archived batch 3a582789-783b-4d31-8b84-4cd8adee9a0c
+2026-05-16T01:49:20 [batch] Created production batch b7276685-c43c-4a60-a1c9-2c8370a89fb6 niche=meme sticker design amount=6
+2026-05-16T01:49:20 [queue] Added task a763e391-bd4e-4df9-b95e-ba856531e587 type=batch_generation priority=normal
+2026-05-16T01:53:52 [workflow] Workflow 14ddd390-c98f-421b-a119-c62ef73e4285 dry-run created with 3 planned task(s)
+2026-05-16T01:53:52 [workflow] Workflow eda84428-494b-41a1-8d5f-c4e2c06538ed dry-run created with 3 planned task(s)
+2026-05-16T01:53:52 [queue] Added task 67bddc95-10a4-41a5-927a-eae8597893b9 type=generate_listing priority=critical
+2026-05-16T01:53:52 [queue] Task 67bddc95-10a4-41a5-927a-eae8597893b9 status -> running
+2026-05-16T01:53:52 [runner] Starting task 67bddc95-10a4-41a5-927a-eae8597893b9 type=generate_listing dry_run=False
+2026-05-16T01:53:52 [queue] Task 67bddc95-10a4-41a5-927a-eae8597893b9 status -> failed
+2026-05-16T01:53:52 [history] Logged history task=67bddc95-10a4-41a5-927a-eae8597893b9 success=False error=Task payload must be a JSON object.
+2026-05-16T01:53:52 [runner] Task 67bddc95-10a4-41a5-927a-eae8597893b9 failed: Task payload must be a JSON object.
+2026-05-16T01:53:52 [queue] Cancelled task 67bddc95-10a4-41a5-927a-eae8597893b9
+2026-05-16T01:53:52 [queue] Task 67bddc95-10a4-41a5-927a-eae8597893b9 status -> cancelled
+2026-05-16T01:58:58 [workflow] Workflow 05d7f40d-4027-4490-b6da-cb26a72cc18d dry-run created with 3 planned task(s)
+2026-05-16T01:58:58 [queue] Added task 74c17538-7c94-464b-b24a-2c8db9921c73 type=analytics_refresh priority=critical
+2026-05-16T01:58:58 [queue] Task 74c17538-7c94-464b-b24a-2c8db9921c73 status -> running
+2026-05-16T01:58:58 [runner] Starting task 74c17538-7c94-464b-b24a-2c8db9921c73 type=analytics_refresh dry_run=False
+2026-05-16T01:58:58 [queue] Task 74c17538-7c94-464b-b24a-2c8db9921c73 status -> failed
+2026-05-16T01:58:58 [history] Logged history task=74c17538-7c94-464b-b24a-2c8db9921c73 success=False error=Task payload must be a JSON object.
+2026-05-16T01:58:58 [runner] Task 74c17538-7c94-464b-b24a-2c8db9921c73 failed: Task payload must be a JSON object.
+2026-05-16T01:58:58 [queue] Cancelled task 74c17538-7c94-464b-b24a-2c8db9921c73
+2026-05-16T01:58:58 [queue] Task 74c17538-7c94-464b-b24a-2c8db9921c73 status -> cancelled
+2026-05-16T02:03:36 [workflow] Workflow 1c7be776-63de-445d-b4e2-9372ef56e8b6 dry-run created with 3 planned task(s)
+2026-05-16T02:03:36 [queue] Added task eeebb91d-032a-41c5-9377-15f3bc676710 type=analytics_refresh priority=critical
+2026-05-16T02:03:36 [queue] Task eeebb91d-032a-41c5-9377-15f3bc676710 status -> running
+2026-05-16T02:03:36 [runner] Starting task eeebb91d-032a-41c5-9377-15f3bc676710 type=analytics_refresh dry_run=False
+2026-05-16T02:03:36 [queue] Task eeebb91d-032a-41c5-9377-15f3bc676710 status -> failed
+2026-05-16T02:03:36 [history] Logged history task=eeebb91d-032a-41c5-9377-15f3bc676710 success=False error=Task payload must be a JSON object.
+2026-05-16T02:03:36 [runner] Task eeebb91d-032a-41c5-9377-15f3bc676710 failed: Task payload must be a JSON object.
+2026-05-16T02:03:36 [queue] Cancelled task eeebb91d-032a-41c5-9377-15f3bc676710
+2026-05-16T02:03:36 [queue] Task eeebb91d-032a-41c5-9377-15f3bc676710 status -> cancelled
+2026-05-16T02:10:41 [queue] Added task 07de75e7-913d-4f7f-b8b9-6ebad0d6fa54 type=analytics_refresh priority=critical
+2026-05-16T02:10:41 [queue] Task 07de75e7-913d-4f7f-b8b9-6ebad0d6fa54 status -> running
+2026-05-16T02:10:41 [runner] Starting task 07de75e7-913d-4f7f-b8b9-6ebad0d6fa54 type=analytics_refresh dry_run=False
+2026-05-16T02:10:41 [queue] Task 07de75e7-913d-4f7f-b8b9-6ebad0d6fa54 status -> failed
+2026-05-16T02:10:41 [history] Logged history task=07de75e7-913d-4f7f-b8b9-6ebad0d6fa54 success=False error=Task payload must be a JSON object.
+2026-05-16T02:10:41 [runner] Task 07de75e7-913d-4f7f-b8b9-6ebad0d6fa54 failed: Task payload must be a JSON object.
+2026-05-16T02:10:41 [queue] Cancelled task 07de75e7-913d-4f7f-b8b9-6ebad0d6fa54
+2026-05-16T02:10:41 [queue] Task 07de75e7-913d-4f7f-b8b9-6ebad0d6fa54 status -> cancelled
+2026-05-16T02:22:41 [workflow] Workflow 03db4628-b2ef-4e1d-82af-99217852a78e dry-run created with 4 planned task(s)
+2026-05-16T03:46:14 [batch] Created production batch 8f9b01c1-1af8-48e8-a3c8-e07c471d372d niche=Sticker designs that will sell good on esty amount=3
+2026-05-16T03:46:14 [queue] Added task 3ee99825-811d-468e-a6fc-b23d248a2fe1 type=batch_generation priority=normal
+2026-05-16T03:46:14 [queue] Added task 7328275e-80ba-49d7-a1e3-54f59b1ece32 type=batch_review priority=normal
+2026-05-16T03:46:14 [queue] Added task 8cea6b73-dd78-46eb-9bfe-ded10bf5b768 type=batch_mockups priority=high
+2026-05-16T03:46:14 [workflow] Workflow dde5cef7-9453-4dc5-aad2-52ce9ab6700f scheduled 3 task(s)

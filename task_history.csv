@@ -1,0 +1,15 @@
+task_id,type,started_at,completed_at,duration_seconds,success,error,output
+d477bcd5-32da-47ff-8792-2875d5869a4f,generate_designs,2026-05-16T01:16:05,2026-05-16T01:16:05,0.0,False,generate_designs requires payload.niche,{}
+e2c58580-a1b6-4b90-9516-37d9e672b72b,generate_designs,2026-05-16T01:16:05,2026-05-16T01:16:05,0.0,True,,"{""dry_run"": true, ""message"": ""Simulated task. No paid APIs, uploads, or generation were run."", ""payload"": {""amount"": 2, ""niche"": ""retro nurse""}, ""task_type"": ""generate_designs""}"
+f4340dc6-5db7-4154-870d-1625670311e9,niche_research,2026-05-16T01:16:05,2026-05-16T01:16:05,0.0,True,,"{""report_count"": 2, ""top_keyword"": ""retro anxiety""}"
+c91aed21-deca-4d29-840d-b500d0623428,generate_designs,2026-05-16T01:16:33,2026-05-16T01:16:33,0.0,True,,"{""dry_run"": true, ""message"": ""Simulated task. No paid APIs, uploads, or generation were run."", ""payload"": {""amount"": 1, ""niche"": """"}, ""task_type"": ""generate_designs""}"
+11eec9a7-6e92-46dc-8f85-2ba0774e19ec,create_mockups,2026-05-16T01:28:49,2026-05-16T01:28:49,0.0,True,,"{""dry_run"": true, ""message"": ""Simulated task. No paid APIs, uploads, or generation were run."", ""payload"": {""filename"": """", ""product_id"": ""1""}, ""task_type"": ""create_mockups""}"
+df708cec-9b03-4af5-9bf4-1ba6f25b6a1d,generate_listing,2026-05-16T01:28:49,2026-05-16T01:28:49,0.0,False,Task payload must be a JSON object.,{}
+a897e8d4-c46b-46c0-a285-f259ec23934f,review_product,2026-05-16T01:34:01,2026-05-16T01:34:01,0.0,True,,"{""dry_run"": true, ""message"": ""Simulated task. No paid APIs, uploads, or generation were run."", ""payload"": {""product_id"": ""1""}, ""task_type"": ""review_product""}"
+7b0a383e-029c-4803-9802-c2f384315e5a,create_variant,2026-05-16T01:34:01,2026-05-16T01:34:01,0.0,False,Task payload must be a JSON object.,{}
+4930bdb5-f0fd-4bae-8852-52a1b88bcf5d,generate_designs,2026-05-16T01:38:32,2026-05-16T01:38:32,0.0,True,,"{""dry_run"": true, ""message"": ""Simulated task. No paid APIs, uploads, or generation were run."", ""payload"": {""amount"": 1, ""niche"": ""teacher humor""}, ""task_type"": ""generate_designs""}"
+790660f6-e253-496b-95ec-4d7c692a5fb1,niche_research,2026-05-16T01:44:13,2026-05-16T01:44:13,0.0,True,,"{""dry_run"": true, ""message"": ""Simulated task. No paid APIs, uploads, or generation were run."", ""payload"": {""keywords"": [""video games"", ""gift idea"", ""fallout"", ""lego""]}, ""task_type"": ""niche_research""}"
+67bddc95-10a4-41a5-927a-eae8597893b9,generate_listing,2026-05-16T01:53:52,2026-05-16T01:53:52,0.0,False,Task payload must be a JSON object.,{}
+74c17538-7c94-464b-b24a-2c8db9921c73,analytics_refresh,2026-05-16T01:58:58,2026-05-16T01:58:58,0.0,False,Task payload must be a JSON object.,{}
+eeebb91d-032a-41c5-9377-15f3bc676710,analytics_refresh,2026-05-16T02:03:36,2026-05-16T02:03:36,0.0,False,Task payload must be a JSON object.,{}
+07de75e7-913d-4f7f-b8b9-6ebad0d6fa54,analytics_refresh,2026-05-16T02:10:41,2026-05-16T02:10:41,0.0,False,Task payload must be a JSON object.,{}
