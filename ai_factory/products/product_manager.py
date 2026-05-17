@@ -45,10 +45,20 @@ REQUIRED_COLUMNS = [
     "status",
     "created_at",
     "quality_score",
+    "trend_score",
+    "saturation_score",
+    "opportunity_score",
+    "upload_priority",
+    "title_quality_score",
+    "tag_quality_score",
+    "listing_completeness_score",
+    "niche_confidence",
+    "performance_rating",
     "platform",
     "title",
     "tags",
     "description",
+    "estimated_category",
     "upload_date",
     "reviewed_at",
     "mockup_created_at",
@@ -94,7 +104,7 @@ def _normalize_status(status: str) -> str:
 
 def _stage_for_status(status: str) -> str:
     return {
-        "draft": "generation",
+        "draft": "ideation",
         "reviewed": "review",
         "mockup_ready": "mockups",
         "upload_ready": "listing",
@@ -129,10 +139,20 @@ def _migrate_row(row: dict[str, str]) -> dict[str, str]:
     migrated["status"] = _normalize_status(row.get("status") or DEFAULT_STATUS)
     migrated["created_at"] = (row.get("created_at") or _now()).strip()
     migrated["quality_score"] = _clean_number(row.get("quality_score") or "0")
+    migrated["trend_score"] = _clean_number(row.get("trend_score") or "0")
+    migrated["saturation_score"] = _clean_number(row.get("saturation_score") or "0")
+    migrated["opportunity_score"] = _clean_number(row.get("opportunity_score") or "0")
+    migrated["upload_priority"] = row.get("upload_priority") or "low"
+    migrated["title_quality_score"] = _clean_number(row.get("title_quality_score") or "0")
+    migrated["tag_quality_score"] = _clean_number(row.get("tag_quality_score") or "0")
+    migrated["listing_completeness_score"] = _clean_number(row.get("listing_completeness_score") or "0")
+    migrated["niche_confidence"] = _clean_number(row.get("niche_confidence") or "0")
+    migrated["performance_rating"] = row.get("performance_rating") or ""
     migrated["platform"] = (row.get("platform") or DEFAULT_PLATFORM).strip()
     migrated["title"] = row.get("title") or ""
     migrated["tags"] = row.get("tags") or ""
     migrated["description"] = row.get("description") or ""
+    migrated["estimated_category"] = row.get("estimated_category") or ""
     migrated["upload_date"] = row.get("upload_date") or ""
     migrated["reviewed_at"] = row.get("reviewed_at") or ""
     migrated["mockup_created_at"] = row.get("mockup_created_at") or ""
@@ -223,6 +243,14 @@ def create_product_record(
     filename: str = "",
     status: str = DEFAULT_STATUS,
     quality_score: int | str = 0,
+    trend_score: int | str = 0,
+    saturation_score: int | str = 0,
+    opportunity_score: int | str = 0,
+    upload_priority: str = "low",
+    title_quality_score: int | str = 0,
+    tag_quality_score: int | str = 0,
+    listing_completeness_score: int | str = 0,
+    niche_confidence: int | str = 0,
     platform: str = DEFAULT_PLATFORM,
     title: str = "",
     tags: str | list[str] = "",
@@ -230,6 +258,8 @@ def create_product_record(
     notes: str = "",
     pipeline_stage: str = "",
     parent_product_id: str | int = "",
+    performance_rating: str = "",
+    estimated_category: str = "",
     product_type: str = "original",
     idea: str = "",
     image_path: str = "",
@@ -254,10 +284,20 @@ def create_product_record(
                 "status": status,
                 "created_at": _now(),
                 "quality_score": str(quality_score),
+                "trend_score": str(trend_score),
+                "saturation_score": str(saturation_score),
+                "opportunity_score": str(opportunity_score),
+                "upload_priority": upload_priority,
+                "title_quality_score": str(title_quality_score),
+                "tag_quality_score": str(tag_quality_score),
+                "listing_completeness_score": str(listing_completeness_score),
+                "niche_confidence": str(niche_confidence),
                 "platform": platform,
                 "title": title,
                 "tags": tags_value,
                 "description": description,
+                "estimated_category": estimated_category,
+                "performance_rating": performance_rating,
                 "upload_date": "",
                 "reviewed_at": "",
                 "mockup_created_at": "",
@@ -353,6 +393,26 @@ def get_products_by_status(status: str, path: Path | None = None) -> list[dict[s
     if status not in ALLOWED_STATUSES:
         raise ValueError(f"Invalid status: {status}")
     return [row for row in read_products(path) if (row.get("status") or "").strip().lower() == status]
+
+
+def update_product_fields(
+    product_id: int | str,
+    updates: dict[str, str | int | float | list[str]],
+    path: Path | None = None,
+) -> dict[str, str]:
+    """Update arbitrary product fields and persist the result."""
+    rows = read_products(path)
+    product = _find_product(rows, product_id)
+    for key, value in updates.items():
+        if key not in CSV_COLUMNS:
+            continue
+        if isinstance(value, list):
+            product[key] = "|".join(str(item).strip() for item in value if str(item).strip())
+        else:
+            product[key] = str(value).strip()
+    product["last_updated_at"] = _now()
+    write_products(rows, path)
+    return product
 
 
 def get_recent_products(limit: int = 10, path: Path | None = None) -> list[dict[str, str]]:

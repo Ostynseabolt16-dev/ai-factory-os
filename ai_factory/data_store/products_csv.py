@@ -16,6 +16,7 @@ from ai_factory.products.product_manager import (
     next_product_id,
     read_products,
 )
+from ai_factory.visuals.factory_map import build_factory_map
 
 
 def normalize_idea(idea: str) -> str:
@@ -48,7 +49,7 @@ def append_design_row(
     path: Path | None = None,
 ) -> int:
     """Append a design-only product row."""
-    return create_product_record(
+    product_id = create_product_record(
         niche=niche,
         filename=filename,
         batch_id=batch_id,
@@ -57,6 +58,8 @@ def append_design_row(
         image_path=filename,
         path=path,
     )
+    build_factory_map()
+    return product_id
 
 
 def read_product_rows(path: Path | None = None) -> list[dict[str, str]]:
@@ -101,6 +104,7 @@ def append_product_row(
         path=target_path,
     )
     ensure_products_csv_schema(target_path)
+    build_factory_map()
     from ai_factory.config import PRODUCTS_CSV
 
     return target_path or PRODUCTS_CSV

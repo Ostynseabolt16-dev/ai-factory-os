@@ -57,6 +57,19 @@ from ai_factory.tasks.task_runner import run_next_task
 from ai_factory.workflows.workflow_engine import create_batch_workflow, create_design_workflow, get_workflow_history
 from ai_factory.intelligence.historical_learning import generate_learning_summary
 from ai_factory.intelligence.priority_engine import generate_priority_queue
+from ai_factory.intelligence.trend_score import (
+    calculate_product_trend_score,
+    cluster_products_by_topic,
+    detect_niche_saturation,
+    generate_product_intelligence,
+    import_trend_csv,
+    load_trend_data,
+    recommend_higher_performing_niches,
+    score_all_products,
+    score_listing_completeness,
+    score_tag_quality,
+    score_title_quality,
+)
 from ai_factory.intelligence.revenue_optimizer import (
     recommend_batch_sizes,
     recommend_best_niches,
@@ -72,6 +85,15 @@ from ai_factory.listings.etsy_seo_optimizer import score_seo_strength, suggest_k
 from ai_factory.importers.etsy_shop_importer import import_existing_etsy_listings
 from ai_factory.intelligence.factory_recommendations import generate_factory_recommendations
 from ai_factory.intelligence.listing_health import summarize_listing_health
+from ai_factory.etsy.etsy_upload import (
+    cleanup_completed_etsy_upload_queue,
+    export_etsy_upload_queue_packages,
+    get_etsy_upload_queue_report,
+    list_etsy_upload_queue,
+    process_etsy_upload_queue,
+    queue_etsy_upload,
+    retry_failed_etsy_upload,
+)
 from ai_factory.listings.listing_change_history import record_listing_change, summarize_listing_changes
 from ai_factory.listings.listing_packager import export_listing_package
 from ai_factory.listings.listing_tracker import create_listing_record, generate_listing_report, read_listings, update_listing_metrics, update_thumbnail_test
@@ -249,8 +271,19 @@ def run_cli() -> None:
         print("78. Import existing Etsy shop listings from export CSV")
         print("79. View listing health report")
         print("80. View recommendation engine report")
-        print("81. Rebuild Etsy sync dashboard")
-        print("82. Exit")
+        print("81. Queue Etsy upload-ready products")
+        print("82. Run Etsy upload queue")
+        print("83. Inspect Etsy upload queue")
+        print("84. Retry failed Etsy queue items")
+        print("85. Cleanup completed Etsy queue items")
+        print("86. Export queued Etsy listing packages")
+        print("87. Import market trend CSV")
+        print("88. Score products with trend intelligence")
+        print("89. Inspect product intelligence")
+        print("90. View niche saturation and clusters")
+        print("91. Rebuild Etsy sync dashboard")
+        print("92. Force Full Factory Sync")
+        print("93. Exit")
 
         choice = input("Choose an option: ").strip()
 
@@ -534,9 +567,65 @@ def run_cli() -> None:
             elif choice == "80":
                 print(generate_factory_recommendations(read_listings(), read_products()))
             elif choice == "81":
+                publish_mode = input("Publish mode (draft/publish) [draft]: ").strip().lower() or "draft"
+                result = queue_etsy_upload(publish_mode=publish_mode)
+                print("Queued upload-ready Etsy products.")
+                print(result)
+            elif choice == "82":
+                publish_mode = input("Publish mode (draft/publish) [draft]: ").strip().lower() or "draft"
+                dry_run = input("Dry run? (y/n) [y]: ").strip().lower() != "n"
+                result = process_etsy_upload_queue(dry_run=dry_run, publish_mode=publish_mode)
+                print("Etsy upload queue processed.")
+                print(result)
+            elif choice == "83":
+                print("=== Etsy Upload Queue ===")
+                print(get_etsy_upload_queue_report())
+                for row in list_etsy_upload_queue(limit=20):
+                    print(row)
+            elif choice == "84":
+                result = retry_failed_etsy_upload()
+                print("Reset failed Etsy queue items to pending.")
+                print(result)
+            elif choice == "85":
+                result = cleanup_completed_etsy_upload_queue()
+                print("Cleaned up completed Etsy queue items.")
+                print(result)
+            elif choice == "86":
+                export_dir = input("Export directory (blank for default): ").strip() or None
+                product_filter = input("Product ids to export, comma-separated (blank for all queued): ").strip()
+                product_ids = [item.strip() for item in product_filter.split(",") if item.strip()] or None
+                result = export_etsy_upload_queue_packages(product_ids=product_ids, export_dir=Path(export_dir) if export_dir else None)
+                print("Exported Etsy upload queue packages.")
+                print(result)
+            elif choice == "87":
+                csv_path = input("Trend CSV path: ").strip()
+                result = import_trend_csv(csv_path)
+                print("Imported trend data.")
+                print(result)
+            elif choice == "88":
+                result = score_all_products(load_trend_data())
+                print("Scored all products with trend intelligence.")
+                print(result)
+            elif choice == "89":
+                product_id = input("Product id: ").strip()
+                product = _get_product(product_id)
+                intelligence = generate_product_intelligence(product, load_trend_data())
+                print(f"Product intelligence for {product_id}:")
+                print(intelligence)
+            elif choice == "90":
+                print("=== Niche saturation ===")
+                print(detect_niche_saturation())
+                print("=== Product clusters ===")
+                for cluster in cluster_products_by_topic():
+                    print(cluster)
+            elif choice == "91":
                 result = build_factory_map()
                 print(f"Etsy sync dashboard rebuilt: {result['output_path']}")
-            elif choice == "82":
+            elif choice == "92":
+                result = build_factory_map()
+                print(f"Full Factory Sync complete: {result['output_path']}")
+                _open_path_in_browser(result["output_path"])
+            elif choice == "93":
                 print("Goodbye.")
                 return
             else:

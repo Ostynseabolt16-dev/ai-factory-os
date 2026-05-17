@@ -1,7 +1,14 @@
 #!/usr/bin/env python3
-"""Upload / sync designs to Printify or Etsy — manual first, API later."""
+"""Upload / sync designs to Printify or Etsy.
 
-# TODO: Printify REST: create product from approved PNG + template IDs (see ai_factory/mockups)
+This module is a lightweight pipeline entrypoint for the Etsy upload queue.
+"""
+
+from __future__ import annotations
+
+from ai_factory.etsy.etsy_upload import process_etsy_upload_queue
 
 if __name__ == "__main__":
-    print("Uploader not wired yet. Export PNGs from designs/ and push through Printify UI first.")
+    result = process_etsy_upload_queue(dry_run=True)
+    print("Etsy upload queue processed in dry run mode.")
+    print(result)

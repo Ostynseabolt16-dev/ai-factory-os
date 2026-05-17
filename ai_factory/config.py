@@ -18,6 +18,8 @@ MOCKUPS_DIR = PROJECT_ROOT / "mockups"
 
 # Product registry (CSV until you add a database).
 PRODUCTS_CSV = PROJECT_ROOT / "products.csv"
+ETSY_UPLOAD_LOG_CSV = PROJECT_ROOT / "etsy_upload_log.csv"
+TREND_DATA_CSV = PROJECT_ROOT / "trend_data.csv"
 
 # Persistent task orchestration files.
 TASK_QUEUE_CSV = PROJECT_ROOT / "task_queue.csv"

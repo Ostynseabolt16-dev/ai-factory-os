@@ -848,7 +848,7 @@ def _render_html(data: dict[str, object]) -> str:
         <h1>HomeBase Factory Map</h1>
         <p class="subtitle">A local visual command center for the real AI Factory OS. This map reads CSV memory and module outputs only; it does not execute workflows, upload products, call APIs, or run background workers.</p>
       </div>
-      <div class="stamp">Generated<br><span id="generatedAt"></span></div>
+      <div class="stamp">Last synchronized<br><span id="generatedAt"></span></div>
     </header>
     <section class="stats" id="summary"></section>
     <main class="layout">

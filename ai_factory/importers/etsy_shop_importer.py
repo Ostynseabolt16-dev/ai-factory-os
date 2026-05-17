@@ -19,6 +19,7 @@ from ai_factory.etsy.marketplace_sync import (
     deduplicate_marketplace_rows,
     marketplace_listing_id_or_fallback,
 )
+from ai_factory.visuals.factory_map import build_factory_map
 from ai_factory.listings.listing_tracker import (
     LISTING_COLUMNS,
     LISTINGS_CSV,
@@ -346,8 +347,9 @@ def import_existing_etsy_listings(csv_path: str | Path) -> dict[str, object]:
             skipped += 1
             errors.append(f"Row {index}: {exc}")
 
-    if imported or updated:
+    if imported or updated or created_products:
         _rewrite_listings(listings)
+        build_factory_map()
 
     return {
         "source": str(csv_path),
