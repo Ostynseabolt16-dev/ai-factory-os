@@ -79,6 +79,9 @@ def append_product_row(
     status: str = DEFAULT_STATUS,
     mockup_paths: list[str] | None = None,
     quality_score: int = 0,
+    confidence_score: int = 0,
+    image_prompt: str = "",
+    generation_hash: str = "",
     batch_id: str | int = "",
     path: Path | None = None,
 ) -> Path:
@@ -101,6 +104,9 @@ def append_product_row(
         status=status,
         mockup_paths=mockup_paths or [],
         quality_score=quality_score,
+        confidence_score=confidence_score,
+        image_prompt=image_prompt,
+        generation_hash=generation_hash,
         path=target_path,
     )
     ensure_products_csv_schema(target_path)

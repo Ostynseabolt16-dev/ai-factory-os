@@ -46,6 +46,7 @@ REQUIRED_COLUMNS = [
     "created_at",
     "quality_score",
     "trend_score",
+    "confidence_score",
     "saturation_score",
     "opportunity_score",
     "upload_priority",
@@ -58,6 +59,8 @@ REQUIRED_COLUMNS = [
     "title",
     "tags",
     "description",
+    "image_prompt",
+    "generation_hash",
     "estimated_category",
     "upload_date",
     "reviewed_at",
@@ -140,6 +143,7 @@ def _migrate_row(row: dict[str, str]) -> dict[str, str]:
     migrated["created_at"] = (row.get("created_at") or _now()).strip()
     migrated["quality_score"] = _clean_number(row.get("quality_score") or "0")
     migrated["trend_score"] = _clean_number(row.get("trend_score") or "0")
+    migrated["confidence_score"] = _clean_number(row.get("confidence_score") or "0")
     migrated["saturation_score"] = _clean_number(row.get("saturation_score") or "0")
     migrated["opportunity_score"] = _clean_number(row.get("opportunity_score") or "0")
     migrated["upload_priority"] = row.get("upload_priority") or "low"
@@ -152,6 +156,8 @@ def _migrate_row(row: dict[str, str]) -> dict[str, str]:
     migrated["title"] = row.get("title") or ""
     migrated["tags"] = row.get("tags") or ""
     migrated["description"] = row.get("description") or ""
+    migrated["image_prompt"] = row.get("image_prompt") or ""
+    migrated["generation_hash"] = row.get("generation_hash") or ""
     migrated["estimated_category"] = row.get("estimated_category") or ""
     migrated["upload_date"] = row.get("upload_date") or ""
     migrated["reviewed_at"] = row.get("reviewed_at") or ""
@@ -264,6 +270,9 @@ def create_product_record(
     idea: str = "",
     image_path: str = "",
     mockup_paths: str | list[str] = "",
+    image_prompt: str = "",
+    confidence_score: int | str = 0,
+    generation_hash: str = "",
     path: Path | None = None,
 ) -> int:
     """Append a new product lifecycle row and return its id."""
@@ -296,6 +305,9 @@ def create_product_record(
                 "title": title,
                 "tags": tags_value,
                 "description": description,
+                "image_prompt": image_prompt,
+                "confidence_score": str(confidence_score),
+                "generation_hash": generation_hash,
                 "estimated_category": estimated_category,
                 "performance_rating": performance_rating,
                 "upload_date": "",
@@ -325,6 +337,55 @@ def create_product_record(
     )
     write_products(rows, path)
     return product_id
+
+
+def is_valid_product_row(row: dict[str, str]) -> bool:
+    if not row.get("id") or not row.get("title") or not row.get("description"):
+        return False
+    if not row.get("idea") or not row.get("image_path"):
+        return False
+    if not row.get("niche"):
+        return False
+    if not str(row.get("trend_score", "")).strip().isdigit():
+        return False
+    if not str(row.get("confidence_score", "")).strip().isdigit():
+        return False
+    if not row.get("tags"):
+        return False
+    if not row.get("image_prompt"):
+        return False
+    return True
+
+
+def sanitize_products_csv(path: Path | None = None) -> dict[str, int | str]:
+    path = path or PRODUCTS_CSV
+    rows = read_products(path)
+    valid_rows = [row for row in rows if is_valid_product_row(row)]
+    invalid_count = len(rows) - len(valid_rows)
+    if invalid_count > 0:
+        write_products(valid_rows, path)
+    return {"kept": len(valid_rows), "removed": invalid_count}
+
+
+def repair_invalid_products(path: Path | None = None) -> dict[str, object]:
+    path = path or PRODUCTS_CSV
+    rows = read_products(path)
+    repaired: list[dict[str, str]] = []
+    invalid: list[dict[str, str]] = []
+    for row in rows:
+        migrated = _migrate_row(row)
+        if is_valid_product_row(migrated):
+            repaired.append(migrated)
+        else:
+            invalid.append(migrated)
+    corrupt_path = path.with_name(path.stem + "_corrupt.csv")
+    if invalid:
+        with corrupt_path.open("w", encoding="utf-8", newline="") as handle:
+            writer = csv.DictWriter(handle, fieldnames=CSV_COLUMNS)
+            writer.writeheader()
+            writer.writerows(invalid)
+    write_products(repaired, path)
+    return {"repaired": len(repaired), "removed": len(invalid), "corrupt_path": str(corrupt_path) if invalid else ""}
 
 
 def _find_product(rows: list[dict[str, str]], product_id: int | str) -> dict[str, str]:

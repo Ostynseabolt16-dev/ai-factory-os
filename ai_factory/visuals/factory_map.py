@@ -15,6 +15,7 @@ from datetime import datetime
 from pathlib import Path
 
 from ai_factory.config import PROJECT_ROOT
+from ai_factory.products.product_manager import is_valid_product_row, read_products
 from ai_factory.intelligence.factory_recommendations import generate_factory_recommendations
 from ai_factory.intelligence.listing_health import summarize_listing_health
 from ai_factory.intelligence.winning_pattern_detector import detect_winning_patterns
@@ -50,6 +51,11 @@ def _read_csv(name: str) -> list[dict[str, str]]:
     path = PROJECT_ROOT / name
     if not path.exists():
         return []
+    if name == "products.csv":
+        try:
+            return [row for row in read_products() if is_valid_product_row(row)]
+        except Exception:
+            return []
     try:
         with path.open("r", encoding="utf-8", newline="") as f:
             return list(csv.DictReader(f))

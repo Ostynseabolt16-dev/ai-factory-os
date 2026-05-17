@@ -9,6 +9,7 @@ from __future__ import annotations
 import os
 from datetime import datetime
 from pathlib import Path
+from typing import Any
 
 from ai_factory.config import PRODUCTS_CSV, PROJECT_ROOT
 from ai_factory.data_store.products_csv import (
@@ -17,8 +18,12 @@ from ai_factory.data_store.products_csv import (
     next_id,
     normalize_idea,
 )
-from ai_factory.generation.openai_image import generate_kawaii_design_to_designs
-from ai_factory.listings.listing_llm import generate_etsy_listing_from_idea
+from ai_factory.generation.structured_generation import (
+    generate_structured_products_from_ideas,
+    generate_and_cache_concept_image,
+    rank_generated_products,
+)
+from ai_factory.products.product_manager import sanitize_products_csv
 from ai_factory.mockups import generate_product_mockups
 
 # Edit this value or set DAILY_LIMIT in .env / shell to control each batch run.
@@ -62,12 +67,11 @@ def _ideas_to_generate(ideas: list[str], *, limit: int) -> list[str]:
     return selected
 
 
-def _generate_and_save_product(idea: str) -> int:
-    """Generate image + listing for one idea, then append the CSV row."""
+def _save_structured_product(product: dict[str, Any]) -> int:
     product_id = next_id()
     stem = f"product_{product_id:04d}"
 
-    image_path = generate_kawaii_design_to_designs(idea, stem=stem)
+    image_path = generate_and_cache_concept_image(product, stem=stem)
     image_rel = image_path.resolve().relative_to(PROJECT_ROOT.resolve()).as_posix()
     mockup_paths = generate_product_mockups(product_id, image_path)
     mockup_rel_paths = [
@@ -75,26 +79,21 @@ def _generate_and_save_product(idea: str) -> int:
         for path in mockup_paths
     ]
 
-    listing = generate_etsy_listing_from_idea(idea)
-    title = str(listing["title"])
-    description = str(listing["description"])
-    tags = listing["tags"]
-    if not isinstance(tags, list):
-        tags = []
-    tags_str_list = [str(tag) for tag in tags]
-
-    created_at = datetime.now().replace(microsecond=0).isoformat()
-
     append_product_row(
         product_id=product_id,
-        created_at=created_at,
-        idea=idea,
+        created_at=datetime.now().replace(microsecond=0).isoformat(),
+        idea=product["idea"],
         image_path=image_rel,
-        title=title,
-        description=description,
-        tags=tags_str_list,
+        title=product["title"],
+        description=product["description"],
+        tags=product["tags"],
         status="draft",
         mockup_paths=mockup_rel_paths,
+        quality_score=0,
+        confidence_score=product["confidence_score"],
+        image_prompt=product["image_prompt"],
+        generation_hash=product.get("generation_hash", ""),
+        batch_id="",
     )
 
     return product_id
@@ -106,31 +105,42 @@ def run_batch_from_ideas_file(
     daily_limit: int = DAILY_LIMIT,
 ) -> None:
     """Generate products from `ideas.txt`, continuing if one idea fails."""
+    sanitize_products_csv()
     ideas = load_ideas(ideas_path)
-    selected = _ideas_to_generate(ideas, limit=daily_limit)
+    candidate_limit = max(daily_limit * 2, daily_limit + 5)
+    selected = _ideas_to_generate(ideas, limit=candidate_limit)
     total = len(selected)
 
     print(f"Loaded {len(ideas)} non-blank ideas from {ideas_path.name}.")
     print(f"Daily limit: {daily_limit}")
+    print(f"Candidate concepts selected: {total}")
 
     if total == 0:
         print("No new ideas to generate. Everything is blank, duplicate, or already in products.csv.")
         return
 
+    candidates = generate_structured_products_from_ideas(selected)
+    if not candidates:
+        print("No valid structured concepts could be generated from the selected ideas.")
+        return
+
+    ranked = rank_generated_products(candidates, top_n=daily_limit)
+    print(f"Validated and ranked {len(candidates)} structured concept(s). Generating top {len(ranked)} products.")
+
     successes = 0
     failures = 0
 
-    for index, idea in enumerate(selected, start=1):
-        print(f"\n[{index}/{total}] generating: {idea}")
+    for index, product in enumerate(ranked, start=1):
+        print(f"\n[{index}/{len(ranked)}] generating: {product['title']}")
         try:
-            product_id = _generate_and_save_product(idea)
+            product_id = _save_structured_product(product)
         except Exception as exc:  # Keep batch moving if one product fails.
             failures += 1
-            print(f"[{index}/{total}] failed: {exc}")
+            print(f"[{index}/{len(ranked)}] failed: {exc}")
             continue
 
         successes += 1
-        print(f"[{index}/{total}] saved product #{product_id} to products.csv")
+        print(f"[{index}/{len(ranked)}] saved product #{product_id} to products.csv")
 
     print("\nBatch complete.")
     print(f"  successful: {successes}")

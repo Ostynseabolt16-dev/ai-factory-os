@@ -17,8 +17,7 @@ from datetime import datetime
 
 from ai_factory.config import PROJECT_ROOT
 from ai_factory.data_store.products_csv import append_product_row, next_id
-from ai_factory.generation.openai_image import generate_kawaii_design_to_designs
-from ai_factory.listings.listing_llm import generate_etsy_listing_from_idea
+from ai_factory.generation.structured_generation import generate_structured_product_from_idea, generate_and_cache_concept_image
 from ai_factory.mockups import generate_product_mockups
 from ai_factory.orchestration.batch import run_batch_from_ideas_file
 
@@ -33,8 +32,11 @@ def run_interactive_pipeline() -> None:
     product_id = next_id()
     stem = f"product_{product_id:04d}"
 
-    print(f"\n[1/3] Generating image → designs/{stem}.png …")
-    image_path = generate_kawaii_design_to_designs(idea, stem=stem)
+    print(f"\n[1/3] Generating validated product concept for: {idea}")
+    product = generate_structured_product_from_idea(idea)
+
+    print(f"[2/3] Generating image → designs/{stem}.png …")
+    image_path = generate_and_cache_concept_image(product, stem=stem)
     image_rel = image_path.resolve().relative_to(PROJECT_ROOT.resolve()).as_posix()
     mockup_paths = generate_product_mockups(product_id, image_path)
     mockup_rel_paths = [
@@ -42,28 +44,22 @@ def run_interactive_pipeline() -> None:
         for path in mockup_paths
     ]
 
-    print("[2/3] Generating Etsy title, description, and 13 tags …")
-    listing = generate_etsy_listing_from_idea(idea)
-    title = str(listing["title"])
-    description = str(listing["description"])
-    tags = listing["tags"]
-    if not isinstance(tags, list):
-        tags = []
-    tags_str_list = [str(t) for t in tags]
-
     created_at = datetime.now().replace(microsecond=0).isoformat()
 
     print("[3/3] Saving row to products.csv …")
     append_product_row(
         product_id=product_id,
         created_at=created_at,
-        idea=idea,
+        idea=product["idea"],
         image_path=image_rel,
-        title=title,
-        description=description,
-        tags=tags_str_list,
+        title=product["title"],
+        description=product["description"],
+        tags=product["tags"],
         status="draft",
         mockup_paths=mockup_rel_paths,
+        confidence_score=product["confidence_score"],
+        image_prompt=product["image_prompt"],
+        generation_hash="",
     )
 
     print("\nDone.")

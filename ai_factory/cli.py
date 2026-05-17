@@ -105,7 +105,8 @@ from ai_factory.signals.validation_score import generate_validation_report, rank
 from ai_factory.snapshots.state_snapshot import create_state_snapshot
 from ai_factory.mockups.mockup_generator import generate_mockup_set, score_mockup_quality
 from ai_factory.products.listing_generator import score_listing_quality
-from ai_factory.products.product_manager import read_products
+from ai_factory.products.product_manager import read_products, sanitize_products_csv
+from ai_factory.orchestration.batch import run_batch_from_ideas_file
 from ai_factory.review.design_improvement import analyze_design_weaknesses, suggest_design_improvements
 from ai_factory.workflows.product_repair_workflow import create_product_repair_workflow
 from ai_factory.agents.daily_execution_brief import generate_daily_execution_brief
@@ -283,7 +284,9 @@ def run_cli() -> None:
         print("90. View niche saturation and clusters")
         print("91. Rebuild Etsy sync dashboard")
         print("92. Force Full Factory Sync")
-        print("93. Exit")
+        print("93. Run structured batch generation")
+        print("94. Sanitize product CSV")
+        print("95. Exit")
 
         choice = input("Choose an option: ").strip()
 
@@ -626,6 +629,10 @@ def run_cli() -> None:
                 print(f"Full Factory Sync complete: {result['output_path']}")
                 _open_path_in_browser(result["output_path"])
             elif choice == "93":
+                run_batch_from_ideas_file()
+            elif choice == "94":
+                print(sanitize_products_csv())
+            elif choice == "95":
                 print("Goodbye.")
                 return
             else:
