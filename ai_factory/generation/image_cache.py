@@ -54,7 +54,10 @@ def get_cached_image_path(prompt: str) -> Path | None:
     item = cache.get("items", {}).get(prompt_hash)
     if not item:
         return None
-    path = Path(item.get("path", ""))
+    path_value = item.get("path", "")
+    if not path_value:
+        return None
+    path = Path(path_value)
     if path.exists():
         return path
     return None
