@@ -13,11 +13,29 @@ build/
 
 # Virtual environment
 venv/
+.venv/
+
+# Root-level screenshots and scratch images
+/chat*.png
+/test*.png
+/Image*.png
 
 # OS / editor
 .DS_Store
 .idea/
 .vscode/
+
+# YouTube pipeline (large / secret)
+youtube/client_secrets.json
+youtube/token.json
+youtube/exported/*.mp4
+youtube/uploaded/*.mp4
+youtube/assets/audio/*
+youtube/assets/thumbnails/*
+!youtube/assets/audio/.gitkeep
+!youtube/assets/thumbnails/.gitkeep
+!youtube/exported/.gitkeep
+!youtube/uploaded/.gitkeep
 
 # Optional: uncomment if generated assets should not be committed
 # designs/

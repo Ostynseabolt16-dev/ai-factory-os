@@ -35,6 +35,42 @@ no watermark,
 4k quality
 """.strip()
 
+# Illustrated classic car tees (validated Corvette C5/C6 Etsy sales).
+BASE_STYLE_AUTOMOTIVE_ILLUSTRATED = """
+illustrated classic sports car t-shirt graphic,
+professional Etsy automotive bestseller style,
+side profile or three-quarter view,
+clean vector line art with subtle shading,
+limited color palette,
+bold outlines,
+centered composition,
+high contrast,
+transparent background,
+commercial POD print graphic,
+no mockup,
+no shirt,
+no text,
+no watermark,
+no background scene,
+4k quality
+""".strip()
+
+BASE_STYLE_AUTOMOTIVE_TYPOGRAPHIC = """
+typographic automotive t-shirt design,
+gothic or blackletter CORVETTE lettering,
+large generation badge,
+production years,
+short muscle-car tagline,
+monochrome high contrast,
+centered symmetrical layout,
+transparent background,
+no car illustration,
+no mockup,
+no shirt,
+no watermark,
+4k quality
+""".strip()
+
 
 def _client() -> OpenAI:
     key = os.getenv("OPENAI_API_KEY")
@@ -81,6 +117,52 @@ def generate_kawaii_design_to_designs(idea: str, *, stem: str | None = None) -> 
 
     image_bytes = base64.b64decode(image_b64)
 
+    DESIGNS_DIR.mkdir(parents=True, exist_ok=True)
+    if stem:
+        base = re.sub(r"[^a-zA-Z0-9._-]", "", stem.strip()) or "design"
+        filename = DESIGNS_DIR / f"{base}.png"
+    else:
+        filename = DESIGNS_DIR / f"{_safe_filename_stub(idea)}.png"
+
+    with open(filename, "wb") as f:
+        f.write(image_bytes)
+
+    return filename
+
+
+def generate_automotive_design_to_designs(
+    idea: str,
+    *,
+    stem: str | None = None,
+    style: str = "illustrated",
+) -> Path:
+    """
+    Generate a Corvette-style automotive PNG under designs/.
+
+    style: "illustrated" (proven seller) or "typographic" (alternate SKU).
+    """
+    from ai_factory.config import DESIGNS_DIR
+
+    style_block = (
+        BASE_STYLE_AUTOMOTIVE_TYPOGRAPHIC
+        if style == "typographic"
+        else BASE_STYLE_AUTOMOTIVE_ILLUSTRATED
+    )
+    client = _client()
+    final_prompt = f"{idea}, {style_block}"
+
+    response = client.images.generate(
+        model="gpt-image-1",
+        prompt=final_prompt,
+        size="1024x1024",
+        background="transparent",
+    )
+
+    image_b64 = response.data[0].b64_json
+    if not image_b64:
+        raise RuntimeError("No image data returned from OpenAI.")
+
+    image_bytes = base64.b64decode(image_b64)
     DESIGNS_DIR.mkdir(parents=True, exist_ok=True)
     if stem:
         base = re.sub(r"[^a-zA-Z0-9._-]", "", stem.strip()) or "design"

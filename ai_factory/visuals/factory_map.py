@@ -14,6 +14,7 @@ from collections import Counter, defaultdict
 from datetime import datetime
 from pathlib import Path
 
+from ai_factory import products
 from ai_factory.config import PROJECT_ROOT
 from ai_factory.products.product_manager import is_valid_product_row, read_products
 from ai_factory.intelligence.factory_recommendations import generate_factory_recommendations
@@ -47,13 +48,16 @@ PIPELINE_STAGES = [
 ]
 
 
-def _read_csv(name: str) -> list[dict[str, str]]:
-    path = PROJECT_ROOT / name
+from typing import Iterable, Union
+
+
+def _read_csv(name: str | Path) -> list[dict[str, str]]:
+    path = PROJECT_ROOT / name if isinstance(name, str) else name
     if not path.exists():
         return []
-    if name == "products.csv":
+    if path.name == "products.csv":
         try:
-            return [row for row in read_products() if is_valid_product_row(row)]
+            return [row for row in read_products(path) if is_valid_product_row(row)]
         except Exception:
             return []
     try:
@@ -445,16 +449,20 @@ def _execution_mode(
 
 def collect_factory_map_data() -> dict[str, object]:
     """Collect read-only data for the visual factory map."""
+
     products = _read_csv("products.csv")
     listings = _read_csv("listings.csv")
     tasks = _read_csv("task_queue.csv")
     workflows = _read_csv("workflow_history.csv")
     signals = _read_csv("signal_history.csv")
-    experiments = _read_csv("experiments.csv")
     listing_change_history = _read_csv("listing_change_history.csv")
-    status_counts = _status_counts(products)
-    task_counts = _task_counts(tasks)
+    status_counts = Counter()
+    for product in products:
+        stage = product.get("pipeline_stage", "unknown")
+        status_counts[stage] += 1
     pipeline = _pipeline_counts(products)
+    task_counts = _task_counts(tasks)
+    experiments = _read_csv("experiments.csv")
     revenue = round(sum(_float(row.get("revenue") or row.get("actual_revenue")) for row in listings), 2)
     if revenue == 0:
         revenue = round(sum(_float(row.get("actual_revenue") or row.get("revenue")) for row in products), 2)

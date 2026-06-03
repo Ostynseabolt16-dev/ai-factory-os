@@ -11,6 +11,7 @@
 - Product lifecycle manager with CSV schema migration in `ai_factory/products/product_manager.py`.
 - Trend intelligence and scoring engine in `ai_factory/analytics/trend_engine.py`.
 - Etsy upload queue, retry, cleanup, and manual export support in `ai_factory/etsy/etsy_upload.py`.
+- Manual Etsy sale import from pasted order text is supported by `ai_factory/analytics/revenue_tracker.py` via `record_sale_from_order_text()` and verified by `test_sales_import.py`.
 - Listing packaging and manifest generation in `ai_factory/listings/listing_packager.py`.
 - Local-first analytics and scoring engines across `ai_factory/intelligence/`.
 - Developer operations CLI commands in `ai_factory/cli.py`.
@@ -23,6 +24,7 @@
 
 ## Upload Queue System
 - Queue persistence via CSV-backed queue in `ai_factory/etsy/etsy_upload.py`.
+- Sales import from pasted Etsy order text should flow through `record_sale_from_order_text()` and the CLI option in `ai_factory/cli.py` before any new parser edge cases are added.
 - Supports queue listing, dry-run validation, retry failed items, cleanup, and manual export packages.
 - Prioritization is built to promote high-opportunity and upload-ready products.
 
@@ -43,6 +45,7 @@
 
 ## Current Blockers
 - Etsy API approval and real upload integration.
+- No further import-engineering work is needed unless pasted order formats change.
 - Marketplace adapter expansion beyond Etsy.
 - Complete automated trend data ingestion and ranking.
 - Dashboard/visualization layer for analytics.

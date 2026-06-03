@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube Uploader Guide — Cozy Orbit Ambient Video 1</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #1c1208;
+      --surface: #2c1d13;
+      --surface-soft: #3b2a1e;
+      --border: #52321a;
+      --text: #f4e1c9;
+      --muted: #b79a7e;
+      --accent: #f0b96f;
+      --accent-soft: #d48b45;
+      --shadow: rgba(0,0,0,0.4);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: radial-gradient(circle at top left, rgba(240,185,111,0.1), transparent 35%),
+                  linear-gradient(180deg, #241a11 0%, #180f0a 100%);
+      color: var(--text);
+      min-height: 100vh;
+    }
+
+    .page {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 32px 24px 64px;
+    }
+
+    h1, h2, h3 {
+      margin: 0;
+      line-height: 1.1;
+      letter-spacing: 0.02em;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 3vw, 3rem);
+      margin-bottom: 0.5rem;
+      color: #ffe0b2;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+      margin-top: 2rem;
+      margin-bottom: 0.75rem;
+      color: #ffd29d;
+    }
+
+    h3 {
+      font-size: 1.05rem;
+      margin-bottom: 0.5rem;
+      color: #f1c079;
+    }
+
+    .card {
+      background: linear-gradient(180deg, rgba(64,40,22,0.95), rgba(43,27,17,0.96));
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      box-shadow: 0 24px 60px var(--shadow);
+      padding: 28px;
+      margin-bottom: 24px;
+      backdrop-filter: blur(10px);
+    }
+
+    .card p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.8;
+    }
+
+    .section-note {
+      margin-top: 0.25rem;
+      color: #d9b27d;
+    }
+
+    .copy-block {
+      display: grid;
+      gap: 12px;
+    }
+
+    textarea, input[type="text"] {
+      width: 100%;
+      border-radius: 16px;
+      border: 1px solid rgba(255, 194, 124, 0.16);
+      padding: 16px;
+      background: rgba(20, 12, 6, 0.92);
+      color: var(--text);
+      font-family: inherit;
+      font-size: 0.98rem;
+      line-height: 1.6;
+      resize: vertical;
+    }
+
+    textarea[readonly], input[readonly] {
+      opacity: 0.98;
+    }
+
+    .tags {
+      display: grid;
+      gap: 10px;
+    }
+
+    .tags textarea {
+      min-height: 120px;
+    }
+
+    .checklist {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      gap: 12px;
+    }
+
+    .checklist li {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      padding: 14px 16px;
+      border-radius: 16px;
+      background: rgba(255, 236, 179, 0.05);
+      border: 1px solid rgba(255, 198, 108, 0.14);
+    }
+
+    .checklist label {
+      display: block;
+      flex: 1;
+      color: var(--text);
+      line-height: 1.6;
+      cursor: pointer;
+    }
+
+    .checklist input {
+      margin-top: 3px;
+      transform: scale(1.1);
+    }
+
+    .subtitle {
+      color: var(--accent);
+      font-size: 0.95rem;
+      margin-top: 0.5rem;
+    }
+
+    .section-grid {
+      display: grid;
+      gap: 24px;
+    }
+
+    .row {
+      display: grid;
+      gap: 24px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+
+    .small-note {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-top: 10px;
+    }
+
+    .footer {
+      margin-top: 40px;
+      padding-top: 24px;
+      border-top: 1px solid rgba(255, 194, 124, 0.12);
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <div class="card">
+      <h1>Cozy Orbit YouTube Upload Guide</h1>
+      <p class="section-note">A step-by-step upload checklist for ambient video 1. Double-click to open this file in your browser anytime.</p>
+    </div>
+
+    <div class="card">
+      <h2>Video Metadata</h2>
+      <div class="copy-block">
+        <div>
+          <h3>Copy-paste ready title</h3>
+          <input type="text" readonly value="3 Hours of Heavy Rain on a Cabin Roof | Sleep & Study">
+        </div>
+
+        <div>
+          <h3>Copy-paste ready description</h3>
+          <textarea rows="10" readonly>
+Enjoy 3 Hours of Heavy Rain on a Cabin Roof | Sleep & Study with a calming real-world atmosphere. This ambient video features heavy rain on a quiet cabin roof for sleep, studying, relaxation, and deep focus. Use it as background sound for sleep, study, work, reading, or relaxation. The natural rain and cozy ambience help create a peaceful environment with fewer distractions. Play this video whenever you need relaxing ambient sounds and a calm place to focus.
+          </textarea>
+        </div>
+
+        <div class="tags">
+          <h3>Copy-paste ready tags</h3>
+          <textarea readonly>
+rain sounds, cabin rain, sleep sounds, study ambience, heavy rain, relaxing rain, deep sleep, focus sounds, cozy cabin, night rain
+          </textarea>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Thumbnail Checklist</h2>
+      <ul class="checklist">
+        <li>
+          <input type="checkbox" id="thumb-1">
+          <label for="thumb-1">Warm, cozy wooden cabin centerpiece with rain visible on the roof.</label>
+        </li>
+        <li>
+          <input type="checkbox" id="thumb-2">
+          <label for="thumb-2">Nighttime forest background with mist and soft amber window glow.</label>
+        </li>
+        <li>
+          <input type="checkbox" id="thumb-3">
+          <label for="thumb-3">No large text overlay — let the mood speak through the image.</label>
+        </li>
+        <li>
+          <input type="checkbox" id="thumb-4">
+          <label for="thumb-4">High contrast between rain, wood, and warm indoor light.</label>
+        </li>
+        <li>
+          <input type="checkbox" id="thumb-5">
+          <label for="thumb-5">Clear, photorealistic atmosphere with calming details.</label>
+        </li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Upload Settings</h2>
+      <ul class="checklist">
+        <li>
+          <input type="checkbox" id="upload-1">
+          <label for="upload-1">Visibility: <strong>Public</strong></label>
+        </li>
+        <li>
+          <input type="checkbox" id="upload-2">
+          <label for="upload-2">Age restriction: <strong>No</strong> (not restricted).</label>
+        </li>
+        <li>
+          <input type="checkbox" id="upload-3">
+          <label for="upload-3">Category: <strong>Music</strong></label>
+        </li>
+        <li>
+          <input type="checkbox" id="upload-4">
+          <label for="upload-4">Made for kids: <strong>No</strong></label>
+        </li>
+        <li>
+          <input type="checkbox" id="upload-5">
+          <label for="upload-5">Comments enabled or set to the preferred channel default.</label>
+        </li>
+      </ul>
+      <p class="small-note">If you want the video to appear in searches quickly, stick with Public and the Music category, then publish immediately once the thumbnail and metadata are ready.</p>
+    </div>
+
+    <div class="card">
+      <h2>Upload Checklist</h2>
+      <ul class="checklist">
+        <li>
+          <input type="checkbox" id="step-1">
+          <label for="step-1"><strong>Create your Cozy Orbit channel</strong> before uploading anything.</label>
+        </li>
+        <li>
+          <input type="checkbox" id="step-2">
+          <label for="step-2">Open YouTube Studio and click <strong>Upload video</strong>.</label>
+        </li>
+        <li>
+          <input type="checkbox" id="step-3">
+          <label for="step-3">Select the rendered MP4 from <code>youtube/exported/</code>.</label>
+        </li>
+        <li>
+          <input type="checkbox" id="step-4">
+          <label for="step-4">Paste the title exactly as shown above.</label>
+        </li>
+        <li>
+          <input type="checkbox" id="step-5">
+          <label for="step-5">Paste the description exactly as shown above.</label>
+        </li>
+        <li>
+          <input type="checkbox" id="step-6">
+          <label for="step-6">Paste the tags into the tags field.</label>
+        </li>
+        <li>
+          <input type="checkbox" id="step-7">
+          <label for="step-7">Upload the thumbnail image and confirm the preview looks right.</label>
+        </li>
+        <li>
+          <input type="checkbox" id="step-8">
+          <label for="step-8">Choose Public, Music category, and Made for kids: No.</label>
+        </li>
+        <li>
+          <input type="checkbox" id="step-9">
+          <label for="step-9">Select no age restriction and verify monetization settings if needed.</label>
+        </li>
+        <li>
+          <input type="checkbox" id="step-10">
+          <label for="step-10">Review the summary and confirm the video details before publishing.</label>
+        </li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Channel Setup Steps</h2>
+      <ol class="checklist" style="list-style: decimal inside;">
+        <li>
+          <label>Create a Google account or sign in to the account you want to use for Cozy Orbit.</label>
+        </li>
+        <li>
+          <label>Open <a href="https://studio.youtube.com/" target="_blank">YouTube Studio</a> and click <strong>Customize channel</strong>.</label>
+        </li>
+        <li>
+          <label>Set your channel name to <strong>Cozy Orbit</strong> and add a cozy profile image.</label>
+        </li>
+        <li>
+          <label>Add a channel description that mentions ambient, sleep, study, relaxation, and rain sounds.</label>
+        </li>
+        <li>
+          <label>Upload a simple channel banner with warm brown and amber tones.</label>
+        </li>
+        <li>
+          <label>Enable channel settings and defaults: default category, default audience, and default upload preferences.</label>
+        </li>
+        <li>
+          <label>Verify your channel if needed for long uploads and custom thumbnails.</label>
+        </li>
+      </ol>
+      <p class="small-note">Once the channel exists, you can re-open this page and use the checklist again for every Cozy Orbit upload.</p>
+    </div>
+
+    <div class="footer">
+      <p>Video metadata pulled from <code>youtube/titles/ambient_video_1.txt</code>.</p>
+      <p>Created for a dark cozy workflow with quick copy/paste sections and upload checks.</p>
+    </div>
+  </main>
+</body>
+</html>
