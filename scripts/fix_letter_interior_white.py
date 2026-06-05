@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
-Remove white/checkerboard fills inside gothic letter counters for colored-shirt POD.
+Remove white/checkerboard fills inside letters, captions, and car windows for POD.
 
-Only touches header + model-badge zones so car highlights stay intact.
+Touches header, model badge, description paragraph, and car glass zones.
 """
 
 from __future__ import annotations
@@ -89,15 +89,57 @@ def _is_letter_fill(r: int, g: int, b: int) -> bool:
 
 
 def _is_dark(r: int, g: int, b: int) -> bool:
-    return (r + g + b) / 3 <= 100
+    return (r + g + b) / 3 <= 110
 
 
-def _in_letter_zone(x: int, y: int, w: int, h: int, *, back_only: bool) -> bool:
+def _touches_dark_opaque(px, x: int, y: int, w: int, h: int) -> bool:
+    for nx, ny in ((x + 1, y), (x - 1, y), (x, y + 1), (x, y - 1)):
+        if nx < 0 or ny < 0 or nx >= w or ny >= h:
+            continue
+        rr, gg, bb, aa = px[nx, ny]
+        if aa > 0 and _is_dark(rr, gg, bb):
+            return True
+    return False
+
+
+def _in_fix_zone(x: int, y: int, w: int, h: int, *, back_only: bool) -> bool:
     if back_only:
         return True
     header = y < int(h * 0.42)
     badge = y > int(h * 0.58) and x < int(w * 0.45)
-    return header or badge
+    caption = y > int(h * 0.70) and x > int(w * 0.30)
+    car = int(h * 0.30) < y < int(h * 0.80) and int(w * 0.05) < x < int(w * 0.95)
+    return header or badge or caption or car
+
+
+def _in_caption_zone(x: int, y: int, w: int, h: int) -> bool:
+    return y > int(h * 0.70) and x > int(w * 0.30)
+
+
+def _in_car_zone(x: int, y: int, w: int, h: int) -> bool:
+    return int(h * 0.30) < y < int(h * 0.80) and int(w * 0.05) < x < int(w * 0.95)
+
+
+def _in_windshield_zone(x: int, y: int, w: int, h: int) -> bool:
+    return int(h * 0.32) < y < int(h * 0.58) and int(w * 0.28) < x < int(w * 0.82)
+
+
+def _is_car_glass_fill(r: int, g: int, b: int) -> bool:
+    avg = (r + g + b) / 3
+    spread = max(r, g, b) - min(r, g, b)
+    return avg >= 155 and spread < 40
+
+
+def _dark_neighbors8(px, x: int, y: int, w: int, h: int, *, threshold: int = 130) -> int:
+    count = 0
+    for nx in range(max(0, x - 1), min(w, x + 2)):
+        for ny in range(max(0, y - 1), min(h, y + 2)):
+            if nx == x and ny == y:
+                continue
+            rr, gg, bb, aa = px[nx, ny]
+            if aa > 0 and (rr + gg + bb) / 3 <= threshold:
+                count += 1
+    return count
 
 
 def fix_letter_interior(
@@ -113,22 +155,14 @@ def fix_letter_interior(
 
     for y in range(h):
         for x in range(w):
-            if not _in_letter_zone(x, y, w, h, back_only=back_only):
+            if not _in_fix_zone(x, y, w, h, back_only=back_only):
                 continue
             r, g, b, a = px[x, y]
             if a == 0 or not _is_letter_fill(r, g, b):
                 continue
             if color_car and _is_yellow(r, g, b):
                 continue
-            touches_dark = False
-            for nx, ny in ((x + 1, y), (x - 1, y), (x, y + 1), (x, y - 1)):
-                if nx < 0 or ny < 0 or nx >= w or ny >= h:
-                    continue
-                rr, gg, bb, aa = px[nx, ny]
-                if aa == 0 or _is_dark(rr, gg, bb):
-                    touches_dark = True
-                    break
-            if touches_dark:
+            if _touches_dark_opaque(px, x, y, w, h):
                 px[x, y] = (r, g, b, 0)
                 removed += 1
 
@@ -136,8 +170,71 @@ def fix_letter_interior(
     return removed
 
 
+def fix_caption_and_car_glass(
+    path: Path,
+    *,
+    color_car: bool = False,
+    back_only: bool = False,
+) -> int:
+    im = Image.open(path).convert("RGBA")
+    px = im.load()
+    w, h = im.size
+    removed = 0
+
+    if not back_only:
+        # Caption: remove bright white/checkerboard inside letter counters and haze box.
+        for y in range(h):
+            for x in range(w):
+                if not _in_caption_zone(x, y, w, h):
+                    continue
+                r, g, b, a = px[x, y]
+                if a == 0:
+                    continue
+                avg = (r + g + b) / 3
+                spread = max(r, g, b) - min(r, g, b)
+                if avg >= 175 and spread < 40:
+                    px[x, y] = (r, g, b, 0)
+                    removed += 1
+
+        # Windshield / cabin: clear large light fills (common Supra/Challenger artifact).
+        for y in range(h):
+            for x in range(w):
+                if not _in_windshield_zone(x, y, w, h):
+                    continue
+                r, g, b, a = px[x, y]
+                if a == 0:
+                    continue
+                if color_car and _is_yellow(r, g, b):
+                    continue
+                avg = (r + g + b) / 3
+                spread = max(r, g, b) - min(r, g, b)
+                if avg >= 120 and spread < 55:
+                    px[x, y] = (r, g, b, 0)
+                    removed += 1
+
+        # Car glass / window whites and leftover checkerboard elsewhere on body.
+        for _ in range(3):
+            for y in range(h):
+                for x in range(w):
+                    if not _in_car_zone(x, y, w, h) or _in_windshield_zone(x, y, w, h):
+                        continue
+                    r, g, b, a = px[x, y]
+                    if a == 0 or not _is_car_glass_fill(r, g, b):
+                        continue
+                    if color_car and _is_yellow(r, g, b):
+                        continue
+                    if _dark_neighbors8(px, x, y, w, h, threshold=155) >= 1:
+                        px[x, y] = (r, g, b, 0)
+                        removed += 1
+
+    im.save(path)
+    return removed
+
+
 def process_file(path: Path, *, color_car: bool = False, back_only: bool = False) -> int:
-    return fix_letter_interior(path, color_car=color_car, back_only=back_only)
+    n1 = fix_letter_interior(path, color_car=color_car, back_only=back_only)
+    n2 = fix_caption_and_car_glass(path, color_car=color_car, back_only=back_only)
+    return n1 + n2
 
 
 def restore_from_assets(stem: str) -> Path:
