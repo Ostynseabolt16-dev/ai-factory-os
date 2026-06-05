@@ -111,10 +111,14 @@ def main() -> int:
         shutil.copy2(src, dest)
         step = _process_transparency(dest, mode)
 
-        printify_out = DESIGNS / f"{stem}_UPLOAD_TO_PRINTIFY.png"
-        _prepare_printify(dest, printify_out)
+        fix_script = PROJECT_ROOT / "scripts/fix_letter_interior_white.py"
+        subprocess.run(
+            [sys.executable, str(fix_script), "--no-restore", stem],
+            check=True,
+        )
 
-        results.append(f"  {stem}.png + {stem}_UPLOAD_TO_PRINTIFY.png ({step})")
+        printify_out = DESIGNS / f"{stem}_UPLOAD_TO_PRINTIFY.png"
+        results.append(f"  {stem}.png + {printify_out.name} ({step} + letter fix)")
 
     print("\nRecovered:")
     print("\n".join(results))
