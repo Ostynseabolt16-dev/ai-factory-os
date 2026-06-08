@@ -69,21 +69,59 @@ def streetwear_back_prompt(code: str) -> str:
     )
 
 
-def streetwear_front_prompt(code: str, years: str) -> str:
-    """Matches sold Printify C5 layout: gothic title, photo car, C badge, paragraph."""
-    c8_only = (
+_FRONT_SHAPE_GUARD: dict[str, str] = {
+    "C4": (
+        " CRITICAL C4 ONLY: 1984-1996 Corvette, sharp angular wedge body, flat low hood, "
+        "boxy square-edged styling, pop-up flip headlights (closed/flush), NOT rounded, "
+        "NOT C5 NOT C6."
+    ),
+    "C5": (
+        " CRITICAL C5 ONLY: 1997-2004 Corvette, rounded smooth body, fixed exposed pop-up "
+        "headlights, NOT angular, NOT C4 NOT C6."
+    ),
+    "C8": (
         " CRITICAL C8 ONLY: mid-engine Corvette Stingray, short hood, slim horizontal LED "
         "headlights, NO pop-up headlights, NOT C5 NOT C6 NOT C7."
-        if code.upper() == "C8"
-        else ""
+    ),
+}
+
+# Exact bottom-right copy per generation (baked into the prompt for reliable text).
+_FRONT_PARAGRAPH: dict[str, str] = {
+    "C4": (
+        "From 205 to 405 horsepower — the ZR-1 'King of the Hill.' Pure American muscle. "
+        "The fourth-generation Corvette (1984-1996) defined sharp, wedge-shaped performance."
+    ),
+}
+
+
+def streetwear_front_prompt(code: str, years: str) -> str:
+    """Single-color POD layout: gothic title, line-art car, C badge, paragraph.
+
+    The car is drawn as bold black line-art on a WHITE body (no solid fill, no grey)
+    so it survives the solid-black export with visible panel/wheel detail.
+    """
+    shape_guard = _FRONT_SHAPE_GUARD.get(code.upper(), "")
+    paragraph = _FRONT_PARAGRAPH.get(code.upper())
+    paragraph_instruction = (
+        f'small italic serif paragraph reading exactly: "{paragraph}"'
+        if paragraph
+        else f"small italic serif paragraph about the Corvette {code}"
     )
     return (
-        f"Chevrolet Corvette {code} ({years}) streetwear t-shirt print layout.{c8_only} "
-        "Arched gothic blackletter CORVETTE at top. Center: photorealistic black Corvette "
-        f"{code} front three-quarter view facing left, silver wheels, high contrast monochrome. "
-        f"Bottom left: large gothic {code}. Bottom right: small italic serif paragraph about "
-        f"the Corvette {code}. Solid black ink only, no halftone dots, no grey stippling, "
-        "white background, no mockup, no shirt."
+        f"Chevrolet Corvette {code} ({years}) streetwear t-shirt print, single-color black "
+        f"ink design on pure white background.{shape_guard} "
+        'Arched gothic blackletter header spelled EXACTLY "CORVETTE" '
+        "(C-O-R-V-E-T-T-E, correct English spelling, do NOT add or drop letters). "
+        f"Center: detailed black line-art illustration of a Corvette {code}, front "
+        "three-quarter view facing left. WHITE car body with bold clean black outlines and "
+        "crisp interior panel lines, clearly defined headlights, grille, hood vents, side "
+        "mirror, and detailed multi-spoke wheels with visible spokes. High-contrast "
+        "pen-and-ink engraving style. Keep large WHITE areas inside the body so details read "
+        "clearly — do NOT make it a solid black silhouette. "
+        f"Bottom left: large gothic {code}. Bottom right: {paragraph_instruction}. "
+        "All text must be spelled correctly. "
+        "Pure black ink only on pure white, no grey tones, no shading gradients, no halftone "
+        "dots, no stippling, no mockup, no shirt."
     )
 
 
