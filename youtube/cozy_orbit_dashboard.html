@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cozy Orbit Dashboard</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #1B120F;
+      --panel: #2A1D18;
+      --panel-2: #3A2D26;
+      --text: #F6E7D7;
+      --muted: #BFA78A;
+      --accent: #D08E52;
+      --accent-2: #E5B475;
+      --border: rgba(255, 231, 205, 0.12);
+      --shadow: rgba(0, 0, 0, 0.35);
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: radial-gradient(circle at top left, #2f1f1a 0%, var(--bg) 60%);
+      color: var(--text);
+    }
+
+    .page {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 28px;
+    }
+
+    header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 28px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2.6rem;
+      letter-spacing: 0.04em;
+    }
+
+    .subtitle {
+      color: var(--muted);
+      max-width: 720px;
+      line-height: 1.6;
+      margin-top: 10px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1.8fr 0.9fr;
+      gap: 24px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: linear-gradient(180deg, rgba(58,45,38,0.88), rgba(41,28,21,0.96));
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      padding: 24px;
+      box-shadow: 0 18px 40px var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at top right, rgba(255, 182, 100, 0.12), transparent 34%);
+      pointer-events: none;
+    }
+
+    .card h2 {
+      margin: 0 0 12px;
+      font-size: 1.4rem;
+    }
+
+    .card p {
+      margin: 0 0 14px;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(232, 183, 117, 0.16);
+      color: var(--accent);
+      font-size: 0.82rem;
+      margin-right: 8px;
+      margin-bottom: 8px;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 16px;
+    }
+
+    .prompt {
+      background: rgba(255, 231, 205, 0.08);
+      border: 1px solid rgba(255, 231, 205, 0.14);
+      border-radius: 16px;
+      padding: 16px;
+      color: #ffe9c9;
+      font-size: 0.95rem;
+      line-height: 1.6;
+      white-space: pre-wrap;
+      margin-bottom: 18px;
+    }
+
+    .checklist {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      gap: 10px;
+    }
+
+    .checklist li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      color: var(--text);
+      line-height: 1.5;
+    }
+
+    .checkbox {
+      width: 18px;
+      height: 18px;
+      border: 1px solid rgba(255, 231, 205, 0.25);
+      border-radius: 6px;
+      background: rgba(255, 231, 205, 0.04);
+      flex-shrink: 0;
+      margin-top: 3px;
+    }
+
+    .sidebar {
+      display: grid;
+      gap: 20px;
+    }
+
+    .panel {
+      background: rgba(36, 21, 16, 0.94);
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      padding: 22px;
+      box-shadow: 0 18px 36px rgba(0,0,0,0.28);
+    }
+
+    .panel h3 {
+      margin: 0 0 14px;
+      font-size: 1.2rem;
+    }
+
+    .panel p,
+    .panel li {
+      color: var(--muted);
+    }
+
+    .panel ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      gap: 10px;
+    }
+
+    .priority {
+      display: grid;
+      gap: 10px;
+    }
+
+    .priority-item {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 14px 16px;
+      border-radius: 16px;
+      background: rgba(255, 231, 205, 0.05);
+      border: 1px solid rgba(255, 231, 205, 0.10);
+    }
+
+    .priority-item span:first-child {
+      color: var(--text);
+    }
+
+    .priority-item span:last-child {
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    @media (max-width: 960px) {
+      .grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <div>
+        <h1>Cozy Orbit</h1>
+        <p class="subtitle">A cozy planning dashboard for your video ideas, thumbnail prompts, and upload checklist. Everything is readable with warm browns, amber highlights, and a calm editorial layout.</p>
+      </div>
+      <div class="panel">
+        <h3>Today’s priorities</h3>
+        <div class="priority">
+          <div class="priority-item"><span>Finish script for AI Etsy case study</span><span>High</span></div>
+          <div class="priority-item"><span>Generate thumbnail prompt for Day 3 video</span><span>Medium</span></div>
+          <div class="priority-item"><span>Review tags and descriptions</span><span>Medium</span></div>
+          <div class="priority-item"><span>Upload next batch to YouTube</span><span>Low</span></div>
+        </div>
+      </div>
+    </header>
+
+    <div class="grid">
+      <section class="cards">
+        <article class="card">
+          <h2>I built an AI Etsy shop in 24 hours with no coding experience</h2>
+          <p>Show the audience how a faceless AI business was launched quickly on Etsy using automation, no code, and local tools on a Mac.</p>
+          <div class="tags">
+            <span class="badge">AI</span>
+            <span class="badge">Etsy</span>
+            <span class="badge">NoCode</span>
+            <span class="badge">Business</span>
+          </div>
+          <div class="prompt">Thumbnail prompt: Bold warm shop window scene with "AI Etsy Shop" text, glowing amber accents, surprised founder expression, dramatic contrast, cozy creative studio vibe.</div>
+          <ul class="checklist">
+            <li><span class="checkbox"></span>Audio generated</li>
+            <li><span class="checkbox"></span>Thumbnail created</li>
+            <li><span class="checkbox"></span>Video assembled</li>
+            <li><span class="checkbox"></span>Uploaded to YouTube</li>
+            <li><span class="checkbox"></span>Description and tags added</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h2>Day 3: My AI factory made its first sale</h2>
+          <p>Document the first sales milestone and what it taught you about validation, pricing, and the path from idea to revenue.</p>
+          <div class="tags">
+            <span class="badge">Milestone</span>
+            <span class="badge">Sales</span>
+            <span class="badge">AI</span>
+            <span class="badge">Etsy</span>
+          </div>
+          <div class="prompt">Thumbnail prompt: Warm gold sales notification card with "First Sale" bold text, excited jaw-drop expression, cozy brown background, high contrast and trust-building tone.</div>
+          <ul class="checklist">
+            <li><span class="checkbox"></span>Audio generated</li>
+            <li><span class="checkbox"></span>Thumbnail created</li>
+            <li><span class="checkbox"></span>Video assembled</li>
+            <li><span class="checkbox"></span>Uploaded to YouTube</li>
+            <li><span class="checkbox"></span>Description and tags added</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h2>5 AI tools that actually make money in 2025</h2>
+          <p>Showcase five practical AI tools that have real ROI for creators and small businesses, with honest results and easy-to-follow recommendations.</p>
+          <div class="tags">
+            <span class="badge">Tools</span>
+            <span class="badge">2025</span>
+            <span class="badge">AI</span>
+            <span class="badge">Revenue</span>
+          </div>
+          <div class="prompt">Thumbnail prompt: Cozy workspace with 5 glowing tool icons, "Make Money" headline, curious face expression, amber and brown palette, bold clear layout.</div>
+          <ul class="checklist">
+            <li><span class="checkbox"></span>Audio generated</li>
+            <li><span class="checkbox"></span>Thumbnail created</li>
+            <li><span class="checkbox"></span>Video assembled</li>
+            <li><span class="checkbox"></span>Uploaded to YouTube</li>
+            <li><span class="checkbox"></span>Description and tags added</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h2>I let AI run my business for a week</h2>
+          <p>Tell the story of a one-week experiment where you handed the process to AI and tracked results, wins, and lessons learned.</p>
+          <div class="tags">
+            <span class="badge">Experiment</span>
+            <span class="badge">AI</span>
+            <span class="badge">Business</span>
+            <span class="badge">CaseStudy</span>
+          </div>
+          <div class="prompt">Thumbnail prompt: Cozy control room with floating AI panels, curious expression, headline "AI Runs My Biz", warm amber glow and deep brown background.</div>
+          <ul class="checklist">
+            <li><span class="checkbox"></span>Audio generated</li>
+            <li><span class="checkbox"></span>Thumbnail created</li>
+            <li><span class="checkbox"></span>Video assembled</li>
+            <li><span class="checkbox"></span>Uploaded to YouTube</li>
+            <li><span class="checkbox"></span>Description and tags added</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h2>How I automated my Etsy shop with Python</h2>
+          <p>Walk through the technical side of your automation system in a way viewers can understand, focusing on practical outcomes rather than code complexity.</p>
+          <div class="tags">
+            <span class="badge">Python</span>
+            <span class="badge">Automation</span>
+            <span class="badge">Etsy</span>
+            <span class="badge">AI</span>
+          </div>
+          <div class="prompt">Thumbnail prompt: Warm code notebook + Etsy package illustration, simple bold headline "Python + Etsy", cozy amber highlights, curious but believable energy.</div>
+          <ul class="checklist">
+            <li><span class="checkbox"></span>Audio generated</li>
+            <li><span class="checkbox"></span>Thumbnail created</li>
+            <li><span class="checkbox"></span>Video assembled</li>
+            <li><span class="checkbox"></span>Uploaded to YouTube</li>
+            <li><span class="checkbox"></span>Description and tags added</li>
+          </ul>
+        </article>
+      </section>
+
+      <aside class="sidebar">
+        <div class="panel">
+          <h3>Next Actions</h3>
+          <ul>
+            <li>Finalize script for the AI Etsy launch story</li>
+            <li>Generate and review thumbnail text/prompts</li>
+            <li>Batch render voice/audio for top 3 videos</li>
+            <li>Prepare YouTube descriptions and tags list</li>
+          </ul>
+        </div>
+
+        <div class="panel">
+          <h3>Channel Summary</h3>
+          <p>Cozy Orbit is a warm, creator-focused AI business channel. Keep the tone gentle, honest, and reassuring while highlighting practical outcomes and curiosity.</p>
+        </div>
+      </aside>
+    </div>
+  </div>
+</body>
+</html>

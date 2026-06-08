@@ -47,7 +47,7 @@ from ai_factory.agents.founder_decision_center import (
 from ai_factory.analytics.kpi_tracker import track_kpis
 from ai_factory.analytics.profitability_engine import top_profitable_products, worst_products
 from ai_factory.analytics.operational_scorecard import generate_operational_scorecard
-from ai_factory.analytics.revenue_tracker import generate_revenue_report, record_sale
+from ai_factory.analytics.revenue_tracker import generate_revenue_report, record_sale, record_sale_from_order_text
 from ai_factory.analytics.workflow_analytics import workflow_completion_distribution, workflow_success_rate
 from ai_factory.analytics.performance_snapshots import create_performance_snapshot
 from ai_factory.maintenance.backup_manager import create_backup_snapshot, list_backups, restore_backup
@@ -286,7 +286,8 @@ def run_cli() -> None:
         print("92. Force Full Factory Sync")
         print("93. Run structured batch generation")
         print("94. Sanitize product CSV")
-        print("95. Exit")
+        print("95. Paste Etsy order text and record sale")
+        print("96. Exit")
 
         choice = input("Choose an option: ").strip()
 
@@ -633,6 +634,12 @@ def run_cli() -> None:
             elif choice == "94":
                 print(sanitize_products_csv())
             elif choice == "95":
+                order_text = input("Paste Etsy order block here: ").strip()
+                if not order_text:
+                    print("No order text provided.")
+                    continue
+                print(record_sale_from_order_text(order_text))
+            elif choice == "96":
                 print("Goodbye.")
                 return
             else:
