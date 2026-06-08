@@ -40,38 +40,63 @@ def _corner_rgb(path: Path) -> tuple[int, int, int]:
     return tuple(sum(c[i] for c in samples) // 4 for i in range(3))
 
 
-def _remove_light_bg(path: Path) -> None:
-    """Flood-fill edge-connected near-white / checkerboard pixels to transparent."""
+def _is_bg(r: int, g: int, b: int) -> bool:
+    avg = (r + g + b) / 3
+    spread = max(r, g, b) - min(r, g, b)
+    return avg > 175 and spread < 25
+
+
+def _remove_checkerboard(path: Path) -> int:
+    """Original 2-pass checkerboard removal: edge flood + global is_bg wipe."""
     im = Image.open(path).convert("RGBA")
     px = im.load()
     w, h = im.size
-
-    def is_bg(r: int, g: int, b: int) -> bool:
-        avg = (r + g + b) / 3
-        spread = max(r, g, b) - min(r, g, b)
-        return avg > 175 and spread < 25
-
-    visited: set[tuple[int, int]] = set()
+    transparent = [[False] * w for _ in range(h)]
+    visited = [[False] * w for _ in range(h)]
     q: deque[tuple[int, int]] = deque()
+
     for x in range(w):
-        q.append((x, 0))
-        q.append((x, h - 1))
+        for y in (0, h - 1):
+            if _is_bg(*px[x, y][:3]):
+                q.append((x, y))
     for y in range(h):
-        q.append((0, y))
-        q.append((w - 1, y))
+        for x in (0, w - 1):
+            if _is_bg(*px[x, y][:3]):
+                q.append((x, y))
 
     while q:
         x, y = q.popleft()
-        if (x, y) in visited or x < 0 or y < 0 or x >= w or y >= h:
+        if x < 0 or x >= w or y < 0 or y >= h or visited[y][x]:
             continue
-        r, g, b, _ = px[x, y]
-        if not is_bg(r, g, b):
+        if not _is_bg(*px[x, y][:3]):
             continue
-        visited.add((x, y))
-        px[x, y] = (r, g, b, 0)
+        visited[y][x] = True
+        transparent[y][x] = True
         q.extend([(x + 1, y), (x - 1, y), (x, y + 1), (x, y - 1)])
 
+    removed = 0
+    for y in range(h):
+        for x in range(w):
+            r, g, b, _ = px[x, y]
+            if transparent[y][x] or _is_bg(r, g, b):
+                px[x, y] = (r, g, b, 0)
+                removed += 1
+
     im.save(path)
+    return removed
+
+
+def _header_pure_white_count(path: Path) -> int:
+    im = Image.open(path).convert("RGBA")
+    px = im.load()
+    w, h = im.size
+    header_h = int(h * 0.42)
+    return sum(
+        1
+        for y in range(header_h)
+        for x in range(w)
+        if px[x, y][3] > 0 and px[x, y][0] > 240 and px[x, y][1] > 240 and px[x, y][2] > 240
+    )
 
 
 def _process_transparency(path: Path, mode: str) -> str:
@@ -79,8 +104,8 @@ def _process_transparency(path: Path, mode: str) -> str:
     avg = (r + g + b) / 3
 
     if avg > 128:
-        _remove_light_bg(path)
-        return "checkerboard/light bg removed"
+        n = _remove_checkerboard(path)
+        return f"2-pass checkerboard removed ({n} px)"
 
     subprocess.run([sys.executable, str(KNOCKOUT), str(path)], check=True)
     return "black edge knockout"
@@ -111,14 +136,14 @@ def main() -> int:
         shutil.copy2(src, dest)
         step = _process_transparency(dest, mode)
 
-        fix_script = PROJECT_ROOT / "scripts/fix_letter_interior_white.py"
-        subprocess.run(
-            [sys.executable, str(fix_script), "--no-restore", stem],
-            check=True,
-        )
+        header_white = _header_pure_white_count(dest)
+        if header_white != 0:
+            print(f"FAIL {stem}: header pure white = {header_white}", file=sys.stderr)
+            return 1
 
         printify_out = DESIGNS / f"{stem}_UPLOAD_TO_PRINTIFY.png"
-        results.append(f"  {stem}.png + {printify_out.name} ({step} + letter fix)")
+        _prepare_printify(dest, printify_out)
+        results.append(f"  {stem}.png + {printify_out.name} ({step}, header_white=0)")
 
     print("\nRecovered:")
     print("\n".join(results))
