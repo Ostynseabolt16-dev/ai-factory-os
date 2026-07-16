@@ -42,10 +42,10 @@
 ## Next actions (priority)
 
 1. Pickleball trio live — ads off or low % for 48–72h; watch views/favorites
-2. Pickleball trio URLs fully logged (Soft Serve, Eyes Up Here, IT WAS IN)
-3. Log Yellow C5 hoodie Printify cost when order appears (Allyn, Ash 2XL, ship by Jul 29)
+2. Soft Serve V2 ball-mascot ready (`PICKLEBALL_SOFT_SERVE_V2.md`) — QC/upload when home
+3. Log Yellow C5 hoodie Printify cost when invoice lands (Allyn, Ash 2XL, in production)
 4. Safer Yellow C5 replacement (no CORVETTE wordmark) when ready
-5. No more new SKUs until Soft Serve / Eyes / IT WAS IN show a view or sale signal
+5. Don’t clone TikTok green pickle + headband + net Soft Serve art
 6. C6 Blueprint when owner has ~1 hour for Canva work
 
 ## Phone at work — open with this
