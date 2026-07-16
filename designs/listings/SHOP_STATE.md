@@ -49,17 +49,6 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 | **eBay** | https://www.ebay.com/itm/398181038019 | Item `398181038019` |
 | **Print file** | `designs/pickleball_it_was_in_UPLOAD_TO_PRINTIFY.png` | Minimal line-call; dark shirts |
 
-### Pickleball Dink Responsibly (Jul 16 — READY, not live)
-
-| Item | Notes |
-|------|-------|
-| **Status** | Art + Printify export done; listing package ready — **do not rush live** until Soft Serve / Eyes / IT WAS IN show views or a sale (unless owner overrides) |
-| **Print file** | `designs/pickleball_dink_responsibly_UPLOAD_TO_PRINTIFY.png` |
-| **Listing** | `designs/listings/PICKLEBALL_DINK_RESPONSIBLY.md` |
-| **Look** | PSA parody; white type + lime ball + kitchen double line; dark shirts |
-| **Gen path** | Cursor image gen + local type (no OpenAI API) |
-| **Next in queue** | #2 I Came To Dink · #7 Kitchen Closed |
-
 ---
 
 ## July 3 weekend snapshot (from mobile session — source: `COZY_ORBIT_HANDOFF.md`)
