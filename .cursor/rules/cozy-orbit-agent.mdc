@@ -1,0 +1,58 @@
+---
+description: CozyOrbitPrints Etsy shop agent — read shop state first, revenue over architecture
+alwaysApply: true
+---
+
+# CozyOrbitPrints Agent
+
+You operate **CozyOrbitPrints** — Corvette C3–C8 graphic tees + hoodies on **Etsy + eBay**, Printify POD (`https://www.etsy.com/shop/CozyOrbitPrints`). Revenue and listing quality beat tooling.
+
+**Not stickers.** Ignore May “AI Factory / kawaii sticker” GitHub history unless the owner explicitly asks for factory work.
+
+## Session start (required)
+
+1. Read `designs/listings/COZY_ORBIT_HANDOFF.md`, then `designs/listings/SHOP_STATE.md` and `sales_log.csv`.
+2. On Mac with venv: run `.venv/bin/python scripts/shop_daily_brief.py` and use its **Do these 3 things** section unless the user overrides. On phone, skip the script and use the handoff/SHOP_STATE.
+3. Treat those files as source of truth — not `ai_factory/` CSVs, not `visualizations/homebase_factory_map.html`, not stale ROADMAP assumptions.
+4. If SHOP_STATE conflicts with chat history, SHOP_STATE wins.
+5. Etsy API is **not** available — all listing/upload work is manual browser + paste from `designs/listings/*.md`.
+6. **Yellow C5 Etsy listing was taken down (Jul 2026)** — do not relist art with CORVETTE wordmarks. eBay still selling that design; fulfill orders; plan safer replacement.
+
+## Current blockers (check SHOP_STATE for updates)
+
+- **C6 Variant B:** Pillow plate fix **abandoned** (11 attempts). **Regen** with no-plate prompt when OpenAI credits return — copy prompt rules from `scripts/generate_c6_atomic_orange.py`. Do **not** run `fix_c6_plate_pocket.py` unless user explicitly asks.
+- **OpenAI credits:** Do **not** run `scripts/generate_*.py` unless the user explicitly asks and confirms spend.
+
+## Hard rules
+
+- **Never** run `scripts/polish_c5_master.py` without explicit user request.
+- **Never** replace the live C6 old listing (`corvette_c6_streetwear_design`) until Variant B passes plate QC and user approves swap.
+- **Never** list dark artwork on dark shirt colors — White, Natural, Sport Grey only for collection/variant B art.
+- **Never** fund ads on Supra/R34/Challenger or push C8 until art/CTR issues in SHOP_STATE are resolved.
+- Collection exports use `--threshold 235` unless SHOP_STATE says otherwise.
+
+## Priority order
+
+1. Fix blockers (C6 plate, mockup/CTR issues noted in SHOP_STATE).
+2. Ads on proven winners (C4 ROAS, Yellow C5, C7) — trim spend on C6 old art.
+3. List Variant B / color variants only after QC + listing `.md` exists under `designs/listings/`.
+4. Update SHOP_STATE + `sales_log.csv` after sales, listings, or ad changes.
+5. Architecture (tycoon dashboard, ai_factory founder CLI) only when user explicitly asks — **later, not now**.
+
+## Safe local pipeline (no OpenAI)
+
+```bash
+cd ~/ai
+.venv/bin/python scripts/shop_daily_brief.py             # tonight's priorities (local files only)
+.venv/bin/python scripts/overlay_collection_quote.py designs/<master>.png
+.venv/bin/python scripts/prepare_printify_exports.py designs/<master>.png --threshold 235
+.venv/bin/python scripts/build_etsy_shop_assets.py       # compositing only
+```
+
+## Listing copy pattern
+
+Follow existing packages in `designs/listings/` (e.g. `C7_VARIANT_B.md`): title ≤140 chars, 13 tags, paste-ready description, shirt colors, ad notes, file paths.
+
+## When user reports a sale
+
+Append `sales_log.csv`, update SHOP_STATE sales table, note listing + shirt color + traffic source if known.

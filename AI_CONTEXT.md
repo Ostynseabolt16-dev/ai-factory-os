@@ -1,5 +1,11 @@
 # AI Factory OS Context
 
+> **STOP — read this first (updated 2026-07-16)**  
+> This repo’s GitHub history still looks like a May **kawaii sticker / factory** project. That is **stale**.  
+> **Live business:** **CozyOrbitPrints** — Corvette C3–C8 graphic tees + hoodies on **Etsy + eBay**, fulfilled by **Printify**.  
+> **Source of truth (local, often not pushed):** `designs/listings/SHOP_STATE.md`, `designs/listings/COZY_ORBIT_HANDOFF.md`, `sales_log.csv`.  
+> Do **not** resume sticker generation, factory CSV sticker pipelines, or Amazon unless the owner explicitly asks.
+
 ## Current Architecture
 - Local-first Python workflow using CSV-backed state.
 - Modular package structure under `ai_factory/`.
