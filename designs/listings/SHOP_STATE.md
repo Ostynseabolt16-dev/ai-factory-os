@@ -49,6 +49,17 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 | **eBay** | https://www.ebay.com/itm/398181038019 | Item `398181038019` |
 | **Print file** | `designs/pickleball_it_was_in_UPLOAD_TO_PRINTIFY.png` | Minimal line-call; dark shirts |
 
+### Pickleball I Came To Dink (Jul 16 — READY, not live)
+
+| Item | Notes |
+|------|-------|
+| **Status** | Art + Printify export ready — list when you want; still fine to wait for Soft Serve trio signal |
+| **Print file** | `designs/pickleball_i_came_to_dink_UPLOAD_TO_PRINTIFY.png` |
+| **Listing** | `designs/listings/PICKLEBALL_I_CAME_TO_DINK.md` |
+| **Look** | Swagger ball mascot + stacked “I CAME TO / DINK”; dark shirts; Soft Serve–sibling layout |
+| **Gen path** | Cursor image gen + local type (no OpenAI API) |
+| **Scrapped** | Dink Responsibly (QC reject) |
+
 ---
 
 ## July 3 weekend snapshot (from mobile session — source: `COZY_ORBIT_HANDOFF.md`)
