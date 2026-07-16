@@ -43,6 +43,16 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 | **Avoid** | Do not make green pickle + red headband + net TikTok clone |
 | **Gen path** | Cursor image gen + local type |
 
+### Pickleball Soft Serve Pickle character (Jul 16 — READY, not live)
+
+| Item | Notes |
+|------|-------|
+| **Status** | Soft Serve joke + **green pickle vegetable** mascot; black band; **no net/court** (differs from TikTok refs) |
+| **Print file** | `designs/pickleball_soft_serve_pickle_UPLOAD_TO_PRINTIFY.png` |
+| **Listing** | `designs/listings/PICKLEBALL_SOFT_SERVE_PICKLE.md` |
+| **Risk** | Crowded Soft Serve pickle lane — list lightly; don’t heavy-ads until views |
+| **Gen path** | Cursor image gen + local type |
+
 ### Pickleball Eyes Up Here (Jul 16 — LIVE)
 
 | Channel | URL | Notes |

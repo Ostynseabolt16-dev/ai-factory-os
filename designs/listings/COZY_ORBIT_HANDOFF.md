@@ -60,6 +60,7 @@ copy. Don't run OpenAI spend unless I confirm. Don't touch factory stickers.
 ```
 
 **Pickleball live trio:** Soft Serve · Eyes Up Here · IT WAS IN (Etsy + eBay)
-**Don't:** pile more SKUs without view/sale signal · clone viral art · heavy ads yet
+**Ready (QC):** Soft Serve V2 — yellow ball mascot + Soft Serve text (not vegetable pickle clone)
+**Don't:** clone viral green pickle Soft Serve · heavy ads yet
 **Good phone work:** joke briefs, titles/tags, safer Yellow C5 replacement copy, price/ad notes
 
