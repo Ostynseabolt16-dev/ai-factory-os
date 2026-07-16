@@ -4,7 +4,9 @@
 **Joke category:** swagger / “I came to ___” sports boast — original mascot (not TikTok clone, not vegetable pickle)  
 **Brand:** Niche test separate from Corvette hero section  
 
-**Rev2 notes:** Soft Serve–style eyes/teeth (edge-flood keep), premium carbon paddle, Bebas stacked type with stroke (replaced flat Liberation).  
+**Rev2 notes:** Soft Serve–style eyes/teeth (edge-flood keep), premium carbon paddle, Bebas stacked type with stroke (replaced flat Liberation).
+
+**Rev3 text layout (research):** Switched from orphan sandwich (`I CAME TO` / mascot / huge `DINK`) to **text-first stack above mascot** — matches Etsy winners (Big Dink Energy, Dink Responsibly, Sorry I can’t, Dead Inside sandwich with balanced type). Punchline still largest, but slogan reads as one unit before the graphic.  
 
 ## Why this layout (research → design)
 
