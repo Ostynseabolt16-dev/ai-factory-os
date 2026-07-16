@@ -18,7 +18,8 @@
 | Sale | Status |
 |------|--------|
 | **eBay Yellow C5 tee** $26.09 + $3.99 ship | Earnings **$21.68**; Printify **$11.71** after **$10 coupon** (list was $21.71) → **~$9.97 cash**; **−$0.03 without coupon** |
-| **eBay Yellow C5 2-sided hoodie** $51.99 | eBay earnings **$50.58**; Printify **$32.49** (`SURVEYSWELCOME` −$5; list $37.49) → **~$18.09 cash**; Ash 2XL; ship by Jul 29 |
+| **eBay Yellow C5 2-sided hoodie** $51.99 | eBay earnings **$50.58**; Printify **$32.49** (`SURVEYSWELCOME` −$5) → **~$18.09 cash**; Ash 2XL; **Apple Card by accident** (wanted Venture X) |
+| **Printify payment** | **Apple Card removed** Jul 16 — use **Venture X** only going forward |
 | **Etsy Yellow C5** | **Taken down** — design has **CORVETTE** wordmark (IP risk). Do not relist same art. |
 | **Pickleball Soft Serve tee** | **LIVE** — Etsy https://www.etsy.com/listing/4538686602 · eBay https://www.ebay.com/itm/398179685959 · $19.99–$22.99 |
 | **Pickleball Eyes Up Here** | **LIVE** Etsy https://www.etsy.com/listing/4538870176 · eBay https://www.ebay.com/itm/398181098143 |
@@ -45,7 +46,7 @@
 2. Safer Yellow C5 replacement (no CORVETTE wordmark) when ready
 3. No more new SKUs until Soft Serve / Eyes / IT WAS IN show a view or sale signal
 4. C6 Blueprint when owner has ~1 hour for Canva work
-5. ~~Log Yellow C5 hoodie Printify~~ **DONE** — $32.49 paid (`SURVEYSWELCOME`); ~$18.09 cash
+5. ~~Log Yellow C5 hoodie Printify~~ **DONE** — $32.49 on Apple Card by accident; Apple Card removed from Printify; Venture X only
 
 ## Phone at work — open with this
 

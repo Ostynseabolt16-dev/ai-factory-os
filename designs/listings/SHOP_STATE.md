@@ -1,7 +1,7 @@
 # CozyOrbitPrints — Shop State (source of truth)
 
 **Etsy shop:** https://www.etsy.com/shop/CozyOrbitPrints  
-**Last updated:** 2026-07-16 night (Yellow C5 hoodie Printify synced — paid $32.49; see `COZY_ORBIT_HANDOFF.md`)
+**Last updated:** 2026-07-16 night (hoodie Printify $32.49 on Apple Card by accident; Apple Card removed from Printify — use Venture X only)
 
 Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any new agent chat to avoid hallucinating order/design state.
 
@@ -15,7 +15,8 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 |------|--------|
 | **eBay Yellow C5 tee** | Sold **$26.09** + $3.99 ship; buyer total $31.28; **earnings $21.68** after tax + $4.65 txn + **$3.75 Ad Fee General** |
 | **Printify tee** | List **$21.71** → paid **$11.71** with **$10 coupon** (prod $9.15 + ship $2.56) → **~$9.97 cash profit**; without coupon ≈ **−$0.03** (owner was right) |
-| **eBay Yellow C5 hoodie 2-sided** | Sold **$51.99**; eBay earnings **$50.58**; Printify **$32.49** after **SURVEYSWELCOME −$5** (list $37.49 = prod $30.10 + Economy ship $7.39) → **~$18.09 cash**; **~$13.09 without coupon**; Ash 2XL; ship by Jul 29 |
+| **eBay Yellow C5 hoodie 2-sided** | Sold **$51.99**; eBay earnings **$50.58**; Printify **$32.49** after **SURVEYSWELCOME −$5** (list $37.49 = prod $30.10 + Economy ship $7.39) → **~$18.09 cash**; **~$13.09 without coupon**; Ash 2XL; ship by Jul 29; **charged Apple Card by accident** (wanted Venture X) |
+| **Printify payment card** | **Apple Card removed** Jul 16 — default / only card going forward = **Venture X**. Do not re-add Apple Card. |
 | **Etsy Yellow C5** | **Taken down** (IP risk — design shows **CORVETTE** wordmark). Do not relist same art on Etsy. |
 | **eBay channel** | Re-prioritize — now **3 shirt/hoodie sales** (was 1). Promoted fees are eating tee margin. |
 | **Pickleball Soft Serve tee** | **LIVE** Jul 16 — Etsy + eBay; Gildan; $19.99–$23.99 (3XL); original ice cream cone art |
@@ -177,7 +178,7 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 | Jun 28 | michel salaun | **C4 Minimal** | 1 | Light Blue | 2XL | France order; order `4102687761`; coupon `VETTESUMMER` (10% off); overnight sale after price-floor changes |
 | Jun 30 | sydney roberts | **C5 Blueprint** front/back | 1 | Black | XL | Gift order; order `4104565447`; Oklahoma City OK; Printify $26.49; est. profit ~$5.08 |
 | Jul 15 | Allyn Davis | **Yellow C5** tee (eBay) | 1 | White | — | **Repeat buyer**; Cortland NY; ~$9.97 w/ Printify coupon |
-| Jul 15 | Allyn Davis | **Yellow C5** hoodie 2-sided (eBay) | 1 | Ash | 2XL | **$50.58 earnings**; Printify **$32.49** (coupon −$5) → **~$18.09 cash**; item `398084925179`; ship by Jul 29 |
+| Jul 15 | Allyn Davis | **Yellow C5** hoodie 2-sided (eBay) | 1 | Ash | 2XL | **$50.58 earnings**; Printify **$32.49** (coupon −$5) → **~$18.09 cash**; Apple Card by accident (Venture X intended); item `398084925179`; ship by Jul 29 |
 | Jul 16 | — | **Pickleball Soft Serve** (listed) | — | — | — | Etsy + eBay live; awaiting first sale |
 
 **Refunded:** Jan — C5 Illustration Vintage — accidental order.
