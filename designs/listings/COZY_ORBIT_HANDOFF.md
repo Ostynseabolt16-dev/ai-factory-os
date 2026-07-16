@@ -43,10 +43,11 @@
 
 1. Pickleball trio live — ads off or low % for 48–72h; watch views/favorites
 2. Pickleball trio URLs fully logged (Soft Serve, Eyes Up Here, IT WAS IN)
-3. Log Yellow C5 hoodie Printify cost when order appears (Allyn, Ash 2XL, ship by Jul 29)
-4. Safer Yellow C5 replacement (no CORVETTE wordmark) when ready
-5. No more new SKUs until Soft Serve / Eyes / IT WAS IN show a view or sale signal
-6. C6 Blueprint when owner has ~1 hour for Canva work
+3. Log Yellow C5 hoodie Printify cost when invoice lands (Allyn, Ash 2XL, in production, ship by Jul 29)
+4. **Dink Responsibly** art ready (`PICKLEBALL_DINK_RESPONSIBLY.md`) — list when trio shows signal (or override)
+5. Safer Yellow C5 replacement (no CORVETTE wordmark) when ready
+6. Queue next Cursor gens: I Came To Dink · Kitchen Closed
+7. C6 Blueprint when owner has ~1 hour for Canva work
 
 ## Phone at work — open with this
 
@@ -60,6 +61,7 @@ copy. Don't run OpenAI spend unless I confirm. Don't touch factory stickers.
 ```
 
 **Pickleball live trio:** Soft Serve · Eyes Up Here · IT WAS IN (Etsy + eBay)
+**Ready (not live):** Dink Responsibly — Printify file + listing copy ready
 **Don't:** pile more SKUs without view/sale signal · clone viral art · heavy ads yet
 **Good phone work:** joke briefs, titles/tags, safer Yellow C5 replacement copy, price/ad notes
 
