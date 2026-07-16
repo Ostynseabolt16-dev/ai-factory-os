@@ -18,8 +18,36 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 | **eBay Yellow C5 hoodie 2-sided** | Sold **$51.99**; **Printify not synced yet** — check morning |
 | **Etsy Yellow C5** | **Taken down** (IP risk — design shows **CORVETTE** wordmark). Do not relist same art on Etsy. |
 | **eBay channel** | Re-prioritize — now **3 shirt/hoodie sales** (was 1). Promoted fees are eating tee margin. |
+| **Pickleball Soft Serve tee** | **LIVE** Jul 16 — Etsy + eBay; Gildan; $19.99–$23.99 (3XL); original ice cream cone art |
+| **Pickleball Eyes Up Here tee** | **LIVE** Jul 16 — Etsy + eBay; arrow + two balls; transparent holes; dark shirts |
+| **Pickleball IT WAS IN tee** | **LIVE** Jul 16 — Etsy + eBay; minimal line-call; dark shirts |
 
 **Structural fix for Yellow C5 tee on eBay:** raise item price and/or cut Ad Fee % — $3.75 ad on a $26 item is why it only breaks even without coupons.
+
+### Pickleball Soft Serve (Jul 16 night — LIVE)
+
+| Channel | URL | Notes |
+|---------|-----|-------|
+| **Etsy** | https://www.etsy.com/listing/4538686602/soft-serve-ice-cream-character-tee-cute | Listing ID `4538686602`; shop section = keep separate from Corvette hero |
+| **eBay** | https://www.ebay.com/itm/398179685959 | Item `398179685959`; S–XL **$19.99**, 2XL **$21.99**, 3XL **$22.99**; Printify shows ~$10 prod profit before marketplace fees |
+| **Print file** | `designs/pickleball_soft_serve_UPLOAD_TO_PRINTIFY.png` | Original cone character — not TikTok pickle clone |
+| **Ads rule** | Light promoted or off for first 48–72h | Do not stack sale + heavy Ad Fee (Yellow C5 lesson) |
+
+### Pickleball Eyes Up Here (Jul 16 — LIVE)
+
+| Channel | URL | Notes |
+|---------|-----|-------|
+| **Etsy** | https://www.etsy.com/listing/4538870176/funny-pickleball-balls-t-shirt-two-neon | Listing ID `4538870176` |
+| **eBay** | https://www.ebay.com/itm/398181098143 | Item `398181098143` |
+| **Print file** | `designs/pickleball_eyes_up_here_UPLOAD_TO_PRINTIFY.png` | Arrow + two balls; transparent holes; dark shirts |
+
+### Pickleball IT WAS IN (Jul 16 — LIVE)
+
+| Channel | URL | Notes |
+|---------|-----|-------|
+| **Etsy** | https://www.etsy.com/listing/4538866895/it-was-in-pickleball-ball-t-shirt | Listing ID `4538866895` |
+| **eBay** | https://www.ebay.com/itm/398181038019 | Item `398181038019` |
+| **Print file** | `designs/pickleball_it_was_in_UPLOAD_TO_PRINTIFY.png` | Minimal line-call; dark shirts |
 
 ---
 
@@ -94,7 +122,11 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 
 **Printify upload:** `designs/c6_z06_velocity_yellow_collection_master_UPLOAD_TO_PRINTIFY.png` — exported with `--threshold 235`, size 3951×4919, transparent background. Needs listing copy before upload/listing.
 
-**Later (not now):** virtual tycoon dashboard · consolidate C5 listings after variant B has data · orange color variants (Velocity Yellow C6, etc.)
+**Tycoon HQ (local):** `visualizations/cozy_orbit_tycoon.html`  
+- Rebuild once: `.venv/bin/python scripts/build_tycoon_hq.py`  
+- Stay live: `.venv/bin/python scripts/build_tycoon_hq.py --serve` → http://127.0.0.1:8765/cozy_orbit_tycoon.html  
+- Also refreshes when you run `shop_daily_brief.py`  
+**Later:** consolidate C5 listings after variant B has data · orange color variants (Velocity Yellow C6, etc.)
 
 ---
 
@@ -144,8 +176,9 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 | Jun 27 | — | **C5 + C7** (same Etsy Ads order) | **2** | — | — | User morning report: ad-attributed order with 2 shirts |
 | Jun 28 | michel salaun | **C4 Minimal** | 1 | Light Blue | 2XL | France order; order `4102687761`; coupon `VETTESUMMER` (10% off); overnight sale after price-floor changes |
 | Jun 30 | sydney roberts | **C5 Blueprint** front/back | 1 | Black | XL | Gift order; order `4104565447`; Oklahoma City OK; Printify $26.49; est. profit ~$5.08 |
-| Jul 16 | — | **Yellow C5** tee (eBay) | 1 | White | — | Earnings $21.68; Printify $11.71 w/ $10 coupon (~$9.97 profit); ~−$0.03 without coupon; Cortland NY |
-| Jul 16 | — | **Yellow C5** hoodie 2-sided (eBay) | 1 | — | — | Sold $51.99; **awaiting Printify sync** |
+| Jul 15 | Allyn Davis | **Yellow C5** tee (eBay) | 1 | White | — | **Repeat buyer**; Cortland NY; ~$9.97 w/ Printify coupon |
+| Jul 15 | Allyn Davis | **Yellow C5** hoodie 2-sided (eBay) | 1 | Ash | 2XL | **$50.58 earnings**; item `398084925179`; ship by Jul 29; Printify pending |
+| Jul 16 | — | **Pickleball Soft Serve** (listed) | — | — | — | Etsy + eBay live; awaiting first sale |
 
 **Refunded:** Jan — C5 Illustration Vintage — accidental order.
 
@@ -398,3 +431,9 @@ PYTHONPATH=. .venv/bin/python scripts/generate_c5_black.py
 ```
 
 **Do not run:** `scripts/polish_c5_master.py` on masters without explicit request.
+
+## Tycoon mission log
+
+| When | Mission |
+|------|------|
+| 2026-07-16 11:08 | Write listing copy: C5 Variant B (~$21) → `c5_variant_B_blackwheels_plate_UPLOAD_TO_PRINTIFY.png` |
