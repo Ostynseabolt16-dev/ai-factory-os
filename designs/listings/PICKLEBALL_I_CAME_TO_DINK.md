@@ -1,8 +1,10 @@
 # Pickleball “I Came To Dink” Tee — listing package
 
-**Status:** **READY TO LIST** (Jul 16, 2026) — art + Printify export done; not live yet  
+**Status:** **READY FOR OWNER QC** (Jul 16, 2026 rev2) — art + Printify export done; not live yet  
 **Joke category:** swagger / “I came to ___” sports boast — original mascot (not TikTok clone, not vegetable pickle)  
 **Brand:** Niche test separate from Corvette hero section  
+
+**Rev2 notes:** Soft Serve–style eyes/teeth (edge-flood keep), premium carbon paddle, Bebas stacked type with stroke (replaced flat Liberation).  
 
 ## Why this layout (research → design)
 
