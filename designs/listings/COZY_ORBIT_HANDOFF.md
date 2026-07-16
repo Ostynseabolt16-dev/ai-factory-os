@@ -18,7 +18,7 @@
 | Sale | Status |
 |------|--------|
 | **eBay Yellow C5 tee** $26.09 + $3.99 ship | Earnings **$21.68**; Printify **$11.71** after **$10 coupon** (list was $21.71) → **~$9.97 cash**; **−$0.03 without coupon** |
-| **eBay Yellow C5 2-sided hoodie** $51.99 | Paid; **Printify not synced yet** |
+| **eBay Yellow C5 2-sided hoodie** $51.99 | Paid; **Printify in production** (confirmed Jul 16); ship by Jul 29 |
 | **Etsy Yellow C5** | **Taken down** — design has **CORVETTE** wordmark (IP risk). Do not relist same art. |
 | **Pickleball Soft Serve tee** | **LIVE** — Etsy https://www.etsy.com/listing/4538686602 · eBay https://www.ebay.com/itm/398179685959 · $19.99–$22.99 |
 | **Pickleball Eyes Up Here** | **LIVE** Etsy https://www.etsy.com/listing/4538870176 · eBay https://www.ebay.com/itm/398181098143 |
@@ -43,7 +43,7 @@
 
 1. Pickleball trio live — ads off or low % for 48–72h; watch views/favorites
 2. Pickleball trio URLs fully logged (Soft Serve, Eyes Up Here, IT WAS IN)
-3. Log Yellow C5 hoodie Printify cost when order appears (Allyn, Ash 2XL, ship by Jul 29)
+3. Log Yellow C5 hoodie Printify cost when invoice lands (Allyn, Ash 2XL, in production, ship by Jul 29)
 4. Safer Yellow C5 replacement (no CORVETTE wordmark) when ready
 5. No more new SKUs until Soft Serve / Eyes / IT WAS IN show a view or sale signal
 6. C6 Blueprint when owner has ~1 hour for Canva work
