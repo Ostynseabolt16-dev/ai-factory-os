@@ -1,8 +1,10 @@
 # Pickleball Soft Serve Pickle Character Tee — listing package
 
-**Status:** **READY FOR OWNER QC** (Jul 16, 2026) — not live yet  
+**Status:** **READY FOR OWNER QC** (Jul 17, 2026 upgrade) — not live yet  
 **Joke:** Soft Serve / go get ice cream  
-**Character:** original green **pickle vegetable** mascot (black sweatband, no net/court)
+**Character:** original green **pickle vegetable** mascot  
+
+**Upgrade vs v1:** lime headband (not black), tighter Soft Serve face, light carbon paddle, tiny ball at feet, **kept** white sticker outline + bold red shoes.
 
 ## Differentiation vs TikTok clones
 
