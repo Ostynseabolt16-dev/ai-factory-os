@@ -1,7 +1,7 @@
 # Pickleball “IT WAS IN.” Tee — listing package
 
-**Status:** **LIVE** Jul 16, 2026 — Etsy + eBay  
-**Why this #3:** Different joke from Soft Serve (pun) and Eyes Up Here (chest gag). Line-call humor every player knows. Minimal = strong thumbnail.
+**Status:** **LIVE** Jul 16, 2026 — Etsy + eBay · **FIRST SALE Jul 17 eBay $18.99** (mint) → ~$4.82 cash  
+**Why this #3:** Different joke from Soft Serve (pun) and Eyes Up Here (chest gag). Line-call humor every player knows. Minimal = strong thumbnail. **Only pickleball SKU that sold** (Soft Serve + Eyes still 0 as of Jul 21).
 
 **Files:**
 - Ball: `designs/pickleball_it_was_in_ball_v2.png`
@@ -35,12 +35,22 @@ It was in.
 Funny pickleball tee for every disputed line call. Bold text, clean ball graphic, zero soft serves. Soft unisex fit — wear it to open play and end the argument early.
 
 ## Pricing
-Match Soft Serve / Eyes Up Here: **$19.99–$21.99** S–XL on eBay
+Sold at **$18.99** + $3.99 ship → thin (~$4.82). **Next pickleball SKUs: $20.99+** S–XL.
+
+## Sale (Jul 17)
+| Field | Value |
+|-------|-------|
+| Channel | eBay `398181038019` |
+| Item | $18.99 · ship $3.99 · buyer paid $22.98 |
+| Color | Mint / seafoam |
+| eBay fees | $3.53 → earnings $19.45 |
+| Printify | $14.63 (#27858258.4) |
+| Cash | **~$4.82** |
 
 ## Upload checklist
 - [x] Printify upload
 - [x] Dark colors only
 - [x] eBay + Etsy live Jul 16
-- [ ] Paste live URLs into this file
-- [ ] Ads off 48h
-- [ ] Log first sale in `sales_log.csv`
+- [x] Live URLs pasted
+- [x] First sale logged in `sales_log.csv` (Jul 17)
+- [ ] Ads stay light
