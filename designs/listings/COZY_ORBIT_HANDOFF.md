@@ -17,6 +17,8 @@
 
 | Sale / item | Status |
 |-------------|--------|
+| **eBay Yellow C5 tee** | **SOLD Jul 21 — $23.92** + $3.99 ship → earnings **$19.57** (txn $4.46 + Ad Fee **$3.88**); **Printify not synced yet** — check in morning; **5th eBay sale** |
+| **Etsy Yellow C5** | Still **taken down** (CORVETTE wordmark). Do not relist. Fulfill eBay only. |
 | **eBay Pickleball IT WAS IN** | **SOLD Jul 17 — $18.99** + $3.99 ship → eBay earn **$19.45** − Printify **$14.63** = **~$4.82 cash** |
 | Soft Serve + Eyes Up Here | Still **0 sales** (only clean type+ball gag sold) |
 | **Dinking Problem tee** | **READY** — `designs/pickleball/pickleball_dinking_problem_UPLOAD_TO_PRINTIFY.png` + `PICKLEBALL_DINKING_PROBLEM.md` |
@@ -24,12 +26,14 @@
 
 ## Next actions (priority)
 
-1. **Upload Dinking Problem** to Printify → eBay @ **$20.99** S–XL (dark shirts only) → Etsy
-2. Then Kitchen → Six pack (`PICKLEBALL_WAVE2.md`); eBay-first; light ads only
-3. Soft Serve / Eyes: leave live, no heavy ads
-4. Fulfill IT WAS IN — Printify #27858258.4 ready-to-ship
-5. Skip for now: memory comic clone, Abraham Lincoln portrait, doodles, goose
-6. Safer Yellow C5 replacement (no CORVETTE wordmark) when ready
+1. **Fulfill Yellow C5 eBay sale** when Printify syncs (12h+ lag is normal) — get shipping label from eBay if needed
+2. **Upload Dinking Problem** to Printify → eBay @ **$20.99** S–XL (dark shirts only) → Etsy
+3. Cut Yellow C5 **Ad Fee %** and/or raise eBay price — $3.88 ad on $23.92 item repeats the thin-margin lesson
+4. Then Kitchen → Six pack (`PICKLEBALL_WAVE2.md`); eBay-first; light ads only
+5. Soft Serve / Eyes: leave live, no heavy ads
+6. Fulfill IT WAS IN if still open — Printify #27858258.4
+7. Skip for now: memory comic clone, Abraham Lincoln portrait, doodles, goose
+8. Safer Yellow C5 replacement (no CORVETTE wordmark) — higher priority now that eBay keeps selling the risky art
 
 ## July 16 flash update
 
