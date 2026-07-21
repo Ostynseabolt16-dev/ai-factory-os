@@ -63,7 +63,7 @@ CRITICAL body quality:
 Centered composition, high contrast for small Etsy thumbnail — yellow car pops on white. No mockup, no t-shirt, no watermark.
 """.strip()
 
-DEFAULT_OUT = Path("designs/c7_velocity_yellow_collection.png")
+DEFAULT_OUT = Path("designs/corvette/c7_velocity_yellow_collection.png")
 
 
 def main() -> None:

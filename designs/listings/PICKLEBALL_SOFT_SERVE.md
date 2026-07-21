@@ -11,10 +11,10 @@
 | **eBay** | https://www.ebay.com/itm/398179685959 |
 
 **Files:**
-- Character: `designs/pickleball_soft_serve_cone_character.png`
-- Master: `designs/pickleball_soft_serve_master.png`
-- Printify: `designs/pickleball_soft_serve_UPLOAD_TO_PRINTIFY.png`
-- Preview: `designs/pickleball_soft_serve_preview_black.jpg`
+- Character: `designs/pickleball/pickleball_soft_serve_cone_character.png`
+- Master: `designs/pickleball/pickleball_soft_serve_master.png`
+- Printify: `designs/pickleball/pickleball_soft_serve_UPLOAD_TO_PRINTIFY.png`
+- Preview: `designs/pickleball/pickleball_soft_serve_preview_black.jpg`
 
 ## Design notes
 - Joke category: soft serve / ice cream (classic phrase)

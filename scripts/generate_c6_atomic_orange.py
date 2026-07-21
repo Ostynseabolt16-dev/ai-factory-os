@@ -72,7 +72,7 @@ CRITICAL body quality:
 Centered composition, high contrast for small Etsy thumbnail — orange car pops on white. No mockup, no t-shirt, no watermark.
 """.strip()
 
-DEFAULT_OUT = Path("designs/c6_atomic_orange_collection.png")
+DEFAULT_OUT = Path("designs/corvette/c6_atomic_orange_collection.png")
 OVERLAY = ROOT / "scripts/overlay_collection_quote.py"
 
 

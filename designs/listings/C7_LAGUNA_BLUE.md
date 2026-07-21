@@ -1,9 +1,9 @@
 # C7 Laguna Blue — Color variant listing (CozyOrbitPrints)
 
-**Master:** `designs/c7_laguna_blue_collection.png`  
-**Printify:** `designs/c7_laguna_blue_collection_UPLOAD_TO_PRINTIFY.png`  
+**Master:** `designs/corvette/c7_laguna_blue_collection.png`  
+**Printify:** `designs/corvette/c7_laguna_blue_collection_UPLOAD_TO_PRINTIFY.png`  
 **Regenerate art:** `PYTHONPATH=. .venv/bin/python scripts/generate_c7_laguna_blue.py`  
-**Regenerate export:** `.venv/bin/python scripts/prepare_printify_exports.py designs/c7_laguna_blue_collection.png --threshold 235`
+**Regenerate export:** `.venv/bin/python scripts/prepare_printify_exports.py designs/corvette/c7_laguna_blue_collection.png --threshold 235`
 
 ---
 

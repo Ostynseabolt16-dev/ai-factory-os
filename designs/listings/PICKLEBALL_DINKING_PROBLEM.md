@@ -4,10 +4,10 @@
 **Why this #4:** Hottest funny-tee joke category in search; type-first like **IT WAS IN** (sold). No beer-mug / crest / letter-as-ball clones.
 
 **Files:**
-- Ball: `designs/pickleball_ball_transparent_holes.png`
-- Master: `designs/pickleball_dinking_problem_master.png`
-- Printify: `designs/pickleball_dinking_problem_UPLOAD_TO_PRINTIFY.png`
-- Preview: `designs/pickleball_dinking_problem_preview_black.jpg`
+- Ball: `designs/pickleball/pickleball_ball_transparent_holes.png`
+- Master: `designs/pickleball/pickleball_dinking_problem_master.png`
+- Printify: `designs/pickleball/pickleball_dinking_problem_UPLOAD_TO_PRINTIFY.png`
+- Preview: `designs/pickleball/pickleball_dinking_problem_preview_black.jpg`
 - Compose: `scripts/compose_pickleball_dinking_problem.py`
 - Font: `designs/fonts/Anton-Regular.ttf`
 
@@ -15,7 +15,7 @@
 - White **I MIGHT HAVE A** / lime **DINKING** / white **PROBLEM**
 - Clean ball **below** text (not inside a letter)
 - Dark shirts only (white + lime type)
-- Regenerate: `python3 scripts/compose_pickleball_dinking_problem.py`
+- Regenerate: `python3 scripts/compose_pickleball_dinking_problem.py` (uses `--no-knock-out-counters` so white lines survive export)
 
 ## eBay title
 Funny Pickleball Dinking Problem T-Shirt Joke Tee Sports Gift
@@ -44,7 +44,7 @@ Funny pickleball tee for players who live at the kitchen line. Bold type, clean 
 Black, Charcoal, Navy (and other darks). **Not** light shirts.
 
 ## Upload checklist
-- [ ] Printify: upload `designs/pickleball_dinking_problem_UPLOAD_TO_PRINTIFY.png`
+- [ ] Printify: upload `designs/pickleball/pickleball_dinking_problem_UPLOAD_TO_PRINTIFY.png`
 - [ ] Dark colors only (Black, Navy, Charcoal)
 - [ ] eBay live @ **$20.99+** S–XL → paste URL
 - [ ] Etsy live → paste URL

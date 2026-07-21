@@ -7,7 +7,7 @@ Etsy listing fee: ~$0.20 each. Listing these 4 ≈ $0.80.
 ## Corvette C5  (OK)
 - **Note:** Our first best-seller niche. Proven C5 demand.
 - **Shirt color:** WHITE / light only
-- **Print file:** `designs/corvette_c5_streetwear_design_UPLOAD_TO_PRINTIFY.png`
+- **Print file:** `designs/corvette/corvette_c5_streetwear_design_UPLOAD_TO_PRINTIFY.png`
 
 **Title** (97 chars, SEO score 80/100):
 
@@ -43,7 +43,7 @@ Tags: C5, Corvette, Chevy, sports car, muscle car, American muscle, car gift, st
 ## Corvette C6  (OK)
 - **Note:** Strongest, most accurate render of the line.
 - **Shirt color:** WHITE / light only
-- **Print file:** `designs/corvette_c6_streetwear_design_UPLOAD_TO_PRINTIFY.png`
+- **Print file:** `designs/corvette/corvette_c6_streetwear_design_UPLOAD_TO_PRINTIFY.png`
 
 **Title** (97 chars, SEO score 80/100):
 
@@ -79,7 +79,7 @@ Tags: C6, Corvette, Chevy, sports car, muscle car, American muscle, car gift, st
 ## Corvette C7  (OK)
 - **Note:** Strong render; correct C7 body.
 - **Shirt color:** WHITE / light only
-- **Print file:** `designs/corvette_c7_streetwear_design_UPLOAD_TO_PRINTIFY.png`
+- **Print file:** `designs/corvette/corvette_c7_streetwear_design_UPLOAD_TO_PRINTIFY.png`
 
 **Title** (95 chars, SEO score 80/100):
 
@@ -115,7 +115,7 @@ Tags: C7, Corvette, Chevy, sports car, muscle car, American muscle, car gift, st
 ## Corvette C4  (OK)
 - **Note:** Line-art style; differentiates from the photoreal renders.
 - **Shirt color:** WHITE / light only
-- **Print file:** `designs/corvette_c4_streetwear_design_UPLOAD_TO_PRINTIFY.png`
+- **Print file:** `designs/corvette/corvette_c4_streetwear_design_UPLOAD_TO_PRINTIFY.png`
 
 **Title** (89 chars, SEO score 80/100):
 

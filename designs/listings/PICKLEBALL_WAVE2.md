@@ -43,9 +43,9 @@ PROBLEM
 ```
 
 **Built locally (no OpenAI):**
-- Master: `designs/pickleball_dinking_problem_master.png`
-- Printify: `designs/pickleball_dinking_problem_UPLOAD_TO_PRINTIFY.png`
-- Preview: `designs/pickleball_dinking_problem_preview_black.jpg`
+- Master: `designs/pickleball/pickleball_dinking_problem_master.png`
+- Printify: `designs/pickleball/pickleball_dinking_problem_UPLOAD_TO_PRINTIFY.png`
+- Preview: `designs/pickleball/pickleball_dinking_problem_preview_black.jpg`
 - Script: `python3 scripts/compose_pickleball_dinking_problem.py`
 - Ball below text; white / lime / white stack; Anton font
 

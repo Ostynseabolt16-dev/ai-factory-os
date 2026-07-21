@@ -1,6 +1,6 @@
 # eBay Listing — Corvette C5
 
-- **Print file (reuse from Etsy/Printify):** `designs/corvette_c5_streetwear_design_UPLOAD_TO_PRINTIFY.png`  (OK)
+- **Print file (reuse from Etsy/Printify):** `designs/corvette/corvette_c5_streetwear_design_UPLOAD_TO_PRINTIFY.png`  (OK)
 - **Mockup to upload:** `mockups/qc_previews/corvette_c5_streetwear_design_white_vs_black.png` (white side) or a real white-shirt mockup
 - **Category:** Clothing, Shoes & Accessories > Men's Clothing > T-Shirts (cat 15687)
 - **Shirt color:** WHITE / light only (dark art vanishes on black)

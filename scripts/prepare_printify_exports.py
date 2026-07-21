@@ -251,10 +251,10 @@ def main() -> None:
 
     repo_root = Path(__file__).resolve().parents[1]
     default_inputs = [
-        repo_root / "designs/c5_variant_B_blackwheels_plate.png",
-        repo_root / "designs/c6_variant_B_collection.png",
-        repo_root / "designs/c7_variant_B_collection.png",
-        repo_root / "designs/c8_variant_B_collection.png",
+        repo_root / "designs/corvette/c5_variant_B_blackwheels_plate.png",
+        repo_root / "designs/corvette/c6_variant_B_collection.png",
+        repo_root / "designs/corvette/c7_variant_B_collection.png",
+        repo_root / "designs/corvette/c8_variant_B_collection.png",
     ]
     inputs = args.inputs or default_inputs
 

@@ -59,7 +59,7 @@ CRITICAL body quality:
 Centered composition, high contrast for small Etsy thumbnails. No mockup, no t-shirt, no watermark.
 """.strip()
 
-DEFAULT_OUT = Path("designs/c8_black_gothic_collection.png")
+DEFAULT_OUT = Path("designs/corvette/c8_black_gothic_collection.png")
 OVERLAY = ROOT / "scripts/overlay_collection_quote.py"
 OPTION_B_QUOTE = [
     "Blacked-out attitude,",

@@ -51,7 +51,7 @@ CRITICAL body quality:
 Centered composition, high contrast for small Etsy thumbnail. Leave enough clean white space below/right of the car for local quote overlay. No mockup, no t-shirt, no watermark.
 """.strip()
 
-DEFAULT_OUT = Path("designs/c7_variant_B_collection.png")
+DEFAULT_OUT = Path("designs/corvette/c7_variant_B_collection.png")
 BACKUP_WRONG = Path("designs/backups/c7_variant_B_wrong_c8_body.png")
 
 

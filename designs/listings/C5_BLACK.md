@@ -1,9 +1,9 @@
 # C5 Black — Color variant listing (CozyOrbitPrints)
 
-**Master:** `designs/c5_black_collection.png`  
-**Printify:** `designs/c5_black_collection_UPLOAD_TO_PRINTIFY.png`  
+**Master:** `designs/corvette/c5_black_collection.png`  
+**Printify:** `designs/corvette/c5_black_collection_UPLOAD_TO_PRINTIFY.png`  
 **Regenerate art:** `PYTHONPATH=. .venv/bin/python scripts/generate_c5_black.py`  
-**Regenerate export:** `.venv/bin/python scripts/prepare_printify_exports.py designs/c5_black_collection.png --threshold 235`
+**Regenerate export:** `.venv/bin/python scripts/prepare_printify_exports.py designs/corvette/c5_black_collection.png --threshold 235`
 
 ---
 

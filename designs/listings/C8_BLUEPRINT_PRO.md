@@ -1,7 +1,7 @@
 # C8 Blueprint Pro — Listing package (CozyOrbitPrints)
 
-**Master:** `designs/c8_blueprint_pro_collection.png`  
-**Printify:** `designs/c8_blueprint_pro_collection_UPLOAD_TO_PRINTIFY.png`
+**Master:** `designs/corvette/c8_blueprint_pro_collection.png`  
+**Printify:** `designs/corvette/c8_blueprint_pro_collection_UPLOAD_TO_PRINTIFY.png`
 
 ---
 

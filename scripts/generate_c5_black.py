@@ -74,7 +74,7 @@ CRITICAL body quality:
 Centered composition, high contrast for small Etsy thumbnail — black car with bright wheel and body highlights pops on white. No mockup, no t-shirt, no watermark.
 """.strip()
 
-DEFAULT_OUT = Path("designs/c5_black_collection.png")
+DEFAULT_OUT = Path("designs/corvette/c5_black_collection.png")
 OVERLAY = ROOT / "scripts/overlay_collection_quote.py"
 
 # Match C5 Torch Red / Yellow C5 messaging — split for 4-line stagger overlay

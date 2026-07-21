@@ -126,7 +126,7 @@ def polish_c5_master(image: Image.Image) -> Image.Image:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Polish C5 variant B master car art.")
-    parser.add_argument("input", nargs="?", type=Path, default=Path("designs/c5_variant_B_blackwheels_plate.png"))
+    parser.add_argument("input", nargs="?", type=Path, default=Path("designs/corvette/c5_variant_B_blackwheels_plate.png"))
     parser.add_argument("--backup-dir", type=Path, default=Path("designs/backups"))
     parser.add_argument("--from-backup", action="store_true")
     args = parser.parse_args()

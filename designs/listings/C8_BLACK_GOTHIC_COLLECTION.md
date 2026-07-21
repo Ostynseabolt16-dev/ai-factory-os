@@ -1,9 +1,9 @@
 # C8 Black Gothic Collection — Listing package (CozyOrbitPrints)
 
-**Master:** `designs/c8_black_gothic_collection.png`  
-**Printify:** `designs/c8_black_gothic_collection_UPLOAD_TO_PRINTIFY.png`  
+**Master:** `designs/corvette/c8_black_gothic_collection.png`  
+**Printify:** `designs/corvette/c8_black_gothic_collection_UPLOAD_TO_PRINTIFY.png`  
 **Generate art:** `PYTHONPATH=. .venv/bin/python scripts/generate_c8_black_gothic.py`  
-**Regenerate export:** `.venv/bin/python scripts/prepare_printify_exports.py designs/c8_black_gothic_collection.png --threshold 235`
+**Regenerate export:** `.venv/bin/python scripts/prepare_printify_exports.py designs/corvette/c8_black_gothic_collection.png --threshold 235`
 
 ---
 

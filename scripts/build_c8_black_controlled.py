@@ -291,11 +291,11 @@ def _run_export(master_out: Path, upload_out: Path, *, target_width: int) -> Non
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--car-out", type=Path, default=Path("designs/_c8_black_car_only.png"))
-    parser.add_argument("--master-out", type=Path, default=Path("designs/c8_black_gothic_collection.png"))
+    parser.add_argument("--master-out", type=Path, default=Path("designs/corvette/c8_black_gothic_collection.png"))
     parser.add_argument(
         "--upload-out",
         type=Path,
-        default=Path("designs/c8_black_gothic_collection_UPLOAD_TO_PRINTIFY.png"),
+        default=Path("designs/corvette/c8_black_gothic_collection_UPLOAD_TO_PRINTIFY.png"),
     )
     parser.add_argument("--skip-generate", action="store_true", help="Reuse existing --car-out")
     parser.add_argument("--with-quote", action="store_true", help="Add small quote paragraph at bottom-right")

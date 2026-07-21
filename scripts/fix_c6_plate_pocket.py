@@ -13,7 +13,7 @@ import numpy as np
 from PIL import Image
 
 DEFAULT_SRC = Path("designs/backups/c6_variant_B_collection_pre_plate_fix.png")
-DEFAULT_OUT = Path("designs/c6_variant_B_collection.png")
+DEFAULT_OUT = Path("designs/corvette/c6_variant_B_collection.png")
 
 # Legacy coords targeted the headlight — wrong. Real plate ~ (528, 622, 592, 638) @ 1536×1024.
 PLATE_BOX_PCT = (0.332, 0.598, 0.398, 0.638)

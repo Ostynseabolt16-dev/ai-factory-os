@@ -1,7 +1,7 @@
 # C8 Night Run Lite — Listing package (CozyOrbitPrints)
 
-**Master:** `designs/c8_night_run_lite_collection.png`  
-**Printify:** `designs/c8_night_run_lite_collection_UPLOAD_TO_PRINTIFY.png`
+**Master:** `designs/corvette/c8_night_run_lite_collection.png`  
+**Printify:** `designs/corvette/c8_night_run_lite_collection_UPLOAD_TO_PRINTIFY.png`
 
 ---
 

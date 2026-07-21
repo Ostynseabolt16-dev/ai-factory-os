@@ -1,10 +1,10 @@
 # C8 Mid-Engine Gothic — New variant listing (CozyOrbitPrints)
 
-**Master:** `designs/c8_mid_engine_gothic_collection.png`  
-**Printify:** `designs/c8_mid_engine_gothic_collection_UPLOAD_TO_PRINTIFY.png`  
+**Master:** `designs/corvette/c8_mid_engine_gothic_collection.png`  
+**Printify:** `designs/corvette/c8_mid_engine_gothic_collection_UPLOAD_TO_PRINTIFY.png`  
 **Generate art:** `PYTHONPATH=. .venv/bin/python scripts/generate_c8_mid_engine_gothic.py`  
 **Draft pass first:** `PYTHONPATH=. .venv/bin/python scripts/generate_c8_mid_engine_gothic.py --draft-only --attempt 1`  
-**Regenerate export:** `.venv/bin/python scripts/prepare_printify_exports.py designs/c8_mid_engine_gothic_collection.png --threshold 235`
+**Regenerate export:** `.venv/bin/python scripts/prepare_printify_exports.py designs/corvette/c8_mid_engine_gothic_collection.png --threshold 235`
 
 ---
 

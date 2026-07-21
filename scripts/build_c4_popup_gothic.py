@@ -206,11 +206,11 @@ def _export(master_path: Path, upload_out: Path, *, target_width: int) -> Path:
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--car-out", type=Path, default=Path("designs/_c4_popup_car_only.png"))
-    parser.add_argument("--master-out", type=Path, default=Path("designs/c4_popup_gothic_collection.png"))
+    parser.add_argument("--master-out", type=Path, default=Path("designs/corvette/c4_popup_gothic_collection.png"))
     parser.add_argument(
         "--upload-out",
         type=Path,
-        default=Path("designs/c4_popup_gothic_collection_UPLOAD_TO_PRINTIFY.png"),
+        default=Path("designs/corvette/c4_popup_gothic_collection_UPLOAD_TO_PRINTIFY.png"),
     )
     parser.add_argument("--skip-generate", action="store_true")
     parser.add_argument("--target-width", type=int, default=3200)

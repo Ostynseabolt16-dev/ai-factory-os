@@ -2,11 +2,11 @@
 
 **Status:** **LIVE** Jul 16, 2026 — Etsy + eBay  
 **Files:**
-- Ball: `designs/pickleball_ball_transparent_holes.png`
-- Arrow: `designs/pickleball_arrow_up.png`
-- Master: `designs/pickleball_eyes_up_here_master.png`
-- Printify: `designs/pickleball_eyes_up_here_UPLOAD_TO_PRINTIFY.png`
-- Preview: `designs/pickleball_eyes_up_here_preview_black.jpg`
+- Ball: `designs/pickleball/pickleball_ball_transparent_holes.png`
+- Arrow: `designs/pickleball/pickleball_arrow_up.png`
+- Master: `designs/pickleball/pickleball_eyes_up_here_master.png`
+- Printify: `designs/pickleball/pickleball_eyes_up_here_UPLOAD_TO_PRINTIFY.png`
+- Preview: `designs/pickleball/pickleball_eyes_up_here_preview_black.jpg`
 
 ## Live URLs
 | Channel | URL |

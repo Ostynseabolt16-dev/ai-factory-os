@@ -20,11 +20,10 @@ WHITE = (255, 255, 255, 255)
 # Match IT WAS IN / ball yellow-green (~avg 218,239,31 on live art)
 LIME = (218, 239, 31, 255)
 FONT_PATH = ROOT / "designs/fonts/Anton-Regular.ttf"
-BALL_PATH = ROOT / "designs/pickleball_ball_transparent_holes.png"
-MASTER_OUT = ROOT / "designs/pickleball_dinking_problem_master.png"
-PREVIEW_OUT = ROOT / "designs/pickleball_dinking_problem_preview_black.jpg"
-PRINTIFY_GENERATED = ROOT / "designs/pickleball_dinking_problem_master_UPLOAD_TO_PRINTIFY.png"
-PRINTIFY_OUT = ROOT / "designs/pickleball_dinking_problem_UPLOAD_TO_PRINTIFY.png"
+BALL_PATH = ROOT / "designs/pickleball/pickleball_ball_transparent_holes.png"
+MASTER_OUT = ROOT / "designs/pickleball/pickleball_dinking_problem_master.png"
+PREVIEW_OUT = ROOT / "designs/pickleball/pickleball_dinking_problem_preview_black.jpg"
+PRINTIFY_OUT = ROOT / "designs/pickleball/pickleball_dinking_problem_UPLOAD_TO_PRINTIFY.png"
 
 
 def load_font(size: int) -> ImageFont.FreeTypeFont:
@@ -121,6 +120,7 @@ def main() -> None:
     import subprocess
     import sys
 
+    # --no-knock-out-counters: lime DINKING reads as "dark" and deletes white lines.
     subprocess.check_call(
         [
             sys.executable,
@@ -128,11 +128,13 @@ def main() -> None:
             str(master),
             "--threshold",
             "235",
+            "--no-knock-out-counters",
         ],
         cwd=str(ROOT),
     )
-    if PRINTIFY_GENERATED.exists():
-        PRINTIFY_GENERATED.replace(PRINTIFY_OUT)
+    generated = master.with_name(f"{master.stem}_UPLOAD_TO_PRINTIFY.png")
+    if generated.exists():
+        generated.replace(PRINTIFY_OUT)
 
     with Image.open(master) as im:
         print(f"OK  {master.name}  {im.size}  bbox={im.getbbox()}")

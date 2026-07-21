@@ -1,8 +1,8 @@
 # C4 Pop-Up Era Gothic — Listing package (CozyOrbitPrints)
 
-**Master:** `designs/c4_popup_gothic_collection.png`  
-**Printify:** `designs/c4_popup_gothic_collection_UPLOAD_TO_PRINTIFY.png`  
-**Preview sheet:** `designs/c4_popup_gothic_preview_sheet.png`  
+**Master:** `designs/corvette/c4_popup_gothic_collection.png`  
+**Printify:** `designs/corvette/c4_popup_gothic_collection_UPLOAD_TO_PRINTIFY.png`  
+**Preview sheet:** `designs/corvette/c4_popup_gothic_preview_sheet.png`  
 **Regenerate:** `PYTHONPATH=. .venv/bin/python scripts/build_c4_popup_gothic.py`
 
 ---

@@ -43,7 +43,7 @@ def solidify_quote(input_path: Path, output_path: Path | None = None) -> Path:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("input", type=Path, nargs="?", default=Path("designs/c7_variant_B_collection.png"))
+    parser.add_argument("input", type=Path, nargs="?", default=Path("designs/corvette/c7_variant_B_collection.png"))
     parser.add_argument("-o", "--output", type=Path, default=None)
     args = parser.parse_args()
     out = solidify_quote(args.input, args.output)

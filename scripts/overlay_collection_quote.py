@@ -49,7 +49,7 @@ class QuoteProfile:
     gray_erase_x_pct: float
 
 
-# C7 — measured from designs/c7_laguna_blue_collection.png
+# C7 — measured from designs/corvette/c7_laguna_blue_collection.png
 C7_PROFILE = QuoteProfile(
     y_positions=[798, 848, 897, 944],
     right_edges=[1355, 1326, 1255, 1187],

@@ -1,10 +1,10 @@
 # C7 Variant B — Ad-ready listing (CozyOrbitPrints)
 
-**Master:** `designs/c7_variant_B_collection.png`  
-**Printify:** `designs/c7_variant_B_collection_UPLOAD_TO_PRINTIFY.png`  
+**Master:** `designs/corvette/c7_variant_B_collection.png`  
+**Printify:** `designs/corvette/c7_variant_B_collection_UPLOAD_TO_PRINTIFY.png`  
 **Regenerate art:** `PYTHONPATH=. .venv/bin/python scripts/generate_c7_variant.py` (OpenAI; currently blocked if billing hard limit remains)  
 **Add local quote:** `.venv/bin/python scripts/solidify_c7_variant_quote.py`  
-**Regenerate export:** `.venv/bin/python scripts/prepare_printify_exports.py designs/c7_variant_B_collection.png --threshold 245`  
+**Regenerate export:** `.venv/bin/python scripts/prepare_printify_exports.py designs/corvette/c7_variant_B_collection.png --threshold 245`  
 **Never use overlay on this file:** `overlay_collection_quote.py` can erase black car paint.
 
 ---

@@ -1,6 +1,6 @@
 # eBay Listing — C7 Variant B
 
-- **Print file:** `designs/c7_variant_B_collection_UPLOAD_TO_PRINTIFY.png`
+- **Print file:** `designs/corvette/c7_variant_B_collection_UPLOAD_TO_PRINTIFY.png`
 - **Etsy source listing:** `designs/listings/C7_VARIANT_B.md`
 - **Channel role:** Lower-fee, lower-price volume test. eBay can undercut Etsy if profit remains **$5+/shirt**.
 

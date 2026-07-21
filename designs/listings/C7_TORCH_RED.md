@@ -1,9 +1,9 @@
 # C7 Torch Red — Color variant listing (CozyOrbitPrints)
 
-**Master:** `designs/c7_torch_red_collection.png`  
-**Printify:** `designs/c7_torch_red_collection_UPLOAD_TO_PRINTIFY.png`  
+**Master:** `designs/corvette/c7_torch_red_collection.png`  
+**Printify:** `designs/corvette/c7_torch_red_collection_UPLOAD_TO_PRINTIFY.png`  
 **Regenerate art:** `PYTHONPATH=. .venv/bin/python scripts/generate_c7_torch_red.py`  
-**Regenerate export:** `.venv/bin/python scripts/prepare_printify_exports.py designs/c7_torch_red_collection.png --threshold 235`
+**Regenerate export:** `.venv/bin/python scripts/prepare_printify_exports.py designs/corvette/c7_torch_red_collection.png --threshold 235`
 
 ---
 

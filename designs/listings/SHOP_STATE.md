@@ -15,7 +15,7 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 |------|--------|
 | **eBay Pickleball IT WAS IN** | **SOLD Jul 17 — $18.99** + $3.99 ship; mint; Printify **#27858258.4** ready-to-ship **$14.63**; eBay fees **$3.53** → earnings **$19.45** → **~$4.82 cash** |
 | **Pickleball Soft Serve / Eyes Up Here** | Still **0 sales** (only type+ball gag converted) |
-| **Dinking Problem** | **READY** — `designs/pickleball_dinking_problem_UPLOAD_TO_PRINTIFY.png` + `PICKLEBALL_DINKING_PROBLEM.md` — upload next |
+| **Dinking Problem** | **READY** — `designs/pickleball/pickleball_dinking_problem_UPLOAD_TO_PRINTIFY.png` + `PICKLEBALL_DINKING_PROBLEM.md` — upload next |
 | **Wave 2 briefs** | `PICKLEBALL_WAVE2.md` — Kitchen / Six pack after Dinking live |
 | **Margin rule** | Next pickleball tees **$20.99+** S–XL — $18.99 is thin |
 | **Ads** | Keep pickleball promoted **light**; Yellow C5 Ad Fee lesson still applies |
@@ -42,7 +42,7 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 |---------|-----|-------|
 | **Etsy** | https://www.etsy.com/listing/4538686602/soft-serve-ice-cream-character-tee-cute | Listing ID `4538686602`; shop section = keep separate from Corvette hero |
 | **eBay** | https://www.ebay.com/itm/398179685959 | Item `398179685959`; S–XL **$19.99**, 2XL **$21.99**, 3XL **$22.99**; Printify shows ~$10 prod profit before marketplace fees |
-| **Print file** | `designs/pickleball_soft_serve_UPLOAD_TO_PRINTIFY.png` | Original cone character — not TikTok pickle clone |
+| **Print file** | `designs/pickleball/pickleball_soft_serve_UPLOAD_TO_PRINTIFY.png` | Original cone character — not TikTok pickle clone |
 | **Ads rule** | Light promoted or off for first 48–72h | Do not stack sale + heavy Ad Fee (Yellow C5 lesson) |
 
 ### Pickleball Eyes Up Here (Jul 16 — LIVE)
@@ -51,7 +51,7 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 |---------|-----|-------|
 | **Etsy** | https://www.etsy.com/listing/4538870176/funny-pickleball-balls-t-shirt-two-neon | Listing ID `4538870176` |
 | **eBay** | https://www.ebay.com/itm/398181098143 | Item `398181098143` |
-| **Print file** | `designs/pickleball_eyes_up_here_UPLOAD_TO_PRINTIFY.png` | Arrow + two balls; transparent holes; dark shirts |
+| **Print file** | `designs/pickleball/pickleball_eyes_up_here_UPLOAD_TO_PRINTIFY.png` | Arrow + two balls; transparent holes; dark shirts |
 
 ### Pickleball IT WAS IN (Jul 16 — LIVE · sold Jul 17)
 
@@ -59,7 +59,7 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 |---------|-----|-------|
 | **Etsy** | https://www.etsy.com/listing/4538866895/it-was-in-pickleball-ball-t-shirt | Listing ID `4538866895` |
 | **eBay** | https://www.ebay.com/itm/398181038019 | Item `398181038019` · **sold Jul 17 $18.99** mint |
-| **Print file** | `designs/pickleball_it_was_in_UPLOAD_TO_PRINTIFY.png` | Minimal line-call; dark shirts |
+| **Print file** | `designs/pickleball/pickleball_it_was_in_UPLOAD_TO_PRINTIFY.png` | Minimal line-call; dark shirts |
 | **P&L** | ~$4.82 cash | fees $3.53 · Printify $14.63 · raise next SKUs to $20.99+ |
 
 ### Pickleball Dinking Problem (Jul 21 — READY, not live)
@@ -67,7 +67,7 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 | Channel | URL | Notes |
 |---------|-----|-------|
 | **Etsy / eBay** | — | Upload next; paste URLs when live |
-| **Print file** | `designs/pickleball_dinking_problem_UPLOAD_TO_PRINTIFY.png` | Type-first white/lime/white; ball below; dark shirts |
+| **Print file** | `designs/pickleball/pickleball_dinking_problem_UPLOAD_TO_PRINTIFY.png` | Type-first white/lime/white; ball below; dark shirts |
 | **Listing** | `designs/listings/PICKLEBALL_DINKING_PROBLEM.md` | eBay S–XL **$20.99** |
 | **Compose** | `scripts/compose_pickleball_dinking_problem.py` | No OpenAI |
 
@@ -112,27 +112,27 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 
 **Design brief:** front or front-3/4 C4 with pop-up headlights up, no badges/logos, crisp 90s motorsport poster feel, light-shirt-safe palette, optional text like “POP-UP ERA” / “FOURTH GEN” instead of trademark-heavy wording. Cross-list to eBay with aggressive pricing after Etsy listing is live.
 
-**Generated master:** `designs/c4_popup_collection_master.png` — QC pass: matches C5/C6/C7 collection system, huge distressed `C4`, clean red C4-style wedge, raised pop-up headlights, `V8` bottom-left, correctly spelled quote, no obvious Corvette/crossed-flag wordmarks.
+**Generated master:** `designs/corvette/c4_popup_collection_master.png` — QC pass: matches C5/C6/C7 collection system, huge distressed `C4`, clean red C4-style wedge, raised pop-up headlights, `V8` bottom-left, correctly spelled quote, no obvious Corvette/crossed-flag wordmarks.
 
-**Printify upload:** `designs/c4_popup_collection_master_UPLOAD_TO_PRINTIFY.png` — exported with `--threshold 235`, size 3951×4919, transparent background. Needs listing copy before upload/listing.
+**Printify upload:** `designs/corvette/c4_popup_collection_master_UPLOAD_TO_PRINTIFY.png` — exported with `--threshold 235`, size 3951×4919, transparent background. Needs listing copy before upload/listing.
 
-**New controlled variant (Jun 27 evening):** `designs/c4_popup_gothic_collection.png` + `designs/c4_popup_gothic_collection_UPLOAD_TO_PRINTIFY.png` — black C4-style wedge, raised pop-up headlights, chrome/silver wheels, local readable typography (`POP-UP ERA`, `FOURTH GEN V8`, `1984-1996`), no visible logos/wordmarks/plate. Preview checked on White, Natural, Sport Grey, and Light Blue. Listing: `designs/listings/C4_POPUP_GOTHIC.md`. **Uploaded to Etsy Jun 27** at **S-XL $23.99**, **2XL $26.99**, **$4.75 shipping**; offsite ads ON at **15%**; owner-calculated floor profit **at least $6.62/shirt** after fees + production.
+**New controlled variant (Jun 27 evening):** `designs/corvette/c4_popup_gothic_collection.png` + `designs/corvette/c4_popup_gothic_collection_UPLOAD_TO_PRINTIFY.png` — black C4-style wedge, raised pop-up headlights, chrome/silver wheels, local readable typography (`POP-UP ERA`, `FOURTH GEN V8`, `1984-1996`), no visible logos/wordmarks/plate. Preview checked on White, Natural, Sport Grey, and Light Blue. Listing: `designs/listings/C4_POPUP_GOTHIC.md`. **Uploaded to Etsy Jun 27** at **S-XL $23.99**, **2XL $26.99**, **$4.75 shipping**; offsite ads ON at **15%**; owner-calculated floor profit **at least $6.62/shirt** after fees + production.
 
 **Do not use:** `/Users/ostynseabolt/.cursor/projects/Users-ostynseabolt-ai/assets/c4_popup_era_master.png` — good standalone concept but off-system versus the Corvette collection style.
 
 ### C3 Stingray collection candidate (2026-06-19 early)
 
-**Generated master:** `designs/c3_stingray_collection_master.png` — QC pass: matches collection system, huge distressed `C3`, silver shark-body C3-style coupe, `V8` bottom-left, correctly spelled quote, no obvious Corvette/crossed-flag wordmarks.
+**Generated master:** `designs/corvette/c3_stingray_collection_master.png` — QC pass: matches collection system, huge distressed `C3`, silver shark-body C3-style coupe, `V8` bottom-left, correctly spelled quote, no obvious Corvette/crossed-flag wordmarks.
 
-**Printify upload:** `designs/c3_stingray_collection_master_UPLOAD_TO_PRINTIFY.png` — exported with `--threshold 235`, size 3951×4919, transparent background. Needs listing copy before upload/listing.
+**Printify upload:** `designs/corvette/c3_stingray_collection_master_UPLOAD_TO_PRINTIFY.png` — exported with `--threshold 235`, size 3951×4919, transparent background. Needs listing copy before upload/listing.
 
 ### C5 Z06 / fixed-roof coupe candidate (2026-06-19 early)
 
-**Generated master:** `designs/c5_z06_collection_master_ls6.png` — QC pass: matches collection system, huge distressed `C5`, blue fixed-roof/Z06-style C5 coupe, `V8` bottom-left, stronger quote correctly spelled: “Light. Stiff. LS6. Built before comfort got in the way.” No obvious Corvette/crossed-flag/Z06 wordmarks.
+**Generated master:** `designs/corvette/c5_z06_collection_master_ls6.png` — QC pass: matches collection system, huge distressed `C5`, blue fixed-roof/Z06-style C5 coupe, `V8` bottom-left, stronger quote correctly spelled: “Light. Stiff. LS6. Built before comfort got in the way.” No obvious Corvette/crossed-flag/Z06 wordmarks.
 
-**Printify upload:** `designs/c5_z06_collection_master_ls6_UPLOAD_TO_PRINTIFY.png` — exported with `--threshold 235`, size 3951×4919, transparent background. Needs listing copy before upload/listing.
+**Printify upload:** `designs/corvette/c5_z06_collection_master_ls6_UPLOAD_TO_PRINTIFY.png` — exported with `--threshold 235`, size 3951×4919, transparent background. Needs listing copy before upload/listing.
 
-**Do not use:** `designs/c5_z06_collection_master.png` — good car/layout but weaker generic quote.
+**Do not use:** `designs/corvette/c5_z06_collection_master.png` — good car/layout but weaker generic quote.
 
 **Next candidates:** C6 Z06 / track style; C2 split-window collection; Porsche 911 / Mustang / JDM only after Corvette winners get more variants because those niches are more crowded and less proven for this shop.
 
@@ -140,9 +140,9 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 
 ### C6 Z06 Velocity Yellow candidate (2026-06-19 early)
 
-**Generated master:** `designs/c6_z06_velocity_yellow_collection_master.png` — QC pass: matches collection system, huge distressed `C6`, Velocity Yellow C6 Z06-style coupe, visible hood scoop, side vent, wide stance, black wheels, `V8` bottom-left, quote correctly spelled: “7.0 liters. 505 horses. Built wide. Born wild.” No obvious Corvette/crossed-flag/Z06 wordmarks.
+**Generated master:** `designs/corvette/c6_z06_velocity_yellow_collection_master.png` — QC pass: matches collection system, huge distressed `C6`, Velocity Yellow C6 Z06-style coupe, visible hood scoop, side vent, wide stance, black wheels, `V8` bottom-left, quote correctly spelled: “7.0 liters. 505 horses. Built wide. Born wild.” No obvious Corvette/crossed-flag/Z06 wordmarks.
 
-**Printify upload:** `designs/c6_z06_velocity_yellow_collection_master_UPLOAD_TO_PRINTIFY.png` — exported with `--threshold 235`, size 3951×4919, transparent background. Needs listing copy before upload/listing.
+**Printify upload:** `designs/corvette/c6_z06_velocity_yellow_collection_master_UPLOAD_TO_PRINTIFY.png` — exported with `--threshold 235`, size 3951×4919, transparent background. Needs listing copy before upload/listing.
 
 **Tycoon HQ (local):** `visualizations/cozy_orbit_tycoon.html`  
 - Rebuild once: `.venv/bin/python scripts/build_tycoon_hq.py`  
@@ -156,15 +156,15 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 
 | Asset | File | Size | Status |
 |-------|------|------|--------|
-| Profile icon | `designs/cozy_orbit_etsy_profile_500.png` | 500×500 | **Uploaded** (solo yellow C5 hero) |
-| Shop banner | `designs/cozy_orbit_etsy_banner_3360x840.png` | 3360×840 | **Uploaded** |
+| Profile icon | `designs/corvette/cozy_orbit_etsy_profile_500.png` | 500×500 | **Uploaded** (solo yellow C5 hero) |
+| Shop banner | `designs/corvette/cozy_orbit_etsy_banner_3360x840.png` | 3360×840 | **Uploaded** |
 
 **Regenerate profile hero (OpenAI):** `.venv/bin/python scripts/generate_banner_cars.py --profile --force`  
 **Regenerate profile composite:** `.venv/bin/python scripts/build_etsy_shop_assets.py --profile-only`  
 **Regenerate banner:** `.venv/bin/python scripts/build_etsy_shop_assets.py --banner-only`  
 **Generate banner cars (OpenAI, transparent PNGs):** `.venv/bin/python scripts/generate_banner_cars.py`  
-**Profile source:** `designs/banner/etsy_profile_c5_hero.png`  
-**Banner source assets:** `designs/banner/etsy_banner_c5_yellow.png`, `etsy_banner_c6_white.png`, `etsy_banner_c7_black.png`  
+**Profile source:** `designs/corvette/banner/etsy_profile_c5_hero.png`  
+**Banner source assets:** `designs/corvette/banner/etsy_banner_c5_yellow.png`, `etsy_banner_c6_white.png`, `etsy_banner_c7_black.png`  
 **Profile:** solo debadged yellow C5 on charcoal — no text · **Banner:** C5 / C6 / C7 lineup + tagline
 
 ### Upload checklist (Etsy → Shop Manager → Settings)
@@ -423,32 +423,32 @@ Custom quote (4 lines): `--lines "Line1" "Line2" "Line3" "Line4"` or `--preset v
 .venv/bin/python scripts/shop_daily_brief.py
 
 # Regenerate Printify export (clean — no car surgery)
-.venv/bin/python scripts/prepare_printify_exports.py designs/c6_variant_B_collection.png
-.venv/bin/python scripts/prepare_printify_exports.py designs/c7_torch_red_collection.png --threshold 235
+.venv/bin/python scripts/prepare_printify_exports.py designs/corvette/c6_variant_B_collection.png
+.venv/bin/python scripts/prepare_printify_exports.py designs/corvette/c7_torch_red_collection.png --threshold 235
 
 # Regenerate Torch Red C7 master
 PYTHONPATH=. .venv/bin/python scripts/generate_c7_torch_red.py
 
-.venv/bin/python scripts/prepare_printify_exports.py designs/c7_laguna_blue_collection.png --threshold 235
+.venv/bin/python scripts/prepare_printify_exports.py designs/corvette/c7_laguna_blue_collection.png --threshold 235
 
 # Regenerate Laguna Blue C7 master
 PYTHONPATH=. .venv/bin/python scripts/generate_c7_laguna_blue.py
 
 # Atomic Orange C6 (generates + overlays quote automatically)
 PYTHONPATH=. .venv/bin/python scripts/generate_c6_atomic_orange.py
-.venv/bin/python scripts/prepare_printify_exports.py designs/c6_atomic_orange_collection.png --threshold 235
+.venv/bin/python scripts/prepare_printify_exports.py designs/corvette/c6_atomic_orange_collection.png --threshold 235
 
 # Quote overlay only (after any collection master gen)
 .venv/bin/python scripts/overlay_collection_quote.py designs/<master>.png
-.venv/bin/python scripts/overlay_collection_quote.py designs/c7_velocity_yellow_collection.png --preset velocity-yellow
+.venv/bin/python scripts/overlay_collection_quote.py designs/corvette/c7_velocity_yellow_collection.png --preset velocity-yellow
 
 # Torch Red C5
 PYTHONPATH=. .venv/bin/python scripts/generate_c5_torch_red.py
-.venv/bin/python scripts/prepare_printify_exports.py designs/c5_torch_red_collection.png --threshold 235
+.venv/bin/python scripts/prepare_printify_exports.py designs/corvette/c5_torch_red_collection.png --threshold 235
 
 # Black C5 (generates + overlays C5 quote automatically)
 PYTHONPATH=. .venv/bin/python scripts/generate_c5_black.py
-.venv/bin/python scripts/prepare_printify_exports.py designs/c5_black_collection.png --threshold 235
+.venv/bin/python scripts/prepare_printify_exports.py designs/corvette/c5_black_collection.png --threshold 235
 
 # Regenerate Etsy shop icon + banner
 .venv/bin/python scripts/build_etsy_shop_assets.py
