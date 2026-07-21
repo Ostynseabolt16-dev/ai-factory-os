@@ -4,10 +4,10 @@
 **Why this #3:** Different joke from Soft Serve (pun) and Eyes Up Here (chest gag). Line-call humor every player knows. Minimal = strong thumbnail.
 
 **Files:**
-- Ball: `designs/pickleball_it_was_in_ball_v2.png`
-- Master: `designs/pickleball_it_was_in_master.png`
-- Printify: `designs/pickleball_it_was_in_UPLOAD_TO_PRINTIFY.png`
-- Preview: `designs/pickleball_it_was_in_preview_black.jpg`
+- Ball: `designs/pickleball/pickleball_it_was_in_ball_v2.png`
+- Master: `designs/pickleball/pickleball_it_was_in_master.png`
+- Printify: `designs/pickleball/pickleball_it_was_in_UPLOAD_TO_PRINTIFY.png`
+- Preview: `designs/pickleball/pickleball_it_was_in_preview_black.jpg`
 
 ## Live URLs
 | Channel | URL |
@@ -37,10 +37,20 @@ Funny pickleball tee for every disputed line call. Bold text, clean ball graphic
 ## Pricing
 Match Soft Serve / Eyes Up Here: **$19.99–$21.99** S–XL on eBay
 
+## First sale
+| Field | Value |
+|-------|-------|
+| **Date** | Jul 17, 2026 |
+| **Channel** | eBay (`398181038019`) |
+| **Price** | **$18.99** |
+| **Color** | Mint / seafoam green (notification flat-lay) |
+| **Status** | Paid — ready to ship |
+| **Note** | First pickleball SKU sale; Soft Serve + Eyes Up Here still quiet as of Jul 21 |
+
 ## Upload checklist
 - [x] Printify upload
 - [x] Dark colors only
 - [x] eBay + Etsy live Jul 16
-- [ ] Paste live URLs into this file
-- [ ] Ads off 48h
-- [ ] Log first sale in `sales_log.csv`
+- [x] Live URLs in this file
+- [ ] Ads stay light (Yellow C5 Ad Fee lesson)
+- [x] Log first sale in `sales_log.csv`

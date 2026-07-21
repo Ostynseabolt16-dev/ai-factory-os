@@ -1,13 +1,26 @@
 # CozyOrbitPrints — Shop State (source of truth)
 
 **Etsy shop:** https://www.etsy.com/shop/CozyOrbitPrints  
-**Last updated:** 2026-07-16 (Mac return after ~8 days; 2 eBay Yellow C5 sales; Etsy Yellow C5 taken down; see `COZY_ORBIT_HANDOFF.md`)
+**Last updated:** 2026-07-21 (post-work: first pickleball sale — eBay IT WAS IN $18.99 on Jul 17; Soft Serve + Eyes still quiet; Wave 2 briefs ready)
 
 Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any new agent chat to avoid hallucinating order/design state.
 
 > **NOT kawaii stickers.** Live business = CozyOrbitPrints Corvette apparel (Etsy + eBay + Printify). GitHub `ai-factory-os` is stale May factory scaffolding — ignore it unless explicitly working on factory code.
 
 ---
+
+## July 21 post-work update
+
+| Item | Status |
+|------|--------|
+| **eBay Pickleball IT WAS IN** | **SOLD Jul 17 — $18.99** + $3.99 ship; mint; Printify **#27858258.4** ready-to-ship **$14.63**; eBay fees **$3.53** → earnings **$19.45** → **~$4.82 cash** |
+| **Pickleball Soft Serve / Eyes Up Here** | Still **0 sales** (3 live SKUs × Etsy+eBay; only IT WAS IN converted) |
+| **Wave 2 briefs** | `PICKLEBALL_WAVE2.md` — Dinking Problem **art ready**; Kitchen / Six pack next |
+| **Dinking Problem** | Files ready: `designs/pickleball/pickleball_dinking_problem_UPLOAD_TO_PRINTIFY.png` + `PICKLEBALL_DINKING_PROBLEM.md` — **upload to Printify/eBay next** |
+| **Folder cleanup (Jul 21)** | Deleted May kawaii/sticker PNGs from `designs/`. Live art now under `designs/pickleball/` · Corvette slot `designs/corvette/` (masters still on Mac) |
+| **Margin rule** | Next pickleball tees **$20.99+** S–XL or eat shipping differently — $18.99 is thin |
+| **Ads** | Keep pickleball promoted **light**; Yellow C5 Ad Fee lesson still applies |
+| **Do not build tonight** | Comic-panel memory shirt; Lincoln portrait; doodle club; goose grid |
 
 ## July 16 Mac catch-up
 
@@ -17,10 +30,10 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 | **Printify tee** | List **$21.71** → paid **$11.71** with **$10 coupon** (prod $9.15 + ship $2.56) → **~$9.97 cash profit**; without coupon ≈ **−$0.03** (owner was right) |
 | **eBay Yellow C5 hoodie 2-sided** | Sold **$51.99**; **Printify not synced yet** — check morning |
 | **Etsy Yellow C5** | **Taken down** (IP risk — design shows **CORVETTE** wordmark). Do not relist same art on Etsy. |
-| **eBay channel** | Re-prioritize — now **3 shirt/hoodie sales** (was 1). Promoted fees are eating tee margin. |
+| **eBay channel** | Re-prioritize — now **4 shirt/hoodie sales** including pickleball. Promoted fees are eating tee margin. |
 | **Pickleball Soft Serve tee** | **LIVE** Jul 16 — Etsy + eBay; Gildan; $19.99–$23.99 (3XL); original ice cream cone art |
 | **Pickleball Eyes Up Here tee** | **LIVE** Jul 16 — Etsy + eBay; arrow + two balls; transparent holes; dark shirts |
-| **Pickleball IT WAS IN tee** | **LIVE** Jul 16 — Etsy + eBay; minimal line-call; dark shirts |
+| **Pickleball IT WAS IN tee** | **LIVE** Jul 16 — Etsy + eBay; **first sale Jul 17 $18.99** (mint); dark shirts + light colors in mockups |
 
 **Structural fix for Yellow C5 tee on eBay:** raise item price and/or cut Ad Fee % — $3.75 ad on a $26 item is why it only breaks even without coupons.
 
@@ -30,7 +43,7 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 |---------|-----|-------|
 | **Etsy** | https://www.etsy.com/listing/4538686602/soft-serve-ice-cream-character-tee-cute | Listing ID `4538686602`; shop section = keep separate from Corvette hero |
 | **eBay** | https://www.ebay.com/itm/398179685959 | Item `398179685959`; S–XL **$19.99**, 2XL **$21.99**, 3XL **$22.99**; Printify shows ~$10 prod profit before marketplace fees |
-| **Print file** | `designs/pickleball_soft_serve_UPLOAD_TO_PRINTIFY.png` | Original cone character — not TikTok pickle clone |
+| **Print file** | `designs/pickleball/pickleball_soft_serve_UPLOAD_TO_PRINTIFY.png` | Original cone character — not TikTok pickle clone |
 | **Ads rule** | Light promoted or off for first 48–72h | Do not stack sale + heavy Ad Fee (Yellow C5 lesson) |
 
 ### Pickleball Eyes Up Here (Jul 16 — LIVE)
@@ -39,7 +52,7 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 |---------|-----|-------|
 | **Etsy** | https://www.etsy.com/listing/4538870176/funny-pickleball-balls-t-shirt-two-neon | Listing ID `4538870176` |
 | **eBay** | https://www.ebay.com/itm/398181098143 | Item `398181098143` |
-| **Print file** | `designs/pickleball_eyes_up_here_UPLOAD_TO_PRINTIFY.png` | Arrow + two balls; transparent holes; dark shirts |
+| **Print file** | `designs/pickleball/pickleball_eyes_up_here_UPLOAD_TO_PRINTIFY.png` | Arrow + two balls; transparent holes; dark shirts |
 
 ### Pickleball IT WAS IN (Jul 16 — LIVE)
 
@@ -47,7 +60,8 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 |---------|-----|-------|
 | **Etsy** | https://www.etsy.com/listing/4538866895/it-was-in-pickleball-ball-t-shirt | Listing ID `4538866895` |
 | **eBay** | https://www.ebay.com/itm/398181038019 | Item `398181038019` |
-| **Print file** | `designs/pickleball_it_was_in_UPLOAD_TO_PRINTIFY.png` | Minimal line-call; dark shirts |
+| **Print file** | `designs/pickleball/pickleball_it_was_in_UPLOAD_TO_PRINTIFY.png` | Minimal line-call; dark shirts |
+| **First sale** | Jul 17 eBay **$18.99** | Mint/seafoam; paid; fulfill via Printify |
 
 ---
 
@@ -154,7 +168,7 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 
 ---
 
-## Sales summary (user-reported; Jul 16 = 17+ Etsy + 3 eBay units logged)
+## Sales summary (user-reported; Jul 21 = 17+ Etsy + 4 eBay units logged)
 
 | Date | Buyer | Listing | Qty | Color | Size | Notes |
 |------|-------|---------|-----|-------|------|-------|
@@ -179,6 +193,7 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 | Jul 15 | Allyn Davis | **Yellow C5** tee (eBay) | 1 | White | — | **Repeat buyer**; Cortland NY; ~$9.97 w/ Printify coupon |
 | Jul 15 | Allyn Davis | **Yellow C5** hoodie 2-sided (eBay) | 1 | Ash | 2XL | **$50.58 earnings**; item `398084925179`; ship by Jul 29; Printify pending |
 | Jul 16 | — | **Pickleball Soft Serve** (listed) | — | — | — | Etsy + eBay live; awaiting first sale |
+| Jul 17 | — | **Pickleball IT WAS IN** (eBay) | 1 | Mint / seafoam | — | **$18.99**+$3.99 ship; Printify $14.63; fees $3.53; **~$4.82 cash**; only pickleball sale of 3 SKUs |
 
 **Refunded:** Jan — C5 Illustration Vintage — accidental order.
 
@@ -319,12 +334,12 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 - **Readout window:** evaluate after 48 hours using orders, spend per order, and cart/favorite movement before re-expanding any paused listings.
 - **Guardrail:** if a sweatshirt still shows 0 clicks after meaningful impressions, pause and reallocate back to proven tee winners.
 
-## eBay snapshot (updated 2026-07-16)
+## eBay snapshot (updated 2026-07-21)
 
 - **Active / promoted:** listings live; **Ad Fee General** is material — Yellow C5 tee took **$3.75** ad on a $26.09 item.
-- **Sales:** (1) Jun 18 C5 old art Michael ~$9.46 before promo fee · (2) Jul 16 Yellow C5 tee ~breakeven without coupon / ~$10 with $10 Printify coupon · (3) Jul 16 Yellow C5 2-sided hoodie $51.99 pending Printify.
+- **Sales:** (1) Jun 18 C5 old art Michael ~$9.46 before promo fee · (2) Jul 15 Yellow C5 tee ~breakeven without coupon / ~$10 with $10 Printify coupon · (3) Jul 15 Yellow C5 2-sided hoodie $51.99 pending Printify · (4) **Jul 17 Pickleball IT WAS IN $18.99** (first niche signal).
 - **2026-06-19:** Yellow C5 hoodie (front+back) and Yellow C6 hoodie (front-only) launched to eBay.
-- **Channel rule (Jul 16):** eBay is **live demand** for Yellow C5 while Etsy listing is down — keep fulfilling; fix tee price/ad % so next sale clears **$5+ without coupons**.
+- **Channel rule (Jul 21):** eBay is converting on Yellow C5 + now pickleball line-call art — keep fulfilling; price/ad % so tees clear **$5+ without coupons**; Wave 2 SKUs eBay-first at **$20.99–$22.99** (IT WAS IN @ $18.99 only cleared ~$4.82).
 - **IP note:** Yellow C5 art includes **CORVETTE** lettering — likely why Etsy took it down; eBay can get hit too. Plan safer replacement (no brand wordmark) before heavy ad spend.
 
 ## Weekend promo test (2026-06-19 late)
