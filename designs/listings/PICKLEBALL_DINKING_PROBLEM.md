@@ -4,10 +4,10 @@
 **Why this #4:** Hottest funny-tee joke category in search; type-first like **IT WAS IN** (sold). No beer-mug / crest / letter-as-ball clones.
 
 **Files:**
-- Ball: `designs/pickleball_ball_transparent_holes.png`
-- Master: `designs/pickleball_dinking_problem_master.png`
-- Printify: `designs/pickleball_dinking_problem_UPLOAD_TO_PRINTIFY.png`
-- Preview: `designs/pickleball_dinking_problem_preview_black.jpg`
+- Ball: `designs/pickleball/pickleball_ball_transparent_holes.png`
+- Master: `designs/pickleball/pickleball_dinking_problem_master.png`
+- Printify: `designs/pickleball/pickleball_dinking_problem_UPLOAD_TO_PRINTIFY.png`
+- Preview: `designs/pickleball/pickleball_dinking_problem_preview_black.jpg`
 - Compose: `scripts/compose_pickleball_dinking_problem.py`
 - Font: `designs/fonts/Anton-Regular.ttf`
 
@@ -16,7 +16,7 @@
 - Clean ball **below** text (not inside a letter)
 - Dark shirts only (white + lime type)
 - Regenerate: `python3 scripts/compose_pickleball_dinking_problem.py` then  
-  `python3 scripts/prepare_printify_exports.py designs/pickleball_dinking_problem_master.png --threshold 235`  
+  `python3 scripts/prepare_printify_exports.py designs/pickleball/pickleball_dinking_problem_master.png --threshold 235`  
   then rename export to `pickleball_dinking_problem_UPLOAD_TO_PRINTIFY.png` if needed
 
 ## eBay title

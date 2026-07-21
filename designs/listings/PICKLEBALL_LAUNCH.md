@@ -95,10 +95,10 @@ no net, no court background, no other people, square composition, high resolutio
 
 ## Done Jul 16 night — Design #1 files
 
-- `designs/pickleball_soft_serve_cone_character.png` — original cone character
-- `designs/pickleball_soft_serve_master.png` — full graphic with classic phrase
-- `designs/pickleball_soft_serve_UPLOAD_TO_PRINTIFY.png` — Printify canvas
-- `designs/pickleball_soft_serve_preview_black.jpg` — black-shirt QC
+- `designs/pickleball/pickleball_soft_serve_cone_character.png` — original cone character
+- `designs/pickleball/pickleball_soft_serve_master.png` — full graphic with classic phrase
+- `designs/pickleball/pickleball_soft_serve_UPLOAD_TO_PRINTIFY.png` — Printify canvas
+- `designs/pickleball/pickleball_soft_serve_preview_black.jpg` — black-shirt QC
 - Listing copy: `designs/listings/PICKLEBALL_SOFT_SERVE.md`
 
 **Next human step:** upload Printify file → publish eBay at $23.99 → screenshot live listing.

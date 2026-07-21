@@ -19,7 +19,7 @@
 |-------------|--------|
 | **eBay Pickleball IT WAS IN** | **SOLD Jul 17 — $18.99** + $3.99 ship → eBay earn **$19.45** − Printify **$14.63** = **~$4.82 cash** |
 | Soft Serve + Eyes Up Here | Still **0 sales** (only 1 of 3 pickleball SKUs sold) |
-| **Dinking Problem tee** | **READY** — master + Printify export + listing `PICKLEBALL_DINKING_PROBLEM.md` — upload tonight |
+| **Dinking Problem tee** | **READY** — `designs/pickleball/pickleball_dinking_problem_UPLOAD_TO_PRINTIFY.png` — pull this branch on Mac before Printify upload |
 | Soft Serve / Eyes / IT WAS IN | Still live Etsy + eBay |
 
 ## Next actions (priority)

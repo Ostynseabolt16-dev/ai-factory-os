@@ -45,7 +45,7 @@ PROBLEM
 **Canva recipe (25–30 min)**
 
 1. Canvas **4500×5400** px, transparent background  
-2. Reuse ball: `designs/pickleball_it_was_in_ball_v2.png` (or Eyes Up Here ball) — place **below** the text stack, ~15–20% of canvas height. Do **not** put ball inside a letter.  
+2. Reuse ball: `designs/pickleball/pickleball_it_was_in_ball_v2.png` (or Eyes Up Here ball) — place **below** the text stack, ~15–20% of canvas height. Do **not** put ball inside a letter.  
 3. Type (Anton / Bebas / Impact — not Inter):
    - Line 1 `I MIGHT HAVE A` — white, ~8–10% canvas width per letter feel, centered  
    - Line 2 `DINKING` — **lime/yellow**, 1.5–2× larger than other lines, tight tracking  

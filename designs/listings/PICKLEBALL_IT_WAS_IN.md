@@ -4,10 +4,10 @@
 **Why this #3:** Different joke from Soft Serve (pun) and Eyes Up Here (chest gag). Line-call humor every player knows. Minimal = strong thumbnail.
 
 **Files:**
-- Ball: `designs/pickleball_it_was_in_ball_v2.png`
-- Master: `designs/pickleball_it_was_in_master.png`
-- Printify: `designs/pickleball_it_was_in_UPLOAD_TO_PRINTIFY.png`
-- Preview: `designs/pickleball_it_was_in_preview_black.jpg`
+- Ball: `designs/pickleball/pickleball_it_was_in_ball_v2.png`
+- Master: `designs/pickleball/pickleball_it_was_in_master.png`
+- Printify: `designs/pickleball/pickleball_it_was_in_UPLOAD_TO_PRINTIFY.png`
+- Preview: `designs/pickleball/pickleball_it_was_in_preview_black.jpg`
 
 ## Live URLs
 | Channel | URL |

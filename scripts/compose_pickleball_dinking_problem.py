@@ -19,9 +19,9 @@ CANVAS = (4500, 5400)
 WHITE = (255, 255, 255, 255)
 LIME = (214, 237, 15, 255)  # match IT WAS IN ball yellow-green
 FONT_PATH = ROOT / "designs/fonts/Anton-Regular.ttf"
-BALL_PATH = ROOT / "designs/pickleball_ball_transparent_holes.png"
-MASTER_OUT = ROOT / "designs/pickleball_dinking_problem_master.png"
-PREVIEW_OUT = ROOT / "designs/pickleball_dinking_problem_preview_black.jpg"
+BALL_PATH = ROOT / "designs/pickleball/pickleball_ball_transparent_holes.png"
+MASTER_OUT = ROOT / "designs/pickleball/pickleball_dinking_problem_master.png"
+PREVIEW_OUT = ROOT / "designs/pickleball/pickleball_dinking_problem_preview_black.jpg"
 
 
 def load_font(size: int) -> ImageFont.FreeTypeFont:
@@ -130,8 +130,8 @@ def main() -> None:
         ],
         cwd=str(ROOT),
     )
-    generated = ROOT / "designs/pickleball_dinking_problem_master_UPLOAD_TO_PRINTIFY.png"
-    final = ROOT / "designs/pickleball_dinking_problem_UPLOAD_TO_PRINTIFY.png"
+    generated = ROOT / "designs/pickleball/pickleball_dinking_problem_master_UPLOAD_TO_PRINTIFY.png"
+    final = ROOT / "designs/pickleball/pickleball_dinking_problem_UPLOAD_TO_PRINTIFY.png"
     if generated.exists():
         generated.replace(final)
 

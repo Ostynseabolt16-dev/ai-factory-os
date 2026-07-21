@@ -16,7 +16,8 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 | **eBay Pickleball IT WAS IN** | **SOLD Jul 17 — $18.99** + $3.99 ship; mint; Printify **#27858258.4** ready-to-ship **$14.63**; eBay fees **$3.53** → earnings **$19.45** → **~$4.82 cash** |
 | **Pickleball Soft Serve / Eyes Up Here** | Still **0 sales** (3 live SKUs × Etsy+eBay; only IT WAS IN converted) |
 | **Wave 2 briefs** | `PICKLEBALL_WAVE2.md` — Dinking Problem **art ready**; Kitchen / Six pack next |
-| **Dinking Problem** | Files ready: `pickleball_dinking_problem_UPLOAD_TO_PRINTIFY.png` + `PICKLEBALL_DINKING_PROBLEM.md` — **upload to Printify/eBay next** |
+| **Dinking Problem** | Files ready: `designs/pickleball/pickleball_dinking_problem_UPLOAD_TO_PRINTIFY.png` + `PICKLEBALL_DINKING_PROBLEM.md` — **upload to Printify/eBay next** |
+| **Folder cleanup (Jul 21)** | Deleted May kawaii/sticker PNGs from `designs/`. Live art now under `designs/pickleball/` · Corvette slot `designs/corvette/` (masters still on Mac) |
 | **Margin rule** | Next pickleball tees **$20.99+** S–XL or eat shipping differently — $18.99 is thin |
 | **Ads** | Keep pickleball promoted **light**; Yellow C5 Ad Fee lesson still applies |
 | **Do not build tonight** | Comic-panel memory shirt; Lincoln portrait; doodle club; goose grid |
@@ -42,7 +43,7 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 |---------|-----|-------|
 | **Etsy** | https://www.etsy.com/listing/4538686602/soft-serve-ice-cream-character-tee-cute | Listing ID `4538686602`; shop section = keep separate from Corvette hero |
 | **eBay** | https://www.ebay.com/itm/398179685959 | Item `398179685959`; S–XL **$19.99**, 2XL **$21.99**, 3XL **$22.99**; Printify shows ~$10 prod profit before marketplace fees |
-| **Print file** | `designs/pickleball_soft_serve_UPLOAD_TO_PRINTIFY.png` | Original cone character — not TikTok pickle clone |
+| **Print file** | `designs/pickleball/pickleball_soft_serve_UPLOAD_TO_PRINTIFY.png` | Original cone character — not TikTok pickle clone |
 | **Ads rule** | Light promoted or off for first 48–72h | Do not stack sale + heavy Ad Fee (Yellow C5 lesson) |
 
 ### Pickleball Eyes Up Here (Jul 16 — LIVE)
@@ -51,7 +52,7 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 |---------|-----|-------|
 | **Etsy** | https://www.etsy.com/listing/4538870176/funny-pickleball-balls-t-shirt-two-neon | Listing ID `4538870176` |
 | **eBay** | https://www.ebay.com/itm/398181098143 | Item `398181098143` |
-| **Print file** | `designs/pickleball_eyes_up_here_UPLOAD_TO_PRINTIFY.png` | Arrow + two balls; transparent holes; dark shirts |
+| **Print file** | `designs/pickleball/pickleball_eyes_up_here_UPLOAD_TO_PRINTIFY.png` | Arrow + two balls; transparent holes; dark shirts |
 
 ### Pickleball IT WAS IN (Jul 16 — LIVE)
 
@@ -59,7 +60,7 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 |---------|-----|-------|
 | **Etsy** | https://www.etsy.com/listing/4538866895/it-was-in-pickleball-ball-t-shirt | Listing ID `4538866895` |
 | **eBay** | https://www.ebay.com/itm/398181038019 | Item `398181038019` |
-| **Print file** | `designs/pickleball_it_was_in_UPLOAD_TO_PRINTIFY.png` | Minimal line-call; dark shirts |
+| **Print file** | `designs/pickleball/pickleball_it_was_in_UPLOAD_TO_PRINTIFY.png` | Minimal line-call; dark shirts |
 | **First sale** | Jul 17 eBay **$18.99** | Mint/seafoam; paid; fulfill via Printify |
 
 ---
