@@ -46,7 +46,8 @@ Funny pickleball tee for players who live at the kitchen line. Bold type, clean 
 Black, Charcoal, Navy (and other darks). **Not** light shirts.
 
 ## Upload checklist
-- [ ] Printify: upload `pickleball_dinking_problem_UPLOAD_TO_PRINTIFY.png`
+- [ ] **Mac sync:** pull branch `cursor/pickleball-it-was-in-sale-wave2-d41b` (or merge PR) — file is **not** on Mac until you pull
+- [ ] Printify: upload `designs/pickleball/pickleball_dinking_problem_UPLOAD_TO_PRINTIFY.png`
 - [ ] Dark colors only
 - [ ] eBay live @ $20.99+ → paste URL
 - [ ] Etsy live → paste URL
