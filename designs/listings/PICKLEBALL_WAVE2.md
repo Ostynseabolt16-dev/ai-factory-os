@@ -1,18 +1,26 @@
 # Pickleball Wave 2 — design briefs (Jul 21, 2026)
 
 > **Signal:** eBay sold **IT WAS IN** for **$18.99** on Jul 17 (mint tee). Soft Serve + Eyes Up Here still quiet.  
+> **P&L (owner screenshots):** buyer **$22.98** (item+ship) → eBay fees **$3.53** → earnings **$19.45** → Printify **$14.63** → **~$4.82 cash**. Raise next SKUs or cut ship absorb.  
 > **Rule:** steal the *joke category*, invent new wording + layout + art. Do **not** clone TikTok screenshots.  
 > **Spend:** do not run OpenAI `scripts/generate_*.py` until owner confirms credits.
+
+## 30-minute session rule
+
+**Do:** Canva **Design A (Kitchen)** — type + dashed box + reuse `pickleball_it_was_in_ball_v2.png`.  
+**Don’t tonight:** memory comic panels, Abraham Lincoln art, doodles, goose grid (each needs >30 min + clone risk).
 
 ## Priority after the sale
 
 | # | Make? | Joke category | Why |
 |---|-------|---------------|-----|
-| 1 | **YES — next** | Kitchen zone | Every player knows “kitchen”; clean text+graphic like IT WAS IN |
+| 1 | **YES — next (30 min)** | Kitchen zone | Same formula as the winner: huge type + one ball |
 | 2 | **YES** | Dinking problem | Pun category is hot; keep type-first |
 | 3 | **YES** | Six-pack abs | Instant thumbnail read; easy original layout |
-| 4 | Maybe | Dictionary definition | Crowded women’s gift niche — only if #1–3 convert |
-| 5 | Later | Cute doodle club / goose grid | Higher art cost; lower margin vs text gags at $19 |
+| 4 | Later | Memory / brain gag | Liked TikTok comic — only if type-first version, not 3-panel clone |
+| 5 | Later | Historical dink pun | Liked “Abraham Dinkin’” — original wording, no Lincoln portrait clone |
+| 6 | Maybe | Dictionary definition | Crowded women’s gift niche — only if #1–3 convert |
+| 7 | Later | Cute doodle club / goose grid | Higher art cost; lower margin vs text gags at $19 |
 | ❌ | Skip | Tiger Woods / JUST DUI IT | Not pickleball; Nike parody IP risk |
 
 **Already covered elsewhere (don’t redo tonight):** Soft Serve cone (live), Soft Serve pickle/V2 branches, Eyes Up Here, IT WAS IN (sold), I Came To Dink / Dink Responsibly branches.
@@ -173,15 +181,69 @@ never soft-serves excuses.
 
 ---
 
-## Explicitly not cloning from tonight’s screenshots
+## Design E — Memory gag (liked; later)
 
-| TikTok ref | Why skip / how we differ |
-|------------|---------------------------|
+**Joke category:** pickleball “improves memory” / brain joke
+
+**Do NOT make:** 3-panel blue/yellow/green stick-figure comic with “PLAYING PICKLEBALL / IMPROVES MEMORY” (TikTok clone)
+
+**Make instead (type-first, 30–40 min max when you have time):**
+
+```
+SHORT-TERM MEMORY:
+PICKLEBALL
+```
+
+or
+
+```
+I FORGOT
+EVERYTHING
+EXCEPT DINK
+```
+
+**Layout:** huge type only + optional tiny ball. No comic panels.  
+**List after** Kitchen + Dinking problem are live.
+
+---
+
+## Design F — Historical dink pun (liked; later)
+
+**Joke category:** history name + “dinkin’” pun
+
+**Do NOT make:** Abraham Lincoln woodcut swinging a paddle + “ABRAHAM / DINKIN’” (Crazy Dog clone + likeness risk)
+
+**Make instead (text-only when ready):**
+
+```
+FOUR SCORE
+AND SEVEN DINKS AGO
+```
+
+or
+
+```
+HONEST
+DINKIN'
+```
+
+(no president portrait — type + ball only)
+
+**List after** A–C convert. Skip portrait AI entirely.
+
+---
+
+## Explicitly not cloning from screenshots
+
+| TikTok / market ref | Why skip / how we differ |
+|---------------------|---------------------------|
 | Soft Serve angry pickle at net | We already have original Soft Serve cone live |
 | Real Men Stay Out of Kitchen | New kitchen wording + dashed NVZ box |
 | Check Out My Six Pack 2×3 | New label + 3×2 / different type |
 | Pickleball Girl dictionary | New role + original definition |
 | I Might Have A Dinking Problem (O=ball) | No letter-as-ball; separate icon |
+| Playing Pickleball Improves Memory comic | Type-only memory gag (Design E) — no 3 panels |
+| Abraham Dinkin’ Lincoln portrait | Text-only historical pun (Design F) — no likeness |
 | Happy doodle club mascots | Later — art-heavy |
 | Goose 3×3 grid | Later — art-heavy |
 | JUST DUI IT / Tiger Woods | Wrong niche + trademark parody |
@@ -190,10 +252,10 @@ never soft-serves excuses.
 
 ## Canva / Printify build order (no OpenAI spend)
 
-1. Design A kitchen type stack + dashed box + 1 ball icon  
+1. **Tonight (30 min):** Design A kitchen type stack + dashed box + reuse IT WAS IN ball PNG  
 2. Design B dinking problem type stack + optional ball  
 3. Design C six-pack grid from duplicated ball PNG  
-4. Export Printify canvas → dark-shirt mockups → eBay first @ **$18.99–$21.99** (match IT WAS IN sale price band)  
+4. Export Printify canvas → dark-shirt mockups → eBay first @ **$20.99–$22.99** S–XL (IT WAS IN @ $18.99 only cleared **~$4.82** after Printify $14.63)  
 5. Light promoted only after views; do not stack sale + high Ad Fee General
 
 ## Listing package pattern

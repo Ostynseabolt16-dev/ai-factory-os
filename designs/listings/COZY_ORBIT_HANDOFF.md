@@ -17,10 +17,20 @@
 
 | Sale / item | Status |
 |-------------|--------|
-| **eBay Pickleball IT WAS IN** | **SOLD Jul 17 — $18.99**; mint tee; paid + ready to ship — **first pickleball sale** |
-| Soft Serve + Eyes Up Here | Still **0 sales** as of Jul 21 night |
-| **Wave 2 briefs** | `designs/listings/PICKLEBALL_WAVE2.md` — Kitchen → Dinking problem → Six pack |
-| Soft Serve / Eyes / IT WAS IN | Still live Etsy + eBay (URLs below) |
+| **eBay Pickleball IT WAS IN** | **SOLD Jul 17 — $18.99** + $3.99 ship → eBay earn **$19.45** − Printify **$14.63** = **~$4.82 cash** |
+| Soft Serve + Eyes Up Here | Still **0 sales** (only 1 of 3 pickleball SKUs sold) |
+| **Wave 2 briefs** | `PICKLEBALL_WAVE2.md` — Kitchen tonight; memory + historical pun later (type-only) |
+| Soft Serve / Eyes / IT WAS IN | Still live Etsy + eBay |
+
+## Next actions (priority)
+
+1. **Tonight (30 min):** Canva **Kitchen zone** (Wave 2 Design A) — reuse IT WAS IN ball; type + dashed box; export PNG
+2. Price next pickleball listings **$20.99+** S–XL (IT WAS IN margin was thin)
+3. Then Dinking problem → Six pack; eBay-first; light ads only
+4. Soft Serve / Eyes: leave live, no heavy ads
+5. Fulfill path already rolling — Printify #27858258.4 ready-to-ship
+6. Skip tonight: memory comic clone, Abraham Lincoln portrait, doodles, goose
+7. Safer Yellow C5 replacement (no CORVETTE wordmark) when ready
 
 ## July 16 flash update
 
@@ -47,16 +57,6 @@
 1. You are **not** doing kawaii stickers.
 2. Ask owner to paste latest `SHOP_STATE` / sales, or work from this handoff text.
 3. Prefer `@COZY_ORBIT_HANDOFF.md` and `@SHOP_STATE.md` when files are available.
-
-## Next actions (priority)
-
-1. **Fulfill** eBay IT WAS IN $18.99 (mint) — confirm Printify synced
-2. **Build Wave 2 #1 in Canva:** Kitchen zone (`PICKLEBALL_WAVE2.md` Design A) — type-first like the winner
-3. Then Dinking problem → Six pack; eBay-first @ $18.99–$21.99; light ads only
-4. Soft Serve / Eyes: leave live, no heavy ads until another signal
-5. Log Yellow C5 hoodie Printify cost when order appears (Allyn, Ash 2XL, ship by Jul 29)
-6. Safer Yellow C5 replacement (no CORVETTE wordmark) when ready
-7. Skip Tiger Woods / doodle-club / goose until text gags convert
 
 ## Phone at work — open with this
 

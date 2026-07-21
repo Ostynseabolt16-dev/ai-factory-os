@@ -13,11 +13,12 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 
 | Item | Status |
 |------|--------|
-| **eBay Pickleball IT WAS IN** | **SOLD Jul 17 — $18.99**; mint/seafoam flat-lay in notification; paid + ready to ship; **first pickleball SKU sale** |
-| **Pickleball Soft Serve / Eyes Up Here** | Still **0 sales** as of Jul 21 night (listed Jul 16) |
-| **Wave 2 briefs** | `designs/listings/PICKLEBALL_WAVE2.md` — Kitchen zone → Dinking problem → Six pack (original copy; no TikTok clones) |
+| **eBay Pickleball IT WAS IN** | **SOLD Jul 17 — $18.99** + $3.99 ship; mint; Printify **#27858258.4** ready-to-ship **$14.63**; eBay fees **$3.53** → earnings **$19.45** → **~$4.82 cash** |
+| **Pickleball Soft Serve / Eyes Up Here** | Still **0 sales** (3 live SKUs × Etsy+eBay; only IT WAS IN converted) |
+| **Wave 2 briefs** | `PICKLEBALL_WAVE2.md` — Kitchen first (30 min); memory comic + Abraham Dinkin’ saved as later original type-only |
+| **Margin rule** | Next pickleball tees **$20.99+** S–XL or eat shipping differently — $18.99 is thin |
 | **Ads** | Keep pickleball promoted **light**; Yellow C5 Ad Fee lesson still applies |
-| **Do not build** | Tiger Woods / JUST DUI IT parody; doodle club / goose grid until text gags prove out |
+| **Do not build tonight** | Comic-panel memory shirt; Lincoln portrait; doodle club; goose grid |
 
 ## July 16 Mac catch-up
 
@@ -190,7 +191,7 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 | Jul 15 | Allyn Davis | **Yellow C5** tee (eBay) | 1 | White | — | **Repeat buyer**; Cortland NY; ~$9.97 w/ Printify coupon |
 | Jul 15 | Allyn Davis | **Yellow C5** hoodie 2-sided (eBay) | 1 | Ash | 2XL | **$50.58 earnings**; item `398084925179`; ship by Jul 29; Printify pending |
 | Jul 16 | — | **Pickleball Soft Serve** (listed) | — | — | — | Etsy + eBay live; awaiting first sale |
-| Jul 17 | — | **Pickleball IT WAS IN** (eBay) | 1 | Mint / seafoam | — | **$18.99**; first pickleball sale; paid + ship-ready; Soft Serve/Eyes still 0 as of Jul 21 |
+| Jul 17 | — | **Pickleball IT WAS IN** (eBay) | 1 | Mint / seafoam | — | **$18.99**+$3.99 ship; Printify $14.63; fees $3.53; **~$4.82 cash**; only pickleball sale of 3 SKUs |
 
 **Refunded:** Jan — C5 Illustration Vintage — accidental order.
 
