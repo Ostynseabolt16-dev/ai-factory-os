@@ -7,15 +7,16 @@
 
 ## 30-minute session rule
 
-**Do:** Canva **Design A (Kitchen)** — type + dashed box + reuse `pickleball_it_was_in_ball_v2.png`.  
-**Don’t tonight:** memory comic panels, Abraham Lincoln art, doodles, goose grid (each needs >30 min + clone risk).
+**Do tonight:** Canva **Design B (Dinking Problem)** — market is packed with this joke; we win with *clean type like IT WAS IN*, not beer-mug clones.  
+**Alt if you prefer kitchen:** Design A still fine.  
+**Don’t tonight:** memory comic panels, Abraham Lincoln art, doodles, goose grid, crossed-paddles crest clones.
 
 ## Priority after the sale
 
 | # | Make? | Joke category | Why |
 |---|-------|---------------|-----|
-| 1 | **YES — next (30 min)** | Kitchen zone | Same formula as the winner: huge type + one ball |
-| 2 | **YES** | Dinking problem | Pun category is hot; keep type-first |
+| 1 | **YES — next (30 min)** | Dinking problem | Hottest search/joke category; type-first like IT WAS IN |
+| 2 | **YES** | Kitchen zone | Still good; less hot than dink puns right now |
 | 3 | **YES** | Six-pack abs | Instant thumbnail read; easy original layout |
 | 4 | Later | Memory / brain gag | Liked TikTok comic — only if type-first version, not 3-panel clone |
 | 5 | Later | Historical dink pun | Liked “Abraham Dinkin’” — original wording, no Lincoln portrait clone |
@@ -27,7 +28,43 @@
 
 ---
 
-## Design A — Kitchen zone (build first)
+## Design B — Dinking problem (MAKE THIS TONIGHT)
+
+**Joke category:** “dinking problem” addiction pun — **#1 crowded funny-tee search theme**
+
+**Do NOT make:** beer mug / martini with ball inside, arched text over crossed paddles crest, “Dink Responsibly don’t get smashed” retro badge, yellow DINKING with pickleball replacing a letter O (TikTok/Google clone layouts)
+
+**Make instead — locked copy:**
+
+```
+I MIGHT HAVE A
+DINKING
+PROBLEM
+```
+
+**Canva recipe (25–30 min)**
+
+1. Canvas **4500×5400** px, transparent background  
+2. Reuse ball: `designs/pickleball_it_was_in_ball_v2.png` (or Eyes Up Here ball) — place **below** the text stack, ~15–20% of canvas height. Do **not** put ball inside a letter.  
+3. Type (Anton / Bebas / Impact — not Inter):
+   - Line 1 `I MIGHT HAVE A` — white, ~8–10% canvas width per letter feel, centered  
+   - Line 2 `DINKING` — **lime/yellow**, 1.5–2× larger than other lines, tight tracking  
+   - Line 3 `PROBLEM` — white, same size as line 1  
+4. Stack centered, generous gaps; whole graphic ~60–70% shirt chest height  
+5. Export PNG → Printify → mock on **Black / Navy / Charcoal** only  
+6. eBay price **$20.99** S–XL (not $18.99)
+
+**Shirt colors:** Black, Charcoal, Navy  
+**Reject if:** beer glass, crossed paddles crest, arched “badge” layout, letter-as-ball, tiny unreadable extras
+
+**eBay title:** Funny Pickleball Dinking Problem T-Shirt Joke Tee Sports Gift  
+**Etsy title:** Funny Pickleball Dinking Problem Joke Tee | Court Humor Gift
+
+**Tags (13):** pickleball shirt, funny pickleball, dinking problem, pickleball gift, dink, pickleball tee, pickleball humor, sports gift, pickleball player, graphic tee, funny sports shirt, court humor, pickleball joke
+
+---
+
+## Design A — Kitchen zone (build next / alt)
 
 **Joke category:** stay out of the non-volley zone (“kitchen”)
 
@@ -64,7 +101,7 @@ thick black outline, high contrast, no paddle, no people, square crop, high reso
 
 ---
 
-## Design B — Dinking problem (type-first)
+## Design B — Dinking problem (reference — see MAKE THIS TONIGHT above)
 
 **Joke category:** “dinking problem” addiction pun
 
