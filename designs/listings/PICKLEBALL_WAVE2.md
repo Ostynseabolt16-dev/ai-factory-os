@@ -101,39 +101,6 @@ thick black outline, high contrast, no paddle, no people, square crop, high reso
 
 ---
 
-## Design B — Dinking problem (reference — see MAKE THIS TONIGHT above)
-
-**Joke category:** “dinking problem” addiction pun
-
-**Do NOT make:** yellow DINKING + pickleball-as-O in PROBLEM (exact TikTok layout)
-
-**Make instead:**
-
-```
-I MIGHT HAVE A
-DINKING
-PROBLEM
-```
-
-Treat **DINKING** as the hero word in lime (solid letters — ball is a separate small icon under the stack, not letter substitution).
-
-**Alternate wording (more original):**
-
-```
-ADMITTED:
-I HAVE A DINKING PROBLEM
-```
-
-**Layout:** three-line stack, centered, no paddles required.  
-**Colors:** Black / Charcoal only for white+lime type.
-
-**eBay title:** Funny Pickleball Dinking Problem T-Shirt Joke Tee Sports Gift  
-**Etsy title:** Funny Pickleball Dinking Problem Joke Tee | Court Humor Gift
-
-**Tags (13):** pickleball shirt, funny pickleball, dinking problem, pickleball gift, dink, pickleball tee, pickleball humor, sports gift, pickleball player, graphic tee, funny sports shirt, court humor, pickleball joke
-
----
-
 ## Design C — Six pack (abs → balls)
 
 **Joke category:** six-pack abs gag using six pickleballs
@@ -289,8 +256,8 @@ DINKIN'
 
 ## Canva / Printify build order (no OpenAI spend)
 
-1. **Tonight (30 min):** Design A kitchen type stack + dashed box + reuse IT WAS IN ball PNG  
-2. Design B dinking problem type stack + optional ball  
+1. **Tonight (30 min):** Design B dinking problem type stack + ball below (see recipe above)  
+2. Design A kitchen type stack + dashed box + reuse IT WAS IN ball PNG  
 3. Design C six-pack grid from duplicated ball PNG  
 4. Export Printify canvas → dark-shirt mockups → eBay first @ **$20.99–$22.99** S–XL (IT WAS IN @ $18.99 only cleared **~$4.82** after Printify $14.63)  
 5. Light promoted only after views; do not stack sale + high Ad Fee General

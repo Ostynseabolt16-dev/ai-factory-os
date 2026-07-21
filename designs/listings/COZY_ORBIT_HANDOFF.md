@@ -24,9 +24,9 @@
 
 ## Next actions (priority)
 
-1. **Tonight (30 min):** Canva **Kitchen zone** (Wave 2 Design A) — reuse IT WAS IN ball; type + dashed box; export PNG
+1. **Tonight (30 min):** Canva **Dinking Problem** (Wave 2 Design B) — white/lime type stack + ball below; no beer mug / crossed paddles
 2. Price next pickleball listings **$20.99+** S–XL (IT WAS IN margin was thin)
-3. Then Dinking problem → Six pack; eBay-first; light ads only
+3. Then Kitchen → Six pack; eBay-first; light ads only
 4. Soft Serve / Eyes: leave live, no heavy ads
 5. Fulfill path already rolling — Printify #27858258.4 ready-to-ship
 6. Skip tonight: memory comic clone, Abraham Lincoln portrait, doodles, goose
