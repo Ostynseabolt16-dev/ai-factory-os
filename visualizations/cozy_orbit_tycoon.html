@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CozyOrbit Shop HQ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --asphalt: #121416;
+      --pit: #1c1f24;
+      --steel: #9aa3ad;
+      --fog: #c8ced4;
+      --line: rgba(245, 197, 24, 0.28);
+      --yellow: #f5c518;
+      --amber: #e0a100;
+      --green: #3dd68c;
+      --red: #ff4d4d;
+      --warn: #ff9f43;
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      color: var(--fog);
+      font-family: "Rajdhani", sans-serif;
+      background:
+        radial-gradient(ellipse 90% 55% at 50% -8%, rgba(245,197,24,0.11), transparent 50%),
+        linear-gradient(180deg, #0e1013 0%, var(--asphalt) 50%, #0a0b0d 100%);
+    }
+    body::before {
+      content: "";
+      position: fixed; inset: 0;
+      background-image:
+        linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+      background-size: 48px 48px;
+      mask-image: radial-gradient(ellipse at center, black 25%, transparent 78%);
+      pointer-events: none; z-index: 0;
+    }
+    .stage {
+      position: relative; z-index: 1;
+      max-width: 1180px; margin: 0 auto;
+      padding: 18px 22px 20px;
+      display: grid; gap: 12px;
+      min-height: 100vh;
+      grid-template-rows: auto auto auto 1fr auto;
+    }
+    header.top {
+      display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap;
+      align-items: flex-end;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 12px;
+      animation: rise .6s ease both;
+    }
+    .brand .mark {
+      font-size: clamp(26px, 4vw, 38px);
+      font-weight: 700; letter-spacing: .06em;
+      text-transform: uppercase; color: var(--yellow); line-height: 1;
+    }
+    .brand .tag {
+      margin-top: 4px;
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: var(--steel);
+    }
+    .meters { display: flex; gap: 14px; flex-wrap: wrap; }
+    .meter { text-align: right; min-width: 70px; }
+    .meter b { display: block; font-size: 20px; color: #fff; }
+    .meter span {
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 10px; letter-spacing: .1em; text-transform: uppercase; color: var(--steel);
+    }
+    .coach {
+      display: grid; grid-template-columns: 1fr auto; gap: 14px; align-items: center;
+      padding: 14px 16px;
+      border: 1px solid var(--line);
+      border-left: 4px solid var(--yellow);
+      background: rgba(245,197,24,0.07);
+      animation: rise .7s .05s ease both;
+    }
+    .coach .eyebrow {
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 10px; letter-spacing: .14em; text-transform: uppercase; color: var(--yellow);
+    }
+    .coach h2 {
+      margin: 4px 0 0; font-size: clamp(18px, 2.4vw, 24px); color: #fff; line-height: 1.25; font-weight: 700;
+    }
+    .coach p { margin: 6px 0 0; color: var(--steel); font-size: 15px; max-width: 62ch; line-height: 1.4; }
+    .coach .cta {
+      appearance: none; border: 1px solid var(--yellow);
+      background: var(--yellow); color: #111;
+      font-family: "Rajdhani", sans-serif; font-weight: 700; font-size: 15px;
+      letter-spacing: .06em; text-transform: uppercase;
+      padding: 12px 16px; cursor: pointer; white-space: nowrap;
+    }
+    .coach .cta:hover { filter: brightness(1.05); }
+    .howto {
+      display: flex; gap: 12px; align-items: flex-start; justify-content: space-between;
+      padding: 10px 12px;
+      border: 1px dashed rgba(154,163,173,0.35);
+      background: rgba(255,255,255,0.03);
+      font-size: 14px; color: var(--fog);
+      animation: rise .7s .08s ease both;
+    }
+    .howto strong { color: var(--yellow); }
+    .howto button {
+      appearance: none; border: 0; background: transparent; color: var(--steel);
+      font-family: "IBM Plex Mono", monospace; font-size: 11px; letter-spacing: .08em;
+      text-transform: uppercase; cursor: pointer; white-space: nowrap;
+    }
+    .howto.hidden { display: none; }
+    .xp-wrap { animation: rise .75s .05s ease both; }
+    .xp-label {
+      display: flex; justify-content: space-between;
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 10px; letter-spacing: .1em; text-transform: uppercase; color: var(--steel);
+      margin-bottom: 4px;
+    }
+    .xp-bar {
+      height: 8px; background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(245,197,24,0.25); overflow: hidden;
+    }
+    .xp-bar > i {
+      display: block; height: 100%; width: 0%;
+      background: linear-gradient(90deg, var(--amber), var(--yellow));
+      transition: width .45s ease;
+    }
+    .map-wrap {
+      display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 14px;
+      animation: rise .85s .1s ease both; align-items: start;
+    }
+    .map {
+      position: relative; min-height: 360px;
+      display: grid; place-items: center;
+      border: 1px solid rgba(255,255,255,0.06);
+      background: rgba(0,0,0,0.18);
+      padding: 18px 12px 28px;
+    }
+    .ring {
+      position: absolute; width: min(70%, 420px); aspect-ratio: 1;
+      border: 1px dashed rgba(245,197,24,0.16); border-radius: 50%; pointer-events: none;
+    }
+    .ring.inner {
+      width: min(42%, 240px); border-style: solid; border-color: rgba(245,197,24,0.1);
+      animation: spin 50s linear infinite;
+    }
+    .hub {
+      position: relative; z-index: 2;
+      width: min(180px, 46%); aspect-ratio: 1; border-radius: 50%;
+      border: 2px solid var(--yellow);
+      background: radial-gradient(circle at 35% 30%, rgba(245,197,24,0.2), transparent 50%), var(--pit);
+      display: grid; place-items: center; text-align: center; padding: 12px;
+      cursor: pointer; transition: transform .2s ease, box-shadow .2s;
+    }
+    .hub:hover, .hub.active {
+      transform: scale(1.04);
+      box-shadow: 0 0 0 5px rgba(245,197,24,0.12);
+    }
+    .hub .k {
+      font-size: 10px; letter-spacing: .16em; color: var(--yellow);
+      font-family: "IBM Plex Mono", monospace;
+    }
+    .hub .v { font-size: clamp(26px, 4vw, 36px); font-weight: 700; color: #fff; line-height: 1; }
+    .hub .s { font-size: 13px; color: var(--steel); margin-top: 4px; }
+    .stations {
+      position: absolute; inset: 10% 3% 8%;
+      display: grid; grid-template-columns: 1fr 1fr; gap: 8px;
+      align-content: space-between; pointer-events: none;
+    }
+    .station {
+      pointer-events: auto;
+      position: relative;
+      padding: 12px 12px 10px;
+      background: rgba(28,31,36,0.95);
+      border: 1px solid rgba(154,163,173,0.28);
+      border-left: 3px solid var(--steel);
+      cursor: pointer; text-align: left;
+      transition: transform .15s, border-color .15s, background .15s;
+    }
+    .station:hover, .station.active {
+      transform: translateY(-2px);
+      border-color: var(--yellow);
+      background: rgba(36,40,48,0.98);
+    }
+    .station .name { font-size: 18px; font-weight: 700; letter-spacing: .06em; color: #fff; }
+    .station .hint { font-size: 13px; color: var(--steel); margin-top: 2px; }
+    .station .sub {
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 11px; color: var(--fog); margin-top: 6px; opacity: .85;
+    }
+    .station .dot {
+      position: absolute; top: 12px; right: 12px;
+      width: 8px; height: 8px; border-radius: 50%; background: var(--steel);
+    }
+    .station .xp-mini { margin-top: 8px; height: 3px; background: rgba(255,255,255,0.08); }
+    .station .xp-mini > i { display: block; height: 100%; background: var(--yellow); }
+    .station[data-health="ok"] { border-left-color: var(--green); }
+    .station[data-health="ok"] .dot { background: var(--green); box-shadow: 0 0 8px var(--green); }
+    .station[data-health="warn"] { border-left-color: var(--warn); }
+    .station[data-health="warn"] .dot { background: var(--warn); box-shadow: 0 0 8px var(--warn); }
+    .station[data-health="cold"] { border-left-color: var(--red); }
+    .station[data-health="cold"] .dot { background: var(--red); box-shadow: 0 0 8px var(--red); }
+    .station[data-health="hot"] { border-left-color: var(--yellow); }
+    .station[data-health="hot"] .dot { background: var(--yellow); box-shadow: 0 0 10px var(--yellow); }
+    .side-rail {
+      display: grid; gap: 12px; align-content: start;
+    }
+    .panel-box {
+      padding: 14px;
+      border: 1px solid rgba(255,255,255,0.08);
+      background: rgba(0,0,0,0.22);
+    }
+    .panel-title {
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 10px; letter-spacing: .14em; text-transform: uppercase;
+      color: var(--yellow); margin: 0 0 10px;
+    }
+    .legend { display: grid; gap: 6px; font-size: 13px; color: var(--steel); }
+    .legend span { display: inline-flex; align-items: center; gap: 8px; }
+    .legend i {
+      width: 8px; height: 8px; border-radius: 50%; display: inline-block;
+    }
+    .legend .g { background: var(--green); }
+    .legend .y { background: var(--warn); }
+    .legend .r { background: var(--red); }
+    .legend .h { background: var(--yellow); }
+    .missions-list { display: grid; gap: 8px; }
+    .mission-row {
+      display: grid; grid-template-columns: 28px 1fr auto; gap: 8px; align-items: start;
+      padding: 10px; background: rgba(245,197,24,0.06); border-left: 2px solid var(--yellow);
+    }
+    .mission-row.done { opacity: .55; border-left-color: var(--green); }
+    .mission-row.done .t { text-decoration: line-through; }
+    .mission-row .n {
+      font-family: "IBM Plex Mono", monospace; color: var(--yellow); font-weight: 600; font-size: 13px;
+    }
+    .mission-row .t { font-size: 15px; line-height: 1.3; color: #fff; }
+    .console {
+      border-top: 1px solid var(--line); padding-top: 14px;
+      animation: rise .9s .12s ease both; min-height: 240px;
+    }
+    .detail h2 {
+      margin: 0 0 4px; font-size: 26px; font-weight: 700; letter-spacing: .03em; color: #fff;
+    }
+    .detail .note { margin: 0 0 14px; color: var(--steel); font-size: 15px; max-width: 60ch; line-height: 1.4; }
+    .rows { display: grid; gap: 6px; }
+    .row {
+      display: grid; grid-template-columns: 1fr auto auto auto; gap: 10px; align-items: center;
+      padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.06);
+      font-family: "IBM Plex Mono", monospace; font-size: 12px;
+    }
+    .row .name { color: #fff; font-family: "Rajdhani", sans-serif; font-size: 16px; font-weight: 600; }
+    .row .muted { color: var(--steel); }
+    .pill {
+      display: inline-block; padding: 2px 8px; font-size: 11px;
+      letter-spacing: .08em; text-transform: uppercase; border: 1px solid currentColor;
+    }
+    .pill.ok { color: var(--green); }
+    .pill.warn { color: var(--warn); }
+    .pill.cold { color: var(--red); }
+    .pill.hot { color: var(--yellow); }
+    .stat-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 14px; }
+    .stat { padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.08); }
+    .stat b { display: block; font-size: 22px; color: #fff; }
+    .stat span {
+      font-family: "IBM Plex Mono", monospace; font-size: 10px;
+      letter-spacing: .1em; text-transform: uppercase; color: var(--steel);
+    }
+    .btn {
+      appearance: none; border: 1px solid var(--yellow);
+      background: rgba(245,197,24,0.12); color: var(--yellow);
+      font-family: "Rajdhani", sans-serif; font-weight: 700; font-size: 15px;
+      letter-spacing: .06em; text-transform: uppercase;
+      padding: 10px 14px; cursor: pointer; margin-top: 10px;
+    }
+    .btn.tiny { padding: 6px 10px; font-size: 12px; margin-top: 0; }
+    .btn:hover { background: rgba(245,197,24,0.22); }
+    .btn.copied { border-color: var(--green); color: var(--green); }
+    .btn:disabled { opacity: .4; cursor: not-allowed; }
+    .btn.primary { background: var(--yellow); color: #111; }
+    .empty { color: var(--steel); font-size: 15px; }
+    .help-line {
+      font-size: 13px; color: var(--steel); margin: 0 0 12px; line-height: 1.4;
+    }
+    .sale-form {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 10px 12px;
+      margin: 4px 0 8px; padding: 12px;
+      border: 1px solid rgba(245,197,24,0.22); background: rgba(245,197,24,0.04);
+    }
+    .sale-form label {
+      display: grid; gap: 4px;
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 10px; letter-spacing: .1em; text-transform: uppercase; color: var(--steel);
+    }
+    .sale-form label.wide { grid-column: 1 / -1; }
+    .sale-form input, .sale-form select {
+      appearance: none; width: 100%; padding: 8px 10px;
+      border: 1px solid rgba(154,163,173,0.35);
+      background: rgba(12,14,18,0.9); color: #fff;
+      font-family: "Rajdhani", sans-serif; font-size: 15px;
+    }
+    .sale-form input:focus, .sale-form select:focus { outline: none; border-color: var(--yellow); }
+    .sale-form .actions {
+      grid-column: 1 / -1; display: flex; gap: 10px; align-items: center; flex-wrap: wrap;
+    }
+    .sale-form .btn { margin-top: 0; }
+    .sale-form .optional { display: none; }
+    .sale-form.show-more .optional { display: grid; }
+    .keys {
+      font-family: "IBM Plex Mono", monospace; font-size: 10px;
+      color: var(--steel); letter-spacing: .05em; margin-top: 8px;
+    }
+    .live {
+      display: inline-flex; align-items: center; gap: 6px;
+      font-family: "IBM Plex Mono", monospace; font-size: 10px;
+      letter-spacing: .12em; text-transform: uppercase; color: var(--steel); margin-top: 8px;
+    }
+    .live .pulse { width: 7px; height: 7px; border-radius: 50%; background: var(--steel); }
+    .live.on .pulse {
+      background: var(--green); box-shadow: 0 0 10px var(--green);
+      animation: pulse 1.6s ease-in-out infinite;
+    }
+    footer.stamp {
+      font-family: "IBM Plex Mono", monospace; font-size: 11px; color: var(--steel);
+      display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; opacity: .9;
+      border-top: 1px solid rgba(255,255,255,0.06); padding-top: 10px;
+    }
+    footer a { color: var(--yellow); text-decoration: none; }
+    .toast {
+      position: fixed; top: 16px; right: 16px; z-index: 50;
+      min-width: 220px; max-width: min(340px, 92vw); padding: 12px 14px;
+      background: rgba(28,31,36,0.97); border: 1px solid var(--yellow); border-left: 3px solid var(--yellow);
+      box-shadow: 0 16px 40px rgba(0,0,0,.45);
+      transform: translateY(-120%); opacity: 0;
+      transition: transform .35s ease, opacity .35s ease; pointer-events: none;
+    }
+    .toast.show { transform: translateY(0); opacity: 1; }
+    .toast .k {
+      font-family: "IBM Plex Mono", monospace; font-size: 10px;
+      letter-spacing: .14em; color: var(--yellow); text-transform: uppercase;
+    }
+    .toast .t { margin-top: 4px; font-size: 15px; font-weight: 600; color: #fff; line-height: 1.25; }
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: .35; } }
+    @media (max-width: 900px) {
+      .map-wrap { grid-template-columns: 1fr; }
+      .stations { position: relative; inset: auto; margin-top: 14px; }
+      .ring, .ring.inner { display: none; }
+      .map { min-height: auto; }
+      .hub { margin: 0 auto; }
+      .stat-grid { grid-template-columns: 1fr 1fr; }
+      .coach { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="stage">
+    <div class="toast" id="toast" role="status" aria-live="polite">
+      <div class="k" id="toast-k">Update</div>
+      <div class="t" id="toast-t"></div>
+    </div>
+
+    <header class="top">
+      <div class="brand">
+        <div class="mark">CozyOrbit Shop HQ</div>
+        <div class="tag">Simple shop monitor · local files only</div>
+      </div>
+      <div class="meters" id="meters"></div>
+    </header>
+
+    <section class="coach" id="coach">
+      <div>
+        <div class="eyebrow" id="coach-eyebrow">Do this next</div>
+        <h2 id="coach-title">—</h2>
+        <p id="coach-body"></p>
+      </div>
+      <button type="button" class="cta" id="coach-cta">Open</button>
+    </section>
+
+    <div class="howto" id="howto">
+      <div>
+        <strong>How to use:</strong>
+        Press <strong>1–6</strong> (or tap a station) · yellow banner = your next job ·
+        <strong>Home</strong> logs sales · <strong>To-Do</strong> marks jobs done.
+        Needs <strong>--serve</strong> for live logging.
+      </div>
+      <button type="button" id="howto-dismiss">Got it</button>
+    </div>
+
+    <div class="xp-wrap">
+      <div class="xp-label">
+        <span id="xp-label-text">Shop level progress</span>
+        <span id="xp-label-nums">0/5</span>
+      </div>
+      <div class="xp-bar"><i id="xp-fill"></i></div>
+    </div>
+
+    <div class="map-wrap">
+      <section class="map" aria-label="Stations">
+        <div class="ring"></div>
+        <div class="ring inner"></div>
+        <button class="hub" id="hub" type="button" data-station="hq" aria-label="Home">
+          <div>
+            <div class="k">ORDERS</div>
+            <div class="v" id="hub-orders">—</div>
+            <div class="s" id="hub-units">— shirts sold</div>
+          </div>
+        </button>
+        <div class="stations" id="stations"></div>
+      </section>
+
+      <aside class="side-rail">
+        <div class="panel-box">
+          <p class="panel-title">Tonight’s to-do</p>
+          <div class="missions-list" id="missions"></div>
+          <button type="button" class="btn" id="copy-prompt">Copy help prompt</button>
+          <p class="keys">1 Home · 2 Etsy · 3 eBay · 4 Ads · 5 Queue · 6 To-Do</p>
+          <p class="live" id="live"><span class="pulse" aria-hidden="true"></span><span class="live-text">Snapshot</span></p>
+        </div>
+        <div class="panel-box">
+          <p class="panel-title">Status colors</p>
+          <div class="legend">
+            <span><i class="g"></i> Green — healthy</span>
+            <span><i class="y"></i> Yellow — needs a look</span>
+            <span><i class="r"></i> Red — problem / empty</span>
+            <span><i class="h"></i> Gold — priority / to-do</span>
+          </div>
+          <p class="help-line" id="glossary-roas" style="margin-top:10px"></p>
+        </div>
+      </aside>
+    </div>
+
+    <section class="console">
+      <div class="detail">
+        <p class="panel-title" id="panel-kicker">Station</p>
+        <h2 id="panel-title">Home</h2>
+        <p class="note" id="panel-note"></p>
+        <div id="panel-body"></div>
+      </div>
+    </section>
+
+    <footer class="stamp">
+      <span id="stamp"></span>
+      <a id="shop-link" href="#" target="_blank" rel="noopener">Open Etsy shop ↗</a>
+    </footer>
+  </div>
+
+  <script id="tycoon-data" type="application/json">{"generated_at": "2026-07-21 01:36", "generated_ts": 1784612183, "shop_state_updated": "2026-07-16 (Mac return after ~8 days; 2 eBay Yellow C5 sales; Etsy Yellow C5 taken down; see `COZY_ORBIT_HANDOFF.md`)", "shop_url": "https://www.etsy.com/shop/CozyOrbitPrints", "cursor_prompt": "You are the CozyOrbitPrints shop advisor. Read designs/listings/COZY_ORBIT_HANDOFF.md, designs/listings/SHOP_STATE.md, and sales_log.csv first.\nShop snapshot: 20 net orders, 24 units logged.\n\nTonight's missions:\n1. Watch C6 old ads (ROAS 0, 2 organic sales — keep running for more data)\n2. Write listing copy: C5 Variant B (~$21) → `c5_variant_B_blackwheels_plate_UPLOAD_TO_PRINTIFY.png`\n3. Shop admin: Confirm icon matches banner at thumbnail size (~48px)\n\nReady to list:\n- C7 Variant B → `c7_variant_B_collection_UPLOAD_TO_PRINTIFY.png` + `C7_VARIANT_B.md` (manual Etsy paste)\n- **C7 Torch Red** (color variant) → `c7_torch_red_collection_UPLOAD_TO_PRINTIFY.png` + `C7_TORCH_RED.md` (manual Etsy paste)\n- **C5 Torch Red** (color variant) → `c5_torch_red_collection_UPLOAD_TO_PRINTIFY.png` + `C5_TORCH_RED.md` (manual Etsy paste)\n- **C7 Laguna Blue** (color variant) → `c7_laguna_blue_collection_UPLOAD_TO_PRINTIFY.png` + `C7_LAGUNA_BLUE.md` (manual Etsy paste)\n- **C8 Black Gothic** (color/style variant) → `c8_black_gothic_collection_UPLOAD_TO_PRINTIFY.png` + `C8_BLACK_GOTHIC_COLLECTION.md` (manual Etsy paste)\n\nNeeds listing copy:\n- C5 Variant B (~$21) → `c5_variant_B_blackwheels_plate_UPLOAD_TO_PRINTIFY.png` — write `designs/listings/C5_VARIANT_B.md` first\n- **C7 Velocity Yellow** (color variant) → `c7_velocity_yellow_collection_UPLOAD_TO_PRINTIFY.png` — write `designs/listings/C7_VELOCITY_YELLOW.md` first\n- **C6 Atomic Orange** (color variant) → `c6_atomic_orange_collection_UPLOAD_TO_PRINTIFY.png` — write `designs/listings/C6_ATOMIC_ORANGE.md` first\n\nBlocked:\n- C6 Variant B (**blocked — regen**) → `c6_variant_B_collection_UPLOAD_TO_PRINTIFY.png` — Regen with no-plate prompt when OpenAI credits return (Pillow fix abandoned)\n\nHelp me execute the top mission. Keep changes local-file based (no Etsy API, no OpenAI generate scripts unless I confirm spend).", "live_api": true, "snapshot": {"orders": 20, "units": 24, "revenue": 582.14, "printify": 328.84, "known_profit": 100.44, "known_profit_orders": 8, "gross_after_printify": 253.3, "shop_day": 50, "level": 5, "first_sale": "2026-06-02", "xp_into_level": 0, "xp_to_next": 5, "xp_pct": 0}, "markets": {"etsy": {"orders": 17, "units": 21, "revenue": 475.08, "health": "ok", "xp": 85, "note": "Primary channel historically; Yellow C5 taken down Jul 2026 (IP)."}, "ebay": {"orders": 3, "units": 3, "revenue": 107.06, "health": "hot", "xp": 60, "note": "Converting on Yellow C5; watch Ad Fee General vs tee margin."}}, "ads": {"rows": [{"listing": "Corvette C4 Minimal", "views": "1,139", "roas": "4.06", "roas_val": 4.06, "orders": "2", "health": "ok"}, {"listing": "Corvette C8 Tee", "views": "2,010", "roas": "3.06", "roas_val": 3.06, "orders": "1", "health": "ok"}, {"listing": "Yellow Corvette C5", "views": "1,611", "roas": "2.23", "roas_val": 2.23, "orders": "1", "health": "ok"}, {"listing": "Corvette C7 Illustration", "views": "3,438", "roas": "1.05", "roas_val": 1.05, "orders": "1", "health": "warn"}, {"listing": "C6 old", "views": "1,007", "roas": "0", "roas_val": 0.0, "orders": "0", "health": "cold"}, {"listing": "Yellow C5 hoodie", "views": "80", "roas": "0", "roas_val": 0.0, "orders": "0", "health": "cold"}, {"listing": "Red C4 pop-up tee", "views": "79", "roas": "0", "roas_val": 0.0, "orders": "0", "health": "cold"}, {"listing": "Yellow C6 hoodie", "views": "42", "roas": "0", "roas_val": 0.0, "orders": "0", "health": "cold"}, {"listing": "C7 V8 hoodie", "views": "34", "roas": "0", "roas_val": 0.0, "orders": "0", "health": "cold"}], "health": "warn", "xp": 0, "snapshot_date": "2026-06-26", "age_days": 25, "stale": true, "note": "Ads snapshot dated 2026-06-26 (25 days old) — paste fresh Etsy Ads stats into SHOP_STATE."}, "pipeline": {"ready": ["C7 Variant B → `c7_variant_B_collection_UPLOAD_TO_PRINTIFY.png` + `C7_VARIANT_B.md` (manual Etsy paste)", "C7 Torch Red (color variant) → `c7_torch_red_collection_UPLOAD_TO_PRINTIFY.png` + `C7_TORCH_RED.md` (manual Etsy paste)", "C5 Torch Red (color variant) → `c5_torch_red_collection_UPLOAD_TO_PRINTIFY.png` + `C5_TORCH_RED.md` (manual Etsy paste)", "C7 Laguna Blue (color variant) → `c7_laguna_blue_collection_UPLOAD_TO_PRINTIFY.png` + `C7_LAGUNA_BLUE.md` (manual Etsy paste)", "C8 Black Gothic (color/style variant) → `c8_black_gothic_collection_UPLOAD_TO_PRINTIFY.png` + `C8_BLACK_GOTHIC_COLLECTION.md` (manual Etsy paste)", "C4 Pop-Up Gothic → `c4_popup_gothic_collection_UPLOAD_TO_PRINTIFY.png` + `C4_POPUP_GOTHIC.md` (manual Etsy paste)"], "needs_copy": ["C5 Variant B (~$21) → `c5_variant_B_blackwheels_plate_UPLOAD_TO_PRINTIFY.png` — write `designs/listings/C5_VARIANT_B.md` first", "C7 Velocity Yellow (color variant) → `c7_velocity_yellow_collection_UPLOAD_TO_PRINTIFY.png` — write `designs/listings/C7_VELOCITY_YELLOW.md` first", "C6 Atomic Orange (color variant) → `c6_atomic_orange_collection_UPLOAD_TO_PRINTIFY.png` — write `designs/listings/C6_ATOMIC_ORANGE.md` first"], "blocked": ["C6 Variant B (blocked — regen) → `c6_variant_B_collection_UPLOAD_TO_PRINTIFY.png` — Regen with no-plate prompt when OpenAI credits return (Pillow fix abandoned)"], "checklist": ["Confirm icon matches banner at thumbnail size (~48px)", "Confirm no Chevrolet crossed flags / Corvette wordmarks visible in crops"], "health": "warn", "xp": 52}, "top_listings": [{"name": "Corvette C6 Sports Car T-Shirt", "units": 3}, {"name": "Yellow Corvette C5 T-Shirt", "units": 3}, {"name": "Corvette C4 Minimal Logo T-Shirt", "units": 3}, {"name": "Corvette C7 Car Illustration T-Shirt", "units": 2}, {"name": "Corvette C8 Tee", "units": 2}, {"name": "Kids Play Mat Car Floor Mat", "units": 2}, {"name": "User-reported Etsy Ads order: C5 + C7 C…", "units": 2}, {"name": "Corvette C5 Illustrated Car Tee", "units": 1}], "recent_sales": [{"date": "2026-07-15", "market": "eBay", "listing": "Yellow Corvette C5 T-Shirt", "qty": 1, "revenue": 26.09, "profit": 9.97, "color": "White", "source": "eBay promoted listing", "notes": ""}, {"date": "2026-07-15", "market": "eBay", "listing": "Yellow Corvette C5 Vintage Sports Car H…", "qty": 1, "revenue": 51.99, "profit": 50.58, "color": "Ash", "source": "eBay promoted listing", "notes": "Paid Jul 15; ship by Jul 29; eBay earnings $50.58 after $8.80 txn fees; Printify NOT synced Jul 16 night; REPEAT BUYER b"}, {"date": "2026-06-30", "market": "Etsy", "listing": "Corvette C5 Blueprint T-Shirt", "qty": 1, "revenue": 32.58, "profit": 5.08, "color": "Black", "source": "Unknown", "notes": "Gift order; Oklahoma City OK; Printify in production Jun 30; ship by Jul 6"}, {"date": "2026-06-28", "market": "Etsy", "listing": "Corvette C4 Minimal Logo T-Shirt", "qty": 1, "revenue": 27.9, "profit": null, "color": "Light Blue", "source": "Unknown", "notes": "France order (st etienne du rouvray); shop coupon VETTESUMMER 10% off; update printify cost/net once fulfilled"}, {"date": "2026-06-27", "market": "Etsy", "listing": "User-reported organic Etsy order (listi…", "qty": 1, "revenue": null, "profit": null, "color": "", "source": "Organic (user report)", "notes": "Woke up report: 2 new Etsy orders today; one organic order not attributed to ads"}, {"date": "2026-06-27", "market": "Etsy", "listing": "User-reported Etsy Ads order: C5 + C7 C…", "qty": 2, "revenue": null, "profit": null, "color": "", "source": "Etsy Ads (user report)", "notes": "Woke up report: ad-attributed bundle order included 2 shirts (C5 + C7); fill order ID, pricing, and buyer details from E"}, {"date": "2026-06-26", "market": "Etsy", "listing": "C7 Corvette sports car T-Shirt", "qty": 1, "revenue": 26.16, "profit": null, "color": "Sport Grey", "source": "Etsy promo coupon (CORVETTESUMMER 15% off)", "notes": "Sale-run order from Etsy open-orders screen; corrected Printify cost from screenshot"}, {"date": "2026-06-26", "market": "Etsy", "listing": "Yellow Corvette C5 T-Shirt", "qty": 1, "revenue": 29.86, "profit": null, "color": "White", "source": "Etsy promo coupon (CORVETTESUMMER 15% off)", "notes": "Latest reported Etsy sale in the Friday sale window; corrected Printify cost from screenshot"}, {"date": "2026-06-25", "market": "Etsy", "listing": "Z06 Yellow Corvette C6 V8 Race Car T-Shirt", "qty": 1, "revenue": 28.98, "profit": null, "color": "Sport Grey", "source": "Etsy promo coupon (CORVETTESUMMER 15% off)", "notes": "Repeat customer; same buyer name as early C6 order; user notes David was first-ever buyer; corrected Printify cost from "}, {"date": "2026-06-25", "market": "Etsy", "listing": "Corvette C6 Sports Car T-Shirt", "qty": 1, "revenue": 23.04, "profit": null, "color": "White", "source": "Etsy promo coupon (CORVETTESUMMER 15% off)", "notes": "Sale-run order from Etsy open-orders screen; corrected Printify cost from screenshot"}, {"date": "2026-06-18", "market": "Etsy", "listing": "Kids Play Mat Car Floor Mat", "qty": 2, "revenue": 70.0, "profit": null, "color": "", "source": "Organic", "notes": "2 mats; 20% abandoned-cart discount; Printify prod+ship ~$65; ~breakeven"}, {"date": "2026-06-18", "market": "Etsy", "listing": "Corvette C4 Minimal Logo T-Shirt", "qty": 1, "revenue": 25.82, "profit": 6.92, "color": "Red", "source": "Unknown", "notes": "Printify order 27546430.12; Gildan 64000; estimated Etsy fees from item+shipping/payment/listing"}, {"date": "2026-06-18", "market": "eBay", "listing": "Corvette C5 car illustration T-Shirt", "qty": 1, "revenue": 28.98, "profit": 9.46, "color": "Heather Clay", "source": "eBay promoted listing", "notes": "Printify order 27858258.1; Bella+Canvas 3001; est profit before any separate promoted ad fee"}, {"date": "2026-06-15", "market": "Etsy", "listing": "Corvette C8 Tee", "qty": 2, "revenue": 50.0, "profit": null, "color": "", "source": "Etsy Ads", "notes": "2 shirts in 1 order; ad-attributed ~$50 revenue; ROAS ~15.82 on listing"}, {"date": "2026-06-14", "market": "Etsy", "listing": "Corvette C4 Minimal Logo T-Shirt", "qty": 1, "revenue": 29.07, "profit": 12.06, "color": "Sport Grey", "source": "Etsy Ads", "notes": "Best ad ROAS ~20.62; corrected Printify cost from screenshot"}, {"date": "2026-06-12", "market": "Etsy", "listing": "Corvette C7 Car Illustration T-Shirt", "qty": 2, "revenue": 39.18, "profit": null, "color": "White", "source": "Etsy Ads (via Search)", "notes": "2 shirts in 1 order; Switzerland; ~$19.59/shirt item side; corrected Printify cost from screenshot"}], "latest_sale_key": "2026-07-15|eBay|Yellow Corvette C5 T-Shirt|1", "listing_suggestions": ["Corvette C6 Sports Car T-Shirt", "Yellow Corvette C5 T-Shirt", "Corvette C4 Minimal Logo T-Shirt", "Corvette C7 Car Illustration T-Shirt", "Corvette C8 Tee", "Kids Play Mat Car Floor Mat", "User-reported Etsy Ads order: C5 + C7 C…", "Corvette C5 Illustrated Car Tee", "Corvette C5 car illustration T-Shirt", "Z06 Yellow Corvette C6 V8 Race Car T-Shirt", "C7 Corvette sports car T-Shirt", "User-reported organic Etsy order (listi…", "Corvette C5 Blueprint T-Shirt", "Yellow Corvette C5 Vintage Sports Car H…"], "missions": ["Watch C6 old ads (ROAS 0, 2 organic sales — keep running for more data)", "Write listing copy: C5 Variant B (~$21) → `c5_variant_B_blackwheels_plate_UPLOAD_TO_PRINTIFY.png`", "Shop admin: Confirm icon matches banner at thumbnail size (~48px)"], "missions_rich": [{"text": "Watch C6 old ads (ROAS 0, 2 organic sales — keep running for more data)", "display": "Watch C6 old ads (ROAS 0, 2 organic sales — keep running for more data)", "done": false}, {"text": "Write listing copy: C5 Variant B (~$21) → `c5_variant_B_blackwheels_plate_UPLOAD_TO_PRINTIFY.png`", "display": "Write listing copy: C5 Variant B (~$21) — c5_variant_B_blackwheels_plate_UPLOAD_TO_PRINTIFY.png", "done": false}, {"text": "Shop admin: Confirm icon matches banner at thumbnail size (~48px)", "display": "Shop admin: Confirm icon matches banner at thumbnail size (~48px)", "done": false}], "mission_log": [], "station_xp": {"hq": 0, "etsy": 85, "ebay": 60, "ads": 0, "pipeline": 52, "missions": 100}, "stations": [{"id": "hq", "label": "HOME", "name": "Home", "hint": "Money & log sales", "sub": "Level 5 · 0/5 to next", "health": "ok", "xp": 0}, {"id": "etsy", "label": "ETSY", "name": "Etsy", "hint": "Main shop sales", "sub": "17 orders", "health": "ok", "xp": 85}, {"id": "ebay", "label": "EBAY", "name": "eBay", "hint": "Growing channel", "sub": "3 orders", "health": "hot", "xp": 60}, {"id": "ads", "label": "ADS", "name": "Ads", "hint": "What ads earn back", "sub": "Needs update (25d old)", "health": "warn", "xp": 0}, {"id": "pipeline", "label": "QUEUE", "name": "Queue", "hint": "Ready / blocked designs", "sub": "6 ready · 1 blocked", "health": "warn", "xp": 52}, {"id": "missions", "label": "TO-DO", "name": "To-Do", "hint": "Tonight’s 3 jobs", "sub": "3 open", "health": "hot", "xp": 100}], "coach": {"eyebrow": "Needs attention", "title": "Ads numbers are out of date", "body": "Your Etsy Ads snapshot is 25 days old. Open the Ads station, then paste fresh stats into SHOP_STATE when you can.", "station": "ads", "cta": "Open Ads"}, "glossary": {"roas": "ROAS = money from ads ÷ money spent on ads. Above 2 is good.", "printify": "Printify = what you pay to print & ship the shirt.", "xp": "Level rises every 5 real orders logged. Just a progress meter.", "health": "Green OK · Yellow needs a look · Red / cold = problem or empty"}}</script>
+  <script>
+    let DATA = JSON.parse(document.getElementById("tycoon-data").textContent);
+    let activeStation = "hq";
+    let lastSaleKey = DATA.latest_sale_key || "";
+    let toastTimer = null;
+    const isLive = () => location.protocol.startsWith("http");
+    const ORDER = ["hq", "etsy", "ebay", "ads", "pipeline", "missions"];
+
+    const money = (n) => {
+      if (n == null || Number.isNaN(n)) return "—";
+      return "$" + Number(n).toLocaleString(undefined, { maximumFractionDigits: 2 });
+    };
+
+    function escapeHtml(str) {
+      return String(str)
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;");
+    }
+
+    function renderCoach() {
+      const c = DATA.coach || {};
+      document.getElementById("coach-eyebrow").textContent = c.eyebrow || "Next";
+      document.getElementById("coach-title").textContent = c.title || "—";
+      document.getElementById("coach-body").textContent = c.body || "";
+      const cta = document.getElementById("coach-cta");
+      cta.textContent = c.cta || "Open";
+      cta.onclick = () => showStation(c.station || "hq");
+    }
+
+    function renderXp() {
+      const s = DATA.snapshot;
+      document.getElementById("xp-label-text").textContent =
+        `Shop level ${s.level} → ${Number(s.level) + 1} (every ${s.xp_to_next || 5} orders)`;
+      document.getElementById("xp-label-nums").textContent =
+        `${s.xp_into_level || 0} / ${s.xp_to_next || 5}`;
+      document.getElementById("xp-fill").style.width = (s.xp_pct || 0) + "%";
+    }
+
+    function renderMeters() {
+      const s = DATA.snapshot;
+      document.getElementById("meters").innerHTML = [
+        ["DAY", s.shop_day || "—"],
+        ["LEVEL", s.level || "—"],
+        ["ORDERS", s.orders],
+        ["SHIRTS", s.units],
+        ["SALES $", money(s.revenue)],
+        ["AFTER PRINT", money(s.gross_after_printify)],
+      ].map(([k,v]) => `<div class="meter"><b>${v}</b><span>${k}</span></div>`).join("");
+      document.getElementById("hub-orders").textContent = s.orders;
+      document.getElementById("hub-units").textContent = s.units + " shirts logged";
+      renderXp();
+    }
+
+    function renderStations() {
+      // Keep hub separate; show other 5 + make hub also a station feel via keys
+      const html = DATA.stations
+        .filter(s => s.id !== "hq")
+        .map(s => `
+          <button type="button" class="station" data-station="${s.id}" data-health="${s.health}">
+            <span class="dot" aria-hidden="true"></span>
+            <div class="name">${escapeHtml(s.name || s.label)}</div>
+            <div class="hint">${escapeHtml(s.hint || "")}</div>
+            <div class="sub">${escapeHtml(s.sub || "")}</div>
+            <div class="xp-mini"><i style="width:${s.xp || 0}%"></i></div>
+          </button>`).join("");
+      document.getElementById("stations").innerHTML = html;
+    }
+
+    function missionItemsHtml() {
+      const rich = DATA.missions_rich || DATA.missions.map(t => ({ text: t, display: t, done: false }));
+      return rich.map((m, i) => {
+        const text = m.display || m.text || m;
+        const done = !!m.done;
+        const btn = done
+          ? `<span class="pill ok">done</span>`
+          : `<button type="button" class="btn tiny" data-mission-done="${i}" ${isLive() ? "" : "disabled"}>Done</button>`;
+        return `<div class="mission-row ${done ? "done" : ""}">
+          <span class="n">0${i+1}</span>
+          <span class="t">${escapeHtml(text)}</span>
+          ${btn}
+        </div>`;
+      }).join("");
+    }
+
+    function bindMissionButtons(root) {
+      root.querySelectorAll("[data-mission-done]").forEach(btn => {
+        btn.addEventListener("click", () => markMissionDone(Number(btn.getAttribute("data-mission-done"))));
+      });
+    }
+
+    function renderMissions() {
+      const el = document.getElementById("missions");
+      el.innerHTML = missionItemsHtml() || `<p class="empty">Nothing queued.</p>`;
+      bindMissionButtons(el);
+    }
+
+    function setActive(id) {
+      activeStation = id;
+      document.querySelectorAll("[data-station]").forEach(el => {
+        el.classList.toggle("active", el.getAttribute("data-station") === id);
+      });
+      const meta = DATA.stations.find(s => s.id === id);
+      document.getElementById("panel-kicker").textContent =
+        `Station ${ORDER.indexOf(id) + 1} of 6 · ${meta ? (meta.name || meta.label) : id}`;
+    }
+
+    function showStation(id) {
+      setActive(id);
+      const body = document.getElementById("panel-body");
+      const title = document.getElementById("panel-title");
+      const note = document.getElementById("panel-note");
+
+      if (id === "hq") {
+        title.textContent = "Home";
+        note.textContent = "Big numbers for the whole shop. Log a new sale here when something sells.";
+        const today = new Date().toISOString().slice(0, 10);
+        const suggestions = (DATA.listing_suggestions || [])
+          .map(n => `<option value="${escapeHtml(n)}"></option>`).join("");
+        const recent = DATA.recent_sales.slice(0, 6).map(r => `
+          <div class="row">
+            <span class="name">${escapeHtml(r.date)} · ${escapeHtml(r.listing)}</span>
+            <span class="muted">${escapeHtml(r.market)}</span>
+            <span class="muted">${money(r.revenue)}</span>
+            <span class="muted">${r.qty}u</span>
+          </div>`).join("");
+        body.innerHTML = `
+          <div class="stat-grid">
+            <div class="stat"><b>${money(DATA.snapshot.revenue)}</b><span>Item sales $</span></div>
+            <div class="stat"><b>${money(DATA.snapshot.printify)}</b><span>Printify costs</span></div>
+            <div class="stat"><b>${money(DATA.snapshot.gross_after_printify)}</b><span>Left after Printify</span></div>
+          </div>
+          <p class="help-line">${escapeHtml((DATA.glossary && DATA.glossary.printify) || "")}</p>
+          <p class="panel-title">Log a sale</p>
+          <p class="help-line">${isLive()
+            ? "Fill the basics, then Save. Extra fields are optional."
+            : "Start the live server to save from this form: python scripts/build_tycoon_hq.py --serve"}</p>
+          <form class="sale-form" id="sale-form">
+            <label>Date<input name="order_date" type="date" value="${today}" required></label>
+            <label>Where sold
+              <select name="marketplace" required>
+                <option value="Etsy">Etsy</option>
+                <option value="eBay">eBay</option>
+              </select>
+            </label>
+            <label class="wide">What sold
+              <input name="listing" list="listing-suggestions" required placeholder="Start typing a listing name…">
+              <datalist id="listing-suggestions">${suggestions}</datalist>
+            </label>
+            <label>How many<input name="qty" type="number" min="1" step="1" value="1" required></label>
+            <label>Price you charged<input name="item_price" type="number" min="0" step="0.01" placeholder="26.09"></label>
+            <div class="actions">
+              <button type="submit" class="btn primary" ${isLive() ? "" : "disabled"}>Save sale</button>
+              <button type="button" class="btn" id="toggle-more">More details</button>
+              <span class="empty" id="sale-form-status">${isLive() ? "Saves to sales_log.csv" : "Live server required"}</span>
+            </div>
+            <label class="optional">Printify cost<input name="printify_cost" type="number" min="0" step="0.01"></label>
+            <label class="optional">Your profit est.<input name="est_net_profit" type="number" step="0.01"></label>
+            <label class="optional">Traffic
+              <input name="traffic_source" list="traffic-suggestions" placeholder="Organic / Ads">
+              <datalist id="traffic-suggestions">
+                <option value="Organic"></option>
+                <option value="Etsy Ads"></option>
+                <option value="eBay promoted listing"></option>
+                <option value="Unknown"></option>
+              </datalist>
+            </label>
+            <label class="optional">Color<input name="shirt_color"></label>
+            <label class="optional">Size<input name="size"></label>
+            <label class="optional">Order ID<input name="order_id"></label>
+            <label class="optional">Buyer<input name="buyer"></label>
+            <label class="optional wide">Notes<input name="notes"></label>
+          </form>
+          <p class="panel-title" style="margin-top:16px">Recent sales</p>
+          <div class="rows">${recent || '<p class="empty">No sales logged yet.</p>'}</div>`;
+        const form = document.getElementById("sale-form");
+        form?.addEventListener("submit", submitSaleLog);
+        document.getElementById("toggle-more")?.addEventListener("click", () => {
+          form.classList.toggle("show-more");
+          const open = form.classList.contains("show-more");
+          document.getElementById("toggle-more").textContent = open ? "Hide details" : "More details";
+        });
+        return;
+      }
+
+      if (id === "etsy" || id === "ebay") {
+        const m = DATA.markets[id];
+        title.textContent = id === "etsy" ? "Etsy" : "eBay";
+        note.textContent = id === "etsy"
+          ? "Your main marketplace. Yellow C5 was taken down on Etsy for IP — don’t relist the CORVETTE wordmark art."
+          : "Newer channel that’s converting. Watch promoted fees on cheap tees.";
+        const sales = DATA.recent_sales.filter(r => r.market.toLowerCase() === id);
+        body.innerHTML = `
+          <div class="stat-grid">
+            <div class="stat"><b>${m.orders}</b><span>Orders</span></div>
+            <div class="stat"><b>${m.units}</b><span>Shirts</span></div>
+            <div class="stat"><b>${money(m.revenue)}</b><span>Sales $</span></div>
+          </div>
+          <p class="help-line">${escapeHtml(m.note || "")}</p>
+          <p class="panel-title">Sales here</p>
+          ${sales.length ? `<div class="rows">${sales.map(r => `
+            <div class="row">
+              <span class="name">${escapeHtml(r.date)} · ${escapeHtml(r.listing)}</span>
+              <span class="muted">${escapeHtml(r.color || "—")}</span>
+              <span class="muted">${money(r.revenue)}</span>
+              <span class="muted">${escapeHtml(r.source || "")}</span>
+            </div>`).join("")}</div>` : `<p class="empty">No sales on this channel yet.</p>`}`;
+        return;
+      }
+
+      if (id === "ads") {
+        title.textContent = "Ads";
+        note.textContent = DATA.ads.stale
+          ? "These ad numbers are old. Until you paste a fresh snapshot into SHOP_STATE, treat this as a reminder — not today’s truth."
+          : "ROAS shows how much sales you get per $1 of ad spend.";
+        const rows = DATA.ads.rows || [];
+        const banner = DATA.ads.stale
+          ? `<p class="pill warn" style="margin-bottom:12px">Update needed · ${DATA.ads.age_days} days old (${escapeHtml(DATA.ads.snapshot_date || "?")})</p>`
+          : `<p class="help-line">${escapeHtml((DATA.glossary && DATA.glossary.roas) || "")}</p>`;
+        body.innerHTML = banner + (rows.length ? `<div class="rows">${rows.map(r => `
+          <div class="row">
+            <span class="name">${escapeHtml(r.listing)}</span>
+            <span class="muted">${escapeHtml(r.views)} views</span>
+            <span class="pill ${r.health}">${escapeHtml(r.roas)}× back</span>
+            <span class="muted">${escapeHtml(r.orders)} orders</span>
+          </div>`).join("")}</div>` : `<p class="empty">No ads table found in SHOP_STATE yet.</p>`);
+        return;
+      }
+
+      if (id === "pipeline") {
+        const p = DATA.pipeline;
+        title.textContent = "Queue";
+        note.textContent = "Designs waiting to go live. Ready = file + listing copy. Needs copy = write the .md. Blocked = don’t list yet.";
+        const block = (label, items, cls, empty) => `
+          <p class="panel-title">${label} <span class="pill ${cls}">${items.length}</span></p>
+          ${items.length ? `<div class="rows">${items.map(t => `
+            <div class="row"><span class="name" style="grid-column:1/-1">${escapeHtml(t.replace(/`/g, ""))}</span></div>`).join("")}</div>`
+            : `<p class="empty">${empty}</p>`}`;
+        body.innerHTML = [
+          block("Ready to list", p.ready, "ok", "Nothing ready — nice, or time to finish copy."),
+          block("Needs listing copy", p.needs_copy, "warn", "No copy gaps."),
+          block("Blocked", p.blocked, "cold", "Nothing blocked."),
+          block("Shop checklist", p.checklist, "warn", "Checklist clear."),
+        ].join("");
+        return;
+      }
+
+      if (id === "missions") {
+        title.textContent = "To-Do";
+        note.textContent = "Your next three shop jobs from the daily brief. Mark Done (live server) to save a note in SHOP_STATE.";
+        const log = (DATA.mission_log || []).slice().reverse().map(r => `
+          <div class="row">
+            <span class="name">${escapeHtml(r.when)}</span>
+            <span class="muted" style="grid-column:2/-1">${escapeHtml(r.mission)}</span>
+          </div>`).join("");
+        body.innerHTML = `
+          <div class="missions-list" id="missions-panel">${missionItemsHtml()}</div>
+          <button type="button" class="btn" id="copy-prompt-main">Copy help prompt for Cursor</button>
+          <p class="help-line" style="margin-top:10px">This copies a ready-made message you can paste into Cursor so I can help with the top job.</p>
+          <p class="panel-title" style="margin-top:16px">Finished recently</p>
+          <div class="rows">${log || '<p class="empty">No finished jobs logged yet.</p>'}</div>`;
+        document.getElementById("copy-prompt-main")?.addEventListener("click", copyPrompt);
+        bindMissionButtons(document.getElementById("missions-panel"));
+      }
+    }
+
+    async function submitSaleLog(e) {
+      e.preventDefault();
+      if (!isLive()) {
+        showToast("Start live mode", "Run: python scripts/build_tycoon_hq.py --serve");
+        return;
+      }
+      const form = e.target;
+      const status = document.getElementById("sale-form-status");
+      const payload = Object.fromEntries(new FormData(form).entries());
+      status.textContent = "Saving…";
+      try {
+        const res = await fetch("/api/sale-log", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload),
+        });
+        const data = await res.json();
+        if (!res.ok) throw new Error(data.error || "Failed");
+        status.textContent = "Saved ✓";
+        showToast(`Sale · ${payload.marketplace}`, `${payload.listing} · qty ${payload.qty}`);
+        form.reset();
+        form.order_date.value = new Date().toISOString().slice(0, 10);
+        form.qty.value = "1";
+        form.classList.remove("show-more");
+        setTimeout(pollLive, 500);
+      } catch (err) {
+        status.textContent = String(err.message || err);
+        showToast("Couldn’t save", String(err.message || err));
+      }
+    }
+
+    async function markMissionDone(index) {
+      if (!isLive()) {
+        showToast("Start live mode", "Done buttons need --serve");
+        return;
+      }
+      const rich = DATA.missions_rich || [];
+      const mission = (rich[index] && rich[index].text) || DATA.missions[index];
+      if (!mission) return;
+      try {
+        const res = await fetch("/api/mission-done", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ mission }),
+        });
+        const payload = await res.json();
+        if (!res.ok) throw new Error(payload.error || "Failed");
+        showToast("Marked done", rich[index]?.display || mission);
+        setTimeout(pollLive, 500);
+      } catch (err) {
+        showToast("Couldn’t log", String(err.message || err));
+      }
+    }
+
+    function showToast(kicker, text) {
+      const el = document.getElementById("toast");
+      document.getElementById("toast-k").textContent = kicker;
+      document.getElementById("toast-t").textContent = text;
+      el.classList.add("show");
+      clearTimeout(toastTimer);
+      toastTimer = setTimeout(() => el.classList.remove("show"), 4200);
+    }
+
+    async function copyPrompt() {
+      const text = DATA.cursor_prompt || "";
+      try { await navigator.clipboard.writeText(text); }
+      catch (_) {
+        const ta = document.createElement("textarea");
+        ta.value = text; document.body.appendChild(ta); ta.select();
+        document.execCommand("copy"); ta.remove();
+      }
+      document.querySelectorAll("#copy-prompt, #copy-prompt-main").forEach(btn => {
+        if (!btn) return;
+        btn.classList.add("copied");
+        const old = btn.textContent;
+        btn.textContent = "Copied ✓";
+        setTimeout(() => { btn.classList.remove("copied"); btn.textContent = old.includes("Cursor") ? "Copy help prompt for Cursor" : "Copy help prompt"; }, 1400);
+      });
+    }
+
+    function updateStamp() {
+      const live = isLive();
+      const stale = DATA.ads && DATA.ads.stale ? " · ads need refresh" : "";
+      document.getElementById("stamp").textContent =
+        `Updated ${DATA.generated_at}${stale}` +
+        (live ? " · live" : " · open with --serve for saving");
+      document.getElementById("shop-link").href = DATA.shop_url;
+      const liveEl = document.getElementById("live");
+      liveEl.classList.toggle("on", live);
+      liveEl.querySelector(".live-text").textContent = live ? "Live — saves work" : "Snapshot only";
+      const g = DATA.glossary || {};
+      document.getElementById("glossary-roas").textContent = g.roas || "";
+    }
+
+    function maybeToastSale(prevKey, next) {
+      const key = next.latest_sale_key || "";
+      if (!key || key === prevKey) return;
+      const sale = (next.recent_sales || [])[0];
+      if (!sale) return;
+      showToast(`New sale · ${sale.market}`, `${sale.listing} · ${money(sale.revenue)}`);
+    }
+
+    function applyData(next) {
+      maybeToastSale(lastSaleKey, next);
+      lastSaleKey = next.latest_sale_key || lastSaleKey;
+      DATA = next;
+      renderAll();
+      showStation(activeStation);
+    }
+
+    function renderAll() {
+      renderMeters();
+      renderStations();
+      renderMissions();
+      renderCoach();
+      updateStamp();
+    }
+
+    function bind() {
+      document.getElementById("stations").addEventListener("click", (e) => {
+        const btn = e.target.closest("[data-station]");
+        if (btn) showStation(btn.getAttribute("data-station"));
+      });
+      document.getElementById("hub").addEventListener("click", () => showStation("hq"));
+      document.getElementById("copy-prompt").addEventListener("click", copyPrompt);
+      document.getElementById("howto-dismiss").addEventListener("click", () => {
+        document.getElementById("howto").classList.add("hidden");
+        try { localStorage.setItem("cozy_hq_howto_dismissed", "1"); } catch (_) {}
+      });
+      try {
+        if (localStorage.getItem("cozy_hq_howto_dismissed") === "1") {
+          document.getElementById("howto").classList.add("hidden");
+        }
+      } catch (_) {}
+      window.addEventListener("keydown", (e) => {
+        const n = parseInt(e.key, 10);
+        if (n >= 1 && n <= 6) showStation(ORDER[n - 1]);
+      });
+    }
+
+    async function pollLive() {
+      if (!isLive()) return;
+      try {
+        const res = await fetch("cozy_orbit_tycoon.json?t=" + Date.now(), { cache: "no-store" });
+        if (!res.ok) return;
+        const next = await res.json();
+        if (next.generated_ts && next.generated_ts !== DATA.generated_ts) applyData(next);
+      } catch (_) {}
+    }
+
+    bind();
+    renderAll();
+    showStation(DATA.coach && DATA.coach.station ? DATA.coach.station : "hq");
+    if (isLive()) setInterval(pollLive, 4000);
+  </script>
+</body>
+</html>

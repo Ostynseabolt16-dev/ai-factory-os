@@ -284,6 +284,11 @@ def main() -> None:
         default=None,
         help="Write brief to file (default: stdout)",
     )
+    parser.add_argument(
+        "--no-tycoon",
+        action="store_true",
+        help="Skip rebuilding visualizations/cozy_orbit_tycoon.html",
+    )
     args = parser.parse_args()
     brief = build_brief()
     if args.output:
@@ -292,6 +297,18 @@ def main() -> None:
         print(f"OK  {args.output}")
     else:
         print(brief)
+
+    if not args.no_tycoon:
+        try:
+            import build_tycoon_hq as tycoon
+
+            data = tycoon.write_outputs(tycoon.OUT_DEFAULT)
+            print(
+                f"OK  Tycoon HQ refreshed ({data['snapshot']['orders']} orders) → "
+                f"{tycoon.OUT_DEFAULT.relative_to(ROOT)}"
+            )
+        except Exception as exc:  # noqa: BLE001 — brief should still print
+            print(f"WARN  Tycoon HQ rebuild skipped: {exc}")
 
 
 if __name__ == "__main__":

@@ -1,0 +1,476 @@
+{
+  "generated_at": "2026-07-21 01:36",
+  "generated_ts": 1784612183,
+  "shop_state_updated": "2026-07-16 (Mac return after ~8 days; 2 eBay Yellow C5 sales; Etsy Yellow C5 taken down; see `COZY_ORBIT_HANDOFF.md`)",
+  "shop_url": "https://www.etsy.com/shop/CozyOrbitPrints",
+  "cursor_prompt": "You are the CozyOrbitPrints shop advisor. Read designs/listings/COZY_ORBIT_HANDOFF.md, designs/listings/SHOP_STATE.md, and sales_log.csv first.\nShop snapshot: 20 net orders, 24 units logged.\n\nTonight's missions:\n1. Watch C6 old ads (ROAS 0, 2 organic sales — keep running for more data)\n2. Write listing copy: C5 Variant B (~$21) → `c5_variant_B_blackwheels_plate_UPLOAD_TO_PRINTIFY.png`\n3. Shop admin: Confirm icon matches banner at thumbnail size (~48px)\n\nReady to list:\n- C7 Variant B → `c7_variant_B_collection_UPLOAD_TO_PRINTIFY.png` + `C7_VARIANT_B.md` (manual Etsy paste)\n- **C7 Torch Red** (color variant) → `c7_torch_red_collection_UPLOAD_TO_PRINTIFY.png` + `C7_TORCH_RED.md` (manual Etsy paste)\n- **C5 Torch Red** (color variant) → `c5_torch_red_collection_UPLOAD_TO_PRINTIFY.png` + `C5_TORCH_RED.md` (manual Etsy paste)\n- **C7 Laguna Blue** (color variant) → `c7_laguna_blue_collection_UPLOAD_TO_PRINTIFY.png` + `C7_LAGUNA_BLUE.md` (manual Etsy paste)\n- **C8 Black Gothic** (color/style variant) → `c8_black_gothic_collection_UPLOAD_TO_PRINTIFY.png` + `C8_BLACK_GOTHIC_COLLECTION.md` (manual Etsy paste)\n\nNeeds listing copy:\n- C5 Variant B (~$21) → `c5_variant_B_blackwheels_plate_UPLOAD_TO_PRINTIFY.png` — write `designs/listings/C5_VARIANT_B.md` first\n- **C7 Velocity Yellow** (color variant) → `c7_velocity_yellow_collection_UPLOAD_TO_PRINTIFY.png` — write `designs/listings/C7_VELOCITY_YELLOW.md` first\n- **C6 Atomic Orange** (color variant) → `c6_atomic_orange_collection_UPLOAD_TO_PRINTIFY.png` — write `designs/listings/C6_ATOMIC_ORANGE.md` first\n\nBlocked:\n- C6 Variant B (**blocked — regen**) → `c6_variant_B_collection_UPLOAD_TO_PRINTIFY.png` — Regen with no-plate prompt when OpenAI credits return (Pillow fix abandoned)\n\nHelp me execute the top mission. Keep changes local-file based (no Etsy API, no OpenAI generate scripts unless I confirm spend).",
+  "live_api": true,
+  "snapshot": {
+    "orders": 20,
+    "units": 24,
+    "revenue": 582.14,
+    "printify": 328.84,
+    "known_profit": 100.44,
+    "known_profit_orders": 8,
+    "gross_after_printify": 253.3,
+    "shop_day": 50,
+    "level": 5,
+    "first_sale": "2026-06-02",
+    "xp_into_level": 0,
+    "xp_to_next": 5,
+    "xp_pct": 0
+  },
+  "markets": {
+    "etsy": {
+      "orders": 17,
+      "units": 21,
+      "revenue": 475.08,
+      "health": "ok",
+      "xp": 85,
+      "note": "Primary channel historically; Yellow C5 taken down Jul 2026 (IP)."
+    },
+    "ebay": {
+      "orders": 3,
+      "units": 3,
+      "revenue": 107.06,
+      "health": "hot",
+      "xp": 60,
+      "note": "Converting on Yellow C5; watch Ad Fee General vs tee margin."
+    }
+  },
+  "ads": {
+    "rows": [
+      {
+        "listing": "Corvette C4 Minimal",
+        "views": "1,139",
+        "roas": "4.06",
+        "roas_val": 4.06,
+        "orders": "2",
+        "health": "ok"
+      },
+      {
+        "listing": "Corvette C8 Tee",
+        "views": "2,010",
+        "roas": "3.06",
+        "roas_val": 3.06,
+        "orders": "1",
+        "health": "ok"
+      },
+      {
+        "listing": "Yellow Corvette C5",
+        "views": "1,611",
+        "roas": "2.23",
+        "roas_val": 2.23,
+        "orders": "1",
+        "health": "ok"
+      },
+      {
+        "listing": "Corvette C7 Illustration",
+        "views": "3,438",
+        "roas": "1.05",
+        "roas_val": 1.05,
+        "orders": "1",
+        "health": "warn"
+      },
+      {
+        "listing": "C6 old",
+        "views": "1,007",
+        "roas": "0",
+        "roas_val": 0.0,
+        "orders": "0",
+        "health": "cold"
+      },
+      {
+        "listing": "Yellow C5 hoodie",
+        "views": "80",
+        "roas": "0",
+        "roas_val": 0.0,
+        "orders": "0",
+        "health": "cold"
+      },
+      {
+        "listing": "Red C4 pop-up tee",
+        "views": "79",
+        "roas": "0",
+        "roas_val": 0.0,
+        "orders": "0",
+        "health": "cold"
+      },
+      {
+        "listing": "Yellow C6 hoodie",
+        "views": "42",
+        "roas": "0",
+        "roas_val": 0.0,
+        "orders": "0",
+        "health": "cold"
+      },
+      {
+        "listing": "C7 V8 hoodie",
+        "views": "34",
+        "roas": "0",
+        "roas_val": 0.0,
+        "orders": "0",
+        "health": "cold"
+      }
+    ],
+    "health": "warn",
+    "xp": 0,
+    "snapshot_date": "2026-06-26",
+    "age_days": 25,
+    "stale": true,
+    "note": "Ads snapshot dated 2026-06-26 (25 days old) — paste fresh Etsy Ads stats into SHOP_STATE."
+  },
+  "pipeline": {
+    "ready": [
+      "C7 Variant B → `c7_variant_B_collection_UPLOAD_TO_PRINTIFY.png` + `C7_VARIANT_B.md` (manual Etsy paste)",
+      "C7 Torch Red (color variant) → `c7_torch_red_collection_UPLOAD_TO_PRINTIFY.png` + `C7_TORCH_RED.md` (manual Etsy paste)",
+      "C5 Torch Red (color variant) → `c5_torch_red_collection_UPLOAD_TO_PRINTIFY.png` + `C5_TORCH_RED.md` (manual Etsy paste)",
+      "C7 Laguna Blue (color variant) → `c7_laguna_blue_collection_UPLOAD_TO_PRINTIFY.png` + `C7_LAGUNA_BLUE.md` (manual Etsy paste)",
+      "C8 Black Gothic (color/style variant) → `c8_black_gothic_collection_UPLOAD_TO_PRINTIFY.png` + `C8_BLACK_GOTHIC_COLLECTION.md` (manual Etsy paste)",
+      "C4 Pop-Up Gothic → `c4_popup_gothic_collection_UPLOAD_TO_PRINTIFY.png` + `C4_POPUP_GOTHIC.md` (manual Etsy paste)"
+    ],
+    "needs_copy": [
+      "C5 Variant B (~$21) → `c5_variant_B_blackwheels_plate_UPLOAD_TO_PRINTIFY.png` — write `designs/listings/C5_VARIANT_B.md` first",
+      "C7 Velocity Yellow (color variant) → `c7_velocity_yellow_collection_UPLOAD_TO_PRINTIFY.png` — write `designs/listings/C7_VELOCITY_YELLOW.md` first",
+      "C6 Atomic Orange (color variant) → `c6_atomic_orange_collection_UPLOAD_TO_PRINTIFY.png` — write `designs/listings/C6_ATOMIC_ORANGE.md` first"
+    ],
+    "blocked": [
+      "C6 Variant B (blocked — regen) → `c6_variant_B_collection_UPLOAD_TO_PRINTIFY.png` — Regen with no-plate prompt when OpenAI credits return (Pillow fix abandoned)"
+    ],
+    "checklist": [
+      "Confirm icon matches banner at thumbnail size (~48px)",
+      "Confirm no Chevrolet crossed flags / Corvette wordmarks visible in crops"
+    ],
+    "health": "warn",
+    "xp": 52
+  },
+  "top_listings": [
+    {
+      "name": "Corvette C6 Sports Car T-Shirt",
+      "units": 3
+    },
+    {
+      "name": "Yellow Corvette C5 T-Shirt",
+      "units": 3
+    },
+    {
+      "name": "Corvette C4 Minimal Logo T-Shirt",
+      "units": 3
+    },
+    {
+      "name": "Corvette C7 Car Illustration T-Shirt",
+      "units": 2
+    },
+    {
+      "name": "Corvette C8 Tee",
+      "units": 2
+    },
+    {
+      "name": "Kids Play Mat Car Floor Mat",
+      "units": 2
+    },
+    {
+      "name": "User-reported Etsy Ads order: C5 + C7 C…",
+      "units": 2
+    },
+    {
+      "name": "Corvette C5 Illustrated Car Tee",
+      "units": 1
+    }
+  ],
+  "recent_sales": [
+    {
+      "date": "2026-07-15",
+      "market": "eBay",
+      "listing": "Yellow Corvette C5 T-Shirt",
+      "qty": 1,
+      "revenue": 26.09,
+      "profit": 9.97,
+      "color": "White",
+      "source": "eBay promoted listing",
+      "notes": ""
+    },
+    {
+      "date": "2026-07-15",
+      "market": "eBay",
+      "listing": "Yellow Corvette C5 Vintage Sports Car H…",
+      "qty": 1,
+      "revenue": 51.99,
+      "profit": 50.58,
+      "color": "Ash",
+      "source": "eBay promoted listing",
+      "notes": "Paid Jul 15; ship by Jul 29; eBay earnings $50.58 after $8.80 txn fees; Printify NOT synced Jul 16 night; REPEAT BUYER b"
+    },
+    {
+      "date": "2026-06-30",
+      "market": "Etsy",
+      "listing": "Corvette C5 Blueprint T-Shirt",
+      "qty": 1,
+      "revenue": 32.58,
+      "profit": 5.08,
+      "color": "Black",
+      "source": "Unknown",
+      "notes": "Gift order; Oklahoma City OK; Printify in production Jun 30; ship by Jul 6"
+    },
+    {
+      "date": "2026-06-28",
+      "market": "Etsy",
+      "listing": "Corvette C4 Minimal Logo T-Shirt",
+      "qty": 1,
+      "revenue": 27.9,
+      "profit": null,
+      "color": "Light Blue",
+      "source": "Unknown",
+      "notes": "France order (st etienne du rouvray); shop coupon VETTESUMMER 10% off; update printify cost/net once fulfilled"
+    },
+    {
+      "date": "2026-06-27",
+      "market": "Etsy",
+      "listing": "User-reported organic Etsy order (listi…",
+      "qty": 1,
+      "revenue": null,
+      "profit": null,
+      "color": "",
+      "source": "Organic (user report)",
+      "notes": "Woke up report: 2 new Etsy orders today; one organic order not attributed to ads"
+    },
+    {
+      "date": "2026-06-27",
+      "market": "Etsy",
+      "listing": "User-reported Etsy Ads order: C5 + C7 C…",
+      "qty": 2,
+      "revenue": null,
+      "profit": null,
+      "color": "",
+      "source": "Etsy Ads (user report)",
+      "notes": "Woke up report: ad-attributed bundle order included 2 shirts (C5 + C7); fill order ID, pricing, and buyer details from E"
+    },
+    {
+      "date": "2026-06-26",
+      "market": "Etsy",
+      "listing": "C7 Corvette sports car T-Shirt",
+      "qty": 1,
+      "revenue": 26.16,
+      "profit": null,
+      "color": "Sport Grey",
+      "source": "Etsy promo coupon (CORVETTESUMMER 15% off)",
+      "notes": "Sale-run order from Etsy open-orders screen; corrected Printify cost from screenshot"
+    },
+    {
+      "date": "2026-06-26",
+      "market": "Etsy",
+      "listing": "Yellow Corvette C5 T-Shirt",
+      "qty": 1,
+      "revenue": 29.86,
+      "profit": null,
+      "color": "White",
+      "source": "Etsy promo coupon (CORVETTESUMMER 15% off)",
+      "notes": "Latest reported Etsy sale in the Friday sale window; corrected Printify cost from screenshot"
+    },
+    {
+      "date": "2026-06-25",
+      "market": "Etsy",
+      "listing": "Z06 Yellow Corvette C6 V8 Race Car T-Shirt",
+      "qty": 1,
+      "revenue": 28.98,
+      "profit": null,
+      "color": "Sport Grey",
+      "source": "Etsy promo coupon (CORVETTESUMMER 15% off)",
+      "notes": "Repeat customer; same buyer name as early C6 order; user notes David was first-ever buyer; corrected Printify cost from "
+    },
+    {
+      "date": "2026-06-25",
+      "market": "Etsy",
+      "listing": "Corvette C6 Sports Car T-Shirt",
+      "qty": 1,
+      "revenue": 23.04,
+      "profit": null,
+      "color": "White",
+      "source": "Etsy promo coupon (CORVETTESUMMER 15% off)",
+      "notes": "Sale-run order from Etsy open-orders screen; corrected Printify cost from screenshot"
+    },
+    {
+      "date": "2026-06-18",
+      "market": "Etsy",
+      "listing": "Kids Play Mat Car Floor Mat",
+      "qty": 2,
+      "revenue": 70.0,
+      "profit": null,
+      "color": "",
+      "source": "Organic",
+      "notes": "2 mats; 20% abandoned-cart discount; Printify prod+ship ~$65; ~breakeven"
+    },
+    {
+      "date": "2026-06-18",
+      "market": "Etsy",
+      "listing": "Corvette C4 Minimal Logo T-Shirt",
+      "qty": 1,
+      "revenue": 25.82,
+      "profit": 6.92,
+      "color": "Red",
+      "source": "Unknown",
+      "notes": "Printify order 27546430.12; Gildan 64000; estimated Etsy fees from item+shipping/payment/listing"
+    },
+    {
+      "date": "2026-06-18",
+      "market": "eBay",
+      "listing": "Corvette C5 car illustration T-Shirt",
+      "qty": 1,
+      "revenue": 28.98,
+      "profit": 9.46,
+      "color": "Heather Clay",
+      "source": "eBay promoted listing",
+      "notes": "Printify order 27858258.1; Bella+Canvas 3001; est profit before any separate promoted ad fee"
+    },
+    {
+      "date": "2026-06-15",
+      "market": "Etsy",
+      "listing": "Corvette C8 Tee",
+      "qty": 2,
+      "revenue": 50.0,
+      "profit": null,
+      "color": "",
+      "source": "Etsy Ads",
+      "notes": "2 shirts in 1 order; ad-attributed ~$50 revenue; ROAS ~15.82 on listing"
+    },
+    {
+      "date": "2026-06-14",
+      "market": "Etsy",
+      "listing": "Corvette C4 Minimal Logo T-Shirt",
+      "qty": 1,
+      "revenue": 29.07,
+      "profit": 12.06,
+      "color": "Sport Grey",
+      "source": "Etsy Ads",
+      "notes": "Best ad ROAS ~20.62; corrected Printify cost from screenshot"
+    },
+    {
+      "date": "2026-06-12",
+      "market": "Etsy",
+      "listing": "Corvette C7 Car Illustration T-Shirt",
+      "qty": 2,
+      "revenue": 39.18,
+      "profit": null,
+      "color": "White",
+      "source": "Etsy Ads (via Search)",
+      "notes": "2 shirts in 1 order; Switzerland; ~$19.59/shirt item side; corrected Printify cost from screenshot"
+    }
+  ],
+  "latest_sale_key": "2026-07-15|eBay|Yellow Corvette C5 T-Shirt|1",
+  "listing_suggestions": [
+    "Corvette C6 Sports Car T-Shirt",
+    "Yellow Corvette C5 T-Shirt",
+    "Corvette C4 Minimal Logo T-Shirt",
+    "Corvette C7 Car Illustration T-Shirt",
+    "Corvette C8 Tee",
+    "Kids Play Mat Car Floor Mat",
+    "User-reported Etsy Ads order: C5 + C7 C…",
+    "Corvette C5 Illustrated Car Tee",
+    "Corvette C5 car illustration T-Shirt",
+    "Z06 Yellow Corvette C6 V8 Race Car T-Shirt",
+    "C7 Corvette sports car T-Shirt",
+    "User-reported organic Etsy order (listi…",
+    "Corvette C5 Blueprint T-Shirt",
+    "Yellow Corvette C5 Vintage Sports Car H…"
+  ],
+  "missions": [
+    "Watch C6 old ads (ROAS 0, 2 organic sales — keep running for more data)",
+    "Write listing copy: C5 Variant B (~$21) → `c5_variant_B_blackwheels_plate_UPLOAD_TO_PRINTIFY.png`",
+    "Shop admin: Confirm icon matches banner at thumbnail size (~48px)"
+  ],
+  "missions_rich": [
+    {
+      "text": "Watch C6 old ads (ROAS 0, 2 organic sales — keep running for more data)",
+      "display": "Watch C6 old ads (ROAS 0, 2 organic sales — keep running for more data)",
+      "done": false
+    },
+    {
+      "text": "Write listing copy: C5 Variant B (~$21) → `c5_variant_B_blackwheels_plate_UPLOAD_TO_PRINTIFY.png`",
+      "display": "Write listing copy: C5 Variant B (~$21) — c5_variant_B_blackwheels_plate_UPLOAD_TO_PRINTIFY.png",
+      "done": false
+    },
+    {
+      "text": "Shop admin: Confirm icon matches banner at thumbnail size (~48px)",
+      "display": "Shop admin: Confirm icon matches banner at thumbnail size (~48px)",
+      "done": false
+    }
+  ],
+  "mission_log": [],
+  "station_xp": {
+    "hq": 0,
+    "etsy": 85,
+    "ebay": 60,
+    "ads": 0,
+    "pipeline": 52,
+    "missions": 100
+  },
+  "stations": [
+    {
+      "id": "hq",
+      "label": "HOME",
+      "name": "Home",
+      "hint": "Money & log sales",
+      "sub": "Level 5 · 0/5 to next",
+      "health": "ok",
+      "xp": 0
+    },
+    {
+      "id": "etsy",
+      "label": "ETSY",
+      "name": "Etsy",
+      "hint": "Main shop sales",
+      "sub": "17 orders",
+      "health": "ok",
+      "xp": 85
+    },
+    {
+      "id": "ebay",
+      "label": "EBAY",
+      "name": "eBay",
+      "hint": "Growing channel",
+      "sub": "3 orders",
+      "health": "hot",
+      "xp": 60
+    },
+    {
+      "id": "ads",
+      "label": "ADS",
+      "name": "Ads",
+      "hint": "What ads earn back",
+      "sub": "Needs update (25d old)",
+      "health": "warn",
+      "xp": 0
+    },
+    {
+      "id": "pipeline",
+      "label": "QUEUE",
+      "name": "Queue",
+      "hint": "Ready / blocked designs",
+      "sub": "6 ready · 1 blocked",
+      "health": "warn",
+      "xp": 52
+    },
+    {
+      "id": "missions",
+      "label": "TO-DO",
+      "name": "To-Do",
+      "hint": "Tonight’s 3 jobs",
+      "sub": "3 open",
+      "health": "hot",
+      "xp": 100
+    }
+  ],
+  "coach": {
+    "eyebrow": "Needs attention",
+    "title": "Ads numbers are out of date",
+    "body": "Your Etsy Ads snapshot is 25 days old. Open the Ads station, then paste fresh stats into SHOP_STATE when you can.",
+    "station": "ads",
+    "cta": "Open Ads"
+  },
+  "glossary": {
+    "roas": "ROAS = money from ads ÷ money spent on ads. Above 2 is good.",
+    "printify": "Printify = what you pay to print & ship the shirt.",
+    "xp": "Level rises every 5 real orders logged. Just a progress meter.",
+    "health": "Green OK · Yellow needs a look · Red / cold = problem or empty"
+  }
+}

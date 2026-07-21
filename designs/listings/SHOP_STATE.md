@@ -124,7 +124,8 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 
 **Tycoon HQ (local):** `visualizations/cozy_orbit_tycoon.html`  
 - Rebuild once: `.venv/bin/python scripts/build_tycoon_hq.py`  
-- Stay live: `.venv/bin/python scripts/build_tycoon_hq.py --serve` → http://127.0.0.1:8765/cozy_orbit_tycoon.html  
+- Stay live (recommended): `.venv/bin/python scripts/build_tycoon_hq.py --serve` → http://127.0.0.1:8765/cozy_orbit_tycoon.html  
+- Yellow banner = next job · keys 1–6 · Home logs sales · To-Do marks Done  
 - Also refreshes when you run `shop_daily_brief.py`  
 **Later:** consolidate C5 listings after variant B has data · orange color variants (Velocity Yellow C6, etc.)
 
@@ -436,4 +437,3 @@ PYTHONPATH=. .venv/bin/python scripts/generate_c5_black.py
 
 | When | Mission |
 |------|------|
-| 2026-07-16 11:08 | Write listing copy: C5 Variant B (~$21) → `c5_variant_B_blackwheels_plate_UPLOAD_TO_PRINTIFY.png` |
