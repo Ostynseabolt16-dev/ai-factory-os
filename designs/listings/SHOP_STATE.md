@@ -15,7 +15,8 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 |------|--------|
 | **eBay Pickleball IT WAS IN** | **SOLD Jul 17 — $18.99** + $3.99 ship; mint; Printify **#27858258.4** ready-to-ship **$14.63**; eBay fees **$3.53** → earnings **$19.45** → **~$4.82 cash** |
 | **Pickleball Soft Serve / Eyes Up Here** | Still **0 sales** (3 live SKUs × Etsy+eBay; only IT WAS IN converted) |
-| **Wave 2 briefs** | `PICKLEBALL_WAVE2.md` — Kitchen first (30 min); memory comic + Abraham Dinkin’ saved as later original type-only |
+| **Wave 2 briefs** | `PICKLEBALL_WAVE2.md` — Dinking Problem **art ready**; Kitchen / Six pack next |
+| **Dinking Problem** | Files ready: `pickleball_dinking_problem_UPLOAD_TO_PRINTIFY.png` + `PICKLEBALL_DINKING_PROBLEM.md` — **upload to Printify/eBay next** |
 | **Margin rule** | Next pickleball tees **$20.99+** S–XL or eat shipping differently — $18.99 is thin |
 | **Ads** | Keep pickleball promoted **light**; Yellow C5 Ad Fee lesson still applies |
 | **Do not build tonight** | Comic-panel memory shirt; Lincoln portrait; doodle club; goose grid |

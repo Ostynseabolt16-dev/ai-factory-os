@@ -7,9 +7,9 @@
 
 ## 30-minute session rule
 
-**Do tonight:** Canva **Design B (Dinking Problem)** — market is packed with this joke; we win with *clean type like IT WAS IN*, not beer-mug clones.  
-**Alt if you prefer kitchen:** Design A still fine.  
-**Don’t tonight:** memory comic panels, Abraham Lincoln art, doodles, goose grid, crossed-paddles crest clones.
+**Do tonight:** Upload **Dinking Problem** (`PICKLEBALL_DINKING_PROBLEM.md`) — art ready.  
+**Next build:** Design A Kitchen.  
+**Don’t:** memory comic panels, Abraham Lincoln art, doodles, goose grid, crossed-paddles crest clones.
 
 ## Priority after the sale
 

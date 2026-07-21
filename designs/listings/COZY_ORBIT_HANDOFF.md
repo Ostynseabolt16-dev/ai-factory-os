@@ -19,18 +19,17 @@
 |-------------|--------|
 | **eBay Pickleball IT WAS IN** | **SOLD Jul 17 — $18.99** + $3.99 ship → eBay earn **$19.45** − Printify **$14.63** = **~$4.82 cash** |
 | Soft Serve + Eyes Up Here | Still **0 sales** (only 1 of 3 pickleball SKUs sold) |
-| **Wave 2 briefs** | `PICKLEBALL_WAVE2.md` — Kitchen tonight; memory + historical pun later (type-only) |
+| **Dinking Problem tee** | **READY** — master + Printify export + listing `PICKLEBALL_DINKING_PROBLEM.md` — upload tonight |
 | Soft Serve / Eyes / IT WAS IN | Still live Etsy + eBay |
 
 ## Next actions (priority)
 
-1. **Tonight (30 min):** Canva **Dinking Problem** (Wave 2 Design B) — white/lime type stack + ball below; no beer mug / crossed paddles
-2. Price next pickleball listings **$20.99+** S–XL (IT WAS IN margin was thin)
-3. Then Kitchen → Six pack; eBay-first; light ads only
-4. Soft Serve / Eyes: leave live, no heavy ads
-5. Fulfill path already rolling — Printify #27858258.4 ready-to-ship
-6. Skip tonight: memory comic clone, Abraham Lincoln portrait, doodles, goose
-7. Safer Yellow C5 replacement (no CORVETTE wordmark) when ready
+1. **Upload Dinking Problem** to Printify → eBay @ **$20.99** S–XL (dark shirts) → Etsy
+2. Then Kitchen → Six pack; eBay-first; light ads only
+3. Soft Serve / Eyes: leave live, no heavy ads
+4. Fulfill path already rolling — Printify #27858258.4 ready-to-ship
+5. Skip for now: memory comic clone, Abraham Lincoln portrait, doodles, goose
+6. Safer Yellow C5 replacement (no CORVETTE wordmark) when ready
 
 ## July 16 flash update
 
