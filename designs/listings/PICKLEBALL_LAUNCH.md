@@ -84,7 +84,7 @@ no net, no court background, no other people, square composition, high resolutio
 
 ## After this one sells (or dies)
 
-Only then make design #2 from a *different* joke category (line call / dink dawn) — still original art.
+**Jul 17 signal:** IT WAS IN sold on eBay ($18.99) — Wave 2 unlocked → `designs/listings/PICKLEBALL_WAVE2.md` (Kitchen / Dinking problem / Six pack). Soft Serve + Eyes still quiet; leave live, light ads only.
 
 ## Explicitly not doing
 

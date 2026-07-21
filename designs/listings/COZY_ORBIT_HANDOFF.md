@@ -1,4 +1,4 @@
-# CozyOrbitPrints — Master Handoff (July 16, 2026)
+# CozyOrbitPrints — Master Handoff (July 21, 2026)
 
 > Shop: https://www.etsy.com/shop/CozyOrbitPrints  
 > **Read this + `SHOP_STATE.md` + `sales_log.csv` at start of every session.**  
@@ -9,9 +9,18 @@
 ## What we sell (NOT stickers)
 
 - **Brand:** CozyOrbitPrints
-- **Product:** Corvette C3–C8 graphic tees + hoodies (POD via Printify) + **pickleball test SKU** (Jul 16)
+- **Product:** Corvette C3–C8 graphic tees + hoodies (POD via Printify) + **pickleball test SKUs** (Jul 16+)
 - **Channels:** Etsy (primary historically) + eBay (now converting — re-prioritize)
-- **Proven styles:** (1) Blueprint / technical front+back · (2) Gothic text + side car
+- **Proven styles:** (1) Blueprint / technical front+back · (2) Gothic text + side car · (3) minimal pickleball text gag (**IT WAS IN** sold)
+
+## July 21 flash update (post-work)
+
+| Sale / item | Status |
+|-------------|--------|
+| **eBay Pickleball IT WAS IN** | **SOLD Jul 17 — $18.99**; mint tee; paid + ready to ship — **first pickleball sale** |
+| Soft Serve + Eyes Up Here | Still **0 sales** as of Jul 21 night |
+| **Wave 2 briefs** | `designs/listings/PICKLEBALL_WAVE2.md` — Kitchen → Dinking problem → Six pack |
+| Soft Serve / Eyes / IT WAS IN | Still live Etsy + eBay (URLs below) |
 
 ## July 16 flash update
 
@@ -22,9 +31,9 @@
 | **Etsy Yellow C5** | **Taken down** — design has **CORVETTE** wordmark (IP risk). Do not relist same art. |
 | **Pickleball Soft Serve tee** | **LIVE** — Etsy https://www.etsy.com/listing/4538686602 · eBay https://www.ebay.com/itm/398179685959 · $19.99–$22.99 |
 | **Pickleball Eyes Up Here** | **LIVE** Etsy https://www.etsy.com/listing/4538870176 · eBay https://www.ebay.com/itm/398181098143 |
-| **Pickleball IT WAS IN** | **LIVE** Etsy https://www.etsy.com/listing/4538866895 · eBay https://www.ebay.com/itm/398181038019 |
+| **Pickleball IT WAS IN** | **LIVE** Etsy https://www.etsy.com/listing/4538866895 · eBay https://www.ebay.com/itm/398181038019 · **sold Jul 17** |
 
-**Margin lesson:** eBay **Ad Fee General $3.75** + txn fees ate the Yellow C5 tee. Keep Soft Serve / pickleball promoted **light** first 48–72h.
+**Margin lesson:** eBay **Ad Fee General $3.75** + txn fees ate the Yellow C5 tee. Keep Soft Serve / pickleball promoted **light**.
 
 ## Still true from Jul 3
 
@@ -41,25 +50,25 @@
 
 ## Next actions (priority)
 
-1. Pickleball trio live — ads off or low % for 48–72h; watch views/favorites
-2. Pickleball trio URLs fully logged (Soft Serve, Eyes Up Here, IT WAS IN)
-3. Log Yellow C5 hoodie Printify cost when order appears (Allyn, Ash 2XL, ship by Jul 29)
-4. Safer Yellow C5 replacement (no CORVETTE wordmark) when ready
-5. No more new SKUs until Soft Serve / Eyes / IT WAS IN show a view or sale signal
-6. C6 Blueprint when owner has ~1 hour for Canva work
+1. **Fulfill** eBay IT WAS IN $18.99 (mint) — confirm Printify synced
+2. **Build Wave 2 #1 in Canva:** Kitchen zone (`PICKLEBALL_WAVE2.md` Design A) — type-first like the winner
+3. Then Dinking problem → Six pack; eBay-first @ $18.99–$21.99; light ads only
+4. Soft Serve / Eyes: leave live, no heavy ads until another signal
+5. Log Yellow C5 hoodie Printify cost when order appears (Allyn, Ash 2XL, ship by Jul 29)
+6. Safer Yellow C5 replacement (no CORVETTE wordmark) when ready
+7. Skip Tiger Woods / doodle-club / goose until text gags convert
 
 ## Phone at work — open with this
 
 ```
 Read @COZY_ORBIT_HANDOFF.md @SHOP_STATE.md @sales_log.csv
-and the PICKLEBALL_*.md listing files.
+@PICKLEBALL_WAVE2.md and the other PICKLEBALL_*.md listing files.
 
-I'm at work with downtime. Help me brainstorm / brief ORIGINAL pickleball
-or meme tee ideas (no cloning TikTok art). Write locked prompts + listing
+I'm at work with downtime. Help me build ORIGINAL pickleball
+meme tees from Wave 2 (no cloning TikTok art). Write locked prompts + listing
 copy. Don't run OpenAI spend unless I confirm. Don't touch factory stickers.
 ```
 
-**Pickleball live trio:** Soft Serve · Eyes Up Here · IT WAS IN (Etsy + eBay)
-**Don't:** pile more SKUs without view/sale signal · clone viral art · heavy ads yet
-**Good phone work:** joke briefs, titles/tags, safer Yellow C5 replacement copy, price/ad notes
-
+**Pickleball live trio:** Soft Serve · Eyes Up Here · **IT WAS IN (sold Jul 17 $18.99)**  
+**Don't:** clone viral TikTok art · heavy ads · JUST DUI IT parody  
+**Good phone work:** Canva Wave 2 A/B/C, titles/tags, fulfill IT WAS IN, price/ad notes

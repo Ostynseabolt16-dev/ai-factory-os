@@ -37,10 +37,20 @@ Funny pickleball tee for every disputed line call. Bold text, clean ball graphic
 ## Pricing
 Match Soft Serve / Eyes Up Here: **$19.99–$21.99** S–XL on eBay
 
+## First sale
+| Field | Value |
+|-------|-------|
+| **Date** | Jul 17, 2026 |
+| **Channel** | eBay (`398181038019`) |
+| **Price** | **$18.99** |
+| **Color** | Mint / seafoam green (notification flat-lay) |
+| **Status** | Paid — ready to ship |
+| **Note** | First pickleball SKU sale; Soft Serve + Eyes Up Here still quiet as of Jul 21 |
+
 ## Upload checklist
 - [x] Printify upload
 - [x] Dark colors only
 - [x] eBay + Etsy live Jul 16
-- [ ] Paste live URLs into this file
-- [ ] Ads off 48h
-- [ ] Log first sale in `sales_log.csv`
+- [x] Live URLs in this file
+- [ ] Ads stay light (Yellow C5 Ad Fee lesson)
+- [x] Log first sale in `sales_log.csv`
