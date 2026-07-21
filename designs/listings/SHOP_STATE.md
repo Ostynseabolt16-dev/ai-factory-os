@@ -337,7 +337,7 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 - **Active / promoted:** listings live; **Ad Fee General** is material — Yellow C5 tee took **$3.75** ad on a $26.09 item.
 - **Sales:** (1) Jun 18 C5 old art Michael ~$9.46 before promo fee · (2) Jul 15 Yellow C5 tee ~breakeven without coupon / ~$10 with $10 Printify coupon · (3) Jul 15 Yellow C5 2-sided hoodie $51.99 pending Printify · (4) **Jul 17 Pickleball IT WAS IN $18.99** (first niche signal).
 - **2026-06-19:** Yellow C5 hoodie (front+back) and Yellow C6 hoodie (front-only) launched to eBay.
-- **Channel rule (Jul 21):** eBay is converting on Yellow C5 + now pickleball line-call art — keep fulfilling; price/ad % so tees clear **$5+ without coupons**; Wave 2 SKUs eBay-first at **$18.99–$21.99**.
+- **Channel rule (Jul 21):** eBay is converting on Yellow C5 + now pickleball line-call art — keep fulfilling; price/ad % so tees clear **$5+ without coupons**; Wave 2 SKUs eBay-first at **$20.99–$22.99** (IT WAS IN @ $18.99 only cleared ~$4.82).
 - **IP note:** Yellow C5 art includes **CORVETTE** lettering — likely why Etsy took it down; eBay can get hit too. Plan safer replacement (no brand wordmark) before heavy ad spend.
 
 ## Weekend promo test (2026-06-19 late)
