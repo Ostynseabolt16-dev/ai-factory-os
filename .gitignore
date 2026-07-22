@@ -14,6 +14,10 @@ build/
 # Virtual environment
 venv/
 
+# Node
+node_modules/
+halo/dist/
+
 # OS / editor
 .DS_Store
 .idea/
