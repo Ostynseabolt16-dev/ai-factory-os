@@ -1,13 +1,23 @@
 # CozyOrbitPrints — Shop State (source of truth)
 
 **Etsy shop:** https://www.etsy.com/shop/CozyOrbitPrints  
-**Last updated:** 2026-07-21 (first pickleball sale — eBay IT WAS IN $18.99 on Jul 17; Soft Serve + Eyes still quiet; Dinking Problem art ready)
+**Last updated:** 2026-07-25 (eBay C7 Dark Heather XL — earnings $14.09 vs Printify $14.63 ≈ −$0.54 after Ad Fee)
 
 Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any new agent chat to avoid hallucinating order/design state.
 
 > **NOT kawaii stickers.** Live business = CozyOrbitPrints Corvette apparel (Etsy + eBay + Printify). GitHub `ai-factory-os` is stale May factory scaffolding — ignore it unless explicitly working on factory code.
 
 ---
+
+## July 25 update (eBay C7 sale)
+
+| Item | Status |
+|------|--------|
+| **eBay Red C7 Graphic Tee** | **SOLD Jul 25 — $16.47** + $3.99 ship; buyer total **$22.45**; Dark Heather / XL; Alexander Lewis (Memphis) |
+| **Printify** | **#27858258.6** On hold (awaiting delivery) — prod **$9.88** + ship **$4.75** = **$14.63** |
+| **eBay P&L** | Earnings **$14.09** after tax out + txn **$3.45** + **Ad Fee General $2.92** → cash **≈ −$0.54** |
+| **Action** | Raise C7 eBay item price and/or cut promoted % — $2.92 ad on a $16.47 tee kills margin (same lesson as Yellow C5) |
+| **Fulfill** | Get shipping label when funds clear / Printify leaves On hold |
 
 ## July 21 update (post IT WAS IN sale)
 
@@ -176,7 +186,7 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 
 ---
 
-## Sales summary (user-reported; Jul 16 = 17+ Etsy + 3 eBay units logged)
+## Sales summary (user-reported; Jul 25 = 17+ Etsy + 5 eBay units logged)
 
 | Date | Buyer | Listing | Qty | Color | Size | Notes |
 |------|-------|---------|-----|-------|------|-------|
@@ -202,6 +212,7 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 | Jul 15 | Allyn Davis | **Yellow C5** hoodie 2-sided (eBay) | 1 | Ash | 2XL | **$50.58 earnings**; item `398084925179`; ship by Jul 29; Printify pending |
 | Jul 16 | — | **Pickleball Soft Serve** (listed) | — | — | — | Etsy + eBay live; still 0 sales as of Jul 21 |
 | Jul 17 | — | **Pickleball IT WAS IN** (eBay) | 1 | Mint | — | **First pickleball sale** $18.99 → ~$4.82 cash; Soft Serve + Eyes still 0 |
+| Jul 25 | Alexander Lewis | **Red C7 Graphic Tee** (eBay) | 1 | Dark Heather | XL | **$16.47** + $3.99 ship; earnings **$14.09**; Printify **#27858258.6** $14.63 On hold → **≈ −$0.54**; Ad Fee **$2.92** |
 
 **Refunded:** Jan — C5 Illustration Vintage — accidental order.
 
@@ -342,12 +353,12 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 - **Readout window:** evaluate after 48 hours using orders, spend per order, and cart/favorite movement before re-expanding any paused listings.
 - **Guardrail:** if a sweatshirt still shows 0 clicks after meaningful impressions, pause and reallocate back to proven tee winners.
 
-## eBay snapshot (updated 2026-07-21)
+## eBay snapshot (updated 2026-07-25)
 
-- **Active / promoted:** listings live; **Ad Fee General** is material — Yellow C5 tee took **$3.75** ad on a $26.09 item.
-- **Sales:** (1) Jun 18 C5 old art Michael ~$9.46 before promo fee · (2) Jul 15 Yellow C5 tee ~breakeven without coupon / ~$10 with $10 Printify coupon · (3) Jul 15 Yellow C5 2-sided hoodie $51.99 pending Printify · (4) **Jul 17 Pickleball IT WAS IN $18.99 → ~$4.82 cash**.
+- **Active / promoted:** listings live; **Ad Fee General** is material — Yellow C5 tee took **$3.75** ad on a $26.09 item; **C7 Jul 25 took $2.92** on a **$16.47** item → underwater.
+- **Sales:** (1) Jun 18 C5 old art Michael ~$9.46 before promo fee · (2) Jul 15 Yellow C5 tee ~breakeven without coupon / ~$10 with $10 Printify coupon · (3) Jul 15 Yellow C5 2-sided hoodie $51.99 pending Printify · (4) Jul 17 Pickleball IT WAS IN $18.99 → ~$4.82 cash · (5) **Jul 25 Red C7 Dark Heather XL $16.47 → ≈ −$0.54** (Printify #27858258.6 On hold).
 - **2026-06-19:** Yellow C5 hoodie (front+back) and Yellow C6 hoodie (front-only) launched to eBay.
-- **Channel rule (Jul 16):** eBay is **live demand** for Yellow C5 while Etsy listing is down — keep fulfilling; fix tee price/ad % so next sale clears **$5+ without coupons**.
+- **Channel rule (Jul 25):** eBay is converting Corvette + pickleball, but promoted tees under ~$20 often lose money. Raise C7 price and/or cut Ad Fee % so next tee clears **$5+ without coupons**.
 - **IP note:** Yellow C5 art includes **CORVETTE** lettering — likely why Etsy took it down; eBay can get hit too. Plan safer replacement (no brand wordmark) before heavy ad spend.
 
 ## Weekend promo test (2026-06-19 late)
