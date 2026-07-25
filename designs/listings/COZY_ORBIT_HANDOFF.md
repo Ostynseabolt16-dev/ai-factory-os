@@ -13,22 +13,23 @@
 - **Channels:** Etsy (primary historically) + eBay (now converting — re-prioritize)
 - **Proven styles:** (1) Blueprint / technical front+back · (2) Gothic text + side car · (3) minimal pickleball text gag (**IT WAS IN** sold)
 
-## July 21 flash update (tonight)
+## July 25 flash update
 
 | Sale / item | Status |
 |-------------|--------|
-| **eBay Pickleball IT WAS IN** | **SOLD Jul 17 — $18.99** + $3.99 ship → eBay earn **$19.45** − Printify **$14.63** = **~$4.82 cash** |
-| Soft Serve + Eyes Up Here | Still **0 sales** (only clean type+ball gag sold) |
-| **Dinking Problem tee** | **READY** — `designs/pickleball/pickleball_dinking_problem_UPLOAD_TO_PRINTIFY.png` + `PICKLEBALL_DINKING_PROBLEM.md` |
-| Soft Serve / Eyes / IT WAS IN | Still live Etsy + eBay |
+| **eBay Red C7 Graphic Tee** | **SOLD Jul 25 — $16.47** + $3.99 ship; Dark Heather / XL; Alexander Lewis (Memphis) |
+| **P&L** | eBay earn **$14.09** (txn $3.45 + Ad Fee **$2.92**) − Printify **$14.63** (#27858258.6 On hold) = **≈ −$0.54** |
+| **eBay Pickleball IT WAS IN** | Sold Jul 17 — $18.99 → ~$4.82 cash |
+| Soft Serve + Eyes Up Here | Still **0 sales** |
+| **Dinking Problem tee** | **READY** — upload next @ **$20.99** |
 
 ## Next actions (priority)
 
-1. **Upload Dinking Problem** to Printify → eBay @ **$20.99** S–XL (dark shirts only) → Etsy
-2. Then Kitchen → Six pack (`PICKLEBALL_WAVE2.md`); eBay-first; light ads only
-3. Soft Serve / Eyes: leave live, no heavy ads
-4. Fulfill IT WAS IN — Printify #27858258.4 ready-to-ship
-5. Skip for now: memory comic clone, Abraham Lincoln portrait, doodles, goose
+1. **Raise eBay C7 price and/or cut Ad Fee %** — $16.47 + $2.92 ad is underwater
+2. Fulfill C7 — Printify **#27858258.6** On hold / get shipping label when clear
+3. **Upload Dinking Problem** to Printify → eBay @ **$20.99** S–XL (dark shirts only) → Etsy
+4. Then Kitchen → Six pack (`PICKLEBALL_WAVE2.md`); eBay-first; light ads only
+5. Soft Serve / Eyes: leave live, no heavy ads
 6. Safer Yellow C5 replacement (no CORVETTE wordmark) when ready
 
 ## July 16 flash update
