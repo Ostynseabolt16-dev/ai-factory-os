@@ -13,23 +13,23 @@
 - **Channels:** Etsy (primary historically) + eBay (now converting — re-prioritize)
 - **Proven styles:** (1) Blueprint / technical front+back · (2) Gothic text + side car · (3) minimal pickleball text gag (**IT WAS IN** sold)
 
-## July 21 flash update (tonight)
+## July 27 flash update
 
 | Sale / item | Status |
 |-------------|--------|
-| **eBay Pickleball IT WAS IN** | **SOLD Jul 17 — $18.99** + $3.99 ship → eBay earn **$19.45** − Printify **$14.63** = **~$4.82 cash** |
-| Soft Serve + Eyes Up Here | Still **0 sales** (only clean type+ball gag sold) |
-| **Dinking Problem tee** | **READY** — `designs/pickleball/pickleball_dinking_problem_UPLOAD_TO_PRINTIFY.png` + `PICKLEBALL_DINKING_PROBLEM.md` |
-| Soft Serve / Eyes / IT WAS IN | Still live Etsy + eBay |
+| **Etsy Yellow C5 V8 Hoodie** | **SOLD Jul 27** — Sport Grey / L; buyer **$66.09**; Etsy earn **$55.26**; Printify **$36.39** → **~$18.87 cash** |
+| Printify | **#27546430.21** On hold — **Submit** to production; ship by Aug 1 |
+| **eBay Pickleball IT WAS IN** | Sold Jul 17 — ~$4.82 cash |
+| Soft Serve + Eyes Up Here | Still **0 sales** |
+| **Dinking Problem tee** | **READY** — upload still queued |
 
 ## Next actions (priority)
 
-1. **Upload Dinking Problem** to Printify → eBay @ **$20.99** S–XL (dark shirts only) → Etsy
-2. Then Kitchen → Six pack (`PICKLEBALL_WAVE2.md`); eBay-first; light ads only
+1. **Submit Printify #27546430.21** (Yellow C5 hoodie — Durham NC)
+2. **Upload Dinking Problem** to Printify → eBay @ **$20.99** S–XL (dark shirts only) → Etsy
 3. Soft Serve / Eyes: leave live, no heavy ads
-4. Fulfill IT WAS IN — Printify #27858258.4 ready-to-ship
+4. Safer Yellow C5 replacement (no CORVETTE wordmark) when ready — hoodie still selling on Etsy despite tee takedown
 5. Skip for now: memory comic clone, Abraham Lincoln portrait, doodles, goose
-6. Safer Yellow C5 replacement (no CORVETTE wordmark) when ready
 
 ## July 16 flash update
 

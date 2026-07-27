@@ -1,13 +1,24 @@
 # CozyOrbitPrints — Shop State (source of truth)
 
 **Etsy shop:** https://www.etsy.com/shop/CozyOrbitPrints  
-**Last updated:** 2026-07-21 (first pickleball sale — eBay IT WAS IN $18.99 on Jul 17; Soft Serve + Eyes still quiet; Dinking Problem art ready)
+**Last updated:** 2026-07-27 (Etsy Yellow C5 hoodie sold — Sport Grey / L; first Etsy sale in weeks; ~$18.87 cash after Printify)
 
 Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any new agent chat to avoid hallucinating order/design state.
 
 > **NOT kawaii stickers.** Live business = CozyOrbitPrints Corvette apparel (Etsy + eBay + Printify). GitHub `ai-factory-os` is stale May factory scaffolding — ignore it unless explicitly working on factory code.
 
 ---
+
+## July 27 update (Etsy Yellow C5 hoodie sale)
+
+| Item | Status |
+|------|--------|
+| **Etsy Yellow C5 V8 Hoodie** | **SOLD Jul 27** — Sport Grey / L; buyer Derick A. Proctor (Durham NC); Etsy `#4128217793`; item **$52.99** + ship **$8.49** + tax **$4.61** = buyer **$66.09** |
+| **Etsy earnings** | **$55.26** after txn **$3.99** + processing **$2.23** + tax remittance **$4.61** |
+| **Printify** | **#27546430.21** — prod **$27.90** + ship **$8.49** = **$36.39**; status **On hold** → **Submit** to production; ship by Aug 1 |
+| **Cash profit** | **~$18.87** (`$55.26 − $36.39`) — solid hoodie margin vs thin tee/pickleball |
+| **IP note** | Etsy Yellow C5 **tee** was taken down earlier (CORVETTE wordmark). This **hoodie** listing still converted — fulfill order; still plan safer no-wordmark replacement before heavy ads |
+| **Do next** | Submit Printify order; keep fulfilling eBay Yellow C5; Dinking Problem upload still queued |
 
 ## July 21 update (post IT WAS IN sale)
 
@@ -202,6 +213,7 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 | Jul 15 | Allyn Davis | **Yellow C5** hoodie 2-sided (eBay) | 1 | Ash | 2XL | **$50.58 earnings**; item `398084925179`; ship by Jul 29; Printify pending |
 | Jul 16 | — | **Pickleball Soft Serve** (listed) | — | — | — | Etsy + eBay live; still 0 sales as of Jul 21 |
 | Jul 17 | — | **Pickleball IT WAS IN** (eBay) | 1 | Mint | — | **First pickleball sale** $18.99 → ~$4.82 cash; Soft Serve + Eyes still 0 |
+| Jul 27 | Derick A. Proctor | **Yellow C5 V8 Hoodie** front/back (Etsy) | 1 | Sport Grey | L | Buyer **$66.09**; Etsy earn **$55.26**; Printify **$36.39** → **~$18.87 cash**; Printify **#27546430.21** On hold |
 
 **Refunded:** Jan — C5 Illustration Vintage — accidental order.
 
