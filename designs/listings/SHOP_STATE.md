@@ -100,14 +100,23 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 | **Print file** | `designs/pickleball/pickleball_it_was_in_UPLOAD_TO_PRINTIFY.png` | Minimal line-call; dark shirts |
 | **P&L** | ~$4.82 cash | fees $3.53 · Printify $14.63 · raise next SKUs to $20.99+ |
 
-### Pickleball Dinking Problem (Jul 21 — READY, not live)
+### Pickleball Dinking Problem (Jul 28 — LIVE)
+
+| Channel | URL | Notes |
+|---------|-----|-------|
+| **Etsy / eBay** | *(paste)* | Owner uploaded Jul 28 |
+| **Print file** | `designs/pickleball/pickleball_dinking_problem_UPLOAD_TO_PRINTIFY.png` | Type-first white/lime/white; ball below; dark shirts |
+| **Listing** | `designs/listings/PICKLEBALL_DINKING_PROBLEM.md` | eBay S–XL **$20.99** |
+| **Compose** | `scripts/compose_pickleball_dinking_problem.py` | No OpenAI |
+
+### Pickleball Six Pack (Jul 28 — READY, upload next)
 
 | Channel | URL | Notes |
 |---------|-----|-------|
 | **Etsy / eBay** | — | Upload next; paste URLs when live |
-| **Print file** | `designs/pickleball/pickleball_dinking_problem_UPLOAD_TO_PRINTIFY.png` | Type-first white/lime/white; ball below; dark shirts |
-| **Listing** | `designs/listings/PICKLEBALL_DINKING_PROBLEM.md` | eBay S–XL **$20.99** |
-| **Compose** | `scripts/compose_pickleball_dinking_problem.py` | No OpenAI |
+| **Print file** | `designs/pickleball/pickleball_six_pack_UPLOAD_TO_PRINTIFY.png` | MY SIX PACK + 2×3 ball grid (Eyes Up Here–style body gag) |
+| **Listing** | `designs/listings/PICKLEBALL_SIX_PACK.md` | eBay S–XL **$20.99** |
+| **Compose** | `scripts/compose_pickleball_six_pack.py` | No OpenAI |
 
 ---
 
@@ -405,7 +414,7 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 
 ## Shirt colors
 
-- **Pickleball Dinking Problem / Eyes / IT WAS IN:** Black, Navy, Charcoal (dark only — white/lime type)
+- **Pickleball Six Pack / Dinking Problem / Eyes / IT WAS IN:** Black, Navy, Charcoal (dark only — white/lime type)
 - **C7 Laguna Blue:** White, Natural, Sport Grey only (not dark colors)
 - **C5 Torch Red:** White, Natural, Sport Grey only (not dark colors)
 - **C5 Black:** White, Natural, Sport Grey only (not dark colors)
