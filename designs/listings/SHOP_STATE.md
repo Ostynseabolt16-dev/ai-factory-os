@@ -1,13 +1,57 @@
 # CozyOrbitPrints — Shop State (source of truth)
 
 **Etsy shop:** https://www.etsy.com/shop/CozyOrbitPrints  
-**Last updated:** 2026-07-28 (owner screenshot P&L reconcile + couple race-car faces READY to list)
+**Last updated:** 2026-07-28 night (phone wrap synced — ads kill cartoon pickles; McQueen skipped; Six Pack rejected; new type-first pickleball live)
 
-Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any new agent chat to avoid hallucinating order/design state.
+Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` + `PHONE_SESSION_JUL28_WRAP.md` at the start of any new agent chat.
 
-> **NOT kawaii stickers.** Live business = CozyOrbitPrints Corvette apparel (Etsy + eBay + Printify). GitHub `ai-factory-os` is stale May factory scaffolding — ignore it unless explicitly working on factory code.
+> **NOT kawaii stickers.** Live business = CozyOrbitPrints Corvette apparel + type-first pickleball. Ignore May factory scaffolding.
 
 ---
+
+## July 28 night wrap (phone session — source of truth)
+
+Full paste: `designs/listings/PHONE_SESSION_JUL28_WRAP.md`
+
+### Sales
+| Item | Status |
+|------|--------|
+| **Etsy Yellow C5 V8 Hoodie** | **SOLD Jul 27 — $52.99 ORGANIC (no ads)** · Sport Grey / L · Derick A. Proctor · ~$18.87 cash · Printify `#27546430.21` |
+
+### Ads
+| Item | Status |
+|------|--------|
+| Last 30d | ~**$67 spend / 0 orders** — spend was on pickle **cartoon** shirts |
+| Soft Serve | **148 ad views · 0% CTR** → **ads OFF**; don’t fund thumbnail tests |
+| **Ads OFF now** | Soft Serve · Dill With It ×2 · Dink Life · I Came I Served · Game On · Cars/Smiling Cartoon Face · Supra · R34 · Challenger |
+| Corvette ads | Copyright hits on ~**12 listings** — only push **IP-safer** art (no CORVETTE wordmark/flags) **or** leave Corvette ads off (organic hoodie worked) |
+
+### Cars couple / McQueen
+| Item | Status |
+|------|--------|
+| Listing | **SKIPPED** — Disney IP risk (demand real, don’t list) |
+| Local art | `designs/couple_faces/` exists; owner tried Printify AI; abandoned hers |
+| Action | **Deactivate Smiling Cartoon Face** if still live |
+
+### Pickleball (Jul 28)
+| SKU | Status |
+|-----|--------|
+| **Dinking Problem** | **LIVE** Etsy + eBay https://www.ebay.com/itm/398222322676 |
+| **Weekend Forecast 100% DINKS** + **KITCHEN: OPEN** | **LIVE** Etsy — not “0% chores” |
+| **This Meeting Could Have Been A Dink** | **LIVE** Etsy — Albert Sans + ball/calendar; light-shirt hero |
+| **Pickleball Pro crest** | **LIVE** Etsy — **one** pride SKU only; no more crests |
+| **Six Pack abs** | Art in repo · **REJECTED by owner — do not list** |
+| Soft Serve / Eyes / IT WAS IN | Still live; Soft Serve ads **OFF** |
+
+**Lesson:** Type-first jokes convert (IT WAS IN). Cartoon pickles flop.
+
+### Next build queue
+1. Mon–Sun **DINKS** weekly forecast (simple thumb)
+2. **IT WAS OUT** companion
+3. Kitchen Menace = type-only if retry
+4. Printify AI = icons only; owner adds text
+5. Price **$21.99+**; ads off 48h on new SKUs
+6. No OpenAI `generate_*.py` unless confirmed
 
 ## July 28 update (screenshot P&L + McQueen-style couple tees)
 
@@ -42,7 +86,7 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 | **Listing** | `designs/listings/COUPLE_RACE_CAR_FACES.md` |
 | **Printify files** | `designs/couple_faces/couple_race_red_face_UPLOAD_TO_PRINTIFY.png` (Red blank) · `couple_sky_blue_face_UPLOAD_TO_PRINTIFY.png` (Light Blue blank) |
 | **Price** | S–XL **$21.99** · 2XL **$23.99** · 3XL **$24.99** · ads off/light |
-| **Do now** | Red SKU only if listing — **skip hers/light-blue**. Prefer pickleball Six Pack next. |
+| **Do now** | **SKIP listing** — Disney IP risk. Deactivate Smiling Cartoon Face if live. Art stays in `couple_faces/` parked. |
 | **Folder cleanup Jul 28** | Deleted May sticker / cute / `product_*` junk; keep `corvette/` · `pickleball/` · `couple_faces/` · `listings/` · `fonts/` |
 
 ## July 21 update (post IT WAS IN sale)
@@ -51,13 +95,13 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 |------|--------|
 | **eBay Pickleball IT WAS IN** | **SOLD Jul 17 — $18.99** + $3.99 ship; mint; Printify **#27858258.4** ready-to-ship **$14.63**; eBay fees **$3.53** → earnings **$19.45** → **~$4.82 cash** |
 | **Pickleball Soft Serve / Eyes Up Here** | Still **0 sales** (only type+ball gag converted) |
-| **Dinking Problem** | **LIVE** Jul 28 — Etsy + eBay (paste URLs into `PICKLEBALL_DINKING_PROBLEM.md`) |
-| **Six Pack** | **READY** — `designs/pickleball/pickleball_six_pack_UPLOAD_TO_PRINTIFY.png` + `PICKLEBALL_SIX_PACK.md` — upload next (Eyes Up Here–style body gag) |
-| **Wave 2 briefs** | `PICKLEBALL_WAVE2.md` — Kitchen after Six Pack live |
-| **Couple race-car face** | **Red only** — skip hers/light-blue SKU |
-| **Margin rule** | Next pickleball tees **$20.99+** S–XL — $18.99 is thin |
-| **Ads** | Keep pickleball promoted **light**; Yellow C5 Ad Fee lesson still applies |
-| **Do not build tonight** | Comic-panel memory shirt; Lincoln portrait; doodle club; goose grid; hers race-car face |
+| **Dinking Problem** | **LIVE** Jul 28 — Etsy + eBay https://www.ebay.com/itm/398222322676 |
+| **Six Pack** | Art exists · **REJECTED — do not list** |
+| **Wave 2 / next** | Mon–Sun DINKS forecast · IT WAS OUT · Kitchen Menace type-only |
+| **Couple race-car face** | **SKIPPED** (Disney IP) — deactivate Smiling Cartoon Face if live |
+| **Margin rule** | New pickleball **$21.99+** · ads off 48h |
+| **Ads** | Soft Serve + cartoon pickles **OFF**; Corvette ads only if IP-safer or off |
+| **Do not build** | Six Pack · more crests · cartoon pickles · McQueen listing · OpenAI gen without confirm |
 
 ## July 16 Mac catch-up
 
@@ -104,19 +148,18 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 
 | Channel | URL | Notes |
 |---------|-----|-------|
-| **Etsy / eBay** | *(paste)* | Owner uploaded Jul 28 |
+| **Etsy / eBay** | eBay https://www.ebay.com/itm/398222322676 · Etsy *(paste if known)* | Owner uploaded Jul 28 |
 | **Print file** | `designs/pickleball/pickleball_dinking_problem_UPLOAD_TO_PRINTIFY.png` | Type-first white/lime/white; ball below; dark shirts |
 | **Listing** | `designs/listings/PICKLEBALL_DINKING_PROBLEM.md` | eBay S–XL **$20.99** |
 | **Compose** | `scripts/compose_pickleball_dinking_problem.py` | No OpenAI |
 
-### Pickleball Six Pack (Jul 28 — READY, upload next)
+### Pickleball Six Pack (Jul 28 — REJECTED)
 
-| Channel | URL | Notes |
-|---------|-----|-------|
-| **Etsy / eBay** | — | Upload next; paste URLs when live |
-| **Print file** | `designs/pickleball/pickleball_six_pack_UPLOAD_TO_PRINTIFY.png` | MY SIX PACK + 2×3 ball grid (Eyes Up Here–style body gag) |
-| **Listing** | `designs/listings/PICKLEBALL_SIX_PACK.md` | eBay S–XL **$20.99** |
-| **Compose** | `scripts/compose_pickleball_six_pack.py` | No OpenAI |
+| Item | Notes |
+|------|--------|
+| Art | `designs/pickleball/pickleball_six_pack_UPLOAD_TO_PRINTIFY.png` exists |
+| Status | **Do not list** — owner disliked; Printify AI abs grid also failed |
+| Listing md | `PICKLEBALL_SIX_PACK.md` kept for reference only |
 
 ---
 

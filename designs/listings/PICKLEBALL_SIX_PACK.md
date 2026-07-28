@@ -1,7 +1,7 @@
 # Pickleball “My Six Pack” Tee — listing package
 
-**Status:** **READY FOR UPLOAD** (Jul 28, 2026) — art + Printify export done  
-**Why this next:** Same body-joke lane as **Eyes Up Here** (sold concept / live); six balls = abs gag. Dinking Problem is live — this is Wave 2 Design C.
+**Status:** **REJECTED Jul 28** — do not list (owner disliked; Printify AI abs grid failed)  
+**Why parked:** Body-gag lane like Eyes Up Here, but owner skipped upload. Art kept for possible later retry only.
 
 **Files:**
 - Ball: `designs/pickleball/pickleball_ball_transparent_holes.png`

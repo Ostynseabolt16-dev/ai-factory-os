@@ -1,86 +1,62 @@
-# CozyOrbitPrints — Master Handoff (July 21, 2026)
+# CozyOrbitPrints — Master Handoff (July 28, 2026)
 
 > Shop: https://www.etsy.com/shop/CozyOrbitPrints  
-> **Read this + `SHOP_STATE.md` + `sales_log.csv` at start of every session.**  
-> **MacBook Cursor is NOT auto-synced with phone.** GitHub `ai-factory-os` is **stale** (May factory/stickers) — live shop state lives in these local files.
+> **Read this + `SHOP_STATE.md` + `sales_log.csv` + `PHONE_SESSION_JUL28_WRAP.md` at start of every session.**  
+> **MacBook Cursor is NOT auto-synced with phone.** Live shop state lives in these local files — not May factory/stickers.
 
 ---
 
 ## What we sell (NOT stickers)
 
 - **Brand:** CozyOrbitPrints
-- **Product:** Corvette C3–C8 graphic tees + hoodies (POD via Printify) + **pickleball test SKUs** (Jul 16+)
-- **Channels:** Etsy (primary historically) + eBay (now converting — re-prioritize)
-- **Proven styles:** (1) Blueprint / technical front+back · (2) Gothic text + side car · (3) minimal pickleball text gag (**IT WAS IN** sold)
+- **Product:** Corvette C3–C8 graphic tees + hoodies (POD via Printify) + **pickleball** (type-first jokes win)
+- **Channels:** Etsy + eBay
+- **Proven:** Blueprint/gothic Corvette · **IT WAS IN** pickleball (sold) · Yellow C5 hoodie organic
 
-## July 28 flash update (screenshot P&L + couple faces)
+## July 28 night wrap (phone → Mac)
 
-| Sale / item | Status |
-|-------------|--------|
-| **eBay** | Orders **7** · 90d sales **$225.77** · funds **$133.04** · Printify eBay costs **$130.90** |
-| **eBay C5 Tan 2XL** | Jonathan Eme — **$27.02** · net **$22.67** · Ad Fee **$4.07** · ship by Aug 7 |
-| **Etsy** | Orders **18** · revenue **$542.08** · Etsy net **$376.17** · Printify Etsy **$457.05** → cash ≈ **−$81** before eBay |
-| **Etsy Yellow C5 hoodie** | Jul 27 — **~$18.87** cash; Submit Printify if still On hold |
-| **Dinking Problem** | **LIVE** Etsy + eBay (owner uploaded Jul 28) — paste URLs into `PICKLEBALL_DINKING_PROBLEM.md` |
-| **Six Pack tee** | **READY** — upload next · `pickleball_six_pack_UPLOAD_TO_PRINTIFY.png` + `PICKLEBALL_SIX_PACK.md` |
-| **Couple race-car face** | **Red only** (skip hers/light-blue SKU) — list when ready |
-| **Mac designs folder** | Cloud/git cleaned; **Mac is NOT auto-synced** — run `bash scripts/mac_clean_designs_folder.sh` after `git pull` |
+| Item | Status |
+|------|--------|
+| **Etsy Yellow C5 hoodie** | **SOLD $52.99 ORGANIC** (no ads) — ~$18.87 cash |
+| **Ads** | ~$67 / 0 orders last 30d on cartoon pickles — **kill Soft Serve ads** (148 views, 0% CTR) |
+| **Ads OFF** | Soft Serve · Dill With It ×2 · Dink Life · I Came I Served · Game On · Smiling Cartoon Face · Supra/R34/Challenger |
+| **Corvette ads** | Copyright fear after ~12 hits — only IP-safer art **or** keep Corvette ads off |
+| **McQueen / Cars couple** | Demand real · **Disney IP risk** · **skipped listing**; deactivate Smiling Cartoon Face if live |
+| **Six Pack abs tee** | Art exists · **owner rejected — do not list** |
+| **Dinking Problem** | LIVE Etsy + eBay https://www.ebay.com/itm/398222322676 |
+| **Also LIVE Etsy** | Weekend Forecast **100% DINKS** + KITCHEN: OPEN · This Meeting Could Have Been A Dink · Pickleball Pro crest (one only) |
+
+**Lesson:** Type-first jokes convert. Cartoon pickles flop.
 
 ## Next actions (priority)
 
-1. **Upload Six Pack** to Printify → eBay @ **$20.99** S–XL (dark only) → Etsy
-2. Paste Dinking Problem live URLs into listing md + SHOP_STATE
-3. **Submit** any On-hold Printify (Etsy hoodie `#27546430.21`; eBay C5 Tan if needed)
-4. Raise eBay tee prices / cut Ad Fee % (promoted fees still eating margin)
-5. Optional later: Kitchen zone (`PICKLEBALL_WAVE2.md` Design A)
-6. Safer Yellow C5 replacement (no CORVETTE wordmark) when ready
+1. **Mon–Sun DINKS** weekly forecast tee (simple thumbnail)
+2. **IT WAS OUT** companion to IT WAS IN
+3. Kitchen Menace = **type-only** if retry (AI badge failed)
+4. Printify AI = **icons only**; owner adds real text
+5. New listings @ **$21.99+**; ads off 48h
+6. Deactivate Smiling Cartoon Face if still live
+7. No OpenAI `generate_*.py` unless owner confirms spend
 
-## July 21 flash update
+## July 21 flash (still true)
 
 | Sale / item | Status |
 |-------------|--------|
-| **eBay Pickleball IT WAS IN** | **SOLD Jul 17 — $18.99** + $3.99 ship → eBay earn **$19.45** − Printify **$14.63** = **~$4.82 cash** |
-| Soft Serve + Eyes Up Here | Still **0 sales** (only clean type+ball gag sold) |
-| **Dinking Problem tee** | **READY** — `designs/pickleball/pickleball_dinking_problem_UPLOAD_TO_PRINTIFY.png` + `PICKLEBALL_DINKING_PROBLEM.md` |
-| Soft Serve / Eyes / IT WAS IN | Still live Etsy + eBay |
-
-## July 16 flash update
-
-| Sale | Status |
-|------|--------|
-| **eBay Yellow C5 tee** $26.09 + $3.99 ship | Earnings **$21.68**; Printify **$11.71** after **$10 coupon** (list was $21.71) → **~$9.97 cash**; **−$0.03 without coupon** |
-| **eBay Yellow C5 2-sided hoodie** $51.99 | Paid; **Printify not synced yet** |
-| **Etsy Yellow C5** | **Taken down** — design has **CORVETTE** wordmark (IP risk). Do not relist same art. |
-| **Pickleball Soft Serve tee** | **LIVE** — Etsy https://www.etsy.com/listing/4538686602 · eBay https://www.ebay.com/itm/398179685959 · $19.99–$22.99 |
-| **Pickleball Eyes Up Here** | **LIVE** Etsy https://www.etsy.com/listing/4538870176 · eBay https://www.ebay.com/itm/398181098143 |
-| **Pickleball IT WAS IN** | **LIVE** Etsy https://www.etsy.com/listing/4538866895 · eBay https://www.ebay.com/itm/398181038019 · **sold Jul 17** |
-
-**Margin lesson:** eBay **Ad Fee General $3.75** + txn fees ate the Yellow C5 tee. Keep Soft Serve / pickleball promoted **light**.
+| **eBay IT WAS IN** | Sold Jul 17 — ~$4.82 cash → raise next SKUs to **$20.99+** |
+| Soft Serve / Eyes | Live but quiet; Soft Serve ads **OFF** |
+| Soft Serve / Eyes / IT WAS IN / Dinking | Live |
 
 ## Still true from Jul 3
 
 - Winners: C5 Blueprint, C4 Minimal, C7, Yellow C5 (demand), C8
-- Design rule: stop full AI shirt gen; build **C6 Blueprint** next (Canva + car graphic only)
-- Amazon: defer
-- Factory CSVs / sticker pipeline: ignore
-
-## Phone agents — if you only see GitHub
-
-1. You are **not** doing kawaii stickers.
-2. Ask owner to paste latest `SHOP_STATE` / sales, or work from this handoff text.
-3. Prefer `@COZY_ORBIT_HANDOFF.md` and `@SHOP_STATE.md` when files are available.
+- Etsy Yellow C5 **tee** taken down (CORVETTE wordmark) — do not relist same art
+- Amazon: defer · Factory stickers: ignore
 
 ## Phone at work — open with this
 
 ```
-Read @COZY_ORBIT_HANDOFF.md @SHOP_STATE.md @sales_log.csv
-@PICKLEBALL_WAVE2.md and the other PICKLEBALL_*.md listing files.
+Read @PHONE_SESSION_JUL28_WRAP.md @COZY_ORBIT_HANDOFF.md @SHOP_STATE.md @sales_log.csv
 
-I'm at work with downtime. Help me build ORIGINAL pickleball
-meme tees from Wave 2 (no cloning TikTok art). Write locked prompts + listing
-copy. Don't run OpenAI spend unless I confirm. Don't touch factory stickers.
+Type-first pickleball next (Mon–Sun DINKS / IT WAS OUT).
+No cartoon pickles. No McQueen listing. No OpenAI spend unless I confirm.
 ```
-
-**Pickleball:** Soft Serve · Eyes Up Here · **IT WAS IN (sold Jul 17 $18.99)** · **Dinking Problem (upload next @ $20.99)**  
-**Don't:** clone viral TikTok art · heavy ads · JUST DUI IT parody  
-**Good phone work:** Canva Wave 2 Kitchen/Six-pack, titles/tags, fulfill IT WAS IN, price/ad notes

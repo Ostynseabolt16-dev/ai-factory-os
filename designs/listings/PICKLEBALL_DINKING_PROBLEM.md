@@ -1,6 +1,6 @@
 # Pickleball “Dinking Problem” Tee — listing package
 
-**Status:** **LIVE** Jul 28, 2026 — Etsy + eBay (owner uploaded; paste URLs below)  
+**Status:** **LIVE** Jul 28, 2026 — Etsy + eBay  
 **Why this #4:** Hottest funny-tee joke category in search; type-first like **IT WAS IN** (sold). No beer-mug / crest / letter-as-ball clones.
 
 **Files:**
@@ -46,13 +46,13 @@ Black, Charcoal, Navy (and other darks). **Not** light shirts.
 ## Live URLs
 | Channel | URL |
 |---------|-----|
-| **Etsy** | *(paste)* |
-| **eBay** | *(paste)* |
+| **Etsy** | *(paste if known)* |
+| **eBay** | https://www.ebay.com/itm/398222322676 |
 
 ## Upload checklist
 - [x] Printify upload
 - [x] Dark colors only (Black, Navy, Charcoal)
 - [x] eBay + Etsy live Jul 28
-- [ ] Paste live URLs above
-- [ ] Ads off / light 48h
+- [ ] Paste Etsy URL above
+- [x] Ads off / light 48h
 - [ ] Log first sale in `sales_log.csv`
