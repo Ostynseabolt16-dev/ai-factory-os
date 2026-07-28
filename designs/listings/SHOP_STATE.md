@@ -37,10 +37,12 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 | Item | Status |
 |------|--------|
 | **Art** | **READY** — original eyes+smile only (no Disney/Pixar names/logos/95) |
+| **Find files** | `designs/couple_faces/` — map in `designs/README.md` |
 | **Listing** | `designs/listings/COUPLE_RACE_CAR_FACES.md` |
 | **Printify files** | `designs/couple_faces/couple_race_red_face_UPLOAD_TO_PRINTIFY.png` (Red blank) · `couple_sky_blue_face_UPLOAD_TO_PRINTIFY.png` (Light Blue blank) |
 | **Price** | S–XL **$21.99** · 2XL **$23.99** · 3XL **$24.99** · ads off/light |
 | **Do now** | Upload 2 SKUs to Printify → Etsy + eBay; paste titles/tags from listing md; **never** say Lightning McQueen / Cars / Pixar / Disney in listing |
+| **Folder cleanup Jul 28** | Deleted May sticker / cute / `product_*` junk; keep `corvette/` · `pickleball/` · `couple_faces/` · `listings/` · `fonts/` |
 
 ## July 21 update (post IT WAS IN sale)
 

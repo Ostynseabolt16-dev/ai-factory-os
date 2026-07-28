@@ -23,12 +23,18 @@ Say: `@COZY_ORBIT_HANDOFF.md @SHOP_STATE.md` at the start of a phone chat.
 
 | Path | Purpose |
 |------|---------|
+| `designs/README.md` | **Folder map** — where McQueen/couple, pickleball, Corvette live |
+| `designs/couple_faces/` | Matching race-car face Printify uploads (list tonight) |
+| `designs/pickleball/` | Pickleball Printify uploads |
+| `designs/corvette/` | Corvette masters (often Mac-local) |
 | `designs/listings/SHOP_STATE.md` | Source of truth for ads, sales, strategy |
 | `designs/listings/COZY_ORBIT_HANDOFF.md` | Short catch-up for new sessions |
+| `designs/listings/COUPLE_RACE_CAR_FACES.md` | Couple face listing copy |
 | `sales_log.csv` | Order log |
-| `designs/listings/*.md` | Paste-ready listing copy |
 | `scripts/shop_daily_brief.py` | Local priorities (needs Mac/venv) |
-| `ai_factory/` | Old factory code — deprioritize |
+| `ai_factory/` | Old factory code — ignore |
+
+**Deleted Jul 28:** May sticker / cute / `product_*` / social-anxiety art + factory mockups.
 
 ## GitHub vs Cursor chats
 

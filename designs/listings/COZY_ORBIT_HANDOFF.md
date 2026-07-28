@@ -21,7 +21,7 @@
 | **eBay C5 Tan 2XL** | Jonathan Eme — **$27.02** · net **$22.67** · Ad Fee **$4.07** · ship by Aug 7 |
 | **Etsy** | Orders **18** · revenue **$542.08** · Etsy net **$376.17** · Printify Etsy **$457.05** → cash ≈ **−$81** before eBay |
 | **Etsy Yellow C5 hoodie** | Jul 27 — **~$18.87** cash; Submit Printify if still On hold |
-| **Couple race-car faces** | **READY** — list now (IP-safe; no McQueen/Cars names) |
+| **Couple race-car faces** | **READY** — `designs/couple_faces/*_UPLOAD_TO_PRINTIFY.png` + `listings/COUPLE_RACE_CAR_FACES.md` (see `designs/README.md`) |
 
 ## Next actions (priority)
 
