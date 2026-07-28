@@ -22,6 +22,20 @@
 | **Etsy** | Orders **18** · revenue **$542.08** · Etsy net **$376.17** · Printify Etsy **$457.05** → cash ≈ **−$81** before eBay |
 | **Etsy Yellow C5 hoodie** | Jul 27 — **~$18.87** cash; Submit Printify if still On hold |
 | **Couple race-car faces** | **READY** — `designs/couple_faces/*_UPLOAD_TO_PRINTIFY.png` + `listings/COUPLE_RACE_CAR_FACES.md` (see `designs/README.md`) |
+| **Mac designs folder** | Cloud/git cleaned; **Mac is NOT auto-synced** — run `bash scripts/mac_clean_designs_folder.sh` after `git pull` |
+
+## Phone / Mac — clean the Finder sticker mess
+
+```bash
+cd ~/ai
+git fetch origin
+git checkout cursor/pnl-reconcile-mcqueen-129e   # or merge/pull main after PR merges
+git pull
+bash scripts/mac_clean_designs_folder.sh
+open designs/couple_faces
+```
+
+That deletes cute/lego/product_* junk, creates `corvette/` + `pickleball/` + `couple_faces/`, and moves car art into the right folders.
 
 ## Next actions (priority)
 
