@@ -1,7 +1,7 @@
 # Matching Couple Race Car Face Tees — listing package
 
-**Status:** READY Jul 28, 2026 — art + Printify uploads done · list as **2 separate SKUs** (Red + Light Blue)  
-**Why now:** Viral couple demand (comments asking “where did you get these shirts”). Theme-park / date-night matching tees. Original vector faces — **not** a Disney/Pixar clone and **not** a 1:1 TikTok art copy.
+**Status:** READY Jul 28, 2026 — **v2 shop-custom look** (thicker bumper grin, angled brows, longer lashes) · list as **2 separate SKUs** (Red + Light Blue)  
+**Why now:** Viral couple demand (comments asking “where did you get these shirts” — people said custom shop). Theme-park / date-night matching tees. Original vectors aiming at that merch silhouette — **not** Disney names in copy.
 
 **IP hard rules (read before listing):**
 - Do **NOT** use in title, tags, or description: Lightning McQueen, Sally, Cars, Pixar, Disney, Radiator Springs, Piston Cup, “95”
