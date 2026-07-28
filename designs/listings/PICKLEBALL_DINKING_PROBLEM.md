@@ -1,6 +1,6 @@
 # Pickleball “Dinking Problem” Tee — listing package
 
-**Status:** **READY FOR UPLOAD** (Jul 21, 2026) — art + Printify export done; not live yet  
+**Status:** **LIVE on Etsy** Jul 28, 2026 — owner uploaded; paste URL below · eBay still TODO  
 **Why this #4:** Hottest funny-tee joke category in search; type-first like **IT WAS IN** (sold). No beer-mug / crest / letter-as-ball clones.
 
 **Files:**
@@ -11,10 +11,17 @@
 - Compose: `scripts/compose_pickleball_dinking_problem.py`
 - Font: `designs/fonts/Anton-Regular.ttf`
 
+## Live URLs
+| Channel | URL |
+|---------|-----|
+| **Etsy** | *(paste listing URL)* |
+| **eBay** | — |
+
 ## Design notes
 - White **I MIGHT HAVE A** / lime **DINKING** / white **PROBLEM**
 - Clean ball **below** text (not inside a letter)
 - Dark shirts only (white + lime type)
+- **Hero thumbnail:** Black shirt (max lime contrast)
 - Regenerate: `python3 scripts/compose_pickleball_dinking_problem.py` (uses `--no-knock-out-counters` so white lines survive export)
 
 ## eBay title
@@ -41,12 +48,12 @@ Funny pickleball tee for players who live at the kitchen line. Bold type, clean 
 - Promoted light first 48–72h
 
 ## Shirt colors
-Black, Charcoal, Navy (and other darks). **Not** light shirts.
+Black, Charcoal, Navy (and other darks). **Not** light shirts. **Thumbnail = Black.**
 
 ## Upload checklist
-- [ ] Printify: upload `designs/pickleball/pickleball_dinking_problem_UPLOAD_TO_PRINTIFY.png`
-- [ ] Dark colors only (Black, Navy, Charcoal)
+- [x] Printify: upload `designs/pickleball/pickleball_dinking_problem_UPLOAD_TO_PRINTIFY.png`
+- [x] Dark colors only (Black, Navy, Charcoal)
 - [ ] eBay live @ **$20.99+** S–XL → paste URL
-- [ ] Etsy live → paste URL
+- [x] Etsy live Jul 28 → paste URL
 - [ ] Ads off / light 48h
 - [ ] Log first sale in `sales_log.csv`
