@@ -1,7 +1,7 @@
 # CozyOrbitPrints — Shop State (source of truth)
 
 **Etsy shop:** https://www.etsy.com/shop/CozyOrbitPrints  
-**Last updated:** 2026-07-28 (couple race-car face tees READY — original vector his/hers; IP-safe listing copy; Dinking Problem still next pickleball upload)
+**Last updated:** 2026-07-28 (Etsy Yellow C5 hoodie sold organic $52.99 — first Etsy sale in a while; ads were on pickle cartoons = $67/30d / 0 orders; Cars face + pickle characters underperforming)
 
 Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any new agent chat to avoid hallucinating order/design state.
 
@@ -9,11 +9,48 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 
 ---
 
+## July 28 night update (Etsy hoodie sale + ads cleanup)
+
+| Item | Status |
+|------|--------|
+| **Etsy Yellow C5 hoodie (2-sided)** | **SOLD Jul 28 — $52.99** · **organic / no Etsy Ads** · 11 views in period before sale · good margin motivation |
+| **Etsy Ads (last 30d)** | **$67.10 spend · 0 orders · ROAS 0** — budget mostly on pickle cartoons; spend collapsed after ~Jul 13 |
+| **Ads currently ON (wrong set)** | IT WAS IN, Eyes Up Here, Soft Serve, Dink Life, Dill With It ×2, I Came I Served, Game On paddles, Smiling Cartoon Face |
+| **Dinking Problem** | **NOT listed yet** on Etsy (confirm) — still ready locally |
+| **Play mat** | Top organic views this month (**87 views · 5 favorites**) but historically ~breakeven |
+| **Do tonight** | Flip ads off pickle cartoons + Cars face; put ads only on Corvette converters; deactivate dead/IP-risk SKUs |
+
+### Ads kill / keep (Jul 28 — from owner screenshots)
+
+**Ads OFF immediately:**
+- Soft Serve (148 ad views · **0% CTR**)
+- Dill With It (both)
+- Dink Life pickle character
+- I Came I Served I Dinked
+- Pickleball Game On paddles
+- Smiling Cartoon Face / McQueen-style (IP risk + 0–1 views)
+- Supra / Challenger / Skyline R34 if somehow still advertised
+
+**Ads ON (Corvette only, small budget):**
+- Yellow C5 hoodie (just sold organic — light ads OK, don’t overspend)
+- C5 Blueprint / C5 front-back
+- C4 Pop-Up / C4 Minimal if live
+- C7 Illustration
+- Optional: Atomic Orange C6 (29 views organic)
+
+**Keep live, ads off (watch):** IT WAS IN + Eyes Up Here (eBay sold IT WAS IN; Etsy ads not converting)
+
+**Deactivate / archive candidates:**
+- Smiling Cartoon Face (Disney-look risk)
+- Skyline R34, Supra MK4, Challenger (0 views / never fund)
+- Duplicate Dill With It / weak pickle cartoon SKUs with 0 organic views
+- Kids C5 if still 0 views and not strategic
+
 ## July 28 update (couple race-car face tees)
 
 | Item | Status |
 |------|--------|
-| **Couple Race Car Faces** | **READY** — original vector his (red) + hers (light blue); Printify uploads + listing package |
+| **Couple Race Car Faces** | **READY** — original vector his (red) + hers (light blue); Printify uploads + listing package · owner may skip listing (Printify AI versions preferred / then abandoned) |
 | **Listing** | `designs/listings/COUPLE_RACE_CAR_FACES.md` |
 | **Print files** | `designs/couple_faces/couple_race_red_face_UPLOAD_TO_PRINTIFY.png` · `couple_sky_blue_face_UPLOAD_TO_PRINTIFY.png` |
 | **Compose** | `scripts/compose_couple_race_car_faces.py` (local PIL — no OpenAI) |
@@ -215,6 +252,7 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 | Jul 15 | Allyn Davis | **Yellow C5** hoodie 2-sided (eBay) | 1 | Ash | 2XL | **$50.58 earnings**; item `398084925179`; ship by Jul 29; Printify pending |
 | Jul 16 | — | **Pickleball Soft Serve** (listed) | — | — | — | Etsy + eBay live; still 0 sales as of Jul 21 |
 | Jul 17 | — | **Pickleball IT WAS IN** (eBay) | 1 | Mint | — | **First pickleball sale** $18.99 → ~$4.82 cash; Soft Serve + Eyes still 0 |
+| Jul 28 | — | **Yellow C5 hoodie 2-sided** (Etsy) | 1 | — | — | **Organic** $52.99; first Etsy sale in a while; ads were on pickle cartoons (0 ROAS) |
 
 **Refunded:** Jan — C5 Illustration Vintage — accidental order.
 
