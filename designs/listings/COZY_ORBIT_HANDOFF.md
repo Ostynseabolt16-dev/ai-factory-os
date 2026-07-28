@@ -13,7 +13,25 @@
 - **Channels:** Etsy (primary historically) + eBay (now converting — re-prioritize)
 - **Proven styles:** (1) Blueprint / technical front+back · (2) Gothic text + side car · (3) minimal pickleball text gag (**IT WAS IN** sold)
 
-## July 21 flash update (tonight)
+## July 28 flash update (screenshot P&L + couple faces)
+
+| Sale / item | Status |
+|-------------|--------|
+| **eBay** | Orders **7** · 90d sales **$225.77** · funds **$133.04** · Printify eBay costs **$130.90** |
+| **eBay C5 Tan 2XL** | Jonathan Eme — **$27.02** · net **$22.67** · Ad Fee **$4.07** · ship by Aug 7 |
+| **Etsy** | Orders **18** · revenue **$542.08** · Etsy net **$376.17** · Printify Etsy **$457.05** → cash ≈ **−$81** before eBay |
+| **Etsy Yellow C5 hoodie** | Jul 27 — **~$18.87** cash; Submit Printify if still On hold |
+| **Couple race-car faces** | **READY** — list now (IP-safe; no McQueen/Cars names) |
+
+## Next actions (priority)
+
+1. **Upload couple face tees** (Red + Light Blue) — `COUPLE_RACE_CAR_FACES.md`
+2. **Submit** any On-hold Printify (Etsy hoodie `#27546430.21`; eBay C5 Tan if needed)
+3. Raise eBay tee prices / cut Ad Fee % (promoted fees still eating margin)
+4. **Upload Dinking Problem** @ **$20.99** when back to pickleball
+5. Safer Yellow C5 replacement (no CORVETTE wordmark) when ready
+
+## July 21 flash update
 
 | Sale / item | Status |
 |-------------|--------|
@@ -21,15 +39,6 @@
 | Soft Serve + Eyes Up Here | Still **0 sales** (only clean type+ball gag sold) |
 | **Dinking Problem tee** | **READY** — `designs/pickleball/pickleball_dinking_problem_UPLOAD_TO_PRINTIFY.png` + `PICKLEBALL_DINKING_PROBLEM.md` |
 | Soft Serve / Eyes / IT WAS IN | Still live Etsy + eBay |
-
-## Next actions (priority)
-
-1. **Upload Dinking Problem** to Printify → eBay @ **$20.99** S–XL (dark shirts only) → Etsy
-2. Then Kitchen → Six pack (`PICKLEBALL_WAVE2.md`); eBay-first; light ads only
-3. Soft Serve / Eyes: leave live, no heavy ads
-4. Fulfill IT WAS IN — Printify #27858258.4 ready-to-ship
-5. Skip for now: memory comic clone, Abraham Lincoln portrait, doodles, goose
-6. Safer Yellow C5 replacement (no CORVETTE wordmark) when ready
 
 ## July 16 flash update
 

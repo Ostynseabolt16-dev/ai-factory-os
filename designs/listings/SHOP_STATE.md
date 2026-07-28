@@ -1,13 +1,46 @@
 # CozyOrbitPrints — Shop State (source of truth)
 
 **Etsy shop:** https://www.etsy.com/shop/CozyOrbitPrints  
-**Last updated:** 2026-07-21 (first pickleball sale — eBay IT WAS IN $18.99 on Jul 17; Soft Serve + Eyes still quiet; Dinking Problem art ready)
+**Last updated:** 2026-07-28 (owner screenshot P&L reconcile + couple race-car faces READY to list)
 
 Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any new agent chat to avoid hallucinating order/design state.
 
 > **NOT kawaii stickers.** Live business = CozyOrbitPrints Corvette apparel (Etsy + eBay + Printify). GitHub `ai-factory-os` is stale May factory scaffolding — ignore it unless explicitly working on factory code.
 
 ---
+
+## July 28 update (screenshot P&L + McQueen-style couple tees)
+
+### Channel totals (owner screenshots — source of truth)
+
+| Channel | What screenshot shows | Match to our notes? |
+|---------|----------------------|---------------------|
+| **eBay Selling Overview** | Active **20** · Orders **7** · 90-day sales **$225.77** | **Yes** — 7 eBay orders (was under-counted before Jonathan C5 Tan) |
+| **eBay Payments** | Total funds **$133.04**; Jul 25 C5 sale net **$22.67** after **$4.35** fees + Ad Fee General **$4.07** | **Yes** for Jonathan Eme C5 Tan — see below |
+| **Printify eBay** (`sea-6469`) | Costs to-date **$130.90**; orders requiring action **0** | **Plausible** vs ~7 fulfillments (~$18.7 avg). Cash-ish: sales $225.77 − Printify $130.90 = **~$95** before remembering eBay fees/ads already cut funds to **$133** |
+| **Printify Etsy** | Costs to-date **$457.05** | **Yes** — higher than June (~$344) as more orders fulfilled |
+| **Etsy Stats** | Visits **883** · Orders **18** · Conv **2%** · Revenue **$542.08** | **Yes** — 18 orders matches; revenue in ballpark of prior ~$459→$542 climb |
+| **Etsy Sales & fees** | Net profit on Etsy (3mo) **$376.17** after fees + ads **$127.93** | **Yes** — close to June close **$386.37**; ads line still **$127.93** |
+| **Etsy cash after Printify** | `$376.17 − $457.05` ≈ **−$80.88** | **Matches the thin/loss story** — Etsy “net profit” is **before** Printify. Hoodies help; promoted tees + ads still drag |
+
+### New / confirmed orders from screenshots
+
+| Item | Status |
+|------|--------|
+| **eBay C5 illustration tee** | **Ship it** — Tan / **2XL**; buyer **Jonathan Eme (dragneon)**; **$23.03** + **$3.99** = **$27.02**; ship by **Aug 7**; payments net **$22.67**; Ad Fee General **$4.07** → eBay after ads **$18.60**; Printify cost TBD |
+| **eBay leave-feedback (delivered)** | C5 Heather Clay 2XL $27.02 · Yellow C5 White 2XL $30.08 · Yellow C5 hoodie Ash 2XL $59.38 — matches logged Michael + Allyn orders |
+| **Etsy Yellow C5 hoodie** | Jul 27 still good — Sport Grey / L · **~$18.87** cash · Printify `#27546430.21` |
+| **Jul 25 C7 (Alexander Lewis)** | Still in log from phone session; **not** visible on Jul 25–26 payments snippet (only Jonathan C5 sale). Keep until Printify/eBay proves otherwise — or delete if owner confirms it was a misread |
+
+### Couple race-car face tees (Lightning McQueen–inspired — IP-safe)
+
+| Item | Status |
+|------|--------|
+| **Art** | **READY** — original eyes+smile only (no Disney/Pixar names/logos/95) |
+| **Listing** | `designs/listings/COUPLE_RACE_CAR_FACES.md` |
+| **Printify files** | `designs/couple_faces/couple_race_red_face_UPLOAD_TO_PRINTIFY.png` (Red blank) · `couple_sky_blue_face_UPLOAD_TO_PRINTIFY.png` (Light Blue blank) |
+| **Price** | S–XL **$21.99** · 2XL **$23.99** · 3XL **$24.99** · ads off/light |
+| **Do now** | Upload 2 SKUs to Printify → Etsy + eBay; paste titles/tags from listing md; **never** say Lightning McQueen / Cars / Pixar / Disney in listing |
 
 ## July 21 update (post IT WAS IN sale)
 
@@ -176,7 +209,7 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 
 ---
 
-## Sales summary (user-reported; Jul 16 = 17+ Etsy + 3 eBay units logged)
+## Sales summary (user-reported; Jul 28 = 18 Etsy + 7 eBay orders on dashboards)
 
 | Date | Buyer | Listing | Qty | Color | Size | Notes |
 |------|-------|---------|-----|-------|------|-------|
@@ -198,10 +231,14 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 | Jun 27 | — | **C5 + C7** (same Etsy Ads order) | **2** | — | — | User morning report: ad-attributed order with 2 shirts |
 | Jun 28 | michel salaun | **C4 Minimal** | 1 | Light Blue | 2XL | France order; order `4102687761`; coupon `VETTESUMMER` (10% off); overnight sale after price-floor changes |
 | Jun 30 | sydney roberts | **C5 Blueprint** front/back | 1 | Black | XL | Gift order; order `4104565447`; Oklahoma City OK; Printify $26.49; est. profit ~$5.08 |
-| Jul 15 | Allyn Davis | **Yellow C5** tee (eBay) | 1 | White | — | **Repeat buyer**; Cortland NY; ~$9.97 w/ Printify coupon |
-| Jul 15 | Allyn Davis | **Yellow C5** hoodie 2-sided (eBay) | 1 | Ash | 2XL | **$50.58 earnings**; item `398084925179`; ship by Jul 29; Printify pending |
-| Jul 16 | — | **Pickleball Soft Serve** (listed) | — | — | — | Etsy + eBay live; still 0 sales as of Jul 21 |
+| Jul 15 | Allyn Davis | **Yellow C5** tee (eBay) | 1 | White | 2XL | **Repeat buyer**; Cortland NY; ~$9.97 w/ Printify coupon; leave-feedback shows delivered |
+| Jul 15 | Allyn Davis | **Yellow C5** hoodie 2-sided (eBay) | 1 | Ash | 2XL | **$50.58 earnings**; item `398084925179`; leave-feedback delivered |
+| Jul 16 | — | **Pickleball Soft Serve** (listed) | — | — | — | Etsy + eBay live; still 0 sales as of Jul 28 |
 | Jul 17 | — | **Pickleball IT WAS IN** (eBay) | 1 | Mint | — | **First pickleball sale** $18.99 → ~$4.82 cash; Soft Serve + Eyes still 0 |
+| Jul 21 | — | **Yellow C5** tee (eBay) | 1 | White | — | Item $23.92; earnings $19.57 after Ad Fee $3.88; Printify TBD |
+| Jul 25 | Alexander Lewis | **C7** tee (eBay) | 1 | Dark Heather | XL | Phone-logged; cash ≈ −$0.54; verify still real vs payments |
+| Jul 25 | Jonathan Eme | **C5 Illustrated** (eBay) | 1 | Tan | 2XL | Screenshot confirmed; $27.02; net $22.67; Ad Fee $4.07; ship by Aug 7 |
+| Jul 27 | Derick A. Proctor | **Yellow C5** hoodie (Etsy) | 1 | Sport Grey | L | **~$18.87** cash; order `4128217793` |
 
 **Refunded:** Jan — C5 Illustration Vintage — accidental order.
 
