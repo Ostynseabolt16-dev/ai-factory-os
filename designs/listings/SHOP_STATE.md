@@ -1,13 +1,26 @@
 # CozyOrbitPrints — Shop State (source of truth)
 
 **Etsy shop:** https://www.etsy.com/shop/CozyOrbitPrints  
-**Last updated:** 2026-07-21 (first pickleball sale — eBay IT WAS IN $18.99 on Jul 17; Soft Serve + Eyes still quiet; Dinking Problem art ready)
+**Last updated:** 2026-07-28 (couple race-car face tees READY — original vector his/hers; IP-safe listing copy; Dinking Problem still next pickleball upload)
 
 Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any new agent chat to avoid hallucinating order/design state.
 
 > **NOT kawaii stickers.** Live business = CozyOrbitPrints Corvette apparel (Etsy + eBay + Printify). GitHub `ai-factory-os` is stale May factory scaffolding — ignore it unless explicitly working on factory code.
 
 ---
+
+## July 28 update (couple race-car face tees)
+
+| Item | Status |
+|------|--------|
+| **Couple Race Car Faces** | **READY** — original vector his (red) + hers (light blue); Printify uploads + listing package |
+| **Listing** | `designs/listings/COUPLE_RACE_CAR_FACES.md` |
+| **Print files** | `designs/couple_faces/couple_race_red_face_UPLOAD_TO_PRINTIFY.png` · `couple_sky_blue_face_UPLOAD_TO_PRINTIFY.png` |
+| **Compose** | `scripts/compose_couple_race_car_faces.py` (local PIL — no OpenAI) |
+| **Shirt colors** | Red blank only (his) · Light Blue blank only (hers) |
+| **Price** | S–XL **$21.99** · 2XL **$23.99** · 3XL **$24.99** |
+| **IP** | No movie/character names in title/tags/description; no logos/numbers in art. Pull if marketplace flags. |
+| **Ads** | Off/light until first sale clears **$5+** |
 
 ## July 21 update (post IT WAS IN sale)
 
@@ -363,6 +376,8 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 
 ## Shirt colors
 
+- **Couple Race Red Face:** Red only (white ink face)
+- **Couple Sky Blue Face:** Light Blue only (white/black ink face)
 - **Pickleball Dinking Problem / Eyes / IT WAS IN:** Black, Navy, Charcoal (dark only — white/lime type)
 - **C7 Laguna Blue:** White, Natural, Sport Grey only (not dark colors)
 - **C5 Torch Red:** White, Natural, Sport Grey only (not dark colors)

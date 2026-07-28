@@ -13,7 +13,25 @@
 - **Channels:** Etsy (primary historically) + eBay (now converting — re-prioritize)
 - **Proven styles:** (1) Blueprint / technical front+back · (2) Gothic text + side car · (3) minimal pickleball text gag (**IT WAS IN** sold)
 
-## July 21 flash update (tonight)
+## July 28 flash update
+
+| Sale / item | Status |
+|-------------|--------|
+| **Couple Race Car Face tees** | **READY** — Red (his) + Light Blue (hers); original vectors; listing `COUPLE_RACE_CAR_FACES.md` |
+| **IP rule** | No Disney/Pixar/Cars character names in listings; eyes+smile only; pull if flagged |
+| **Dinking Problem tee** | Still **READY** — upload when back to pickleball queue |
+| Soft Serve / Eyes / IT WAS IN | Still live; IT WAS IN sold Jul 17 |
+
+## Next actions (priority)
+
+1. **Upload couple face tees** to Printify → Etsy + eBay @ **$21.99** S–XL (Red + Light Blue as **two SKUs**)
+2. **Upload Dinking Problem** to Printify → eBay @ **$20.99** S–XL (dark shirts only) → Etsy
+3. Then Kitchen → Six pack (`PICKLEBALL_WAVE2.md`); eBay-first; light ads only
+4. Soft Serve / Eyes: leave live, no heavy ads
+5. Skip for now: memory comic clone, Abraham Lincoln portrait, doodles, goose
+6. Safer Yellow C5 replacement (no CORVETTE wordmark) when ready
+
+## July 21 flash update
 
 | Sale / item | Status |
 |-------------|--------|
@@ -21,15 +39,6 @@
 | Soft Serve + Eyes Up Here | Still **0 sales** (only clean type+ball gag sold) |
 | **Dinking Problem tee** | **READY** — `designs/pickleball/pickleball_dinking_problem_UPLOAD_TO_PRINTIFY.png` + `PICKLEBALL_DINKING_PROBLEM.md` |
 | Soft Serve / Eyes / IT WAS IN | Still live Etsy + eBay |
-
-## Next actions (priority)
-
-1. **Upload Dinking Problem** to Printify → eBay @ **$20.99** S–XL (dark shirts only) → Etsy
-2. Then Kitchen → Six pack (`PICKLEBALL_WAVE2.md`); eBay-first; light ads only
-3. Soft Serve / Eyes: leave live, no heavy ads
-4. Fulfill IT WAS IN — Printify #27858258.4 ready-to-ship
-5. Skip for now: memory comic clone, Abraham Lincoln portrait, doodles, goose
-6. Safer Yellow C5 replacement (no CORVETTE wordmark) when ready
 
 ## July 16 flash update
 
