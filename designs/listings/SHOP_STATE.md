@@ -22,6 +22,7 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 | **Etsy Stats** | Visits **883** · Orders **18** · Conv **2%** · Revenue **$542.08** | **Yes** — 18 orders matches; revenue in ballpark of prior ~$459→$542 climb |
 | **Etsy Sales & fees** | Net profit on Etsy (3mo) **$376.17** after fees + ads **$127.93** | **Yes** — close to June close **$386.37**; ads line still **$127.93** |
 | **Etsy cash after Printify** | `$376.17 − $457.05` ≈ **−$80.88** | **Matches the thin/loss story** — Etsy “net profit” is **before** Printify. Hoodies help; promoted tees + ads still drag |
+| **All-in verdict (Jul 28)** | Etsy ≈ **−$81** + eBay ≈ **flat** ($133 funds vs $131 Printify) | **Not in profit yet** — roughly breakeven/slight loss before Cursor/OpenAI. Hoodies are the margin bright spot |
 
 ### New / confirmed orders from screenshots
 
