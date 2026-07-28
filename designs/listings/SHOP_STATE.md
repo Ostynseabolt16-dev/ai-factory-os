@@ -17,6 +17,7 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 | **Etsy Ads (last 30d)** | **$67.10 spend · 0 orders · ROAS 0** — budget mostly on pickle cartoons; spend collapsed after ~Jul 13 |
 | **Ads currently ON (wrong set)** | IT WAS IN, Eyes Up Here, Soft Serve, Dink Life, Dill With It ×2, I Came I Served, Game On paddles, Smiling Cartoon Face |
 | **Dinking Problem** | **LIVE Etsy + eBay** Jul 28 — eBay https://www.ebay.com/itm/398222322676 · paste Etsy URL · ads off/light 48h · Black hero thumbnail |
+| **Weekend Forecast 100% DINKS** | **LIVE Etsy** Jul 28 — `WEEKEND FORECAST / 100% DINKS / KITCHEN: OPEN` + pickleball-sun · Black thumbnail preferred · eBay TODO |
 | **Play mat** | Top organic views this month (**87 views · 5 favorites**) but historically ~breakeven |
 | **Do tonight** | Flip ads off pickle cartoons + Cars face; put ads only on Corvette converters; deactivate dead/IP-risk SKUs |
 
