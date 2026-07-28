@@ -4,10 +4,10 @@
 Body-joke parallel to Eyes Up Here: six pickleballs as abs.
 Wave 2 Design C — original label MY SIX PACK (not CHECK OUT MY SIX PACK clone).
 
-Layout:
-  MY SIX PACK     (white Anton, above)
-  2×3 ball grid   (torso/abs read — same ball asset as Eyes Up Here)
-  PICKLEBALLS     (small white, below)
+v2 layout (Printify AI failed abs grid — keep local compose):
+  MY SIX PACK     (lime Anton, above — DINKING pop)
+  2×3 ball grid   (tight torso/abs read — same ball as Eyes Up Here)
+  no bottom label (cleaner thumb, like Eyes Up Here)
 """
 
 from __future__ import annotations
@@ -21,6 +21,8 @@ from PIL import Image, ImageDraw, ImageFont
 ROOT = Path(__file__).resolve().parents[1]
 CANVAS = (4500, 5400)
 WHITE = (255, 255, 255, 255)
+# Match DINKING / IT WAS IN lime
+LIME = (218, 239, 31, 255)
 FONT_PATH = ROOT / "designs/fonts/Anton-Regular.ttf"
 BALL_PATH = ROOT / "designs/pickleball/pickleball_ball_transparent_holes.png"
 MASTER_OUT = ROOT / "designs/pickleball/pickleball_six_pack_master.png"
@@ -56,38 +58,32 @@ def compose() -> Path:
     canvas = Image.new("RGBA", CANVAS, (0, 0, 0, 0))
     draw = ImageDraw.Draw(canvas)
 
-    font_hero = load_font(340)
-    font_small = load_font(140)
-
+    font_hero = load_font(380)
     line1 = "MY SIX PACK"
-    line2 = "PICKLEBALLS"
-
     w1, h1 = text_size(draw, line1, font_hero)
-    w2, h2 = text_size(draw, line2, font_small)
 
-    # Ball size — chunky like Eyes Up Here pair, fills abs zone
+    # Slightly larger balls, much tighter gaps → abs block not sticker sheet
     ball_src = Image.open(BALL_PATH).convert("RGBA")
-    ball_h = int(H * 0.145)
+    ball_h = int(H * 0.155)
     scale = ball_h / ball_src.height
     ball = ball_src.resize(
         (max(1, int(ball_src.width * scale)), ball_h), Image.Resampling.LANCZOS
     )
-    gap_x = int(ball.width * 0.12)
-    gap_y = int(ball.height * 0.10)
+    gap_x = int(ball.width * 0.04)
+    gap_y = int(ball.height * 0.04)
     grid_w = COLS * ball.width + (COLS - 1) * gap_x
     grid_h = ROWS * ball.height + (ROWS - 1) * gap_y
 
-    gap_after_title = 90
-    gap_before_sub = 70
-    total_h = h1 + gap_after_title + grid_h + gap_before_sub + h2
+    gap_after_title = 70
+    total_h = h1 + gap_after_title + grid_h
 
     # Chest-centered stack (same idea as Eyes Up Here)
-    top = int(H * 0.30 - total_h / 2)
-    top = max(int(H * 0.10), top)
+    top = int(H * 0.32 - total_h / 2)
+    top = max(int(H * 0.12), top)
     cx = W // 2
 
     y = top
-    draw.text((cx - w1 // 2, y), line1, font=font_hero, fill=WHITE)
+    draw.text((cx - w1 // 2, y), line1, font=font_hero, fill=LIME)
     y += h1 + gap_after_title
 
     grid_left = cx - grid_w // 2
@@ -97,9 +93,6 @@ def compose() -> Path:
             bx = grid_left + col * (ball.width + gap_x) + ball.width // 2
             by = grid_top + row * (ball.height + gap_y) + ball.height // 2
             paste_centered(canvas, ball, bx, by)
-
-    y = grid_top + grid_h + gap_before_sub
-    draw.text((cx - w2 // 2, y), line2, font=font_small, fill=WHITE)
 
     MASTER_OUT.parent.mkdir(parents=True, exist_ok=True)
     canvas.save(MASTER_OUT, format="PNG", optimize=True)

@@ -12,12 +12,13 @@
 - Font: `designs/fonts/Anton-Regular.ttf`
 
 ## Design notes
-- White **MY SIX PACK** above
-- **2×3** grid of pickleballs (abs/torso read — same ball asset as Eyes Up Here)
-- Small white **PICKLEBALLS** below
-- Original label (not “CHECK OUT MY SIX PACK” clone layout)
-- Dark shirts only (white type + lime balls)
-- Regenerate: `python3 scripts/compose_pickleball_six_pack.py` (uses `--no-knock-out-counters`)
+- Lime **MY SIX PACK** above (same pop as DINKING)
+- **Tight 2×3** pickleball grid (abs/torso read — same ball as Eyes Up Here)
+- **No** bottom PICKLEBALLS label (cleaner thumb)
+- Original label (not “CHECK OUT MY SIX PACK” clone)
+- Dark shirts only
+- **Do not use Printify AI for this** — it fails the 2×3 abs grid
+- Regenerate: `python3 scripts/compose_pickleball_six_pack.py`
 
 ## eBay title
 Funny Pickleball Six Pack T-Shirt Abs Joke Tee Sports Gift
