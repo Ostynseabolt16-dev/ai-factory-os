@@ -1,7 +1,7 @@
 # CozyOrbitPrints — Shop State (source of truth)
 
 **Etsy shop:** https://www.etsy.com/shop/CozyOrbitPrints  
-**Last updated:** 2026-07-21 (first pickleball sale — eBay IT WAS IN $18.99 on Jul 17; Soft Serve + Eyes still quiet; Dinking Problem art ready)
+**Last updated:** 2026-07-28 (Dinking Problem LIVE on Etsy; Yellow C5 hoodie sold organic $52.99; kill pickle-cartoon ads; Corvette ads only on IP-safer art)
 
 Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any new agent chat to avoid hallucinating order/design state.
 
@@ -9,13 +9,65 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 
 ---
 
+## July 28 night update (Etsy hoodie sale + ads cleanup)
+
+| Item | Status |
+|------|--------|
+| **Etsy Yellow C5 hoodie (2-sided)** | **SOLD Jul 28 — $52.99** · **organic / no Etsy Ads** · 11 views in period before sale · good margin motivation |
+| **Etsy Ads (last 30d)** | **$67.10 spend · 0 orders · ROAS 0** — budget mostly on pickle cartoons; spend collapsed after ~Jul 13 |
+| **Ads currently ON (wrong set)** | IT WAS IN, Eyes Up Here, Soft Serve, Dink Life, Dill With It ×2, I Came I Served, Game On paddles, Smiling Cartoon Face |
+| **Dinking Problem** | **LIVE Etsy + eBay** Jul 28 — eBay https://www.ebay.com/itm/398222322676 · paste Etsy URL · ads off/light 48h · Black hero thumbnail |
+| **Meeting Could Have Been A Dink** | **LIVE Etsy** Jul 28 — Albert Sans + ball/calendar; light-shirt hero (White/Sport Grey); eBay TODO |
+| **Pickleball Pro crest** | **LIVE Etsy** Jul 28 — one pride SKU; do not spam more generic crests |
+| **Play mat** | Top organic views this month (**87 views · 5 favorites**) but historically ~breakeven |
+| **Do tonight** | Flip ads off pickle cartoons + Cars face; put ads only on Corvette converters; deactivate dead/IP-risk SKUs |
+
+### Ads kill / keep (Jul 28 — from owner screenshots)
+
+**Ads OFF immediately:**
+- Soft Serve (148 ad views · **0% CTR**)
+- Dill With It (both)
+- Dink Life pickle character
+- I Came I Served I Dinked
+- Pickleball Game On paddles
+- Smiling Cartoon Face / McQueen-style (IP risk + 0–1 views)
+- Supra / Challenger / Skyline R34 if somehow still advertised
+
+**Ads ON (Corvette only, small budget):**
+- Yellow C5 hoodie (just sold organic — light ads OK, don’t overspend)
+- C5 Blueprint / C5 front-back
+- C4 Pop-Up / C4 Minimal if live
+- C7 Illustration
+- Optional: Atomic Orange C6 (29 views organic)
+
+**Keep live, ads off (watch):** IT WAS IN + Eyes Up Here (eBay sold IT WAS IN; Etsy ads not converting)
+
+**Deactivate / archive candidates:**
+- Smiling Cartoon Face (Disney-look risk)
+- Skyline R34, Supra MK4, Challenger (0 views / never fund)
+- Duplicate Dill With It / weak pickle cartoon SKUs with 0 organic views
+- Kids C5 if still 0 views and not strategic
+
+## July 28 update (couple race-car face tees)
+
+| Item | Status |
+|------|--------|
+| **Couple Race Car Faces** | **READY** — original vector his (red) + hers (light blue); Printify uploads + listing package · owner may skip listing (Printify AI versions preferred / then abandoned) |
+| **Listing** | `designs/listings/COUPLE_RACE_CAR_FACES.md` |
+| **Print files** | `designs/couple_faces/couple_race_red_face_UPLOAD_TO_PRINTIFY.png` · `couple_sky_blue_face_UPLOAD_TO_PRINTIFY.png` |
+| **Compose** | `scripts/compose_couple_race_car_faces.py` (local PIL — no OpenAI) |
+| **Shirt colors** | Red blank only (his) · Light Blue blank only (hers) |
+| **Price** | S–XL **$21.99** · 2XL **$23.99** · 3XL **$24.99** |
+| **IP** | No movie/character names in title/tags/description; no logos/numbers in art. Pull if marketplace flags. |
+| **Ads** | Off/light until first sale clears **$5+** |
+
 ## July 21 update (post IT WAS IN sale)
 
 | Item | Status |
 |------|--------|
 | **eBay Pickleball IT WAS IN** | **SOLD Jul 17 — $18.99** + $3.99 ship; mint; Printify **#27858258.4** ready-to-ship **$14.63**; eBay fees **$3.53** → earnings **$19.45** → **~$4.82 cash** |
 | **Pickleball Soft Serve / Eyes Up Here** | Still **0 sales** (only type+ball gag converted) |
-| **Dinking Problem** | **READY** — `designs/pickleball/pickleball_dinking_problem_UPLOAD_TO_PRINTIFY.png` + `PICKLEBALL_DINKING_PROBLEM.md` — upload next |
+| **Dinking Problem** | **LIVE Etsy** Jul 28 — `PICKLEBALL_DINKING_PROBLEM.md` · eBay cross-list next @ **$20.99+** |
 | **Wave 2 briefs** | `PICKLEBALL_WAVE2.md` — Kitchen / Six pack after Dinking live |
 | **Margin rule** | Next pickleball tees **$20.99+** S–XL — $18.99 is thin |
 | **Ads** | Keep pickleball promoted **light**; Yellow C5 Ad Fee lesson still applies |
@@ -62,13 +114,14 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 | **Print file** | `designs/pickleball/pickleball_it_was_in_UPLOAD_TO_PRINTIFY.png` | Minimal line-call; dark shirts |
 | **P&L** | ~$4.82 cash | fees $3.53 · Printify $14.63 · raise next SKUs to $20.99+ |
 
-### Pickleball Dinking Problem (Jul 21 — READY, not live)
+### Pickleball Dinking Problem (Jul 28 — LIVE Etsy)
 
 | Channel | URL | Notes |
 |---------|-----|-------|
-| **Etsy / eBay** | — | Upload next; paste URLs when live |
+| **Etsy** | *(paste)* | Live Jul 28; Black hero thumbnail |
+| **eBay** | https://www.ebay.com/itm/398222322676 | Item `398222322676` · live Jul 28 |
 | **Print file** | `designs/pickleball/pickleball_dinking_problem_UPLOAD_TO_PRINTIFY.png` | Type-first white/lime/white; ball below; dark shirts |
-| **Listing** | `designs/listings/PICKLEBALL_DINKING_PROBLEM.md` | eBay S–XL **$20.99** |
+| **Listing** | `designs/listings/PICKLEBALL_DINKING_PROBLEM.md` | Ads off/light 48h |
 | **Compose** | `scripts/compose_pickleball_dinking_problem.py` | No OpenAI |
 
 ---
@@ -202,6 +255,7 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 | Jul 15 | Allyn Davis | **Yellow C5** hoodie 2-sided (eBay) | 1 | Ash | 2XL | **$50.58 earnings**; item `398084925179`; ship by Jul 29; Printify pending |
 | Jul 16 | — | **Pickleball Soft Serve** (listed) | — | — | — | Etsy + eBay live; still 0 sales as of Jul 21 |
 | Jul 17 | — | **Pickleball IT WAS IN** (eBay) | 1 | Mint | — | **First pickleball sale** $18.99 → ~$4.82 cash; Soft Serve + Eyes still 0 |
+| Jul 28 | — | **Yellow C5 hoodie 2-sided** (Etsy) | 1 | — | — | **Organic** $52.99; first Etsy sale in a while; ads were on pickle cartoons (0 ROAS) |
 
 **Refunded:** Jan — C5 Illustration Vintage — accidental order.
 
@@ -363,6 +417,8 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 
 ## Shirt colors
 
+- **Couple Race Red Face:** Red only (white ink face)
+- **Couple Sky Blue Face:** Light Blue only (white/black ink face)
 - **Pickleball Dinking Problem / Eyes / IT WAS IN:** Black, Navy, Charcoal (dark only — white/lime type)
 - **C7 Laguna Blue:** White, Natural, Sport Grey only (not dark colors)
 - **C5 Torch Red:** White, Natural, Sport Grey only (not dark colors)
