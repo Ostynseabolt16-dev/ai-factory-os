@@ -1,6 +1,6 @@
 # Pickleball “Dinking Problem” Tee — listing package
 
-**Status:** **LIVE on Etsy** Jul 28, 2026 — owner uploaded; paste URL below · eBay still TODO  
+**Status:** **LIVE** Jul 28, 2026 — Etsy + **eBay** (`398222322676`)  
 **Why this #4:** Hottest funny-tee joke category in search; type-first like **IT WAS IN** (sold). No beer-mug / crest / letter-as-ball clones.
 
 **Files:**
@@ -14,8 +14,8 @@
 ## Live URLs
 | Channel | URL |
 |---------|-----|
-| **Etsy** | *(paste listing URL)* |
-| **eBay** | — |
+| **Etsy** | *(paste listing URL if not saved)* |
+| **eBay** | https://www.ebay.com/itm/398222322676 |
 
 ## Design notes
 - White **I MIGHT HAVE A** / lime **DINKING** / white **PROBLEM**
@@ -53,7 +53,7 @@ Black, Charcoal, Navy (and other darks). **Not** light shirts. **Thumbnail = Bla
 ## Upload checklist
 - [x] Printify: upload `designs/pickleball/pickleball_dinking_problem_UPLOAD_TO_PRINTIFY.png`
 - [x] Dark colors only (Black, Navy, Charcoal)
-- [ ] eBay live @ **$20.99+** S–XL → paste URL
-- [x] Etsy live Jul 28 → paste URL
+- [x] eBay live @ **$20.99+** S–XL → https://www.ebay.com/itm/398222322676
+- [x] Etsy live Jul 28 → paste URL if missing
 - [ ] Ads off / light 48h
 - [ ] Log first sale in `sales_log.csv`

@@ -16,7 +16,7 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 | **Etsy Yellow C5 hoodie (2-sided)** | **SOLD Jul 28 — $52.99** · **organic / no Etsy Ads** · 11 views in period before sale · good margin motivation |
 | **Etsy Ads (last 30d)** | **$67.10 spend · 0 orders · ROAS 0** — budget mostly on pickle cartoons; spend collapsed after ~Jul 13 |
 | **Ads currently ON (wrong set)** | IT WAS IN, Eyes Up Here, Soft Serve, Dink Life, Dill With It ×2, I Came I Served, Game On paddles, Smiling Cartoon Face |
-| **Dinking Problem** | **LIVE on Etsy** Jul 28 (owner uploaded; paste URL into `PICKLEBALL_DINKING_PROBLEM.md`) · eBay still TODO · ads off/light 48h · Black hero thumbnail |
+| **Dinking Problem** | **LIVE Etsy + eBay** Jul 28 — eBay https://www.ebay.com/itm/398222322676 · paste Etsy URL · ads off/light 48h · Black hero thumbnail |
 | **Play mat** | Top organic views this month (**87 views · 5 favorites**) but historically ~breakeven |
 | **Do tonight** | Flip ads off pickle cartoons + Cars face; put ads only on Corvette converters; deactivate dead/IP-risk SKUs |
 
@@ -117,7 +117,7 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 | Channel | URL | Notes |
 |---------|-----|-------|
 | **Etsy** | *(paste)* | Live Jul 28; Black hero thumbnail |
-| **eBay** | — | Cross-list next @ S–XL **$20.99+** |
+| **eBay** | https://www.ebay.com/itm/398222322676 | Item `398222322676` · live Jul 28 |
 | **Print file** | `designs/pickleball/pickleball_dinking_problem_UPLOAD_TO_PRINTIFY.png` | Type-first white/lime/white; ball below; dark shirts |
 | **Listing** | `designs/listings/PICKLEBALL_DINKING_PROBLEM.md` | Ads off/light 48h |
 | **Compose** | `scripts/compose_pickleball_dinking_problem.py` | No OpenAI |
