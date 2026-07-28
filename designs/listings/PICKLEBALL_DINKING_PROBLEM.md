@@ -1,6 +1,6 @@
 # Pickleball “Dinking Problem” Tee — listing package
 
-**Status:** **READY FOR UPLOAD** (Jul 21, 2026) — art + Printify export done; not live yet  
+**Status:** **LIVE** Jul 28, 2026 — Etsy + eBay (owner uploaded; paste URLs below)  
 **Why this #4:** Hottest funny-tee joke category in search; type-first like **IT WAS IN** (sold). No beer-mug / crest / letter-as-ball clones.
 
 **Files:**
@@ -43,10 +43,16 @@ Funny pickleball tee for players who live at the kitchen line. Bold type, clean 
 ## Shirt colors
 Black, Charcoal, Navy (and other darks). **Not** light shirts.
 
+## Live URLs
+| Channel | URL |
+|---------|-----|
+| **Etsy** | *(paste)* |
+| **eBay** | *(paste)* |
+
 ## Upload checklist
-- [ ] Printify: upload `designs/pickleball/pickleball_dinking_problem_UPLOAD_TO_PRINTIFY.png`
-- [ ] Dark colors only (Black, Navy, Charcoal)
-- [ ] eBay live @ **$20.99+** S–XL → paste URL
-- [ ] Etsy live → paste URL
+- [x] Printify upload
+- [x] Dark colors only (Black, Navy, Charcoal)
+- [x] eBay + Etsy live Jul 28
+- [ ] Paste live URLs above
 - [ ] Ads off / light 48h
 - [ ] Log first sale in `sales_log.csv`

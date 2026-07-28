@@ -42,7 +42,7 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 | **Listing** | `designs/listings/COUPLE_RACE_CAR_FACES.md` |
 | **Printify files** | `designs/couple_faces/couple_race_red_face_UPLOAD_TO_PRINTIFY.png` (Red blank) · `couple_sky_blue_face_UPLOAD_TO_PRINTIFY.png` (Light Blue blank) |
 | **Price** | S–XL **$21.99** · 2XL **$23.99** · 3XL **$24.99** · ads off/light |
-| **Do now** | Upload 2 SKUs to Printify → Etsy + eBay; paste titles/tags from listing md; **never** say Lightning McQueen / Cars / Pixar / Disney in listing |
+| **Do now** | Red SKU only if listing — **skip hers/light-blue**. Prefer pickleball Six Pack next. |
 | **Folder cleanup Jul 28** | Deleted May sticker / cute / `product_*` junk; keep `corvette/` · `pickleball/` · `couple_faces/` · `listings/` · `fonts/` |
 
 ## July 21 update (post IT WAS IN sale)
@@ -51,11 +51,13 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 |------|--------|
 | **eBay Pickleball IT WAS IN** | **SOLD Jul 17 — $18.99** + $3.99 ship; mint; Printify **#27858258.4** ready-to-ship **$14.63**; eBay fees **$3.53** → earnings **$19.45** → **~$4.82 cash** |
 | **Pickleball Soft Serve / Eyes Up Here** | Still **0 sales** (only type+ball gag converted) |
-| **Dinking Problem** | **READY** — `designs/pickleball/pickleball_dinking_problem_UPLOAD_TO_PRINTIFY.png` + `PICKLEBALL_DINKING_PROBLEM.md` — upload next |
-| **Wave 2 briefs** | `PICKLEBALL_WAVE2.md` — Kitchen / Six pack after Dinking live |
+| **Dinking Problem** | **LIVE** Jul 28 — Etsy + eBay (paste URLs into `PICKLEBALL_DINKING_PROBLEM.md`) |
+| **Six Pack** | **READY** — `designs/pickleball/pickleball_six_pack_UPLOAD_TO_PRINTIFY.png` + `PICKLEBALL_SIX_PACK.md` — upload next (Eyes Up Here–style body gag) |
+| **Wave 2 briefs** | `PICKLEBALL_WAVE2.md` — Kitchen after Six Pack live |
+| **Couple race-car face** | **Red only** — skip hers/light-blue SKU |
 | **Margin rule** | Next pickleball tees **$20.99+** S–XL — $18.99 is thin |
 | **Ads** | Keep pickleball promoted **light**; Yellow C5 Ad Fee lesson still applies |
-| **Do not build tonight** | Comic-panel memory shirt; Lincoln portrait; doodle club; goose grid |
+| **Do not build tonight** | Comic-panel memory shirt; Lincoln portrait; doodle club; goose grid; hers race-car face |
 
 ## July 16 Mac catch-up
 

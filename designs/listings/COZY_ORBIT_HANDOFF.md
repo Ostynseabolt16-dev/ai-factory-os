@@ -21,29 +21,19 @@
 | **eBay C5 Tan 2XL** | Jonathan Eme — **$27.02** · net **$22.67** · Ad Fee **$4.07** · ship by Aug 7 |
 | **Etsy** | Orders **18** · revenue **$542.08** · Etsy net **$376.17** · Printify Etsy **$457.05** → cash ≈ **−$81** before eBay |
 | **Etsy Yellow C5 hoodie** | Jul 27 — **~$18.87** cash; Submit Printify if still On hold |
-| **Couple race-car faces** | **READY** — `designs/couple_faces/*_UPLOAD_TO_PRINTIFY.png` + `listings/COUPLE_RACE_CAR_FACES.md` (see `designs/README.md`) |
+| **Dinking Problem** | **LIVE** Etsy + eBay (owner uploaded Jul 28) — paste URLs into `PICKLEBALL_DINKING_PROBLEM.md` |
+| **Six Pack tee** | **READY** — upload next · `pickleball_six_pack_UPLOAD_TO_PRINTIFY.png` + `PICKLEBALL_SIX_PACK.md` |
+| **Couple race-car face** | **Red only** (skip hers/light-blue SKU) — list when ready |
 | **Mac designs folder** | Cloud/git cleaned; **Mac is NOT auto-synced** — run `bash scripts/mac_clean_designs_folder.sh` after `git pull` |
-
-## Phone / Mac — clean the Finder sticker mess
-
-```bash
-cd ~/ai
-git fetch origin
-git checkout cursor/pnl-reconcile-mcqueen-129e   # or merge/pull main after PR merges
-git pull
-bash scripts/mac_clean_designs_folder.sh
-open designs/couple_faces
-```
-
-That deletes cute/lego/product_* junk, creates `corvette/` + `pickleball/` + `couple_faces/`, and moves car art into the right folders.
 
 ## Next actions (priority)
 
-1. **Upload couple face tees** (Red + Light Blue) — `COUPLE_RACE_CAR_FACES.md`
-2. **Submit** any On-hold Printify (Etsy hoodie `#27546430.21`; eBay C5 Tan if needed)
-3. Raise eBay tee prices / cut Ad Fee % (promoted fees still eating margin)
-4. **Upload Dinking Problem** @ **$20.99** when back to pickleball
-5. Safer Yellow C5 replacement (no CORVETTE wordmark) when ready
+1. **Upload Six Pack** to Printify → eBay @ **$20.99** S–XL (dark only) → Etsy
+2. Paste Dinking Problem live URLs into listing md + SHOP_STATE
+3. **Submit** any On-hold Printify (Etsy hoodie `#27546430.21`; eBay C5 Tan if needed)
+4. Raise eBay tee prices / cut Ad Fee % (promoted fees still eating margin)
+5. Optional later: Kitchen zone (`PICKLEBALL_WAVE2.md` Design A)
+6. Safer Yellow C5 replacement (no CORVETTE wordmark) when ready
 
 ## July 21 flash update
 
