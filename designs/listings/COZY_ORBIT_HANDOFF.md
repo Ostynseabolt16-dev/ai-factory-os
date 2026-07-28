@@ -21,14 +21,14 @@
 | **Etsy Ads 30d** | **$67 spend · 0 orders** — ads were on pickle cartoons; flip to Corvette winners |
 | **Couple Race Car Face tees** | Art ready locally; owner testing Printify AI / may skip |
 | **IP rule** | No Disney/Pixar/Cars character names; deactivate Smiling Cartoon Face if live |
-| **Dinking Problem tee** | Still **NOT live** — upload when back to pickleball queue |
+| **Dinking Problem tee** | **LIVE on Etsy** Jul 28 — eBay cross-list next; ads off/light 48h |
 | Soft Serve / Eyes / IT WAS IN | Live; cartoon pickle SKUs getting ad views but **0 clicks** (Soft Serve 0% CTR) |
 
 ## Next actions (priority)
 
 1. **Ads cleanup tonight:** OFF all pickle cartoon + Cars face; ON Yellow C5 hoodie (light) + C5 Blueprint/C4/C7 Corvette winners
 2. **Deactivate:** Smiling Cartoon Face · Skyline R34 · Supra · Challenger · dead Dill With It dupes
-3. **Upload Dinking Problem** only if continuing pickleball (type gag — not another cartoon pickle)
+3. **Cross-list Dinking Problem to eBay** @ **$20.99+**; paste Etsy URL into listing md
 4. Soft Serve / Eyes: leave live, **ads off**
 5. Skip: Disney couple faces, more pickle mascots
 6. Safer Yellow C5 replacement (no CORVETTE wordmark) when ready — hoodie sold but tee was taken down before

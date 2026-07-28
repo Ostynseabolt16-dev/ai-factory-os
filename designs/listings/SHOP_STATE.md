@@ -1,7 +1,7 @@
 # CozyOrbitPrints — Shop State (source of truth)
 
 **Etsy shop:** https://www.etsy.com/shop/CozyOrbitPrints  
-**Last updated:** 2026-07-28 (Etsy Yellow C5 hoodie sold organic $52.99 — first Etsy sale in a while; ads were on pickle cartoons = $67/30d / 0 orders; Cars face + pickle characters underperforming)
+**Last updated:** 2026-07-28 (Dinking Problem LIVE on Etsy; Yellow C5 hoodie sold organic $52.99; kill pickle-cartoon ads; Corvette ads only on IP-safer art)
 
 Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any new agent chat to avoid hallucinating order/design state.
 
@@ -16,7 +16,7 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 | **Etsy Yellow C5 hoodie (2-sided)** | **SOLD Jul 28 — $52.99** · **organic / no Etsy Ads** · 11 views in period before sale · good margin motivation |
 | **Etsy Ads (last 30d)** | **$67.10 spend · 0 orders · ROAS 0** — budget mostly on pickle cartoons; spend collapsed after ~Jul 13 |
 | **Ads currently ON (wrong set)** | IT WAS IN, Eyes Up Here, Soft Serve, Dink Life, Dill With It ×2, I Came I Served, Game On paddles, Smiling Cartoon Face |
-| **Dinking Problem** | **NOT listed yet** on Etsy (confirm) — still ready locally |
+| **Dinking Problem** | **LIVE on Etsy** Jul 28 (owner uploaded; paste URL into `PICKLEBALL_DINKING_PROBLEM.md`) · eBay still TODO · ads off/light 48h · Black hero thumbnail |
 | **Play mat** | Top organic views this month (**87 views · 5 favorites**) but historically ~breakeven |
 | **Do tonight** | Flip ads off pickle cartoons + Cars face; put ads only on Corvette converters; deactivate dead/IP-risk SKUs |
 
@@ -65,7 +65,7 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 |------|--------|
 | **eBay Pickleball IT WAS IN** | **SOLD Jul 17 — $18.99** + $3.99 ship; mint; Printify **#27858258.4** ready-to-ship **$14.63**; eBay fees **$3.53** → earnings **$19.45** → **~$4.82 cash** |
 | **Pickleball Soft Serve / Eyes Up Here** | Still **0 sales** (only type+ball gag converted) |
-| **Dinking Problem** | **READY** — `designs/pickleball/pickleball_dinking_problem_UPLOAD_TO_PRINTIFY.png` + `PICKLEBALL_DINKING_PROBLEM.md` — upload next |
+| **Dinking Problem** | **LIVE Etsy** Jul 28 — `PICKLEBALL_DINKING_PROBLEM.md` · eBay cross-list next @ **$20.99+** |
 | **Wave 2 briefs** | `PICKLEBALL_WAVE2.md` — Kitchen / Six pack after Dinking live |
 | **Margin rule** | Next pickleball tees **$20.99+** S–XL — $18.99 is thin |
 | **Ads** | Keep pickleball promoted **light**; Yellow C5 Ad Fee lesson still applies |
@@ -112,13 +112,14 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 | **Print file** | `designs/pickleball/pickleball_it_was_in_UPLOAD_TO_PRINTIFY.png` | Minimal line-call; dark shirts |
 | **P&L** | ~$4.82 cash | fees $3.53 · Printify $14.63 · raise next SKUs to $20.99+ |
 
-### Pickleball Dinking Problem (Jul 21 — READY, not live)
+### Pickleball Dinking Problem (Jul 28 — LIVE Etsy)
 
 | Channel | URL | Notes |
 |---------|-----|-------|
-| **Etsy / eBay** | — | Upload next; paste URLs when live |
+| **Etsy** | *(paste)* | Live Jul 28; Black hero thumbnail |
+| **eBay** | — | Cross-list next @ S–XL **$20.99+** |
 | **Print file** | `designs/pickleball/pickleball_dinking_problem_UPLOAD_TO_PRINTIFY.png` | Type-first white/lime/white; ball below; dark shirts |
-| **Listing** | `designs/listings/PICKLEBALL_DINKING_PROBLEM.md` | eBay S–XL **$20.99** |
+| **Listing** | `designs/listings/PICKLEBALL_DINKING_PROBLEM.md` | Ads off/light 48h |
 | **Compose** | `scripts/compose_pickleball_dinking_problem.py` | No OpenAI |
 
 ---
