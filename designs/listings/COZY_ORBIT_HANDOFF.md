@@ -17,19 +17,21 @@
 
 | Sale / item | Status |
 |-------------|--------|
-| **Couple Race Car Face tees** | **READY** — Red (his) + Light Blue (hers); original vectors; listing `COUPLE_RACE_CAR_FACES.md` |
-| **IP rule** | No Disney/Pixar/Cars character names in listings; eyes+smile only; pull if flagged |
-| **Dinking Problem tee** | Still **READY** — upload when back to pickleball queue |
-| Soft Serve / Eyes / IT WAS IN | Still live; IT WAS IN sold Jul 17 |
+| **Etsy Yellow C5 hoodie** | **SOLD Jul 28 — $52.99 organic** (no Etsy Ads) — first Etsy sale in a while |
+| **Etsy Ads 30d** | **$67 spend · 0 orders** — ads were on pickle cartoons; flip to Corvette winners |
+| **Couple Race Car Face tees** | Art ready locally; owner testing Printify AI / may skip |
+| **IP rule** | No Disney/Pixar/Cars character names; deactivate Smiling Cartoon Face if live |
+| **Dinking Problem tee** | Still **NOT live** — upload when back to pickleball queue |
+| Soft Serve / Eyes / IT WAS IN | Live; cartoon pickle SKUs getting ad views but **0 clicks** (Soft Serve 0% CTR) |
 
 ## Next actions (priority)
 
-1. **Upload couple face tees** to Printify → Etsy + eBay @ **$21.99** S–XL (Red + Light Blue as **two SKUs**)
-2. **Upload Dinking Problem** to Printify → eBay @ **$20.99** S–XL (dark shirts only) → Etsy
-3. Then Kitchen → Six pack (`PICKLEBALL_WAVE2.md`); eBay-first; light ads only
-4. Soft Serve / Eyes: leave live, no heavy ads
-5. Skip for now: memory comic clone, Abraham Lincoln portrait, doodles, goose
-6. Safer Yellow C5 replacement (no CORVETTE wordmark) when ready
+1. **Ads cleanup tonight:** OFF all pickle cartoon + Cars face; ON Yellow C5 hoodie (light) + C5 Blueprint/C4/C7 Corvette winners
+2. **Deactivate:** Smiling Cartoon Face · Skyline R34 · Supra · Challenger · dead Dill With It dupes
+3. **Upload Dinking Problem** only if continuing pickleball (type gag — not another cartoon pickle)
+4. Soft Serve / Eyes: leave live, **ads off**
+5. Skip: Disney couple faces, more pickle mascots
+6. Safer Yellow C5 replacement (no CORVETTE wordmark) when ready — hoodie sold but tee was taken down before
 
 ## July 21 flash update
 
