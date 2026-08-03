@@ -10,8 +10,10 @@
 
 | Sale / item | Status |
 |-------------|--------|
-| **Etsy C7 tee** | **SOLD Aug 2 — Nancy** · White · item $21.99 + $4.75 ship − SUMMERSALE 11% (−$2.42) → **$24.32** paid · Etsy earn **$21.76** · ship by **Aug 7** · Printify pending |
-| Soft Serve + Eyes Up Here | Still **0 sales** as of last Jul 21 note |
+| **Etsy C7 — Nancy Hennarichs** | Order **4133604481** · Printify **$14.25** · paid **$24.32** · earn **$21.76** · ~**$7.51** net · on the way |
+| **Etsy Derick A. Proctor** | **4128217793** · Printify **$36.39** · listing TBD |
+| **eBay catch-up** | Jane = IT WAS IN · + Diane / Alexander / Jonathan (listings TBD from Printify screen) |
+| Soft Serve + Eyes Up Here | Still unconfirmed sales (Alexander $14.63 Printify may be another pickleball) |
 | **Dinking Problem tee** | Still **READY** to upload (see Jul 21) |
 
 ---
