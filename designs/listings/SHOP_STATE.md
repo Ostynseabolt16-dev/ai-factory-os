@@ -27,7 +27,7 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 | Item | Status |
 |------|--------|
 | **eBay Pickleball IT WAS IN** | **SOLD Jul 17 — $18.99** + $3.99 ship; mint; Printify **#27858258.4** ready-to-ship **$14.63**; eBay fees **$3.53** → earnings **$19.45** → **~$4.82 cash** |
-| **Pickleball Soft Serve / Eyes Up Here** | Still **0 sales** (only type+ball gag converted) |
+| **Pickleball Soft Serve / Eyes Up Here** | Still unconfirmed; Alexander Lewis Printify $14.63 may be another pickleball — confirm listing |
 | **Dinking Problem** | **READY** — `designs/pickleball/pickleball_dinking_problem_UPLOAD_TO_PRINTIFY.png` + `PICKLEBALL_DINKING_PROBLEM.md` — upload next |
 | **Wave 2 briefs** | `PICKLEBALL_WAVE2.md` — Kitchen / Six pack after Dinking live |
 | **Margin rule** | Next pickleball tees **$20.99+** S–XL — $18.99 is thin |
