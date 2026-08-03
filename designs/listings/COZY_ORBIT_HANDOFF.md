@@ -1,8 +1,20 @@
-# CozyOrbitPrints — Master Handoff (July 21, 2026)
+# CozyOrbitPrints — Master Handoff (August 3, 2026)
 
 > Shop: https://www.etsy.com/shop/CozyOrbitPrints  
 > **Read this + `SHOP_STATE.md` + `sales_log.csv` at start of every session.**  
 > **MacBook Cursor is NOT auto-synced with phone.** GitHub `ai-factory-os` is **stale** (May factory/stickers) — live shop state lives in these local files.
+
+---
+
+## August 3 flash update
+
+| Sale / item | Status |
+|-------------|--------|
+| **Etsy C7 — Nancy Hennarichs** | Order **4133604481** · Printify **$14.25** · paid **$24.32** · earn **$21.76** · ~**$7.51** net · on the way |
+| **Etsy Derick A. Proctor** | **4128217793** · Printify **$36.39** · listing TBD |
+| **eBay catch-up** | Jane = IT WAS IN · + Diane / Alexander / Jonathan (listings TBD from Printify screen) |
+| Soft Serve + Eyes Up Here | Still unconfirmed sales (Alexander $14.63 Printify may be another pickleball) |
+| **Dinking Problem tee** | Still **READY** to upload (see Jul 21) |
 
 ---
 

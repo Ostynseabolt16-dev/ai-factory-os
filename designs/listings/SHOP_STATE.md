@@ -1,7 +1,7 @@
 # CozyOrbitPrints — Shop State (source of truth)
 
 **Etsy shop:** https://www.etsy.com/shop/CozyOrbitPrints  
-**Last updated:** 2026-07-21 (first pickleball sale — eBay IT WAS IN $18.99 on Jul 17; Soft Serve + Eyes still quiet; Dinking Problem art ready)
+**Last updated:** 2026-08-03 (Printify catch-up: Nancy C7 + 3 missing eBay + Derick Etsy; Jane = IT WAS IN)
 
 Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any new agent chat to avoid hallucinating order/design state.
 
@@ -9,12 +9,25 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 
 ---
 
+## August 3 update (Printify orders catch-up)
+
+| Item | Status |
+|------|--------|
+| **Etsy C7 — Nancy Hennarichs** | Order **4133604481** · Printify **#27546430.22 $14.25** · buyer **$24.32** · Etsy earn **$21.76** · est net **~$7.51** · White · on the way · ship by Aug 7 |
+| **Etsy — Derick A. Proctor** | Order **4128217793** · Printify **#27546430.21 $36.39** · shipped Jul 28 delivered · **listing TBD** (high cost → hoodie / front-back / big size?) |
+| **eBay — Jane Vanderburgh** | Order **08-14913-48676** · Printify **#27858258.4 $14.63** · = **IT WAS IN** pickleball (already logged; buyer name filled) |
+| **eBay — Diane Briscoe** | Order **15-14918-72219** · Printify **#27858258.5 $20.30** · shipped Jul 23 · **listing TBD** |
+| **eBay — Alexander Lewis** | Order **09-14941-42631** · Printify **#27858258.6 $14.63** · shipped Jul 26 · **listing TBD** (cost matches pickleball tee) |
+| **eBay — Jonathan Eme** | Order **09-14947-03091** · Printify **#27858258.7 $18.57** · shipped Jul 28 · **listing TBD** (cost matches prior C5 Bella) |
+| **Already logged (Etsy Printify screen)** | sydney roberts #27546430.20 · michel salaun #27546430.19 |
+| **Need from owner** | Exact eBay/Etsy listing titles + item prices for Derick / Diane / Alexander / Jonathan |
+
 ## July 21 update (post IT WAS IN sale)
 
 | Item | Status |
 |------|--------|
 | **eBay Pickleball IT WAS IN** | **SOLD Jul 17 — $18.99** + $3.99 ship; mint; Printify **#27858258.4** ready-to-ship **$14.63**; eBay fees **$3.53** → earnings **$19.45** → **~$4.82 cash** |
-| **Pickleball Soft Serve / Eyes Up Here** | Still **0 sales** (only type+ball gag converted) |
+| **Pickleball Soft Serve / Eyes Up Here** | Still unconfirmed; Alexander Lewis Printify $14.63 may be another pickleball — confirm listing |
 | **Dinking Problem** | **READY** — `designs/pickleball/pickleball_dinking_problem_UPLOAD_TO_PRINTIFY.png` + `PICKLEBALL_DINKING_PROBLEM.md` — upload next |
 | **Wave 2 briefs** | `PICKLEBALL_WAVE2.md` — Kitchen / Six pack after Dinking live |
 | **Margin rule** | Next pickleball tees **$20.99+** S–XL — $18.99 is thin |
@@ -176,7 +189,7 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 
 ---
 
-## Sales summary (user-reported; Jul 16 = 17+ Etsy + 3 eBay units logged)
+## Sales summary (user-reported; Aug 2 adds Etsy C7 — Nancy)
 
 | Date | Buyer | Listing | Qty | Color | Size | Notes |
 |------|-------|---------|-----|-------|------|-------|
@@ -201,7 +214,12 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 | Jul 15 | Allyn Davis | **Yellow C5** tee (eBay) | 1 | White | — | **Repeat buyer**; Cortland NY; ~$9.97 w/ Printify coupon |
 | Jul 15 | Allyn Davis | **Yellow C5** hoodie 2-sided (eBay) | 1 | Ash | 2XL | **$50.58 earnings**; item `398084925179`; ship by Jul 29; Printify pending |
 | Jul 16 | — | **Pickleball Soft Serve** (listed) | — | — | — | Etsy + eBay live; still 0 sales as of Jul 21 |
-| Jul 17 | — | **Pickleball IT WAS IN** (eBay) | 1 | Mint | — | **First pickleball sale** $18.99 → ~$4.82 cash; Soft Serve + Eyes still 0 |
+| Jul 17 | Jane Vanderburgh | **Pickleball IT WAS IN** (eBay) | 1 | Mint | — | Order 08-14913-48676; Printify #27858258.4 $14.63; ~$4.82 cash |
+| ~Jul 19 | Diane Briscoe | **eBay listing TBD** | 1 | — | — | Printify #27858258.5 $20.30; shipped Jul 23 |
+| ~Jul 22 | Alexander Lewis | **eBay listing TBD** | 1 | — | — | Printify #27858258.6 $14.63; shipped Jul 26; likely pickleball |
+| ~Jul 24 | Jonathan Eme | **eBay listing TBD** | 1 | — | — | Printify #27858258.7 $18.57; shipped Jul 28 |
+| ~Jul 24 | Derick A. Proctor | **Etsy listing TBD** | 1 | — | — | Order 4128217793; Printify #27546430.21 $36.39; shipped Jul 28 |
+| Aug 2 | Nancy Hennarichs | **C7** graphic tee (Etsy) | 1 | White | — | Order 4133604481; Printify $14.25; paid $24.32; earn $21.76; ~$7.51 net |
 
 **Refunded:** Jan — C5 Illustration Vintage — accidental order.
 
