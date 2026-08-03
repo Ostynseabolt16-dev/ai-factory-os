@@ -1,8 +1,18 @@
-# CozyOrbitPrints — Master Handoff (July 21, 2026)
+# CozyOrbitPrints — Master Handoff (August 3, 2026)
 
 > Shop: https://www.etsy.com/shop/CozyOrbitPrints  
 > **Read this + `SHOP_STATE.md` + `sales_log.csv` at start of every session.**  
 > **MacBook Cursor is NOT auto-synced with phone.** GitHub `ai-factory-os` is **stale** (May factory/stickers) — live shop state lives in these local files.
+
+---
+
+## August 3 flash update
+
+| Sale / item | Status |
+|-------------|--------|
+| **Etsy C7 tee** | **SOLD Aug 2 — Nancy** · White · item $21.99 + $4.75 ship − SUMMERSALE 11% (−$2.42) → **$24.32** paid · Etsy earn **$21.76** · ship by **Aug 7** · Printify pending |
+| Soft Serve + Eyes Up Here | Still **0 sales** as of last Jul 21 note |
+| **Dinking Problem tee** | Still **READY** to upload (see Jul 21) |
 
 ---
 

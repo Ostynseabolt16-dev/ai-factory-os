@@ -1,13 +1,22 @@
 # CozyOrbitPrints — Shop State (source of truth)
 
 **Etsy shop:** https://www.etsy.com/shop/CozyOrbitPrints  
-**Last updated:** 2026-07-21 (first pickleball sale — eBay IT WAS IN $18.99 on Jul 17; Soft Serve + Eyes still quiet; Dinking Problem art ready)
+**Last updated:** 2026-08-03 (Etsy C7 sale Aug 2 — Nancy $24.32 / earnings $21.76; SUMMERSALE 11%; White tee; ship by Aug 7)
 
 Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any new agent chat to avoid hallucinating order/design state.
 
 > **NOT kawaii stickers.** Live business = CozyOrbitPrints Corvette apparel (Etsy + eBay + Printify). GitHub `ai-factory-os` is stale May factory scaffolding — ignore it unless explicitly working on factory code.
 
 ---
+
+## August 3 update (Etsy C7 sale)
+
+| Item | Status |
+|------|--------|
+| **Etsy C7 tee** | **SOLD Aug 2** — buyer **Nancy**; White tee; item **$21.99** + ship **$4.75** − **SUMMERSALE 11% (−$2.42)** → buyer paid **$24.32** |
+| **Etsy earnings** | **$21.76** after fees (txn −$1.58 + processing −$0.98 = −$2.56); Printify cost / size / order ID still pending |
+| **Ship by** | **Aug 7** — fulfill via Printify when order syncs |
+| **Signal** | C7 still converting on Etsy with sale coupon; keep ads on C7 winners per Jul 3 list |
 
 ## July 21 update (post IT WAS IN sale)
 
@@ -176,7 +185,7 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 
 ---
 
-## Sales summary (user-reported; Jul 16 = 17+ Etsy + 3 eBay units logged)
+## Sales summary (user-reported; Aug 2 adds Etsy C7 — Nancy)
 
 | Date | Buyer | Listing | Qty | Color | Size | Notes |
 |------|-------|---------|-----|-------|------|-------|
@@ -202,6 +211,7 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 | Jul 15 | Allyn Davis | **Yellow C5** hoodie 2-sided (eBay) | 1 | Ash | 2XL | **$50.58 earnings**; item `398084925179`; ship by Jul 29; Printify pending |
 | Jul 16 | — | **Pickleball Soft Serve** (listed) | — | — | — | Etsy + eBay live; still 0 sales as of Jul 21 |
 | Jul 17 | — | **Pickleball IT WAS IN** (eBay) | 1 | Mint | — | **First pickleball sale** $18.99 → ~$4.82 cash; Soft Serve + Eyes still 0 |
+| Aug 2 | Nancy | **C7** graphic tee (Etsy) | 1 | White | — | **SUMMERSALE 11%**; buyer **$24.32**; Etsy earn **$21.76**; ship by Aug 7; Printify pending |
 
 **Refunded:** Jan — C5 Illustration Vintage — accidental order.
 
