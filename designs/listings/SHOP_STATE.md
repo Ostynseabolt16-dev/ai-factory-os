@@ -1,13 +1,23 @@
 # CozyOrbitPrints — Shop State (source of truth)
 
 **Etsy shop:** https://www.etsy.com/shop/CozyOrbitPrints  
-**Last updated:** 2026-07-21 (first pickleball sale — eBay IT WAS IN $18.99 on Jul 17; Soft Serve + Eyes still quiet; Dinking Problem art ready)
+**Last updated:** 2026-08-04 (Etsy **C6 Atomic Orange** first sale — Tom Clark, Natural 2XL, order `4135579869`)
 
 Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any new agent chat to avoid hallucinating order/design state.
 
 > **NOT kawaii stickers.** Live business = CozyOrbitPrints Corvette apparel (Etsy + eBay + Printify). GitHub `ai-factory-os` is stale May factory scaffolding — ignore it unless explicitly working on factory code.
 
 ---
+
+## August 4 update (C6 Atomic Orange first sale)
+
+| Item | Status |
+|------|--------|
+| **Etsy C6 Atomic Orange** | **SOLD Aug 4 — first sale** · order `4135579869` · Tom Clark · **Natural / 2XL** · item **$26.99** + ship **$4.75** + tax **$1.89** = buyer **$33.63** · Etsy earnings **$28.42** before Printify · ship by **Aug 10** |
+| **Traffic** | Unknown (not shown in sale screenshots) |
+| **Shirt color rule** | Natural is correct for collection art — keep light-only |
+| **Next** | Fulfill / confirm Printify sync; log Printify cost → cash profit; consider light ads only after margin clears **$5+** |
+| **Still blocked** | C6 Variant B plate regen (OpenAI credits); Yellow C5 Etsy still down |
 
 ## July 21 update (post IT WAS IN sale)
 
@@ -176,10 +186,11 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 
 ---
 
-## Sales summary (user-reported; Jul 16 = 17+ Etsy + 3 eBay units logged)
+## Sales summary (user-reported; through Aug 4 = prior + Atomic Orange first sale)
 
 | Date | Buyer | Listing | Qty | Color | Size | Notes |
 |------|-------|---------|-----|-------|------|-------|
+| **Aug 4** | **Tom Clark** | **C6 Atomic Orange** | 1 | **Natural** | **2XL** | **First Atomic Orange sale**; Etsy `4135579869`; earnings **$28.42** before Printify; Granger IA; ship by Aug 10 |
 | Jun 2 | Seth | C5 Illustrated **front/back** | 1 | Ash | M | **1st sale, pre-ads organic**; ~breakeven ($20.99 item, Printify $22.92) |
 | Jun 3 | David | C6 **old design** | 1 | Gold | 2XL | 5★ review; **repeat customer** (returned Jun 25) |
 | Jun 6 | Tavian | C6 **old design** | 1 | White | M | Delivered |
@@ -277,7 +288,7 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 
 **C7 Velocity Yellow (2026-06-15):** Debadged, solid V8. Option E quote via overlay (`--preset velocity-yellow`). Export **`--threshold 235`**. **Light shirts only.**
 
-**C6 Atomic Orange (2026-06-15):** Debadged, no plate, solid V8. Default razor-sharp quote overlay. Export **`--threshold 235`**. **Light shirts only.** Price **$24.99–$27.99**.
+**C6 Atomic Orange (2026-06-15):** Debadged, no plate, solid V8. Default razor-sharp quote overlay. Export **`--threshold 235`**. **Light shirts only.** Price **$24.99–$27.99**. **First Etsy sale Aug 4** (Natural 2XL, $26.99) — validates color variant on light blank.
 
 **C5 Torch Red (2026-06-14):** v3 — debadged nose, front splitter lip, solid V8. Export **`--threshold 235`**. **Light shirts only.** Listing: `designs/listings/C5_TORCH_RED.md`. v1 backup: `backups/c5_torch_red_v1_badge_slop.png`.
 

@@ -13,7 +13,26 @@
 - **Channels:** Etsy (primary historically) + eBay (now converting — re-prioritize)
 - **Proven styles:** (1) Blueprint / technical front+back · (2) Gothic text + side car · (3) minimal pickleball text gag (**IT WAS IN** sold)
 
-## July 21 flash update (tonight)
+## August 4 flash update
+
+| Sale / item | Status |
+|-------------|--------|
+| **Etsy C6 Atomic Orange** | **FIRST SALE Aug 4** — Tom Clark · Natural **2XL** · order `4135579869` · item **$26.99** · buyer **$33.63** · Etsy earn **$28.42** before Printify · ship by Aug 10 |
+| Soft Serve + Eyes Up Here | Still **0 sales** (only IT WAS IN converted among pickleball) |
+| **Dinking Problem tee** | **READY** — still needs Printify → eBay/Etsy upload |
+| Yellow C5 Etsy | Still **taken down** (CORVETTE wordmark) |
+
+## Next actions (priority)
+
+1. **Fulfill Atomic Orange** — confirm Printify sync for order `4135579869`; log Printify cost → cash profit
+2. **Upload Dinking Problem** to Printify → eBay @ **$20.99** S–XL (dark shirts only) → Etsy
+3. Soft Serve / Eyes: leave live, no heavy ads
+4. Ads: winners only; Atomic Orange light/test only after margin clears **$5+** post-Printify
+5. Skip for now: memory comic clone, Abraham Lincoln portrait, doodles, goose
+6. Safer Yellow C5 replacement (no CORVETTE wordmark) when ready
+7. C6 Variant B: regen no-plate when OpenAI credits return (do not plate-fix)
+
+## July 21 flash update
 
 | Sale / item | Status |
 |-------------|--------|
@@ -21,15 +40,6 @@
 | Soft Serve + Eyes Up Here | Still **0 sales** (only clean type+ball gag sold) |
 | **Dinking Problem tee** | **READY** — `designs/pickleball/pickleball_dinking_problem_UPLOAD_TO_PRINTIFY.png` + `PICKLEBALL_DINKING_PROBLEM.md` |
 | Soft Serve / Eyes / IT WAS IN | Still live Etsy + eBay |
-
-## Next actions (priority)
-
-1. **Upload Dinking Problem** to Printify → eBay @ **$20.99** S–XL (dark shirts only) → Etsy
-2. Then Kitchen → Six pack (`PICKLEBALL_WAVE2.md`); eBay-first; light ads only
-3. Soft Serve / Eyes: leave live, no heavy ads
-4. Fulfill IT WAS IN — Printify #27858258.4 ready-to-ship
-5. Skip for now: memory comic clone, Abraham Lincoln portrait, doodles, goose
-6. Safer Yellow C5 replacement (no CORVETTE wordmark) when ready
 
 ## July 16 flash update
 
