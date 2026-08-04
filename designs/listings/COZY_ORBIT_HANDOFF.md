@@ -17,17 +17,17 @@
 
 | Sale / item | Status |
 |-------------|--------|
-| **Etsy C6 Atomic Orange** | **FIRST SALE Aug 4** — Tom Clark · Natural **2XL** · order `4135579869` · item **$26.99** · buyer **$33.63** · Etsy earn **$28.42** before Printify · ship by Aug 10 |
+| **Etsy C6 Atomic Orange** | **FIRST SALE Aug 4** — Tom Clark · Natural **2XL** · order `4135579869` · item **$26.99** · Etsy **$28.42** − Printify `#27546430.23` **$16.04** = **~$12.38 cash** · In production · ship by Aug 10 |
 | Soft Serve + Eyes Up Here | Still **0 sales** (only IT WAS IN converted among pickleball) |
 | **Dinking Problem tee** | **READY** — still needs Printify → eBay/Etsy upload |
 | Yellow C5 Etsy | Still **taken down** (CORVETTE wordmark) |
 
 ## Next actions (priority)
 
-1. **Fulfill Atomic Orange** — confirm Printify sync for order `4135579869`; log Printify cost → cash profit
+1. **Atomic Orange** — Printify `#27546430.23` already **In production** (~$12.38 cash); no action until ship
 2. **Upload Dinking Problem** to Printify → eBay @ **$20.99** S–XL (dark shirts only) → Etsy
 3. Soft Serve / Eyes: leave live, no heavy ads
-4. Ads: winners only; Atomic Orange light/test only after margin clears **$5+** post-Printify
+4. Ads: winners only; Atomic Orange margin clears $5+ — light test OK if you want
 5. Skip for now: memory comic clone, Abraham Lincoln portrait, doodles, goose
 6. Safer Yellow C5 replacement (no CORVETTE wordmark) when ready
 7. C6 Variant B: regen no-plate when OpenAI credits return (do not plate-fix)
