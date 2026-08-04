@@ -13,10 +13,10 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 
 | Item | Status |
 |------|--------|
-| **Etsy C6 Atomic Orange** | **SOLD Aug 4 — first sale** · order `4135579869` · Tom Clark · **Natural / 2XL** · item **$26.99** + ship **$4.75** + tax **$1.89** = buyer **$33.63** · Etsy earnings **$28.42** before Printify · ship by **Aug 10** |
+| **Etsy C6 Atomic Orange** | **SOLD Aug 4 — first sale** · order `4135579869` · Tom Clark · **Natural / 2XL** · item **$26.99** + ship **$4.75** + tax **$1.89** = buyer **$33.63** · Etsy **$28.42** − Printify **#27546430.23 $16.04** (prod $11.29 + ship $4.75) = **~$12.38 cash** · **In production** · ship by **Aug 10** |
 | **Traffic** | Unknown (not shown in sale screenshots) |
 | **Shirt color rule** | Natural is correct for collection art — keep light-only |
-| **Next** | Fulfill / confirm Printify sync; log Printify cost → cash profit; consider light ads only after margin clears **$5+** |
+| **Margin** | **~$12.38** clears $5+ floor — light ads OK to test if CTR looks decent |
 | **Still blocked** | C6 Variant B plate regen (OpenAI credits); Yellow C5 Etsy still down |
 
 ## July 21 update (post IT WAS IN sale)
@@ -190,7 +190,7 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 
 | Date | Buyer | Listing | Qty | Color | Size | Notes |
 |------|-------|---------|-----|-------|------|-------|
-| **Aug 4** | **Tom Clark** | **C6 Atomic Orange** | 1 | **Natural** | **2XL** | **First Atomic Orange sale**; Etsy `4135579869`; earnings **$28.42** before Printify; Granger IA; ship by Aug 10 |
+| **Aug 4** | **Tom Clark** | **C6 Atomic Orange** | 1 | **Natural** | **2XL** | **First Atomic Orange sale**; Etsy `4135579869`; Printify `#27546430.23` **In production** **$16.04** → **~$12.38 cash**; Granger IA; ship by Aug 10 |
 | Jun 2 | Seth | C5 Illustrated **front/back** | 1 | Ash | M | **1st sale, pre-ads organic**; ~breakeven ($20.99 item, Printify $22.92) |
 | Jun 3 | David | C6 **old design** | 1 | Gold | 2XL | 5★ review; **repeat customer** (returned Jun 25) |
 | Jun 6 | Tavian | C6 **old design** | 1 | White | M | Delivered |
