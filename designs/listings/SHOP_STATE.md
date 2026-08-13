@@ -1,13 +1,25 @@
 # CozyOrbitPrints — Shop State (source of truth)
 
 **Etsy shop:** https://www.etsy.com/shop/CozyOrbitPrints  
-**Last updated:** 2026-08-13 (poster P&L confirmed — Etsy earnings $24.07 − Printify $11.97 = **$12.10** cash)
+**Last updated:** 2026-08-13 (C7 tee sale Aug 12 — Etsy earn $23.88 − Printify $14.63 = **$9.25**; poster still $12.10)
 
 Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any new agent chat to avoid hallucinating order/design state.
 
 > **NOT kawaii stickers.** Live business = CozyOrbitPrints Corvette apparel (Etsy + eBay + Printify). GitHub `ai-factory-os` is stale May factory scaffolding — ignore it unless explicitly working on factory code.
 
 ---
+
+## August 13 update (C7 tee + poster week)
+
+| Item | Status |
+|------|--------|
+| **Etsy C7 Illustration tee** | **SOLD Aug 12** — Mitch McNabb; item **$22.00** + ship **$4.75** + tax **$2.47** = buyer **$29.22**; Sport Grey / XL; Chattanooga; ship by **Aug 17** |
+| **Etsy order** | `4143679545` · earnings **$23.88** (txn $1.74 + processing $1.13) |
+| **Printify** | **#27546430.25 ON HOLD** — prod **$9.88** + ship **$4.75** = **$14.63** → cash **$9.25** if hold clears |
+| **Etsy C5 Blueprint Poster** | Aug 11 Michelle — earn **$24.07** − Printify **$11.97** = **$12.10**; **#27546430.24** still ON HOLD |
+| **Week cash (if both clear)** | Poster **$12.10** + C7 **$9.25** ≈ **$21.35** before ads |
+| **IP / hold** | Both orders On Hold — check Printify reason (IP vs manual Submit). C7 is proven old art (Patrick sold); still Corvette-title risk |
+| **Ads** | Keep C7 in winner set; poster stays ads-off until hold + safer art |
 
 ## August 12 update (first poster sale)
 
@@ -188,7 +200,7 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 
 ---
 
-## Sales summary (user-reported; through Aug 11 poster sale)
+## Sales summary (user-reported; through Aug 12 C7 tee)
 
 | Date | Buyer | Listing | Qty | Color | Size | Notes |
 |------|-------|---------|-----|-------|------|-------|
@@ -215,6 +227,7 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 | Jul 16 | — | **Pickleball Soft Serve** (listed) | — | — | — | Etsy + eBay live; still 0 sales as of Jul 21 |
 | Jul 17 | — | **Pickleball IT WAS IN** (eBay) | 1 | Mint | — | **First pickleball sale** $18.99 → ~$4.82 cash; Soft Serve + Eyes still 0 |
 | Aug 11 | Michelle Robinson | **C5 Blueprint Poster** 16×20 Matte | 1 | n/a | 16×20 Vert | **First poster sale** Etsy earn **$24.07** (item $17.99); Printify **#27546430.24 ON HOLD** $11.97 → **$12.10** cash; IP risk |
+| Aug 12 | Mitch McNabb | **C7 Illustration** tee | 1 | Sport Grey | XL | Etsy `4143679545` earn **$23.88**; Printify **#27546430.25 ON HOLD** $14.63 → **$9.25** cash; Chattanooga; ship by Aug 17 |
 
 **Refunded:** Jan — C5 Illustration Vintage — accidental order.
 

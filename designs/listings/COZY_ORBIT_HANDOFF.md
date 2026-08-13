@@ -13,6 +13,14 @@
 - **Channels:** Etsy (primary historically) + eBay (now converting — re-prioritize)
 - **Proven styles:** (1) Blueprint / technical front+back · (2) Gothic text + side car · (3) minimal pickleball text gag (**IT WAS IN** sold)
 
+## August 13 flash update
+
+| Sale / item | Status |
+|-------------|--------|
+| **Etsy C7 Illustration tee** | **SOLD Aug 12 — $22 item** Mitch McNabb; Sport Grey XL; Etsy earn **$23.88**; Printify **#27546430.25 ON HOLD** $14.63 → **$9.25 cash**; order `4143679545`; Chattanooga; ship by Aug 17 |
+| **Etsy C5 Blueprint Poster** | Aug 11 Michelle — earn **$24.07** − Printify **$11.97** = **$12.10**; **#27546430.24** still ON HOLD |
+| **Combined (if both clear)** | ~**$21.35** cash · both Printify holds need resolution |
+
 ## August 12 flash update
 
 | Sale / item | Status |
@@ -32,13 +40,14 @@
 
 ## Next actions (priority)
 
-1. **Printify #27546430.24** — check why On Hold (IP vs needs Submit); fulfill if clear; ship by **Aug 17**
+1. **Printify holds** — `#27546430.24` poster + `#27546430.25` C7 tee; resolve (IP vs Submit); both ship by **Aug 17**
 2. Do **not** pour ads into C5 Blueprint Poster until hold clears + IP-safer art
-3. **Upload Dinking Problem** to Printify → eBay @ **$20.99** S–XL (dark shirts only) → Etsy
-4. Then Kitchen → Six pack (`PICKLEBALL_WAVE2.md`); eBay-first; light ads only
-5. Soft Serve / Eyes: leave live, no heavy ads
-6. Skip for now: memory comic clone, Abraham Lincoln portrait, doodles, goose
-7. Safer Yellow C5 replacement (no CORVETTE wordmark) when ready
+3. Keep C7 Illustration in ads winner set (new sale confirms demand)
+4. **Upload Dinking Problem** to Printify → eBay @ **$20.99** S–XL (dark shirts only) → Etsy
+5. Then Kitchen → Six pack (`PICKLEBALL_WAVE2.md`); eBay-first; light ads only
+6. Soft Serve / Eyes: leave live, no heavy ads
+7. Skip for now: memory comic clone, Abraham Lincoln portrait, doodles, goose
+8. Safer Yellow C5 replacement (no CORVETTE wordmark) when ready
 
 ## July 16 flash update
 
