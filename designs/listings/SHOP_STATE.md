@@ -1,7 +1,7 @@
 # CozyOrbitPrints — Shop State (source of truth)
 
 **Etsy shop:** https://www.etsy.com/shop/CozyOrbitPrints  
-**Last updated:** 2026-08-12 (first poster sale — Etsy C5 Blueprint Poster $28.82 Aug 11; Printify on hold)
+**Last updated:** 2026-08-13 (poster P&L confirmed — Etsy earnings $24.07 − Printify $11.97 = **$12.10** cash)
 
 Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any new agent chat to avoid hallucinating order/design state.
 
@@ -13,9 +13,10 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 
 | Item | Status |
 |------|--------|
-| **Etsy C5 Blueprint Poster** | **SOLD Aug 11 — $28.82** to Michelle Robinson (Wilmington); ship by **Aug 17** |
+| **Etsy C5 Blueprint Poster** | **SOLD Aug 11** — item **$17.99** + ship **$8.94** + tax **$1.89** = buyer **$28.82**; Michelle Robinson (Wilmington); ship by **Aug 17** |
+| **Etsy earnings** | **$24.07** (fees: txn **$1.75** + processing **$1.11**; tax remitted) |
 | **Printify** | **#27546430.24 ON HOLD** — 16"×20" Vertical Matte; prod **$4.98** + ship **$6.99** = **$11.97** |
-| **Est. cash** | ~**$13–14** after ~$3 Etsy fees (best unit margin vs shirts) |
+| **Cash** | **$12.10** ($24.07 − $11.97) if hold clears — still best unit margin vs shirts |
 | **IP risk** | Listing title/art uses **Corvette / blueprint** IP signals — same class of risk as Yellow C5 Etsy takedown. Hold may be Printify trademark review; do not force-submit if flagged for copyright |
 | **Poster lesson** | Low prod cost → fat margin if it clears hold. Treat as demand signal for **safer blueprint wall art** (no CORVETTE wordmark / no OEM diagram scrapes) |
 | **Ads** | Poster was previously **ads OFF** ($0 revenue). Do **not** dump budget into it until hold clears and IP-safer art exists |
@@ -213,7 +214,7 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 | Jul 15 | Allyn Davis | **Yellow C5** hoodie 2-sided (eBay) | 1 | Ash | 2XL | **$50.58 earnings**; item `398084925179`; ship by Jul 29; Printify pending |
 | Jul 16 | — | **Pickleball Soft Serve** (listed) | — | — | — | Etsy + eBay live; still 0 sales as of Jul 21 |
 | Jul 17 | — | **Pickleball IT WAS IN** (eBay) | 1 | Mint | — | **First pickleball sale** $18.99 → ~$4.82 cash; Soft Serve + Eyes still 0 |
-| Aug 11 | Michelle Robinson | **C5 Blueprint Poster** 16×20 Matte | 1 | n/a | 16×20 Vert | **First poster sale** Etsy $28.82; Printify **#27546430.24 ON HOLD** $11.97; est. ~$13–14 cash; IP risk |
+| Aug 11 | Michelle Robinson | **C5 Blueprint Poster** 16×20 Matte | 1 | n/a | 16×20 Vert | **First poster sale** Etsy earn **$24.07** (item $17.99); Printify **#27546430.24 ON HOLD** $11.97 → **$12.10** cash; IP risk |
 
 **Refunded:** Jan — C5 Illustration Vintage — accidental order.
 

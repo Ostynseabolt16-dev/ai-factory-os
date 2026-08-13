@@ -17,7 +17,7 @@
 
 | Sale / item | Status |
 |-------------|--------|
-| **Etsy C5 Blueprint Poster** | **FIRST POSTER SALE Aug 11 — $28.82** Michelle Robinson; Printify **#27546430.24 ON HOLD** ($4.98+$6.99=$11.97) → ~**$13–14 cash** if it clears |
+| **Etsy C5 Blueprint Poster** | **FIRST POSTER SALE Aug 11** — item **$17.99**; Etsy earn **$24.07**; Printify **#27546430.24 ON HOLD** $11.97 → **$12.10 cash** if it clears |
 | **IP** | Corvette/blueprint poster — copyright/trademark risk; same lane as Yellow C5 Etsy takedown. Resolve hold before celebrating; plan safer wall-art redesign |
 | **Margin** | Poster unit economics crush shirts — keep the SKU class, strip brand wordmarks |
 
