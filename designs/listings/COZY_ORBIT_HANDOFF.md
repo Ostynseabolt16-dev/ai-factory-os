@@ -18,7 +18,7 @@
 | Sale / item | Status |
 |-------------|--------|
 | **Logged Jul 21–Aug 20** | 10 new orders in `sales_log.csv` — see `SHOP_STATE` Aug 23 section |
-| **Channel totals** | Etsy **24 sales** · eBay **9 sales** · eBay 90d **$274.15** · Etsy **22 active / 32 inactive** |
+| **Channel totals** | Etsy **24 sales** · eBay **9 sales** · eBay 90d **$274.15** · Etsy **22 active / 32 inactive** · eBay **20 active** |
 | **Etsy IP wave (Aug 13)** | Mass Corvette apparel removed (IP policy, appeal N/A). **Do not relist** Corvette-named tees on Etsy tonight. |
 | **eBay** | **0 takedowns** — keep Corvette sales here; fix $16.47 + Ad Fee losses |
 | **Etsy still converting** | Poster / kids / whatever Corvette titles remain — watch IP risk; pickleball stack is most of the active catalog |

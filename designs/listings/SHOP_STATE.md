@@ -1,7 +1,7 @@
 # CozyOrbitPrints — Shop State (source of truth)
 
 **Etsy shop:** https://www.etsy.com/shop/CozyOrbitPrints  
-**Last updated:** 2026-08-23 (18-day catch-up — logged Jul 21–Aug 20 Etsy + eBay sales from Printify/screenshots)
+**Last updated:** 2026-08-23 (sales catch-up + Etsy Corvette IP takedown wave Aug 13 — 22 active / 32 inactive; eBay 0 takedowns)
 
 Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any new agent chat to avoid hallucinating order/design state.
 
