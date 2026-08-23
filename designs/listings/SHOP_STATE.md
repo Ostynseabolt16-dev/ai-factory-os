@@ -13,13 +13,12 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 
 | Item | Status |
 |------|--------|
-| **Bar Liquor? Ya If She Lets Me** | **READY** — `designs/bar/bar_liquor_if_she_lets_me_UPLOAD_TO_PRINTIFY.png` + `BAR_LIQUOR_IF_SHE_LETS_ME.md` |
-| **Bar 2 Girls Away Threesome** | **READY** — `designs/bar/bar_two_girls_away_threesome_UPLOAD_TO_PRINTIFY.png` + `BAR_TWO_GIRLS_AWAY.md` |
-| **Bar I Bark For Bad Bitches** | **READY** — `designs/bar/bar_i_bark_for_bad_bitches_UPLOAD_TO_PRINTIFY.png` + `BAR_I_BARK_FOR_BAD_BITCHES.md` |
+| **Bar Liquor? Ya If She Lets Me** | **LIVE Etsy + eBay** Aug 23 · eBay **$18.99** (owner: cheaper fees than Etsy) · paste URLs when handy |
+| **Bar 2 Girls Away Threesome** | **READY** — next upload · `BAR_TWO_GIRLS_AWAY.md` |
+| **Bar I Bark For Bad Bitches** | **READY** — after #2 · `BAR_I_BARK_FOR_BAD_BITCHES.md` |
 | **Wave brief** | `BAR_TEXT_WAVE1.md` · compose `scripts/compose_bar_meme_tees.py` |
-| **Channel** | **eBay-first** (adult language); Etsy optional / may flag |
-| **Colors** | Black, Charcoal, Navy only · **$20.99+** S–XL |
-| **Upload order** | Liquor → 2 Girls Away → I Bark |
+| **Margin note** | $18.99 matched IT WAS IN (~$4.82 cash) — OK for test; keep **Ad Fee light/off** or raise if promoted |
+| **Next** | Make **2 Girls Away** (Etsy + eBay) · white ink on dark (or black ink on light) |
 
 ## July 21 update (post IT WAS IN sale)
 

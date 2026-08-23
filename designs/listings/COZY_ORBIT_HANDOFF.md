@@ -24,10 +24,10 @@
 
 ## Next actions (priority)
 
-1. **Upload bar text wave** (`BAR_TEXT_WAVE1.md`) — Liquor → 2 Girls Away → I Bark · Printify → **eBay-first** @ **$20.99** S–XL (dark only)
+1. **Bar Liquor LIVE** Etsy + eBay @ **$18.99** eBay — ads light/off; next = **2 Girls Away** then **I Bark**
 2. **Upload Dinking Problem** if still not live → eBay @ **$20.99** S–XL → Etsy
 3. Soft Serve / Eyes: leave live, no heavy ads
-4. Kitchen / Six pack (`PICKLEBALL_WAVE2.md`) after bar + Dinking live
+4. Kitchen / Six pack (`PICKLEBALL_WAVE2.md`) after bar wave baking
 5. Skip for now: memory comic clone, Abraham Lincoln portrait, doodles, goose, Jumpman/IP memes
 6. Safer Yellow C5 replacement (no CORVETTE wordmark) when ready
 

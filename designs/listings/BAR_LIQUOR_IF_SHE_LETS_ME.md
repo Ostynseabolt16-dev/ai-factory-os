@@ -1,6 +1,6 @@
 # Bar Tee — “Liquor? Ya If She Lets Me”
 
-**Status:** READY FOR UPLOAD (Aug 23, 2026)  
+**Status:** **LIVE** Aug 23, 2026 — Etsy + eBay  
 **Niche:** Funny bar / drinking pun text tee
 
 **Files:**
@@ -33,17 +33,23 @@ Classic bar-pun tee — bold white type, soft unisex fit. Wear it out and let pe
 - Best on dark shirt colors
 
 ## Pricing
-- eBay S–XL **$20.99**, 2XL **$22.99**, 3XL **$23.99**
-- Etsy **$21.99+** if marketplace allows mature pun titles
-- Promoted light first 48–72h
+- eBay S–XL **$18.99** (owner: cheaper fees than Etsy; same floor as IT WAS IN)
+- Etsy live (price as listed by owner)
+- Promoted light / off first 48–72h — $18.99 is thin if Ad Fee hits
+
+## Live URLs
+| Channel | URL |
+|---------|-----|
+| **Etsy** | *(paste)* |
+| **eBay** | *(paste)* |
 
 ## Shirt colors
-Black, Charcoal, Navy. **Not** light shirts.
+Black, Charcoal, Navy (white ink). Light shirts OK only if ink is black.
 
 ## Upload checklist
-- [ ] Printify: upload `bar_liquor_if_she_lets_me_UPLOAD_TO_PRINTIFY.png`
-- [ ] Dark colors only
-- [ ] eBay live @ **$20.99+** → paste URL
-- [ ] Etsy optional (mature language risk) → paste URL
+- [x] Printify uploaded (owner Printify text / product)
+- [x] eBay live @ **$18.99** Aug 23
+- [x] Etsy live Aug 23
+- [ ] Paste live URLs above
 - [ ] Ads off / light 48h
 - [ ] Log first sale in `sales_log.csv`
