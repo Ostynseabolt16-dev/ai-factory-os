@@ -25,6 +25,8 @@
 | **Soft Serve + Eyes** | Still **0 sales** |
 | **Dinking Problem** | **LIVE + sold** eBay Aug 13 |
 | **Reviews** | **All 5★** — Etsy 5.0 (8) · eBay 100% positive (`autoculturetees`) |
+| **Etsy deactivate pass** | Challenger · Supra · R34 · Yellow C6 hoodie · C7 V8 hoodie **off**. **C8 Night Run kept** (watch IP). |
+| **eBay thumbs** | Many thumbnails refreshed Aug 23 night — next: price/Ad Fee so tees clear **$5+ cash** |
 
 ## Next actions (priority)
 

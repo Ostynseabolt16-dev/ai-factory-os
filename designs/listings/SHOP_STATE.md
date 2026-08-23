@@ -1,7 +1,7 @@
 # CozyOrbitPrints — Shop State (source of truth)
 
 **Etsy shop:** https://www.etsy.com/shop/CozyOrbitPrints  
-**Last updated:** 2026-08-23 (sales catch-up + Etsy Corvette IP takedown wave Aug 13 — 22 active / 32 inactive; eBay 0 takedowns)
+**Last updated:** 2026-08-23 (deactivate pass + eBay thumbs — Challenger/Supra/R34/C6 hoodie/C7 hoodie off; **C8 Night Run** kept; eBay thumbnails refreshed)
 
 Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any new agent chat to avoid hallucinating order/design state.
 
@@ -17,7 +17,7 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 | **Channel totals (owner Aug 23)** | **Etsy 24 sales** · **eBay 9 sales** · eBay 90-day sales **$274.15** · eBay **20 active** / 1 unsold |
 | **Etsy listings now** | **22 active** · **32 inactive** (IP removals) · 0 draft/expired/sold out |
 | **Etsy IP takedown wave** | **Aug 13, 2026** — many Corvette tees/hoodies removed for **Intellectual Property Policy**; appeal **Not available**. Earlier: **Jul 7** Yellow/wordmark C5-style removal. Page 1–2 examples: C4, C5 gothic, C5 F+B, C6 Atomic Orange, C7 red/illustration, C8 Stingray, Yellow C5 hoodie, etc. |
-| **Still live on Etsy (sample)** | C5 Blueprint **Poster** · Kids C5 tee · Kids play mat · Soft Serve · IT WAS IN · Eyes Up Here · Dinking Problem · other pickleball SKUs (Dill / Weekend Forecast / etc.) |
+| **Still live on Etsy (sample)** | **C8 Night Run** (kept by owner — IP risk) · C5 Blueprint **Poster** · Kids C5 tee (if still active) · Kids play mat · Soft Serve · IT WAS IN · Eyes Up Here · Dinking Problem · other pickleball SKUs |
 | **eBay** | **0 takedowns** — Corvette demand still converting there (C7, Red C7, Yellow C5, C5 old art, Dinking) |
 | **Etsy hits while away** | C7 Illustration (Mitch) · C5 Blueprint **Poster** (Michelle) · **C6 Atomic Orange** (Tom — listing later IP-removed) · C7 Red/Gothic (Nancy) · Yellow C5 **hoodie** (Derick — listing later IP-removed) |
 | **eBay hits** | **Dinking Problem** sold Aug 13 (~**$5.42** cash) · C7 Illustration Lisa · Red C7 Alexander · Yellow C5 Diane · C5 old art Jonathan |
