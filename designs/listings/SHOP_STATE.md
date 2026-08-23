@@ -24,9 +24,10 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 | **Dinking Problem** | **LIVE Etsy + eBay** · eBay sold Aug 13 item `398222322676` |
 | **Pickleball Soft Serve / Eyes** | Still **0 sales** as of Aug 23 (other pickle SKUs listed; conversion TBD) |
 | **eBay margin trap** | **$16.47** tees + Promoted Ad Fee ≈ **cash negative** (Lisa C7, Alexander Red C7 both **~−$0.54**; Diane Yellow C5 **~−$0.73**). Raise price and/or cut Ad Fee % tonight. |
-| **Etsy Ads (on-site, Jul 23–Aug 22)** | Budget **$10/day** but only **$11.48** spent / 30d · **1,424** views · **20** clicks · **0 orders · $0 · ROAS 0**. Almost all **pickleball** (Corvette winners IP-removed). Underdelivery = thin auction fit. |
-| **Etsy Offsite Ads (Jul 23–Aug 22)** | **Worth keeping ON.** **$109.74** attributed revenue · **4** orders · **4** new buyers · **$0** fees in-window · **101** clicks (Google ~87%, Partners ~8%, Bing ~5%). Mostly **indirect** attribution. Kids play mat got clicks/0 orders in listing table — Corvette historically converted offsite (Jun orders). |
-| **Tonight priority** | (1) **Do not relist** removed Corvette art on Etsy under Corvette/Chevy wordmarks · (2) Fix eBay $16.47 / Ad Fee on C7 + Yellow C5 · (3) **Pause on-site Etsy Ads** dead pickleball SKUs (or all on-site) — **leave Offsite Ads ON** · (4) Channel split: **eBay = Corvette**, **Etsy = pickleball organic + Offsite** |
+| **Etsy listing audit (last 30d views)** | **424** listing views · **1.88**/visit. Traffic: Etsy **80%** (180) · you **16%** (36; Ads only **10**). Only converter on this board: **C5 Blueprint Poster** (38 views → 1 order / $17.99). **Play mat** = view hog (136 / 0 orders). |
+| **Delete / deactivate tonight** | **Challenger Hellcat** · **Supra MK4** · **Skyline R34** (IP + shop rule: don’t push) · remaining Etsy **Corvette apparel** still live (**C8 Night Run**, **Yellow C6 hoodie**, **C7 V8 hoodie**, consider **Kids C5**) — IP wave will likely hit these next. |
+| **Keep** | **C5 Blueprint Poster** (only sale) · **IT WAS IN** · **Dinking Problem** · Soft Serve / Eyes (live, no ads) · thin the rest of pickleball later |
+| **Thumbnail / cleanup** | Play mat: change hero or deactivate (curiosity clicks, 0 buys). Pause/deactivate **0-view** pickleball clutter (Meeting/Dink Forecast/Dink Life/Smiling Face/extra Dill). Don’t burn on-site Ads. **Offsite ON**. |
 | **Still blocked** | C6 Variant B plate regen (needs OpenAI credits + explicit OK) · no CORVETTE wordmark relist on Etsy · avoid “Corvette / Stingray / Chevy” in Etsy titles until safer art strategy |
 | **Reviews (Aug 23)** | **All 5★** — Etsy **5.0 / 8** · eBay **100% positive** (7 pos / 0 neg) on `autoculturetees` |
 
@@ -379,12 +380,11 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 **Why $10/day doesn’t spend:** Etsy only buys auctions when it thinks the listing can compete. After the **Aug 13 Corvette IP wipe**, ads are stuck on **new/unproven pickleball** with weak CTR and 0 conversions — so delivery collapses. Cap ≠ spend.
 
 **Ads action (tonight):**
-1. **Pause on-site** Soft Serve, Dill, Dink Life, I Came I Served, and other 0-order / 0-click pickleball **Etsy Ads** SKUs.
-2. **Optional keep light on-site:** IT WAS IN only — or pause **all on-site Etsy Ads** until a pickleball listing gets an organic sale.
-3. **Leave Offsite Ads ON** — last 30d attributed **$109.74 / 4 orders / $0 fees** (mostly indirect; Google-heavy). Different product from on-site Ads.
-4. **Do not** raise on-site budget — won’t fix underdelivery.
-5. **Do not** re-enable dead Corvette Etsy URLs for on-site Ads.
-6. Put margin work on **eBay Corvette** promoted % / price (where demand still clears).
+1. **Finish pausing on-site** — still **ON** as of this screenshot: IT WAS IN, Funny Pickleball Balls (Eyes), Soft Serve, Dill With It, Dinking Problem. Flip those five off.
+2. **Already OFF:** Dink Life, I Came I Served, Paddles and Ball, Smiling Cartoon Face, Dill Paddleball, Weekend Forecast, Meeting Could Have Been a Dink, Pickleball Pro.
+3. **Leave Offsite Ads ON** — last 30d attributed **$109.74 / 4 orders / $0 fees**.
+4. **Do not** raise on-site budget; **do not** re-enable dead Corvette Etsy URLs for on-site Ads.
+5. Put margin work on **eBay Corvette** promoted % / price.
 
 ### Etsy Offsite Ads (2026-08-23 — last 30 days Jul 23–Aug 22)
 

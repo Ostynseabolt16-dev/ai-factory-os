@@ -29,11 +29,11 @@
 ## Next actions (priority)
 
 1. **Freeze Corvette Etsy uploads** — IP wave Aug 13; appeals not available; don’t recreate removed titles
-2. **eBay margin fix** — raise $16.47 C7 / Red C7 (and check Yellow C5 Ad Fee %) so next sale clears **$5+ cash**
-3. **Etsy Ads vs Offsite:** pause dead **on-site** pickleball Ads ($11.48/30d, 0 orders) — **keep Offsite Ads ON** ($109.74 / 4 orders / $0 fees last 30d)
-4. **Channel split:** eBay = Corvette volume · Etsy = pickleball organic + Offsite (+ poster/kids if they survive)
-5. Safer no-wordmark Corvette art for a future Etsy test — only when ready; OpenAI gens need explicit OK
-6. Skip: memory comic, Lincoln, doodles, goose
+2. **Deactivate on Etsy:** Challenger · Supra · R34 · leftover Corvette apparel (C8 Night Run, Yellow C6 hoodie, C7 hoodie; Kids C5 if you want safer)
+3. **eBay margin fix** — raise $16.47 C7 / Red C7 (and check Yellow C5 Ad Fee %) so next sale clears **$5+ cash**
+4. **Etsy Ads vs Offsite:** on-site Ads off — **keep Offsite ON**; play mat thumbnail fix or deactivate (136 views / 0 orders)
+5. **Keep:** C5 Blueprint Poster · IT WAS IN · Dinking Problem · Soft Serve/Eyes no ads
+6. Skip: memory comic, Lincoln, doodles, goose, OpenAI gens unless explicit OK
 
 ## July 21 flash update (historical)
 
