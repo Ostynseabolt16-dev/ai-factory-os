@@ -18,18 +18,21 @@
 | Sale / item | Status |
 |-------------|--------|
 | **Logged Jul 21–Aug 20** | 10 new orders in `sales_log.csv` — see `SHOP_STATE` Aug 23 section |
-| **Etsy winners while away** | C7 Illustration · C6 Atomic Orange · C7 Red/Gothic · Yellow C5 hoodie · C5 Blueprint **poster** |
-| **eBay** | Dinking Problem sold Aug 13 (~$5.42) · cheap **$16.47** C7 tees + Ad Fee = **cash loss** — fix price/ad % |
+| **Channel totals** | Etsy **24 sales** · eBay **9 sales** · eBay 90d **$274.15** · Etsy **22 active / 32 inactive** |
+| **Etsy IP wave (Aug 13)** | Mass Corvette apparel removed (IP policy, appeal N/A). **Do not relist** Corvette-named tees on Etsy tonight. |
+| **eBay** | **0 takedowns** — keep Corvette sales here; fix $16.47 + Ad Fee losses |
+| **Etsy still converting** | Poster / kids / whatever Corvette titles remain — watch IP risk; pickleball stack is most of the active catalog |
 | **Soft Serve + Eyes** | Still **0 sales** |
-| **Dinking Problem** | **LIVE + sold** (no longer upload-next) |
+| **Dinking Problem** | **LIVE + sold** eBay Aug 13 |
 
 ## Next actions (priority)
 
-1. **eBay margin fix** — raise $16.47 C7 / Red C7 (and check Yellow C5 Ad Fee %) so next sale clears **$5+ cash**
-2. Etsy Ads hygiene — keep spend on C4 / C7 / Yellow C5 / C5 Blueprint / Atomic Orange; paste fresh ROAS into SHOP_STATE
-3. Wave 2 pickleball (Kitchen / Six pack) when ready — Soft Serve / Eyes: leave live, light/no ads
-4. Safer Yellow C5 replacement (no CORVETTE wordmark) when ready — eBay still selling wordmark art
-5. Skip: memory comic, Lincoln, doodles, goose, OpenAI gens unless credits + explicit OK
+1. **Freeze Corvette Etsy uploads** — IP wave Aug 13; appeals not available; don’t recreate removed titles
+2. **eBay margin fix** — raise $16.47 C7 / Red C7 (and check Yellow C5 Ad Fee %) so next sale clears **$5+ cash**
+3. **Channel split:** eBay = Corvette volume · Etsy = pickleball (+ poster/kids only if they survive)
+4. Wave 2 / polish pickleball titles on Etsy; Soft Serve / Eyes light ads only
+5. Safer no-wordmark Corvette art for a future Etsy test — only when ready; OpenAI gens need explicit OK
+6. Skip: memory comic, Lincoln, doodles, goose
 
 ## July 21 flash update (historical)
 

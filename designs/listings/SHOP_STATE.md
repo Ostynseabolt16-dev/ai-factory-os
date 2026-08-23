@@ -14,14 +14,28 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 | Item | Status |
 |------|--------|
 | **Sales logged** | **10 new rows** in `sales_log.csv` (Jul 21–Aug 20) + Allyn hoodie Printify cost filled (`#27858258.3` **$32.49**) |
-| **Etsy hits** | C7 Illustration (Mitch) · C5 Blueprint **Poster** (Michelle) · **C6 Atomic Orange** (Tom) · C7 Red/Gothic (Nancy) · Yellow C5 **hoodie** (Derick **~$18.87** cash) |
+| **Channel totals (owner Aug 23)** | **Etsy 24 sales** · **eBay 9 sales** · eBay 90-day sales **$274.15** · eBay **20 active** / 1 unsold |
+| **Etsy listings now** | **22 active** · **32 inactive** (IP removals) · 0 draft/expired/sold out |
+| **Etsy IP takedown wave** | **Aug 13, 2026** — many Corvette tees/hoodies removed for **Intellectual Property Policy**; appeal **Not available**. Earlier: **Jul 7** Yellow/wordmark C5-style removal. Page 1–2 examples: C4, C5 gothic, C5 F+B, C6 Atomic Orange, C7 red/illustration, C8 Stingray, Yellow C5 hoodie, etc. |
+| **Still live on Etsy (sample)** | C5 Blueprint **Poster** · Kids C5 tee · Kids play mat · Soft Serve · IT WAS IN · Eyes Up Here · Dinking Problem · other pickleball SKUs (Dill / Weekend Forecast / etc.) |
+| **eBay** | **0 takedowns** — Corvette demand still converting there (C7, Red C7, Yellow C5, C5 old art, Dinking) |
+| **Etsy hits while away** | C7 Illustration (Mitch) · C5 Blueprint **Poster** (Michelle) · **C6 Atomic Orange** (Tom — listing later IP-removed) · C7 Red/Gothic (Nancy) · Yellow C5 **hoodie** (Derick — listing later IP-removed) |
 | **eBay hits** | **Dinking Problem** sold Aug 13 (~**$5.42** cash) · C7 Illustration Lisa · Red C7 Alexander · Yellow C5 Diane · C5 old art Jonathan |
-| **Dinking Problem** | **LIVE + sold** eBay item `398222322676` — no longer “upload next” |
-| **Pickleball Soft Serve / Eyes** | Still **0 sales** as of Aug 23 |
+| **Dinking Problem** | **LIVE Etsy + eBay** · eBay sold Aug 13 item `398222322676` |
+| **Pickleball Soft Serve / Eyes** | Still **0 sales** as of Aug 23 (other pickle SKUs listed; conversion TBD) |
 | **eBay margin trap** | **$16.47** tees + Promoted Ad Fee ≈ **cash negative** (Lisa C7, Alexander Red C7 both **~−$0.54**; Diane Yellow C5 **~−$0.73**). Raise price and/or cut Ad Fee % tonight. |
-| **What’s converting** | Old C7 art (Etsy + eBay), Yellow C5 (tee + hoodie), C6 Atomic Orange, C5 Blueprint (tee history + new poster), pickleball type gags (IT WAS IN + Dinking) |
-| **Tonight priority** | (1) Fix eBay $16.47 / Ad Fee on C7 + Yellow C5 · (2) Ads hygiene on Etsy winners · (3) Optional Wave 2 pickleball — Soft Serve/Eyes stay light ads |
-| **Still blocked** | C6 Variant B plate regen (needs OpenAI credits + explicit OK) · no CORVETTE wordmark relist on Etsy Yellow C5 |
+| **Tonight priority** | (1) **Do not relist** removed Corvette art on Etsy under Corvette/Chevy wordmarks · (2) Fix eBay $16.47 / Ad Fee on C7 + Yellow C5 · (3) Treat **eBay = Corvette channel**, **Etsy = pickleball + poster/kids/safer** until IP-safe Corvette variants exist · (4) Ads: don’t dump budget into dead Etsy Corvette URLs |
+| **Still blocked** | C6 Variant B plate regen (needs OpenAI credits + explicit OK) · no CORVETTE wordmark relist on Etsy · avoid “Corvette / Stingray / Chevy” in Etsy titles until safer art strategy |
+
+### IP / listing risk (Aug 23 — critical)
+
+| Fact | Action |
+|------|--------|
+| Etsy removed a large batch of **Corvette-named** apparel Aug 13 (IP policy; no appeal) | Assume **“Corvette” + car art** is toxic on Etsy right now |
+| Yellow C5 with **CORVETTE** lettering already taken down Jul 7 / earlier | Never relist that master on Etsy |
+| eBay still selling Corvette listings with **0 removals** | Keep fulfilling; fix margins; plan debadged / no-wordmark replacements before heavy spend |
+| Shop still has **Kids C5** + **C5 Blueprint Poster** live | Watch closely — same brand risk; don’t scale ads on anything with Corvette in the title |
+| Multiple violations warning | Etsy may hit Star Seller / suspend — freeze new Corvette Etsy uploads tonight |
 
 ### Catch-up P&L snapshot (new rows only, cash after Printify)
 
@@ -90,7 +104,7 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 | Channel | URL | Notes |
 |---------|-----|-------|
 | **eBay** | https://www.ebay.com/itm/398222322676 | Item `398222322676` · **sold Aug 13** Sport Grey L @ **$19.99** + $3.99 → earn **$20.05** → cash ~**$5.42** |
-| **Etsy** | — | Confirm live URL next session if not already cross-listed |
+| **Etsy** | Live in shop (Aug 23 active list) | Title ~“I Might Have a Dinking Problem…” · $20.99–$24.99 |
 | **Print file** | `designs/pickleball/pickleball_dinking_problem_UPLOAD_TO_PRINTIFY.png` | Type-first; Printify `#27858258.8` **$14.63** on sale |
 | **Listing** | `designs/listings/PICKLEBALL_DINKING_PROBLEM.md` | Prefer **$20.99+** next; $19.99 cleared ~$5 |
 | **Compose** | `scripts/compose_pickleball_dinking_problem.py` | No OpenAI |
@@ -378,12 +392,14 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 
 ## eBay snapshot (updated 2026-08-23)
 
+- **Active:** **20** listings · **9** orders · 1 unsold · **90-day total $274.15**
+- **Takedowns:** **0** (Aug 23 owner check) — Corvette channel while Etsy IP-wiped apparel
 - **Active / promoted:** listings live; **Ad Fee General / Promoted** is eating thin tees.
 - **Sales (through Aug 20):** Michael C5 · Allyn Yellow C5 tee + hoodie · Jane IT WAS IN · Diane Yellow C5 · Alexander Red C7 · Jonathan C5 · Vincent **Dinking Problem** · Lisa C7 Illustration.
 - **Hard lesson (Aug 23):** **$16.47** item + ~$2.92 Ad Fee + Printify ~$14.63 = **cash loss** (Lisa + Alexander). Diane @ $23.92 still ~−$0.73 with Ad Fee $3.88.
 - **Fix now:** raise eBay C7 / Red C7 / Yellow C5 tee prices **and/or** cut promoted % until next sale clears **$5+ cash without coupons**. Hoodies + ~$20 pickleball OK.
 - **Dinking Problem:** live item `398222322676`; sold once @ $19.99 → ~$5.42 (no Ad Fee line on that order).
-- **IP note:** Yellow C5 art includes **CORVETTE** lettering — Etsy taken down; eBay still selling — plan safer replacement before heavy ad spend.
+- **IP note:** Yellow C5 art includes **CORVETTE** lettering — Etsy down; eBay can still get hit later — prefer debadged replacements before heavy ad spend.
 
 ## Weekend promo test (2026-06-19 late)
 
