@@ -30,8 +30,8 @@
 
 1. **Freeze Corvette Etsy uploads** — IP wave Aug 13; appeals not available; don’t recreate removed titles
 2. **eBay margin fix** — raise $16.47 C7 / Red C7 (and check Yellow C5 Ad Fee %) so next sale clears **$5+ cash**
-3. **Channel split:** eBay = Corvette volume · Etsy = pickleball (+ poster/kids only if they survive)
-4. Wave 2 / polish pickleball titles on Etsy; Soft Serve / Eyes light ads only
+3. **Etsy Ads:** $10/day cap but only **~$11.48/30d** spent, **0 ad orders** on pickleball — pause dead SKUs (or all ads); don’t raise budget
+4. **Channel split:** eBay = Corvette volume · Etsy = pickleball organic (+ poster/kids if they survive)
 5. Safer no-wordmark Corvette art for a future Etsy test — only when ready; OpenAI gens need explicit OK
 6. Skip: memory comic, Lincoln, doodles, goose
 

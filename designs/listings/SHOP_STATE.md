@@ -24,7 +24,8 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 | **Dinking Problem** | **LIVE Etsy + eBay** · eBay sold Aug 13 item `398222322676` |
 | **Pickleball Soft Serve / Eyes** | Still **0 sales** as of Aug 23 (other pickle SKUs listed; conversion TBD) |
 | **eBay margin trap** | **$16.47** tees + Promoted Ad Fee ≈ **cash negative** (Lisa C7, Alexander Red C7 both **~−$0.54**; Diane Yellow C5 **~−$0.73**). Raise price and/or cut Ad Fee % tonight. |
-| **Tonight priority** | (1) **Do not relist** removed Corvette art on Etsy under Corvette/Chevy wordmarks · (2) Fix eBay $16.47 / Ad Fee on C7 + Yellow C5 · (3) Treat **eBay = Corvette channel**, **Etsy = pickleball + poster/kids/safer** until IP-safe Corvette variants exist · (4) Ads: don’t dump budget into dead Etsy Corvette URLs |
+| **Etsy Ads (Jul 23–Aug 22)** | Budget **$10/day** but only **$11.48** spent / 30d · **1,424** views · **20** clicks · **0 orders · $0 rev · ROAS 0**. Ads are almost all **pickleball** (Corvette winners IP-removed). Underdelivery = thin auction fit, not a broken budget. |
+| **Tonight priority** | (1) **Do not relist** removed Corvette art on Etsy under Corvette/Chevy wordmarks · (2) Fix eBay $16.47 / Ad Fee on C7 + Yellow C5 · (3) **Etsy Ads:** pause dead pickleball ad SKUs; don’t expect $10/day spend · (4) Channel split: **eBay = Corvette**, **Etsy = pickleball organic/light ads** |
 | **Still blocked** | C6 Variant B plate regen (needs OpenAI credits + explicit OK) · no CORVETTE wordmark relist on Etsy · avoid “Corvette / Stingray / Chevy” in Etsy titles until safer art strategy |
 | **Reviews (Aug 23)** | **All 5★** — Etsy **5.0 / 8** · eBay **100% positive** (7 pos / 0 neg) on `autoculturetees` |
 
@@ -355,35 +356,35 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 
 ---
 
-## Etsy Ads snapshot (2026-06-26, last 30 days)
+## Etsy Ads snapshot (2026-08-23 — last 30 days Jul 23–Aug 22)
 
-| Listing | Views | ROAS | Ad orders |
-|---------|-------|------|-----------|
-| Corvette C4 Minimal | 1,139 | 4.06 | 2 |
-| Corvette C8 Tee | 2,010 | 3.06 | 1 |
-| Yellow Corvette C5 | 1,611 | 2.23 | 1 |
-| Corvette C7 Illustration | 3,438 | 1.05 | 1 |
-| C6 old | 1,007 | 0 | 0 |
-| Yellow C5 hoodie | 80 | 0 | 0 |
-| Red C4 pop-up tee | 79 | 0 | 0 |
-| Yellow C6 hoodie | 42 | 0 | 0 |
-| C7 V8 hoodie | 34 | 0 | 0 |
+| Metric | Value |
+|--------|-------|
+| **Budget** | **$10/day** set |
+| **Actual spend** | **$11.48** / 30 days (~**$0.38/day**) — far under cap |
+| **Views / clicks** | 1,424 · 20 · ~1.4% CTR |
+| **Orders / revenue / ROAS** | **0 · $0 · 0** |
 
-**Current pain:** most spend still concentrated in top 4 listings; long tail remains mostly no-order.  
-**Account (30d):** 12.4K views · 163 clicks · 6 ad orders · $195.51 revenue · $100.96 spend · **ROAS 1.94**.  
-**Budget rule now:** with a $10/day cap, keep spend concentrated on winners (C4 Minimal, Yellow C5, C8 Tee); keep C7 Illustration on a short leash; keep C6 old low-exposure only.
-**Owner note (Jun 27):** ad budget remains **$10/day**, but Etsy is typically spending around **$7/day or less**; treat this as inventory/opportunity-limited delivery, not overspend.
+| Listing (ads ON) | Views | Clicks | CTR | Spend | Orders |
+|------------------|-------|--------|-----|-------|--------|
+| IT WAS IN pickleball | 687 | 10 | 1.5% | $6.27 | 0 |
+| Funny Pickleball Balls (Eyes) | 312 | 6 | 1.9% | $3.45 | 0 |
+| Soft Serve Ice Cream | 162 | 2 | 1.2% | $0.70 | 0 |
+| Dill With It | 49 | 1 | 2% | $1.02 | 0 |
+| Pickle Dink Life | 44 | 0 | 0% | $0 | 0 |
+| I Came I Served I Dinked | 37 | 0 | 0% | $0 | 0 |
+| (+ more pickleball SKUs ON, mostly $0–cents spend, 0 orders) | | | | | |
 
-**Detailed listing metrics from Etsy Ads table:**  
-- C4 Minimal: 21 clicks, 1.8% CTR, $55.89 rev on $13.76 spend  
-- C8 Tee: 19 clicks, 0.9% CTR, $50.00 rev on $16.36 spend  
-- Yellow C5: 25 clicks, 1.6% CTR, $27.49 rev on $12.31 spend  
-- C7 Illustration: 52 clicks, 1.5% CTR, $39.18 rev on $37.28 spend
+**Why $10/day doesn’t spend:** Etsy only buys auctions when it thinks the listing can compete. After the **Aug 13 Corvette IP wipe**, ads are stuck on **new/unproven pickleball** with weak CTR and 0 conversions — so delivery collapses. Cap ≠ spend.
 
-**Ads ON (Jul 3 — current):** C5 Blueprint, C8 Tee, C4 Minimal, C7 Illustration, Yellow C5.
-**Ads OFF / remove if still on:** Supra MK4, C7 V8 Sports/hoodie, C5 Blueprint Poster, any C5 ad listing with $0 revenue.
-**Ads OFF (Jul 1 pass, keep off):** C6 old, Yellow C5 hoodie, Red C4 pop-up, Red C8, Yellow C6 hoodie, C4 Engine, C8 Night Run.
-**Do not** add new random listings to ads this weekend — let sale + thumbnail changes bake until Monday.
+**Ads action (tonight):**
+1. **Pause** Soft Serve, Dill, Dink Life, I Came I Served, and any other 0-order / 0-click pickleball ad SKUs.
+2. **Optional keep light:** IT WAS IN only (most views; already sold organic/eBay once) — or pause **all** Etsy Ads until a pickleball listing gets an organic sale.
+3. **Do not** raise budget — won’t help underdelivery.
+4. **Do not** re-enable dead Corvette Etsy URLs.
+5. Put margin work on **eBay Corvette** promoted % / price instead (where demand still clears).
+
+**Historical (Jun 26 — superseded):** Corvette ads were the real ROAS engine (C4 4.06, C8 3.06, Yellow C5 2.23, C7 1.05; account ROAS ~1.94). Those listings are mostly **gone from Etsy** — don’t use old “ads ON: C5 Blueprint / C8 / C4…” as current truth.
 
 ### Live intervention (2026-06-24 midday)
 
