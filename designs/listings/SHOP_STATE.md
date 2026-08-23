@@ -26,7 +26,11 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 | **eBay margin trap** | **$16.47** tees + Promoted Ad Fee ≈ **cash negative** (Lisa C7, Alexander Red C7 both **~−$0.54**; Diane Yellow C5 **~−$0.73**). Raise price and/or cut Ad Fee % tonight. |
 | **Etsy deactivate pass (Aug 23 night)** | Owner **deactivated** Challenger · Supra · R34 · Yellow C6 hoodie · C7 V8 hoodie (+ other recommended). **Kept live:** **C8 Night Run** (IP risk remains — watch for takedown; no on-site Ads). |
 | **Etsy thumbs (Aug 23 night)** | Owner **changed a lot of thumbnail photos** on Etsy — let bake **48–72h** before another thumb pass; watch views/favorites on poster + pickleball + play mat. |
-| **Tonight priority** | (1) Watch **C8 Night Run** for IP hit · (2) Fix eBay **$16.47** / Ad Fee so next Corvette tee clears **$5+ cash** · (3) On-site Etsy Ads off · **Offsite ON** · (4) Don’t relist deactivated Corvette/JDM titles on Etsy · (5) Don’t re-touch fresh Etsy thumbs for 2–3 days |
+| **Etsy Payment P&L (Jan–Aug 2026)** | Sales **$841.63** (23) · refunds **−$30.32** · tax remitted **−$53.31** · fees **−$99.11** · marketing **−$193.76** (Ads **−$184.97** · Offsite **−$13.34** · credits **+$4.55**) · Etsy “Net Profit” **$465.13** (**before Printify**) · balance **$57.40** pending-heavy (−$0.64 current / $58.04 pending) |
+| **Printify costs (dashboard cards)** | Etsy channel costs-to-date **~$550.33** · eBay channel **~$160.16** — treat as production+ship burn; **not** in Etsy’s $465 “profit” |
+| **eBay earnings (Mar 6–Jul 31)** | Gross **$214.85** · expenses **−$60.54** · order earnings **$154.31** · refunds $0 · “Your cost” blank · sales cluster **mid–late July** |
+| **All-in read (rough)** | Etsy $465 − ~$550 Printify ≈ **underwater / thin** on Etsy after ads · eBay $154 − ~$160 Printify ≈ **~breakeven** · **Ads ate the year** (−$185 on-site) — keep on-site off, Offsite OK |
+| **Tonight priority** | (1) Watch **C8 Night Run** IP · (2) Fix eBay **$16.47** / Ad Fee for **$5+ cash** · (3) On-site Ads stay off · **Offsite ON** · (4) Don’t relist deactivated titles · (5) Bake Etsy thumbs 48–72h · (6) Don’t raise Etsy Ads budget |
 | **Still blocked** | C6 Variant B plate regen (needs OpenAI credits + explicit OK) · no CORVETTE wordmark relist on Etsy · avoid “Corvette / Stingray / Chevy” in Etsy titles until safer art strategy |
 | **Reviews (Aug 23)** | **All 5★** — Etsy **5.0 / 8** · eBay **100% positive** (7 pos / 0 neg) on `autoculturetees` |
 
