@@ -1,4 +1,4 @@
-# CozyOrbitPrints — Master Handoff (July 21, 2026)
+# CozyOrbitPrints — Master Handoff (August 23, 2026)
 
 > Shop: https://www.etsy.com/shop/CozyOrbitPrints  
 > **Read this + `SHOP_STATE.md` + `sales_log.csv` at start of every session.**  
@@ -9,44 +9,58 @@
 ## What we sell (NOT stickers)
 
 - **Brand:** CozyOrbitPrints
-- **Product:** Corvette C3–C8 graphic tees + hoodies (POD via Printify) + **pickleball test SKUs** (Jul 16+)
+- **Product:** Corvette C3–C8 graphic tees + hoodies (POD via Printify) + **pickleball** SKUs
 - **Channels:** Etsy (primary historically) + eBay (now converting — re-prioritize)
-- **Proven styles:** (1) Blueprint / technical front+back · (2) Gothic text + side car · (3) minimal pickleball text gag (**IT WAS IN** sold)
+- **Proven styles:** (1) Blueprint / technical front+back · (2) Gothic / illustration + side car · (3) minimal pickleball text gag (**IT WAS IN** + **Dinking Problem** sold)
 
-## July 21 flash update (tonight)
+## August 23 flash update (owner return / sales catch-up)
 
 | Sale / item | Status |
 |-------------|--------|
-| **eBay Pickleball IT WAS IN** | **SOLD Jul 17 — $18.99** + $3.99 ship → eBay earn **$19.45** − Printify **$14.63** = **~$4.82 cash** |
-| Soft Serve + Eyes Up Here | Still **0 sales** (only clean type+ball gag sold) |
-| **Dinking Problem tee** | **READY** — `designs/pickleball/pickleball_dinking_problem_UPLOAD_TO_PRINTIFY.png` + `PICKLEBALL_DINKING_PROBLEM.md` |
-| Soft Serve / Eyes / IT WAS IN | Still live Etsy + eBay |
+| **Logged Jul 21–Aug 20** | 10 new orders in `sales_log.csv` — see `SHOP_STATE` Aug 23 section |
+| **Channel totals** | Etsy **24 sales** · eBay **9 sales** · eBay 90d **$274.15** · Etsy **22 active / 32 inactive** · eBay **20 active** |
+| **Etsy IP wave (Aug 13)** | Mass Corvette apparel removed (IP policy, appeal N/A). **Do not relist** Corvette-named tees on Etsy tonight. |
+| **eBay** | **0 takedowns** — keep Corvette sales here; fix $16.47 + Ad Fee losses |
+| **Etsy still converting** | Poster / kids / whatever Corvette titles remain — watch IP risk; pickleball stack is most of the active catalog |
+| **Soft Serve + Eyes** | Still **0 sales** |
+| **Dinking Problem** | **LIVE + sold** eBay Aug 13 |
+| **Reviews** | **All 5★** — Etsy 5.0 (8) · eBay 100% positive (`autoculturetees`) |
+| **Etsy deactivate pass** | Challenger · Supra · R34 · Yellow C6 hoodie · C7 V8 hoodie **off**. **C8 Night Run kept** (watch IP; no on-site Ads). |
+| **Etsy thumbs** | Many Etsy thumbnails refreshed Aug 23 night — bake 48–72h; next: eBay price/Ad Fee so tees clear **$5+ cash** |
+| **P&L flash (Aug 23 screens)** | Etsy YTD “net” **$465** but Ads **−$185** + Printify costs-to-date **~$550** → all-in thin/red · eBay earnings **$154** vs Printify **~$160** ≈ flat · **keep on-site Ads off** |
 
 ## Next actions (priority)
 
-1. **Upload Dinking Problem** to Printify → eBay @ **$20.99** S–XL (dark shirts only) → Etsy
-2. Then Kitchen → Six pack (`PICKLEBALL_WAVE2.md`); eBay-first; light ads only
-3. Soft Serve / Eyes: leave live, no heavy ads
-4. Fulfill IT WAS IN — Printify #27858258.4 ready-to-ship
-5. Skip for now: memory comic clone, Abraham Lincoln portrait, doodles, goose
-6. Safer Yellow C5 replacement (no CORVETTE wordmark) when ready
+1. **Freeze new Corvette/JDM Etsy uploads** — IP wave Aug 13; don’t recreate deactivated titles
+2. **C8 Night Run** left live on Etsy by owner — watch for IP takedown; don’t put on-site Ads on it
+3. **Etsy thumbs** refreshed Aug 23 — don’t rework for 48–72h; watch poster + pickleball + play mat
+4. **eBay:** fix **$16.47** C7 / Red C7 (+ Yellow C5 Ad Fee %) for **$5+ cash**
+5. **Etsy Ads:** on-site off · **Offsite ON**
+6. **Keep:** C5 Blueprint Poster · IT WAS IN · Dinking Problem · Soft Serve/Eyes no ads
+7. Skip: memory comic, Lincoln, doodles, goose, OpenAI gens unless explicit OK
+
+## July 21 flash update (historical)
+
+| Sale / item | Status |
+|-------------|--------|
+| **eBay Pickleball IT WAS IN** | **SOLD Jul 17 — $18.99** → **~$4.82 cash** |
+| Soft Serve + Eyes Up Here | Still **0 sales** |
+| **Dinking Problem tee** | Was READY Jul 21 → sold Aug 13 (see Aug 23) |
 
 ## July 16 flash update
 
 | Sale | Status |
 |------|--------|
-| **eBay Yellow C5 tee** $26.09 + $3.99 ship | Earnings **$21.68**; Printify **$11.71** after **$10 coupon** (list was $21.71) → **~$9.97 cash**; **−$0.03 without coupon** |
-| **eBay Yellow C5 2-sided hoodie** $51.99 | Paid; **Printify not synced yet** |
+| **eBay Yellow C5 tee** $26.09 + $3.99 ship | Earnings **$21.68**; Printify **$11.71** after **$10 coupon** → **~$9.97 cash**; **−$0.03 without coupon** |
+| **eBay Yellow C5 2-sided hoodie** $51.99 | Paid; Printify later `#27858258.3` **$32.49** → cash ~**$18.09** |
 | **Etsy Yellow C5** | **Taken down** — design has **CORVETTE** wordmark (IP risk). Do not relist same art. |
-| **Pickleball Soft Serve tee** | **LIVE** — Etsy https://www.etsy.com/listing/4538686602 · eBay https://www.ebay.com/itm/398179685959 · $19.99–$22.99 |
-| **Pickleball Eyes Up Here** | **LIVE** Etsy https://www.etsy.com/listing/4538870176 · eBay https://www.ebay.com/itm/398181098143 |
-| **Pickleball IT WAS IN** | **LIVE** Etsy https://www.etsy.com/listing/4538866895 · eBay https://www.ebay.com/itm/398181038019 · **sold Jul 17** |
+| **Pickleball Soft Serve / Eyes / IT WAS IN** | LIVE; IT WAS IN sold Jul 17 |
 
-**Margin lesson:** eBay **Ad Fee General $3.75** + txn fees ate the Yellow C5 tee. Keep Soft Serve / pickleball promoted **light**.
+**Margin lesson:** eBay **Ad Fee** on thin tees kills profit. Keep Soft Serve / pickleball promoted **light**; do not price eBay tees at **$16.47** with heavy promoted.
 
 ## Still true from Jul 3
 
-- Winners: C5 Blueprint, C4 Minimal, C7, Yellow C5 (demand), C8
+- Winners: C5 Blueprint, C4 Minimal, C7, Yellow C5 (demand), C8, **C6 Atomic Orange** (Aug sale)
 - Design rule: stop full AI shirt gen; build **C6 Blueprint** next (Canva + car graphic only)
 - Amazon: defer
 - Factory CSVs / sticker pipeline: ignore
@@ -68,6 +82,6 @@ meme tees from Wave 2 (no cloning TikTok art). Write locked prompts + listing
 copy. Don't run OpenAI spend unless I confirm. Don't touch factory stickers.
 ```
 
-**Pickleball:** Soft Serve · Eyes Up Here · **IT WAS IN (sold Jul 17 $18.99)** · **Dinking Problem (upload next @ $20.99)**  
-**Don't:** clone viral TikTok art · heavy ads · JUST DUI IT parody  
-**Good phone work:** Canva Wave 2 Kitchen/Six-pack, titles/tags, fulfill IT WAS IN, price/ad notes
+**Pickleball:** Soft Serve · Eyes Up Here · **IT WAS IN (sold)** · **Dinking Problem (sold Aug 13)**  
+**Don't:** clone viral TikTok art · heavy ads · JUST DUI IT parody · $16 eBay tees with high Ad Fee  
+**Good phone work:** Canva Wave 2 Kitchen/Six-pack, titles/tags, eBay price/ad fixes, log sales
