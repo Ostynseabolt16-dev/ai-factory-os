@@ -15,13 +15,13 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 |------|--------|
 | **Bar Liquor? Ya If She Lets Me** | **LIVE Etsy + eBay** Aug 23 · eBay **$18.99** · paste URLs when handy |
 | **Bar 2 Girls Away Threesome** | **LIVE Etsy + eBay** Aug 23 · Bebas Neue + **LAST NIGHT** · black ink / light shirts · mature on Etsy · `BAR_TWO_GIRLS_AWAY.md` |
+| **You Might Be Drunk (blur AI)** | **LIVE eBay** Aug 23 · front-only · ~$19.99 · Etsy @ **$22.99** w/ 15% offsite if published · dark/black |
+| **Silent But Deadly skunk** | **LIVE eBay** Aug 23 · ~$23.99 free ship · rifle graphic · eBay-first |
 | **Bar Drink Sign (AI)** | eBay @ **$18.99** (owner) · vintage AI badge · dark shirts |
 | **Bar Just Here for the Drinks** | Owner Printify AI — list if not live · dark only |
-| **Praise God Not Politicians** | **LIVE eBay** Aug 23 · also Etsy @ **$24.99** (front+back, prod ~$15.58) · confirm eBay price isn’t stuck at $32+ |
+| **Praise God Not Politicians** | **LIVE eBay** Aug 23 · also Etsy @ **$24.99** (front+back, prod ~$15.58) |
 | **Bar I Bark For Bad Bitches** | **PARKED** — don’t list (profanity risk both channels) |
-| **Wave 2 plan** | `BAR_TEXT_WAVE2.md` |
-| **Margin note** | Single-sided ~$18.99 · 2-sided Praise God needs **$24.99+** · Ad Fee light/off |
-| **Next** | Confirm Praise God eBay = **$24.99** · list Drinks if missing · bake ads-off · then Dinking Problem |
+| **Next** | Stop listing · ads light/off · bake overnight · remaining AI attempts optional tomorrow |
 
 ## July 21 update (post IT WAS IN sale)
 
