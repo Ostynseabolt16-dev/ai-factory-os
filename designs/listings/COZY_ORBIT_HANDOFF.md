@@ -24,12 +24,13 @@
 
 ## Next actions (priority)
 
-1. **Bar Wave 2** (`BAR_TEXT_WAVE2.md`): list **Just Here for the Drinks** (dark only) → **Drink Sign** + **Praise God** text tees → park I Bark
-2. Printify AI: ≤8 gens on short vintage badges; save ~3 retries; long jokes = Bebas text not AI
-3. **Upload Dinking Problem** if still not live → eBay @ **$20.99** S–XL → Etsy
-4. Soft Serve / Eyes: leave live, no heavy ads
-5. Skip: I Bark · Jumpman · Mordecai · soup frog · Walmart · exact viral beer clone
-6. Safer Yellow C5 replacement (no CORVETTE wordmark) when ready
+1. **Bar wave live** — Liquor, 2 Girls, Drink Sign, Praise God (2-sided **$24.99**); park I Bark; ads light/off
+2. Confirm Praise God **eBay price = $24.99** (Printify preview was showing $32+)
+3. List **Just Here for the Drinks** if not live · dark only
+4. **Upload Dinking Problem** when bar batch pauses → eBay @ **$20.99** S–XL → Etsy
+5. Soft Serve / Eyes: leave live, no heavy ads
+6. Skip: I Bark · Jumpman · Mordecai · soup frog · Walmart · exact viral beer clone
+7. Safer Yellow C5 replacement (no CORVETTE wordmark) when ready
 
 ## July 16 flash update
 

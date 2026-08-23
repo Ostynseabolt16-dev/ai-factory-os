@@ -1,7 +1,7 @@
 # CozyOrbitPrints — Shop State (source of truth)
 
 **Etsy shop:** https://www.etsy.com/shop/CozyOrbitPrints  
-**Last updated:** 2026-08-23 (bar: Liquor + 2 Girls LIVE; I Bark PARKED; Wave 2 = Drinks / Drink Sign / Praise God)
+**Last updated:** 2026-08-23 (bar: Liquor + 2 Girls + Drink Sign + Praise God rolling live; I Bark PARKED)
 
 Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any new agent chat to avoid hallucinating order/design state.
 
@@ -15,11 +15,13 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 |------|--------|
 | **Bar Liquor? Ya If She Lets Me** | **LIVE Etsy + eBay** Aug 23 · eBay **$18.99** · paste URLs when handy |
 | **Bar 2 Girls Away Threesome** | **LIVE Etsy + eBay** Aug 23 · Bebas Neue + **LAST NIGHT** · black ink / light shirts · mature on Etsy · `BAR_TWO_GIRLS_AWAY.md` |
+| **Bar Drink Sign (AI)** | eBay @ **$18.99** (owner) · vintage AI badge · dark shirts |
+| **Bar Just Here for the Drinks** | Owner Printify AI — list if not live · dark only |
+| **Praise God Not Politicians** | **LIVE eBay** Aug 23 · also Etsy @ **$24.99** (front+back, prod ~$15.58) · confirm eBay price isn’t stuck at $32+ |
 | **Bar I Bark For Bad Bitches** | **PARKED** — don’t list (profanity risk both channels) |
-| **Just Here for the Drinks** | Owner Printify AI — **list next** dark shirts only · safest volume bar SKU |
-| **Wave 2 plan** | `BAR_TEXT_WAVE2.md` — Drink Sign + Praise God (text) · AI gens ≤8 then hold |
-| **Margin note** | $18.99 matched IT WAS IN (~$4.82 cash) — OK for test; keep **Ad Fee light/off** |
-| **Next** | 1) List Drinks · 2) Drink Sign text · 3) Praise God text · 4) optional AI badge burns |
+| **Wave 2 plan** | `BAR_TEXT_WAVE2.md` |
+| **Margin note** | Single-sided ~$18.99 · 2-sided Praise God needs **$24.99+** · Ad Fee light/off |
+| **Next** | Confirm Praise God eBay = **$24.99** · list Drinks if missing · bake ads-off · then Dinking Problem |
 
 ## July 21 update (post IT WAS IN sale)
 
