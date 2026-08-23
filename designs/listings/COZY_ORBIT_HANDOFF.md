@@ -25,17 +25,18 @@
 | **Soft Serve + Eyes** | Still **0 sales** |
 | **Dinking Problem** | **LIVE + sold** eBay Aug 13 |
 | **Reviews** | **All 5★** — Etsy 5.0 (8) · eBay 100% positive (`autoculturetees`) |
-| **Etsy deactivate pass** | Challenger · Supra · R34 · Yellow C6 hoodie · C7 V8 hoodie **off**. **C8 Night Run kept** (watch IP). |
-| **eBay thumbs** | Many thumbnails refreshed Aug 23 night — next: price/Ad Fee so tees clear **$5+ cash** |
+| **Etsy deactivate pass** | Challenger · Supra · R34 · Yellow C6 hoodie · C7 V8 hoodie **off**. **C8 Night Run kept** (watch IP; no on-site Ads). |
+| **Etsy thumbs** | Many Etsy thumbnails refreshed Aug 23 night — bake 48–72h; next: eBay price/Ad Fee so tees clear **$5+ cash** |
 
 ## Next actions (priority)
 
 1. **Freeze new Corvette/JDM Etsy uploads** — IP wave Aug 13; don’t recreate deactivated titles
 2. **C8 Night Run** left live on Etsy by owner — watch for IP takedown; don’t put on-site Ads on it
-3. **eBay:** thumbs refreshed Aug 23 — next fix **$16.47** C7 / Red C7 (+ Yellow C5 Ad Fee %) for **$5+ cash**
-4. **Etsy Ads:** on-site off · **Offsite ON**
-5. **Keep:** C5 Blueprint Poster · IT WAS IN · Dinking Problem · Soft Serve/Eyes no ads
-6. Skip: memory comic, Lincoln, doodles, goose, OpenAI gens unless explicit OK
+3. **Etsy thumbs** refreshed Aug 23 — don’t rework for 48–72h; watch poster + pickleball + play mat
+4. **eBay:** fix **$16.47** C7 / Red C7 (+ Yellow C5 Ad Fee %) for **$5+ cash**
+5. **Etsy Ads:** on-site off · **Offsite ON**
+6. **Keep:** C5 Blueprint Poster · IT WAS IN · Dinking Problem · Soft Serve/Eyes no ads
+7. Skip: memory comic, Lincoln, doodles, goose, OpenAI gens unless explicit OK
 
 ## July 21 flash update (historical)
 

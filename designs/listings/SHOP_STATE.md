@@ -1,7 +1,7 @@
 # CozyOrbitPrints — Shop State (source of truth)
 
 **Etsy shop:** https://www.etsy.com/shop/CozyOrbitPrints  
-**Last updated:** 2026-08-23 (deactivate pass + eBay thumbs — Challenger/Supra/R34/C6 hoodie/C7 hoodie off; **C8 Night Run** kept; eBay thumbnails refreshed)
+**Last updated:** 2026-08-23 (deactivate pass + Etsy thumbs — Challenger/Supra/R34/C6 hoodie/C7 hoodie off; **C8 Night Run** kept; many Etsy thumbnails refreshed)
 
 Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any new agent chat to avoid hallucinating order/design state.
 
@@ -24,9 +24,9 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 | **Dinking Problem** | **LIVE Etsy + eBay** · eBay sold Aug 13 item `398222322676` |
 | **Pickleball Soft Serve / Eyes** | Still **0 sales** as of Aug 23 (other pickle SKUs listed; conversion TBD) |
 | **eBay margin trap** | **$16.47** tees + Promoted Ad Fee ≈ **cash negative** (Lisa C7, Alexander Red C7 both **~−$0.54**; Diane Yellow C5 **~−$0.73**). Raise price and/or cut Ad Fee % tonight. |
-| **Etsy deactivate pass (Aug 23 night)** | Owner **deactivated** Challenger · Supra · R34 · Yellow C6 hoodie · C7 V8 hoodie (+ other recommended). **Kept live:** **C8 Night Run** (IP risk remains — watch for takedown) · C5 Blueprint Poster · pickleball stack. |
-| **eBay thumbs (Aug 23 night)** | Owner **changed a lot of thumbnail photos** on eBay listings — re-check CTR / conversion next week; still fix **$16.47** + Ad Fee margin on C7 / Yellow C5. |
-| **Tonight priority** | (1) Watch **C8 Night Run** for IP hit · (2) Finish eBay price/Ad Fee so next Corvette tee clears **$5+ cash** · (3) On-site Etsy Ads off · **Offsite ON** · (4) Don’t relist deactivated Corvette/JDM titles on Etsy |
+| **Etsy deactivate pass (Aug 23 night)** | Owner **deactivated** Challenger · Supra · R34 · Yellow C6 hoodie · C7 V8 hoodie (+ other recommended). **Kept live:** **C8 Night Run** (IP risk remains — watch for takedown; no on-site Ads). |
+| **Etsy thumbs (Aug 23 night)** | Owner **changed a lot of thumbnail photos** on Etsy — let bake **48–72h** before another thumb pass; watch views/favorites on poster + pickleball + play mat. |
+| **Tonight priority** | (1) Watch **C8 Night Run** for IP hit · (2) Fix eBay **$16.47** / Ad Fee so next Corvette tee clears **$5+ cash** · (3) On-site Etsy Ads off · **Offsite ON** · (4) Don’t relist deactivated Corvette/JDM titles on Etsy · (5) Don’t re-touch fresh Etsy thumbs for 2–3 days |
 | **Still blocked** | C6 Variant B plate regen (needs OpenAI credits + explicit OK) · no CORVETTE wordmark relist on Etsy · avoid “Corvette / Stingray / Chevy” in Etsy titles until safer art strategy |
 | **Reviews (Aug 23)** | **All 5★** — Etsy **5.0 / 8** · eBay **100% positive** (7 pos / 0 neg) on `autoculturetees` |
 
