@@ -1,13 +1,25 @@
 # CozyOrbitPrints — Shop State (source of truth)
 
 **Etsy shop:** https://www.etsy.com/shop/CozyOrbitPrints  
-**Last updated:** 2026-07-21 (first pickleball sale — eBay IT WAS IN $18.99 on Jul 17; Soft Serve + Eyes still quiet; Dinking Problem art ready)
+**Last updated:** 2026-08-23 (bar text tee wave ready — Liquor / 2 Girls Away / I Bark; pickleball IT WAS IN still only meme sale)
 
 Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any new agent chat to avoid hallucinating order/design state.
 
 > **NOT kawaii stickers.** Live business = CozyOrbitPrints Corvette apparel (Etsy + eBay + Printify). GitHub `ai-factory-os` is stale May factory scaffolding — ignore it unless explicitly working on factory code.
 
 ---
+
+## August 23 update (funny bar text tees)
+
+| Item | Status |
+|------|--------|
+| **Bar Liquor? Ya If She Lets Me** | **READY** — `designs/bar/bar_liquor_if_she_lets_me_UPLOAD_TO_PRINTIFY.png` + `BAR_LIQUOR_IF_SHE_LETS_ME.md` |
+| **Bar 2 Girls Away Threesome** | **READY** — `designs/bar/bar_two_girls_away_threesome_UPLOAD_TO_PRINTIFY.png` + `BAR_TWO_GIRLS_AWAY.md` |
+| **Bar I Bark For Bad Bitches** | **READY** — `designs/bar/bar_i_bark_for_bad_bitches_UPLOAD_TO_PRINTIFY.png` + `BAR_I_BARK_FOR_BAD_BITCHES.md` |
+| **Wave brief** | `BAR_TEXT_WAVE1.md` · compose `scripts/compose_bar_meme_tees.py` |
+| **Channel** | **eBay-first** (adult language); Etsy optional / may flag |
+| **Colors** | Black, Charcoal, Navy only · **$20.99+** S–XL |
+| **Upload order** | Liquor → 2 Girls Away → I Bark |
 
 ## July 21 update (post IT WAS IN sale)
 
@@ -363,6 +375,7 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 
 ## Shirt colors
 
+- **Bar text wave (Liquor / 2 Girls / I Bark):** Black, Navy, Charcoal (dark only — white type)
 - **Pickleball Dinking Problem / Eyes / IT WAS IN:** Black, Navy, Charcoal (dark only — white/lime type)
 - **C7 Laguna Blue:** White, Natural, Sport Grey only (not dark colors)
 - **C5 Torch Red:** White, Natural, Sport Grey only (not dark colors)

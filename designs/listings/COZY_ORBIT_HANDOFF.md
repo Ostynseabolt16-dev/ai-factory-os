@@ -24,11 +24,11 @@
 
 ## Next actions (priority)
 
-1. **Upload Dinking Problem** to Printify → eBay @ **$20.99** S–XL (dark shirts only) → Etsy
-2. Then Kitchen → Six pack (`PICKLEBALL_WAVE2.md`); eBay-first; light ads only
+1. **Upload bar text wave** (`BAR_TEXT_WAVE1.md`) — Liquor → 2 Girls Away → I Bark · Printify → **eBay-first** @ **$20.99** S–XL (dark only)
+2. **Upload Dinking Problem** if still not live → eBay @ **$20.99** S–XL → Etsy
 3. Soft Serve / Eyes: leave live, no heavy ads
-4. Fulfill IT WAS IN — Printify #27858258.4 ready-to-ship
-5. Skip for now: memory comic clone, Abraham Lincoln portrait, doodles, goose
+4. Kitchen / Six pack (`PICKLEBALL_WAVE2.md`) after bar + Dinking live
+5. Skip for now: memory comic clone, Abraham Lincoln portrait, doodles, goose, Jumpman/IP memes
 6. Safer Yellow C5 replacement (no CORVETTE wordmark) when ready
 
 ## July 16 flash update
