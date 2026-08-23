@@ -1,13 +1,27 @@
 # CozyOrbitPrints — Shop State (source of truth)
 
 **Etsy shop:** https://www.etsy.com/shop/CozyOrbitPrints  
-**Last updated:** 2026-07-21 (first pickleball sale — eBay IT WAS IN $18.99 on Jul 17; Soft Serve + Eyes still quiet; Dinking Problem art ready)
+**Last updated:** 2026-08-23 (bar: Liquor + 2 Girls + Drink Sign + Praise God rolling live; I Bark PARKED)
 
 Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any new agent chat to avoid hallucinating order/design state.
 
 > **NOT kawaii stickers.** Live business = CozyOrbitPrints Corvette apparel (Etsy + eBay + Printify). GitHub `ai-factory-os` is stale May factory scaffolding — ignore it unless explicitly working on factory code.
 
 ---
+
+## August 23 update (funny bar text tees)
+
+| Item | Status |
+|------|--------|
+| **Bar Liquor? Ya If She Lets Me** | **LIVE Etsy + eBay** Aug 23 · eBay **$18.99** · paste URLs when handy |
+| **Bar 2 Girls Away Threesome** | **LIVE Etsy + eBay** Aug 23 · Bebas Neue + **LAST NIGHT** · black ink / light shirts · mature on Etsy · `BAR_TWO_GIRLS_AWAY.md` |
+| **You Might Be Drunk (blur AI)** | **LIVE eBay** Aug 23 · front-only · ~$19.99 · Etsy @ **$22.99** w/ 15% offsite if published · dark/black |
+| **Silent But Deadly skunk** | **LIVE eBay** Aug 23 · ~$23.99 free ship · rifle graphic · eBay-first |
+| **Bar Drink Sign (AI)** | eBay @ **$18.99** (owner) · vintage AI badge · dark shirts |
+| **Bar Just Here for the Drinks** | Owner Printify AI — list if not live · dark only |
+| **Praise God Not Politicians** | **LIVE eBay** Aug 23 · also Etsy @ **$24.99** (front+back, prod ~$15.58) |
+| **Bar I Bark For Bad Bitches** | **PARKED** — don’t list (profanity risk both channels) |
+| **Next** | Stop listing · ads light/off · bake overnight · remaining AI attempts optional tomorrow |
 
 ## July 21 update (post IT WAS IN sale)
 
@@ -363,6 +377,8 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 
 ## Shirt colors
 
+- **Bar 2 Girls Away (live):** White / Ash / Sport Grey / Natural with **black** ink (owner Bebas Neue). Dark colors need separate white-ink product.
+- **Bar Liquor / I Bark:** Black, Navy, Charcoal when white type; light shirts only if ink is black
 - **Pickleball Dinking Problem / Eyes / IT WAS IN:** Black, Navy, Charcoal (dark only — white/lime type)
 - **C7 Laguna Blue:** White, Natural, Sport Grey only (not dark colors)
 - **C5 Torch Red:** White, Natural, Sport Grey only (not dark colors)

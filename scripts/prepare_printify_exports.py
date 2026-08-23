@@ -205,17 +205,20 @@ def prepare_printify_export(
     threshold: int = 242,
     knock_out_counters: bool = True,
     ring_lum_max: float = 170.0,
+    skip_background_removal: bool = False,
 ) -> Path:
     if output_path is None:
         output_path = input_path.with_name(f"{input_path.stem}_UPLOAD_TO_PRINTIFY.png")
 
     image = Image.open(input_path).convert("RGBA")
-    image = remove_white_background(image, threshold=threshold)
-    if knock_out_counters:
-        image = remove_enclosed_white(image, threshold=threshold, ring_lum_max=ring_lum_max)
+    # White-on-transparent type masters: flood-fill treats white ink as background.
+    if not skip_background_removal:
+        image = remove_white_background(image, threshold=threshold)
+        if knock_out_counters:
+            image = remove_enclosed_white(image, threshold=threshold, ring_lum_max=ring_lum_max)
     image = trim_transparent(image, padding=8)
     image = fit_on_printify_canvas(image)
-    if knock_out_counters:
+    if knock_out_counters and not skip_background_removal:
         image = remove_enclosed_white_after_upscale(image, threshold=threshold)
     output_path.parent.mkdir(parents=True, exist_ok=True)
     image.save(output_path, format="PNG", optimize=True)
@@ -240,6 +243,11 @@ def main() -> None:
         "--no-knock-out-counters",
         action="store_true",
         help="Skip removing white trapped inside letter counters (8, C5/C6, paragraph).",
+    )
+    parser.add_argument(
+        "--skip-background-removal",
+        action="store_true",
+        help="Keep white ink (for already-transparent type-only masters).",
     )
     parser.add_argument(
         "--ring-lum-max",
@@ -267,6 +275,7 @@ def main() -> None:
             threshold=args.threshold,
             knock_out_counters=not args.no_knock_out_counters,
             ring_lum_max=args.ring_lum_max,
+            skip_background_removal=args.skip_background_removal,
         )
         with Image.open(output) as saved:
             alpha = saved.getchannel("A").getextrema()
