@@ -24,11 +24,11 @@
 
 ## Next actions (priority)
 
-1. **Bar Liquor + 2 Girls Away LIVE** Etsy + eBay — ads light/off; next = **I Bark** then bake
-2. **Upload Dinking Problem** if still not live → eBay @ **$20.99** S–XL → Etsy
-3. Soft Serve / Eyes: leave live, no heavy ads
-4. Kitchen / Six pack (`PICKLEBALL_WAVE2.md`) after bar wave baking
-5. Skip for now: memory comic clone, Abraham Lincoln portrait, doodles, goose, Jumpman/IP memes
+1. **Bar Wave 2** (`BAR_TEXT_WAVE2.md`): list **Just Here for the Drinks** (dark only) → **Drink Sign** + **Praise God** text tees → park I Bark
+2. Printify AI: ≤8 gens on short vintage badges; save ~3 retries; long jokes = Bebas text not AI
+3. **Upload Dinking Problem** if still not live → eBay @ **$20.99** S–XL → Etsy
+4. Soft Serve / Eyes: leave live, no heavy ads
+5. Skip: I Bark · Jumpman · Mordecai · soup frog · Walmart · exact viral beer clone
 6. Safer Yellow C5 replacement (no CORVETTE wordmark) when ready
 
 ## July 16 flash update

@@ -1,7 +1,7 @@
 # CozyOrbitPrints — Shop State (source of truth)
 
 **Etsy shop:** https://www.etsy.com/shop/CozyOrbitPrints  
-**Last updated:** 2026-08-23 (bar: Liquor + 2 Girls Away LIVE Etsy/eBay; I Bark next; pickleball IT WAS IN still only meme sale)
+**Last updated:** 2026-08-23 (bar: Liquor + 2 Girls LIVE; I Bark PARKED; Wave 2 = Drinks / Drink Sign / Praise God)
 
 Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any new agent chat to avoid hallucinating order/design state.
 
@@ -15,10 +15,11 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 |------|--------|
 | **Bar Liquor? Ya If She Lets Me** | **LIVE Etsy + eBay** Aug 23 · eBay **$18.99** · paste URLs when handy |
 | **Bar 2 Girls Away Threesome** | **LIVE Etsy + eBay** Aug 23 · Bebas Neue + **LAST NIGHT** · black ink / light shirts · mature on Etsy · `BAR_TWO_GIRLS_AWAY.md` |
-| **Bar I Bark For Bad Bitches** | **READY** — next upload · `BAR_I_BARK_FOR_BAD_BITCHES.md` |
-| **Wave brief** | `BAR_TEXT_WAVE1.md` · compose `scripts/compose_bar_meme_tees.py` |
-| **Margin note** | $18.99 matched IT WAS IN (~$4.82 cash) — OK for test; keep **Ad Fee light/off** or raise if promoted |
-| **Next** | Upload **I Bark** (Etsy + eBay) · then bake ads-off |
+| **Bar I Bark For Bad Bitches** | **PARKED** — don’t list (profanity risk both channels) |
+| **Just Here for the Drinks** | Owner Printify AI — **list next** dark shirts only · safest volume bar SKU |
+| **Wave 2 plan** | `BAR_TEXT_WAVE2.md` — Drink Sign + Praise God (text) · AI gens ≤8 then hold |
+| **Margin note** | $18.99 matched IT WAS IN (~$4.82 cash) — OK for test; keep **Ad Fee light/off** |
+| **Next** | 1) List Drinks · 2) Drink Sign text · 3) Praise God text · 4) optional AI badge burns |
 
 ## July 21 update (post IT WAS IN sale)
 
