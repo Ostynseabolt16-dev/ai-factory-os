@@ -1,7 +1,7 @@
 # CozyOrbitPrints — Shop State (source of truth)
 
 **Etsy shop:** https://www.etsy.com/shop/CozyOrbitPrints  
-**Last updated:** 2026-07-21 (first pickleball sale — eBay IT WAS IN $18.99 on Jul 17; Soft Serve + Eyes still quiet; Dinking Problem art ready)
+**Last updated:** 2026-08-23 (18-day catch-up — logged Jul 21–Aug 20 Etsy + eBay sales from Printify/screenshots)
 
 Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any new agent chat to avoid hallucinating order/design state.
 
@@ -9,16 +9,39 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 
 ---
 
-## July 21 update (post IT WAS IN sale)
+## August 23 catch-up (owner back after ~18 days)
 
 | Item | Status |
 |------|--------|
-| **eBay Pickleball IT WAS IN** | **SOLD Jul 17 — $18.99** + $3.99 ship; mint; Printify **#27858258.4** ready-to-ship **$14.63**; eBay fees **$3.53** → earnings **$19.45** → **~$4.82 cash** |
-| **Pickleball Soft Serve / Eyes Up Here** | Still **0 sales** (only type+ball gag converted) |
-| **Dinking Problem** | **READY** — `designs/pickleball/pickleball_dinking_problem_UPLOAD_TO_PRINTIFY.png` + `PICKLEBALL_DINKING_PROBLEM.md` — upload next |
-| **Wave 2 briefs** | `PICKLEBALL_WAVE2.md` — Kitchen / Six pack after Dinking live |
-| **Margin rule** | Next pickleball tees **$20.99+** S–XL — $18.99 is thin |
-| **Ads** | Keep pickleball promoted **light**; Yellow C5 Ad Fee lesson still applies |
+| **Sales logged** | **10 new rows** in `sales_log.csv` (Jul 21–Aug 20) + Allyn hoodie Printify cost filled (`#27858258.3` **$32.49**) |
+| **Etsy hits** | C7 Illustration (Mitch) · C5 Blueprint **Poster** (Michelle) · **C6 Atomic Orange** (Tom) · C7 Red/Gothic (Nancy) · Yellow C5 **hoodie** (Derick **~$18.87** cash) |
+| **eBay hits** | **Dinking Problem** sold Aug 13 (~**$5.42** cash) · C7 Illustration Lisa · Red C7 Alexander · Yellow C5 Diane · C5 old art Jonathan |
+| **Dinking Problem** | **LIVE + sold** eBay item `398222322676` — no longer “upload next” |
+| **Pickleball Soft Serve / Eyes** | Still **0 sales** as of Aug 23 |
+| **eBay margin trap** | **$16.47** tees + Promoted Ad Fee ≈ **cash negative** (Lisa C7, Alexander Red C7 both **~−$0.54**; Diane Yellow C5 **~−$0.73**). Raise price and/or cut Ad Fee % tonight. |
+| **What’s converting** | Old C7 art (Etsy + eBay), Yellow C5 (tee + hoodie), C6 Atomic Orange, C5 Blueprint (tee history + new poster), pickleball type gags (IT WAS IN + Dinking) |
+| **Tonight priority** | (1) Fix eBay $16.47 / Ad Fee on C7 + Yellow C5 · (2) Ads hygiene on Etsy winners · (3) Optional Wave 2 pickleball — Soft Serve/Eyes stay light ads |
+| **Still blocked** | C6 Variant B plate regen (needs OpenAI credits + explicit OK) · no CORVETTE wordmark relist on Etsy Yellow C5 |
+
+### Catch-up P&L snapshot (new rows only, cash after Printify)
+
+| Channel | Orders | Notes |
+|---------|--------|-------|
+| **Etsy** | 5 | Derick hoodie ~$18.87 · Tom Atomic Orange ~$12.38 · Michelle poster ~$12.10 · Mitch C7 ~$9.25 · Nancy gothic ~$7.51 |
+| **eBay** | 5 | Vincent Dinking ~$5.42 · Jonathan fees TBD · Lisa/Alexander/Diane ≈ **breakeven to loss** on promoted cheap tees |
+
+---
+
+## July 21 update (post IT WAS IN sale) — superseded Aug 23 for Dinking / Soft Serve status
+
+| Item | Status |
+|------|--------|
+| **eBay Pickleball IT WAS IN** | **SOLD Jul 17 — $18.99** + $3.99 ship; mint; Printify **#27858258.4** **$14.63**; eBay fees **$3.53** → earnings **$19.45** → **~$4.82 cash** |
+| **Pickleball Soft Serve / Eyes Up Here** | Still **0 sales** (only type+ball gags converted — IT WAS IN + Dinking) |
+| **Dinking Problem** | **Was READY Jul 21 → LIVE + sold Aug 13** (see Aug 23 catch-up) |
+| **Wave 2 briefs** | `PICKLEBALL_WAVE2.md` — Kitchen / Six pack still next new SKU after Dinking |
+| **Margin rule** | Pickleball tees **$20.99+** S–XL preferred; Dinking sold at **$19.99** → ~$5.42 (OK); avoid $16.xx eBay tees with heavy Ad Fee |
+| **Ads** | Keep pickleball promoted **light**; Yellow C5 + cheap C7 Ad Fee lesson still applies |
 | **Do not build tonight** | Comic-panel memory shirt; Lincoln portrait; doodle club; goose grid |
 
 ## July 16 Mac catch-up
@@ -62,13 +85,14 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 | **Print file** | `designs/pickleball/pickleball_it_was_in_UPLOAD_TO_PRINTIFY.png` | Minimal line-call; dark shirts |
 | **P&L** | ~$4.82 cash | fees $3.53 · Printify $14.63 · raise next SKUs to $20.99+ |
 
-### Pickleball Dinking Problem (Jul 21 — READY, not live)
+### Pickleball Dinking Problem (LIVE — sold Aug 13 eBay)
 
 | Channel | URL | Notes |
 |---------|-----|-------|
-| **Etsy / eBay** | — | Upload next; paste URLs when live |
-| **Print file** | `designs/pickleball/pickleball_dinking_problem_UPLOAD_TO_PRINTIFY.png` | Type-first white/lime/white; ball below; dark shirts |
-| **Listing** | `designs/listings/PICKLEBALL_DINKING_PROBLEM.md` | eBay S–XL **$20.99** |
+| **eBay** | https://www.ebay.com/itm/398222322676 | Item `398222322676` · **sold Aug 13** Sport Grey L @ **$19.99** + $3.99 → earn **$20.05** → cash ~**$5.42** |
+| **Etsy** | — | Confirm live URL next session if not already cross-listed |
+| **Print file** | `designs/pickleball/pickleball_dinking_problem_UPLOAD_TO_PRINTIFY.png` | Type-first; Printify `#27858258.8` **$14.63** on sale |
+| **Listing** | `designs/listings/PICKLEBALL_DINKING_PROBLEM.md` | Prefer **$20.99+** next; $19.99 cleared ~$5 |
 | **Compose** | `scripts/compose_pickleball_dinking_problem.py` | No OpenAI |
 
 ---
@@ -176,7 +200,7 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 
 ---
 
-## Sales summary (user-reported; Jul 16 = 17+ Etsy + 3 eBay units logged)
+## Sales summary (user-reported; Aug 23 catch-up = prior + 10 new Jul 21–Aug 20 rows)
 
 | Date | Buyer | Listing | Qty | Color | Size | Notes |
 |------|-------|---------|-----|-------|------|-------|
@@ -199,9 +223,19 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 | Jun 28 | michel salaun | **C4 Minimal** | 1 | Light Blue | 2XL | France order; order `4102687761`; coupon `VETTESUMMER` (10% off); overnight sale after price-floor changes |
 | Jun 30 | sydney roberts | **C5 Blueprint** front/back | 1 | Black | XL | Gift order; order `4104565447`; Oklahoma City OK; Printify $26.49; est. profit ~$5.08 |
 | Jul 15 | Allyn Davis | **Yellow C5** tee (eBay) | 1 | White | — | **Repeat buyer**; Cortland NY; ~$9.97 w/ Printify coupon |
-| Jul 15 | Allyn Davis | **Yellow C5** hoodie 2-sided (eBay) | 1 | Ash | 2XL | **$50.58 earnings**; item `398084925179`; ship by Jul 29; Printify pending |
-| Jul 16 | — | **Pickleball Soft Serve** (listed) | — | — | — | Etsy + eBay live; still 0 sales as of Jul 21 |
-| Jul 17 | — | **Pickleball IT WAS IN** (eBay) | 1 | Mint | — | **First pickleball sale** $18.99 → ~$4.82 cash; Soft Serve + Eyes still 0 |
+| Jul 15 | Allyn Davis | **Yellow C5** hoodie 2-sided (eBay) | 1 | Ash | 2XL | **$50.58 earnings**; Printify `#27858258.3` **$32.49** → cash ~**$18.09**; item `398084925179` |
+| Jul 16 | — | **Pickleball Soft Serve** (listed) | — | — | — | Etsy + eBay live; still 0 sales as of Aug 23 |
+| Jul 17 | Jane Vanderburgh | **Pickleball IT WAS IN** (eBay) | 1 | Mint Green | L | **First pickleball sale** $18.99 → ~$4.82 cash |
+| Jul 21 | Diane Briscoe | **Yellow C5** tee (eBay) | 1 | White | L | $23.92 + promoted; earn $19.57; Printify $20.30 → **~−$0.73** |
+| Jul 24 | Alexander Lewis | **Red C7** tee (eBay) | 1 | Dark Heather | XL | $16.47 + Ad Fee $2.92; earn $14.09; Printify $14.63 → **~−$0.54** |
+| Jul 25 | jonathan p eme | **C5 illustration** (eBay) | 1 | Tan | 2XL | $23.03 + ship; Printify $18.57; earnings panel TBD |
+| Jul 27 | Derick A. Proctor | **Yellow C5 hoodie** F+B (Etsy) | 1 | Sport Grey | L | $66.09 order; Etsy net $55.26; Printify $36.39 → ~**$18.87** |
+| Aug 2 | Nancy Hennarichs | **C7 Red / Gothic** (Etsy) | 1 | White | L | SUMMERSALE 11%; Etsy net $21.76; Printify $14.25 → ~**$7.51**; 5★ |
+| Aug 4 | Tom Clark | **C6 Atomic Orange** (Etsy) | 1 | Natural | 2XL | Etsy net $28.42; Printify $16.04 → ~**$12.38**; 5★ |
+| Aug 11 | Michelle Robinson | **C5 Blueprint Poster** 16×20 (Etsy) | 1 | Matte | — | Etsy net $24.07; Printify $11.97 → ~**$12.10**; 5★ |
+| Aug 12 | Mitch McNabb | **C7 Illustration** (Etsy) | 1 | Sport Grey | XL | Etsy net $23.88; Printify $14.63 → ~**$9.25**; 5★ |
+| Aug 13 | VINCENT R PROTTI | **Dinking Problem** (eBay) | 1 | Sport Grey | L | $19.99; earn $20.05; Printify $14.63 → ~**$5.42**; 2nd pickleball sale |
+| Aug 20 | Lisa P. Clement | **C7 Illustration** (eBay) | 1 | White | S | $16.47 + Ad Fee $2.92; earn $14.09; Printify $14.63 → **~−$0.54** |
 
 **Refunded:** Jan — C5 Illustration Vintage — accidental order.
 
@@ -342,13 +376,14 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 - **Readout window:** evaluate after 48 hours using orders, spend per order, and cart/favorite movement before re-expanding any paused listings.
 - **Guardrail:** if a sweatshirt still shows 0 clicks after meaningful impressions, pause and reallocate back to proven tee winners.
 
-## eBay snapshot (updated 2026-07-21)
+## eBay snapshot (updated 2026-08-23)
 
-- **Active / promoted:** listings live; **Ad Fee General** is material — Yellow C5 tee took **$3.75** ad on a $26.09 item.
-- **Sales:** (1) Jun 18 C5 old art Michael ~$9.46 before promo fee · (2) Jul 15 Yellow C5 tee ~breakeven without coupon / ~$10 with $10 Printify coupon · (3) Jul 15 Yellow C5 2-sided hoodie $51.99 pending Printify · (4) **Jul 17 Pickleball IT WAS IN $18.99 → ~$4.82 cash**.
-- **2026-06-19:** Yellow C5 hoodie (front+back) and Yellow C6 hoodie (front-only) launched to eBay.
-- **Channel rule (Jul 16):** eBay is **live demand** for Yellow C5 while Etsy listing is down — keep fulfilling; fix tee price/ad % so next sale clears **$5+ without coupons**.
-- **IP note:** Yellow C5 art includes **CORVETTE** lettering — likely why Etsy took it down; eBay can get hit too. Plan safer replacement (no brand wordmark) before heavy ad spend.
+- **Active / promoted:** listings live; **Ad Fee General / Promoted** is eating thin tees.
+- **Sales (through Aug 20):** Michael C5 · Allyn Yellow C5 tee + hoodie · Jane IT WAS IN · Diane Yellow C5 · Alexander Red C7 · Jonathan C5 · Vincent **Dinking Problem** · Lisa C7 Illustration.
+- **Hard lesson (Aug 23):** **$16.47** item + ~$2.92 Ad Fee + Printify ~$14.63 = **cash loss** (Lisa + Alexander). Diane @ $23.92 still ~−$0.73 with Ad Fee $3.88.
+- **Fix now:** raise eBay C7 / Red C7 / Yellow C5 tee prices **and/or** cut promoted % until next sale clears **$5+ cash without coupons**. Hoodies + ~$20 pickleball OK.
+- **Dinking Problem:** live item `398222322676`; sold once @ $19.99 → ~$5.42 (no Ad Fee line on that order).
+- **IP note:** Yellow C5 art includes **CORVETTE** lettering — Etsy taken down; eBay still selling — plan safer replacement before heavy ad spend.
 
 ## Weekend promo test (2026-06-19 late)
 
