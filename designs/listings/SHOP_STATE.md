@@ -24,10 +24,9 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 | **Dinking Problem** | **LIVE Etsy + eBay** · eBay sold Aug 13 item `398222322676` |
 | **Pickleball Soft Serve / Eyes** | Still **0 sales** as of Aug 23 (other pickle SKUs listed; conversion TBD) |
 | **eBay margin trap** | **$16.47** tees + Promoted Ad Fee ≈ **cash negative** (Lisa C7, Alexander Red C7 both **~−$0.54**; Diane Yellow C5 **~−$0.73**). Raise price and/or cut Ad Fee % tonight. |
-| **Etsy listing audit (last 30d views)** | **424** listing views · **1.88**/visit. Traffic: Etsy **80%** (180) · you **16%** (36; Ads only **10**). Only converter on this board: **C5 Blueprint Poster** (38 views → 1 order / $17.99). **Play mat** = view hog (136 / 0 orders). |
-| **Delete / deactivate tonight** | **Challenger Hellcat** · **Supra MK4** · **Skyline R34** (IP + shop rule: don’t push) · remaining Etsy **Corvette apparel** still live (**C8 Night Run**, **Yellow C6 hoodie**, **C7 V8 hoodie**, consider **Kids C5**) — IP wave will likely hit these next. |
-| **Keep** | **C5 Blueprint Poster** (only sale) · **IT WAS IN** · **Dinking Problem** · Soft Serve / Eyes (live, no ads) · thin the rest of pickleball later |
-| **Thumbnail / cleanup** | Play mat: change hero or deactivate (curiosity clicks, 0 buys). Pause/deactivate **0-view** pickleball clutter (Meeting/Dink Forecast/Dink Life/Smiling Face/extra Dill). Don’t burn on-site Ads. **Offsite ON**. |
+| **Etsy deactivate pass (Aug 23 night)** | Owner **deactivated** Challenger · Supra · R34 · Yellow C6 hoodie · C7 V8 hoodie (+ other recommended). **Kept live:** **C8 Night Run** (IP risk remains — watch for takedown) · C5 Blueprint Poster · pickleball stack. |
+| **eBay thumbs (Aug 23 night)** | Owner **changed a lot of thumbnail photos** on eBay listings — re-check CTR / conversion next week; still fix **$16.47** + Ad Fee margin on C7 / Yellow C5. |
+| **Tonight priority** | (1) Watch **C8 Night Run** for IP hit · (2) Finish eBay price/Ad Fee so next Corvette tee clears **$5+ cash** · (3) On-site Etsy Ads off · **Offsite ON** · (4) Don’t relist deactivated Corvette/JDM titles on Etsy |
 | **Still blocked** | C6 Variant B plate regen (needs OpenAI credits + explicit OK) · no CORVETTE wordmark relist on Etsy · avoid “Corvette / Stingray / Chevy” in Etsy titles until safer art strategy |
 | **Reviews (Aug 23)** | **All 5★** — Etsy **5.0 / 8** · eBay **100% positive** (7 pos / 0 neg) on `autoculturetees` |
 

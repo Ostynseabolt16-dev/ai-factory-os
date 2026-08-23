@@ -28,10 +28,10 @@
 
 ## Next actions (priority)
 
-1. **Freeze Corvette Etsy uploads** — IP wave Aug 13; appeals not available; don’t recreate removed titles
-2. **Deactivate on Etsy:** Challenger · Supra · R34 · leftover Corvette apparel (C8 Night Run, Yellow C6 hoodie, C7 hoodie; Kids C5 if you want safer)
-3. **eBay margin fix** — raise $16.47 C7 / Red C7 (and check Yellow C5 Ad Fee %) so next sale clears **$5+ cash**
-4. **Etsy Ads vs Offsite:** on-site Ads off — **keep Offsite ON**; play mat thumbnail fix or deactivate (136 views / 0 orders)
+1. **Freeze new Corvette/JDM Etsy uploads** — IP wave Aug 13; don’t recreate deactivated titles
+2. **C8 Night Run** left live on Etsy by owner — watch for IP takedown; don’t put on-site Ads on it
+3. **eBay:** thumbs refreshed Aug 23 — next fix **$16.47** C7 / Red C7 (+ Yellow C5 Ad Fee %) for **$5+ cash**
+4. **Etsy Ads:** on-site off · **Offsite ON**
 5. **Keep:** C5 Blueprint Poster · IT WAS IN · Dinking Problem · Soft Serve/Eyes no ads
 6. Skip: memory comic, Lincoln, doodles, goose, OpenAI gens unless explicit OK
 
