@@ -1,6 +1,6 @@
 # Bar Tee — “I Was 2 Girls Away From Having A Threesome”
 
-**Status:** READY FOR UPLOAD (Aug 23, 2026)  
+**Status:** **LIVE** Aug 23, 2026 — Etsy + eBay  
 **Niche:** Funny bar / party text tee (adult humor)
 
 **Files:**
@@ -8,6 +8,7 @@
 - Printify: `designs/bar/bar_two_girls_away_threesome_UPLOAD_TO_PRINTIFY.png`
 - Preview: `designs/bar/bar_two_girls_away_threesome_preview_black.jpg`
 - Compose: `python3 scripts/compose_bar_meme_tees.py threesome`
+- **Live product:** owner Printify text (Bebas Neue) — includes **LAST NIGHT**; black ink on light shirts for Etsy
 
 ## Design notes
 - White stacked type: **I WAS 2 GIRLS** / **AWAY FROM HAVING** / **A THREESOME**
@@ -33,17 +34,22 @@ Honest bar math on a soft unisex tee. Bold type, zero graphics, maximum regret h
 - Best on dark shirt colors
 
 ## Pricing
-- eBay S–XL **$20.99**, 2XL **$22.99**, 3XL **$23.99**
-- Etsy **$21.99+** — expect mature-content review; eBay-first if rejected
-- Promoted light first 48–72h
+- Live both channels Aug 23 (owner-set; eBay often ~$18.99 like Liquor)
+- Promoted light / off first 48–72h
+
+## Live URLs
+| Channel | URL |
+|---------|-----|
+| **Etsy** | *(paste)* |
+| **eBay** | *(paste)* |
 
 ## Shirt colors
-Black, Charcoal, Navy. **Not** light shirts.
+Light shirts with **black** Bebas Neue (White / Ash / Sport Grey / Natural). Dark shirts need a **white-ink** variant — don’t mix black type on black blanks.
 
 ## Upload checklist
-- [ ] Printify: upload `bar_two_girls_away_threesome_UPLOAD_TO_PRINTIFY.png`
-- [ ] Dark colors only
-- [ ] eBay live @ **$20.99+** → paste URL
-- [ ] Etsy optional → paste URL
+- [x] Printify text product (Bebas Neue + LAST NIGHT)
+- [x] eBay live Aug 23
+- [x] Etsy live Aug 23 (mature tag recommended)
+- [ ] Paste live URLs above
 - [ ] Ads off / light 48h
 - [ ] Log first sale in `sales_log.csv`

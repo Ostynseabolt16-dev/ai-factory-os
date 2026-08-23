@@ -24,7 +24,7 @@
 
 ## Next actions (priority)
 
-1. **Bar Liquor LIVE** Etsy + eBay @ **$18.99** eBay — ads light/off; next = **2 Girls Away** then **I Bark**
+1. **Bar Liquor + 2 Girls Away LIVE** Etsy + eBay — ads light/off; next = **I Bark** then bake
 2. **Upload Dinking Problem** if still not live → eBay @ **$20.99** S–XL → Etsy
 3. Soft Serve / Eyes: leave live, no heavy ads
 4. Kitchen / Six pack (`PICKLEBALL_WAVE2.md`) after bar wave baking

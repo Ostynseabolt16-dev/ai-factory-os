@@ -1,7 +1,7 @@
 # CozyOrbitPrints — Shop State (source of truth)
 
 **Etsy shop:** https://www.etsy.com/shop/CozyOrbitPrints  
-**Last updated:** 2026-08-23 (bar text tee wave ready — Liquor / 2 Girls Away / I Bark; pickleball IT WAS IN still only meme sale)
+**Last updated:** 2026-08-23 (bar: Liquor + 2 Girls Away LIVE Etsy/eBay; I Bark next; pickleball IT WAS IN still only meme sale)
 
 Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any new agent chat to avoid hallucinating order/design state.
 
@@ -13,12 +13,12 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 
 | Item | Status |
 |------|--------|
-| **Bar Liquor? Ya If She Lets Me** | **LIVE Etsy + eBay** Aug 23 · eBay **$18.99** (owner: cheaper fees than Etsy) · paste URLs when handy |
-| **Bar 2 Girls Away Threesome** | **READY** — next upload · `BAR_TWO_GIRLS_AWAY.md` |
-| **Bar I Bark For Bad Bitches** | **READY** — after #2 · `BAR_I_BARK_FOR_BAD_BITCHES.md` |
+| **Bar Liquor? Ya If She Lets Me** | **LIVE Etsy + eBay** Aug 23 · eBay **$18.99** · paste URLs when handy |
+| **Bar 2 Girls Away Threesome** | **LIVE Etsy + eBay** Aug 23 · Bebas Neue + **LAST NIGHT** · black ink / light shirts · mature on Etsy · `BAR_TWO_GIRLS_AWAY.md` |
+| **Bar I Bark For Bad Bitches** | **READY** — next upload · `BAR_I_BARK_FOR_BAD_BITCHES.md` |
 | **Wave brief** | `BAR_TEXT_WAVE1.md` · compose `scripts/compose_bar_meme_tees.py` |
 | **Margin note** | $18.99 matched IT WAS IN (~$4.82 cash) — OK for test; keep **Ad Fee light/off** or raise if promoted |
-| **Next** | Make **2 Girls Away** (Etsy + eBay) · white ink on dark (or black ink on light) |
+| **Next** | Upload **I Bark** (Etsy + eBay) · then bake ads-off |
 
 ## July 21 update (post IT WAS IN sale)
 
@@ -374,7 +374,8 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 
 ## Shirt colors
 
-- **Bar text wave (Liquor / 2 Girls / I Bark):** Black, Navy, Charcoal (dark only — white type)
+- **Bar 2 Girls Away (live):** White / Ash / Sport Grey / Natural with **black** ink (owner Bebas Neue). Dark colors need separate white-ink product.
+- **Bar Liquor / I Bark:** Black, Navy, Charcoal when white type; light shirts only if ink is black
 - **Pickleball Dinking Problem / Eyes / IT WAS IN:** Black, Navy, Charcoal (dark only — white/lime type)
 - **C7 Laguna Blue:** White, Natural, Sport Grey only (not dark colors)
 - **C5 Torch Red:** White, Natural, Sport Grey only (not dark colors)
