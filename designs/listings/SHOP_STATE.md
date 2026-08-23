@@ -26,6 +26,7 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 | **eBay margin trap** | **$16.47** tees + Promoted Ad Fee ≈ **cash negative** (Lisa C7, Alexander Red C7 both **~−$0.54**; Diane Yellow C5 **~−$0.73**). Raise price and/or cut Ad Fee % tonight. |
 | **Tonight priority** | (1) **Do not relist** removed Corvette art on Etsy under Corvette/Chevy wordmarks · (2) Fix eBay $16.47 / Ad Fee on C7 + Yellow C5 · (3) Treat **eBay = Corvette channel**, **Etsy = pickleball + poster/kids/safer** until IP-safe Corvette variants exist · (4) Ads: don’t dump budget into dead Etsy Corvette URLs |
 | **Still blocked** | C6 Variant B plate regen (needs OpenAI credits + explicit OK) · no CORVETTE wordmark relist on Etsy · avoid “Corvette / Stingray / Chevy” in Etsy titles until safer art strategy |
+| **Reviews (Aug 23)** | **All 5★** — Etsy **5.0 / 8** · eBay **100% positive** (7 pos / 0 neg) on `autoculturetees` |
 
 ### IP / listing risk (Aug 23 — critical)
 
@@ -286,10 +287,14 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 
 **Prior snapshot (Jun 26 evening, superseded):** Etsy net $278.77 vs Printify $349.12 showed operational loss before late-month sales landed.
 
-### Reviews snapshot (Jun 26)
+### Reviews snapshot (2026-08-23)
 
-- Current known reviews: **3 total, all 5-star** (Tavian, David, Patrick).
-- Positive buyer support/response quality is explicitly mentioned in Tavian review text.
+| Channel | Score | Count | Notes |
+|---------|-------|-------|-------|
+| **Etsy** | **5.0** | **8 reviews** | All 5★. Recent: Michelle poster (Aug 20) · Mitch C7 (Aug 16, listing gone) · Tom Atomic Orange (Aug 9, listing gone) · Nancy C7 (Aug 8, listing gone) · David (Jul 7+) |
+| **eBay** (`autoculturetees`) | **100% positive** | **7** positive / 0 neutral / 0 negative (12mo) · header also shows 100% (6) | janevee (IT WAS IN) + dragneon (“coolest shirts…”) + automated delivery feedback; **9** items sold · **20** active |
+
+**Takeaway:** product/fulfillment quality is fine — IP removals are the Etsy bottleneck, not reviews. Several 5★ Etsy reviews now point at **“no longer available”** Corvette listings (Mitch/Tom/Nancy).
 
 ---
 

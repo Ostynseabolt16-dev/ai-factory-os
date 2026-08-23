@@ -24,6 +24,7 @@
 | **Etsy still converting** | Poster / kids / whatever Corvette titles remain — watch IP risk; pickleball stack is most of the active catalog |
 | **Soft Serve + Eyes** | Still **0 sales** |
 | **Dinking Problem** | **LIVE + sold** eBay Aug 13 |
+| **Reviews** | **All 5★** — Etsy 5.0 (8) · eBay 100% positive (`autoculturetees`) |
 
 ## Next actions (priority)
 
