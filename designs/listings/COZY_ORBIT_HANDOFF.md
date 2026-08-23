@@ -27,6 +27,7 @@
 | **Reviews** | **All 5★** — Etsy 5.0 (8) · eBay 100% positive (`autoculturetees`) |
 | **Etsy deactivate pass** | Challenger · Supra · R34 · Yellow C6 hoodie · C7 V8 hoodie **off**. **C8 Night Run kept** (watch IP; no on-site Ads). |
 | **Etsy thumbs** | Many Etsy thumbnails refreshed Aug 23 night — bake 48–72h; next: eBay price/Ad Fee so tees clear **$5+ cash** |
+| **P&L flash (Aug 23 screens)** | Etsy YTD “net” **$465** but Ads **−$185** + Printify costs-to-date **~$550** → all-in thin/red · eBay earnings **$154** vs Printify **~$160** ≈ flat · **keep on-site Ads off** |
 
 ## Next actions (priority)
 
