@@ -26,6 +26,27 @@ Both orders are **open and unfulfilled** — Printify has them but is still "con
 
 **Pending from July, still unresolved here:** Dinking Problem never got marked live; Jul 15 Yellow C5 hoodie Printify cost was never filled in; C6 Variant B regen still blocked on OpenAI credits.
 
+### Shop changes during the Aug–Sep hiatus (owner report, Sep 21)
+
+| Change | Detail |
+|--------|--------|
+| **Meme / text-to-image tees** | **Taken down** — low views, no clicks, 0 sales. Niche is dead as built; see `NICHE_PORTFOLIO.md` for why (generic joke names no tribe). |
+| **Thumbnails** | Swapped to better photos on **Etsy**. **Could not change on eBay** — likely because those listings are Printify-published, so the image has to be changed in Printify and re-synced. |
+| **Activity** | Roughly a month of no shop work; the two September sales restarted it. |
+| **Portfolio goal** | Owner wants **~10 niches** each selling occasionally. Plan + validation gate now live in `designs/listings/NICHE_PORTFOLIO.md`. |
+
+### Niche status (Sep 21)
+
+| Niche | State |
+|-------|-------|
+| **Corvette** | ~20 sales — the business. Risk = CORVETTE wordmark in art (Etsy strike). De-risk, do not abandon. |
+| **Posters / wall art** | 1 sale, best margin (~43% kept). **Cheapest next win** — poster listings from blueprint art we already own. |
+| **Pickleball** | 1 sale of 4 SKUs, and only the **type-first** one converted. Kill the 2 illustrated SKUs. |
+| **Meme tees** | 0 sales, taken down. |
+| **Car culture (brand-free)** | **NEW — Wave 1 art ready:** manual / garage / autocross type-first tees, no wordmarks, no OpenAI spend. `designs/listings/CAR_CULTURE_WAVE1.md` |
+
+**Launch gate now in force:** 1 SKU per new niche, dark shirts, **ads off 14 days**, then read views → clicks → sales; max 3 live SKUs in a niche until it has 2+ sales. Full rules in `NICHE_PORTFOLIO.md`.
+
 ## July 21 update (post IT WAS IN sale)
 
 | Item | Status |
@@ -291,6 +312,16 @@ Both orders are **open and unfulfilled** — Printify has them but is still "con
 | **C5 Black** (color variant) | `c5_black_collection.png` | `c5_black_collection_UPLOAD_TO_PRINTIFY.png` |
 | **C8 Black Gothic** (color/style variant) | `c8_black_gothic_collection.png` | `c8_black_gothic_collection_UPLOAD_TO_PRINTIFY.png` |
 | **C4 Pop-Up Gothic** | `c4_popup_gothic_collection.png` | `c4_popup_gothic_collection_UPLOAD_TO_PRINTIFY.png` |
+
+### Car culture Wave 1 — type-first, no OpenAI (Sep 21, ready to upload)
+
+| SKU | Copy | Printify export |
+|-----|------|-----------------|
+| Third Pedal (manual) | MY ANTI-THEFT DEVICE / **THIRD PEDAL** / GOOD LUCK | `designs/car_culture/manual_third_pedal_UPLOAD_TO_PRINTIFY.png` |
+| 5 Minute Job (garage) | IT WAS SUPPOSED TO BE A / **5 MINUTE JOB** / THAT WAS SATURDAY | `designs/car_culture/garage_five_minute_job_UPLOAD_TO_PRINTIFY.png` |
+| The Cone Hit Me (autocross) | I DIDN'T HIT THE CONE / **THE CONE** / HIT ME | `designs/car_culture/autocross_cone_hit_me_UPLOAD_TO_PRINTIFY.png` |
+
+Listing copy: `designs/listings/CAR_CULTURE_WAVE1.md` · Rebuild: `python3 scripts/compose_type_first_tee.py` · **Dark shirts only** · eBay $21.99 S–XL / Etsy $22.99+ · ads OFF 14 days
 
 **C7 Laguna Blue (2026-06-14):** Debadged nose, front splitter, solid V8. Export **`--threshold 235`**. **Light shirts only.** Listing: `designs/listings/C7_LAGUNA_BLUE.md`.
 

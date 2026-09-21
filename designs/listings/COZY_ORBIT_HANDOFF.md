@@ -24,6 +24,10 @@
 
 **Tonight, in order:** (1) clear the Printify payment hold so the Sep 24 hoodie ship-by holds, (2) confirm which channel these two came from, (3) note that posters keep ~43% of order total — best margin in the shop, so blueprint posters for C4/C6/C7 are the obvious next listings.
 
+**Restart context (Sep 21):** meme/text-to-image tees are **taken down** (low views, no clicks, 0 sales); Etsy thumbnails were refreshed, eBay ones couldn't be (Printify-managed images). Owner wants **~10 niches** each selling occasionally — plan, 10-niche slate, and the launch gate are in `designs/listings/NICHE_PORTFOLIO.md`.
+
+**Ready to upload with zero OpenAI spend:** Car Culture Wave 1 — 3 brand-free type-first tees (manual / garage / autocross) in `designs/car_culture/`, copy in `designs/listings/CAR_CULTURE_WAVE1.md`. Dark shirts only, ads OFF 14 days, 1 SKU per niche.
+
 ## July 21 flash update
 
 | Sale / item | Status |
