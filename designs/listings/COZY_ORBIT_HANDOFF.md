@@ -1,4 +1,4 @@
-# CozyOrbitPrints — Master Handoff (July 21, 2026)
+# CozyOrbitPrints — Master Handoff (September 21, 2026)
 
 > Shop: https://www.etsy.com/shop/CozyOrbitPrints  
 > **Read this + `SHOP_STATE.md` + `sales_log.csv` at start of every session.**  
@@ -13,7 +13,18 @@
 - **Channels:** Etsy (primary historically) + eBay (now converting — re-prioritize)
 - **Proven styles:** (1) Blueprint / technical front+back · (2) Gothic text + side car · (3) minimal pickleball text gag (**IT WAS IN** sold)
 
-## July 21 flash update (tonight)
+## September 21 flash update (tonight)
+
+| Sale / item | Status |
+|-------------|--------|
+| **C5 Blueprint Poster 20×30** | **SOLD Sep 20 — $32.03** · Gavin Griswold, West Lafayette IN · ship by **Sep 25** · Printify **#27546430.27 $14.76** → est. **~$13.78** · **first poster sale** |
+| **Yellow C6 V8 Hoodie** | **SOLD Sep 19 — $65.39** (VAT) · Michel TANGUY, Clermont-Ferrand FR · Sport Grey 3XL · ship by **Sep 24** · Printify **#27546430.26 $30.58** → est. **~$17.96** |
+| **Both Printify orders** | Stuck **"confirming payment" / item On hold** as of Sep 21 11:47 — nothing is in production yet |
+| **Channel** | Owner said **eBay**; Printify prefix `27546430.x` + 10-digit receipt IDs both point to the **Etsy** store (eBay = `27858258.x`) — **confirm** |
+
+**Tonight, in order:** (1) clear the Printify payment hold so the Sep 24 hoodie ship-by holds, (2) confirm which channel these two came from, (3) note that posters keep ~43% of order total — best margin in the shop, so blueprint posters for C4/C6/C7 are the obvious next listings.
+
+## July 21 flash update
 
 | Sale / item | Status |
 |-------------|--------|

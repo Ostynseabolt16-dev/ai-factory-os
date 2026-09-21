@@ -1,13 +1,30 @@
 # CozyOrbitPrints — Shop State (source of truth)
 
 **Etsy shop:** https://www.etsy.com/shop/CozyOrbitPrints  
-**Last updated:** 2026-07-21 (first pickleball sale — eBay IT WAS IN $18.99 on Jul 17; Soft Serve + Eyes still quiet; Dinking Problem art ready)
+**Last updated:** 2026-09-21 (2 new orders: **first poster sale** C5 Blueprint Poster $32.03 to Indiana + Yellow C6 V8 Hoodie $65.39 to France; both stuck "confirming payment" in Printify)
 
 Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any new agent chat to avoid hallucinating order/design state.
 
 > **NOT kawaii stickers.** Live business = CozyOrbitPrints Corvette apparel (Etsy + eBay + Printify). GitHub `ai-factory-os` is stale May factory scaffolding — ignore it unless explicitly working on factory code.
 
 ---
+
+## September 21 update (2 new orders)
+
+Both orders are **open and unfulfilled** — Printify has them but is still "confirming payment", with each line item marked **On hold**. The hoodie ship-by is **Sep 24**, so the hold is the only urgent thing tonight.
+
+| Item | Detail |
+|------|--------|
+| **Corvette C5 Blueprint Poster** (Matte 20"×30" vertical) | **$32.03** · ordered Sep 20 · ship by **Sep 25** · Gavin Griswold, **West Lafayette IN** (Purdue) · order `4178621109` · Printify **#27546430.27** = **$14.76** (prod $7.77 + ship $6.99) → est. net **~$13.78** |
+| **Yellow Corvette C6 V8 Hoodie** (Sport Grey / 3XL) | **$65.39** (VAT flagged) · ordered Sep 19 · ship by **Sep 24** · Michel TANGUY, **Clermont-Ferrand FR** · order `4179464796` · Printify **#27546430.26** = **$30.58** (prod $25.09 + ship $5.49) → est. net **~$17.96** after ~20% VAT is remitted |
+| **Channel: unconfirmed** | Owner reported **eBay**, but both Printify orders use the **`27546430.x`** prefix (the store that produced the Etsy orders — eBay orders come through **`27858258.x`**), and both order IDs are 10-digit Etsy-format receipts. **Verify which channel** before using these for eBay-vs-Etsy fee math. |
+| **Both were ad-OFF listings** | C5 Blueprint Poster ads were removed Jul 3; Yellow C6 hoodie ads were paused Jul 1 → these read as **organic** sales, so no ad fee is assumed in the estimates above. |
+
+**Posters are the best-margin SKU so far.** Print + ship is **$14.76** on a **$32.03** order (~43% of order total kept), versus apparel where a $16–26 Printify cost eats most of a $21–33 shirt. Next natural moves: C7 / C6 / C4 blueprint posters off existing blueprint art, and consider putting a *small* ad budget back on the poster since it clears well above the $5/unit floor even with a 15% ad fee (~$8.98).
+
+**Log gap:** nothing was logged between **Jul 21 and Sep 19**. `sales_log.csv` totals are therefore a floor, not a true count — paste any missed Jul/Aug/Sep orders when convenient.
+
+**Pending from July, still unresolved here:** Dinking Problem never got marked live; Jul 15 Yellow C5 hoodie Printify cost was never filled in; C6 Variant B regen still blocked on OpenAI credits.
 
 ## July 21 update (post IT WAS IN sale)
 
@@ -176,7 +193,7 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 
 ---
 
-## Sales summary (user-reported; Jul 16 = 17+ Etsy + 3 eBay units logged)
+## Sales summary (user-reported; Sep 21 = 17+ Etsy + 4 eBay units logged, plus 2 Sep orders of unconfirmed channel)
 
 | Date | Buyer | Listing | Qty | Color | Size | Notes |
 |------|-------|---------|-----|-------|------|-------|
@@ -202,6 +219,8 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 | Jul 15 | Allyn Davis | **Yellow C5** hoodie 2-sided (eBay) | 1 | Ash | 2XL | **$50.58 earnings**; item `398084925179`; ship by Jul 29; Printify pending |
 | Jul 16 | — | **Pickleball Soft Serve** (listed) | — | — | — | Etsy + eBay live; still 0 sales as of Jul 21 |
 | Jul 17 | — | **Pickleball IT WAS IN** (eBay) | 1 | Mint | — | **First pickleball sale** $18.99 → ~$4.82 cash; Soft Serve + Eyes still 0 |
+| Sep 19 | Michel TANGUY | **Yellow C6 V8 Hoodie** | 1 | Sport Grey | 3XL | France (Clermont-Ferrand); $65.39 w/ VAT; Printify $30.58; est. ~$17.96; ship by Sep 24; **payment hold** |
+| Sep 20 | Gavin Griswold | **C5 Blueprint Poster** 20×30 | 1 | Matte | 20×30 | **First poster sale**; West Lafayette IN; $32.03; Printify $14.76; est. ~$13.78; ship by Sep 25; **payment hold** |
 
 **Refunded:** Jan — C5 Illustration Vintage — accidental order.
 
