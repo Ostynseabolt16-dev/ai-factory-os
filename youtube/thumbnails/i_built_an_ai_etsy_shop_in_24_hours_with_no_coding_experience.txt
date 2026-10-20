@@ -1,0 +1,10 @@
+Title: I built an AI Etsy shop in 24 hours with no coding experience
+Background color recommendation: #1F2022
+Main text (max 4 words): Built Etsy Shop Hours
+Emotion/face expression to use: amazed surprise
+Color scheme (3 hex codes): #1F2022, #FFD166, #EF476F
+Style: bold, high contrast, curiosity-gap
+
+Exact prompt for ChatGPT or Midjourney:
+-----------------------------------
+Create a bold YouTube thumbnail for a faceless AI business video titled "I built an AI Etsy shop in 24 hours with no coding experience". Use a strong background color of #1F2022 and a three-color palette of #1F2022, #FFD166, #EF476F. Display the headline text 'Built Etsy Shop Hours' in large, high-contrast letters. Use a striking curiosity-gap layout with amazed surprise expression, simple AI or business iconography, and clean modern type. Keep the look bold, dramatic, and easy to read on mobile.

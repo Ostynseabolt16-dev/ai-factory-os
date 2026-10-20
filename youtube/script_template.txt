@@ -1,0 +1,5 @@
+HOOK (0-3 seconds): [one shocking or curious statement]
+PROBLEM (3-30 seconds): [what problem this video solves]
+STORY (30s-3min): [what happened, be honest and specific]
+REVEAL (3-5min): [the result or lesson]
+CTA (last 10 seconds): [subscribe + what's coming next]

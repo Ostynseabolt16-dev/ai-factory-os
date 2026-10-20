@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Cozy Orbit — Etsy Sales Dashboard</title>
+<style>
+  :root {
+    --bg: #0d1117;
+    --chrome: #161b22;
+    --elevated: #1c232c;
+    --stroke: #2a323d;
+    --text: #e6edf3;
+    --muted: #9aa7b4;
+    --faint: #6b7681;
+    --green: #3fb950;
+    --blue: #58a6ff;
+    --amber: #d29922;
+    --accent: #58a6ff;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, sans-serif;
+    padding: 32px;
+    line-height: 1.45;
+  }
+  .wrap { max-width: 1100px; margin: 0 auto; }
+  header { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+  h1 { font-size: 26px; letter-spacing: 0.01em; }
+  h2 { font-size: 17px; margin: 28px 0 12px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); }
+  .tag { margin-left: auto; background: rgba(88,166,255,0.14); color: var(--blue); padding: 5px 12px; border-radius: 999px; font-size: 12px; font-weight: 600; }
+  .caption { color: var(--faint); font-size: 12.5px; margin-top: 6px; }
+  .divider { height: 1px; background: var(--stroke); margin: 16px 0 4px; }
+
+  .kpis { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 22px; }
+  .kpi { background: var(--chrome); border: 1px solid var(--stroke); border-radius: 12px; padding: 16px 18px; }
+  .kpi .val { font-size: 26px; font-weight: 700; }
+  .kpi .lbl { color: var(--muted); font-size: 12.5px; margin-top: 4px; }
+  .kpi .val.green { color: var(--green); }
+  .kpi .val.blue { color: var(--blue); }
+
+  .callout { border-radius: 12px; padding: 14px 16px; margin-top: 20px; font-size: 14px; }
+  .callout.warn { background: rgba(210,153,34,0.10); border: 1px solid rgba(210,153,34,0.35); }
+  .callout.info { background: rgba(88,166,255,0.08); border: 1px solid rgba(88,166,255,0.30); }
+  .callout .ct { font-weight: 700; margin-bottom: 6px; }
+  .callout.warn .ct { color: var(--amber); }
+  .callout.info .ct { color: var(--blue); }
+  .callout ol { margin: 4px 0 0 18px; }
+  .callout li { margin: 3px 0; }
+  strong { color: var(--text); }
+
+  table { width: 100%; border-collapse: collapse; background: var(--chrome); border: 1px solid var(--stroke); border-radius: 12px; overflow: hidden; }
+  th, td { padding: 10px 14px; text-align: left; font-size: 13.5px; border-bottom: 1px solid var(--stroke); }
+  th { color: var(--muted); font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 0.04em; }
+  tr:last-child td { border-bottom: none; }
+  td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+  .dot { display: inline-block; width: 7px; height: 7px; border-radius: 50%; margin-right: 8px; vertical-align: middle; }
+  .dot.green { background: var(--green); }
+  .dot.blue { background: var(--blue); }
+  .total td { font-weight: 700; background: var(--elevated); }
+
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; align-items: start; }
+  .bar-row { display: flex; align-items: center; gap: 10px; margin: 10px 0; font-size: 13px; }
+  .bar-row .name { width: 120px; color: var(--muted); flex-shrink: 0; }
+  .bar-track { flex: 1; background: var(--elevated); border-radius: 6px; height: 22px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 6px; }
+  .bar-fill.green { background: var(--green); }
+  .bar-fill.blue { background: var(--blue); }
+  .bar-row .v { width: 64px; text-align: right; font-variant-numeric: tabular-nums; }
+  .panel { background: var(--chrome); border: 1px solid var(--stroke); border-radius: 12px; padding: 16px 18px; }
+  .panel h3 { font-size: 13px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 10px; }
+  .note { color: var(--faint); font-size: 12.5px; margin-top: 8px; }
+  footer { color: var(--faint); font-size: 12px; margin-top: 28px; text-align: center; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Cozy Orbit — Etsy Sales</h1>
+    <span class="tag">Car shirts = the winner</span>
+  </header>
+  <div class="caption">Source: products.csv · as of Jun 8, 2026 · every order so far is from the Corvette line</div>
+  <div class="divider"></div>
+
+  <div class="kpis">
+    <div class="kpi"><div class="val green">$71.22</div><div class="lbl">Total revenue</div></div>
+    <div class="kpi"><div class="val">3</div><div class="lbl">Orders</div></div>
+    <div class="kpi"><div class="val">$23.74</div><div class="lbl">Avg order value</div></div>
+    <div class="kpi"><div class="val">$62.67</div><div class="lbl">Profit after Etsy fees</div></div>
+    <div class="kpi"><div class="val blue">23</div><div class="lbl">Live listings</div></div>
+    <div class="kpi"><div class="val">52</div><div class="lbl">Designs in catalog</div></div>
+  </div>
+
+  <div class="callout warn">
+    <div class="ct">Profit shown is BEFORE Printify production cost</div>
+    The $62.67 above subtracts Etsy fees only. It does <strong>not</strong> include Printify production
+    (~$12–16 per shirt). After production, true net is roughly <strong>$5–12 per order</strong> — which is
+    exactly why the margin bump to ~28% + free shipping matters before scaling ads.
+  </div>
+
+  <h2>Sales by product</h2>
+  <div class="grid2">
+    <table>
+      <thead><tr><th>Product</th><th class="num">Orders</th><th class="num">Revenue</th><th class="num">Etsy fees</th><th class="num">After fees</th></tr></thead>
+      <tbody>
+        <tr><td><span class="dot green"></span>Corvette C5</td><td class="num">1</td><td class="num">$27.21</td><td class="num">$3.27</td><td class="num">$23.94</td></tr>
+        <tr><td><span class="dot green"></span>Corvette C6</td><td class="num">2</td><td class="num">$44.01</td><td class="num">$5.28</td><td class="num">$38.73</td></tr>
+        <tr class="total"><td>Total</td><td class="num">3</td><td class="num">$71.22</td><td class="num">$8.55</td><td class="num">$62.67</td></tr>
+      </tbody>
+    </table>
+    <div class="panel">
+      <h3>Revenue by design (USD)</h3>
+      <div class="bar-row"><span class="name">Corvette C5</span><div class="bar-track"><div class="bar-fill green" style="width:61.8%"></div></div><span class="v">$27.21</span></div>
+      <div class="bar-row"><span class="name">Corvette C6</span><div class="bar-track"><div class="bar-fill green" style="width:100%"></div></div><span class="v">$44.01</span></div>
+      <div class="note">Source: products.csv</div>
+    </div>
+  </div>
+
+  <h2>Corvette line status</h2>
+  <table>
+    <thead><tr><th>Generation</th><th>Years</th><th>Status</th><th class="num">Orders</th><th class="num">Revenue</th></tr></thead>
+    <tbody>
+      <tr><td><span class="dot blue"></span>Corvette C4</td><td>1984–1996</td><td>Live</td><td class="num">0</td><td class="num">—</td></tr>
+      <tr><td><span class="dot green"></span>Corvette C5</td><td>1997–2004</td><td>Sold</td><td class="num">1</td><td class="num">$27.21</td></tr>
+      <tr><td><span class="dot green"></span>Corvette C6</td><td>2005–2013</td><td>Sold</td><td class="num">2</td><td class="num">$44.01</td></tr>
+      <tr><td><span class="dot blue"></span>Corvette C7</td><td>2014–2019</td><td>Live</td><td class="num">0</td><td class="num">—</td></tr>
+      <tr><td><span class="dot blue"></span>Corvette C8</td><td>2020–now</td><td>Live</td><td class="num">0</td><td class="num">—</td></tr>
+      <tr><td><span class="dot blue"></span>Corvette C8 (illustrated)</td><td>2020–now</td><td>Live</td><td class="num">0</td><td class="num">—</td></tr>
+    </tbody>
+  </table>
+  <div class="note">Full C4–C8 lineup is now live on Etsy. C5 and C6 are the proven sellers; C4 and C7 just launched.</div>
+
+  <h2>Catalog pipeline (52 designs)</h2>
+  <div class="panel">
+    <div class="bar-row"><span class="name">Draft / ideation</span><div class="bar-track"><div class="bar-fill blue" style="width:100%"></div></div><span class="v">27</span></div>
+    <div class="bar-row"><span class="name">Live on Etsy</span><div class="bar-track"><div class="bar-fill blue" style="width:85.2%"></div></div><span class="v">23</span></div>
+    <div class="bar-row"><span class="name">Has sold</span><div class="bar-track"><div class="bar-fill green" style="width:7.4%"></div></div><span class="v">2</span></div>
+    <div class="note">Only 2 of 52 designs have ever sold — and both are Corvettes. The proven signal is the car line.</div>
+  </div>
+
+  <div class="callout info">
+    <div class="ct">Where the leverage is</div>
+    <ol>
+      <li><strong>C4 and C7 are now live</strong> — watch for their first orders.</li>
+      <li>Set ~28% margin + free shipping across the whole line, not just C4.</li>
+      <li>Keep the $3/day ads pointed only at proven car designs (C5/C6).</li>
+      <li>Ignore the 27 untested drafts until the car line is fully scaled.</li>
+    </ol>
+  </div>
+
+  <footer>Cozy Orbit Studios · generated from products.csv</footer>
+</div>
+</body>
+</html>

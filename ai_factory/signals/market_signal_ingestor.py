@@ -42,26 +42,33 @@ def calculate_market_signal(listing: dict[str, str]) -> dict[str, object]:
 def update_product_signal_from_market(product_id: str | int) -> dict[str, object]:
     """Sync listing revenue/orders into products.csv for one product."""
     target = str(product_id)
+    rows = read_products()
+    product = next((row for row in rows if row.get("id") == target), None)
+
     listings = [listing for listing in read_listings() if listing.get("product_id") == target]
     total_orders = sum(int(listing.get("orders") or 0) for listing in listings)
     total_revenue = sum(float(listing.get("revenue") or 0) for listing in listings)
+
+    if not listings:
+        total_orders = int(product.get("total_orders") or 0) if product else 0
+        total_revenue = float(product.get("actual_revenue") or product.get("revenue") or 0.0) if product else 0.0
+
     total_fees = round(total_revenue * 0.12, 2)
     estimated_profit = round(total_revenue - total_fees, 2)
-    rows = read_products()
-    for product in rows:
-        if product.get("id") == target:
-            product["actual_sales_count"] = str(total_orders)
-            product["total_orders"] = str(total_orders)
-            product["actual_revenue"] = f"{total_revenue:.2f}"
-            product["revenue"] = f"{total_revenue:.2f}"
-            product["platform_fees_estimate"] = f"{total_fees:.2f}"
-            product["estimated_profit"] = f"{estimated_profit:.2f}"
-            if total_orders and not product.get("first_sale_date"):
-                product["first_sale_date"] = now_iso()
-            if total_orders:
-                product["last_sale_date"] = now_iso()
-            write_products(rows)
-            break
+
+    if product:
+        product["actual_sales_count"] = str(total_orders)
+        product["total_orders"] = str(total_orders)
+        product["actual_revenue"] = f"{total_revenue:.2f}"
+        product["revenue"] = f"{total_revenue:.2f}"
+        product["platform_fees_estimate"] = f"{total_fees:.2f}"
+        product["estimated_profit"] = f"{estimated_profit:.2f}"
+        if total_orders and not product.get("first_sale_date"):
+            product["first_sale_date"] = now_iso()
+        if total_orders:
+            product["last_sale_date"] = now_iso()
+        write_products(rows)
+
     return {"product_id": target, "orders": total_orders, "revenue": round(total_revenue, 2), "estimated_profit": estimated_profit}
 
 
