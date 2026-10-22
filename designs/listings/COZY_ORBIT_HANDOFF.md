@@ -1,8 +1,20 @@
-# CozyOrbitPrints — Master Handoff (July 21, 2026)
+# CozyOrbitPrints — Master Handoff (Oct 22, 2026)
 
 > Shop: https://www.etsy.com/shop/CozyOrbitPrints  
 > **Read this + `SHOP_STATE.md` + `sales_log.csv` at start of every session.**  
 > **MacBook Cursor is NOT auto-synced with phone.** GitHub `ai-factory-os` is **stale** (May factory/stickers) — live shop state lives in these local files.
+
+---
+
+## Oct 22 flash update (two Etsy orders, both organic)
+
+| Sale / item | Status |
+|-------------|--------|
+| **Etsy Pickleball IT WAS IN ×5** (Oct 21) | **BIGGEST ORDER YET — $111.80** · Rachel Hauer · order `4209924522` · Military Green 2×M + 2×L + 1×2XL · ENDOF2026 10% off · earnings **$100.93** − Printify **$67.66** = **~$33.27 cash** · **organic, no ads** · Printify **#27546430.31 ON HOLD — submit, ship by Oct 26** |
+| **Etsy C5 Blueprint Poster** (Oct 22) | **FIRST POSTER SALE — $26.89** · Jessica Williams · 16×20 Matte @ $17.99 + $8.94 ship · gift ("Happy birthday") · Printify **#27546430.32 $12.71** confirming payment · **~$11.17 / ~42% margin** · ship by Oct 27 |
+| **Logging gap** | **Jul 21 → Oct 22 is unlogged.** Ads snapshot and P&L in `SHOP_STATE.md` are stale — back-fill from live Etsy/eBay/Printify screens before making budget decisions |
+
+**Takeaways:** $20.99+ pricing rule validated (7× the cash of the $18.99 eBay sale) · pickleball converts **organically on Etsy**, not only eBay · **Military Green** is a live selling color · team/family multi-unit demand is real (bundle test) · **posters are the best-margin unit in the shop** — extend blueprint posters to C4/C6/C7/C8 off existing masters, no OpenAI spend.
 
 ---
 

@@ -1,11 +1,51 @@
 # CozyOrbitPrints — Shop State (source of truth)
 
 **Etsy shop:** https://www.etsy.com/shop/CozyOrbitPrints  
-**Last updated:** 2026-07-21 (first pickleball sale — eBay IT WAS IN $18.99 on Jul 17; Soft Serve + Eyes still quiet; Dinking Problem art ready)
+**Last updated:** 2026-10-22 (Etsy 5-shirt IT WAS IN order Oct 21 — $111.80 organic; first C5 Blueprint Poster sale Oct 22 — $26.89 gift order)
 
 Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any new agent chat to avoid hallucinating order/design state.
 
 > **NOT kawaii stickers.** Live business = CozyOrbitPrints Corvette apparel (Etsy + eBay + Printify). GitHub `ai-factory-os` is stale May factory scaffolding — ignore it unless explicitly working on factory code.
+
+---
+
+## October 22 update (two new Etsy orders)
+
+> **Logging gap:** nothing was recorded between **Jul 21 and Oct 22**. The two orders below came from owner screenshots; any July–October sales, ad changes, or listings in between are **unlogged** and should be back-filled from Etsy/eBay/Printify when the owner has the screens open. Do not treat the ads and P&L sections lower in this file as current.
+
+### 1. Etsy — IT WAS IN pickleball ×5 (Oct 21) — biggest order to date
+
+| Field | Value |
+|-------|-------|
+| Buyer / order | Rachel Hauer · Etsy `4209924522` · ship by **Oct 26** |
+| Items | **5 shirts, 1 order** — Military Green: 2× M @ $20.99 · 2× L @ $20.99 · 1× 2XL @ $22.99 |
+| Buyer paid | **$111.80** (items $106.95 + ship $15.55 − coupon **ENDOF2026** 10% off −$10.70) |
+| Etsy fees | −$10.87 (txn $7.27 + processing $3.60) → **earnings $100.93** |
+| Printify | **#27546430.31 · $67.66** (prod $52.11 + ship $15.55) — **ON HOLD, needs Submit** |
+| Cash | **~$33.27** (~$6.65/shirt) |
+| Traffic | **Organic — no ads.** Team/family multi-size buy |
+
+**Reads:** (a) the **$20.99+ pricing rule from Jul 21 worked** — 7× the cash of the $18.99 eBay sale; (b) pickleball converts **organically** on Etsy, not just eBay; (c) **Military Green** is selling and is live on the listing even though this file only documented Black/Navy/Charcoal; (d) multi-unit team/family demand is real → bundle/qty-discount angle is worth testing.
+
+### 2. Etsy — C5 Blueprint Poster (Oct 22) — first poster sale
+
+| Field | Value |
+|-------|-------|
+| Buyer | Jessica Williams · Port Richey FL · ship by **Oct 27** |
+| Item | Corvette C5 Blueprint Poster, rolled · 16"×20" vertical · **Matte** · qty 1 @ **$17.99** |
+| Buyer paid | **$26.89** (item $17.99 + ship $8.94) · marked as **gift** ("Happy birthday / We love you!") |
+| Printify | **#27546430.32 · $12.71** (prod $5.32 + ship $7.39) — payment still confirming |
+| Est. fees / cash | ~$3.01 Etsy fees → **~$11.17 (~42% margin)** |
+| Traffic | **Organic** — this listing was on the Jul 3 "ads OFF" list |
+
+**Read:** posters are the **best-margin unit in the shop** (~42% vs ~15–25% on tees) because production is $5.32 and there is no size/color risk. The Jul 3 note to strip **C5 Blueprint Poster** from ads was about $0 ad revenue — it now has an organic sale, so it is a **candidate to re-test with a small ad budget** and to extend to C4/C6/C7/C8 blueprint posters off existing masters (no OpenAI spend needed).
+
+### Next actions (Oct 22)
+
+1. **Submit Printify #27546430.31** (pickleball ×5) — it is on hold and ship-by is Oct 26.
+2. Confirm **#27546430.32** (poster) clears payment hold and goes to production.
+3. Back-fill the **Jul 21 → Oct 22 gap** in `sales_log.csv` + the ads snapshot from live screens.
+4. Then: poster line extension (C4/C5/C6/C7/C8 blueprint posters) and a pickleball **multi-shirt/team bundle** test — both ride proven organic demand with no new art spend.
 
 ---
 
@@ -61,6 +101,7 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 | **eBay** | https://www.ebay.com/itm/398181038019 | Item `398181038019` · **sold Jul 17 $18.99** mint |
 | **Print file** | `designs/pickleball/pickleball_it_was_in_UPLOAD_TO_PRINTIFY.png` | Minimal line-call; dark shirts |
 | **P&L** | ~$4.82 cash | fees $3.53 · Printify $14.63 · raise next SKUs to $20.99+ |
+| **Etsy sale Oct 21** | **$111.80 / 5 shirts** | Military Green 2×M + 2×L + 1×2XL at $20.99/$22.99 · organic · **~$33.27 cash** · best SKU in the shop |
 
 ### Pickleball Dinking Problem (Jul 21 — READY, not live)
 
@@ -202,6 +243,8 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 | Jul 15 | Allyn Davis | **Yellow C5** hoodie 2-sided (eBay) | 1 | Ash | 2XL | **$50.58 earnings**; item `398084925179`; ship by Jul 29; Printify pending |
 | Jul 16 | — | **Pickleball Soft Serve** (listed) | — | — | — | Etsy + eBay live; still 0 sales as of Jul 21 |
 | Jul 17 | — | **Pickleball IT WAS IN** (eBay) | 1 | Mint | — | **First pickleball sale** $18.99 → ~$4.82 cash; Soft Serve + Eyes still 0 |
+| Oct 21 | Rachel Hauer | **Pickleball IT WAS IN** (Etsy) | **5** | Military Green | 2×M, 2×L, 1×2XL | **Biggest order to date** $111.80 organic; ENDOF2026 10% off; earnings $100.93; Printify $67.66 → **~$33.27 cash**; Printify on hold — submit |
+| Oct 22 | Jessica Williams | **C5 Blueprint Poster** (Etsy) | 1 | 16×20 Matte | — | **First poster sale** $26.89 organic gift order; Printify $12.71 → **~$11.17 (~42% margin)** |
 
 **Refunded:** Jan — C5 Illustration Vintage — accidental order.
 
@@ -363,7 +406,7 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 
 ## Shirt colors
 
-- **Pickleball Dinking Problem / Eyes / IT WAS IN:** Black, Navy, Charcoal (dark only — white/lime type)
+- **Pickleball Dinking Problem / Eyes / IT WAS IN:** dark only (white/lime type) — Black, Navy, Charcoal, **Military Green** (Military Green confirmed selling: Oct 21 Etsy 5-shirt order)
 - **C7 Laguna Blue:** White, Natural, Sport Grey only (not dark colors)
 - **C5 Torch Red:** White, Natural, Sport Grey only (not dark colors)
 - **C5 Black:** White, Natural, Sport Grey only (not dark colors)
