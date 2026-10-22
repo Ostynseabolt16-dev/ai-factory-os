@@ -1,6 +1,9 @@
 # Pickleball “Eyes Up Here” Tee — listing package
 
-**Status:** **LIVE** Jul 16, 2026 — Etsy + eBay  
+**Status:** **LIVE** Jul 16, 2026 — Etsy + eBay · **0 sales** as of Oct 22
+
+**Demand signal (Oct 17):** two Etsy favorites in one day (Florante, Renee) on the Etsy title "Pickleball T-Shirt | Two Neon Pickleball Eyes Are Up Here Tee". People find it and save it but do not buy — that points at **price, description, or mockup**, not traffic. Compare against IT WAS IN, which converts at $20.99/$22.99, before changing the art.
+
 **Files:**
 - Ball: `designs/pickleball/pickleball_ball_transparent_holes.png`
 - Arrow: `designs/pickleball/pickleball_arrow_up.png`
