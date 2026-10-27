@@ -1,13 +1,31 @@
 # CozyOrbitPrints — Shop State (source of truth)
 
 **Etsy shop:** https://www.etsy.com/shop/CozyOrbitPrints  
-**Last updated:** 2026-07-21 (first pickleball sale — eBay IT WAS IN $18.99 on Jul 17; Soft Serve + Eyes still quiet; Dinking Problem art ready)
+**Last updated:** 2026-10-27 (sales dry spell since Jul 17; Dinking Problem still unlisted; copy-candidate screenshot review opened — see `COPY_CANDIDATES.md`)
 
 Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any new agent chat to avoid hallucinating order/design state.
 
 > **NOT kawaii stickers.** Live business = CozyOrbitPrints Corvette apparel (Etsy + eBay + Printify). GitHub `ai-factory-os` is stale May factory scaffolding — ignore it unless explicitly working on factory code.
 
 ---
+
+## Oct 27 update — dry spell + copy-candidate review
+
+Owner reports **no recent sales on Etsy or eBay** and is sending screenshots of shirts to evaluate
+for "which ones should we copy."
+
+| Item | Status |
+|------|--------|
+| **Last logged sale** | **Jul 17** (eBay pickleball IT WAS IN) — ~3 months with nothing appended to `sales_log.csv` |
+| **Numbers needed from owner** | Etsy Ads last 30d, Etsy visits/conversion, eBay impressions, current ad spend. Everything in the Ads snapshot below is from **Jun 26** and is stale. |
+| **Dinking Problem** | Art has been ready since Jul 21 and **still is not listed** — no new SKU has gone live in ~3 months |
+| **Etsy Yellow C5** | Still down since July; it was the ad **traffic** leader, so Etsy top-of-funnel lost a major listing and nothing replaced it |
+| **Screenshot review** | Intake + scoring rubric: `designs/listings/COPY_CANDIDATES.md`; file drop: `designs/research/screenshots/` |
+| **Season** | Late Oct = Q4 gift window opening; car-guy gift tees are a gift-season category, so new listings should go up now, not in December |
+
+**Working theory on the dry spell (unverified — needs the owner's current stats):** listing count went
+flat while a top traffic listing was removed, so there is less new inventory and less Etsy surface
+area than in June. Confirm against real numbers before acting on it.
 
 ## July 21 update (post IT WAS IN sale)
 
