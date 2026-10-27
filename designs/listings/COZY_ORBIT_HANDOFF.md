@@ -1,8 +1,24 @@
-# CozyOrbitPrints — Master Handoff (Oct 22, 2026)
+# CozyOrbitPrints — Master Handoff (Oct 27, 2026)
 
 > Shop: https://www.etsy.com/shop/CozyOrbitPrints  
 > **Read this + `SHOP_STATE.md` + `sales_log.csv` at start of every session.**  
 > **MacBook Cursor is NOT auto-synced with phone.** GitHub `ai-factory-os` is **stale** (May factory/stickers) — live shop state lives in these local files.
+
+---
+
+## Oct 27 flash update — eBay ad fee is the #1 problem
+
+| Sale | Status |
+|------|--------|
+| **eBay Yellow C5 2-Sided Hoodie** (Oct 26) | Light Blue / L · Network Fundie · Forney TX · order `22-15321-06774` · $49.99 + $7.39 ship · earnings **$40.46** after $8.85 txn + **$8.07 Ad Fee General** · Printify **#27858258.13 $37.09** (shipped) → **only ~$3.37 cash** · funds on hold |
+
+**The ad fee is the whole story.** The same hoodie sold **Jul 15** at $51.99 with **no ad fee** and earned **$50.58**. Oct 26 earned $40.46. Same gross, **$10.12 less**, and the gap is the **$8.07 ad fee (16.1% of item)**. Selling costs were **29.5%** of item+shipping — worse than Etsy.
+
+**Do this first:** cut the eBay promoted ad rate on hoodies, then audit the ad rate on every promoted eBay listing (July's hoodie paid zero, October's paid $8.07 — the rates are inconsistent). At ~2% ad rate this order would have cleared about **$10.44**. Raising the hoodie price instead would need roughly **$59** to clear $10, so the ad rate is the faster lever. **This same lesson has now shown up three times since July and was never acted on.**
+
+**Also corrected:** the Jul 15 hoodie was logged at **$50.58 net profit**, but that was eBay *earnings* — Printify never synced, so production was missing. Real cash was about **$13.49** using this order's $37.09 cost. Recorded P&L was ~$37 too optimistic.
+
+**New facts:** 2-sided Yellow C5 hoodie Printify cost is **$37.09** (prod $27.90 + ship $9.19), the shop's most expensive unit · Printify `#27858258.x` = **eBay** shop, `#27546430.x` = **Etsy** shop · Yellow C5 (the CORVETTE-wordmark art Etsy took down) is now the most reliable eBay seller, which is real concentration risk on a design that cannot be relisted on Etsy.
 
 ---
 
@@ -28,7 +44,7 @@
 - **Two selling SKUs are undocumented:** Skelly in My Belly Halloween tee and City Roadmap Play Mat. Write listing packages.
 - **Still stale:** the ads snapshot and P&L sections in `SHOP_STATE.md` predate all of this. Do not make budget calls off them.
 
-**Do these first (Oct 22):** (1) **submit Printify #27546430.31** — pickleball ×5, on hold, ship by **Oct 26**; (2) confirm the **Skelly FB order is marked shipped** so the $25.51 payout is not lost to the 7-day cancel; (3) **fix play mat pricing**; (4) back-fill order `4143679545` + September item prices. Full ordered list in `SHOP_STATE.md` → "Next actions (Oct 22, in order)".
+**Do these first (updated Oct 27):** (0) **cut the eBay hoodie ad rate** — see the Oct 27 section above; (1) **submit Printify #27546430.31** — pickleball ×5, on hold, ship by **Oct 26**; (2) confirm the **Skelly FB order is marked shipped** so the $25.51 payout is not lost to the 7-day cancel; (3) **fix play mat pricing**; (4) back-fill order `4143679545` + September item prices. Full ordered list in `SHOP_STATE.md` → "Next actions (updated Oct 27, in order)".
 
 ---
 

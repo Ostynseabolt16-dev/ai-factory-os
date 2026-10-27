@@ -1,11 +1,63 @@
 # CozyOrbitPrints — Shop State (source of truth)
 
 **Etsy shop:** https://www.etsy.com/shop/CozyOrbitPrints  
-**Last updated:** 2026-10-22 (Oct 21 5-shirt pickleball order; first poster sale Oct 22; **Jul–Oct gap partially back-filled** — first **Facebook Marketplace** sale, first **Skelly/Halloween** SKU sale, 2 hoodie sales, and a **money-losing play mat order**)
+**Last updated:** 2026-10-27 (**Oct 26 eBay Yellow C5 hoodie cleared only $3.37 — Ad Fee General 16.1% is the cause**; plus Oct 21 5-shirt pickleball order, first poster sale, and the Jul–Oct back-fill)
 
 Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any new agent chat to avoid hallucinating order/design state.
 
 > **NOT kawaii stickers.** Live business = CozyOrbitPrints Corvette apparel (Etsy + eBay + Printify). GitHub `ai-factory-os` is stale May factory scaffolding — ignore it unless explicitly working on factory code.
+
+---
+
+## October 27 update — eBay Ad Fee General is destroying hoodie margin
+
+**Oct 26 sale:** Yellow Corvette C5 Vintage 2-Sided Hoodie · **Light Blue / L** · buyer **Network Fundie** · Forney TX · eBay order `22-15321-06774` · Printify **#27858258.13 already SHIPPED**.
+
+| Line | Amount |
+|------|--------|
+| Item subtotal | $49.99 |
+| Buyer shipping | $7.39 |
+| Sales tax (eBay remits) | $4.73 |
+| **Buyer paid** | **$62.11** |
+| − tax remitted | −$4.73 |
+| − **Transaction fees** | **−$8.85** |
+| − **Ad Fee General** | **−$8.07** |
+| **eBay earnings** | **$40.46** (funds **ON HOLD**) |
+| − Printify #27858258.13 (prod $27.90 + ship $9.19) | −$37.09 |
+| **Cash** | **~$3.37** |
+
+### The ad fee is the entire problem — here is the proof
+
+The **same hoodie** sold on **Jul 15** at $51.99 and earned **$50.58**, because that order carried **no Ad Fee General**. Oct 26 sold at $49.99 and earned **$40.46**. Nearly identical gross, **$10.12 less earnings**, and the difference is almost exactly the **$8.07 ad fee**.
+
+| | Jul 15 (Allyn Davis) | Oct 26 (Network Fundie) |
+|---|---|---|
+| Item | $51.99 | $49.99 |
+| Transaction fees | $8.80 | $8.85 |
+| **Ad Fee General** | **$0.00** | **−$8.07** |
+| Earnings | **$50.58** | **$40.46** |
+
+**Ad Fee General was 16.1% of the item price.** Total selling costs were **$16.92 on $57.38** of item+shipping — **29.5%**. That is worse than Etsy, which was supposed to be the expensive channel.
+
+**This is the third time this exact lesson has appeared** (Jul 16: $3.75 ad fee broke even the Yellow C5 tee; Jul 21 note "Ad Fee General is material"; now $8.07 on a hoodie). It was never fixed, and the fee scales with price, so it hurts worse on hoodies than tees.
+
+### Action — do this before the next eBay hoodie sells
+
+1. **Cut the eBay promoted-listing ad rate on hoodies now.** At the current rate a $49.99 hoodie nets $3.37. Dropping the ad rate to ~2% would have left roughly **$10.44** on this same order.
+2. **Or raise the hoodie price.** At this earnings rate (70.5% of item+shipping), clearing $10 cash needs an item price near **$59**. Current baseline is $41–46, so the ad rate is the faster lever.
+3. **Re-check every promoted eBay listing's ad rate** — the Jul 15 hoodie had no ad fee at all, so the rate was changed or applied inconsistently between July and October. Find out which listings are paying what.
+4. **Guardrail to enforce:** no eBay listing stays promoted unless net cash clears **$5+** after transaction fees, ad fee, and Printify. That rule already exists in the eBay snapshot below and was not followed.
+
+### Corrected prior record
+
+`sales_log.csv` logged the **Jul 15 hoodie** at **$50.58 net profit**. That was eBay **earnings**, not profit — Printify never synced, so production was missing entirely. Using this order's identical-hoodie cost ($37.09) as a proxy, real cash on Jul 15 was about **$13.49**. The row is corrected and flagged to confirm the actual Printify charge. **The shop's recorded P&L was roughly $37 too optimistic.**
+
+### Other notes from this sale
+
+- **Printify shop prefixes:** `#27858258.x` = **eBay**-linked Printify shop, `#27546430.x` = **Etsy**-linked. Useful for telling channels apart from a Printify screenshot alone.
+- **First recorded Printify cost for the 2-sided Yellow C5 hoodie: $37.09** (prod $27.90 + ship $9.19). Two-sided printing is expensive — that is why the hoodie needs either a higher price or near-zero ad fee.
+- **Light Blue / L** worked for this art, consistent with the Jun 11 Light Blue tee sale.
+- **IP reminder:** this is still the Yellow C5 art with the **CORVETTE wordmark** that Etsy took down. eBay keeps selling it, so keep fulfilling, but the safer no-wordmark replacement is still unbuilt and this design is now the shop's most reliable eBay seller — that is concentration risk.
 
 ---
 
@@ -93,8 +145,9 @@ Production is **$23.33/mat** and Printify shipping is **$19.78** for two — shi
 
 **Read:** posters are the **best-margin unit in the shop** (~42% vs ~15–25% on tees) because production is $5.32 and there is no size/color risk. The Jul 3 note to strip **C5 Blueprint Poster** from ads was about $0 ad revenue — it now has an organic sale, so it is a **candidate to re-test with a small ad budget** and to extend to C4/C6/C7/C8 blueprint posters off existing masters (no OpenAI spend needed).
 
-### Next actions (Oct 22, in order)
+### Next actions (updated Oct 27, in order)
 
+0. **Cut the eBay promoted-listing ad rate on hoodies** and audit the rate on every promoted eBay listing — $8.07 of ad fee turned a $49.99 hoodie into $3.37 of cash. This is the single highest-value fix on the list.
 1. **Submit Printify #27546430.31** (pickleball ×5) — on hold, ship-by **Oct 26**. Biggest order in shop history; do not let it sit.
 2. **Confirm the Skelly FB order shipped and is marked shipped on Facebook** — payout $25.51 is held until delivery, and FB cancels past the ship-by.
 3. **Fix play mat pricing** (raise price and/or exclude from coupons) — currently selling at a loss on both recorded orders.
@@ -307,6 +360,7 @@ Production is **$23.33/mat** and Printify shipping is **$19.78** for two — shi
 | Oct 14 | Karl Gilbert | **City Roadmap Play Mat** (Etsy `4200448311`) | **2** | Front mat | Polyester loop | Buyer paid $78.32 (ENDOF2026 −$5.80); Printify #27546430.29 **$66.44** → **~−$2.52 LOSS**; raise price or delist |
 | Oct 21 | Rachel Hauer | **Pickleball IT WAS IN** (Etsy) | **5** | Military Green | 2×M, 2×L, 1×2XL | **Biggest order to date** $111.80 organic; ENDOF2026 10% off; earnings $100.93; Printify $67.66 → **~$33.27 cash**; Printify on hold — submit |
 | Oct 22 | Jessica Williams | **C5 Blueprint Poster** (Etsy) | 1 | 16×20 Matte | — | **First poster sale** $26.89 organic gift order; Printify $12.71 → **~$11.17 (~42% margin)** |
+| Oct 26 | Network Fundie | **Yellow C5 2-Sided Hoodie** (eBay `22-15321-06774`) | 1 | Light Blue | L | $49.99 + $7.39 ship; earnings $40.46 after $8.85 txn + **$8.07 Ad Fee General**; Printify #27858258.13 $37.09 → **only ~$3.37 cash**; **cut the eBay ad rate** |
 
 **Refunded:** Jan — C5 Illustration Vintage — accidental order.
 
@@ -468,10 +522,12 @@ Production is **$23.33/mat** and Printify shipping is **$19.78** for two — shi
 - **No Printify integration** — every order is a manual Printify order. Full playbook in the October 22 update above.
 - **Channel rule:** fine for novelty/seasonal SKUs where the 10% flat fee beats Etsy fees + ads. Do not list the Corvette catalog here until the manual fulfillment step is routine.
 
-## eBay snapshot (updated 2026-07-21)
+## eBay snapshot (updated 2026-10-27)
 
-- **Active / promoted:** listings live; **Ad Fee General** is material — Yellow C5 tee took **$3.75** ad on a $26.09 item.
-- **Sales:** (1) Jun 18 C5 old art Michael ~$9.46 before promo fee · (2) Jul 15 Yellow C5 tee ~breakeven without coupon / ~$10 with $10 Printify coupon · (3) Jul 15 Yellow C5 2-sided hoodie $51.99 pending Printify · (4) **Jul 17 Pickleball IT WAS IN $18.99 → ~$4.82 cash**.
+- **BLOCKER — Ad Fee General:** charged **16.1%** of item price on the Oct 26 hoodie (**$8.07**), which cut cash from ~$11 to **$3.37**. Combined with transaction fees, selling costs hit **29.5%** of item+shipping. **Cut the hoodie ad rate before the next sale.** Full math in the October 27 update at the top of this file.
+- **Fee inconsistency to investigate:** the Jul 15 hoodie carried **no ad fee at all**; the Oct 26 hoodie carried $8.07. Audit the ad rate on every promoted eBay listing.
+- **Sales:** (1) Jun 18 C5 old art Michael ~$9.46 before promo fee · (2) Jul 15 Yellow C5 tee ~breakeven without coupon / ~$10 with $10 Printify coupon · (3) Jul 15 Yellow C5 2-sided hoodie $51.99, earnings $50.58, **real cash ~$13.49 once the $37.09 hoodie production cost is applied** (corrected Oct 27) · (4) Jul 17 Pickleball IT WAS IN $18.99 → ~$4.82 cash · (5) **Oct 26 Yellow C5 2-sided hoodie $49.99 → ~$3.37 cash (ad fee $8.07)**.
+- **Known Printify cost — 2-sided Yellow C5 hoodie: $37.09** (prod $27.90 + ship $9.19). Two-sided print is the shop's most expensive unit.
 - **2026-06-19:** Yellow C5 hoodie (front+back) and Yellow C6 hoodie (front-only) launched to eBay.
 - **Channel rule (Jul 16):** eBay is **live demand** for Yellow C5 while Etsy listing is down — keep fulfilling; fix tee price/ad % so next sale clears **$5+ without coupons**.
 - **IP note:** Yellow C5 art includes **CORVETTE** lettering — likely why Etsy took it down; eBay can get hit too. Plan safer replacement (no brand wordmark) before heavy ad spend.
