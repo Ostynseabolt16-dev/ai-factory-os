@@ -16,7 +16,8 @@ for "which ones should we copy."
 
 | Item | Status |
 |------|--------|
-| **Last logged sale in `sales_log.csv`** | **Jul 17** (eBay pickleball IT WAS IN) — but Etsy stats show **3 orders / $164.62 in the last 30 days**, so the log is behind. Back-fill from Etsy Orders. |
+| **Last logged sale in `sales_log.csv`** | **Jul 17** — but Etsy shows **3 orders / $164.62 in the last 30 days** (Kids Play Mat Oct 14; Corvette C5 Blueprint Poster ~Oct 22; a 3-item order ~Oct 22). The log is behind by at least these three. Back-fill from Etsy Orders. |
+| **Headline** | Etsy reports **$540.21 net profit** over 12 months, but that **excludes Printify's $803.09**. All-in the shop is **≈ −$48**, roughly breakeven. See the true-P&L block below. |
 | **Etsy Ads numbers** | **Refreshed Oct 27** — see the real-numbers block below. The Jun 26 snapshot further down is superseded. |
 | **eBay numbers** | Still needed — impressions, active listing count, promoted ad %. |
 | **Dinking Problem** | Art has been ready since Jul 21 and **still is not listed** |
@@ -54,11 +55,86 @@ the cheapest traffic in the account.
 Roughly **60 organic visits/month**. (Attribution windows differ between the two reports, so treat as
 directional.) The shop is renting nearly all of its traffic and has almost no organic search footing.
 
-### THE PIVOT — shop is no longer a Corvette shop
+### TRUE P&L (owner screenshots, Oct 27) — Etsy's "net profit" excludes Printify
 
-The Oct 1–27 ad table lists **~45 advertised listings, every one of them ads-ON, and not a single
-Corvette listing among them.** The entire proven catalog (C4 Minimal ROAS 4.06, C8 ROAS 3.06, Yellow
-C5, C7 Illustration, C5 Blueprint) is absent from ads. In its place, ~10 unrelated niches:
+**Etsy Activity summary, last 12 months (Oct 2025 – Sep 2026):** Etsy-reported **net profit $540.21**
+
+| Line | Amount |
+|------|--------|
+| Sales (26 total sales, 1 refund −$30.32, buyer duties/tax −$66.31) | **$890.81** |
+| Fees (listing −$27.40, transaction −$59.89, processing −$36.11, setup −$29.00, credits +$37.53) | **−$114.87** |
+| Marketing (**Etsy Ads −$226.94**, Offsite −$13.34, credits +$4.55) | **−$235.73** |
+| Shipping labels | $0.00 |
+| **Etsy net profit** | **$540.21** |
+
+**Etsy Activity summary, Oct 2026 month-to-date:** sales $208.29 · fees −$43.00 · marketing −$59.19 ·
+**net profit $106.10**. Total balance **−$7.02** (we owe Etsy).
+
+**Printify costs to-date:** **$803.09** — tooltip confirms this is total GMV of all Printify order
+costs for the store to date, so it covers **both Etsy and eBay** fulfillment.
+
+#### The actual bottom line
+
+Etsy's "net profit" is **sales minus Etsy's own fees and ads**. It has never included cost of goods.
+Printify production + shipping is our single largest expense and Etsy never sees it.
+
+| | Amount |
+|---|--------|
+| Etsy net profit, 12mo (Oct 2025 – Sep 2026) | +$540.21 |
+| Etsy net profit, Oct 2026 MTD (separate window, no overlap) | +$106.10 |
+| Known eBay earnings after eBay fees (from `sales_log.csv`: $17.20 + $21.68 + $50.58 + $19.45) | +$108.91 |
+| **Printify costs to date (both channels)** | **−$803.09** |
+| **All-in, approximate** | **≈ −$48** |
+
+**The shop is roughly breakeven, slightly negative**, on about $1,100 of gross sales across both
+channels — not the $540.21 profit the Etsy dashboard shows. Etsy-only, ignoring eBay revenue but
+carrying the full Printify bill, the figure is −$156.78; the eBay earnings above are from our own log
+rather than a fresh eBay screenshot, so treat the −$48 as an estimate and refresh it when eBay
+payout totals are available.
+
+#### Ads are the structural problem
+
+| Window | Sales | Marketing | Ads as % of sales |
+|--------|-------|-----------|-------------------|
+| 12 months | $890.81 | $235.73 | **26.5%** |
+| Oct 2026 MTD | $208.29 | $59.19 | **28.4%** |
+
+Against post-fee revenue ($890.81 − $114.87 = $775.94), ads ate **30.4%**. POD production already runs
+roughly 60–70% of a $22–25 tee. Production + ~13% Etsy fees + ~28% ads is **over 100%** — the business
+cannot be profitable at this ad ratio regardless of which designs we list.
+
+October will likely land negative too once Printify is subtracted: $106.10 of Etsy net against roughly
+$120–145 of production on $208 of sales.
+
+**Current ad run rate is climbing:** the Oct 27 ledger shows an Etsy Ads bill of **−$4.62 for Oct 26
+click-throughs alone**, about a **$139/month** pace. July's working figure was $2.50–3/day.
+
+#### Other facts from these screenshots
+
+- **117 active listings · 32 sales · 4.8★ (10 reviews).** That's **0.27 lifetime sales per listing**.
+- **Four more listings published Oct 27** (#4603972103, #4603974639, #4603996160, #4604000300) at
+  $0.20 each — still adding inventory while the existing 117 average under a third of a sale apiece.
+- **Promo codes `CORVETTE10` and `THANKYOUVETTE` are live shop-wide** and attaching to non-Corvette
+  items (a Crochet Lover Tee favorite shows `CORVETTE10`). A 10% coupon stacking on top of ~28% ads
+  and ~65% production is where the remaining margin goes.
+- **`Pickleball Two Neon Eyes` is the most-favorited listing in the shop** — 4 of the 13 favorites
+  (Judith, Florante, Renee, meghanpotemra) — with **zero sales ever**. The art attracts and the price
+  closes nobody, even with a coupon live. Before killing it outright, one price-drop test is defensible.
+
+### Corvette is still what sells — ads just aren't pointed at it
+
+**Corvette listings are still live** — the Recent activity feed shows a **Corvette C5 Blueprint Poster
+purchased ~Oct 22**, a 5★ review on the **Yellow Corvette C6 V8 Hoodie** (Michel, Oct 6), and a **Kids
+Play Mat Car Floor Mat purchased Oct 14**. What's missing is Corvette listings *in the advertised set*.
+
+**Of the 3 orders in the last 30 days, at least 2 are car products** (C5 Blueprint Poster ~Oct 22, Kids
+Play Mat Oct 14; the third was a 3-item order, contents unknown). Meanwhile the ad budget is aimed
+almost entirely elsewhere. The car products are converting **organically, with coupons, unadvertised**,
+while ~$49/mo of ads goes to niches that produced one order between them.
+
+The Oct 1–27 ad table lists **~45 advertised listings, every one ads-ON, with no Corvette among them.**
+The proven catalog (C4 Minimal ROAS 4.06, C8 ROAS 3.06, Yellow C5, C7 Illustration, C5 Blueprint) is
+absent from ads. The advertised set instead spans ~10 unrelated niches:
 
 national parks (Acadia ×2, Zion, Joshua Tree ×2, Yosemite, Glacier, Yellowstone, Smoky Mtns, Turkey
 Run, Indiana Dunes, Brown County) · fishing (ice, fly, bass, walleye, trout) · science diagrams
@@ -66,9 +142,9 @@ Run, Indiana Dunes, Brown County) · fishing (ice, fly, bass, walleye, trout) ·
 (crochet, quilting) · holidays (Santa, Christmas truck, Merry Teacher, Halloween, Skelly) · Bay Area
 (Oakland ×2, San Francisco) · "lamps?" memes (3) · pickleball (2) · misc one-liners.
 
-**This is the actual cause of the dry spell.** The shop abandoned the only line with 19 sales, repeat
-buyers, and 5-star reviews, and replaced it with ~45 cold listings spread across ten niches. Repeat
-buyers is **0** for the first time. Nothing has depth, so nothing earns organic rank.
+**This is the actual cause of the dry spell.** Attention and ad budget moved off the only line with
+repeat buyers and 5-star reviews and onto ~45 cold listings across ten niches. Repeat buyers is **0**
+for the first time. Nothing has depth, so nothing earns organic rank.
 
 ### Ad budget is too thin to learn anything
 
@@ -87,26 +163,40 @@ buyers is **0** for the first time. Nothing has depth, so nothing earns organic 
 **ROAS 1.95 is a loss on POD.** $96.25 revenue − $49.28 ad spend − ~$55-65 Printify − ~$10 Etsy fees
 is negative. ROAS needs to clear roughly **3.0** before ads pay for themselves at our cost structure.
 
-### Action list from this snapshot
+### Action list from this snapshot (ordered by dollars)
 
-1. **Kill ads on `Pickleball T-Shirt | Two Neon Pickleball Eyes`.** 1,494 views, 31 clicks, 2.1% CTR,
-   **zero orders in three months**. Clicks fine, never closes. Biggest single waste at $9.01/mo.
-2. **Concentrate the budget.** Cut from ~45 advertised listings to **3–5**. Lead with It Was In
-   (ROAS 18.26, currently getting 11% of spend). $49 across five listings is ~$10 each — enough clicks
-   to actually read a result.
-3. **Turn off the national-parks long tail** (11 listings, mostly 0–1 clicks and $0 spend, 0 orders).
-   Keep them listed; just stop advertising them.
-4. **Relist the Corvette winners.** C4 Minimal at ROAS 4.06 with repeat organic demand is the
-   highest-confidence revenue available to this shop and it is currently earning nothing.
-5. **`Halloween Porgs T-Shirt` — IP RISK, pull it.** Porgs are Disney/Lucasfilm (Star Wars). We already
-   took one Etsy takedown in July over the Corvette wordmark; a second strike is not worth a
-   55-view listing. Check the **Policy violations** tab while in there.
-6. **Work the 4 abandoned carts** with a coupon — at $54.87 AOV those are worth more than a month of ads.
-7. **Leave offsite ads on.** $10.70 of fees against $183.16 of revenue is the best ratio in the account.
+1. **Cut Etsy Ads hard — this is the whole problem.** At 28% of sales, ads cannot be paid for out of
+   POD margins. Target **under 10% of sales**, i.e. roughly **$20/month**, until a listing proves it
+   can clear ROAS 3.0. Everything else on this list is secondary to this.
+2. **Concentrate what's left.** Cut from ~45 advertised listings to **3–5**. Lead with It Was In
+   (ROAS 18.26, currently receiving 11% of spend) plus the car listings that are already converting
+   organically. $20 across four listings still buys more readable data than $49 across 45.
+3. **Kill ads on the national-parks long tail** (11 listings, mostly 0–1 clicks, 0 orders). Keep them
+   listed; just stop paying for them.
+4. **`Pickleball Two Neon Eyes`:** most-favorited listing in the shop, 1,494 views, 31 clicks, **0 sales
+   in 3 months**, and the biggest ad line item at $9.01/mo. Pull ads now. Optionally run one price-drop
+   test organically before delisting, since favorites say the art works and the price doesn't.
+5. **Put the Corvette line back in front of buyers.** Two of three October orders were car products,
+   unadvertised. C4 Minimal at ROAS 4.06 with repeat organic demand is the highest-confidence revenue
+   in the account and is currently earning nothing.
+6. **`Halloween Porgs T-Shirt` — IP RISK, pull it.** Porgs are Disney/Lucasfilm (Star Wars). We already
+   took one Etsy takedown in July over the Corvette wordmark; a second strike is not worth a 55-view
+   listing. Check the **Policy violations** tab while in there.
+7. **Stop publishing new listings for now.** 117 active at 32 lifetime sales is **0.27 sales per
+   listing**, and four more went up on Oct 27. More inventory is not the constraint.
+8. **Reconsider the shop-wide 10% coupons** (`CORVETTE10`, `THANKYOUVETTE`). A coupon on top of 28% ads
+   on top of ~65% production is why orders land near zero margin. Keep coupons for abandoned-cart
+   recovery, not as an always-on shop-wide discount.
+9. **Work the 4 abandoned carts** — at $54.87 AOV those are worth more than a month of ads.
+10. **Leave offsite ads on.** $13.34 of fees across 12 months against $183.16 of revenue in the last 30
+    days alone is the best ratio in the account.
 
-**Corrected:** the earlier theory that no new listings went up was wrong — the opposite happened, ~27
-products published and ~45 advertised. The half that held up is that the proven line stopped selling
-because it stopped being carried.
+**Corrections to earlier analysis in this session:**
+- The theory that no new listings went up was wrong — the opposite happened (117 active, 4 more on Oct 27).
+- "Corvette is gone from the shop" was wrong. Corvette listings are live and still converting; they are
+  absent from **ads**, not from the catalog.
+- The dry spell is narrower than reported: the last order was **~Oct 22**, about five days before this
+  snapshot, not months ago.
 
 **Copy-candidate batch 1 reviewed Oct 27** — 16 screenshots scored in `COPY_CANDIDATES.md`.
 Build order: list Dinking Problem (already export-ready) → `WRONG HOLE` pickleball gag → red gothic
