@@ -17,9 +17,10 @@ for "which ones should we copy."
 | Item | Status |
 |------|--------|
 | **Last logged sale in `sales_log.csv`** | **Jul 17** — but Etsy shows **3 orders / $164.62 in the last 30 days** (Kids Play Mat Oct 14; Corvette C5 Blueprint Poster ~Oct 22; a 3-item order ~Oct 22). The log is behind by at least these three. Back-fill from Etsy Orders. |
-| **Headline** | Etsy reports **$540.21 net profit** over 12 months, but that **excludes Printify's $803.09**. All-in the shop is **≈ −$48**, roughly breakeven. See the true-P&L block below. |
+| **Headline** | Etsy reports **$540.21 net profit** over 12 months, but that **excludes cost of goods**. Printify is **$1,008.40** lifetime across two stores ($803.09 Etsy + $205.31 eBay). Etsy side all-in is **−$156.78**; combined best estimate **−$157 to −$250**. See the true-P&L block below. |
+| **eBay numbers still needed** | eBay total sales/earnings to date. ~$120 of eBay Printify cost is unaccounted for by our 4 logged orders, so orders are likely missing from `sales_log.csv`. |
 | **Etsy Ads numbers** | **Refreshed Oct 27** — see the real-numbers block below. The Jun 26 snapshot further down is superseded. |
-| **eBay numbers** | Still needed — impressions, active listing count, promoted ad %. |
+| **eBay numbers** | Printify cost known ($205.31). Still needed — total eBay sales/earnings, impressions, active listing count, promoted ad %. |
 | **Dinking Problem** | Art has been ready since Jul 21 and **still is not listed** |
 | **Etsy Yellow C5** | Still down since July; it was the ad **traffic** leader |
 | **Screenshot review** | Intake + scoring rubric: `designs/listings/COPY_CANDIDATES.md`; file drop: `designs/research/screenshots/` |
@@ -70,27 +71,51 @@ directional.) The shop is renting nearly all of its traffic and has almost no or
 **Etsy Activity summary, Oct 2026 month-to-date:** sales $208.29 · fees −$43.00 · marketing −$59.19 ·
 **net profit $106.10**. Total balance **−$7.02** (we owe Etsy).
 
-**Printify costs to-date:** **$803.09** — tooltip confirms this is total GMV of all Printify order
-costs for the store to date, so it covers **both Etsy and eBay** fulfillment.
+**Printify costs to-date — TWO separate stores:**
+
+| Printify store | Costs to-date |
+|----------------|---------------|
+| Etsy (`CozyOrbitPrints`) | **$803.09** |
+| eBay (`sea-6469`) | **$205.31** |
+| **Total production cost, lifetime** | **$1,008.40** |
+
+Tooltip confirms this is total GMV of all Printify order costs for that store to date.
 
 #### The actual bottom line
 
 Etsy's "net profit" is **sales minus Etsy's own fees and ads**. It has never included cost of goods.
 Printify production + shipping is our single largest expense and Etsy never sees it.
 
+**Etsy side — this half is clean:**
+
 | | Amount |
 |---|--------|
 | Etsy net profit, 12mo (Oct 2025 – Sep 2026) | +$540.21 |
 | Etsy net profit, Oct 2026 MTD (separate window, no overlap) | +$106.10 |
-| Known eBay earnings after eBay fees (from `sales_log.csv`: $17.20 + $21.68 + $50.58 + $19.45) | +$108.91 |
-| **Printify costs to date (both channels)** | **−$803.09** |
-| **All-in, approximate** | **≈ −$48** |
+| Printify, Etsy store | −$803.09 |
+| **Etsy all-in** | **−$156.78** |
 
-**The shop is roughly breakeven, slightly negative**, on about $1,100 of gross sales across both
-channels — not the $540.21 profit the Etsy dashboard shows. Etsy-only, ignoring eBay revenue but
-carrying the full Printify bill, the figure is −$156.78; the eBay earnings above are from our own log
-rather than a fresh eBay screenshot, so treat the −$48 as an estimate and refresh it when eBay
-payout totals are available.
+**eBay side — incomplete, and the gap is suspicious:**
+
+| | Amount |
+|---|--------|
+| eBay earnings after eBay fees, from `sales_log.csv` ($17.20 + $21.68 + $50.58 + $19.45) | +$108.91 |
+| Printify, eBay store | −$205.31 |
+| eBay all-in, on logged sales only | −$96.40 |
+
+**Flag:** our 4 logged eBay orders account for roughly **$45 of known production** ($18.57 + $11.71 +
+$14.63) plus one unpriced 2-sided hoodie. Even generously pricing that hoodie at ~$38, that's ~$83 —
+leaving **~$120 of eBay production cost unaccounted for**. That strongly suggests **eBay orders exist
+that were never logged**, which also means unlogged eBay *revenue*. Pull eBay's total sales/earnings
+figure before trusting either eBay number.
+
+**Combined, best current estimate: −$157 to −$250 all-in**, on roughly $1,100+ of gross sales. The
+Etsy −$156.78 is solid; the eBay half moves the total depending on what the unlogged orders earned.
+Either way the shop has **not** made the $540.21 the Etsy dashboard shows.
+
+**Resolved open question:** the eBay store tile reads "**0** in the last 7 days," which confirms the
+Printify "Products published" tile is a **7-day** metric. So the Etsy store published **27 products in
+7 days** — confirming the rapid listing pace. eBay has had **nothing new pushed to it** in that window.
 
 #### Ads are the structural problem
 
