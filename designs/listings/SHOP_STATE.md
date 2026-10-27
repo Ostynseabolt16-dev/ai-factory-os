@@ -1,7 +1,7 @@
 # CozyOrbitPrints — Shop State (source of truth)
 
 **Etsy shop:** https://www.etsy.com/shop/CozyOrbitPrints  
-**Last updated:** 2026-10-27 (sales dry spell since Jul 17; Dinking Problem still unlisted; copy-candidate screenshot review opened — see `COPY_CANDIDATES.md`)
+**Last updated:** 2026-10-27 (Etsy + eBay P&L reconciled; eBay 8 orders = 6 apparel + 2 LEGO; copy candidates in `COPY_CANDIDATES.md`)
 
 Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any new agent chat to avoid hallucinating order/design state.
 
