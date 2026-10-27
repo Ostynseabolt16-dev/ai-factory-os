@@ -17,11 +17,11 @@ for "which ones should we copy."
 | Item | Status |
 |------|--------|
 | **Last logged sale in `sales_log.csv`** | **Jul 17** — but Etsy shows **3 orders / $164.62 in the last 30 days** (Kids Play Mat Oct 14; Corvette C5 Blueprint Poster ~Oct 22; a 3-item order ~Oct 22). The log is behind by at least these three. Back-fill from Etsy Orders. |
-| **Headline** | Etsy reports **$540.21 net profit** over 12 months, but that **excludes cost of goods**. Printify is **$1,008.40** lifetime across two stores ($803.09 Etsy + $205.31 eBay). Etsy side all-in is **−$156.78**; combined best estimate **−$157 to −$250**. See the true-P&L block below. |
-| **eBay numbers still needed** | eBay total sales/earnings to date. ~$120 of eBay Printify cost is unaccounted for by our 4 logged orders, so orders are likely missing from `sales_log.csv`. |
+| **Headline** | Etsy reports **$540.21 net profit** over 12 months, but that **excludes Printify ($1,008.40)**. Etsy POD all-in **−$156.78**; eBay POD **~breakeven** on ~10 apparel orders; **2 LEGO sales are separate**. Combined POD **≈ −$100 to −$140** (fees TBD). See true-P&L block. |
+| **eBay (refreshed Oct 27)** | **8 orders total** — **6 Printify apparel · 2 LEGO resale** (exclude LEGO from apparel P&L). Hub: 29 active · 4 unsold · **90-day sales $273.58**. See eBay block below. |
 | **Etsy Ads numbers** | **Refreshed Oct 27** — see the real-numbers block below. The Jun 26 snapshot further down is superseded. |
-| **eBay numbers** | Printify cost known ($205.31). Still needed — total eBay sales/earnings, impressions, active listing count, promoted ad %. |
-| **Dinking Problem** | Art has been ready since Jul 21 and **still is not listed** |
+| **eBay still needed** | Total **earnings after fees** from eBay Payments (not just buyer-paid subtotals). Promoted-listing ad % on the C7 line. |
+| **Dinking Problem** | **Sold on eBay Aug 13** ($19.99, Sport Grey L) — was live; confirm Etsy listing status. Repo copy still said “ready not live” until Oct 27. |
 | **Etsy Yellow C5** | Still down since July; it was the ad **traffic** leader |
 | **Screenshot review** | Intake + scoring rubric: `designs/listings/COPY_CANDIDATES.md`; file drop: `designs/research/screenshots/` |
 | **Season** | Late Oct = Q4 gift window opening; car-guy gift tees are a gift-season category, so new listings should go up now, not in December |
@@ -95,23 +95,62 @@ Printify production + shipping is our single largest expense and Etsy never sees
 | Printify, Etsy store | −$803.09 |
 | **Etsy all-in** | **−$156.78** |
 
-**eBay side — incomplete, and the gap is suspicious:**
+**eBay side — reconciled Oct 27 (owner order screenshots):**
+
+| Metric | Value |
+|--------|-------|
+| Orders (hub) | **8** |
+| Active listings | 29 |
+| 90-day buyer-paid total | **$273.58** |
+| Printify store `sea-6469` costs to-date | **$205.31** |
+
+**The 8 orders split two ways — do not mix them in apparel math:**
+
+| Type | Count | Notes |
+|------|-------|-------|
+| **Printify apparel** | **6** | All Corvette C7/C5 or Dinking Problem pickleball |
+| **LEGO resale** | **2** | Oct 4 Star Wars microfighters $30 · Oct 15 City outdoor pack $46 — **no Printify** |
+
+**Six apparel orders (Aug 13 – Oct 25, 2026)** — now in `sales_log.csv`:
+
+| Date | Item | Subtotal | Promoted? |
+|------|------|----------|-----------|
+| Aug 13 | Dinking Problem tee | $19.99 | no |
+| Aug 20 | C7 Illustration tee | $16.47 | yes |
+| Sep 13 | Red C7 tee | $16.47 | yes |
+| Sep 22 | C7 Sports Car tee | $16.47 | yes |
+| Oct 12 | C7 Illustration tee (2nd sale) | $19.99 | yes |
+| Oct 25 | Yellow C5 2-sided hoodie | $49.99 | yes |
+
+**Plus four earlier apparel orders already in the log (Jun–Jul):** C5 tee (Michael) · Yellow C5 tee +
+hoodie (Allyn, **1st** hoodie on item `398084925179`) · IT WAS IN pickleball.
+
+→ **~10 Printify fulfillments** on the eBay Printify store vs **$205.31** ≈ **$20.50/order average** —
+the earlier “unaccounted $120” flag is **resolved** once the Aug–Oct orders are counted.
+
+**LEGO ($76 item + buyer shipping)** rides the same eBay account but is **not** CozyOrbit apparel. It
+inflates the 90-day **$273.58** headline — apparel-only buyer subtotals in the 8-order set are **~$215**
+items + shipping, and **~$166** if you count only the 6 POD lines’ buyer totals in that screenshot set.
+
+**Apparel takeaway:** eBay is **working for Corvette + type-first pickleball** — five C7 sales via
+Promoted Listings, a **second** C5 hoodie at $49.99, and **Dinking Problem already sold Aug 13** (it
+was live on eBay; listing copy in repo was behind). C7 tees at **$16.47 promoted** are thin margin;
+hoodie at $49.99 is the right AOV play.
+
+**eBay apparel P&L (still approximate):** need **eBay Payments “total earnings”** to finish. Rough
+direction: ~$264 apparel item subtotals (10 orders) − $205 Printify − ~13% eBay fees − promoted fees
+on most C7 lines → **small positive to breakeven on apparel**, unlike Etsy where ads dominate. LEGO
+profit/loss is separate COGS.
+
+**Combined apparel business (Etsy + eBay POD, excluding LEGO):**
 
 | | Amount |
 |---|--------|
-| eBay earnings after eBay fees, from `sales_log.csv` ($17.20 + $21.68 + $50.58 + $19.45) | +$108.91 |
-| Printify, eBay store | −$205.31 |
-| eBay all-in, on logged sales only | −$96.40 |
+| Etsy all-in (above) | **−$156.78** |
+| eBay apparel (Printify $205.31 vs ~$264 gross items, fees TBD) | **≈ breakeven to modest +** |
+| **POD channels combined, rough** | **≈ −$100 to −$140** before LEGO, Cursor, OpenAI |
 
-**Flag:** our 4 logged eBay orders account for roughly **$45 of known production** ($18.57 + $11.71 +
-$14.63) plus one unpriced 2-sided hoodie. Even generously pricing that hoodie at ~$38, that's ~$83 —
-leaving **~$120 of eBay production cost unaccounted for**. That strongly suggests **eBay orders exist
-that were never logged**, which also means unlogged eBay *revenue*. Pull eBay's total sales/earnings
-figure before trusting either eBay number.
-
-**Combined, best current estimate: −$157 to −$250 all-in**, on roughly $1,100+ of gross sales. The
-Etsy −$156.78 is solid; the eBay half moves the total depending on what the unlogged orders earned.
-Either way the shop has **not** made the $540.21 the Etsy dashboard shows.
+Still **not** the +$540 Etsy dashboard implies. LEGO and any non-POD sales are upside on the side account.
 
 **Resolved open question:** the eBay store tile reads "**0** in the last 7 days," which confirms the
 Printify "Products published" tile is a **7-day** metric. So the Etsy store published **27 products in
@@ -281,11 +320,12 @@ wordmarks (Busch, Modelo, Benadryl) or licensed characters (Superman shield).
 | **Print file** | `designs/pickleball/pickleball_it_was_in_UPLOAD_TO_PRINTIFY.png` | Minimal line-call; dark shirts |
 | **P&L** | ~$4.82 cash | fees $3.53 · Printify $14.63 · raise next SKUs to $20.99+ |
 
-### Pickleball Dinking Problem (Jul 21 — READY, not live)
+### Pickleball Dinking Problem (LIVE on eBay · sold Aug 13, 2026)
 
 | Channel | URL | Notes |
 |---------|-----|-------|
-| **Etsy / eBay** | — | Upload next; paste URLs when live |
+| **eBay** | item **398222322676** | **Sold Aug 13** $19.99 Sport Grey L (V. Protti); delivered |
+| **Etsy** | confirm in Listings | Repo had “not live” through Jul — verify Etsy status |
 | **Print file** | `designs/pickleball/pickleball_dinking_problem_UPLOAD_TO_PRINTIFY.png` | Type-first white/lime/white; ball below; dark shirts |
 | **Listing** | `designs/listings/PICKLEBALL_DINKING_PROBLEM.md` | eBay S–XL **$20.99** |
 | **Compose** | `scripts/compose_pickleball_dinking_problem.py` | No OpenAI |
@@ -561,13 +601,14 @@ wordmarks (Busch, Modelo, Benadryl) or licensed characters (Superman shield).
 - **Readout window:** evaluate after 48 hours using orders, spend per order, and cart/favorite movement before re-expanding any paused listings.
 - **Guardrail:** if a sweatshirt still shows 0 clicks after meaningful impressions, pause and reallocate back to proven tee winners.
 
-## eBay snapshot (updated 2026-07-21)
+## eBay snapshot (updated 2026-10-27)
 
-- **Active / promoted:** listings live; **Ad Fee General** is material — Yellow C5 tee took **$3.75** ad on a $26.09 item.
-- **Sales:** (1) Jun 18 C5 old art Michael ~$9.46 before promo fee · (2) Jul 15 Yellow C5 tee ~breakeven without coupon / ~$10 with $10 Printify coupon · (3) Jul 15 Yellow C5 2-sided hoodie $51.99 pending Printify · (4) **Jul 17 Pickleball IT WAS IN $18.99 → ~$4.82 cash**.
-- **2026-06-19:** Yellow C5 hoodie (front+back) and Yellow C6 hoodie (front-only) launched to eBay.
-- **Channel rule (Jul 16):** eBay is **live demand** for Yellow C5 while Etsy listing is down — keep fulfilling; fix tee price/ad % so next sale clears **$5+ without coupons**.
-- **IP note:** Yellow C5 art includes **CORVETTE** lettering — likely why Etsy took it down; eBay can get hit too. Plan safer replacement (no brand wordmark) before heavy ad spend.
+- **Hub:** 29 active · **8 orders total** · 4 unsold · **90-day sales $273.58** (includes **2 LEGO** resale lines).
+- **Printify store `sea-6469`:** costs to-date **$205.31** · **0 products published in last 7 days** (contrast: Etsy pushed 27 in 7d).
+- **Apparel (~10 Printify orders lifetime):** Jun C5 tee · Jul Yellow C5 tee + hoodie (#398084925179, **sold again Oct 25** $49.99 Light Blue L) · Jul IT WAS IN · Aug **Dinking Problem** · Aug–Oct **five C7/C7-variant tees** (mostly **Promoted Listings** at $16.47–19.99).
+- **Not apparel:** LEGO Star Wars microfighters (Oct 4) · LEGO City outdoor pack (Oct 15) — track separately from CozyOrbit POD P&L.
+- **Channel read:** eBay converts **Corvette + type-first pickleball** when promoted; **$16.47 C7 tees are volume plays** — watch promoted fee % so net stays **$5+**. Hoodie **$49.99** is the margin anchor.
+- **IP note:** Yellow C5 art still has **CORVETTE** wordmark — Etsy down; eBay still selling (2 hoodie sales). Plan safer replacement before scaling ads.
 
 ## Weekend promo test (2026-06-19 late)
 
