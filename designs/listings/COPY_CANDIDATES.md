@@ -216,6 +216,36 @@ drink today" in the same family — that's buildable with **no brand**, just not
 
 ---
 
+### CAND-017 — "maybe the turtles needed the straws" (cartoon turtles + powder lines)
+Source: product image on heather blue tee, no marketplace or sales data supplied.
+Scores: demand 1 · fit 0 · IP 2 · thumbnail 3 · cost 0 · margin 2 = **8**
+Verdict: **SKIP — but the joke engine is worth keeping**
+
+The gag is genuinely well built: it takes the save-the-turtles straw ban, which everybody recognizes,
+and flips it. Bold outlined type, bright palette, reads clean at thumbnail size. Nothing wrong with
+the craft.
+
+It fails on our constraints, not on quality:
+
+- **Wrong audience entirely.** We sell Corvette graphics and pickleball court gags to a gift-for-him
+  buyer. Cute-animal stoner humor shares no tags, no search terms, and no shoppers with that.
+- **It's the illustrated-character trap we already paid for twice.** Soft Serve (illustrated cone
+  character) and Eyes Up Here (illustrated) are both still at **zero sales**. IT WAS IN, pure type,
+  is the one that sold. `designs/` is also full of unsold cute-animal renders from the May era.
+  Every time this shop has bought character art, it has not converted.
+- **We can't build it.** Full-color cartoon character art means an OpenAI run, which is blocked on
+  credits. Our local Pillow pipeline composes type, not illustration.
+- **Content risk on a shop with a live strike.** The powder-lines gag is a drug reference on a
+  platform that prohibits drug paraphernalia. Joke tees usually survive, but we already took one
+  Etsy takedown in July and shouldn't spend a second strike on an off-brand design.
+
+**Keep this instead:** the structure — *take a wholesome cause everyone knows, flip it* — is a
+reusable joke engine that costs nothing in pure type. It sits next to the scrambled-proverb format
+in CAND-014 as a template to point at a niche we actually sell to.
+**Do NOT make:** this turtle art, any version of it, or the straw-in-the-nose viral image it riffs on.
+
+---
+
 ### Build order out of this batch
 
 1. **List Dinking Problem** — print file has been export-ready since Jul 21 and still isn't live.
