@@ -22,10 +22,20 @@ for "which ones should we copy."
 | **Etsy Yellow C5** | Still down since July; it was the ad **traffic** leader, so Etsy top-of-funnel lost a major listing and nothing replaced it |
 | **Screenshot review** | Intake + scoring rubric: `designs/listings/COPY_CANDIDATES.md`; file drop: `designs/research/screenshots/` |
 | **Season** | Late Oct = Q4 gift window opening; car-guy gift tees are a gift-season category, so new listings should go up now, not in December |
+| **Printify dashboard (owner screenshot, Oct 27)** | Balance **$0.00** · Orders requiring action **0** · Products published **27** (widget reads "in last 7 days") · **Costs to-date $803.09** |
+
+**Open question on the Printify screenshot:** the "27 products published" tile is ambiguous — it may
+be 27 total published products, or 27 published in the last 7 days. These mean very different things
+for the dry-spell diagnosis. Owner to confirm from My Products.
 
 **Working theory on the dry spell (unverified — needs the owner's current stats):** listing count went
 flat while a top traffic listing was removed, so there is less new inventory and less Etsy surface
 area than in June. Confirm against real numbers before acting on it.
+
+**Copy-candidate batch 1 reviewed Oct 27** — 16 screenshots scored in `COPY_CANDIDATES.md`.
+Build order: list Dinking Problem (already export-ready) → `WRONG HOLE` pickleball gag → red gothic
+chest script front/back → vintage photo-collage Corvette. Four candidates auto-skipped for brand
+wordmarks (Busch, Modelo, Benadryl) or licensed characters (Superman shield).
 
 ## July 21 update (post IT WAS IN sale)
 

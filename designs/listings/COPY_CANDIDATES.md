@@ -81,7 +81,148 @@ Next: write listing .md -> compose locally -> eBay first at $XX.99
 
 ## Verdict log
 
-_(empty — first batch of screenshots lands here)_
+### Batch 1 — Oct 27, 2026 (16 screenshots)
+
+**Batch-level read:** the three highest-scoring items here are **formats**, not jokes. Several of these
+shirts share a structure we already have sales proof for — **small front hit + big back print**
+(C5 Blueprint front/back sold; the Yellow C5 2-sided hoodie at $51.99 is our single biggest order).
+Also note **half this batch is TikTok Shop / Temu goods priced $3.39–$7.77**. Their jokes convert at
+that price because the price *is* the offer. Do not lift one of those jokes onto a $21.99 listing and
+expect it to convert — we lose that fight on price and win on art, niche, and front/back value.
+
+---
+
+### CAND-001 — Red gothic chest script on black crew ("Hellboy" look) — **owner favorite**
+Source: Instagram story, person wearing it; song tag "Hell boy — Lil Peep". No sales data.
+Scores: demand 1 · fit 2 · IP 3 · thumbnail 1 · cost 3 · margin 3 = **13**
+Verdict: **HOLD — upgrade to BUILD by fixing one thing**
+
+The look is genuinely good and it is nearly free for us to make: one small word in red
+blackletter/tattoo script, centered high on the chest of a black crewneck. It reads as real
+streetwear instead of print-on-demand, and **we already own the gothic lettering style** — it's one
+of our three proven formats.
+
+Two problems:
+
+- **The word "Hellboy" is out.** It's a Lil Peep mixtape title *and* a Dark Horse Comics character.
+  Two separate trademark owners, and this exact shirt is Peep merch. Auto-SKIP on wording.
+- **A small chest print photographs badly in the Etsy grid.** This is the same CTR failure already
+  logged against the C8 listing. At thumbnail size a 4-inch red script on black nearly disappears.
+
+**Fix that promotes it to BUILD (15):** make it **front + back** — small red script chest hit, big
+back print. That's the structure in CAND-006 and CAND-015, and the structure our two biggest orders
+used. The back print carries the thumbnail, the chest hit sells the shirt in person.
+
+Our version: red blackletter chest script using **our own wording** — a generation tag (`C5`, `C7`),
+or enthusiast language we already write (`SMALL BLOCK`, `BUILT WILD`, `BORN WILD`). No `CORVETTE`,
+no `VETTE`, no crossed flags. Back print: existing collection car art.
+**Do NOT make:** the word Hellboy, any Lil Peep lyric, the comic character, or an angel/cross motif
+traced from Peep merch.
+**Next:** compose locally from existing gothic type — no OpenAI spend needed.
+
+---
+
+### CAND-002 — "WRONG HOLE" pickleball gag — *from owner's own notes*
+Source: owner idea list. No external data, but the adjacent joke category is **our own proven seller**.
+Scores: demand 2 · fit 3 · IP 3 · thumbnail 3 · cost 3 · margin 3 = **17**
+Verdict: **BUILD — highest score in the batch**
+
+This is the single best idea in everything sent. It is the *exact* format that produced our only
+pickleball sale: a short type-first line gag on a dark shirt. IT WAS IN sold; the two illustrated
+pickleball shirts (Soft Serve, Eyes Up Here) are still at zero. The data says type gag, not art.
+
+Zero IP risk, zero build cost, reads instantly at thumbnail size, and innuendo-adjacent pickleball
+humor is squarely inside the "dinking problem" search category we already know is hot.
+
+Our version: huge stacked type, ball below, white/lime/white stack — same system as Dinking Problem,
+so `scripts/compose_pickleball_dinking_problem.py` is the template.
+**Do NOT make:** anything anatomically explicit; keep it to the court joke so Etsy doesn't flag it.
+**Next:** write the listing `.md`, compose locally, eBay first at **$20.99** S–XL.
+
+---
+
+### CAND-011 — Vintage band-tee photo collage ("MILF / Man I Love Fish")
+Source: TikTok Shop, 96 likes, 24 saves.
+Scores: demand 2 · fit 2 · IP 3 · thumbnail 3 · cost 2 · margin 3 = **15**
+Verdict: **BUILD — as a format, applied to Corvettes**
+
+Ignore the fishing pun; copy the **layout**. Big serif word across the top, several photo-real
+subjects collaged below, washed white tee, 90s band-merch feel. It's a completely different visual
+system from our gothic and blueprint lines, aimed at the same buyer — the tags we already use are
+"gift for him", "car guy gift", "gearhead gift", and fishing/car gift shoppers are the same person.
+
+This also gives us a way to reuse car renders we already paid to generate, which is the cheapest new
+listing available to us right now.
+
+Our version: a C5 or C7 "vintage tour tee" — big serif generation word up top, three to five of our
+existing car renders collaged below, optional year range as a tour-date line.
+**Do NOT make:** the MILF acronym gag, or any real band's logo/tour-date lockup.
+**Next:** compose locally from existing masters in `designs/corvette/`.
+
+---
+
+### Auto-SKIP — brand wordmarks and licensed characters
+
+These four had the strongest social signal in the batch and are the ones we most clearly cannot
+touch. Worth knowing *why* each is unusable so we don't revisit them:
+
+| # | Shirt | Signal | Why it's out |
+|---|-------|--------|--------------|
+| CAND-005 | CAPTAIN SAVE-A-HO | **5,003 likes · 604 saves · 1,501 shares** — strongest in batch | Superman shield pastiche → DC/Warner. Phrase is also an E-40 song. |
+| CAND-004 | SHOW ME YOUR BUSCH | 2,290 likes · 281 saves | Busch Light wordmark + can art reproduced. |
+| CAND-006 | Modelo alien "Humans Aren't Real" | 34 likes | Modelo wordmark. (Front/back structure noted — see CAND-001.) |
+| CAND-013 | Benadryl "hat man" | $3.39, 5★ | Kenvue brand logo reproduced, plus drug-reference humor. |
+
+The beer-pun *category* (CAND-004) does show real demand, and the owner's notes list has "a reason to
+drink today" in the same family — that's buildable with **no brand**, just not as a Busch clone.
+
+---
+
+### SKIP
+
+- **CAND-007 — BIG BOOTY WITCHES.** Someone's signed original drawing, nude figures, 1 like, posted
+  Oct 2024. Copying a named artist's piece is the one thing we never do, and Etsy will flag the art.
+- **CAND-008 — "funny space shirts" search grid.** Not a design, a search result — and what it shows
+  is a commodity niche selling at **$13 on TeePublic** with Star Wars/Yoda shirts in the results.
+  We cannot win a $13 race, and we have no space audience.
+- **CAND-009 — "She neon on my Genesis til I Evangelion," $7.77.** Licensed anime in the hook and a
+  price point we can't touch.
+- **CAND-012 — "Outta Spells But Not Outta Shells," $4.99.** Score **9**. Good pun and a real
+  wizard/hunting crossover audience, but it needs illustration we'd have to generate (OpenAI spend
+  we don't have) to compete against a $4.99 listing. Wrong economics.
+- **Heaven's Gate program** (owner notes) — cult/mass-suicide reference. Not a joke we put our shop
+  name on.
+- **Bay Area shirts** (owner notes) — too broad and we have no Bay Area audience or local channel.
+
+---
+
+### HOLD — good, but parked with the blocker named
+
+- **CAND-003 — "FUN FACT / I DON'T CARE."** Score **11**. Perfect thumbnail read, pure type, zero IP,
+  but only 5 likes and the phrase is completely saturated with no angle for us to differentiate.
+- **CAND-010 — "I had no idea these tattoos were permanent," $5.80.** Score **11**. Genuinely funny,
+  pure type, no IP — but it's an attitude tee for a non-car audience being dumped at $5.80.
+- **CAND-014 — "Buy a man eat fish, he day, teach fish man to a lifetime," $3.99.** Score **12**. The
+  value here is the **scrambled-proverb format** — it's a reusable joke engine with no IP, and a
+  car-guy version would score higher than this fishing one. Worth revisiting after CAND-002.
+- **CAND-015 — Y2K gothic wings, small front + big back.** Score **12**. 697 likes, 343 saves, and
+  **zero IP** — the rare high-signal item we could legally build. Blocked on illustration cost
+  (detailed wings), and it aims at a fashion buyer rather than our car/gag buyer. Its real
+  contribution to this batch is proving the front/back structure.
+- **"Follow me to pickleball" bumper sticker** (owner notes) — mild and on-niche, but weaker than
+  CAND-002. Queue behind it.
+- **Trebuchets / catapults** (owner notes) — real engineering-humor niche, very type-friendly, no IP.
+  Genuinely interesting but it's a cold-start audience; park until the pickleball line is working.
+
+---
+
+### Build order out of this batch
+
+1. **List Dinking Problem** — print file has been export-ready since Jul 21 and still isn't live.
+   Zero design work. Do this before building anything new.
+2. **CAND-002 Wrong Hole** — same compose script, same proven format.
+3. **CAND-001 red gothic chest script, front + back** — owner's pick, fixed for thumbnail.
+4. **CAND-011 vintage collage Corvette** — reuses car art already paid for.
 
 ---
 
