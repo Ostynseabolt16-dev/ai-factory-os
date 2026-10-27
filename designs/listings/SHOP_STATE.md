@@ -16,21 +16,97 @@ for "which ones should we copy."
 
 | Item | Status |
 |------|--------|
-| **Last logged sale** | **Jul 17** (eBay pickleball IT WAS IN) — ~3 months with nothing appended to `sales_log.csv` |
-| **Numbers needed from owner** | Etsy Ads last 30d, Etsy visits/conversion, eBay impressions, current ad spend. Everything in the Ads snapshot below is from **Jun 26** and is stale. |
-| **Dinking Problem** | Art has been ready since Jul 21 and **still is not listed** — no new SKU has gone live in ~3 months |
-| **Etsy Yellow C5** | Still down since July; it was the ad **traffic** leader, so Etsy top-of-funnel lost a major listing and nothing replaced it |
+| **Last logged sale in `sales_log.csv`** | **Jul 17** (eBay pickleball IT WAS IN) — but Etsy stats show **3 orders / $164.62 in the last 30 days**, so the log is behind. Back-fill from Etsy Orders. |
+| **Etsy Ads numbers** | **Refreshed Oct 27** — see the real-numbers block below. The Jun 26 snapshot further down is superseded. |
+| **eBay numbers** | Still needed — impressions, active listing count, promoted ad %. |
+| **Dinking Problem** | Art has been ready since Jul 21 and **still is not listed** |
+| **Etsy Yellow C5** | Still down since July; it was the ad **traffic** leader |
 | **Screenshot review** | Intake + scoring rubric: `designs/listings/COPY_CANDIDATES.md`; file drop: `designs/research/screenshots/` |
 | **Season** | Late Oct = Q4 gift window opening; car-guy gift tees are a gift-season category, so new listings should go up now, not in December |
-| **Printify dashboard (owner screenshot, Oct 27)** | Balance **$0.00** · Orders requiring action **0** · Products published **27** (widget reads "in last 7 days") · **Costs to-date $803.09** |
+| **Printify dashboard (owner screenshot, Oct 27)** | Balance **$0.00** · Orders requiring action **0** · Products published **27** · **Costs to-date $803.09** |
 
-**Open question on the Printify screenshot:** the "27 products published" tile is ambiguous — it may
-be 27 total published products, or 27 published in the last 7 days. These mean very different things
-for the dry-spell diagnosis. Owner to confirm from My Products.
+### Real numbers (owner screenshots, Oct 27) — these replace the stale Jun 26 snapshot
 
-**Working theory on the dry spell (unverified — needs the owner's current stats):** listing count went
-flat while a top traffic listing was removed, so there is less new inventory and less Etsy surface
-area than in June. Confirm against real numbers before acting on it.
+**Shop stats, Sep 28 – Oct 27 (30d):**
+
+| Metric | Now | Jun 28 snapshot | Change |
+|--------|-----|-----------------|--------|
+| Visits | **231** | 455 | **−49%** |
+| Orders | **3** | 16 | **−81%** |
+| Conversion | **1.3%** | 3.5% | **−63%** |
+| Revenue | **$164.62** | $459.10 | **−64%** |
+
+Favorites 13 · shop follows 1 (10 total) · reviews 1 (5★) · **repeat buyers 0** · cities reached 3 ·
+**abandoned carts 4**. AOV is **$54.87** (3 orders / $164.62), so orders are multi-item.
+Revenue spikes on the graph land ~**Oct 12** and ~**Oct 19–20**, so the last sale was about a week
+before this snapshot — not months.
+
+**Etsy Ads, Sep 27 – Oct 27 (30d):** Views **7,054** · Clicks **112** · Orders **1** · Revenue
+**$96.25** · Spend **$49.28** · **ROAS 1.95** · views **+204%** vs prior period.
+Derived: CTR **1.59%**, click→order **0.89%**.
+
+**Offsite Ads, Sep 27 – Oct 27:** total revenue **$183.16** · direct revenue $71.36 (1 order, 1 new
+buyer) · indirect revenue $111.80 (1 order) · **ad fees paid $10.70** (≈5.8% effective). 58 clicks,
+**Google 94.83%** (55 visits), Etsy Publishing Partners 5.17% (3). **Leave offsite ads on** — this is
+the cheapest traffic in the account.
+
+**Traffic mix problem:** 112 Etsy-ad clicks + 58 offsite clicks ≈ **170 of 231 visits are paid**.
+Roughly **60 organic visits/month**. (Attribution windows differ between the two reports, so treat as
+directional.) The shop is renting nearly all of its traffic and has almost no organic search footing.
+
+### THE PIVOT — shop is no longer a Corvette shop
+
+The Oct 1–27 ad table lists **~45 advertised listings, every one of them ads-ON, and not a single
+Corvette listing among them.** The entire proven catalog (C4 Minimal ROAS 4.06, C8 ROAS 3.06, Yellow
+C5, C7 Illustration, C5 Blueprint) is absent from ads. In its place, ~10 unrelated niches:
+
+national parks (Acadia ×2, Zion, Joshua Tree ×2, Yosemite, Glacier, Yellowstone, Smoky Mtns, Turkey
+Run, Indiana Dunes, Brown County) · fishing (ice, fly, bass, walleye, trout) · science diagrams
+(mitochondria, neuron, opossum, squirrel, engine, turbo, tardigrade) · Christian (3) · crafts
+(crochet, quilting) · holidays (Santa, Christmas truck, Merry Teacher, Halloween, Skelly) · Bay Area
+(Oakland ×2, San Francisco) · "lamps?" memes (3) · pickleball (2) · misc one-liners.
+
+**This is the actual cause of the dry spell.** The shop abandoned the only line with 19 sales, repeat
+buyers, and 5-star reviews, and replaced it with ~45 cold listings spread across ten niches. Repeat
+buyers is **0** for the first time. Nothing has depth, so nothing earns organic rank.
+
+### Ad budget is too thin to learn anything
+
+**$49.28 across ~45 listings ≈ $1.09 per listing per month.** At that spend almost every listing got
+0–3 clicks, which proves nothing either way. Only two listings have a readable sample:
+
+| Listing | Views | Clicks | CTR | Orders | Spend | ROAS | Read |
+|---------|-------|--------|-----|--------|-------|------|------|
+| **It Was In pickleball** | 510 | 9 | 1.8% | **1** | **$5.27** | **18.26** | Only winner; starved of budget |
+| **Pickleball Two Neon Eyes** | 1,494 | 31 | 2.1% | **0** | **$9.01** | 0 | Biggest spender, **0 sales since Jul 16** |
+| Squirrel Diagram Conspiracy | 171 | 6 | **3.5%** | 0 | $3.05 | 0 | Best real CTR — concept clicks; sample too small |
+| Smoky Mountains TN | 44 | 3 | 6.8% | 0 | $1.78 | 0 | Tiny sample, note only |
+| Engine Diagram | 239 | 3 | 1.3% | 0 | $2.09 | 0 | Car-adjacent bridge back to proven niche |
+| Turbo Blueprint "Spool Responsibly" | 221 | 3 | 1.4% | 0 | $2.70 | 0 | Car-adjacent bridge back to proven niche |
+
+**ROAS 1.95 is a loss on POD.** $96.25 revenue − $49.28 ad spend − ~$55-65 Printify − ~$10 Etsy fees
+is negative. ROAS needs to clear roughly **3.0** before ads pay for themselves at our cost structure.
+
+### Action list from this snapshot
+
+1. **Kill ads on `Pickleball T-Shirt | Two Neon Pickleball Eyes`.** 1,494 views, 31 clicks, 2.1% CTR,
+   **zero orders in three months**. Clicks fine, never closes. Biggest single waste at $9.01/mo.
+2. **Concentrate the budget.** Cut from ~45 advertised listings to **3–5**. Lead with It Was In
+   (ROAS 18.26, currently getting 11% of spend). $49 across five listings is ~$10 each — enough clicks
+   to actually read a result.
+3. **Turn off the national-parks long tail** (11 listings, mostly 0–1 clicks and $0 spend, 0 orders).
+   Keep them listed; just stop advertising them.
+4. **Relist the Corvette winners.** C4 Minimal at ROAS 4.06 with repeat organic demand is the
+   highest-confidence revenue available to this shop and it is currently earning nothing.
+5. **`Halloween Porgs T-Shirt` — IP RISK, pull it.** Porgs are Disney/Lucasfilm (Star Wars). We already
+   took one Etsy takedown in July over the Corvette wordmark; a second strike is not worth a
+   55-view listing. Check the **Policy violations** tab while in there.
+6. **Work the 4 abandoned carts** with a coupon — at $54.87 AOV those are worth more than a month of ads.
+7. **Leave offsite ads on.** $10.70 of fees against $183.16 of revenue is the best ratio in the account.
+
+**Corrected:** the earlier theory that no new listings went up was wrong — the opposite happened, ~27
+products published and ~45 advertised. The half that held up is that the proven line stopped selling
+because it stopped being carried.
 
 **Copy-candidate batch 1 reviewed Oct 27** — 16 screenshots scored in `COPY_CANDIDATES.md`.
 Build order: list Dinking Problem (already export-ready) → `WRONG HOLE` pickleball gag → red gothic
@@ -330,7 +406,7 @@ wordmarks (Busch, Modelo, Benadryl) or licensed characters (Superman shield).
 
 ---
 
-## Etsy Ads snapshot (2026-06-26, last 30 days)
+## Etsy Ads snapshot (2026-06-26, last 30 days) — **SUPERSEDED by the Oct 27 block at the top**
 
 | Listing | Views | ROAS | Ad orders |
 |---------|-------|------|-----------|
