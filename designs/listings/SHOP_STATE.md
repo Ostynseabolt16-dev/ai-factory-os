@@ -1,13 +1,271 @@
 # CozyOrbitPrints — Shop State (source of truth)
 
 **Etsy shop:** https://www.etsy.com/shop/CozyOrbitPrints  
-**Last updated:** 2026-07-21 (first pickleball sale — eBay IT WAS IN $18.99 on Jul 17; Soft Serve + Eyes still quiet; Dinking Problem art ready)
+**Last updated:** 2026-10-27 (Etsy + eBay P&L reconciled; eBay 8 orders = 6 apparel + 2 LEGO; copy candidates in `COPY_CANDIDATES.md`)
 
 Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any new agent chat to avoid hallucinating order/design state.
 
 > **NOT kawaii stickers.** Live business = CozyOrbitPrints Corvette apparel (Etsy + eBay + Printify). GitHub `ai-factory-os` is stale May factory scaffolding — ignore it unless explicitly working on factory code.
 
 ---
+
+## Oct 27 update — dry spell + copy-candidate review
+
+Owner reports **no recent sales on Etsy or eBay** and is sending screenshots of shirts to evaluate
+for "which ones should we copy."
+
+| Item | Status |
+|------|--------|
+| **Last logged sale in `sales_log.csv`** | **Jul 17** — but Etsy shows **3 orders / $164.62 in the last 30 days** (Kids Play Mat Oct 14; Corvette C5 Blueprint Poster ~Oct 22; a 3-item order ~Oct 22). The log is behind by at least these three. Back-fill from Etsy Orders. |
+| **Headline** | Etsy reports **$540.21 net profit** over 12 months, but that **excludes Printify ($1,008.40)**. Etsy POD all-in **−$156.78**; eBay POD **~breakeven** on ~10 apparel orders; **2 LEGO sales are separate**. Combined POD **≈ −$100 to −$140** (fees TBD). See true-P&L block. |
+| **eBay (refreshed Oct 27)** | **8 orders total** — **6 Printify apparel · 2 LEGO resale** (exclude LEGO from apparel P&L). Hub: 29 active · 4 unsold · **90-day sales $273.58**. See eBay block below. |
+| **Etsy Ads numbers** | **Refreshed Oct 27** — see the real-numbers block below. The Jun 26 snapshot further down is superseded. |
+| **eBay still needed** | Total **earnings after fees** from eBay Payments (not just buyer-paid subtotals). Promoted-listing ad % on the C7 line. |
+| **Dinking Problem** | **Sold on eBay Aug 13** ($19.99, Sport Grey L) — was live; confirm Etsy listing status. Repo copy still said “ready not live” until Oct 27. |
+| **Etsy Yellow C5** | Still down since July; it was the ad **traffic** leader |
+| **Screenshot review** | Intake + scoring rubric: `designs/listings/COPY_CANDIDATES.md`; file drop: `designs/research/screenshots/` |
+| **Season** | Late Oct = Q4 gift window opening; car-guy gift tees are a gift-season category, so new listings should go up now, not in December |
+| **Printify dashboard (owner screenshot, Oct 27)** | Balance **$0.00** · Orders requiring action **0** · Products published **27** · **Costs to-date $803.09** |
+
+### Real numbers (owner screenshots, Oct 27) — these replace the stale Jun 26 snapshot
+
+**Shop stats, Sep 28 – Oct 27 (30d):**
+
+| Metric | Now | Jun 28 snapshot | Change |
+|--------|-----|-----------------|--------|
+| Visits | **231** | 455 | **−49%** |
+| Orders | **3** | 16 | **−81%** |
+| Conversion | **1.3%** | 3.5% | **−63%** |
+| Revenue | **$164.62** | $459.10 | **−64%** |
+
+Favorites 13 · shop follows 1 (10 total) · reviews 1 (5★) · **repeat buyers 0** · cities reached 3 ·
+**abandoned carts 4**. AOV is **$54.87** (3 orders / $164.62), so orders are multi-item.
+Revenue spikes on the graph land ~**Oct 12** and ~**Oct 19–20**, so the last sale was about a week
+before this snapshot — not months.
+
+**Etsy Ads, Sep 27 – Oct 27 (30d):** Views **7,054** · Clicks **112** · Orders **1** · Revenue
+**$96.25** · Spend **$49.28** · **ROAS 1.95** · views **+204%** vs prior period.
+Derived: CTR **1.59%**, click→order **0.89%**.
+
+**Offsite Ads, Sep 27 – Oct 27:** total revenue **$183.16** · direct revenue $71.36 (1 order, 1 new
+buyer) · indirect revenue $111.80 (1 order) · **ad fees paid $10.70** (≈5.8% effective). 58 clicks,
+**Google 94.83%** (55 visits), Etsy Publishing Partners 5.17% (3). **Leave offsite ads on** — this is
+the cheapest traffic in the account.
+
+**Traffic mix problem:** 112 Etsy-ad clicks + 58 offsite clicks ≈ **170 of 231 visits are paid**.
+Roughly **60 organic visits/month**. (Attribution windows differ between the two reports, so treat as
+directional.) The shop is renting nearly all of its traffic and has almost no organic search footing.
+
+### TRUE P&L (owner screenshots, Oct 27) — Etsy's "net profit" excludes Printify
+
+**Etsy Activity summary, last 12 months (Oct 2025 – Sep 2026):** Etsy-reported **net profit $540.21**
+
+| Line | Amount |
+|------|--------|
+| Sales (26 total sales, 1 refund −$30.32, buyer duties/tax −$66.31) | **$890.81** |
+| Fees (listing −$27.40, transaction −$59.89, processing −$36.11, setup −$29.00, credits +$37.53) | **−$114.87** |
+| Marketing (**Etsy Ads −$226.94**, Offsite −$13.34, credits +$4.55) | **−$235.73** |
+| Shipping labels | $0.00 |
+| **Etsy net profit** | **$540.21** |
+
+**Etsy Activity summary, Oct 2026 month-to-date:** sales $208.29 · fees −$43.00 · marketing −$59.19 ·
+**net profit $106.10**. Total balance **−$7.02** (we owe Etsy).
+
+**Printify costs to-date — TWO separate stores:**
+
+| Printify store | Costs to-date |
+|----------------|---------------|
+| Etsy (`CozyOrbitPrints`) | **$803.09** |
+| eBay (`sea-6469`) | **$205.31** |
+| **Total production cost, lifetime** | **$1,008.40** |
+
+Tooltip confirms this is total GMV of all Printify order costs for that store to date.
+
+#### The actual bottom line
+
+Etsy's "net profit" is **sales minus Etsy's own fees and ads**. It has never included cost of goods.
+Printify production + shipping is our single largest expense and Etsy never sees it.
+
+**Etsy side — this half is clean:**
+
+| | Amount |
+|---|--------|
+| Etsy net profit, 12mo (Oct 2025 – Sep 2026) | +$540.21 |
+| Etsy net profit, Oct 2026 MTD (separate window, no overlap) | +$106.10 |
+| Printify, Etsy store | −$803.09 |
+| **Etsy all-in** | **−$156.78** |
+
+**eBay side — reconciled Oct 27 (owner order screenshots):**
+
+| Metric | Value |
+|--------|-------|
+| Orders (hub) | **8** |
+| Active listings | 29 |
+| 90-day buyer-paid total | **$273.58** |
+| Printify store `sea-6469` costs to-date | **$205.31** |
+
+**The 8 orders split two ways — do not mix them in apparel math:**
+
+| Type | Count | Notes |
+|------|-------|-------|
+| **Printify apparel** | **6** | All Corvette C7/C5 or Dinking Problem pickleball |
+| **LEGO resale** | **2** | Oct 4 Star Wars microfighters $30 · Oct 15 City outdoor pack $46 — **no Printify** |
+
+**Six apparel orders (Aug 13 – Oct 25, 2026)** — now in `sales_log.csv`:
+
+| Date | Item | Subtotal | Promoted? |
+|------|------|----------|-----------|
+| Aug 13 | Dinking Problem tee | $19.99 | no |
+| Aug 20 | C7 Illustration tee | $16.47 | yes |
+| Sep 13 | Red C7 tee | $16.47 | yes |
+| Sep 22 | C7 Sports Car tee | $16.47 | yes |
+| Oct 12 | C7 Illustration tee (2nd sale) | $19.99 | yes |
+| Oct 25 | Yellow C5 2-sided hoodie | $49.99 | yes |
+
+**Plus four earlier apparel orders already in the log (Jun–Jul):** C5 tee (Michael) · Yellow C5 tee +
+hoodie (Allyn, **1st** hoodie on item `398084925179`) · IT WAS IN pickleball.
+
+→ **~10 Printify fulfillments** on the eBay Printify store vs **$205.31** ≈ **$20.50/order average** —
+the earlier “unaccounted $120” flag is **resolved** once the Aug–Oct orders are counted.
+
+**LEGO ($76 item + buyer shipping)** rides the same eBay account but is **not** CozyOrbit apparel. It
+inflates the 90-day **$273.58** headline — apparel-only buyer subtotals in the 8-order set are **~$215**
+items + shipping, and **~$166** if you count only the 6 POD lines’ buyer totals in that screenshot set.
+
+**Apparel takeaway:** eBay is **working for Corvette + type-first pickleball** — five C7 sales via
+Promoted Listings, a **second** C5 hoodie at $49.99, and **Dinking Problem already sold Aug 13** (it
+was live on eBay; listing copy in repo was behind). C7 tees at **$16.47 promoted** are thin margin;
+hoodie at $49.99 is the right AOV play.
+
+**eBay apparel P&L (still approximate):** need **eBay Payments “total earnings”** to finish. Rough
+direction: ~$264 apparel item subtotals (10 orders) − $205 Printify − ~13% eBay fees − promoted fees
+on most C7 lines → **small positive to breakeven on apparel**, unlike Etsy where ads dominate. LEGO
+profit/loss is separate COGS.
+
+**Combined apparel business (Etsy + eBay POD, excluding LEGO):**
+
+| | Amount |
+|---|--------|
+| Etsy all-in (above) | **−$156.78** |
+| eBay apparel (Printify $205.31 vs ~$264 gross items, fees TBD) | **≈ breakeven to modest +** |
+| **POD channels combined, rough** | **≈ −$100 to −$140** before LEGO, Cursor, OpenAI |
+
+Still **not** the +$540 Etsy dashboard implies. LEGO and any non-POD sales are upside on the side account.
+
+**Resolved open question:** the eBay store tile reads "**0** in the last 7 days," which confirms the
+Printify "Products published" tile is a **7-day** metric. So the Etsy store published **27 products in
+7 days** — confirming the rapid listing pace. eBay has had **nothing new pushed to it** in that window.
+
+#### Ads are the structural problem
+
+| Window | Sales | Marketing | Ads as % of sales |
+|--------|-------|-----------|-------------------|
+| 12 months | $890.81 | $235.73 | **26.5%** |
+| Oct 2026 MTD | $208.29 | $59.19 | **28.4%** |
+
+Against post-fee revenue ($890.81 − $114.87 = $775.94), ads ate **30.4%**. POD production already runs
+roughly 60–70% of a $22–25 tee. Production + ~13% Etsy fees + ~28% ads is **over 100%** — the business
+cannot be profitable at this ad ratio regardless of which designs we list.
+
+October will likely land negative too once Printify is subtracted: $106.10 of Etsy net against roughly
+$120–145 of production on $208 of sales.
+
+**Current ad run rate is climbing:** the Oct 27 ledger shows an Etsy Ads bill of **−$4.62 for Oct 26
+click-throughs alone**, about a **$139/month** pace. July's working figure was $2.50–3/day.
+
+#### Other facts from these screenshots
+
+- **117 active listings · 32 sales · 4.8★ (10 reviews).** That's **0.27 lifetime sales per listing**.
+- **Four more listings published Oct 27** (#4603972103, #4603974639, #4603996160, #4604000300) at
+  $0.20 each — still adding inventory while the existing 117 average under a third of a sale apiece.
+- **Promo codes `CORVETTE10` and `THANKYOUVETTE` are live shop-wide** and attaching to non-Corvette
+  items (a Crochet Lover Tee favorite shows `CORVETTE10`). A 10% coupon stacking on top of ~28% ads
+  and ~65% production is where the remaining margin goes.
+- **`Pickleball Two Neon Eyes` is the most-favorited listing in the shop** — 4 of the 13 favorites
+  (Judith, Florante, Renee, meghanpotemra) — with **zero sales ever**. The art attracts and the price
+  closes nobody, even with a coupon live. Before killing it outright, one price-drop test is defensible.
+
+### Corvette is still what sells — ads just aren't pointed at it
+
+**Corvette listings are still live** — the Recent activity feed shows a **Corvette C5 Blueprint Poster
+purchased ~Oct 22**, a 5★ review on the **Yellow Corvette C6 V8 Hoodie** (Michel, Oct 6), and a **Kids
+Play Mat Car Floor Mat purchased Oct 14**. What's missing is Corvette listings *in the advertised set*.
+
+**Of the 3 orders in the last 30 days, at least 2 are car products** (C5 Blueprint Poster ~Oct 22, Kids
+Play Mat Oct 14; the third was a 3-item order, contents unknown). Meanwhile the ad budget is aimed
+almost entirely elsewhere. The car products are converting **organically, with coupons, unadvertised**,
+while ~$49/mo of ads goes to niches that produced one order between them.
+
+The Oct 1–27 ad table lists **~45 advertised listings, every one ads-ON, with no Corvette among them.**
+The proven catalog (C4 Minimal ROAS 4.06, C8 ROAS 3.06, Yellow C5, C7 Illustration, C5 Blueprint) is
+absent from ads. The advertised set instead spans ~10 unrelated niches:
+
+national parks (Acadia ×2, Zion, Joshua Tree ×2, Yosemite, Glacier, Yellowstone, Smoky Mtns, Turkey
+Run, Indiana Dunes, Brown County) · fishing (ice, fly, bass, walleye, trout) · science diagrams
+(mitochondria, neuron, opossum, squirrel, engine, turbo, tardigrade) · Christian (3) · crafts
+(crochet, quilting) · holidays (Santa, Christmas truck, Merry Teacher, Halloween, Skelly) · Bay Area
+(Oakland ×2, San Francisco) · "lamps?" memes (3) · pickleball (2) · misc one-liners.
+
+**This is the actual cause of the dry spell.** Attention and ad budget moved off the only line with
+repeat buyers and 5-star reviews and onto ~45 cold listings across ten niches. Repeat buyers is **0**
+for the first time. Nothing has depth, so nothing earns organic rank.
+
+### Ad budget is too thin to learn anything
+
+**$49.28 across ~45 listings ≈ $1.09 per listing per month.** At that spend almost every listing got
+0–3 clicks, which proves nothing either way. Only two listings have a readable sample:
+
+| Listing | Views | Clicks | CTR | Orders | Spend | ROAS | Read |
+|---------|-------|--------|-----|--------|-------|------|------|
+| **It Was In pickleball** | 510 | 9 | 1.8% | **1** | **$5.27** | **18.26** | Only winner; starved of budget |
+| **Pickleball Two Neon Eyes** | 1,494 | 31 | 2.1% | **0** | **$9.01** | 0 | Biggest spender, **0 sales since Jul 16** |
+| Squirrel Diagram Conspiracy | 171 | 6 | **3.5%** | 0 | $3.05 | 0 | Best real CTR — concept clicks; sample too small |
+| Smoky Mountains TN | 44 | 3 | 6.8% | 0 | $1.78 | 0 | Tiny sample, note only |
+| Engine Diagram | 239 | 3 | 1.3% | 0 | $2.09 | 0 | Car-adjacent bridge back to proven niche |
+| Turbo Blueprint "Spool Responsibly" | 221 | 3 | 1.4% | 0 | $2.70 | 0 | Car-adjacent bridge back to proven niche |
+
+**ROAS 1.95 is a loss on POD.** $96.25 revenue − $49.28 ad spend − ~$55-65 Printify − ~$10 Etsy fees
+is negative. ROAS needs to clear roughly **3.0** before ads pay for themselves at our cost structure.
+
+### Action list from this snapshot (ordered by dollars)
+
+1. **Cut Etsy Ads hard — this is the whole problem.** At 28% of sales, ads cannot be paid for out of
+   POD margins. Target **under 10% of sales**, i.e. roughly **$20/month**, until a listing proves it
+   can clear ROAS 3.0. Everything else on this list is secondary to this.
+2. **Concentrate what's left.** Cut from ~45 advertised listings to **3–5**. Lead with It Was In
+   (ROAS 18.26, currently receiving 11% of spend) plus the car listings that are already converting
+   organically. $20 across four listings still buys more readable data than $49 across 45.
+3. **Kill ads on the national-parks long tail** (11 listings, mostly 0–1 clicks, 0 orders). Keep them
+   listed; just stop paying for them.
+4. **`Pickleball Two Neon Eyes`:** most-favorited listing in the shop, 1,494 views, 31 clicks, **0 sales
+   in 3 months**, and the biggest ad line item at $9.01/mo. Pull ads now. Optionally run one price-drop
+   test organically before delisting, since favorites say the art works and the price doesn't.
+5. **Put the Corvette line back in front of buyers.** Two of three October orders were car products,
+   unadvertised. C4 Minimal at ROAS 4.06 with repeat organic demand is the highest-confidence revenue
+   in the account and is currently earning nothing.
+6. **`Halloween Porgs T-Shirt` — IP RISK, pull it.** Porgs are Disney/Lucasfilm (Star Wars). We already
+   took one Etsy takedown in July over the Corvette wordmark; a second strike is not worth a 55-view
+   listing. Check the **Policy violations** tab while in there.
+7. **Stop publishing new listings for now.** 117 active at 32 lifetime sales is **0.27 sales per
+   listing**, and four more went up on Oct 27. More inventory is not the constraint.
+8. **Reconsider the shop-wide 10% coupons** (`CORVETTE10`, `THANKYOUVETTE`). A coupon on top of 28% ads
+   on top of ~65% production is why orders land near zero margin. Keep coupons for abandoned-cart
+   recovery, not as an always-on shop-wide discount.
+9. **Work the 4 abandoned carts** — at $54.87 AOV those are worth more than a month of ads.
+10. **Leave offsite ads on.** $13.34 of fees across 12 months against $183.16 of revenue in the last 30
+    days alone is the best ratio in the account.
+
+**Corrections to earlier analysis in this session:**
+- The theory that no new listings went up was wrong — the opposite happened (117 active, 4 more on Oct 27).
+- "Corvette is gone from the shop" was wrong. Corvette listings are live and still converting; they are
+  absent from **ads**, not from the catalog.
+- The dry spell is narrower than reported: the last order was **~Oct 22**, about five days before this
+  snapshot, not months ago.
+
+**Copy-candidate batch 1 reviewed Oct 27** — 16 screenshots scored in `COPY_CANDIDATES.md`.
+Build order: list Dinking Problem (already export-ready) → `WRONG HOLE` pickleball gag → red gothic
+chest script front/back → vintage photo-collage Corvette. Four candidates auto-skipped for brand
+wordmarks (Busch, Modelo, Benadryl) or licensed characters (Superman shield).
 
 ## July 21 update (post IT WAS IN sale)
 
@@ -62,11 +320,12 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 | **Print file** | `designs/pickleball/pickleball_it_was_in_UPLOAD_TO_PRINTIFY.png` | Minimal line-call; dark shirts |
 | **P&L** | ~$4.82 cash | fees $3.53 · Printify $14.63 · raise next SKUs to $20.99+ |
 
-### Pickleball Dinking Problem (Jul 21 — READY, not live)
+### Pickleball Dinking Problem (LIVE on eBay · sold Aug 13, 2026)
 
 | Channel | URL | Notes |
 |---------|-----|-------|
-| **Etsy / eBay** | — | Upload next; paste URLs when live |
+| **eBay** | item **398222322676** | **Sold Aug 13** $19.99 Sport Grey L (V. Protti); delivered |
+| **Etsy** | confirm in Listings | Repo had “not live” through Jul — verify Etsy status |
 | **Print file** | `designs/pickleball/pickleball_dinking_problem_UPLOAD_TO_PRINTIFY.png` | Type-first white/lime/white; ball below; dark shirts |
 | **Listing** | `designs/listings/PICKLEBALL_DINKING_PROBLEM.md` | eBay S–XL **$20.99** |
 | **Compose** | `scripts/compose_pickleball_dinking_problem.py` | No OpenAI |
@@ -302,7 +561,7 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 
 ---
 
-## Etsy Ads snapshot (2026-06-26, last 30 days)
+## Etsy Ads snapshot (2026-06-26, last 30 days) — **SUPERSEDED by the Oct 27 block at the top**
 
 | Listing | Views | ROAS | Ad orders |
 |---------|-------|------|-----------|
@@ -342,13 +601,14 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 - **Readout window:** evaluate after 48 hours using orders, spend per order, and cart/favorite movement before re-expanding any paused listings.
 - **Guardrail:** if a sweatshirt still shows 0 clicks after meaningful impressions, pause and reallocate back to proven tee winners.
 
-## eBay snapshot (updated 2026-07-21)
+## eBay snapshot (updated 2026-10-27)
 
-- **Active / promoted:** listings live; **Ad Fee General** is material — Yellow C5 tee took **$3.75** ad on a $26.09 item.
-- **Sales:** (1) Jun 18 C5 old art Michael ~$9.46 before promo fee · (2) Jul 15 Yellow C5 tee ~breakeven without coupon / ~$10 with $10 Printify coupon · (3) Jul 15 Yellow C5 2-sided hoodie $51.99 pending Printify · (4) **Jul 17 Pickleball IT WAS IN $18.99 → ~$4.82 cash**.
-- **2026-06-19:** Yellow C5 hoodie (front+back) and Yellow C6 hoodie (front-only) launched to eBay.
-- **Channel rule (Jul 16):** eBay is **live demand** for Yellow C5 while Etsy listing is down — keep fulfilling; fix tee price/ad % so next sale clears **$5+ without coupons**.
-- **IP note:** Yellow C5 art includes **CORVETTE** lettering — likely why Etsy took it down; eBay can get hit too. Plan safer replacement (no brand wordmark) before heavy ad spend.
+- **Hub:** 29 active · **8 orders total** · 4 unsold · **90-day sales $273.58** (includes **2 LEGO** resale lines).
+- **Printify store `sea-6469`:** costs to-date **$205.31** · **0 products published in last 7 days** (contrast: Etsy pushed 27 in 7d).
+- **Apparel (~10 Printify orders lifetime):** Jun C5 tee · Jul Yellow C5 tee + hoodie (#398084925179, **sold again Oct 25** $49.99 Light Blue L) · Jul IT WAS IN · Aug **Dinking Problem** · Aug–Oct **five C7/C7-variant tees** (mostly **Promoted Listings** at $16.47–19.99).
+- **Not apparel:** LEGO Star Wars microfighters (Oct 4) · LEGO City outdoor pack (Oct 15) — track separately from CozyOrbit POD P&L.
+- **Channel read:** eBay converts **Corvette + type-first pickleball** when promoted; **$16.47 C7 tees are volume plays** — watch promoted fee % so net stays **$5+**. Hoodie **$49.99** is the margin anchor.
+- **IP note:** Yellow C5 art still has **CORVETTE** wordmark — Etsy down; eBay still selling (2 hoodie sales). Plan safer replacement before scaling ads.
 
 ## Weekend promo test (2026-06-19 late)
 
