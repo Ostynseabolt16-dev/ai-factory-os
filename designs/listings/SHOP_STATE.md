@@ -1,11 +1,160 @@
 # CozyOrbitPrints — Shop State (source of truth)
 
 **Etsy shop:** https://www.etsy.com/shop/CozyOrbitPrints  
-**Last updated:** 2026-07-21 (first pickleball sale — eBay IT WAS IN $18.99 on Jul 17; Soft Serve + Eyes still quiet; Dinking Problem art ready)
+**Last updated:** 2026-10-27 (**Oct 26 eBay Yellow C5 hoodie cleared only $3.37 — Ad Fee General 16.1% is the cause**; plus Oct 21 5-shirt pickleball order, first poster sale, and the Jul–Oct back-fill)
 
 Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any new agent chat to avoid hallucinating order/design state.
 
 > **NOT kawaii stickers.** Live business = CozyOrbitPrints Corvette apparel (Etsy + eBay + Printify). GitHub `ai-factory-os` is stale May factory scaffolding — ignore it unless explicitly working on factory code.
+
+---
+
+## October 27 update — eBay Ad Fee General is destroying hoodie margin
+
+**Oct 26 sale:** Yellow Corvette C5 Vintage 2-Sided Hoodie · **Light Blue / L** · buyer **Network Fundie** · Forney TX · eBay order `22-15321-06774` · Printify **#27858258.13 already SHIPPED**.
+
+| Line | Amount |
+|------|--------|
+| Item subtotal | $49.99 |
+| Buyer shipping | $7.39 |
+| Sales tax (eBay remits) | $4.73 |
+| **Buyer paid** | **$62.11** |
+| − tax remitted | −$4.73 |
+| − **Transaction fees** | **−$8.85** |
+| − **Ad Fee General** | **−$8.07** |
+| **eBay earnings** | **$40.46** (funds **ON HOLD**) |
+| − Printify #27858258.13 (prod $27.90 + ship $9.19) | −$37.09 |
+| **Cash** | **~$3.37** |
+
+### The ad fee is the entire problem — here is the proof
+
+The **same hoodie** sold on **Jul 15** at $51.99 and earned **$50.58**, because that order carried **no Ad Fee General**. Oct 26 sold at $49.99 and earned **$40.46**. Nearly identical gross, **$10.12 less earnings**, and the difference is almost exactly the **$8.07 ad fee**.
+
+| | Jul 15 (Allyn Davis) | Oct 26 (Network Fundie) |
+|---|---|---|
+| Item | $51.99 | $49.99 |
+| Transaction fees | $8.80 | $8.85 |
+| **Ad Fee General** | **$0.00** | **−$8.07** |
+| Earnings | **$50.58** | **$40.46** |
+
+**Ad Fee General was 16.1% of the item price.** Total selling costs were **$16.92 on $57.38** of item+shipping — **29.5%**. That is worse than Etsy, which was supposed to be the expensive channel.
+
+**This is the third time this exact lesson has appeared** (Jul 16: $3.75 ad fee broke even the Yellow C5 tee; Jul 21 note "Ad Fee General is material"; now $8.07 on a hoodie). It was never fixed, and the fee scales with price, so it hurts worse on hoodies than tees.
+
+### Action — do this before the next eBay hoodie sells
+
+1. **Cut the eBay promoted-listing ad rate on hoodies now.** At the current rate a $49.99 hoodie nets $3.37. Dropping the ad rate to ~2% would have left roughly **$10.44** on this same order.
+2. **Or raise the hoodie price.** At this earnings rate (70.5% of item+shipping), clearing $10 cash needs an item price near **$59**. Current baseline is $41–46, so the ad rate is the faster lever.
+3. **Re-check every promoted eBay listing's ad rate** — the Jul 15 hoodie had no ad fee at all, so the rate was changed or applied inconsistently between July and October. Find out which listings are paying what.
+4. **Guardrail to enforce:** no eBay listing stays promoted unless net cash clears **$5+** after transaction fees, ad fee, and Printify. That rule already exists in the eBay snapshot below and was not followed.
+
+### Corrected prior record
+
+`sales_log.csv` logged the **Jul 15 hoodie** at **$50.58 net profit**. That was eBay **earnings**, not profit — Printify never synced, so production was missing entirely. Using this order's identical-hoodie cost ($37.09) as a proxy, real cash on Jul 15 was about **$13.49**. The row is corrected and flagged to confirm the actual Printify charge. **The shop's recorded P&L was roughly $37 too optimistic.**
+
+### Other notes from this sale
+
+- **Printify shop prefixes:** `#27858258.x` = **eBay**-linked Printify shop, `#27546430.x` = **Etsy**-linked. Useful for telling channels apart from a Printify screenshot alone.
+- **First recorded Printify cost for the 2-sided Yellow C5 hoodie: $37.09** (prod $27.90 + ship $9.19). Two-sided printing is expensive — that is why the hoodie needs either a higher price or near-zero ad fee.
+- **Light Blue / L** worked for this art, consistent with the Jun 11 Light Blue tee sale.
+- **IP reminder:** this is still the Yellow C5 art with the **CORVETTE wordmark** that Etsy took down. eBay keeps selling it, so keep fulfilling, but the safer no-wordmark replacement is still unbuilt and this design is now the shop's most reliable eBay seller — that is concentration risk.
+
+---
+
+## October 22 update (6 back-filled orders + 2 new)
+
+> **Logging gap:** nothing was recorded between **Jul 21 and Oct 14**. Everything below came from owner screenshots on Oct 22. Six orders have now been back-filled into `sales_log.csv` (Sep 21 → Oct 14). **Still missing:** Etsy order `4143679545` (shipped, PII-cleared, order ID sits in the Jul–Aug gap) and the item-price/fee side of the three September orders. The **ads snapshot and P&L sections lower in this file are stale** — do not make budget decisions off them.
+
+### Highest-priority findings
+
+1. **Play mats lose money.** The Oct 14 Karl Gilbert order (2 mats, $78.32) cost **$66.44** at Printify against **~$63.92** of Etsy earnings → **about −$2.52, before any offsite-ads fee**. The Jun 18 play mat order was already flagged "~breakeven" at $70 revenue / $65 cost. Two data points, both at or below zero. **Raise play mat pricing or pull the SKU** — see the play mat section below.
+2. **Facebook Marketplace is now a live channel** and it sold a SKU that does not exist anywhere in this repo (**There's a Skelly in My Belly** Halloween tee). Printify does not integrate with Facebook, so fulfillment is manual — the workflow is written down below so the next one is not improvised.
+3. **Two hoodies sold in September with ads OFF** (Yellow C6 V8 3XL to France, C7 V8 L to NY). The Jul 1 pass turned both off for $0 ad revenue; they convert organically. Hoodies are the quiet earner the ads snapshot was blind to.
+4. **Eyes Up Here is getting favorites but no sales** — 2 Etsy favorites on Oct 17 alone (Florante, Renee). The thumbnail/title work; price or listing quality is where it stalls. Kids Play Mat also favorited Oct 17 (Tanya).
+
+### Back-filled orders (Sep 21 → Oct 14)
+
+| Date | Buyer | Item | Printify | Status / note |
+|------|-------|------|----------|---------------|
+| **Sep 21** | Gavin Griswold · Etsy `4178621109` | **listing not captured** | **#27546430.27 $14.76** | Delivered · tracking `92612903891225428` · **identify the listing** |
+| **Sep 22** | Michel TANGUY · Etsy `4179464796` | **Yellow C6 V8 Hoodie** · Sport Grey 3XL | **#27546430.26 $36.69** (prod $25.09 + ship $5.49 + FR tax $6.11) | Delivered to Clermont-Ferrand FR · tracking `LI395070965LT` · **2nd French order** |
+| **Sep 26** | Michael Valerioti · Etsy `4184721610` | **C7 V8 Sports Car Hoodie** · Sport Grey L | **#27546430.28 $28.97** (prod $21.58 + ship $7.39) | Delivered to Mahopac NY · tracking `92612903108201543` |
+| **~Oct 14** | Tim Minnihan → Kaity Minnihan · **Facebook** `39719574087633429` | **Skelly in My Belly** Halloween tee · Black 2XL · $22 | **#27546430.30 $16.72** manual (prod $11.77 + ship $4.95) | **First FB sale** · payout **$25.51** pending delivery · **~$8.79 cash** · see FB playbook |
+| **Oct 14** | Karl Gilbert · Etsy `4200448311` | **City Roadmap Play Mat** ×2 · Front mat / Polyester loop | **#27546430.29 $66.44** (prod $46.66 + ship $19.78) | Buyer paid **$78.32** (ENDOF2026 −$5.80) · **~−$2.52 LOSS** · ship by Oct 20 |
+| **Oct 21 / 22** | see the two sections below | pickleball ×5 · C5 Blueprint Poster | $67.66 / $12.71 | **+$33.27 / +$11.17** |
+
+**Printify sub-order numbering** is now at `#27546430.32`, so `.26` through `.32` are all accounted for. Anything below `.26` from the July–September window is still unlogged.
+
+### Facebook Marketplace — manual fulfillment playbook (learned the hard way, Oct 14)
+
+**Printify has no Facebook Marketplace integration.** Nothing syncs. Every FB sale is manual:
+
+1. FB order comes in with a **ship-by date 7 days out** — miss it and FB **auto-cancels and refunds**.
+2. Create a **manual order** in Printify (Orders → Create order), pick the product/variant, and paste the FB shipping address. The Oct 14 order was `#27546430.30`.
+3. **Watch the recipient name:** FB showed buyer **Tim Minnihan** but the shipping name was **Kaity Minnihan**. Ship to the shipping name, not the buyer name.
+4. Printify picks its own carrier — this one shipped **DHL**, which was **not in the Facebook carrier picker**. Owner selected **USPS** and pasted the Printify tracking; it validated and the order completed. **This worked by luck.** Next time, if the carrier does not match, prefer an "Other" carrier option if offered, or paste tracking and message the buyer rather than trusting a mismatched carrier to validate.
+5. **Fee math is simple and friendlier than Etsy:** flat **10% of buyer total** (80¢ minimum), no listing fee, no ad fee. $28.35 buyer total → $2.84 fee → **$25.51 payout**, held until **delivery confirms**.
+6. Cash on this one: **$25.51 − $16.72 = ~$8.79** on a $22 shirt. That beats most Etsy tee margins, because the buyer-paid shipping label ($6.35) exceeded Printify's shipping ($4.95) and there is no ad drag.
+
+**Channel read:** FB clears more per shirt than Etsy at the same price, but it is fully manual and has a hard 7-day cancel rule. Worth keeping for the Halloween/novelty SKUs, but **do not scale it until the manual step is a checklist you follow**, not something you improvise at 2am.
+
+### Undocumented SKUs found in these screenshots
+
+Two live, selling products have **no listing package, no design file reference, and no entry in the mapping tables** in this file:
+
+| SKU | Evidence | What is missing |
+|-----|----------|-----------------|
+| **There's a Skelly in My Belly! Skeleton Heart Halloween Tee** | Sold on FB Oct 14 ($22, Black 2XL); Printify product exists | No `designs/listings/*.md`, no print-file path recorded, not in any color rule. **Seasonal — Halloween window closes Oct 31** |
+| **City Roadmap Play Mat Car Floor Mat \| Kids Road Pattern** | Sold on Etsy Oct 14 (×2, $66.44 Printify) | Distinct from the **Town Road Pattern** mat sold Jun 18. Two play mat SKUs exist; neither is documented, and **both have non-positive margin** |
+
+Write listing packages for these from the live Etsy/FB listings so they stop being invisible to this file.
+
+### Play mat margin fix (do this before any more mat traffic)
+
+| Order | Revenue | Printify | Result |
+|-------|---------|----------|--------|
+| Jun 18 (Town Road, ×2) | $70.00 | ~$65.00 | ~breakeven |
+| Oct 14 (City Roadmap, ×2) | $78.32 buyer paid | **$66.44** | **~−$2.52** |
+
+Production is **$23.33/mat** and Printify shipping is **$19.78** for two — shipping is the killer. Options, cheapest first: (a) **raise item price** so a 2-mat order clears $85+ before tax; (b) **exclude play mats from coupons** like ENDOF2026 — the 10% off ($5.80) is most of the loss; (c) confirm buyer-paid shipping actually covers the Printify shipping charge at qty 2; (d) if none of that clears **$5+/order**, delist. **Never fund ads on play mats** at current pricing.
+
+### 1. Etsy — IT WAS IN pickleball ×5 (Oct 21) — biggest order to date
+
+| Field | Value |
+|-------|-------|
+| Buyer / order | Rachel Hauer · Etsy `4209924522` · ship by **Oct 26** |
+| Items | **5 shirts, 1 order** — Military Green: 2× M @ $20.99 · 2× L @ $20.99 · 1× 2XL @ $22.99 |
+| Buyer paid | **$111.80** (items $106.95 + ship $15.55 − coupon **ENDOF2026** 10% off −$10.70) |
+| Etsy fees | −$10.87 (txn $7.27 + processing $3.60) → **earnings $100.93** |
+| Printify | **#27546430.31 · $67.66** (prod $52.11 + ship $15.55) — **ON HOLD, needs Submit** |
+| Cash | **~$33.27** (~$6.65/shirt) |
+| Traffic | **Organic — no ads.** Team/family multi-size buy |
+
+**Reads:** (a) the **$20.99+ pricing rule from Jul 21 worked** — 7× the cash of the $18.99 eBay sale; (b) pickleball converts **organically** on Etsy, not just eBay; (c) **Military Green** is selling and is live on the listing even though this file only documented Black/Navy/Charcoal; (d) multi-unit team/family demand is real → bundle/qty-discount angle is worth testing.
+
+### 2. Etsy — C5 Blueprint Poster (Oct 22) — first poster sale
+
+| Field | Value |
+|-------|-------|
+| Buyer | Jessica Williams · Port Richey FL · ship by **Oct 27** |
+| Item | Corvette C5 Blueprint Poster, rolled · 16"×20" vertical · **Matte** · qty 1 @ **$17.99** |
+| Buyer paid | **$26.89** (item $17.99 + ship $8.94) · marked as **gift** ("Happy birthday / We love you!") |
+| Printify | **#27546430.32 · $12.71** (prod $5.32 + ship $7.39) — payment still confirming |
+| Est. fees / cash | ~$3.01 Etsy fees → **~$11.17 (~42% margin)** |
+| Traffic | **Organic** — this listing was on the Jul 3 "ads OFF" list |
+
+**Read:** posters are the **best-margin unit in the shop** (~42% vs ~15–25% on tees) because production is $5.32 and there is no size/color risk. The Jul 3 note to strip **C5 Blueprint Poster** from ads was about $0 ad revenue — it now has an organic sale, so it is a **candidate to re-test with a small ad budget** and to extend to C4/C6/C7/C8 blueprint posters off existing masters (no OpenAI spend needed).
+
+### Next actions (updated Oct 27, in order)
+
+0. **Cut the eBay promoted-listing ad rate on hoodies** and audit the rate on every promoted eBay listing — $8.07 of ad fee turned a $49.99 hoodie into $3.37 of cash. This is the single highest-value fix on the list.
+1. **Submit Printify #27546430.31** (pickleball ×5) — on hold, ship-by **Oct 26**. Biggest order in shop history; do not let it sit.
+2. **Confirm the Skelly FB order shipped and is marked shipped on Facebook** — payout $25.51 is held until delivery, and FB cancels past the ship-by.
+3. **Fix play mat pricing** (raise price and/or exclude from coupons) — currently selling at a loss on both recorded orders.
+4. Confirm **#27546430.32** (poster) clears payment hold; confirm **#27546430.29** (play mats) left "Sending to production".
+5. **Back-fill:** Etsy order `4143679545`, plus item price + fees for the three September orders. Then refresh the ads snapshot from live Etsy screens.
+6. **Write listing packages** for the two undocumented SKUs (Skelly tee, City Roadmap play mat).
+7. Then growth, all on proven organic demand with no new art spend: poster line extension (C4/C6/C7/C8 blueprints off existing masters), pickleball **team/multi-shirt bundle**, and a look at why **hoodies convert with ads off**.
 
 ---
 
@@ -61,6 +210,7 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 | **eBay** | https://www.ebay.com/itm/398181038019 | Item `398181038019` · **sold Jul 17 $18.99** mint |
 | **Print file** | `designs/pickleball/pickleball_it_was_in_UPLOAD_TO_PRINTIFY.png` | Minimal line-call; dark shirts |
 | **P&L** | ~$4.82 cash | fees $3.53 · Printify $14.63 · raise next SKUs to $20.99+ |
+| **Etsy sale Oct 21** | **$111.80 / 5 shirts** | Military Green 2×M + 2×L + 1×2XL at $20.99/$22.99 · organic · **~$33.27 cash** · best SKU in the shop |
 
 ### Pickleball Dinking Problem (Jul 21 — READY, not live)
 
@@ -202,6 +352,15 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 | Jul 15 | Allyn Davis | **Yellow C5** hoodie 2-sided (eBay) | 1 | Ash | 2XL | **$50.58 earnings**; item `398084925179`; ship by Jul 29; Printify pending |
 | Jul 16 | — | **Pickleball Soft Serve** (listed) | — | — | — | Etsy + eBay live; still 0 sales as of Jul 21 |
 | Jul 17 | — | **Pickleball IT WAS IN** (eBay) | 1 | Mint | — | **First pickleball sale** $18.99 → ~$4.82 cash; Soft Serve + Eyes still 0 |
+| ? (Jul–Aug) | — | **Unidentified Etsy order `4143679545`** | ? | — | — | Shipped + PII-cleared before logging; tracking `93612897687673026`; **back-fill from Etsy** |
+| Sep 21 | Gavin Griswold | **Listing not captured** (Etsy `4178621109`) | 1 | — | — | Delivered; Printify #27546430.27 **$14.76**; identify listing + item price |
+| Sep 22 | Michel TANGUY | **Yellow C6 V8 Hoodie** (Etsy `4179464796`) | 1 | Sport Grey | 3XL | France (Clermont-Ferrand); delivered; Printify #27546430.26 **$36.69** incl $6.11 FR tax; **ads were OFF** |
+| Sep 26 | Michael Valerioti | **C7 V8 Sports Car Hoodie** (Etsy `4184721610`) | 1 | Sport Grey | L | Mahopac NY; delivered; Printify #27546430.28 **$28.97**; **ads were OFF** |
+| ~Oct 14 | Tim Minnihan (ship: Kaity Minnihan) | **Skelly in My Belly Halloween Tee** (**Facebook**) | 1 | Black | 2XL | **First Facebook Marketplace sale**; $22 + $6.35 label = $28.35; 10% fee → payout $25.51; manual Printify #27546430.30 **$16.72** → **~$8.79 cash**; DHL/USPS carrier mismatch |
+| Oct 14 | Karl Gilbert | **City Roadmap Play Mat** (Etsy `4200448311`) | **2** | Front mat | Polyester loop | Buyer paid $78.32 (ENDOF2026 −$5.80); Printify #27546430.29 **$66.44** → **~−$2.52 LOSS**; raise price or delist |
+| Oct 21 | Rachel Hauer | **Pickleball IT WAS IN** (Etsy) | **5** | Military Green | 2×M, 2×L, 1×2XL | **Biggest order to date** $111.80 organic; ENDOF2026 10% off; earnings $100.93; Printify $67.66 → **~$33.27 cash**; Printify on hold — submit |
+| Oct 22 | Jessica Williams | **C5 Blueprint Poster** (Etsy) | 1 | 16×20 Matte | — | **First poster sale** $26.89 organic gift order; Printify $12.71 → **~$11.17 (~42% margin)** |
+| Oct 26 | Network Fundie | **Yellow C5 2-Sided Hoodie** (eBay `22-15321-06774`) | 1 | Light Blue | L | $49.99 + $7.39 ship; earnings $40.46 after $8.85 txn + **$8.07 Ad Fee General**; Printify #27858258.13 $37.09 → **only ~$3.37 cash**; **cut the eBay ad rate** |
 
 **Refunded:** Jan — C5 Illustration Vintage — accidental order.
 
@@ -256,6 +415,18 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 | C7 Car Illustration | `corvette_c7_streetwear_design` | Patrick 2× |
 | C4 Minimal Logo | `corvette_c4_minimal_front` | Best ROAS; repeat Etsy seller |
 | Yellow C5 | `corvette_c5_yellow_streetwear_design` | Ad traffic leader |
+
+### Other live SKUs (non-Corvette) — mapping incomplete
+
+| Listing | Channel | Design file | Listing `.md` | Note |
+|---------|---------|-------------|---------------|------|
+| Pickleball IT WAS IN | Etsy + eBay | `designs/pickleball/pickleball_it_was_in_UPLOAD_TO_PRINTIFY.png` | `PICKLEBALL_IT_WAS_IN.md` | **Best-selling non-Corvette SKU** |
+| Pickleball Soft Serve | Etsy + eBay | `designs/pickleball/pickleball_soft_serve_UPLOAD_TO_PRINTIFY.png` | `PICKLEBALL_SOFT_SERVE.md` | 0 sales |
+| Pickleball Eyes Up Here | Etsy + eBay | `designs/pickleball/pickleball_eyes_up_here_UPLOAD_TO_PRINTIFY.png` | `PICKLEBALL_EYES_UP_HERE.md` | 0 sales but **2 favorites Oct 17** — conversion problem, not traffic |
+| **Skelly in My Belly Halloween Tee** | **Facebook** (Etsy? confirm) | **unknown — not in repo** | **missing** | **Sold Oct 14.** Seasonal, Halloween window ends Oct 31 |
+| **City Roadmap Play Mat** | Etsy | **unknown — not in repo** | **missing** | Sold Oct 14 ×2 at a **loss** |
+| **Town Road Play Mat** | Etsy | **unknown — not in repo** | **missing** | Sold Jun 18 ×2 at ~breakeven |
+| C5 Blueprint **Poster** (16×20 rolled) | Etsy | from C5 Blueprint master | **missing** | Sold Oct 22; **best margin in shop (~42%)** |
 
 ### Test / new (copyright-safer)
 
@@ -342,10 +513,21 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 - **Readout window:** evaluate after 48 hours using orders, spend per order, and cart/favorite movement before re-expanding any paused listings.
 - **Guardrail:** if a sweatshirt still shows 0 clicks after meaningful impressions, pause and reallocate back to proven tee winners.
 
-## eBay snapshot (updated 2026-07-21)
+## Facebook Marketplace snapshot (new channel, 2026-10-14)
 
-- **Active / promoted:** listings live; **Ad Fee General** is material — Yellow C5 tee took **$3.75** ad on a $26.09 item.
-- **Sales:** (1) Jun 18 C5 old art Michael ~$9.46 before promo fee · (2) Jul 15 Yellow C5 tee ~breakeven without coupon / ~$10 with $10 Printify coupon · (3) Jul 15 Yellow C5 2-sided hoodie $51.99 pending Printify · (4) **Jul 17 Pickleball IT WAS IN $18.99 → ~$4.82 cash**.
+- **Sales:** 1 — Skelly in My Belly Halloween tee, $22 + $6.35 label, payout **$25.51**, Printify $16.72 → **~$8.79 cash**.
+- **Fees:** flat **10% of buyer total** (80¢ min). No listing fee, no ad fee. Cheapest fee structure of the three channels.
+- **Payout timing:** held until **delivery confirms** ("Pending delivery"), slower than Etsy.
+- **Hard constraint:** ship-by is **7 days**; FB cancels and refunds after that.
+- **No Printify integration** — every order is a manual Printify order. Full playbook in the October 22 update above.
+- **Channel rule:** fine for novelty/seasonal SKUs where the 10% flat fee beats Etsy fees + ads. Do not list the Corvette catalog here until the manual fulfillment step is routine.
+
+## eBay snapshot (updated 2026-10-27)
+
+- **BLOCKER — Ad Fee General:** charged **16.1%** of item price on the Oct 26 hoodie (**$8.07**), which cut cash from ~$11 to **$3.37**. Combined with transaction fees, selling costs hit **29.5%** of item+shipping. **Cut the hoodie ad rate before the next sale.** Full math in the October 27 update at the top of this file.
+- **Fee inconsistency to investigate:** the Jul 15 hoodie carried **no ad fee at all**; the Oct 26 hoodie carried $8.07. Audit the ad rate on every promoted eBay listing.
+- **Sales:** (1) Jun 18 C5 old art Michael ~$9.46 before promo fee · (2) Jul 15 Yellow C5 tee ~breakeven without coupon / ~$10 with $10 Printify coupon · (3) Jul 15 Yellow C5 2-sided hoodie $51.99, earnings $50.58, **real cash ~$13.49 once the $37.09 hoodie production cost is applied** (corrected Oct 27) · (4) Jul 17 Pickleball IT WAS IN $18.99 → ~$4.82 cash · (5) **Oct 26 Yellow C5 2-sided hoodie $49.99 → ~$3.37 cash (ad fee $8.07)**.
+- **Known Printify cost — 2-sided Yellow C5 hoodie: $37.09** (prod $27.90 + ship $9.19). Two-sided print is the shop's most expensive unit.
 - **2026-06-19:** Yellow C5 hoodie (front+back) and Yellow C6 hoodie (front-only) launched to eBay.
 - **Channel rule (Jul 16):** eBay is **live demand** for Yellow C5 while Etsy listing is down — keep fulfilling; fix tee price/ad % so next sale clears **$5+ without coupons**.
 - **IP note:** Yellow C5 art includes **CORVETTE** lettering — likely why Etsy took it down; eBay can get hit too. Plan safer replacement (no brand wordmark) before heavy ad spend.
@@ -363,7 +545,7 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 
 ## Shirt colors
 
-- **Pickleball Dinking Problem / Eyes / IT WAS IN:** Black, Navy, Charcoal (dark only — white/lime type)
+- **Pickleball Dinking Problem / Eyes / IT WAS IN:** dark only (white/lime type) — Black, Navy, Charcoal, **Military Green** (Military Green confirmed selling: Oct 21 Etsy 5-shirt order)
 - **C7 Laguna Blue:** White, Natural, Sport Grey only (not dark colors)
 - **C5 Torch Red:** White, Natural, Sport Grey only (not dark colors)
 - **C5 Black:** White, Natural, Sport Grey only (not dark colors)
