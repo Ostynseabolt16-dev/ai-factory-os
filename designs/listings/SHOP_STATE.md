@@ -1,11 +1,26 @@
 # CozyOrbitPrints — Shop State (source of truth)
 
 **Etsy shop:** https://www.etsy.com/shop/CozyOrbitPrints  
-**Last updated:** 2026-07-21 (first pickleball sale — eBay IT WAS IN $18.99 on Jul 17; Soft Serve + Eyes still quiet; Dinking Problem art ready)
+**Last updated:** 2026-10-28 (first national-parks sticker sale — Acadia Maine round sticker on Etsy)
 
 Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any new agent chat to avoid hallucinating order/design state.
 
-> **NOT kawaii stickers.** Live business = CozyOrbitPrints Corvette apparel (Etsy + eBay + Printify). GitHub `ai-factory-os` is stale May factory scaffolding — ignore it unless explicitly working on factory code.
+> Live business = CozyOrbitPrints Corvette apparel + pickleball tees (Etsy + eBay + Printify) **and** owner national-parks sticker tests. May **kawaii / AI Factory** sticker scaffolding on GitHub is still stale — ignore that pipeline unless explicitly asked.
+
+---
+
+## October 28 update (Acadia sticker sale)
+
+| Item | Status |
+|------|--------|
+| **Etsy Acadia Maine National Parks Sunset Round Sticker** | **SOLD Oct 28** — buyer **Sarah Ontiveros** (Stamford CT); order `4212774931`; Printify **#27546430.33** **in production** |
+| **Product** | 2" × 2" / Round / White · qty 1 |
+| **Buyer paid** | **$12.09** (item $7.09 + ship $4.99 − coupon **ENDOF2026** 10% / −$0.71 + tax $0.72) |
+| **Etsy earnings** | **$10.03** after txn $0.73 + payment $0.61 + tax remitted $0.72 |
+| **Printify** | **$8.30** (prod $2.91 + ship $5.39) |
+| **Cash** | **~$1.73** ($10.03 − $8.30) — thin; shipping dominates sticker unit economics |
+| **Traffic** | Shop coupon **ENDOF2026** (ads vs organic unknown) |
+| **Line note** | First conversion on the **national-parks sticker** set made last week — not May kawaii factory art |
 
 ---
 
@@ -202,6 +217,7 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 | Jul 15 | Allyn Davis | **Yellow C5** hoodie 2-sided (eBay) | 1 | Ash | 2XL | **$50.58 earnings**; item `398084925179`; ship by Jul 29; Printify pending |
 | Jul 16 | — | **Pickleball Soft Serve** (listed) | — | — | — | Etsy + eBay live; still 0 sales as of Jul 21 |
 | Jul 17 | — | **Pickleball IT WAS IN** (eBay) | 1 | Mint | — | **First pickleball sale** $18.99 → ~$4.82 cash; Soft Serve + Eyes still 0 |
+| Oct 28 | Sarah Ontiveros | **Acadia Maine National Parks Sunset Round Sticker** (Etsy) | 1 | White | 2" round | Order `4212774931`; Printify `#27546430.33` in production; ENDOF2026 10% off; earnings **$10.03** − Printify **$8.30** → **~$1.73 cash** |
 
 **Refunded:** Jan — C5 Illustration Vintage — accidental order.
 

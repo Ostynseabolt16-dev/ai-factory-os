@@ -1,19 +1,26 @@
-# CozyOrbitPrints — Master Handoff (July 21, 2026)
+# CozyOrbitPrints — Master Handoff (October 28, 2026)
 
 > Shop: https://www.etsy.com/shop/CozyOrbitPrints  
 > **Read this + `SHOP_STATE.md` + `sales_log.csv` at start of every session.**  
-> **MacBook Cursor is NOT auto-synced with phone.** GitHub `ai-factory-os` is **stale** (May factory/stickers) — live shop state lives in these local files.
+> **MacBook Cursor is NOT auto-synced with phone.** GitHub `ai-factory-os` May **kawaii factory** history is **stale** — live shop state lives in these local files.
 
 ---
 
-## What we sell (NOT stickers)
+## What we sell
 
 - **Brand:** CozyOrbitPrints
-- **Product:** Corvette C3–C8 graphic tees + hoodies (POD via Printify) + **pickleball test SKUs** (Jul 16+)
+- **Product:** Corvette C3–C8 graphic tees + hoodies (POD via Printify) + **pickleball test SKUs** (Jul 16+) + **national-parks sticker tests** (Oct 2026)
 - **Channels:** Etsy (primary historically) + eBay (now converting — re-prioritize)
-- **Proven styles:** (1) Blueprint / technical front+back · (2) Gothic text + side car · (3) minimal pickleball text gag (**IT WAS IN** sold)
+- **Proven styles:** (1) Blueprint / technical front+back · (2) Gothic text + side car · (3) minimal pickleball text gag (**IT WAS IN** sold) · (4) **Acadia Maine round sticker** (first parks sticker sale Oct 28)
 
-## July 21 flash update (tonight)
+## October 28 flash update
+
+| Sale / item | Status |
+|-------------|--------|
+| **Etsy Acadia Maine National Parks Sunset Round Sticker** | **SOLD** — Sarah Ontiveros; order `4212774931`; Printify **#27546430.33** in production; Etsy earn **$10.03** − Printify **$8.30** = **~$1.73 cash**; coupon **ENDOF2026** 10% off |
+| **Margin note** | Sticker ship ($5.39 Printify vs $4.99 charged) eats most of the order — raise item price and/or bundle multi-sticker packs before scaling ads |
+
+## July 21 flash update
 
 | Sale / item | Status |
 |-------------|--------|
