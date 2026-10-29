@@ -9,28 +9,34 @@
 ## What we sell (NOT stickers)
 
 - **Brand:** CozyOrbitPrints
-- **Product:** Corvette C3–C8 graphic tees + hoodies (POD via Printify) + **pickleball test SKUs** (Jul 16+)
+- **Product:** Corvette C3–C8 graphic tees + hoodies (POD via Printify) + **pickleball test SKUs** (Jul 16+) + **Indiana park tees** (Turkey Run sold Oct 29)
 - **Channels:** Etsy (primary historically) + eBay (now converting — re-prioritize)
-- **Proven styles:** (1) Blueprint / technical front+back · (2) Gothic text + side car · (3) minimal pickleball text gag (**IT WAS IN** sold)
+- **Proven styles:** (1) Blueprint / technical front+back · (2) Gothic text + side car · (3) minimal pickleball text gag (**IT WAS IN** sold) · (4) local park tee (**Turkey Run**)
 
-## August 4 flash update
+## October 29 flash update
 
 | Sale / item | Status |
 |-------------|--------|
-| **Etsy C6 Atomic Orange** | **FIRST SALE Aug 4** — Tom Clark · Natural **2XL** · order `4135579869` · item **$26.99** · Etsy **$28.42** − Printify `#27546430.23` **$16.04** = **~$12.38 cash** · In production · ship by Aug 10 |
+| **Etsy Turkey Run State Park Tee** | **FIRST SALE Oct 29** — Julie Doll · Dark Chocolate **M** · order `4214143241` · list **$24.99** · coupon ENDOF2026 (−$2.50) · buyer **$29.91** · Etsy **$24.51** − Printify `#27546430.34` **$15.03** = **~$11.48 cash** · **On hold — Submit** |
 | Soft Serve + Eyes Up Here | Still **0 sales** (only IT WAS IN converted among pickleball) |
 | **Dinking Problem tee** | **READY** — still needs Printify → eBay/Etsy upload |
 | Yellow C5 Etsy | Still **taken down** (CORVETTE wordmark) |
 
 ## Next actions (priority)
 
-1. **Atomic Orange** — Printify `#27546430.23` already **In production** (~$12.38 cash); no action until ship
+1. **Submit Turkey Run Printify hold** — `#27546430.34` On hold (~$11.48 cash once produced)
 2. **Upload Dinking Problem** to Printify → eBay @ **$20.99** S–XL (dark shirts only) → Etsy
 3. Soft Serve / Eyes: leave live, no heavy ads
-4. Ads: winners only; Atomic Orange margin clears $5+ — light test OK if you want
+4. Ads: winners only; Turkey Run / Atomic Orange both clear $5+ — light test OK
 5. Skip for now: memory comic clone, Abraham Lincoln portrait, doodles, goose
 6. Safer Yellow C5 replacement (no CORVETTE wordmark) when ready
 7. C6 Variant B: regen no-plate when OpenAI credits return (do not plate-fix)
+
+## August 4 flash update
+
+| Sale / item | Status |
+|-------------|--------|
+| **Etsy C6 Atomic Orange** | **FIRST SALE Aug 4** — Tom Clark · Natural **2XL** · order `4135579869` · item **$26.99** · Etsy **$28.42** − Printify `#27546430.23` **$16.04** = **~$12.38 cash** · In production · ship by Aug 10 |
 
 ## July 21 flash update
 
