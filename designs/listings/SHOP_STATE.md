@@ -1,11 +1,50 @@
 # CozyOrbitPrints — Shop State (source of truth)
 
 **Etsy shop:** https://www.etsy.com/shop/CozyOrbitPrints  
-**Last updated:** 2026-07-21 (first pickleball sale — eBay IT WAS IN $18.99 on Jul 17; Soft Serve + Eyes still quiet; Dinking Problem art ready)
+**Last updated:** 2026-10-29 (Turkey Run Indiana shirt sold Oct 28; today’s build = Indiana state park tees)
 
 Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any new agent chat to avoid hallucinating order/design state.
 
-> **NOT kawaii stickers.** Live business = CozyOrbitPrints Corvette apparel (Etsy + eBay + Printify). GitHub `ai-factory-os` is stale May factory scaffolding — ignore it unless explicitly working on factory code.
+> Live business = CozyOrbitPrints Corvette apparel + pickleball tees + national-parks stickers + **Indiana state park tees**. May **kawaii / AI Factory** sticker scaffolding on GitHub is still stale — ignore that pipeline unless explicitly asked.
+
+---
+
+## October 29 plan (after Turkey Run shirt sale)
+
+**Signal:** Turkey Run Indiana **shirt** sold Oct 28 → double down on **Indiana state park tees** (same style as Turkey Run). Better unit economics than stickers. Do **not** spend today on US-flag garden banners, magnets, or new random niches.
+
+### Make these 15 tees today (Turkey Run style)
+
+| # | Park | Hook |
+|---|------|------|
+| 1 | **Brown County** | Most-searched IN park; fall hills / covered-bridge vibe |
+| 2 | **Indiana Dunes** | National Park in IN — biggest search + gift traffic |
+| 3 | **Shades State Park** | Sister canyon park to Turkey Run (same buyer) |
+| 4 | **McCormick's Creek** | First Indiana state park; limestone canyon |
+| 5 | **Clifty Falls** | Waterfalls + Ohio River bluffs |
+| 6 | **Pokagon** | Lake James / Potawatomi nature center crowd |
+| 7 | **Spring Mill** | Pioneer village + cave — strong souvenir tee |
+| 8 | **Falls of the Ohio** | Fossil beds / Louisville-adjacent traffic |
+| 9 | **Potato Creek** | North IN lake + trails |
+| 10 | **Whitewater Memorial** | Brookville Lake region |
+| 11 | **Lincoln State Park** | Abe childhood / southern IN tourism |
+| 12 | **Harmonie** | Wabash River / New Harmony visitors |
+| 13 | **Ouabache** | Wildlife / bison angle stands out in thumbnails |
+| 14 | **Summit Lake** | Clean lake sunset tee |
+| 15 | **Chain O'Lakes** | Multi-lake paddling / north IN gift |
+
+**Skip today:** remaking park stickers you already have; Crater Lake sticker only if tokens left after tees.  
+**Price:** $21.99+ S–XL. Light ads only after 2+ organic.
+
+---
+
+## October 28 sales
+
+| Item | Status |
+|------|--------|
+| **Etsy Turkey Run State Park Tee** | **SOLD Oct 28 via Etsy Ads** — **$22.49** rev · **$1.15** spend · **ROAS 19.56** · 6 views / 1 click / **16.7% CTR**; fill size/color/Printify from Orders |
+| **Etsy Acadia Maine National Parks Sunset Round Sticker** | **SOLD Oct 28** — Sarah Ontiveros; order `4212774931`; Printify `#27546430.33`; earnings **$10.03** − Printify **$8.30** → **~$1.73 cash**; coupon ENDOF2026 |
+| **Parks stickers made Oct 28** | Grand Teton, Arches, + batch through Everglades / Hawaiʻi Volcanoes (Crater Lake still open) |
 
 ---
 
@@ -202,6 +241,8 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 | Jul 15 | Allyn Davis | **Yellow C5** hoodie 2-sided (eBay) | 1 | Ash | 2XL | **$50.58 earnings**; item `398084925179`; ship by Jul 29; Printify pending |
 | Jul 16 | — | **Pickleball Soft Serve** (listed) | — | — | — | Etsy + eBay live; still 0 sales as of Jul 21 |
 | Jul 17 | — | **Pickleball IT WAS IN** (eBay) | 1 | Mint | — | **First pickleball sale** $18.99 → ~$4.82 cash; Soft Serve + Eyes still 0 |
+| Oct 28 | Sarah Ontiveros | **Acadia Maine National Parks Sunset Round Sticker** (Etsy) | 1 | White | 2" round | Order `4212774931`; Printify `#27546430.33`; ~$1.73 cash |
+| Oct 28 | — | **Turkey Run State Park Tee** (Etsy Ads) | 1 | — | — | **$22.49** rev · **$1.15** spend · ROAS **19.56** · 16.7% CTR; fill size/color/Printify |
 
 **Refunded:** Jan — C5 Illustration Vintage — accidental order.
 
