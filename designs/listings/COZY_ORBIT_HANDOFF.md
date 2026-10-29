@@ -21,6 +21,8 @@
 
 Skip obscure IN parks. Don’t jump niches — the tee formula just hit ROAS 19.
 
+**Oct 29 night:** ~**30+** park tee + sticker listings live; shirt thumbnail zoom pass done. Tomorrow = read CTR, not more SKUs.
+
 ## October 28 sales
 
 | Sale / item | Status |

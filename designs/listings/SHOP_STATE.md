@@ -1,7 +1,7 @@
 # CozyOrbitPrints — Shop State (source of truth)
 
 **Etsy shop:** https://www.etsy.com/shop/CozyOrbitPrints  
-**Last updated:** 2026-10-29 (Turkey Run Indiana shirt sold Oct 28; today’s build = Indiana state park tees)
+**Last updated:** 2026-10-29 night (~30+ park tee + sticker listings; shirt thumbnail zoom pass done)
 
 Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any new agent chat to avoid hallucinating order/design state.
 
