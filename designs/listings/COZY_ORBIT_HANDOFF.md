@@ -15,9 +15,11 @@
 
 ## October 29 flash — make these 15 tees (Turkey Run style)
 
-Brown County · Indiana Dunes · Shades · McCormick's Creek · Clifty Falls · Pokagon · Spring Mill · Falls of the Ohio · Potato Creek · Whitewater Memorial · Lincoln State Park · Harmonie · Ouabache · Summit Lake · Chain O'Lakes
+**IN A-list:** Brown County · Indiana Dunes · Shades · McCormick's Creek · Clifty Falls  
+**Neighbors:** Sleeping Bear Dunes · Pictured Rocks · Hocking Hills · Red River Gorge · Mammoth Cave  
+**Famous NPs (tees not stickers):** Great Smoky Mountains · Yellowstone · Yosemite · Zion · Grand Canyon  
 
-**Do not:** US-flag garden banners, magnets, random meme tees, remaking stickers you already have.
+Skip obscure IN parks. Don’t jump niches — the tee formula just hit ROAS 19.
 
 ## October 28 sales
 
