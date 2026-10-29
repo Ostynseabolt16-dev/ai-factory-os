@@ -45,6 +45,15 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 **Do not:** obscure IN state parks, US-flag garden banners, magnets, random meme niches tonight.  
 **Price:** $21.99+ S–XL. Light ads on Turkey Run; add siblings after live.
 
+### Oct 29 night wrap
+
+| Item | Status |
+|------|--------|
+| **Listings shipped** | **~30+** — park **tees + matching round stickers** (same emblem art on both blanks) |
+| **QC** | Shirt **thumbnails zoomed/tightened** across the new tee set |
+| **Listing packages** | `BIG_BEND.md` · `MESA_VERDE.md` ready; others follow same title/tag pattern |
+| **Tomorrow** | Don’t make more art first — check visits/CTR on new parks; keep ads **light**; only boost listings with clicks. Fill Turkey Run order size/color/Printify cost if still blank in `sales_log.csv` |
+
 ---
 
 ## October 28 sales
