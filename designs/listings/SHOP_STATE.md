@@ -11,30 +11,39 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 
 ## October 29 plan (after Turkey Run shirt sale)
 
-**Signal:** Turkey Run Indiana **shirt** sold Oct 28 → double down on **Indiana state park tees** (same style as Turkey Run). Better unit economics than stickers. Do **not** spend today on US-flag garden banners, magnets, or new random niches.
+**Signal:** Turkey Run Indiana **shirt** sold Oct 28 (Ads ROAS 19.56). Keep the **park tee formula**, but only parks people actually know — Hoosier local vetoed obscure IN parks (Ouabache / Harmonie / etc.).
 
 ### Make these 15 tees today (Turkey Run style)
 
-| # | Park | Hook |
-|---|------|------|
-| 1 | **Brown County** | Most-searched IN park; fall hills / covered-bridge vibe |
-| 2 | **Indiana Dunes** | National Park in IN — biggest search + gift traffic |
-| 3 | **Shades State Park** | Sister canyon park to Turkey Run (same buyer) |
-| 4 | **McCormick's Creek** | First Indiana state park; limestone canyon |
-| 5 | **Clifty Falls** | Waterfalls + Ohio River bluffs |
-| 6 | **Pokagon** | Lake James / Potawatomi nature center crowd |
-| 7 | **Spring Mill** | Pioneer village + cave — strong souvenir tee |
-| 8 | **Falls of the Ohio** | Fossil beds / Louisville-adjacent traffic |
-| 9 | **Potato Creek** | North IN lake + trails |
-| 10 | **Whitewater Memorial** | Brookville Lake region |
-| 11 | **Lincoln State Park** | Abe childhood / southern IN tourism |
-| 12 | **Harmonie** | Wabash River / New Harmony visitors |
-| 13 | **Ouabache** | Wildlife / bison angle stands out in thumbnails |
-| 14 | **Summit Lake** | Clean lake sunset tee |
-| 15 | **Chain O'Lakes** | Multi-lake paddling / north IN gift |
+**Indiana A-list only (5)**
+| # | Park | Why |
+|---|------|-----|
+| 1 | **Brown County** | Fall tourism king of IN |
+| 2 | **Indiana Dunes** | National Park — biggest IN search |
+| 3 | **Shades State Park** | Same canyon trip as Turkey Run |
+| 4 | **McCormick's Creek** | Known first state park |
+| 5 | **Clifty Falls** | Recognizable waterfall park |
 
-**Skip today:** remaking park stickers you already have; Crater Lake sticker only if tokens left after tees.  
-**Price:** $21.99+ S–XL. Light ads only after 2+ organic.
+**Neighbor-state famous parks (5)**
+| # | Park | Why |
+|---|------|-----|
+| 6 | **Sleeping Bear Dunes** (MI) | Midwest destination magnet |
+| 7 | **Pictured Rocks** (MI) | Instant thumbnail recognition |
+| 8 | **Hocking Hills** (OH) | Huge regional search / weekend trips |
+| 9 | **Red River Gorge** (KY) | Climbers + leaf-peepers |
+| 10 | **Mammoth Cave** (KY) | National Park, name recognition |
+
+**National-park tees — famous only (5)** *(shirts, not more stickers)*
+| # | Park | Why |
+|---|------|-----|
+| 11 | **Great Smoky Mountains** | #1 visited NP |
+| 12 | **Yellowstone** | Universal gift search |
+| 13 | **Yosemite** | Half Dome = instant read |
+| 14 | **Zion** | Strong young outdoor buyer |
+| 15 | **Grand Canyon** | Highest name recognition |
+
+**Do not:** obscure IN state parks, US-flag garden banners, magnets, random meme niches tonight.  
+**Price:** $21.99+ S–XL. Light ads on Turkey Run; add siblings after live.
 
 ---
 
