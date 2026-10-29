@@ -1,35 +1,48 @@
-# CozyOrbitPrints — Master Handoff (July 21, 2026)
+# CozyOrbitPrints — Master Handoff (October 29, 2026)
 
 > Shop: https://www.etsy.com/shop/CozyOrbitPrints  
 > **Read this + `SHOP_STATE.md` + `sales_log.csv` at start of every session.**  
-> **MacBook Cursor is NOT auto-synced with phone.** GitHub `ai-factory-os` is **stale** (May factory/stickers) — live shop state lives in these local files.
+> **MacBook Cursor is NOT auto-synced with phone.** GitHub May **kawaii factory** history is **stale** — live shop state lives in these local files.
 
 ---
 
-## What we sell (NOT stickers)
+## What we sell
 
 - **Brand:** CozyOrbitPrints
-- **Product:** Corvette C3–C8 graphic tees + hoodies (POD via Printify) + **pickleball test SKUs** (Jul 16+)
-- **Channels:** Etsy (primary historically) + eBay (now converting — re-prioritize)
-- **Proven styles:** (1) Blueprint / technical front+back · (2) Gothic text + side car · (3) minimal pickleball text gag (**IT WAS IN** sold)
+- **Product:** Corvette tees/hoodies + pickleball tees + national-parks stickers + **Indiana state park tees**
+- **Channels:** Etsy + eBay + Printify
+- **Hot signal (Oct 28):** **Turkey Run State Park Tee** — Etsy Ads 1 order · **$22.49** rev · **$1.15** spend · **ROAS 19.56** · 16.7% CTR
 
-## July 21 flash update (tonight)
+## October 29 flash — make these 15 tees (Turkey Run style)
+
+**IN A-list:** Brown County · Indiana Dunes · Shades · McCormick's Creek · Clifty Falls  
+**Neighbors:** Sleeping Bear Dunes · Pictured Rocks · Hocking Hills · Red River Gorge · Mammoth Cave  
+**Famous NPs (tees not stickers):** Great Smoky Mountains · Yellowstone · Yosemite · Zion · Grand Canyon  
+
+Skip obscure IN parks. Don’t jump niches — the tee formula just hit ROAS 19.
+
+**Oct 29 night:** ~**30+** park tee + sticker listings live; shirt thumbnail zoom pass done. Tomorrow = read CTR, not more SKUs.
+
+## October 28 sales
 
 | Sale / item | Status |
 |-------------|--------|
-| **eBay Pickleball IT WAS IN** | **SOLD Jul 17 — $18.99** + $3.99 ship → eBay earn **$19.45** − Printify **$14.63** = **~$4.82 cash** |
-| Soft Serve + Eyes Up Here | Still **0 sales** (only clean type+ball gag sold) |
-| **Dinking Problem tee** | **READY** — `designs/pickleball/pickleball_dinking_problem_UPLOAD_TO_PRINTIFY.png` + `PICKLEBALL_DINKING_PROBLEM.md` |
-| Soft Serve / Eyes / IT WAS IN | Still live Etsy + eBay |
+| **Turkey Run State Park Tee** | **SOLD** via Etsy Ads — $22.49 · spend $1.15 · ROAS 19.56 |
+| **Acadia Maine round sticker** | **SOLD** — order `4212774931` · ~$1.73 cash after Printify |
+
+## July 21 flash update
+
+| Sale / item | Status |
+|-------------|--------|
+| **eBay Pickleball IT WAS IN** | **SOLD Jul 17 — $18.99** → ~$4.82 cash |
+| **Dinking Problem tee** | **READY** — upload when Indiana park batch is listed |
 
 ## Next actions (priority)
 
-1. **Upload Dinking Problem** to Printify → eBay @ **$20.99** S–XL (dark shirts only) → Etsy
-2. Then Kitchen → Six pack (`PICKLEBALL_WAVE2.md`); eBay-first; light ads only
-3. Soft Serve / Eyes: leave live, no heavy ads
-4. Fulfill IT WAS IN — Printify #27858258.4 ready-to-ship
-5. Skip for now: memory comic clone, Abraham Lincoln portrait, doodles, goose
-6. Safer Yellow C5 replacement (no CORVETTE wordmark) when ready
+1. **Make + list the 15 Indiana state park tees** (same style as Turkey Run) @ **$21.99+**
+2. Keep light ads on Turkey Run; add siblings only after live
+3. Parks stickers: price $8.99+ / Choose-3 pack — don’t heavy-ad singles
+4. Defer: garden flags, magnets, Yellow C5 wordmark relist
 
 ## July 16 flash update
 

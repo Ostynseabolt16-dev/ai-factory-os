@@ -1,11 +1,68 @@
 # CozyOrbitPrints — Shop State (source of truth)
 
 **Etsy shop:** https://www.etsy.com/shop/CozyOrbitPrints  
-**Last updated:** 2026-07-21 (first pickleball sale — eBay IT WAS IN $18.99 on Jul 17; Soft Serve + Eyes still quiet; Dinking Problem art ready)
+**Last updated:** 2026-10-29 night (~30+ park tee + sticker listings; shirt thumbnail zoom pass done)
 
 Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any new agent chat to avoid hallucinating order/design state.
 
-> **NOT kawaii stickers.** Live business = CozyOrbitPrints Corvette apparel (Etsy + eBay + Printify). GitHub `ai-factory-os` is stale May factory scaffolding — ignore it unless explicitly working on factory code.
+> Live business = CozyOrbitPrints Corvette apparel + pickleball tees + national-parks stickers + **Indiana state park tees**. May **kawaii / AI Factory** sticker scaffolding on GitHub is still stale — ignore that pipeline unless explicitly asked.
+
+---
+
+## October 29 plan (after Turkey Run shirt sale)
+
+**Signal:** Turkey Run Indiana **shirt** sold Oct 28 (Ads ROAS 19.56). Keep the **park tee formula**, but only parks people actually know — Hoosier local vetoed obscure IN parks (Ouabache / Harmonie / etc.).
+
+### Make these 15 tees today (Turkey Run style)
+
+**Indiana A-list only (5)**
+| # | Park | Why |
+|---|------|-----|
+| 1 | **Brown County** | Fall tourism king of IN |
+| 2 | **Indiana Dunes** | National Park — biggest IN search |
+| 3 | **Shades State Park** | Same canyon trip as Turkey Run |
+| 4 | **McCormick's Creek** | Known first state park |
+| 5 | **Clifty Falls** | Recognizable waterfall park |
+
+**Neighbor-state famous parks (5)**
+| # | Park | Why |
+|---|------|-----|
+| 6 | **Sleeping Bear Dunes** (MI) | Midwest destination magnet |
+| 7 | **Pictured Rocks** (MI) | Instant thumbnail recognition |
+| 8 | **Hocking Hills** (OH) | Huge regional search / weekend trips |
+| 9 | **Red River Gorge** (KY) | Climbers + leaf-peepers |
+| 10 | **Mammoth Cave** (KY) | National Park, name recognition |
+
+**National-park tees — famous only (5)** *(shirts, not more stickers)*
+| # | Park | Why |
+|---|------|-----|
+| 11 | **Great Smoky Mountains** | #1 visited NP |
+| 12 | **Yellowstone** | Universal gift search |
+| 13 | **Yosemite** | Half Dome = instant read |
+| 14 | **Zion** | Strong young outdoor buyer |
+| 15 | **Grand Canyon** | Highest name recognition |
+
+**Do not:** obscure IN state parks, US-flag garden banners, magnets, random meme niches tonight.  
+**Price:** $21.99+ S–XL. Light ads on Turkey Run; add siblings after live.
+
+### Oct 29 night wrap
+
+| Item | Status |
+|------|--------|
+| **Listings shipped** | **~30+** — park **tees + matching round stickers** (same emblem art on both blanks) |
+| **QC** | Shirt **thumbnails zoomed/tightened** across the new tee set |
+| **Listing packages** | `BIG_BEND.md` · `MESA_VERDE.md` ready; others follow same title/tag pattern |
+| **Tomorrow** | Don’t make more art first — check visits/CTR on new parks; keep ads **light**; only boost listings with clicks. Fill Turkey Run order size/color/Printify cost if still blank in `sales_log.csv` |
+
+---
+
+## October 28 sales
+
+| Item | Status |
+|------|--------|
+| **Etsy Turkey Run State Park Tee** | **SOLD Oct 28 via Etsy Ads** — **$22.49** rev · **$1.15** spend · **ROAS 19.56** · 6 views / 1 click / **16.7% CTR**; fill size/color/Printify from Orders |
+| **Etsy Acadia Maine National Parks Sunset Round Sticker** | **SOLD Oct 28** — Sarah Ontiveros; order `4212774931`; Printify `#27546430.33`; earnings **$10.03** − Printify **$8.30** → **~$1.73 cash**; coupon ENDOF2026 |
+| **Parks stickers made Oct 28** | Grand Teton, Arches, + batch through Everglades / Hawaiʻi Volcanoes (Crater Lake still open) |
 
 ---
 
@@ -202,6 +259,8 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 | Jul 15 | Allyn Davis | **Yellow C5** hoodie 2-sided (eBay) | 1 | Ash | 2XL | **$50.58 earnings**; item `398084925179`; ship by Jul 29; Printify pending |
 | Jul 16 | — | **Pickleball Soft Serve** (listed) | — | — | — | Etsy + eBay live; still 0 sales as of Jul 21 |
 | Jul 17 | — | **Pickleball IT WAS IN** (eBay) | 1 | Mint | — | **First pickleball sale** $18.99 → ~$4.82 cash; Soft Serve + Eyes still 0 |
+| Oct 28 | Sarah Ontiveros | **Acadia Maine National Parks Sunset Round Sticker** (Etsy) | 1 | White | 2" round | Order `4212774931`; Printify `#27546430.33`; ~$1.73 cash |
+| Oct 28 | — | **Turkey Run State Park Tee** (Etsy Ads) | 1 | — | — | **$22.49** rev · **$1.15** spend · ROAS **19.56** · 16.7% CTR; fill size/color/Printify |
 
 **Refunded:** Jan — C5 Illustration Vintage — accidental order.
 
