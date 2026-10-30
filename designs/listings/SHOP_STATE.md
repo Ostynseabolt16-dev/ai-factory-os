@@ -1,13 +1,33 @@
 # CozyOrbitPrints — Shop State (source of truth)
 
 **Etsy shop:** https://www.etsy.com/shop/CozyOrbitPrints  
-**Last updated:** 2026-07-21 (first pickleball sale — eBay IT WAS IN $18.99 on Jul 17; Soft Serve + Eyes still quiet; Dinking Problem art ready)
+**Last updated:** 2026-10-29 (Etsy **Turkey Run State Park** first sale — Julie Doll, Dark Chocolate M, order `4214143241`; Printify **On hold**)
 
 Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any new agent chat to avoid hallucinating order/design state.
 
-> **NOT kawaii stickers.** Live business = CozyOrbitPrints Corvette apparel (Etsy + eBay + Printify). GitHub `ai-factory-os` is stale May factory scaffolding — ignore it unless explicitly working on factory code.
+> **NOT kawaii stickers.** Live business = CozyOrbitPrints Corvette apparel (Etsy + eBay + Printify) + pickleball + Indiana park tees. GitHub `ai-factory-os` is stale May factory scaffolding — ignore it unless explicitly working on factory code.
 
 ---
+
+## October 29 update (Turkey Run first sale)
+
+| Item | Status |
+|------|--------|
+| **Etsy Turkey Run State Park Tee** | **SOLD Oct 29 — first sale** · order `4214143241` · Julie Doll · **Dark Chocolate / M** · list **$24.99** − coupon **ENDOF2026 10% (−$2.50)** + ship **$4.95** + tax **$2.47** = buyer **$29.91** · Etsy **$24.51** − Printify **#27546430.34 $15.03** (prod $9.68 + ship $5.35) = **~$11.48 cash** |
+| **Printify** | **On hold** — tap **Submit** to release into production · ships to Joliet IL |
+| **Traffic** | Coupon-assisted (`ENDOF2026`); ads attribution unknown |
+| **Margin** | **~$11.48** clears $5+ even with 10% off — park tee SKU validated |
+| **Action** | Submit Printify hold now; consider sibling Indiana park designs only after this ships clean |
+
+## August 4 update (C6 Atomic Orange first sale)
+
+| Item | Status |
+|------|--------|
+| **Etsy C6 Atomic Orange** | **SOLD Aug 4 — first sale** · order `4135579869` · Tom Clark · **Natural / 2XL** · item **$26.99** + ship **$4.75** + tax **$1.89** = buyer **$33.63** · Etsy **$28.42** − Printify **#27546430.23 $16.04** (prod $11.29 + ship $4.75) = **~$12.38 cash** · **In production** · ship by **Aug 10** |
+| **Traffic** | Unknown (not shown in sale screenshots) |
+| **Shirt color rule** | Natural is correct for collection art — keep light-only |
+| **Margin** | **~$12.38** clears $5+ floor — light ads OK to test if CTR looks decent |
+| **Still blocked** | C6 Variant B plate regen (OpenAI credits); Yellow C5 Etsy still down |
 
 ## July 21 update (post IT WAS IN sale)
 
@@ -176,10 +196,12 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 
 ---
 
-## Sales summary (user-reported; Jul 16 = 17+ Etsy + 3 eBay units logged)
+## Sales summary (user-reported; through Oct 29)
 
 | Date | Buyer | Listing | Qty | Color | Size | Notes |
 |------|-------|---------|-----|-------|------|-------|
+| **Oct 29** | **Julie Doll** | **Turkey Run State Park Tee** | 1 | **Dark Chocolate** | **M** | **First park tee sale**; Etsy `4214143241`; Printify `#27546430.34` **On hold** **$15.03** → **~$11.48 cash**; coupon ENDOF2026; Joliet IL — **Submit Printify** |
+| **Aug 4** | **Tom Clark** | **C6 Atomic Orange** | 1 | **Natural** | **2XL** | **First Atomic Orange sale**; Etsy `4135579869`; Printify `#27546430.23` **In production** **$16.04** → **~$12.38 cash**; Granger IA; ship by Aug 10 |
 | Jun 2 | Seth | C5 Illustrated **front/back** | 1 | Ash | M | **1st sale, pre-ads organic**; ~breakeven ($20.99 item, Printify $22.92) |
 | Jun 3 | David | C6 **old design** | 1 | Gold | 2XL | 5★ review; **repeat customer** (returned Jun 25) |
 | Jun 6 | Tavian | C6 **old design** | 1 | White | M | Delivered |
@@ -277,7 +299,7 @@ Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any n
 
 **C7 Velocity Yellow (2026-06-15):** Debadged, solid V8. Option E quote via overlay (`--preset velocity-yellow`). Export **`--threshold 235`**. **Light shirts only.**
 
-**C6 Atomic Orange (2026-06-15):** Debadged, no plate, solid V8. Default razor-sharp quote overlay. Export **`--threshold 235`**. **Light shirts only.** Price **$24.99–$27.99**.
+**C6 Atomic Orange (2026-06-15):** Debadged, no plate, solid V8. Default razor-sharp quote overlay. Export **`--threshold 235`**. **Light shirts only.** Price **$24.99–$27.99**. **First Etsy sale Aug 4** (Natural 2XL, $26.99) — validates color variant on light blank.
 
 **C5 Torch Red (2026-06-14):** v3 — debadged nose, front splitter lip, solid V8. Export **`--threshold 235`**. **Light shirts only.** Listing: `designs/listings/C5_TORCH_RED.md`. v1 backup: `backups/c5_torch_red_v1_badge_slop.png`.
 
