@@ -28,7 +28,16 @@ Say: `@COZY_ORBIT_HANDOFF.md @SHOP_STATE.md` at the start of a phone chat.
 | `sales_log.csv` | Order log |
 | `designs/listings/*.md` | Paste-ready listing copy |
 | `scripts/shop_daily_brief.py` | Local priorities (needs Mac/venv) |
+| `halo/` | **Halo** — solo stylist booking MVP (vs GlossGenius wedge) |
 | `ai_factory/` | Old factory code — deprioritize |
+
+### Halo (salon booking prototype)
+
+```bash
+cd halo && npm install && npm run dev
+```
+
+See `halo/PRODUCT.md` for the competitive wedge and scope.
 
 ## GitHub vs Cursor chats
 
