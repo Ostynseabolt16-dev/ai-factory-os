@@ -1,6 +1,6 @@
 # Pickleball “IT WAS IN.” Tee — listing package
 
-**Status:** **LIVE** Jul 16, 2026 — Etsy + eBay · **first sale Jul 17 eBay $18.99** → ~$4.82 cash · **Oct 21 Etsy 5-shirt order $111.80** → ~$33.27 cash (biggest order in shop history)  
+**Status:** **LIVE** Jul 16, 2026 — Etsy + eBay · **first sale Jul 17 eBay $18.99** → ~$4.82 cash · **Oct 21 Etsy 5-shirt order $111.80** → **~$24.47 cash** after the fulfilled Printify cost (biggest order in shop history, delivered)  
 **Why this #3:** Different joke from Soft Serve (pun) and Eyes Up Here (chest gag). Line-call humor every player knows. Minimal = strong thumbnail. **Only pickleball SKU that sold** (Soft Serve + Eyes still 0 as of Jul 21).
 
 **Files:**
@@ -54,8 +54,8 @@ First eBay sale at **$18.99** + $3.99 ship → thin (~$4.82). Etsy now at **$20.
 | Items | Military Green — 2× M @ $20.99 · 2× L @ $20.99 · 1× 2XL @ $22.99 |
 | Buyer paid | **$111.80** (items $106.95 + ship $15.55 − ENDOF2026 10% −$10.70) |
 | Etsy fees | $10.87 ($7.27 txn + $3.60 processing) → earnings **$100.93** |
-| Printify | **#27546430.31 $67.66** (prod $52.11 + ship $15.55) — **on hold, submit** |
-| Cash | **~$33.27** (~$6.65/shirt) |
+| Printify | **#27546430.31 $76.46 fulfilled** (the on-hold screen showed $67.66 = prod $52.11 + ship $15.55). **Delivered**, tracking `MLUN6214210162` |
+| Cash | **~$24.47** (~$4.89/shirt). The $33.27 figure used the quote from before Printify finalized the cost |
 | Traffic | **Organic — no ads**; team/family multi-size buy |
 
 ## Upload checklist
@@ -65,6 +65,6 @@ First eBay sale at **$18.99** + $3.99 ship → thin (~$4.82). Etsy now at **$20.
 - [x] Live URLs pasted
 - [x] First sale logged in `sales_log.csv` (Jul 17)
 - [x] Oct 21 Etsy 5-shirt order logged in `sales_log.csv`
-- [ ] Submit Printify #27546430.31 (on hold)
+- [x] Printify #27546430.31 submitted and **delivered** (fulfilled cost $76.46, not the $67.66 on-hold quote)
 - [ ] Ads stay light
 - [ ] Test a team/multi-shirt bundle or qty discount (Oct 21 proved multi-unit demand)

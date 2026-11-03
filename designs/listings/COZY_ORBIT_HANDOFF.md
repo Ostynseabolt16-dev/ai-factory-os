@@ -1,8 +1,25 @@
-# CozyOrbitPrints — Master Handoff (Oct 27, 2026)
+# CozyOrbitPrints — Master Handoff (Nov 2, 2026)
 
 > Shop: https://www.etsy.com/shop/CozyOrbitPrints  
 > **Read this + `SHOP_STATE.md` + `sales_log.csv` at start of every session.**  
 > **MacBook Cursor is NOT auto-synced with phone.** GitHub `ai-factory-os` is **stale** (May factory/stickers) — live shop state lives in these local files.
+
+---
+
+## Nov 2 flash update — costs from the Printify lists
+
+Screenshots were the **Printify cost lists**, plus one Etsy earnings panel. Only one order has a finished profit number.
+
+| Order | Cost | Cash |
+|-------|------|------|
+| **Eyes Up Here, first sale** (Nov 2, Etsy `4221099438`) | Karen Hansen · Royal XL · $24.99 − 10% coupon · earnings **$20.04** · Printify **#27546430.39 $14.49** · in production, ship by **Nov 7** | **~$5.55** (~$7.81 without the coupon). Hold $24.99. Royal is a selling color |
+| **IT WAS IN ×5, cost corrected** | Fulfilled Printify total is **$76.46**, not the $67.66 on-hold quote. **Delivered** | **~$24.47** (~$4.89/shirt), not $33.27 |
+| **7 Etsy orders Oct 27–Nov 2** | Julie $15.03, Ola $15.45, James $19.09, Benedict $24.05 are tee-or-higher. **Sarah $8.30 and Sierra $6.27 are not shirts** — open those two first | Buyer price not on the screenshot |
+| **6 eBay orders, cost only** | Three at exactly **$15.05** (Sep 14, Sep 23, Oct 13 Rejean Boudreau). Aug 21 **$14.63** matches the IT WAS IN tee. Carl Adams Nov 1 **$15.45**. Lonnie Dohoney Nov 2 **$21.36**, still in production | **Check Ad Fee General** on Carl and Lonnie. .8 (Aug 13) and .5–.7 were not readable |
+
+Poster, play mats, the Yellow C5 hoodie, and the Skelly Facebook order are all **delivered**. The hoodie is still ~$3.37 because of the $8.07 ad fee. The play mats are still a loss. Confirm the Facebook $25.51 actually paid out.
+
+**Do these first (Nov 2):** (1) cut the eBay ad rate and check it on Carl Adams and Lonnie Dohoney; (2) open Sarah Ontiveros and Sierra Tabler — $8.30 and $6.27, not shirts, possibly more posters; (3) back-fill buyer prices for the tee-cost orders; (4) confirm the Skelly Facebook payout; (5) raise or pull play mat pricing.
 
 ---
 
@@ -26,7 +43,7 @@
 
 | Sale / item | Status |
 |-------------|--------|
-| **Etsy Pickleball IT WAS IN ×5** (Oct 21) | **BIGGEST ORDER YET — $111.80** · Rachel Hauer · order `4209924522` · Military Green 2×M + 2×L + 1×2XL · ENDOF2026 10% off · earnings **$100.93** − Printify **$67.66** = **~$33.27 cash** · **organic, no ads** · Printify **#27546430.31 ON HOLD — submit, ship by Oct 26** |
+| **Etsy Pickleball IT WAS IN ×5** (Oct 21) | **BIGGEST ORDER — $111.80** · Rachel Hauer · order `4209924522` · Military Green 2×M + 2×L + 1×2XL · earnings **$100.93**. Fulfilled Printify cost corrected Nov 2 to **$76.46** → **~$24.47 cash**. **Delivered** |
 | **Etsy C5 Blueprint Poster** (Oct 22) | **FIRST POSTER SALE — $26.89** · Jessica Williams · 16×20 Matte @ $17.99 + $8.94 ship · gift ("Happy birthday") · Printify **#27546430.32 $12.71** confirming payment · **~$11.17 / ~42% margin** · ship by Oct 27 |
 | **Facebook Skelly in My Belly tee** (~Oct 14) | **FIRST FACEBOOK SALE** · FB order `39719574087633429` · Black 2XL $22 + $6.35 label = $28.35 · 10% fee $2.84 → payout **$25.51 pending delivery** · **manual** Printify **#27546430.30 $16.72** → **~$8.79 cash** · Printify shipped **DHL**, FB had no DHL → picked **USPS** and it validated anyway |
 | **Etsy City Roadmap Play Mat ×2** (Oct 14) | **LOSS ~−$2.52** · Karl Gilbert · order `4200448311` · buyer paid $78.32 · Printify **#27546430.29 $66.44** · **raise price or delist before more mat traffic** |
@@ -44,7 +61,7 @@
 - **Two selling SKUs are undocumented:** Skelly in My Belly Halloween tee and City Roadmap Play Mat. Write listing packages.
 - **Still stale:** the ads snapshot and P&L sections in `SHOP_STATE.md` predate all of this. Do not make budget calls off them.
 
-**Do these first (updated Oct 27):** (0) **cut the eBay hoodie ad rate** — see the Oct 27 section above; (1) **submit Printify #27546430.31** — pickleball ×5, on hold, ship by **Oct 26**; (2) confirm the **Skelly FB order is marked shipped** so the $25.51 payout is not lost to the 7-day cancel; (3) **fix play mat pricing**; (4) back-fill order `4143679545` + September item prices. Full ordered list in `SHOP_STATE.md` → "Next actions (updated Oct 27, in order)".
+**Do these first:** the Nov 2 list at the top of this file. The Oct 27 "submit the 5-shirt order" item is done — it delivered, and the real Printify cost was $76.46.
 
 ---
 
