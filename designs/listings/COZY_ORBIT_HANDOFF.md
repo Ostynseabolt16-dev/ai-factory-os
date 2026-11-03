@@ -6,6 +6,12 @@
 
 ---
 
+## Nov 2 late — Etsy pulled the poster
+
+The violations list is **6 pages**. Page 1 is all Intellectual Property, appeal **not available**. The **C5 Blueprint poster** and the **Yellow C6 V8** hoodie were removed **Oct 30**. Three more Corvette titles on that page were removed Aug 13. Do not relist anything with Corvette in the title. Fulfill Benedict's poster (ordered Oct 29). New designs are pickleball. Two paste-ready prompts are in `designs/listings/PICKLEBALL_PROMPTS_NOV2.md`: the kitchen enforcer with a **solid** paddle, and a type-only **FOOT FAULT.** shirt.
+
+---
+
 ## Nov 2 night — red C7 lost $1.16, pickleball sold again
 
 | Order | Result |

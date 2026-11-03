@@ -1,11 +1,29 @@
 # CozyOrbitPrints — Shop State (source of truth)
 
 **Etsy shop:** https://www.etsy.com/shop/CozyOrbitPrints  
-**Last updated:** 2026-11-02 night (**Red C7 eBay tee lost ~$1.16**; Eyes Up Here sold again; IT WAS IN sold in Red; Kitchen pickleball art composed locally)
+**Last updated:** 2026-11-02 late (**Etsy IP sweep** — C5 Blueprint poster removed Oct 30, appeal not available, violations list is 6 pages. Pickleball is the live lane.)
 
 Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any new agent chat to avoid hallucinating order/design state.
 
 > **NOT kawaii stickers.** Live business = CozyOrbitPrints Corvette apparel (Etsy + eBay + Printify). GitHub `ai-factory-os` is stale May factory scaffolding — ignore it unless explicitly working on factory code.
+
+---
+
+## November 2 late — Etsy intellectual property sweep
+
+The violations screen is **6 pages**. Page 1, all **Intellectual Property Policy**, appeal status **Not available**:
+
+| Listing (title truncated on screen) | Removed |
+|--------------------------------------|---------|
+| Corvette C5 Blueprint Poster | **Oct 30, 2026** |
+| Yellow Corvette C6 V8 (hoodie) | **Oct 30, 2026** |
+| C4 Corvette V8 Engine | Aug 13, 2026 |
+| C7 Corvette Red Car | Aug 13, 2026 |
+| Red C8 Corvette Stingray | Aug 13, 2026 |
+
+Pages 2–6 are not logged yet. Open them and write down every title before rebuilding anything.
+
+**Do this:** fulfill orders already paid (Jessica's 16×20 poster delivered; Benedict's 23×33 poster was ordered Oct 29, the day before the listing came down). Do not relist any shirt or poster with **Corvette** in the title or on the art. The C5 poster was the best-margin Etsy item and it is gone. New listing energy goes to pickleball, which is selling and is not in this sweep. Paste-ready prompts: `designs/listings/PICKLEBALL_PROMPTS_NOV2.md`.
 
 ---
 
