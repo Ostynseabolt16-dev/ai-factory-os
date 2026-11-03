@@ -1,6 +1,6 @@
 # Pickleball “Eyes Up Here” Tee — listing package
 
-**Status:** **LIVE** Jul 16, 2026 — Etsy + eBay · **FIRST SALE Nov 2, 2026**
+**Status:** **LIVE** Jul 16, 2026 — Etsy + eBay · **two sales, both Royal XL** (Ola Mullikin Oct 31, ~$4.64; Karen Hansen Nov 2, ~$5.55)
 
 **Demand signal (Oct 17):** two Etsy favorites in one day (Florante, Renee). Sixteen days later it sold, so the art and price are fine. Do not redo the design off the old "0 sales" read.
 

@@ -1,8 +1,25 @@
-# CozyOrbitPrints — Master Handoff (Nov 2, 2026)
+# CozyOrbitPrints — Master Handoff (Nov 2, 2026, night)
 
 > Shop: https://www.etsy.com/shop/CozyOrbitPrints  
 > **Read this + `SHOP_STATE.md` + `sales_log.csv` at start of every session.**  
 > **MacBook Cursor is NOT auto-synced with phone.** GitHub `ai-factory-os` is **stale** (May factory/stickers) — live shop state lives in these local files.
+
+---
+
+## Nov 2 night — red C7 lost $1.16, pickleball sold again
+
+| Order | Result |
+|-------|--------|
+| **eBay red C7, Sand XL** (Carl Adams, Nov 1) | Item **$16.47**. Earnings **$14.29** after $3.35 txn + **$2.82 ad fee (17%)**. Printify **$15.45**. Cash **about −$1.16**. Even with the ad fee removed this price only clears about $1.66. Raise it to about **$25** |
+| **Eyes Up Here, again** | Ola Mullikin Oct 31, **Royal XL**, same SKU as Karen Hansen. Earnings $20.09 − Printify $15.45 = **~$4.64** |
+| **IT WAS IN, Nov 2** | James Grant, **Red XL**. Earnings $22.99 − Printify $19.09 = **~$3.90**. Red works. This blank cost about $4 more than the other pickleball tees |
+| **Yellow C5 tee, likely** | White XL, item $23.92, earnings $19.57, ad fee $3.88 (16%). Probably Lonnie Dohoney's $21.36 Printify order, which would be about **−$1.79**. Buyer name was not on that screenshot |
+
+The ad rate is **16–17% on every promoted eBay order we can measure** (hoodie, C7, Yellow C5). It is not just the hoodies.
+
+**More pickleball is the right call.** Three pickleball sales in two days, two of them the identical Royal XL. Do not start from a blank page. **Dinking Problem is already exported.** Kitchen ("THIS IS THE KITCHEN / STAY OUT.") was composed locally on Nov 2, no OpenAI spend. List both at **Etsy $24.99**, eBay **$22.99+**, dark shirts, ads off. Copy is in `PICKLEBALL_DINKING_PROBLEM.md` and `PICKLEBALL_KITCHEN.md`.
+
+The $6.27 and $8.30 "maybe posters" were national-park stickers (Pictured Rocks ~$2.22 cash, Acadia). Julie Doll was a Turkey Run tee. Benedict Singh was a **second C5 poster**, 23×33, buyer paid $36.39. Etsy is showing **2 policy violations** — open that before the new listings.
 
 ---
 

@@ -1,6 +1,7 @@
 # Pickleball Wave 2 — design briefs (Jul 21, 2026)
 
-> **Signal:** eBay sold **IT WAS IN** for **$18.99** on Jul 17 (mint tee). Soft Serve + Eyes Up Here still quiet.  
+> **Signal (updated Nov 2, 2026):** IT WAS IN and Eyes Up Here are both selling on Etsy with no ads. Eyes Up Here sold twice in two days, both **Royal XL**, at **$24.99**. IT WAS IN sold again Nov 2 in **Red XL**. Soft Serve is still quiet. **Dinking Problem is still the upload. Kitchen art is now composed** (`scripts/compose_pickleball_kitchen.py`, no OpenAI).  
+> **Old signal:** eBay sold **IT WAS IN** for **$18.99** on Jul 17 (mint tee).  
 > **P&L (owner screenshots):** buyer **$22.98** (item+ship) → eBay fees **$3.53** → earnings **$19.45** → Printify **$14.63** → **~$4.82 cash**. Raise next SKUs or cut ship absorb.  
 > **Rule:** steal the *joke category*, invent new wording + layout + art. Do **not** clone TikTok screenshots.  
 > **Spend:** do not run OpenAI `scripts/generate_*.py` until owner confirms credits.
@@ -16,7 +17,7 @@
 | # | Make? | Joke category | Why |
 |---|-------|---------------|-----|
 | 1 | **YES — next (upload)** | Dinking problem | Hottest search/joke category; type-first like IT WAS IN |
-| 2 | **YES** | Kitchen zone | Still good; less hot than dink puns right now |
+| 2 | **YES — art ready Nov 2** | Kitchen zone | Composed locally. Upload after Dinking. See `PICKLEBALL_KITCHEN.md` |
 | 3 | **YES** | Six-pack abs | Instant thumbnail read; easy original layout |
 | 4 | Later | Memory / brain gag | Liked TikTok comic — only if type-first version, not 3-panel clone |
 | 5 | Later | Historical dink pun | Liked “Abraham Dinkin’” — original wording, no Lincoln portrait clone |

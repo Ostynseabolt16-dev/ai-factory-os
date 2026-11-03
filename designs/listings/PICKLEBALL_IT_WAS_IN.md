@@ -1,6 +1,6 @@
 # Pickleball “IT WAS IN.” Tee — listing package
 
-**Status:** **LIVE** Jul 16, 2026 — Etsy + eBay · **first sale Jul 17 eBay $18.99** → ~$4.82 cash · **Oct 21 Etsy 5-shirt order $111.80** → **~$24.47 cash** after the fulfilled Printify cost (biggest order in shop history, delivered)  
+**Status:** **LIVE** Jul 16, 2026 — Etsy + eBay · **first sale Jul 17 eBay $18.99** → ~$4.82 cash · **Oct 21 Etsy 5-shirt order** → **~$24.47 cash** (delivered) · **Nov 2 James Grant, Red XL, ~$3.90**  
 **Why this #3:** Different joke from Soft Serve (pun) and Eyes Up Here (chest gag). Line-call humor every player knows. Minimal = strong thumbnail. **Only pickleball SKU that sold** (Soft Serve + Eyes still 0 as of Jul 21).
 
 **Files:**

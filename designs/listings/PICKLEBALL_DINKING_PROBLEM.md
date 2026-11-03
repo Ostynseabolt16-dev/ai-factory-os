@@ -36,8 +36,9 @@ Funny pickleball tee for players who live at the kitchen line. Bold type, clean 
 - Best on dark shirt colors
 
 ## Pricing
-- eBay S–XL **$20.99**, 2XL **$22.99**, 3XL **$23.99** (IT WAS IN @ $18.99 only cleared ~$4.82)
-- Etsy **$21.99+** for fee buffer
+- Etsy **$24.99** (Eyes Up Here sold twice at this price, Nov 2026, about $4.64–$5.55)
+- eBay S–XL **$22.99**, 2XL **$24.99** — do not list at $16. A $16.47 eBay C7 lost money on Nov 1
+- Dark shirts that have now sold on the other gags: Black, Navy, Charcoal, Military Green, **Royal, Red**
 - Promoted light first 48–72h
 
 ## Shirt colors

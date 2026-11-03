@@ -1,7 +1,7 @@
 # CozyOrbitPrints — Shop State (source of truth)
 
 **Etsy shop:** https://www.etsy.com/shop/CozyOrbitPrints  
-**Last updated:** 2026-11-02 (**Eyes Up Here first sale, ~$5.55**; Printify cost pass for 13 Etsy/eBay orders; Rachel Hauer fulfilled cost corrected to **$76.46 / ~$24.47 cash**)
+**Last updated:** 2026-11-02 night (**Red C7 eBay tee lost ~$1.16**; Eyes Up Here sold again; IT WAS IN sold in Red; Kitchen pickleball art composed locally)
 
 Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any new agent chat to avoid hallucinating order/design state.
 
@@ -69,14 +69,42 @@ Seven Etsy orders went to production between Oct 27 and Nov 2. That is the busie
 
 eBay sub-orders **.5, .6, and .7** (after the Jul 17 IT WAS IN at .4, before Aug 13 at .8) were not on the screenshot. The $15.05 cluster is the thing to price-check: if those sold near $18.99, the margin is the thin Jul 17 pickleball math again, and any Ad Fee General on top would wipe it out. Lonnie's $21.36 order is still in production, so the ad fee can be checked before it ships.
 
-### Next actions (updated Nov 2, in order)
+### Nov 2 night — the red C7 lost money, pickleball did not
 
-0. **Cut the eBay promoted ad rate**, then open **Carl Adams** and **Lonnie Dohoney** and see whether Ad Fee General hit them. The Oct 26 hoodie lesson is unchanged, and two more eBay orders have shipped or are in production since.
-1. **Open Sarah Ontiveros ($8.30) and Sierra Tabler ($6.27)** and write down the listing. Those are not shirts. If they are posters, log the buyer price — that is the best-margin product and it may already be repeating.
-2. **Back-fill buyer price and fees** for the tee-cost orders (Julie, Ola, James, the three $15.05 eBay orders, the Aug 21 $14.63). Cost without a sale price is not a P&L.
-3. **Confirm the Facebook $25.51** for the Skelly order actually paid out. Printify shows it delivered Oct 15.
-4. **Fix play mat pricing.** Karl's order delivered at a loss. Do not send more mat traffic at this price.
-5. Still open from before: Etsy `4143679545`, eBay `.8` / `.5`–`.7`, the real Jul 15 hoodie production charge, and listing packages for the Skelly tee and the City Roadmap mat.
+**Carl Adams, eBay, red C7 art on a Sand XL.** Item **$16.47** + $3.99 ship. Transaction fees **$3.35** + Ad Fee General **$2.82** (17.1% of the item). Earnings **$14.29**. Printify **$15.45**. Cash **about −$1.16**. South Ogden, UT. Order `08-15373-45016`, item `398078554843`.
+
+The price is the main hole. Stripping the ad fee entirely would still leave about **$1.66**, because $16.47 cannot survive eBay's transaction fee against a $15.45 shirt. The old "eBay tee at $16 still clears $5" rule is done. This shirt needs to be about **$25** before it clears $5 at the current fee rate.
+
+The ad rate is the same everywhere it can be measured: **16.1%** on the Oct 26 hoodie, **17.1%** on this C7, **16.2%** on a Yellow C5 tee (White XL, item $23.92, earnings $19.57, ad fee $3.88). That Yellow C5 screenshot still says Add tracking, and Lonnie Dohoney is the only eBay order still in production, at Printify **$21.36**. If they are the same order, cash is about **−$1.79**. Raise every eBay tee that is still near $16, and cut the promoted rate. It is not a hoodie-only setting.
+
+**Pickleball, three sales in two days:**
+
+| When | Buyer | Shirt | Earnings | Printify | Cash |
+|------|-------|-------|----------|----------|------|
+| Oct 31 | Ola Mullikin `4216074725` | Eyes Up Here, **Royal XL** | $20.09 | $15.45 | **~$4.64** |
+| Nov 2 | Karen Hansen `4221099438` | Eyes Up Here, **Royal XL** (same SKU) | $20.04 | $14.49 | **~$5.55** |
+| Nov 2 | James Grant `4219198924` | IT WAS IN, **Red XL** | $22.99 | $19.09 | **~$3.90** |
+
+Royal XL sold twice. Red is a new IT WAS IN color. James missed $5 because that shirt cost $19.09 to produce, about $4 more than the other two. Hold Etsy pickleball at **$24.99**. The 10% coupon is what pulled Ola under $5.
+
+**The orders that were only costs this afternoon:**
+
+| Order | What it actually is | Buyer paid | Printify | Cash |
+|-------|---------------------|------------|----------|------|
+| Sierra Maitland, ships to Sierra Tabler, La Porte IN | Pictured Rocks sticker, 3×3 | $10.36 | $6.27 | **~$2.22** |
+| Sarah Mae Banning, ships to Sarah Ontiveros, Stamford CT | Acadia round stickers, 2×2 | $12.09 | $8.30 | earnings not shown; gap before fees $3.79 |
+| Julie Doll, Joliet IL | Turkey Run State Park tee, Dark Chocolate M | $29.91 | $15.03 | earnings not shown; gap before fees $14.88 |
+| Benedict Singh, Cliffside Park NJ | **C5 Blueprint Poster, 23.4×33.1 matte** | $36.39 | $24.05 | second poster sale; the $24.05 is the bigger size, and the address is domestic |
+
+Etsy orders screen showed **2 policy violations**. Open that before listing anything new.
+
+### Next actions (Nov 2 night, in order)
+
+0. **Raise the eBay red C7** off $16.47, and raise any other eBay tee still near $16. Then **cut the promoted rate**. The measured rate is 16–17% on the hoodie, the C7, and the Yellow C5.
+1. **Upload Dinking Problem** (art already exported) and the new **Kitchen** tee. Etsy **$24.99**, eBay **$22.99+**, dark shirts only, including Royal and Red. Ads off for the first few days. Files: `designs/pickleball/pickleball_dinking_problem_UPLOAD_TO_PRINTIFY.png` and `pickleball_kitchen_UPLOAD_TO_PRINTIFY.png`. Listing copy is in `PICKLEBALL_DINKING_PROBLEM.md` and `PICKLEBALL_KITCHEN.md`.
+2. Open the **2 Etsy policy violations** before those uploads.
+3. Confirm whether Lonnie Dohoney is the Yellow C5 White XL. If he is, that order lost about $1.79.
+4. Still open: Facebook $25.51 payout, play-mat price, Etsy `4143679545`, eBay `.8` and `.5`–`.7`.
 
 ---
 
@@ -623,7 +651,7 @@ Superseded Nov 2. Use the list at the top of this file ("Next actions (updated N
 
 ## Shirt colors
 
-- **Pickleball Dinking Problem / Eyes / IT WAS IN:** dark only (white/lime type) — Black, Navy, Charcoal, **Military Green** (IT WAS IN, Oct 21), **Royal** (Eyes Up Here, Nov 2)
+- **Pickleball Dinking Problem / Eyes / IT WAS IN / Kitchen:** dark only (white/lime type) — Black, Navy, Charcoal, **Military Green** (IT WAS IN, Oct 21), **Royal** (Eyes Up Here, Oct 31 and Nov 2), **Red** (IT WAS IN, Nov 2)
 - **C7 Laguna Blue:** White, Natural, Sport Grey only (not dark colors)
 - **C5 Torch Red:** White, Natural, Sport Grey only (not dark colors)
 - **C5 Black:** White, Natural, Sport Grey only (not dark colors)
