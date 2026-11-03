@@ -623,7 +623,7 @@ Superseded Nov 2. Use the list at the top of this file ("Next actions (updated N
 
 ## Shirt colors
 
-- **Pickleball Dinking Problem / Eyes / IT WAS IN:** dark only (white/lime type) — Black, Navy, Charcoal, **Military Green** (Military Green confirmed selling: Oct 21 Etsy 5-shirt order)
+- **Pickleball Dinking Problem / Eyes / IT WAS IN:** dark only (white/lime type) — Black, Navy, Charcoal, **Military Green** (IT WAS IN, Oct 21), **Royal** (Eyes Up Here, Nov 2)
 - **C7 Laguna Blue:** White, Natural, Sport Grey only (not dark colors)
 - **C5 Torch Red:** White, Natural, Sport Grey only (not dark colors)
 - **C5 Black:** White, Natural, Sport Grey only (not dark colors)
