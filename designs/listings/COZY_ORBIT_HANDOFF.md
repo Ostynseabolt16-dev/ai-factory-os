@@ -6,6 +6,12 @@
 
 ---
 
+## Nov 10 — Turbo blueprint tee sold
+
+Michael Gregory, Etsy `4228397590`, Ijamsville MD, ship by **Nov 16**. **Spool Responsibly** turbo blueprint tee, Charcoal 2XL, $26.99, buyer paid $28.61 with free shipping. Earnings **$20.08** after a **$4.05 offsite ad** (15%). Printify **#27546430.40 is $16.16 and still on hold**. Cash **about $3.92**. Without the ad it would be about $7.97. First logged sale of a blueprint shirt that is not a Corvette title. Submit the hold.
+
+---
+
 ## Nov 2 late — Etsy pulled the poster
 
 The violations list is **6 pages**. Page 1 is all Intellectual Property, appeal **not available**. The **C5 Blueprint poster** and the **Yellow C6 V8** hoodie were removed **Oct 30**. Three more Corvette titles on that page were removed Aug 13. Do not relist anything with Corvette in the title. Fulfill Benedict's poster (ordered Oct 29). New designs are pickleball. Two paste-ready prompts are in `designs/listings/PICKLEBALL_PROMPTS_NOV2.md`: the kitchen enforcer with a **solid** paddle, and a type-only **FOOT FAULT.** shirt.

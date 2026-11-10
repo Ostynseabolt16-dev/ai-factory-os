@@ -1,11 +1,26 @@
 # CozyOrbitPrints — Shop State (source of truth)
 
 **Etsy shop:** https://www.etsy.com/shop/CozyOrbitPrints  
-**Last updated:** 2026-11-02 late (**Etsy IP sweep** — C5 Blueprint poster removed Oct 30, appeal not available, violations list is 6 pages. Pickleball is the live lane.)
+**Last updated:** 2026-11-10 (**Turbo blueprint tee sold** — Michael Gregory, Charcoal 2XL, earnings $20.08, Printify $16.16, about **$3.92** after a 15% Etsy offsite ad. Printify on hold.)
 
 Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any new agent chat to avoid hallucinating order/design state.
 
 > **NOT kawaii stickers.** Live business = CozyOrbitPrints Corvette apparel (Etsy + eBay + Printify). GitHub `ai-factory-os` is stale May factory scaffolding — ignore it unless explicitly working on factory code.
+
+---
+
+## November 10 — Turbo blueprint tee, first logged sale
+
+| Field | Value |
+|-------|-------|
+| Buyer / order | Michael Gregory · Etsy `4228397590` · Ijamsville, MD · ordered Nov 10 · ship by **Nov 16** |
+| Item | **Turbo Blueprint Shirt, Spool Responsibly** · Gildan **Charcoal / 2XL** · qty 1 @ **$26.99** · SKU `29069942248690353076` |
+| Buyer paid | **$28.61** (item $26.99 + tax $1.62). Standard shipping, buyer paid **$0.00** |
+| Etsy | Offsite ad **$4.05** (15% of the item) + txn $1.75 + processing $1.11. Earnings **$20.08** |
+| Printify | **#27546430.40 · $16.16** (prod $11.77 + ship $4.39). Line still says **On hold** |
+| Cash | **~$3.92.** Without the offsite ad, about **$7.97** |
+
+This is the first logged sale of a blueprint tee that does **not** say Corvette. That matters after the Oct 30 IP removals. The shirt itself is cheap to make. The 15% offsite ad is why a $26.99 2XL missed $5. Offsite ads at 15% means the shop can still opt out. On a 2XL, about **$29** is the item price that clears $5 when that fee hits. Confirm `#27546430.40` leaves the hold.
 
 ---
 
