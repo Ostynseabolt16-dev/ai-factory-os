@@ -6,6 +6,14 @@
 
 ---
 
+## Nov 11 — Nov 10 was two sales
+
+**Etsy:** Michael Gregory, turbo blueprint, Charcoal 2XL, already logged. Earnings $20.08, Printify $16.16, about **$3.92**. Ship by **Nov 16**. Confirm Printify `#27546430.40` left the hold.
+
+**eBay:** ybem_robe, **Beers Don't Complain When I Finish in 2 Minutes**, Heather Red 2XL, **$22.99** + $3.99 ship. Sold via Promoted Listings. SKU `20225859080589367220`. Ship by **Nov 25**, and it still needs a label. Earnings and Printify cost were not on the screenshot. The orders tab shows **11** eBay orders.
+
+---
+
 ## Nov 10 — Turbo blueprint tee sold
 
 Michael Gregory, Etsy `4228397590`, Ijamsville MD, ship by **Nov 16**. **Spool Responsibly** turbo blueprint tee, Charcoal 2XL, $26.99, buyer paid $28.61 with free shipping. Earnings **$20.08** after a **$4.05 offsite ad** (15%). Printify **#27546430.40 is $16.16 and still on hold**. Cash **about $3.92**. Without the ad it would be about $7.97. First logged sale of a blueprint shirt that is not a Corvette title. Submit the hold.

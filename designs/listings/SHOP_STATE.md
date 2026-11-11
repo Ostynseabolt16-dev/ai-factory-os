@@ -1,11 +1,28 @@
 # CozyOrbitPrints — Shop State (source of truth)
 
 **Etsy shop:** https://www.etsy.com/shop/CozyOrbitPrints  
-**Last updated:** 2026-11-10 (**Turbo blueprint tee sold** — Michael Gregory, Charcoal 2XL, earnings $20.08, Printify $16.16, about **$3.92** after a 15% Etsy offsite ad. Printify on hold.)
+**Last updated:** 2026-11-11 (Nov 10 was two sales: Etsy turbo blueprint, already logged, and a new **eBay** beer tee. eBay fees and Printify cost not on the screenshot.)
 
 Read this file + `sales_log.csv` + `COZY_ORBIT_HANDOFF.md` at the start of any new agent chat to avoid hallucinating order/design state.
 
 > **NOT kawaii stickers.** Live business = CozyOrbitPrints Corvette apparel (Etsy + eBay + Printify). GitHub `ai-factory-os` is stale May factory scaffolding — ignore it unless explicitly working on factory code.
+
+---
+
+## November 11 — the second Nov 10 sale is eBay
+
+The Etsy half of "two sales yesterday" is Michael Gregory's turbo tee, already logged below. The new one is eBay.
+
+| Field | Value |
+|-------|-------|
+| Buyer | **ybem_robe** · sold and paid **Nov 10** · ship by **Wed, Nov 25** |
+| Item | **Beers Don't Complain When I Finish in 2 Minutes** · Heather Red · **2XL** · qty 1 |
+| Price | **$22.99** + buyer pays **$3.99** shipping |
+| Channel | **Sold via Promoted Listings** · SKU `20225859080589367220` |
+| Status | **Ship now.** It has not shipped. The orders tab shows **11** eBay orders total |
+| Profit | **Not known yet.** The earnings screen and the Printify cost were not in the screenshot |
+
+Promoted eBay listings have been charging **16–17%** Ad Fee General. At $22.99 that fee would be about $3.70 before the normal transaction fee. Open the order earnings and match it to Printify before calling it a win. The eBay order number was not on the screen.
 
 ---
 
