@@ -20,9 +20,12 @@ The Etsy half of "two sales yesterday" is Michael Gregory's turbo tee, already l
 | Price | **$22.99** + buyer pays **$3.99** shipping |
 | Channel | **Sold via Promoted Listings** · SKU `20225859080589367220` |
 | Status | **Ship now.** It has not shipped. The orders tab shows **11** eBay orders total |
-| Profit | **Not known yet.** The earnings screen and the Printify cost were not in the screenshot |
+| Buyer paid | **$28.46** (item $22.99 + ship $3.99 + tax $1.48) |
+| eBay | Transaction fees **$4.27** + Ad Fee General **$3.70** (16.1% of the item). Earnings **$19.01** |
+| Funds | Processing. Estimated available **Nov 11** |
+| Profit | **Still needs the Printify cost.** Earnings are $19.01. The turbo 2XL the same day cost $16.16, so if this blank is close, cash is about **$2.85** |
 
-Promoted eBay listings have been charging **16–17%** Ad Fee General. At $22.99 that fee would be about $3.70 before the normal transaction fee. Open the order earnings and match it to Printify before calling it a win. The eBay order number was not on the screen.
+The ad rate is the same 16% that cut the hoodie and the red C7. The label has not been bought yet. The eBay order number was not on the screen.
 
 ---
 

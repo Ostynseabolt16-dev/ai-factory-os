@@ -10,7 +10,7 @@
 
 **Etsy:** Michael Gregory, turbo blueprint, Charcoal 2XL, already logged. Earnings $20.08, Printify $16.16, about **$3.92**. Ship by **Nov 16**. Confirm Printify `#27546430.40` left the hold.
 
-**eBay:** ybem_robe, **Beers Don't Complain When I Finish in 2 Minutes**, Heather Red 2XL, **$22.99** + $3.99 ship. Sold via Promoted Listings. SKU `20225859080589367220`. Ship by **Nov 25**, and it still needs a label. Earnings and Printify cost were not on the screenshot. The orders tab shows **11** eBay orders.
+**eBay:** ybem_robe, **Beers Don't Complain When I Finish in 2 Minutes**, Heather Red 2XL, **$22.99** + $3.99 ship. Earnings **$19.01** after transaction fees $4.27 and Ad Fee General **$3.70** (16.1%). SKU `20225859080589367220`. Ship by **Nov 25**. The label is not bought. Printify cost is still missing, so cash is not final. If this 2XL costs about the same as the turbo 2XL ($16.16), cash is about **$2.85**.
 
 ---
 
